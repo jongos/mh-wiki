@@ -1,0 +1,14 @@
+# Temporary working files
+.tmp_*/
+
+# Microsoft Office lock files
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# Pre-architecture root copies; canonical immutable snapshots live in raw/sources/
+/MediaHedge_*_Financier_Brief.docx
+
+# OS metadata
+.DS_Store
+Thumbs.db
