@@ -33,3 +33,15 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Key decision: undated limits remain source-backed internal policy statements with `needs-review` status, not representations of currently effective policy.
 - Open issues: policy authority, effective dates, jurisdictional validation and empirical performance remain tracked in [[wiki/operations/research-backlog]].
 - Lint: passed with 43 Markdown files, 32 wiki pages and 12 raw sources; 0 errors and 0 warnings under the strengthened checks.
+
+## [2026-08-08] ingest | Welcome to the MediaHedge Knowledgebase
+
+- Source ingested: `MediaHedge_Knowledgebase_Introduction.docx`, SHA-256 `D700584CFDDA0D328A532F603CFCA3F0D68CE8AA4B181254A6EA04E76DFDA840`.
+- Source classification: derived orientation artifact, `authority: non-evidentiary`; it summarizes the existing twelve-source corpus and does not increase evidence source counts.
+- Raw layer: copied the exact root deliverable to `raw/sources/` without modification and registered it in [[raw/manifest]].
+- Wiki layer: created [[wiki/welcome|Welcome to the MediaHedge Knowledgebase]] and [[wiki/sources/mediahedge-knowledgebase-introduction|the derived source page]]; reshaped [[index]] into the primary welcoming home page while preserving the complete content catalog.
+- Schema and tooling: added derived-artifact lineage rules to [[AGENTS]] and mechanical enforcement to `tools\wiki-lint.ps1`.
+- Document features: editorial cover, reader-focused tour, role-based navigation, protection-stack summary, evidence guide and 18 live `obsidian://` links into the `MH Wiki` vault.
+- Document QA: passed 35 structural preset, numbering, page-setup, table-geometry, hyperlink and provenance checks plus a clean accessibility audit. LibreOffice was unavailable and Microsoft Word's PDF exporter stalled, so page-image visual QA could not be completed.
+- Open issues: underlying policy effective dates and authority remain unchanged in [[wiki/operations/research-backlog]].
+- Lint: passed with 45 Markdown files, 34 wiki pages and 13 raw files; 0 errors and 0 warnings.

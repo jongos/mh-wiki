@@ -9,6 +9,9 @@
 # Pre-architecture root copies; canonical immutable snapshots live in raw/sources/
 /MediaHedge_*_Financier_Brief.docx
 
+# Root deliverable; canonical immutable snapshot lives in raw/sources/
+/MediaHedge_Knowledgebase_Introduction.docx
+
 # OS metadata
 .DS_Store
 Thumbs.db

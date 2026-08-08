@@ -14,6 +14,7 @@ The agent owns the Markdown layer: create, revise, cross-link and lint it. The h
 4. Never promote an unsupported chat inference into the wiki as fact.
 5. If the wiki lacks evidence for an answer, say so. Do not manufacture a confident synthesis and do not file it back into the wiki.
 6. Legal, tax, regulatory and program-specific claims require current primary authority before being represented as current. The existing briefs are internal source material, not substitutes for current law or transaction documents.
+7. A document generated from the wiki is a derived artifact, not independent evidence. If retained in `raw/sources/`, label it `source_kind: derived-artifact` and `authority: non-evidentiary`, identify its `derived_from` pages, and do not increase evidence source counts or use it to corroborate the claims it summarizes.
 
 ## Canonical layout
 
@@ -70,6 +71,7 @@ tags:
 Additional fields:
 
 - Source pages: `source_file`, `source_hash`, and `ingested`.
+- Derived source pages: `source_kind: derived-artifact`, `authority: non-evidentiary`, and `derived_from`.
 - Claims tied to a time or policy: `as_of` when known.
 - Superseded pages: `superseded_by`.
 - Pages using judgment beyond direct source synthesis: an `Analysis and inference` section.
@@ -106,6 +108,7 @@ When asked to ingest one or more sources:
 3. Add the source and SHA-256 to `raw/manifest.md`.
 4. Read the complete source, including material tables, notes and exhibits. Inspect referenced images separately when they affect meaning.
 5. Create or update exactly one page in `wiki/sources/` describing scope, key claims, limits and related pages.
+   - If the source was generated from the wiki, label it as a derived artifact, preserve its lineage, and treat the ingest as navigation/presentation maintenance rather than new evidence.
 6. Update every affected concept, entity and synthesis page. A single source may touch many pages.
 7. Compare new claims against existing claims. Record unresolved conflicts in `wiki/operations/contradictions.md`; do not silently choose one.
 8. Update `wiki/operations/research-backlog.md` with new evidence gaps or verification needs.

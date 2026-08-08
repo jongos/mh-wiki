@@ -1,5 +1,5 @@
 ---
-title: MediaHedge Wiki Index
+title: Welcome to the MediaHedge Knowledgebase
 type: operations
 status: current
 updated: 2026-08-08
@@ -9,12 +9,47 @@ tags:
   - index
 ---
 
-# MediaHedge Wiki Index
+# Welcome to the MediaHedge Knowledgebase
 
-Content-oriented catalog of the compiled wiki. Read this first, then follow the most relevant links.
+Come on in. This wiki is a guided map of how MediaHedge thinks about film- and television-finance credit: how a production becomes financeable, how collateral earns borrowing value, how cash is captured, how risk changes after closing, and how a financing partner measures what actually came back.
+
+You do not need to read it front to back. Start with the story that matches your question, follow the internal links, and keep drilling until you reach the underlying source brief.
+
+> **The big idea:** verify the value, size the exposure, control the cash, monitor the change, and preserve the options.
+
+## Start your tour
+
+- [[wiki/welcome|Read the full welcome guide]] - a friendly introduction to MediaHedge, what the wiki teaches, and how to choose a reading path.
+- [[raw/sources/MediaHedge_Knowledgebase_Introduction.docx|Open the Word welcome guide]] - a polished offline introduction with live links back into this Obsidian vault.
+- [[wiki/overview|See the lending model in one view]] - the executive synthesis of the complete credit system.
+- [[wiki/syntheses/credit-lifecycle|Walk the film-finance credit lifecycle]] - follow a loan from initial screen through recovery.
+- [[wiki/syntheses/repayment-and-risk-map|Compare repayment sources and shared risks]] - see where contracted receivables, incentives, unsold rights, insurance and completion protection differ.
+- [[wiki/glossary|Keep the glossary nearby]] - translate specialized terms without losing your place.
+
+## What you can expect to learn
+
+- Why [[wiki/concepts/full-financing|full financing]] and delivery sit underneath several repayment paths.
+- How [[wiki/concepts/loan-sizing|eligible collateral and binding constraints]] determine commitment size.
+- How the [[wiki/concepts/protection-stack|protection stack]] connects verification, structure, risk transfer, surveillance and enforcement.
+- Why [[wiki/concepts/cash-control-and-waterfalls|payment directions, CAMA, account control, waterfalls and reconciliation]] are complementary rather than interchangeable.
+- How [[wiki/concepts/monitoring-and-servicing|active servicing]] turns production, collateral and cash variance into decisions.
+- How [[wiki/concepts/defaults-workouts-and-recoveries|workout governance]] preserves recovery options during stress.
+- How [[wiki/concepts/portfolio-construction|portfolio concentration]] and [[wiki/concepts/financier-return-economics|dated cash economics]] shape financing-partner outcomes.
+
+## Choose your route
+
+| If you are... | Begin with... | Then explore... |
+| --- | --- | --- |
+| New to film finance | [[wiki/welcome|Welcome Guide]] and [[wiki/glossary|Glossary]] | [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]] |
+| A financier or credit partner | [[wiki/syntheses/policy-rails-and-control-matrix|Policy Rails and Control Matrix]] | [[wiki/concepts/portfolio-construction|Portfolio Construction]] and [[wiki/concepts/financier-return-economics|Return Economics]] |
+| Focused on legal, closing or operations | [[wiki/concepts/security-package|Security Package]] | [[wiki/concepts/cash-control-and-waterfalls|Cash Control]] and [[wiki/concepts/forward-flow-governance|Forward-Flow Governance]] |
+| Focused on risk and recovery | [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]] | [[wiki/concepts/defaults-workouts-and-recoveries|Defaults, Workouts and Recoveries]] |
+
+## Complete wiki map
 
 ## Orientation
 
+- [[wiki/welcome|Welcome to the MediaHedge Knowledgebase]] - the full welcoming introduction and reader guide.
 - [[wiki/overview|MediaHedge Wiki Overview]] - executive synthesis of the lending model and its central thesis.
 - [[wiki/entities/mediahedge|MediaHedge]] - the organization's role across origination, underwriting, servicing and partner governance.
 - [[wiki/glossary|Glossary]] - shared film-finance, collateral, servicing and return terminology.
@@ -62,6 +97,10 @@ Content-oriented catalog of the compiled wiki. Read this first, then follow the 
 - [[wiki/sources/tax-credit-receivables-as-collateral|Tax-Credit Receivables as Collateral]] - source brief for incentive-backed lending.
 - [[wiki/sources/where-the-financiers-return-comes-from|Where the Financier's Return Comes From]] - source brief for lender economics and reporting.
 - [[wiki/sources/why-a-production-must-be-fully-financed|Why a Production Must Be Fully Financed]] - source brief for sources-and-uses sufficiency.
+
+## Derived orientation artifact
+
+- [[wiki/sources/mediahedge-knowledgebase-introduction|Welcome to the MediaHedge Knowledgebase - Word Guide]] - provenance page for the generated, non-evidentiary introduction with live Obsidian links.
 
 ## Operations
 

@@ -4,11 +4,12 @@ This vault is a persistent, source-grounded knowledge base for MediaHedge's film
 
 ## Start here
 
-1. Open [[index]] for the complete content map.
-2. Read [[wiki/overview]] for the executive-level synthesis.
-3. Use [[wiki/syntheses/credit-lifecycle]] to follow a loan from screening through recovery.
-4. Use [[wiki/syntheses/policy-rails-and-control-matrix]] for current quantitative guardrails and their source basis.
-5. Read [[AGENTS]] before asking an LLM to ingest, update, query or lint the wiki.
+1. Open [[index]] for the welcoming home page and complete content map.
+2. Read [[wiki/welcome|Welcome to the MediaHedge Knowledgebase]] for a friendly guided tour.
+3. Read [[wiki/overview]] for the executive-level synthesis.
+4. Use [[wiki/syntheses/credit-lifecycle]] to follow a loan from screening through recovery.
+5. Use [[wiki/syntheses/policy-rails-and-control-matrix]] for source-stated quantitative guardrails and their verification status.
+6. Read [[AGENTS]] before asking an LLM to ingest, update, query or lint the wiki.
 
 ## Architecture
 

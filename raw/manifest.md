@@ -3,7 +3,7 @@ title: Raw Source Manifest
 type: operations
 status: current
 updated: 2026-08-08
-source_count: 12
+source_count: 13
 tags:
   - mediahedge
   - provenance
@@ -27,7 +27,10 @@ Canonical ingestion snapshots. SHA-256 identifies the exact binary reviewed on 2
 | [[raw/sources/MediaHedge_Tax_Credit_Receivables_as_Collateral_Financier_Brief.docx|Tax-Credit Receivables as Collateral]] | `B65D82D4412620142278B9EE455C86BB3D5AEEF313A65DAF5D7711F5A1027154` | ingested | [[wiki/sources/tax-credit-receivables-as-collateral]] |
 | [[raw/sources/MediaHedge_Where_the_Financiers_Return_Comes_From_Financier_Brief.docx|Where the Financier's Return Comes From]] | `9304612BB193C0F7489D7DA2C6ECC4020A237E8D87823D66B3CA9703F56BB685` | ingested | [[wiki/sources/where-the-financiers-return-comes-from]] |
 | [[raw/sources/MediaHedge_Why_a_Production_Must_Be_Fully_Financed_Financier_Brief.docx|Why a Production Must Be Fully Financed]] | `117445873358AEA423C25C9CDE1A073231C5D04F70FDCE9F9C6D6998A15553D9` | ingested | [[wiki/sources/why-a-production-must-be-fully-financed]] |
+| [[raw/sources/MediaHedge_Knowledgebase_Introduction.docx|Welcome to the MediaHedge Knowledgebase]] | `D700584CFDDA0D328A532F603CFCA3F0D68CE8AA4B181254A6EA04E76DFDA840` | ingested - derived, non-evidentiary | [[wiki/sources/mediahedge-knowledgebase-introduction]] |
 
 ## Ingestion note
 
-The raw files did not expose an explicit publication or policy-effective date. Time-sensitive claims therefore remain `needs-review` items in [[wiki/operations/research-backlog]] until dated authority is added.
+The twelve financier briefs did not expose an explicit publication or policy-effective date. Time-sensitive claims therefore remain `needs-review` items in [[wiki/operations/research-backlog]] until dated authority is added.
+
+`MediaHedge_Knowledgebase_Introduction.docx` is a derived orientation artifact generated from the compiled wiki. It adds no independent evidence and must not be used to corroborate or increase the source count of the claims it summarizes.

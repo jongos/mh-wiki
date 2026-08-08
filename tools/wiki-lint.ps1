@@ -137,6 +137,14 @@ foreach ($file in $wikiFiles) {
         if ($content -notmatch '\[\[wiki/(syntheses/|overview(?:\||\]\]))') {
             $errors.Add("Source page missing synthesis or overview link: $relative")
         }
+        if ($frontmatter -match '(?m)^source_kind:\s*derived-artifact\s*$') {
+            if ($frontmatter -notmatch '(?m)^authority:\s*non-evidentiary\s*$') {
+                $errors.Add("Derived source page must be marked authority: non-evidentiary: $relative")
+            }
+            if ($frontmatter -notmatch '(?m)^derived_from:\s*$') {
+                $errors.Add("Derived source page missing derived_from lineage: $relative")
+            }
+        }
     }
     if ($relative -like 'wiki/concepts/*') {
         if ($content -notmatch '(?m)^## Source basis\s*$') {
