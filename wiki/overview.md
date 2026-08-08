@@ -73,8 +73,8 @@ The strongest connective tissue across the corpus is the discipline of not confu
 
 ## How to use this wiki
 
-Use [[index]] to navigate by concept or source. Use the concept pages for durable explanations, the synthesis pages for cross-source questions, and the source pages to trace claims back to the raw Word briefs. Material transaction decisions still require the executed closing set and current legal, tax, insurance and program-specific analysis.
+Use [[MediaHedge Knowledgebase]] as the home note. Financiers can follow the [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] by investment question; the [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] organizes the same system chronologically. Use concept pages for durable explanations, synthesis pages for cross-source questions and source pages to trace claims back to the raw Word briefs. Material transaction decisions still require the executed closing set and current legal, tax, insurance and program-specific analysis.
 
 ## Source basis
 
-This overview synthesizes all twelve source pages listed in [[index#Source summaries]]. No external authority was added during the initial ingest.
+This overview synthesizes all twelve source pages listed in [[MediaHedge Knowledgebase#Source summaries]]. No external authority was added during the initial ingest.

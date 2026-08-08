@@ -37,7 +37,7 @@ Start with [[wiki/overview|MediaHedge Wiki Overview]], keep [[wiki/glossary|the 
 
 ### If you are a financier or credit partner
 
-Begin with [[wiki/syntheses/policy-rails-and-control-matrix|Policy Rails and Control Matrix]], walk [[wiki/syntheses/credit-lifecycle|the Credit Lifecycle]], and then explore [[wiki/concepts/portfolio-construction|Portfolio Construction]] and [[wiki/concepts/financier-return-economics|Return Economics]].
+Begin with the [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]], check the [[wiki/syntheses/policy-rails-and-control-matrix|Policy Rails and Control Matrix]], walk [[wiki/syntheses/credit-lifecycle|the Credit Lifecycle]], and then explore [[wiki/concepts/portfolio-construction|Portfolio Construction]] and [[wiki/concepts/financier-return-economics|Return Economics]].
 
 ### If you work in legal, closing or operations
 
@@ -54,18 +54,19 @@ Connect [[wiki/concepts/protection-stack|Protection Stack]] to [[wiki/concepts/m
 - **Inference:** reasoning that goes beyond direct source language and is labeled accordingly.
 - **Open question:** a gap that still needs evidence, authority or a decision.
 
-The vault keeps three layers distinct: immutable evidence in [[raw/manifest|Raw Sources]], maintained knowledge in [[index|the Wiki]], and operating rules in [[AGENTS|the Schema]]. This introduction is a derived guide to those layers, not a new source of truth.
+The vault keeps three layers distinct: immutable evidence in [[raw/manifest|Raw Sources]], maintained knowledge in [[MediaHedge Knowledgebase|the Wiki]], and operating rules in [[AGENTS|the Schema]]. This introduction is a derived guide to those layers, not a new source of truth.
 
 ## Five-minute starting route
 
-1. Return to the [[index|Welcoming Wiki Index]].
+1. Return to the [[MediaHedge Knowledgebase|Welcoming Wiki Index]].
 2. Read [[wiki/overview|the Executive Overview]].
-3. Walk [[wiki/syntheses/credit-lifecycle|the Film-Finance Credit Lifecycle]].
-4. Keep [[wiki/glossary|the Glossary]] nearby.
-5. Check [[wiki/operations/research-backlog|the Research Backlog]] to see what still needs policy, legal, operational or performance evidence.
+3. If you are evaluating the model, follow the [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]].
+4. Walk [[wiki/syntheses/credit-lifecycle|the Film-Finance Credit Lifecycle]].
+5. Keep [[wiki/glossary|the Glossary]] nearby.
+6. Check [[wiki/operations/research-backlog|the Research Backlog]] to see what still needs policy, legal, operational or performance evidence.
 
 Welcome in. Pick a thread, follow the links, and let the system reveal itself one control at a time.
 
 ## Source basis
 
-This welcome page is derived from the twelve-source corpus summarized in [[wiki/overview]] and cataloged in [[index#Source summaries]]. It adds no independent evidence.
+This welcome page is derived from the twelve-source corpus summarized in [[wiki/overview]] and cataloged in [[MediaHedge Knowledgebase#Source summaries]]. It adds no independent evidence.

@@ -52,6 +52,10 @@ An estimate is not an unconditional government receivable, and a completion guar
 
 Track eligible spend versus budget, cost reports, payroll and vendor support, filing milestones, audit status, certificate issuance, buyer settlement, expected-versus-actual timing and any change in program or claimant standing. Changes must update [[wiki/concepts/loan-sizing|the borrowing base]] and [[wiki/concepts/monitoring-and-servicing|the collection forecast]].
 
+## Continue the diligence
+
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+
 ## Source basis
 
 - Primary: [[wiki/sources/tax-credit-receivables-as-collateral]] and [[raw/sources/MediaHedge_Tax_Credit_Receivables_as_Collateral_Financier_Brief.docx]].

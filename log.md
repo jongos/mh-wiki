@@ -45,3 +45,15 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Document QA: passed 35 structural preset, numbering, page-setup, table-geometry, hyperlink and provenance checks plus a clean accessibility audit. LibreOffice was unavailable and Microsoft Word's PDF exporter stalled, so page-image visual QA could not be completed.
 - Open issues: underlying policy effective dates and authority remain unchanged in [[wiki/operations/research-backlog]].
 - Lint: passed with 45 Markdown files, 34 wiki pages and 13 raw files; 0 errors and 0 warnings.
+
+## [2026-08-08] maintenance | Financier-first navigation and home-note resilience
+
+- Sources read: the compiled overview, all twelve concept pages, the MediaHedge entity page, three existing syntheses and the twelve evidentiary source-summary pages; no raw snapshots were changed.
+- Reader lens: reorganized the entry experience around the questions a financing partner is likely to ask—financeability, repayment, sizing, control, protection, monitoring, recovery, portfolio construction and realized return.
+- Page created: [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]], including five-minute, twenty-minute and full-review paths; eight diligence gates; expected outputs; pause points; and explicit evidence boundaries.
+- Navigation updated: added a financier quick start and decision-question map to [[MediaHedge Knowledgebase]], linked the guide from the welcome and overview pages, and added consistent home/guide/lifecycle navigation to all twelve concept pages.
+- Compatibility: retained the descriptive Obsidian home note and restored `index.md` as an embedded compatibility alias so links in earlier exports, including the Word welcome guide, continue to resolve.
+- Schema, templates and tooling: documented the primary home-note convention in [[AGENTS]], updated concept and synthesis templates, and changed the linter to validate the named home note and financier navigation.
+- Key decision: the new guide is a synthesis and navigation layer over the twelve-source corpus; it adds no independent evidence and does not change policy status or source counts.
+- Open issues: policy freshness, transaction-specific legal authority, operating thresholds and realized performance evidence remain in [[wiki/operations/research-backlog]].
+- Lint: passed with 47 Markdown files, 35 wiki pages and 13 raw sources; 0 errors and 0 warnings.

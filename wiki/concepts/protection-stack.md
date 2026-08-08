@@ -48,7 +48,11 @@ The value of the stack depends on consistency across underwriting conclusions, l
 - Pricing cannot cure ineligible collateral or a broken enforcement path.
 - Correlated sources must be assessed at both transaction and portfolio levels.
 
+## Continue the diligence
+
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+
 ## Source basis
 
 - Primary: [[wiki/sources/mediahedge-protection-stack]] and [[raw/sources/MediaHedge_Protection_Stack_Financier_Brief.docx]].
-- Integrated from the full-financing, sizing, tax-credit, security, cash-control, insurance and servicing source pages indexed in [[index]].
+- Integrated from the full-financing, sizing, tax-credit, security, cash-control, insurance and servicing source pages indexed in [[MediaHedge Knowledgebase]].

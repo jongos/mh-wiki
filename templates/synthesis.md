@@ -29,6 +29,10 @@ Integrated answer with links to supporting concepts.
 
 - Contradiction, missing evidence or time-sensitive dependency.
 
+## Continue the diligence
+
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+
 ## Analysis and inference
 
 Clearly label conclusions that go beyond direct source statements.

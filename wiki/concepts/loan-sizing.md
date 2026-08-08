@@ -55,6 +55,10 @@ A finance expert should be able to reproduce the commitment from the collateral 
 
 Aggregate LTV does not protect capital if the value is ineligible, correlated, unreachable or maturing after the loan. Gross loan-to-budget is not a substitute for [[wiki/concepts/full-financing|sources-and-uses sufficiency]]. Fees and capitalized interest can increase exposure after closing. A gap cap calculated against a final loan that itself contains gap creates circularity and must be solved and audited explicitly. High pricing cannot cure a failed structural gate.
 
+## Continue the diligence
+
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+
 ## Source basis
 
 - Primary: [[wiki/sources/how-mediahedge-sizes-a-loan]] and [[raw/sources/MediaHedge_How_MediaHedge_Sizes_a_Loan_Financier_Brief.docx]].

@@ -45,6 +45,10 @@ A sources-and-uses table can balance while remaining unfinanceable. Common failu
 
 Full financing is the prerequisite for [[wiki/concepts/loan-sizing|Loan Sizing]], supports [[wiki/concepts/production-insurance|Production Insurance]] and completion coverage, and reduces the chance that [[wiki/concepts/defaults-workouts-and-recoveries|protective advances]] become necessary. [[wiki/concepts/monitoring-and-servicing|Servicing]] keeps the test current through cost-to-complete analysis.
 
+## Continue the diligence
+
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+
 ## Source basis
 
 - Primary: [[wiki/sources/why-a-production-must-be-fully-financed]] and [[raw/sources/MediaHedge_Why_a_Production_Must_Be_Fully_Financed_Financier_Brief.docx]].

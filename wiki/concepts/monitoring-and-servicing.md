@@ -44,6 +44,10 @@ Volume is not control. Stale or unaudited reports, percentage-complete measures 
 
 Servicing keeps [[wiki/concepts/full-financing|Full Financing]], [[wiki/concepts/loan-sizing|the borrowing base]] and [[wiki/concepts/cash-control-and-waterfalls|cash control]] current after closing. Material exceptions move into [[wiki/concepts/defaults-workouts-and-recoveries|Defaults, Workouts and Recoveries]] under the authority matrix in [[wiki/concepts/forward-flow-governance|Forward-Flow Governance]].
 
+## Continue the diligence
+
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+
 ## Source basis
 
 - Primary: [[wiki/sources/monitoring-and-servicing-after-closing]] and [[raw/sources/MediaHedge_Monitoring_and_Servicing_After_Closing_Financier_Brief.docx]].

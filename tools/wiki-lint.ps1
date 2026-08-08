@@ -164,13 +164,38 @@ foreach ($file in $wikiFiles) {
     }
 }
 
-$indexPath = Join-Path $vault 'index.md'
-$indexContent = Get-Content -Raw -LiteralPath $indexPath
+$homeCandidates = @('MediaHedge Knowledgebase.md', 'index.md')
+$homePath = $null
+foreach ($candidate in $homeCandidates) {
+    $candidatePath = Join-Path $vault $candidate
+    if (Test-Path -LiteralPath $candidatePath -PathType Leaf) {
+        $homePath = $candidatePath
+        break
+    }
+}
+if ($null -eq $homePath) {
+    $errors.Add('Missing home note: expected MediaHedge Knowledgebase.md or index.md')
+    $homeContent = ''
+} else {
+    $homeContent = Get-Content -Raw -LiteralPath $homePath
+}
 foreach ($file in $wikiFiles) {
     $relative = $relativeByFile[$file.FullName]
     $target = ($relative -replace '\.md$', '').Replace('\', '/')
-    if ($indexContent -notmatch [regex]::Escape("[[$target")) {
-        $warnings.Add("Wiki page absent from index.md: $relative")
+    if ($homeContent -notmatch [regex]::Escape("[[$target")) {
+        $warnings.Add("Wiki page absent from home note: $relative")
+    }
+}
+
+$financierGuideTarget = '[[wiki/syntheses/financier-diligence-route'
+if ($homeContent -notmatch [regex]::Escape($financierGuideTarget)) {
+    $errors.Add('Home note does not link the Financier Diligence Guide')
+}
+foreach ($file in Get-ChildItem -LiteralPath (Join-Path $vault 'wiki\concepts') -File -Filter '*.md') {
+    $relative = $relativeByFile[$file.FullName]
+    $content = Get-Content -Raw -LiteralPath $file.FullName
+    if ($content -notmatch [regex]::Escape($financierGuideTarget)) {
+        $errors.Add("Concept page missing financier navigation: $relative")
     }
 }
 

@@ -50,6 +50,10 @@ Obligors may retain setoff, withholding or deduction rights. Manager exculpation
 
 Cash control operationalizes the [[wiki/concepts/security-package|Security Package]], supplies evidence to [[wiki/concepts/monitoring-and-servicing|Servicing]], and preserves recoveries during [[wiki/concepts/defaults-workouts-and-recoveries|Workout]]. It also provides the dated ledger needed for [[wiki/concepts/financier-return-economics|Return Economics]].
 
+## Continue the diligence
+
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+
 ## Source basis
 
 - Primary: [[wiki/sources/cama-account-control-and-collection-waterfalls]] and [[raw/sources/MediaHedge_CAMA_Account_Control_and_Collection_Waterfalls_Financier_Brief.docx]].

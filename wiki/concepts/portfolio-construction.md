@@ -41,6 +41,10 @@ Borrower SPVs, titles and territories do not create diversification when the und
 
 Portfolio construction aggregates the outputs of [[wiki/concepts/loan-sizing|Loan Sizing]], [[wiki/concepts/monitoring-and-servicing|Servicing]], [[wiki/concepts/forward-flow-governance|Forward-Flow Governance]] and [[wiki/concepts/financier-return-economics|Return Economics]].
 
+## Continue the diligence
+
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+
 ## Source basis
 
 - Primary: [[wiki/sources/portfolio-construction-and-concentration-risk]] and [[raw/sources/MediaHedge_Portfolio_Construction_and_Concentration_Risk_Financier_Brief.docx]].

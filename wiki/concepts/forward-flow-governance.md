@@ -45,6 +45,10 @@ Subjective eligibility or approvals without deadlines can make a commitment econ
 
 The buy-box incorporates [[wiki/concepts/loan-sizing|Loan Sizing]] and [[wiki/concepts/portfolio-construction|Portfolio Construction]]. Delegated authority governs [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]], and reserved matters determine control during [[wiki/concepts/defaults-workouts-and-recoveries|Defaults, Workouts and Recoveries]].
 
+## Continue the diligence
+
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+
 ## Source basis
 
 - Primary: [[wiki/sources/forward-flow-partnerships-and-financier-governance]] and [[raw/sources/MediaHedge_Forward_Flow_Partnerships_and_Financier_Governance_Financier_Brief.docx]].

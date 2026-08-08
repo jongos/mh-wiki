@@ -22,7 +22,9 @@ The agent owns the Markdown layer: create, revise, cross-link and lint it. The h
 /
 ├── AGENTS.md                 operating schema
 ├── README.md                 human entry point
-├── index.md                  content catalog
+├── MediaHedge Knowledgebase.md
+│                              primary welcome and content catalog
+├── index.md                  compatibility alias for older links
 ├── log.md                    append-only activity history
 ├── raw/
 │   ├── manifest.md           source identity, hash and ingest status
@@ -96,8 +98,16 @@ Quantitative policy rails must show their source and effective date when availab
 - Link a concept on its first meaningful mention; avoid linking every repetition.
 - Every source-summary page must link its raw file, related concepts and at least one synthesis or overview page.
 - Every concept page must identify its source basis and link adjacent concepts.
-- Update `index.md` whenever a page is created, renamed, superseded or materially re-scoped.
+- Update `MediaHedge Knowledgebase.md` whenever a page is created, renamed, superseded or materially re-scoped.
 - Prefer updating an existing concept over creating a near-duplicate page.
+
+## Reader navigation
+
+- Treat `MediaHedge Knowledgebase.md` as the primary home note and preserve `index.md` as a compatibility alias for older exports and external links.
+- Give financiers a decision-first route: financeability, repayment, sizing, control, protection, monitoring, recovery, portfolio construction and realized economics.
+- Every durable concept page should link back to the home note, the financier diligence route and the full credit lifecycle.
+- Keep source summaries available for traceability, but do not make readers navigate the source registry before they can understand the credit question.
+- Put material evidence limitations near decision guidance, not only in the operations register.
 
 ## Ingest workflow
 
@@ -112,7 +122,7 @@ When asked to ingest one or more sources:
 6. Update every affected concept, entity and synthesis page. A single source may touch many pages.
 7. Compare new claims against existing claims. Record unresolved conflicts in `wiki/operations/contradictions.md`; do not silently choose one.
 8. Update `wiki/operations/research-backlog.md` with new evidence gaps or verification needs.
-9. Update `index.md`.
+9. Update `MediaHedge Knowledgebase.md`.
 10. Append one structured entry to `log.md`.
 11. Run the health checks and repair issues introduced by the ingest.
 

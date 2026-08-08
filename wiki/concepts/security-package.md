@@ -41,6 +41,10 @@ A UCC financing statement does not prove ownership, attachment, priority in ever
 
 The security package establishes the legal path; [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]] establishes the operational path of proceeds. [[wiki/concepts/forward-flow-governance|Forward-Flow Governance]] determines who may exercise the rights, and [[wiki/concepts/defaults-workouts-and-recoveries|Workout Governance]] determines how they are used under stress.
 
+## Continue the diligence
+
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+
 ## Source basis
 
 - Primary: [[wiki/sources/mediahedge-security-package]] and [[raw/sources/MediaHedge_Security_Package_Financier_Brief.docx]].

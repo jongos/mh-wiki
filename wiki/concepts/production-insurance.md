@@ -40,6 +40,10 @@ Coverage can be limited by exclusions, warranties, misrepresentation, late notic
 
 Production insurance sits within the [[wiki/concepts/protection-stack|Protection Stack]] but cannot replace [[wiki/concepts/full-financing|Full Financing]], completion protection, collateral underwriting or [[wiki/concepts/security-package|security]]. Claims and proceeds are monitored under [[wiki/concepts/monitoring-and-servicing|Servicing]].
 
+## Continue the diligence
+
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+
 ## Source basis
 
 - Primary: [[wiki/sources/film-production-insurance-stack]] and [[raw/sources/MediaHedge_Film_Production_Insurance_Stack_Financier_Brief.docx]].

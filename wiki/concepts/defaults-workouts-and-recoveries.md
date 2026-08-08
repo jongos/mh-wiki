@@ -45,6 +45,10 @@ Claim, cure and termination deadlines may expire before investigation is complet
 
 Workouts begin where [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]] escalates a material variance. Their available remedies depend on the [[wiki/concepts/security-package|Security Package]], preserved [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]] and the investor authority established by [[wiki/concepts/forward-flow-governance|Forward-Flow Governance]].
 
+## Continue the diligence
+
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+
 ## Source basis
 
 - Primary: [[wiki/sources/defaults-workouts-and-recoveries]] and [[raw/sources/MediaHedge_Defaults_Workouts_and_Recoveries_Financier_Brief.docx]].

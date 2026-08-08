@@ -50,6 +50,10 @@ A simple average of loan rates is not a portfolio yield. Upfront fees can inflat
 
 Return measurement depends on the dated evidence produced by [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]] and [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]]. [[wiki/concepts/defaults-workouts-and-recoveries|Workouts]] determine stressed cash timing and cost, while [[wiki/concepts/portfolio-construction|Portfolio Construction]] aggregates realized performance and expected loss across risk cohorts.
 
+## Continue the diligence
+
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+
 ## Source basis
 
 - Primary: [[wiki/sources/where-the-financiers-return-comes-from]] and [[raw/sources/MediaHedge_Where_the_Financiers_Return_Comes_From_Financier_Brief.docx]].

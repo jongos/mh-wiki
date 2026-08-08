@@ -56,4 +56,4 @@ The source corpus does not establish policy effective dates, delegated approval 
 
 ## Source basis
 
-All twelve source-summary pages in [[index#Source summaries]], with role descriptions concentrated in [[wiki/sources/forward-flow-partnerships-and-financier-governance]], [[wiki/sources/monitoring-and-servicing-after-closing]], [[wiki/sources/mediahedge-security-package]] and [[wiki/sources/defaults-workouts-and-recoveries]].
+All twelve source-summary pages in [[MediaHedge Knowledgebase#Source summaries]], with role descriptions concentrated in [[wiki/sources/forward-flow-partnerships-and-financier-governance]], [[wiki/sources/monitoring-and-servicing-after-closing]], [[wiki/sources/mediahedge-security-package]] and [[wiki/sources/defaults-workouts-and-recoveries]].

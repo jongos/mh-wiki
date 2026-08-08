@@ -4,12 +4,13 @@ This vault is a persistent, source-grounded knowledge base for MediaHedge's film
 
 ## Start here
 
-1. Open [[index]] for the welcoming home page and complete content map.
-2. Read [[wiki/welcome|Welcome to the MediaHedge Knowledgebase]] for a friendly guided tour.
-3. Read [[wiki/overview]] for the executive-level synthesis.
-4. Use [[wiki/syntheses/credit-lifecycle]] to follow a loan from screening through recovery.
-5. Use [[wiki/syntheses/policy-rails-and-control-matrix]] for source-stated quantitative guardrails and their verification status.
-6. Read [[AGENTS]] before asking an LLM to ingest, update, query or lint the wiki.
+1. Open [[MediaHedge Knowledgebase]] for the welcoming home page and complete content map.
+2. If you are evaluating the model as a financier, follow [[wiki/syntheses/financier-diligence-route|the Financier Diligence Guide]].
+3. Read [[wiki/welcome|Welcome to the MediaHedge Knowledgebase]] for a friendly guided tour.
+4. Read [[wiki/overview]] for the executive-level synthesis.
+5. Use [[wiki/syntheses/credit-lifecycle]] to follow a loan from screening through recovery.
+6. Use [[wiki/syntheses/policy-rails-and-control-matrix]] for source-stated quantitative guardrails and their verification status.
+7. Read [[AGENTS]] before asking an LLM to ingest, update, query or lint the wiki.
 
 ## Architecture
 
@@ -18,7 +19,7 @@ This vault is a persistent, source-grounded knowledge base for MediaHedge's film
 - `templates/` contains page templates.
 - `tools/` contains local health-check utilities.
 - `AGENTS.md` defines the rules an LLM must follow.
-- `index.md` is the content-oriented catalog.
+- `MediaHedge Knowledgebase.md` is the primary welcome and content catalog; `index.md` preserves older links.
 - `log.md` is the append-only activity history.
 
 The original Word briefs present in the vault root at initial setup were left untouched. Canonical ingestion snapshots are stored in `raw/sources/` and identified by SHA-256 in [[raw/manifest]].

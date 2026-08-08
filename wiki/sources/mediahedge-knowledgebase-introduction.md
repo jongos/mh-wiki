@@ -9,7 +9,7 @@ source_hash: D700584CFDDA0D328A532F603CFCA3F0D68CE8AA4B181254A6EA04E76DFDA840
 source_kind: derived-artifact
 authority: non-evidentiary
 derived_from:
-  - "[[index]]"
+  - "[[MediaHedge Knowledgebase]]"
   - "[[wiki/overview]]"
   - "[[wiki/syntheses/credit-lifecycle]]"
   - "[[wiki/syntheses/policy-rails-and-control-matrix]]"

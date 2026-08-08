@@ -34,6 +34,10 @@ Core mechanism, sequence or control structure.
 
 - [[wiki/overview]]
 
+## Continue the diligence
+
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+
 ## Source basis
 
 - Add a source-summary link and raw-source link for each material source.
