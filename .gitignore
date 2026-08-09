@@ -18,5 +18,6 @@ Thumbs.db
 
 # Local Obsidian session and plugin state; durable vault settings remain tracked.
 /.obsidian/workspace*.json
+/.obsidian/appearance.json
 /.obsidian/cache
 /.obsidian/plugins/

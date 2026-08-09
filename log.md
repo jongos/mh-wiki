@@ -144,3 +144,15 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Documentation: updated the human and agent instructions to require opening and publishing `MH Wiki` itself and to remove stale remote paths beginning with `MH Wiki/` during the next Publish reconciliation.
 - Evidence integrity: no public claim, reader page, source count, raw manifest or immutable raw source changed.
 - Verification: the enhanced linter passed with 49 Markdown files, 37 wiki pages, 538 active wikilinks, 10 published diagram embeds, nine SVG diagrams, 13 raw sources, 0 errors and 0 warnings.
+
+## [2026-08-09] maintenance | Live Publish verification and vault registration
+
+- Live URL: inspected `https://publish.obsidian.md/mediahdge/`, which redirected to the incorrectly prefixed `MH Wiki/MediaHedge Knowledgebase` path.
+- Confirmed symptoms: the public file explorer exposed private folders and maintenance notes, the page displayed both the Publish site title and note H1, and the browser loaded Obsidian's application stylesheet without the custom root `publish.css`.
+- Asset status: the MediaHedge banner and credit-journey SVG loaded successfully, confirming that the new media itself was not the cause of the failure.
+- Application diagnosis: Obsidian's global registry contained only the parent `MD-wiki` directory, so opening a path inside `MH Wiki` continued to select the parent even after the child configuration was repaired.
+- System repair: backed up Obsidian's vault registry, registered `MH Wiki` as its own vault, marked it active, opened it by exact vault ID and confirmed creation of the child vault workspace; the parent remains available but has no Publish site connection.
+- Recurrence prevention: extended the linter to require that the canonical wiki root is present in Obsidian's global registered-vault list on Windows.
+- Remaining deployment action: reconcile Publish changes from the now-open `MH Wiki` vault so stale remote paths are deleted and the root stylesheet, public notes and assets are uploaded without the `MH Wiki/` prefix.
+- Evidence integrity: no reader-facing claim, raw manifest or immutable raw source changed.
+- Verification: the parent Publish configuration remained absent after the correctly registered child vault opened; JSON, PowerShell syntax and the complete wiki lint passed with 0 errors and 0 warnings.

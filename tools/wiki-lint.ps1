@@ -85,6 +85,25 @@ function Test-PublishVaultConfiguration {
             $script:warnings.Add("Could not inspect the parent Publish configuration: $($_.Exception.Message)")
         }
     }
+
+    if (-not [string]::IsNullOrWhiteSpace($env:APPDATA)) {
+        $obsidianRegistryPath = Join-Path $env:APPDATA 'obsidian\obsidian.json'
+        if (Test-Path -LiteralPath $obsidianRegistryPath -PathType Leaf) {
+            try {
+                $obsidianRegistry = (Read-Utf8Text -Path $obsidianRegistryPath) | ConvertFrom-Json
+                $registeredPaths = @(
+                    $obsidianRegistry.vaults.PSObject.Properties |
+                        ForEach-Object { [IO.Path]::GetFullPath([string]$_.Value.path).TrimEnd([char[]]'\/') }
+                )
+                $normalizedVaultPath = [IO.Path]::GetFullPath($script:vault).TrimEnd([char[]]'\/')
+                if ($registeredPaths -notcontains $normalizedVaultPath) {
+                    $script:errors.Add("This directory is not registered as an Obsidian vault; the app may silently use a registered parent and publish broken prefixed paths")
+                }
+            } catch {
+                $script:warnings.Add("Could not inspect Obsidian's registered vaults: $($_.Exception.Message)")
+            }
+        }
+    }
 }
 
 function Resolve-WikiTarget {

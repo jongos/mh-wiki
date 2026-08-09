@@ -16,5 +16,18 @@
   "word-count": true,
   "file-recovery": true,
   "publish": true,
-  "sync": false
+  "sync": false,
+  "footnotes": false,
+  "daily-notes": true,
+  "slash-command": false,
+  "editor-status": true,
+  "bookmarks": true,
+  "markdown-importer": false,
+  "zk-prefixer": false,
+  "random-note": false,
+  "slides": false,
+  "audio-recorder": false,
+  "workspaces": false,
+  "bases": true,
+  "webviewer": false
 }
