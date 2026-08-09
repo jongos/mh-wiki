@@ -161,6 +161,7 @@ Periodically check for:
 
 - unmatched, nested or empty Obsidian wikilink delimiters (`[[` and `]]`);
 - broken or ambiguous wikilinks;
+- unescaped wikilink alias separators inside Markdown tables;
 - wikilinks to missing headings or block references;
 - pages absent from the private internal catalog;
 - published pages absent from the public home note;

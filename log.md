@@ -88,3 +88,11 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Publish styling: updated `publish.css` so embedded images retain their aspect ratio and scale down to the available page width on smaller screens.
 - Evidence impact: presentation-only change; no source snapshot, claim, policy status or source count changed.
 - Lint: passed with 528 active wikilinks, 0 errors and 0 warnings; the embedded image target resolves inside the vault.
+
+## [2026-08-09] lint | Markdown-table wikilink aliases
+
+- Root cause: Obsidian alias links use `|`, but an unescaped alias separator inside a Markdown table is parsed as a column boundary; this can display a fragment such as `[[wiki/concepts/full-financing` even though the target file exists.
+- Scope: scanned every Markdown table in the vault for active wikilinks containing an unescaped alias separator.
+- Repairs: changed 31 aliases across 24 table rows to the table-safe `\|` form in `wiki/syntheses/credit-lifecycle.md`, `wiki/concepts/protection-stack.md` and `raw/manifest.md`; no source snapshot was modified.
+- Tooling: added a permanent linter rule that reports the affected file, line and link whenever an unescaped alias separator appears inside a table.
+- Verification: a temporary broken-table fixture was correctly rejected and removed; the complete vault then passed with 528 active wikilinks, 0 errors and 0 warnings.

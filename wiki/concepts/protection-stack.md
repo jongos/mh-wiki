@@ -29,11 +29,11 @@ The MediaHedge protection stack is a layered credit architecture in which each c
 
 | Risk | Primary protections |
 | --- | --- |
-| Failure to finish or deliver | [[wiki/concepts/full-financing|Full Financing]], contingency, completion guaranty and takeover rights |
-| Collateral impairment | [[wiki/concepts/loan-sizing|Eligibility and sizing]], assignments, liens, reserves and obligor analysis |
-| Cash diversion | Payment directions, [[wiki/concepts/cash-control-and-waterfalls|controlled accounts and waterfall]] |
-| Casualty or liability | [[wiki/concepts/production-insurance|Risk-specific insurance]] |
-| Deterioration or default | [[wiki/concepts/monitoring-and-servicing|Monitoring]], triggers, cure and [[wiki/concepts/defaults-workouts-and-recoveries|workout governance]] |
+| Failure to finish or deliver | [[wiki/concepts/full-financing\|Full Financing]], contingency, completion guaranty and takeover rights |
+| Collateral impairment | [[wiki/concepts/loan-sizing\|Eligibility and sizing]], assignments, liens, reserves and obligor analysis |
+| Cash diversion | Payment directions, [[wiki/concepts/cash-control-and-waterfalls\|controlled accounts and waterfall]] |
+| Casualty or liability | [[wiki/concepts/production-insurance\|Risk-specific insurance]] |
+| Deterioration or default | [[wiki/concepts/monitoring-and-servicing\|Monitoring]], triggers, cure and [[wiki/concepts/defaults-workouts-and-recoveries\|workout governance]] |
 | Operational or agency failure | Custody, audit, data portability, reserved matters and replacement servicing |
 
 ## Integration rule

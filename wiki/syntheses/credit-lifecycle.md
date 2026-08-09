@@ -69,12 +69,12 @@ The lifecycle is iterative rather than linear. Production progress turns costs i
 
 | Lifecycle stage | Related reading |
 | --- | --- |
-| Full financing | [[wiki/concepts/full-financing|Full Financing]] |
-| Eligibility and sizing | [[wiki/concepts/loan-sizing|Loan Sizing]] and [[wiki/concepts/tax-credit-collateral|Tax-Credit Collateral]] |
-| Closing protection | [[wiki/concepts/protection-stack|Protection Stack]], [[wiki/concepts/security-package|Security Package]] and [[wiki/concepts/cash-control-and-waterfalls|Cash Control]] |
-| Risk transfer | [[wiki/concepts/production-insurance|Production Insurance]] |
-| Servicing and recovery | [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]] and [[wiki/concepts/defaults-workouts-and-recoveries|Defaults, Workouts and Recoveries]] |
-| Portfolio and partner | [[wiki/concepts/portfolio-construction|Portfolio Construction]], [[wiki/concepts/forward-flow-governance|Financing-Partner Governance]] and [[wiki/concepts/financier-return-economics|Return Economics]] |
+| Full financing | [[wiki/concepts/full-financing\|Full Financing]] |
+| Eligibility and sizing | [[wiki/concepts/loan-sizing\|Loan Sizing]] and [[wiki/concepts/tax-credit-collateral\|Tax-Credit Collateral]] |
+| Closing protection | [[wiki/concepts/protection-stack\|Protection Stack]], [[wiki/concepts/security-package\|Security Package]] and [[wiki/concepts/cash-control-and-waterfalls\|Cash Control]] |
+| Risk transfer | [[wiki/concepts/production-insurance\|Production Insurance]] |
+| Servicing and recovery | [[wiki/concepts/monitoring-and-servicing\|Monitoring and Servicing]] and [[wiki/concepts/defaults-workouts-and-recoveries\|Defaults, Workouts and Recoveries]] |
+| Portfolio and partner | [[wiki/concepts/portfolio-construction\|Portfolio Construction]], [[wiki/concepts/forward-flow-governance\|Financing-Partner Governance]] and [[wiki/concepts/financier-return-economics\|Return Economics]] |
 
 ## Analysis and inference
 

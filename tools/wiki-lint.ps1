@@ -78,9 +78,11 @@ function Get-WikiLinkParts {
     $pipeIndex = $InnerText.IndexOf('|')
     $destination = $InnerText.Trim()
     $alias = $null
+    $aliasEscaped = $false
     if ($pipeIndex -ge 0) {
         $destination = $InnerText.Substring(0, $pipeIndex).Trim()
         if ($destination.EndsWith('\')) {
+            $aliasEscaped = $true
             $destination = $destination.Substring(0, $destination.Length - 1).TrimEnd()
         }
         $alias = $InnerText.Substring($pipeIndex + 1)
@@ -98,6 +100,7 @@ function Get-WikiLinkParts {
         Target = $target
         Fragment = $fragment
         Alias = $alias
+        AliasEscaped = $aliasEscaped
     }
 }
 
@@ -218,6 +221,21 @@ foreach ($file in $markdownFiles) {
         }
 
         $linkParts = Get-WikiLinkParts -InnerText $innerText
+        $linkOpenIndex = $innerStart - 2
+        $lineStart = $content.LastIndexOf("`n", [Math]::Max(0, $linkOpenIndex - 1))
+        if ($lineStart -lt 0) {
+            $lineStart = 0
+        } else {
+            $lineStart++
+        }
+        $lineEnd = $content.IndexOf("`n", $token.Index)
+        if ($lineEnd -lt 0) {
+            $lineEnd = $content.Length
+        }
+        $lineText = $content.Substring($lineStart, $lineEnd - $lineStart)
+        if ($null -ne $linkParts.Alias -and -not $linkParts.AliasEscaped -and $lineText -match '^\s*(?:>\s*)?\|') {
+            $errors.Add("Wikilink alias separator must be escaped as \| inside a Markdown table in ${relative}:${openLine}: [[$innerText]]")
+        }
         if ($null -ne $linkParts.Alias -and [string]::IsNullOrWhiteSpace($linkParts.Alias)) {
             $errors.Add("Wikilink has an empty display alias in ${relative}:${openLine}: [[$innerText]]")
         }
