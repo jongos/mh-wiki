@@ -201,3 +201,12 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Documentation: removed the obsolete root-copy ignore rules, documented canonical snapshot placement in `README.md` and removed the stale root-deliverable reference from [[wiki/sources/mediahedge-knowledgebase-introduction]].
 - Files retained: preserved Obsidian's ignored appearance and workspace state because the running app actively uses them; retained every canonical source, source-summary page, template, diagram, compatibility page, maintenance tool and recovery artifact because each has a current role.
 - Evidence integrity: no canonical file in `raw/sources/`, raw manifest entry, wiki claim, source count or publication setting changed.
+
+## [2026-08-09] maintenance | Public GitHub repository publication
+
+- Authorization: the user explicitly approved publishing the complete repository, including raw Word sources, private maintenance pages and full prior Git history, to a public GitHub repository.
+- Remote: connected `origin` to `https://github.com/jongos/mh-wiki.git` while retaining the independent OneDrive bare mirror and checksum-protected bundles as separate recovery copies.
+- Initial publication: pushed `main` directly because the target repository was empty, then pushed all nine annotated `wiki-v*` milestone tags; no draft pull request was needed to establish the initial default branch.
+- Preflight: confirmed a clean working tree, passed the complete wiki lint and full strict Git object verification, and found zero common credential or private-key patterns across all 17 pre-publication commits.
+- Remote verification: GitHub reports the repository as public with default branch `main`; remote `main` exactly matched local commit `266cbd3`, and all nine remote tag refs exactly matched their local annotated tag objects.
+- Evidence integrity: publication and maintenance logging did not alter any wiki claim, source count, raw manifest entry or immutable raw source.
