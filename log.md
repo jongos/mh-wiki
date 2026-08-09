@@ -168,3 +168,12 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Real-DOM stylesheet repair: inspected Obsidian Publish's rendered wrappers and expanded `publish.css` to hide its generated filename header and apply introductory, card, caption, external-context and continuation treatments through the actual `.el-*` containers.
 - Visual verification: rendered a temporary Publish-DOM fixture with the production stylesheet; CSSOM loaded 47 rules, the filename header and frontmatter were hidden, cards formed a three-column grid, captions and context panels styled correctly and no document overflow remained. The fixture and server were removed afterward.
 - Remaining deployment action: upload the 11 reported files, remove `raw/README.md`, reset the homepage to root `MediaHedge Knowledgebase` and hide the file explorer, then rerun the live audit.
+
+## [2026-08-09] maintenance | Retroactive version and recovery archive
+
+- Existing history: confirmed an intact, additive 13-commit chain from the initial 2026-08-08 architecture through the live Publish deployment audit; no prior generation needed to be reconstructed or approximated.
+- Retroactive milestones: added annotated recovery tags for the initial architecture, financier navigation, rendering integrity, human-reader design, investor visuals and live Publish audit generations.
+- Human index: added `VERSION-HISTORY.md` with the recovery locations, every pre-archive generation, milestone mapping and safe file or full-vault restoration instructions.
+- Dynamic index: added `tools/wiki-history.ps1` and its Windows launcher so the current commit-and-tag table is generated directly from Git rather than relying on a manually remembered list.
+- Archive tooling: added `tools/wiki-archive.ps1` and its launcher to update an independent bare mirror, verify Git object integrity, compare source and mirror heads and optionally create and verify timestamped immutable full-history bundles.
+- Operating rules: required additive history, preservation of manual edits, descriptive commits, milestone tags, independent mirror updates and separate-folder restore tests for future wiki work.

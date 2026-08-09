@@ -26,6 +26,7 @@ This vault is a persistent, source-grounded knowledge base for MediaHedge's medi
 - `MediaHedge Knowledgebase.md` is the public welcome and reader navigation hub; `index.md` preserves older links.
 - `wiki/operations/internal-catalog.md` is the complete private content catalog.
 - `log.md` is the append-only activity history.
+- `VERSION-HISTORY.md` is the human recovery guide and milestone index.
 
 The original Word briefs present in the vault root at initial setup were left untouched. Canonical ingestion snapshots are stored in `raw/sources/` and identified by SHA-256 in [[raw/manifest]].
 
@@ -49,5 +50,7 @@ The vault is initialized as a Git repository on `main`. Markdown, tools and cano
 - **Query:** ask against the wiki; answers should identify the pages and raw sources supporting material claims.
 - **File an answer:** tell the LLM to save a useful analysis into the appropriate concept or synthesis page.
 - **Lint:** ask the LLM to health-check the wiki, or run `tools\wiki-lint.cmd` on Windows. The launcher applies the local PowerShell execution-policy bypass required on this machine.
+- **History:** run `tools\wiki-history.cmd` for the current commit-and-tag index.
+- **Archive:** after a completed commit, run `tools\wiki-archive.cmd`; add `-CreateBundle` for an immutable milestone bundle.
 
 This wiki is a credit-analysis aid, not legal, tax, accounting or investment advice. Transaction documents, current program rules and qualified professional review control.

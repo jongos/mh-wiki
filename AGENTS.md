@@ -210,6 +210,16 @@ Run `tools\wiki-lint.cmd` on Windows (`powershell.exe -NoProfile -ExecutionPolic
 
 After an Obsidian Publish deployment, run `tools\publish-audit.cmd`. It compares the live server inventory with the local `publish: true` notes, their referenced assets and root `publish.css`; repair every missing or unexpected path before treating the site as healthy.
 
+## Version Control and Recovery
+
+- Treat all uncommitted changes as user-owned. Inspect them before editing, preserve them and never discard them to simplify an operation.
+- Keep recovery history additive. Do not amend, rebase, force-update, delete recovery tags or use destructive resets during ordinary wiki maintenance.
+- After a completed, linted operation, create a descriptive commit. Use annotated `wiki-v*` tags for meaningful reader, evidence, architecture or deployment milestones.
+- Use `VERSION-HISTORY.md` as the human recovery guide and `tools\wiki-history.cmd` as the always-current commit-and-tag index.
+- After each completed commit, run `tools\wiki-archive.cmd` to update the independent bare mirror. At major milestones, use `tools\wiki-archive.cmd -CreateBundle` to create a timestamped immutable full-history bundle.
+- Keep the mirror and bundles outside the vault so loss or corruption of the working directory does not remove every recovery copy.
+- Test recovery into a separate temporary folder. Never overwrite the working vault merely to prove that an old version can be restored.
+
 ## Log format
 
 `log.md` is append-only. Use exactly one heading per operation:
@@ -236,4 +246,4 @@ Under the heading, list the sources read, pages created/updated, key decisions, 
 
 ## Completion standard
 
-A wiki operation is complete only when the new knowledge is source-linked, integrated into existing pages, cataloged privately, added to public navigation when appropriate, logged and mechanically linted. If any of those steps cannot be completed, report the specific gap rather than implying completion.
+A wiki operation is complete only when the new knowledge is source-linked, integrated into existing pages, cataloged privately, added to public navigation when appropriate, logged, mechanically linted, committed and copied to the independent archive mirror. If any of those steps cannot be completed, report the specific gap rather than implying completion.
