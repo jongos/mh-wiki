@@ -7,6 +7,7 @@ ingested: 2026-08-08
 source_file: "[[raw/sources/MediaHedge_Where_the_Financiers_Return_Comes_From_Financier_Brief.docx]]"
 source_hash: 9304612BB193C0F7489D7DA2C6ECC4020A237E8D87823D66B3CA9703F56BB685
 source_count: 1
+publish: false
 tags:
   - mediahedge
   - source

@@ -4,6 +4,7 @@ type: entity
 status: seed
 updated: YYYY-MM-DD
 source_count: 0
+publish: false
 tags:
   - mediahedge
   - entity
@@ -27,6 +28,8 @@ The entity's role in the knowledge domain.
 
 - Unverified or changing information.
 
+<!--
 ## Source basis
 
-- Add source-summary and raw-source links.
+- Add private source-summary links.
+-->

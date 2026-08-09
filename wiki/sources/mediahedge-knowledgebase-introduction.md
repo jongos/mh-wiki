@@ -15,6 +15,7 @@ derived_from:
   - "[[wiki/syntheses/policy-rails-and-control-matrix]]"
   - "[[wiki/syntheses/repayment-and-risk-map]]"
 source_count: 1
+publish: false
 tags:
   - mediahedge
   - source

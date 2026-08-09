@@ -1,3 +1,7 @@
+---
+publish: false
+---
+
 # MediaHedge Wiki Operating Schema
 
 ## Mission
@@ -32,12 +36,14 @@ The agent owns the Markdown layer: create, revise, cross-link and lint it. The h
 │   └── sources/              immutable canonical snapshots
 ├── wiki/
 │   ├── overview.md           executive synthesis
+│   ├── evidence-and-limitations.md
+│   │                          public evidence guide
 │   ├── glossary.md           shared terminology
 │   ├── sources/              one provenance page per raw source
 │   ├── concepts/             durable topic pages
 │   ├── entities/             organizations, people and programs
 │   ├── syntheses/            cross-source analyses and decision views
-│   └── operations/           contradictions, gaps and maintenance registers
+│   └── operations/           private catalog, contradictions, gaps and registers
 ├── templates/                page templates
 └── tools/                    health-check utilities
 ```
@@ -65,6 +71,7 @@ type: overview | source | concept | entity | synthesis | glossary | operations
 status: current | needs-review | superseded | seed
 updated: YYYY-MM-DD
 source_count: 0
+publish: true
 tags:
   - mediahedge
 ---
@@ -72,6 +79,7 @@ tags:
 
 Additional fields:
 
+- `publish: true` for reader-facing knowledge and `publish: false` for private evidence, operations and maintenance pages.
 - Source pages: `source_file`, `source_hash`, and `ingested`.
 - Derived source pages: `source_kind: derived-artifact`, `authority: non-evidentiary`, and `derived_from`.
 - Claims tied to a time or policy: `as_of` when known.
@@ -98,15 +106,17 @@ Quantitative policy rails must show their source and effective date when availab
 - Link a concept on its first meaningful mention; avoid linking every repetition.
 - Every source-summary page must link its raw file, related concepts and at least one synthesis or overview page.
 - Every concept page must identify its source basis and link adjacent concepts.
-- Update `MediaHedge Knowledgebase.md` whenever a page is created, renamed, superseded or materially re-scoped.
+- Update `MediaHedge Knowledgebase.md` whenever a reader-facing page is created, renamed, superseded or materially re-scoped.
+- Update `wiki/operations/internal-catalog.md` whenever any wiki page is created, renamed, superseded or materially re-scoped.
 - Prefer updating an existing concept over creating a near-duplicate page.
 
 ## Reader navigation
 
 - Treat `MediaHedge Knowledgebase.md` as the primary home note and preserve `index.md` as a compatibility alias for older exports and external links.
+- Publish only reader-facing knowledge pages. Keep source summaries, raw evidence, operations registers, logs, templates, tools and agent instructions marked or configured as private.
 - Give financiers a decision-first route: financeability, repayment, sizing, control, protection, monitoring, recovery, portfolio construction and realized economics.
 - Every durable concept page should link back to the home note, the financier diligence route and the full credit lifecycle.
-- Keep source summaries available for traceability, but do not make readers navigate the source registry before they can understand the credit question.
+- Keep source summaries available privately for traceability, but do not expose source registries, hashes, raw filenames or maintenance instructions in public pages.
 - Put material evidence limitations near decision guidance, not only in the operations register.
 
 ## Ingest workflow
@@ -122,7 +132,7 @@ When asked to ingest one or more sources:
 6. Update every affected concept, entity and synthesis page. A single source may touch many pages.
 7. Compare new claims against existing claims. Record unresolved conflicts in `wiki/operations/contradictions.md`; do not silently choose one.
 8. Update `wiki/operations/research-backlog.md` with new evidence gaps or verification needs.
-9. Update `MediaHedge Knowledgebase.md`.
+9. Update `wiki/operations/internal-catalog.md`; update `MediaHedge Knowledgebase.md` when reader-facing navigation or scope changes.
 10. Append one structured entry to `log.md`.
 11. Run the health checks and repair issues introduced by the ingest.
 
@@ -133,7 +143,7 @@ When asked to ingest one or more sources:
 3. Trace material claims to source-summary pages and raw sources.
 4. Separate current facts from internal policy, transaction-specific assumptions and general explanation.
 5. State evidence limits and unresolved contradictions.
-6. When the user asks to preserve a useful answer, file it into the appropriate existing page or a new synthesis page, then update `index.md` and `log.md`.
+6. When the user asks to preserve a useful answer, file it into the appropriate existing page or a new synthesis page, then update the internal catalog, public home when applicable, and `log.md`.
 
 Do not file routine chat, unsupported speculation or low-confidence retrieval results.
 
@@ -150,7 +160,9 @@ Do not file routine chat, unsupported speculation or low-confidence retrieval re
 Periodically check for:
 
 - broken or ambiguous wikilinks;
-- pages absent from `index.md`;
+- pages absent from the private internal catalog;
+- published pages absent from the public home note;
+- public pages that visibly link to private source, raw, operations or maintenance files;
 - orphan pages with no inbound wiki links;
 - missing frontmatter or invalid page types/statuses;
 - concept pages without source basis;
@@ -189,4 +201,4 @@ Under the heading, list the sources read, pages created/updated, key decisions, 
 
 ## Completion standard
 
-A wiki operation is complete only when the new knowledge is source-linked, integrated into existing pages, indexed, logged and mechanically linted. If any of those steps cannot be completed, report the specific gap rather than implying completion.
+A wiki operation is complete only when the new knowledge is source-linked, integrated into existing pages, cataloged privately, added to public navigation when appropriate, logged and mechanically linted. If any of those steps cannot be completed, report the specific gap rather than implying completion.

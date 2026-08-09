@@ -2,8 +2,9 @@
 title: Defaults, Workouts and Recoveries
 type: concept
 status: current
-updated: 2026-08-08
+updated: 2026-08-09
 source_count: 5
+publish: true
 tags:
   - mediahedge
   - workout
@@ -47,9 +48,11 @@ Workouts begin where [[wiki/concepts/monitoring-and-servicing|Monitoring and Ser
 
 ## Continue the diligence
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
 
+<!--
 ## Source basis
 
-- Primary: [[wiki/sources/defaults-workouts-and-recoveries]] and [[raw/sources/MediaHedge_Defaults_Workouts_and_Recoveries_Financier_Brief.docx]].
+- Primary: [[wiki/sources/defaults-workouts-and-recoveries]].
 - Related: [[wiki/sources/monitoring-and-servicing-after-closing]], [[wiki/sources/mediahedge-security-package]], [[wiki/sources/cama-account-control-and-collection-waterfalls]] and [[wiki/sources/forward-flow-partnerships-and-financier-governance]].
+-->

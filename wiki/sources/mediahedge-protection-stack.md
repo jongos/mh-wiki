@@ -7,6 +7,7 @@ ingested: 2026-08-08
 source_file: "[[raw/sources/MediaHedge_Protection_Stack_Financier_Brief.docx]]"
 source_hash: 378072DB6C2FF12C4C0606B0778F9971A8019BE4E91179466DF9F63687BBD7BB
 source_count: 1
+publish: false
 tags:
   - mediahedge
   - source

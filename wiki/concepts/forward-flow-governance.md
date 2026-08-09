@@ -1,9 +1,10 @@
 ---
-title: Forward-Flow Governance
+title: Financing-Partner Governance
 type: concept
 status: current
-updated: 2026-08-08
+updated: 2026-08-09
 source_count: 5
+publish: true
 tags:
   - mediahedge
   - forward-flow
@@ -11,7 +12,7 @@ tags:
   - capital-partner
 ---
 
-# Forward-Flow Governance
+# Financing-Partner Governance
 
 ## Definition
 
@@ -47,9 +48,11 @@ The buy-box incorporates [[wiki/concepts/loan-sizing|Loan Sizing]] and [[wiki/co
 
 ## Continue the diligence
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
 
+<!--
 ## Source basis
 
-- Primary: [[wiki/sources/forward-flow-partnerships-and-financier-governance]] and [[raw/sources/MediaHedge_Forward_Flow_Partnerships_and_Financier_Governance_Financier_Brief.docx]].
+- Primary: [[wiki/sources/forward-flow-partnerships-and-financier-governance]].
 - Related: [[wiki/sources/monitoring-and-servicing-after-closing]], [[wiki/sources/mediahedge-security-package]], [[wiki/sources/portfolio-construction-and-concentration-risk]] and [[wiki/sources/where-the-financiers-return-comes-from]].
+-->

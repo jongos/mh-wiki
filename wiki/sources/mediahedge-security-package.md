@@ -7,6 +7,7 @@ ingested: 2026-08-08
 source_file: "[[raw/sources/MediaHedge_Security_Package_Financier_Brief.docx]]"
 source_hash: A8391420A4A9AAABC37814708EBE8441A434F5705E804D131AFD30A30B14752B
 source_count: 1
+publish: false
 tags:
   - mediahedge
   - source

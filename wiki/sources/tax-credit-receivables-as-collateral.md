@@ -8,6 +8,7 @@ ingested: 2026-08-08
 source_file: "[[raw/sources/MediaHedge_Tax_Credit_Receivables_as_Collateral_Financier_Brief.docx]]"
 source_hash: B65D82D4412620142278B9EE455C86BB3D5AEEF313A65DAF5D7711F5A1027154
 source_count: 1
+publish: false
 tags:
   - mediahedge
   - source

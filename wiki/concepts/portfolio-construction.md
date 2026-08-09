@@ -2,8 +2,9 @@
 title: Portfolio Construction
 type: concept
 status: current
-updated: 2026-08-08
+updated: 2026-08-09
 source_count: 5
+publish: true
 tags:
   - mediahedge
   - portfolio
@@ -43,9 +44,11 @@ Portfolio construction aggregates the outputs of [[wiki/concepts/loan-sizing|Loa
 
 ## Continue the diligence
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
 
+<!--
 ## Source basis
 
-- Primary: [[wiki/sources/portfolio-construction-and-concentration-risk]] and [[raw/sources/MediaHedge_Portfolio_Construction_and_Concentration_Risk_Financier_Brief.docx]].
+- Primary: [[wiki/sources/portfolio-construction-and-concentration-risk]].
 - Related: [[wiki/sources/how-mediahedge-sizes-a-loan]], [[wiki/sources/monitoring-and-servicing-after-closing]], [[wiki/sources/forward-flow-partnerships-and-financier-governance]] and [[wiki/sources/where-the-financiers-return-comes-from]].
+-->

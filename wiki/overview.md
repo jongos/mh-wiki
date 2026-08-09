@@ -1,20 +1,21 @@
 ---
-title: MediaHedge Wiki Overview
+title: How the MediaHedge Lending Model Works
 type: overview
 status: current
-updated: 2026-08-08
+updated: 2026-08-09
 source_count: 12
+publish: true
 tags:
   - mediahedge
   - film-finance
   - credit
 ---
 
-# MediaHedge Wiki Overview
+# How the MediaHedge Lending Model Works
 
 ## Core thesis
 
-MediaHedge's source corpus describes film-finance lending as a connected control system, not a bet on one document, one repayment source or one headline yield. Capital protection starts with [[wiki/concepts/full-financing|full financing]] because completion and delivery are common dependencies across distributor receivables, tax incentives and unsold-rights value. It continues through conservative [[wiki/concepts/loan-sizing|loan sizing]], an enforceable [[wiki/concepts/security-package|security package]], operational [[wiki/concepts/cash-control-and-waterfalls|cash control]], narrow credit for [[wiki/concepts/production-insurance|insurance and other risk-transfer instruments]], active [[wiki/concepts/monitoring-and-servicing|servicing]], and value-preserving [[wiki/concepts/defaults-workouts-and-recoveries|workout governance]].
+The MediaHedge framework treats film-finance lending as a connected control system, not a bet on one document, one repayment source or one headline yield. Capital protection starts with [[wiki/concepts/full-financing|full financing]] because completion and delivery are common dependencies across distributor receivables, tax incentives and unsold-rights value. It continues through conservative [[wiki/concepts/loan-sizing|loan sizing]], an enforceable [[wiki/concepts/security-package|security package]], operational [[wiki/concepts/cash-control-and-waterfalls|cash control]], narrow credit for [[wiki/concepts/production-insurance|insurance and other risk-transfer instruments]], active [[wiki/concepts/monitoring-and-servicing|servicing]], and value-preserving [[wiki/concepts/defaults-workouts-and-recoveries|workout governance]].
 
 The portfolio and capital-partner layers matter as much as the individual loan. [[wiki/concepts/portfolio-construction|Portfolio construction]] looks through deal count to common failure drivers. [[wiki/concepts/forward-flow-governance|Forward-flow governance]] allocates funding, ownership, servicing, exception and enforcement authority. [[wiki/concepts/financier-return-economics|Return analysis]] then measures what the financier actually receives, when it receives it, and what credit and operating frictions consumed.
 
@@ -44,7 +45,7 @@ The corpus identifies multiple possible value sources but repeatedly warns that 
 
 [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]] compares these paths and their shared dependencies.
 
-## Current policy rails in the source corpus
+## Policy limits described in the available material
 
 The briefs state the following MediaHedge film-policy controls:
 
@@ -73,8 +74,12 @@ The strongest connective tissue across the corpus is the discipline of not confu
 
 ## How to use this wiki
 
-Use [[MediaHedge Knowledgebase]] as the home note. Financiers can follow the [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] by investment question; the [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] organizes the same system chronologically. Use concept pages for durable explanations, synthesis pages for cross-source questions and source pages to trace claims back to the raw Word briefs. Material transaction decisions still require the executed closing set and current legal, tax, insurance and program-specific analysis.
+Use [[MediaHedge Knowledgebase]] as the home page. Financing partners can follow the [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] by investment question, while the [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] organizes the same system chronologically. Material transaction decisions still require current policy, executed documents and qualified legal, tax, insurance and program-specific analysis.
 
+Read [[wiki/evidence-and-limitations|Evidence and Limitations]] for a plain-language explanation of what the knowledgebase establishes and what still needs independent verification.
+
+<!--
 ## Source basis
 
-This overview synthesizes all twelve source pages listed in [[MediaHedge Knowledgebase#Source summaries]]. No external authority was added during the initial ingest.
+This overview synthesizes the twelve source-summary pages listed in [[wiki/operations/internal-catalog#Source summaries]]. No external authority was added during the initial ingest.
+-->

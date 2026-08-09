@@ -7,6 +7,7 @@ ingested: 2026-08-08
 source_file: "[[raw/sources/MediaHedge_Film_Production_Insurance_Stack_Financier_Brief.docx]]"
 source_hash: 1DBDC7B33A8CC0DB662D6562A122B63AFEDED8E4DDAEB740A9C8A1918DB0A97C
 source_count: 1
+publish: false
 tags:
   - mediahedge
   - source

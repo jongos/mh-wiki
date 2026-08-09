@@ -1,0 +1,55 @@
+/* MediaHedge reader-facing Obsidian Publish theme */
+
+body {
+  --font-text-theme: "Aptos", "Segoe UI", sans-serif;
+  --font-interface-theme: "Aptos", "Segoe UI", sans-serif;
+  --background-primary: #fbfaf7;
+  --background-secondary: #f2f5f5;
+  --text-normal: #243238;
+  --text-muted: #637177;
+  --text-accent: #176b73;
+  --text-accent-hover: #0f5258;
+  --interactive-accent: #176b73;
+  --h1-color: #143f49;
+  --h2-color: #1c5660;
+  --h3-color: #2e6870;
+}
+
+/* Keep publishing metadata and maintenance properties out of the reading view. */
+.metadata-container,
+.frontmatter-container {
+  display: none !important;
+}
+
+.markdown-rendered h1 {
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+.markdown-rendered h2 {
+  border-bottom: 1px solid rgba(23, 107, 115, 0.18);
+  padding-bottom: 0.3rem;
+}
+
+.markdown-rendered table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid rgba(20, 63, 73, 0.14);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.markdown-rendered th {
+  background: #e8f0f0;
+  color: #143f49;
+}
+
+.markdown-rendered .callout {
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.markdown-rendered a.internal-link {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}

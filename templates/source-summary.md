@@ -7,6 +7,7 @@ ingested: YYYY-MM-DD
 source_file: "<wikilink to raw source>"
 source_hash: SHA256
 source_count: 1
+publish: false
 tags:
   - mediahedge
   - source

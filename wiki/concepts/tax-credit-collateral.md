@@ -2,9 +2,10 @@
 title: Tax-Credit Collateral
 type: concept
 status: needs-review
-updated: 2026-08-08
+updated: 2026-08-09
 as_of: unknown
 source_count: 4
+publish: true
 tags:
   - mediahedge
   - collateral
@@ -54,9 +55,11 @@ Track eligible spend versus budget, cost reports, payroll and vendor support, fi
 
 ## Continue the diligence
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
 
+<!--
 ## Source basis
 
-- Primary: [[wiki/sources/tax-credit-receivables-as-collateral]] and [[raw/sources/MediaHedge_Tax_Credit_Receivables_as_Collateral_Financier_Brief.docx]].
+- Primary: [[wiki/sources/tax-credit-receivables-as-collateral]].
 - Related: [[wiki/sources/how-mediahedge-sizes-a-loan]], [[wiki/sources/why-a-production-must-be-fully-financed]] and [[wiki/sources/mediahedge-security-package]].
+-->

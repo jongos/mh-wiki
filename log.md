@@ -4,6 +4,7 @@ type: operations
 status: current
 updated: 2026-08-08
 source_count: 12
+publish: false
 tags:
   - mediahedge
   - log
@@ -57,3 +58,16 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Key decision: the new guide is a synthesis and navigation layer over the twelve-source corpus; it adds no independent evidence and does not change policy status or source counts.
 - Open issues: policy freshness, transaction-specific legal authority, operating thresholds and realized performance evidence remain in [[wiki/operations/research-backlog]].
 - Lint: passed with 47 Markdown files, 35 wiki pages and 13 raw sources; 0 errors and 0 warnings.
+
+## [2026-08-09] maintenance | Public-reader architecture and Publish curation
+
+- Sources read: the live home page, public overview, glossary, entity and synthesis pages, all twelve concepts, private source summaries, recent maintenance history and Obsidian Publish guidance; no new evidence was added.
+- Manual edits preserved: retained the user's simplified README description and `Getting Started` heading, then added publishing guidance below the existing content.
+- Public layer: rewrote [[MediaHedge Knowledgebase]] as a concise reader hub; simplified public titles and language; created [[wiki/evidence-and-limitations|Evidence and Limitations]]; and retained decision-centered navigation across the financing lifecycle.
+- Private layer: marked the legacy welcome page, thirteen source-summary pages, operations registers, raw manifest, templates, README, schema, compatibility index and activity log `publish: false`; the 20 public wiki pages and public home are marked `publish: true`.
+- Provenance: kept private source links inside non-rendered maintenance comments on public concept and synthesis pages, preserving traceability without displaying raw filenames, hashes or internal registers to readers.
+- Catalog and styling: created [[wiki/operations/internal-catalog|Internal Wiki Catalog]] for complete private navigation and added `publish.css` to hide page properties and provide a clean MediaHedge reading style.
+- Tooling: extended the linter to enforce public/private flags, full private catalog coverage, public-home coverage, home backlinks, and the absence of visible private links or maintenance terminology on published pages.
+- Key decision: the public site is a curated view of the maintained wiki, not a separate source of truth; raw snapshots remained immutable and private.
+- Open issues: current policy authority, transaction-specific legal and tax conclusions, operational thresholds and realized performance evidence remain unchanged in [[wiki/operations/research-backlog]].
+- Lint: passed with 49 Markdown files, 37 wiki pages and 13 raw sources; 0 errors and 0 warnings. Publish-scope audit found 21 public files, 0 visible private links and 0 visible maintenance-term findings.

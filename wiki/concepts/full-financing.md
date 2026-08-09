@@ -2,8 +2,9 @@
 title: Full Financing
 type: concept
 status: current
-updated: 2026-08-08
+updated: 2026-08-09
 source_count: 3
+publish: true
 tags:
   - mediahedge
   - underwriting
@@ -47,9 +48,11 @@ Full financing is the prerequisite for [[wiki/concepts/loan-sizing|Loan Sizing]]
 
 ## Continue the diligence
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
 
+<!--
 ## Source basis
 
-- Primary: [[wiki/sources/why-a-production-must-be-fully-financed]] and [[raw/sources/MediaHedge_Why_a_Production_Must_Be_Fully_Financed_Financier_Brief.docx]].
+- Primary: [[wiki/sources/why-a-production-must-be-fully-financed]].
 - Corroborating: [[wiki/sources/how-mediahedge-sizes-a-loan]] and [[wiki/sources/mediahedge-protection-stack]].
+-->

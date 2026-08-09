@@ -88,7 +88,7 @@ foreach ($file in $markdownFiles) {
     }
 }
 
-$requiredKeys = @('title', 'type', 'status', 'updated', 'source_count', 'tags')
+$requiredKeys = @('title', 'type', 'status', 'updated', 'source_count', 'publish', 'tags')
 $allowedTypes = @('overview', 'source', 'concept', 'entity', 'synthesis', 'glossary', 'operations')
 $allowedStatuses = @('current', 'needs-review', 'superseded', 'seed')
 $wikiFiles = Get-ChildItem -LiteralPath (Join-Path $vault 'wiki') -Recurse -File -Filter '*.md'
@@ -116,6 +116,12 @@ foreach ($file in $wikiFiles) {
         $status = $Matches[1].Trim()
         if ($status -notin $allowedStatuses) {
             $errors.Add("Invalid status '$status': $relative")
+        }
+    }
+    if ($frontmatter -match '(?m)^publish:\s*([^\r\n]+)') {
+        $publishStatus = $Matches[1].Trim()
+        if ($publishStatus -notin @('true', 'false')) {
+            $errors.Add("Invalid publish value '$publishStatus': $relative")
         }
     }
     if ($relative -like 'wiki/sources/*') {
@@ -164,38 +170,96 @@ foreach ($file in $wikiFiles) {
     }
 }
 
-$homeCandidates = @('MediaHedge Knowledgebase.md', 'index.md')
-$homePath = $null
-foreach ($candidate in $homeCandidates) {
-    $candidatePath = Join-Path $vault $candidate
-    if (Test-Path -LiteralPath $candidatePath -PathType Leaf) {
-        $homePath = $candidatePath
-        break
-    }
-}
-if ($null -eq $homePath) {
-    $errors.Add('Missing home note: expected MediaHedge Knowledgebase.md or index.md')
+$homePath = Join-Path $vault 'MediaHedge Knowledgebase.md'
+if (-not (Test-Path -LiteralPath $homePath -PathType Leaf)) {
+    $errors.Add('Missing public home note: MediaHedge Knowledgebase.md')
     $homeContent = ''
 } else {
     $homeContent = Get-Content -Raw -LiteralPath $homePath
+    if ($homeContent -notmatch '(?m)^publish:\s*true\s*$') {
+        $errors.Add('Public home note must be marked publish: true')
+    }
 }
+
+$catalogPath = Join-Path $vault 'wiki\operations\internal-catalog.md'
+if (-not (Test-Path -LiteralPath $catalogPath -PathType Leaf)) {
+    $errors.Add('Missing private internal catalog: wiki/operations/internal-catalog.md')
+    $catalogContent = ''
+} else {
+    $catalogContent = Get-Content -Raw -LiteralPath $catalogPath
+}
+
+$publicWikiFiles = [System.Collections.Generic.List[System.IO.FileInfo]]::new()
 foreach ($file in $wikiFiles) {
     $relative = $relativeByFile[$file.FullName]
     $target = ($relative -replace '\.md$', '').Replace('\', '/')
-    if ($homeContent -notmatch [regex]::Escape("[[$target")) {
-        $warnings.Add("Wiki page absent from home note: $relative")
+    $content = Get-Content -Raw -LiteralPath $file.FullName
+    $isPublished = $content -match '(?m)^publish:\s*true\s*$'
+    $shouldBePrivate = $relative -like 'wiki/sources/*' -or
+        $relative -like 'wiki/operations/*' -or
+        $relative -eq 'wiki/welcome.md'
+
+    if ($shouldBePrivate -and $isPublished) {
+        $errors.Add("Private wiki page marked for publication: $relative")
+    }
+    if (-not $shouldBePrivate -and -not $isPublished) {
+        $errors.Add("Reader-facing wiki page is not marked publish: true: $relative")
+    }
+    if ($isPublished) {
+        $publicWikiFiles.Add($file)
+        if ($homeContent -notmatch [regex]::Escape("[[$target")) {
+            $warnings.Add("Published page absent from public home: $relative")
+        }
+
+        $visibleContent = [regex]::Replace($content, '(?s)<!--.*?-->', '')
+        if ($visibleContent -notmatch [regex]::Escape('[[MediaHedge Knowledgebase')) {
+            $errors.Add("Published wiki page does not link back to the public home: $relative")
+        }
+        foreach ($match in [regex]::Matches($visibleContent, '\[\[([^\]]+)\]\]')) {
+            $visibleTarget = ($match.Groups[1].Value -split '\|', 2)[0]
+            if ($visibleTarget -match '^(raw/|wiki/sources/|wiki/operations/|AGENTS(?:\||$)|README(?:\||$)|index(?:\||$)|log(?:\||$))') {
+                $errors.Add("Published page visibly links to private material: $relative -> [[$($match.Groups[1].Value)]]")
+            }
+        }
+        if ($visibleContent -match '(?i)SHA-256|source_hash|raw/sources|AGENTS\.md|wiki-lint|YAML frontmatter|Git history') {
+            $errors.Add("Published page displays maintenance terminology: $relative")
+        }
+    }
+
+    if ($catalogContent -notmatch [regex]::Escape("[[$target")) {
+        $warnings.Add("Wiki page absent from private internal catalog: $relative")
     }
 }
 
 $financierGuideTarget = '[[wiki/syntheses/financier-diligence-route'
 if ($homeContent -notmatch [regex]::Escape($financierGuideTarget)) {
-    $errors.Add('Home note does not link the Financier Diligence Guide')
+    $errors.Add('Public home does not link the Financier Guide')
 }
 foreach ($file in Get-ChildItem -LiteralPath (Join-Path $vault 'wiki\concepts') -File -Filter '*.md') {
     $relative = $relativeByFile[$file.FullName]
     $content = Get-Content -Raw -LiteralPath $file.FullName
     if ($content -notmatch [regex]::Escape($financierGuideTarget)) {
         $errors.Add("Concept page missing financier navigation: $relative")
+    }
+}
+
+$privateRootFiles = @('AGENTS.md', 'README.md', 'index.md', 'log.md', 'raw/manifest.md')
+foreach ($privateRelative in $privateRootFiles) {
+    $privatePath = Join-Path $vault $privateRelative
+    if (-not (Test-Path -LiteralPath $privatePath -PathType Leaf)) {
+        $errors.Add("Missing private maintenance file: $privateRelative")
+        continue
+    }
+    $privateContent = Get-Content -Raw -LiteralPath $privatePath
+    if ($privateContent -notmatch '(?m)^publish:\s*false\s*$') {
+        $errors.Add("Private maintenance file must be marked publish: false: $privateRelative")
+    }
+}
+
+foreach ($template in Get-ChildItem -LiteralPath (Join-Path $vault 'templates') -File -Filter '*.md') {
+    $templateContent = Get-Content -Raw -LiteralPath $template.FullName
+    if ($templateContent -notmatch '(?m)^publish:\s*false\s*$') {
+        $errors.Add("Template must be marked publish: false: $($relativeByFile[$template.FullName])")
     }
 }
 

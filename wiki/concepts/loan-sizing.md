@@ -2,9 +2,10 @@
 title: Loan Sizing
 type: concept
 status: needs-review
-updated: 2026-08-08
+updated: 2026-08-09
 as_of: unknown
 source_count: 4
+publish: true
 tags:
   - mediahedge
   - underwriting
@@ -27,7 +28,7 @@ MediaHedge's sizing method is a constraint system. Underwriting first converts h
 5. **Term and liquidity:** align maturity with stressed collection timing, required reserves and extension risk.
 6. **Full-financing reconciliation:** confirm that the sized facility, equity and other sources still fund every use through delivery.
 
-## Current rails stated in the briefs
+## Limits described in the available material
 
 | Test | Stated MediaHedge treatment |
 | --- | --- |
@@ -38,7 +39,7 @@ MediaHedge's sizing method is a constraint system. Underwriting first converts h
 | Gross loan-to-budget | `<=80%` |
 | Term | Generally `<=15 months` |
 
-The source corpus does not state an effective date or policy version. Confirm current authority and denominator definitions before applying the rails. See [[wiki/syntheses/policy-rails-and-control-matrix]].
+The available material does not state an effective date or policy version. Confirm current authority and calculation definitions before applying the limits. See the [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]].
 
 ## Required output
 
@@ -57,9 +58,11 @@ Aggregate LTV does not protect capital if the value is ineligible, correlated, u
 
 ## Continue the diligence
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
 
+<!--
 ## Source basis
 
-- Primary: [[wiki/sources/how-mediahedge-sizes-a-loan]] and [[raw/sources/MediaHedge_How_MediaHedge_Sizes_a_Loan_Financier_Brief.docx]].
+- Primary: [[wiki/sources/how-mediahedge-sizes-a-loan]].
 - Related: [[wiki/sources/tax-credit-receivables-as-collateral]], [[wiki/sources/why-a-production-must-be-fully-financed]] and [[wiki/sources/mediahedge-protection-stack]].
+-->

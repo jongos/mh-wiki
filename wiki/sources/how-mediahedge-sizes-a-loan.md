@@ -8,6 +8,7 @@ ingested: 2026-08-08
 source_file: "[[raw/sources/MediaHedge_How_MediaHedge_Sizes_a_Loan_Financier_Brief.docx]]"
 source_hash: FD5D0D32236D413B95FA54510FE738050989BE99D04E845763A733D4655DD83F
 source_count: 1
+publish: false
 tags:
   - mediahedge
   - source

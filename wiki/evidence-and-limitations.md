@@ -1,0 +1,71 @@
+---
+title: Evidence and Limitations
+type: synthesis
+status: current
+updated: 2026-08-09
+source_count: 12
+publish: true
+description: What the MediaHedge knowledgebase explains, and what a financing partner should verify independently.
+tags:
+  - mediahedge
+  - evidence
+  - diligence
+---
+
+# Evidence and Limitations
+
+This knowledgebase brings together twelve internal MediaHedge briefs about film- and television-finance credit. It explains the company’s framework, the relationships among the major controls, and the questions a financing partner may want to explore.
+
+## How to read the material
+
+- **Directly supported:** the point is stated in one or more of the underlying briefs.
+- **Combined view:** the point connects ideas that appear across several briefs.
+- **Reasoned conclusion:** the point goes beyond the briefs and is identified as analysis.
+- **Open question:** the available material does not yet establish a complete answer.
+
+## What the knowledgebase can help explain
+
+- why completion and delivery affect several repayment paths at once;
+- how collateral is evaluated before it supports a loan amount;
+- how security, cash control, completion support and insurance address different risks;
+- how servicing turns changing production and payment information into decisions;
+- how downside options, portfolio concentration and realized return can be evaluated;
+- how MediaHedge and a financing partner may divide routine authority and major decisions.
+
+## What it does not establish by itself
+
+- that a stated policy limit is currently approved or applies to a particular transaction;
+- that a specific contract, lien, assignment, account arrangement or insurance policy is enforceable;
+- that a tax-incentive estimate will be approved, paid on time or free from reduction;
+- that historical portfolio performance supports a particular expected return or loss assumption;
+- that any proposed loan has been approved.
+
+## Important policy note
+
+Several pages describe limits stated in the internal briefs, including advance rates, concentration limits, leverage limits and maximum term. The briefs do not identify their effective date or approving authority. Those figures are useful for understanding the framework, but current policy should be confirmed before they are used in a financing decision.
+
+## What a financing partner should request
+
+Depending on the stage of review, a financing partner may want:
+
+1. the current approved credit policy and definitions;
+2. the project budget, cash-flow schedule and evidence of committed financing;
+3. the collateral schedule and supporting contracts;
+4. the proposed closing, security and cash-control documents;
+5. current legal, tax, incentive-program and insurance advice;
+6. the servicing and investor-reporting package;
+7. relevant historical performance, extensions, losses and recoveries.
+
+## Continue exploring
+
+Return to the [[MediaHedge Knowledgebase|Knowledgebase Home]], follow the [[wiki/syntheses/financier-diligence-route|Financier’s Guide]], or review the [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]].
+
+## Analysis and inference
+
+The reader-oriented groupings above are a synthesis of the existing material. They are not a transaction checklist, legal opinion, current policy certification or investment recommendation.
+
+<!--
+## Source basis
+
+Internal maintenance support: [[wiki/operations/research-backlog]], [[wiki/operations/contradictions]], and the twelve source-summary pages listed in [[wiki/operations/internal-catalog#Source summaries]].
+-->

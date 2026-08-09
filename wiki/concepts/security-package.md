@@ -2,8 +2,9 @@
 title: Security Package
 type: concept
 status: current
-updated: 2026-08-08
+updated: 2026-08-09
 source_count: 4
+publish: true
 tags:
   - mediahedge
   - security
@@ -43,9 +44,11 @@ The security package establishes the legal path; [[wiki/concepts/cash-control-an
 
 ## Continue the diligence
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
 
+<!--
 ## Source basis
 
-- Primary: [[wiki/sources/mediahedge-security-package]] and [[raw/sources/MediaHedge_Security_Package_Financier_Brief.docx]].
+- Primary: [[wiki/sources/mediahedge-security-package]].
 - Related: [[wiki/sources/cama-account-control-and-collection-waterfalls]], [[wiki/sources/forward-flow-partnerships-and-financier-governance]] and [[wiki/sources/mediahedge-protection-stack]].
+-->

@@ -4,6 +4,7 @@ type: synthesis
 status: seed
 updated: YYYY-MM-DD
 source_count: 0
+publish: false
 tags:
   - mediahedge
   - synthesis
@@ -36,3 +37,9 @@ Integrated answer with links to supporting concepts.
 ## Analysis and inference
 
 Clearly label conclusions that go beyond direct source statements.
+
+<!--
+## Source basis
+
+- Add private source-summary links for each material source.
+-->

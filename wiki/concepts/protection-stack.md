@@ -2,8 +2,9 @@
 title: Protection Stack
 type: concept
 status: current
-updated: 2026-08-08
+updated: 2026-08-09
 source_count: 8
+publish: true
 tags:
   - mediahedge
   - credit
@@ -50,9 +51,11 @@ The value of the stack depends on consistency across underwriting conclusions, l
 
 ## Continue the diligence
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
 
+<!--
 ## Source basis
 
-- Primary: [[wiki/sources/mediahedge-protection-stack]] and [[raw/sources/MediaHedge_Protection_Stack_Financier_Brief.docx]].
-- Integrated from the full-financing, sizing, tax-credit, security, cash-control, insurance and servicing source pages indexed in [[MediaHedge Knowledgebase]].
+- Primary: [[wiki/sources/mediahedge-protection-stack]].
+- Integrated from the related source pages listed in [[wiki/operations/internal-catalog#Source summaries]].
+-->

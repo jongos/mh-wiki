@@ -1,10 +1,11 @@
 ---
-title: Policy Rails and Control Matrix
+title: Policy and Control Guide
 type: synthesis
 status: needs-review
-updated: 2026-08-08
+updated: 2026-08-09
 as_of: unknown
 source_count: 7
+publish: true
 tags:
   - mediahedge
   - synthesis
@@ -12,23 +13,23 @@ tags:
   - controls
 ---
 
-# Policy Rails and Control Matrix
+# Policy and Control Guide
 
 ## Status
 
-The values below are source-backed statements of current MediaHedge film policy in the ingested briefs. The corpus does not provide a policy version, approval date or effective date. Verify current authority before applying them to a transaction.
+The figures below are described in the available material as MediaHedge film-policy limits. The material does not provide a policy version, approval date or effective date. Verify current authority before applying them to a transaction.
 
 ## Quantitative rails
 
-| Rail | Stated treatment | Function | Source |
-| --- | --- | --- | --- |
-| Tax-credit advance | No more than 85% of verified eligible tax-credit value | Cushion for audit, timing, transfer and monetization risk | [[wiki/sources/tax-credit-receivables-as-collateral]] |
-| Gap advance | No more than 50% of supported low value | Limits exposure to market-dependent unsold-rights value | [[wiki/sources/how-mediahedge-sizes-a-loan]] |
-| Gap concentration | Generally no more than 30% of actual final gross loan | Prevents gap risk from dominating repayment | [[wiki/sources/how-mediahedge-sizes-a-loan]] |
-| Aggregate LTV | No more than 60% | Caps total exposure relative to eligible value | [[wiki/sources/how-mediahedge-sizes-a-loan]] |
-| Gross loan-to-budget | No more than 80% | Limits lender exposure relative to production budget | [[wiki/sources/how-mediahedge-sizes-a-loan]] |
-| Term | Generally no longer than 15 months | Aligns maturity with realistic collection timing and liquidity | [[wiki/sources/how-mediahedge-sizes-a-loan]] |
-| Commitment | Lowest amount permitted by all applicable constraints | Ensures the tightest structural ceiling controls | [[wiki/sources/how-mediahedge-sizes-a-loan]] |
+| Rail | Stated treatment | Purpose |
+| --- | --- | --- |
+| Tax-credit advance | No more than 85% of verified eligible tax-credit value | Cushion for audit, timing, transfer and monetization risk |
+| Gap advance | No more than 50% of supported low value | Limits exposure to market-dependent unsold-rights value |
+| Gap concentration | Generally no more than 30% of actual final gross loan | Prevents gap risk from dominating repayment |
+| Aggregate LTV | No more than 60% | Caps total exposure relative to eligible value |
+| Gross loan-to-budget | No more than 80% | Limits lender exposure relative to production budget |
+| Term | Generally no longer than 15 months | Aligns maturity with realistic collection timing and liquidity |
+| Commitment | Lowest amount permitted by all applicable constraints | Ensures the tightest structural ceiling controls |
 
 ## Non-quantitative gates
 
@@ -63,6 +64,16 @@ The values below are source-backed statements of current MediaHedge film policy 
 - A completion guaranty cannot substitute for obligor, tax-credit or commercial-value underwriting.
 - More reports cannot substitute for verified evidence, triggers and decision authority.
 
-## Source basis and gaps
+## Evidence and limitations
 
-Primary sources are [[wiki/sources/how-mediahedge-sizes-a-loan]], [[wiki/sources/tax-credit-receivables-as-collateral]], [[wiki/sources/why-a-production-must-be-fully-financed]], [[wiki/sources/mediahedge-protection-stack]], [[wiki/sources/mediahedge-security-package]], [[wiki/sources/cama-account-control-and-collection-waterfalls]] and [[wiki/sources/monitoring-and-servicing-after-closing]]. Definition and authority gaps are tracked in [[wiki/operations/research-backlog]].
+These figures are useful for understanding the stated framework, but they are not a certification of current policy. Review [[wiki/evidence-and-limitations|Evidence and Limitations]] before applying them to a financing decision.
+
+## Continue exploring
+
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/concepts/loan-sizing|Loan Sizing]]
+
+<!--
+## Source basis
+
+Primary: [[wiki/sources/how-mediahedge-sizes-a-loan]], [[wiki/sources/tax-credit-receivables-as-collateral]], [[wiki/sources/why-a-production-must-be-fully-financed]], [[wiki/sources/mediahedge-protection-stack]], [[wiki/sources/mediahedge-security-package]], [[wiki/sources/cama-account-control-and-collection-waterfalls]] and [[wiki/sources/monitoring-and-servicing-after-closing]]. Gaps are maintained in [[wiki/operations/research-backlog]].
+-->

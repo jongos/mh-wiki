@@ -2,8 +2,9 @@
 title: Monitoring and Servicing
 type: concept
 status: current
-updated: 2026-08-08
+updated: 2026-08-09
 source_count: 5
+publish: true
 tags:
   - mediahedge
   - servicing
@@ -46,9 +47,11 @@ Servicing keeps [[wiki/concepts/full-financing|Full Financing]], [[wiki/concepts
 
 ## Continue the diligence
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
 
+<!--
 ## Source basis
 
-- Primary: [[wiki/sources/monitoring-and-servicing-after-closing]] and [[raw/sources/MediaHedge_Monitoring_and_Servicing_After_Closing_Financier_Brief.docx]].
+- Primary: [[wiki/sources/monitoring-and-servicing-after-closing]].
 - Related: [[wiki/sources/cama-account-control-and-collection-waterfalls]], [[wiki/sources/defaults-workouts-and-recoveries]], [[wiki/sources/forward-flow-partnerships-and-financier-governance]] and [[wiki/sources/where-the-financiers-return-comes-from]].
+-->

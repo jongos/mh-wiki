@@ -7,6 +7,7 @@ ingested: 2026-08-08
 source_file: "[[raw/sources/MediaHedge_Why_a_Production_Must_Be_Fully_Financed_Financier_Brief.docx]]"
 source_hash: 117445873358AEA423C25C9CDE1A073231C5D04F70FDCE9F9C6D6998A15553D9
 source_count: 1
+publish: false
 tags:
   - mediahedge
   - source

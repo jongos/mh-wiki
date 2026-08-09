@@ -2,8 +2,9 @@
 title: Film-Finance Credit Lifecycle
 type: synthesis
 status: current
-updated: 2026-08-08
+updated: 2026-08-09
 source_count: 12
+publish: true
 tags:
   - mediahedge
   - synthesis
@@ -64,17 +65,27 @@ The [[wiki/concepts/security-package|security package]] connects obligations to 
 
 The lifecycle is iterative rather than linear. Production progress turns costs into incentive claims; delivery turns contracts into due receivables; collections reduce exposure; amendments can change eligibility; stress can move a loan from monitoring into workout. Each state change must update the borrowing base, cash forecast, decision rights and expected return.
 
-## Evidence map
+## Explore each stage
 
-| Lifecycle stage | Primary concept | Principal sources |
-| --- | --- | --- |
-| Full financing | [[wiki/concepts/full-financing]] | [[wiki/sources/why-a-production-must-be-fully-financed]] |
-| Eligibility and sizing | [[wiki/concepts/loan-sizing]]; [[wiki/concepts/tax-credit-collateral]] | [[wiki/sources/how-mediahedge-sizes-a-loan]]; [[wiki/sources/tax-credit-receivables-as-collateral]] |
-| Closing protection | [[wiki/concepts/protection-stack]]; [[wiki/concepts/security-package]]; [[wiki/concepts/cash-control-and-waterfalls]] | [[wiki/sources/mediahedge-protection-stack]]; [[wiki/sources/mediahedge-security-package]]; [[wiki/sources/cama-account-control-and-collection-waterfalls]] |
-| Risk transfer | [[wiki/concepts/production-insurance]] | [[wiki/sources/film-production-insurance-stack]] |
-| Servicing and recovery | [[wiki/concepts/monitoring-and-servicing]]; [[wiki/concepts/defaults-workouts-and-recoveries]] | [[wiki/sources/monitoring-and-servicing-after-closing]]; [[wiki/sources/defaults-workouts-and-recoveries]] |
-| Portfolio and partner | [[wiki/concepts/portfolio-construction]]; [[wiki/concepts/forward-flow-governance]]; [[wiki/concepts/financier-return-economics]] | [[wiki/sources/portfolio-construction-and-concentration-risk]]; [[wiki/sources/forward-flow-partnerships-and-financier-governance]]; [[wiki/sources/where-the-financiers-return-comes-from]] |
+| Lifecycle stage | Related reading |
+| --- | --- |
+| Full financing | [[wiki/concepts/full-financing|Full Financing]] |
+| Eligibility and sizing | [[wiki/concepts/loan-sizing|Loan Sizing]] and [[wiki/concepts/tax-credit-collateral|Tax-Credit Collateral]] |
+| Closing protection | [[wiki/concepts/protection-stack|Protection Stack]], [[wiki/concepts/security-package|Security Package]] and [[wiki/concepts/cash-control-and-waterfalls|Cash Control]] |
+| Risk transfer | [[wiki/concepts/production-insurance|Production Insurance]] |
+| Servicing and recovery | [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]] and [[wiki/concepts/defaults-workouts-and-recoveries|Defaults, Workouts and Recoveries]] |
+| Portfolio and partner | [[wiki/concepts/portfolio-construction|Portfolio Construction]], [[wiki/concepts/forward-flow-governance|Financing-Partner Governance]] and [[wiki/concepts/financier-return-economics|Return Economics]] |
 
 ## Analysis and inference
 
 The source briefs separately describe each control area. Treating them as a state-transition system is a synthesis: the durable unit of monitoring is not only the loan, but the changing form, amount, timing and controllability of each repayment asset.
+
+## Continue exploring
+
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/evidence-and-limitations|Evidence and Limitations]]
+
+<!--
+## Source basis
+
+The source-summary pages supporting each stage are listed in [[wiki/operations/internal-catalog#Source summaries]].
+-->

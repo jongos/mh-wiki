@@ -1,9 +1,10 @@
 ---
-title: Financier Return Economics
+title: Financing-Partner Return Economics
 type: concept
 status: current
-updated: 2026-08-08
+updated: 2026-08-09
 source_count: 4
+publish: true
 tags:
   - mediahedge
   - returns
@@ -11,7 +12,7 @@ tags:
   - economics
 ---
 
-# Financier Return Economics
+# Financing-Partner Return Economics
 
 ## Definition
 
@@ -52,9 +53,11 @@ Return measurement depends on the dated evidence produced by [[wiki/concepts/cas
 
 ## Continue the diligence
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
 
+<!--
 ## Source basis
 
-- Primary: [[wiki/sources/where-the-financiers-return-comes-from]] and [[raw/sources/MediaHedge_Where_the_Financiers_Return_Comes_From_Financier_Brief.docx]].
+- Primary: [[wiki/sources/where-the-financiers-return-comes-from]].
 - Related: [[wiki/sources/cama-account-control-and-collection-waterfalls]], [[wiki/sources/defaults-workouts-and-recoveries]] and [[wiki/sources/portfolio-construction-and-concentration-risk]].
+-->

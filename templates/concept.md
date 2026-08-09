@@ -4,6 +4,7 @@ type: concept
 status: seed
 updated: YYYY-MM-DD
 source_count: 0
+publish: false
 tags:
   - mediahedge
 ---
@@ -38,9 +39,11 @@ Core mechanism, sequence or control structure.
 
 [[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
 
+<!--
 ## Source basis
 
-- Add a source-summary link and raw-source link for each material source.
+- Add private source-summary links for each material source.
+-->
 
 ## Analysis and inference
 

@@ -1,8 +1,12 @@
+---
+publish: false
+---
+
 # MediaHedge Knowledge Wiki
 
-This vault is a persistent, source-grounded knowledge base for MediaHedge's film-finance credit model. It follows the LLM-maintained wiki pattern described in [Karpathy's LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f): immutable raw sources feed an interlinked Markdown wiki governed by an explicit operating schema.
+This vault is a persistent, source-grounded knowledge base for MediaHedge's media credit model.
 
-## Start here
+## Getting Started
 
 1. Open [[MediaHedge Knowledgebase]] for the welcoming home page and complete content map.
 2. If you are evaluating the model as a financier, follow [[wiki/syntheses/financier-diligence-route|the Financier Diligence Guide]].
@@ -19,12 +23,21 @@ This vault is a persistent, source-grounded knowledge base for MediaHedge's film
 - `templates/` contains page templates.
 - `tools/` contains local health-check utilities.
 - `AGENTS.md` defines the rules an LLM must follow.
-- `MediaHedge Knowledgebase.md` is the primary welcome and content catalog; `index.md` preserves older links.
+- `MediaHedge Knowledgebase.md` is the public welcome and reader navigation hub; `index.md` preserves older links.
+- `wiki/operations/internal-catalog.md` is the complete private content catalog.
 - `log.md` is the append-only activity history.
 
 The original Word briefs present in the vault root at initial setup were left untouched. Canonical ingestion snapshots are stored in `raw/sources/` and identified by SHA-256 in [[raw/manifest]].
 
 The vault is initialized as a Git repository on `main`. Markdown, tools and canonical raw snapshots are trackable; the duplicate pre-architecture Word files at the vault root are intentionally ignored.
+
+## Obsidian Publish
+
+- Reader-facing notes use `publish: true`; private evidence and maintenance notes use `publish: false`.
+- Set `MediaHedge Knowledgebase.md` as the Publish homepage.
+- Publish `publish.css` with the reader-facing notes.
+- Keep the Publish file explorer hidden or hide the internal folder tree; the home page provides the intended navigation.
+- Review the selection before using **Add linked**. Private Markdown is excluded by property, while root Word originals should remain unselected.
 
 ## Normal workflows
 

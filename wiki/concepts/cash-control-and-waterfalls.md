@@ -2,8 +2,9 @@
 title: Cash Control and Waterfalls
 type: concept
 status: current
-updated: 2026-08-08
+updated: 2026-08-09
 source_count: 4
+publish: true
 tags:
   - mediahedge
   - collections
@@ -52,9 +53,11 @@ Cash control operationalizes the [[wiki/concepts/security-package|Security Packa
 
 ## Continue the diligence
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
 
+<!--
 ## Source basis
 
-- Primary: [[wiki/sources/cama-account-control-and-collection-waterfalls]] and [[raw/sources/MediaHedge_CAMA_Account_Control_and_Collection_Waterfalls_Financier_Brief.docx]].
+- Primary: [[wiki/sources/cama-account-control-and-collection-waterfalls]].
 - Related: [[wiki/sources/mediahedge-security-package]], [[wiki/sources/monitoring-and-servicing-after-closing]] and [[wiki/sources/where-the-financiers-return-comes-from]].
+-->

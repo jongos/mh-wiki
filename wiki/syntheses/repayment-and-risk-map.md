@@ -2,8 +2,9 @@
 title: Repayment and Risk Map
 type: synthesis
 status: current
-updated: 2026-08-08
+updated: 2026-08-09
 source_count: 8
+publish: true
 tags:
   - mediahedge
   - synthesis
@@ -15,7 +16,7 @@ tags:
 
 ## Question
 
-What are the principal repayment and protection paths described by the source corpus, how do they differ, and where do they share dependencies?
+What are the principal repayment and protection paths in the model, how do they differ, and where do they share dependencies?
 
 ## Comparative map
 
@@ -46,8 +47,14 @@ Different labels do not guarantee diversification. Several repayment sources can
 
 ## Analysis and inference
 
-The corpus implies a useful hierarchy: first preserve the project and legal claim, then preserve the cash path, then measure timing and net realization. No single layer is sufficient, and apparently distinct assets should receive diversification credit only after their shared dependencies are mapped.
+Taken together, the material suggests a useful hierarchy: first preserve the project and legal claim, then preserve the cash path, then measure timing and net realization. No single layer is sufficient, and apparently distinct assets should receive diversification credit only after their shared dependencies are mapped.
 
+## Continue exploring
+
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/evidence-and-limitations|Evidence and Limitations]]
+
+<!--
 ## Source basis
 
 [[wiki/sources/why-a-production-must-be-fully-financed]], [[wiki/sources/how-mediahedge-sizes-a-loan]], [[wiki/sources/tax-credit-receivables-as-collateral]], [[wiki/sources/film-production-insurance-stack]], [[wiki/sources/mediahedge-protection-stack]], [[wiki/sources/mediahedge-security-package]], [[wiki/sources/cama-account-control-and-collection-waterfalls]] and [[wiki/sources/portfolio-construction-and-concentration-risk]].
+-->

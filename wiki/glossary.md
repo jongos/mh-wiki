@@ -2,8 +2,9 @@
 title: MediaHedge Film-Finance Glossary
 type: glossary
 status: current
-updated: 2026-08-08
+updated: 2026-08-09
 source_count: 12
+publish: true
 tags:
   - mediahedge
   - glossary
@@ -79,4 +80,8 @@ tags:
 
 ## Usage note
 
-Definitions here summarize the internal source corpus. Transaction documents and applicable law control their meaning in any specific financing.
+Definitions here summarize the MediaHedge framework. Transaction documents and applicable law control their meaning in any specific financing. See [[wiki/evidence-and-limitations|Evidence and Limitations]] for additional context.
+
+## Continue exploring
+
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/overview|How the Model Works]]
