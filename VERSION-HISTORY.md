@@ -13,6 +13,7 @@ This is the human recovery index for the MediaHedge wiki. Git is the authoritati
 | Working repository | `C:\Users\jongo\FilmHedge Dropbox\FH Master Folder\-- Wiki\MD-wiki\MH Wiki` | Current editable vault and complete Git history. |
 | Bare mirror | `C:\Users\jongo\OneDrive\Documents\New project\MediaHedge-Wiki-Archive.git` | Independent Git database containing every branch, tag and commit. |
 | Immutable bundles | `C:\Users\jongo\OneDrive\Documents\New project\MediaHedge-Wiki-Bundles` | Timestamped, single-file full-history backups with separate SHA-256 checksum records for major milestones. |
+| Public GitHub remote | `https://github.com/jongos/mh-wiki` | Canonical off-device collaboration remote; `origin/main` must match every completed Codex-authored wiki operation. |
 
 ## Retroactive Generation Index
 

@@ -53,5 +53,6 @@ The vault is initialized as a Git repository on `main`. Markdown, tools and cano
 - **History:** run `tools\wiki-history.cmd` for the current commit-and-tag index.
 - **Archive:** after a completed commit, run `tools\wiki-archive.cmd`; add `-CreateBundle` for an immutable milestone bundle.
 - **Diagnostics:** run `tools\wiki-diagnostics.cmd` for read-only checks or add `-DeepRestore` for independent mirror, tag and bundle restoration tests.
+- **GitHub:** after every completed Codex-authored commit, run `tools\github-sync.cmd` to lint, scan, refresh the mirror, push to the public [MediaHedge GitHub repository](https://github.com/jongos/mh-wiki) and verify the remote refs.
 
 This wiki is a credit-analysis aid, not legal, tax, accounting or investment advice. Transaction documents, current program rules and qualified professional review control.

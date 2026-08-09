@@ -221,6 +221,15 @@ After an Obsidian Publish deployment, run `tools\publish-audit.cmd`. It compares
 - Keep the mirror and bundles outside the vault so loss or corruption of the working directory does not remove every recovery copy.
 - Test recovery into a separate temporary folder. Never overwrite the working vault merely to prove that an old version can be restored.
 
+## Persistent GitHub Publication
+
+- The canonical GitHub remote is named `origin` and must resolve exactly to `https://github.com/jongos/mh-wiki.git`.
+- The repository is intentionally public. The user explicitly approved publishing the complete tracked wiki and its additive history; credentials, private keys and other authentication material remain prohibited.
+- Every completed Codex-authored change to tracked vault files must be logged, linted, committed, copied to the independent OneDrive mirror and pushed to `origin/main` before the operation is reported complete.
+- Run `tools\github-sync.cmd` after the completed commit. It must refuse a dirty tree, a branch other than `main`, a missing or mismatched remote, a credential-pattern finding, a lint failure, an archive failure or a remote verification mismatch.
+- Push annotated milestone tags with the associated completed operation. Never force-push, rewrite public history or delete public recovery tags during ordinary maintenance.
+- If GitHub authentication or network access is unavailable, preserve the local commit and mirror, report the exact unsynchronized commit and do not imply that publication completed.
+
 ## Log format
 
 `log.md` is append-only. Use exactly one heading per operation:
@@ -247,4 +256,4 @@ Under the heading, list the sources read, pages created/updated, key decisions, 
 
 ## Completion standard
 
-A wiki operation is complete only when the new knowledge is source-linked, integrated into existing pages, cataloged privately, added to public navigation when appropriate, logged, mechanically linted, committed and copied to the independent archive mirror. If any of those steps cannot be completed, report the specific gap rather than implying completion.
+A wiki operation is complete only when the new knowledge is source-linked, integrated into existing pages, cataloged privately, added to public navigation when appropriate, logged, mechanically linted, committed, copied to the independent archive mirror and verified on `origin/main` at `https://github.com/jongos/mh-wiki`. If any of those steps cannot be completed, report the specific gap rather than implying completion.

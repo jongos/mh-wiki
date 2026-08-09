@@ -210,3 +210,12 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Preflight: confirmed a clean working tree, passed the complete wiki lint and full strict Git object verification, and found zero common credential or private-key patterns across all 17 pre-publication commits.
 - Remote verification: GitHub reports the repository as public with default branch `main`; remote `main` exactly matched local commit `266cbd3`, and all nine remote tag refs exactly matched their local annotated tag objects.
 - Evidence integrity: publication and maintenance logging did not alter any wiki claim, source count, raw manifest entry or immutable raw source.
+
+## [2026-08-09] maintenance | Persistent GitHub publication workflow
+
+- Persistent instruction: recorded `origin` and `https://github.com/jongos/mh-wiki.git` in `AGENTS.md` as the canonical public GitHub destination for every completed Codex-authored change to tracked wiki files.
+- Completion rule: future operations must be logged, linted, committed, mirrored and verified on `origin/main`; authentication or network failures must be reported as an explicit incomplete-publication gap.
+- Guarded tooling: added `tools\github-sync.cmd` and `tools\github-sync.ps1` to reject a dirty tree, non-`main` branch, mismatched remote, common credential pattern, lint failure, archive failure or local/remote ref mismatch before reporting success.
+- Safety: preserved additive history and prohibited force-pushes, public tag deletion and credential publication; the OneDrive mirror and checksum bundles remain independent recovery copies rather than being replaced by GitHub.
+- Documentation: added the public GitHub remote to `README.md` and `VERSION-HISTORY.md` so both human and agent workflows retain the destination.
+- Evidence integrity: no wiki claim, publication scope, source count, raw manifest entry or immutable raw source changed.
