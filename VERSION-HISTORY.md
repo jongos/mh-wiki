@@ -12,7 +12,7 @@ This is the human recovery index for the MediaHedge wiki. Git is the authoritati
 | --- | --- | --- |
 | Working repository | `C:\Users\jongo\FilmHedge Dropbox\FH Master Folder\-- Wiki\MD-wiki\MH Wiki` | Current editable vault and complete Git history. |
 | Bare mirror | `C:\Users\jongo\OneDrive\Documents\New project\MediaHedge-Wiki-Archive.git` | Independent Git database containing every branch, tag and commit. |
-| Immutable bundles | `C:\Users\jongo\OneDrive\Documents\New project\MediaHedge-Wiki-Bundles` | Timestamped, single-file full-history backups for major milestones. |
+| Immutable bundles | `C:\Users\jongo\OneDrive\Documents\New project\MediaHedge-Wiki-Bundles` | Timestamped, single-file full-history backups with separate SHA-256 checksum records for major milestones. |
 
 ## Retroactive Generation Index
 
@@ -70,4 +70,5 @@ Review the restored file and commit it as a new recovery change. Do not use `git
 - Completed operations are linted and committed; recovery history is additive rather than rewritten.
 - Run `tools\wiki-archive.cmd` after a completed commit to update the mirror.
 - Run `tools\wiki-archive.cmd -CreateBundle` at major milestones to create an immutable full-history bundle.
-- Verify the mirror and bundle before relying on them; the archive tool performs both integrity checks.
+- Run `tools\wiki-diagnostics.cmd` for a read-only integrity audit, or add `-DeepRestore` to restore the mirror, every milestone tag and the newest bundle into isolated temporary folders.
+- Verify the mirror, every branch and tag, each bundle and each `.sha256` checksum before relying on them; the archive and diagnostics tools perform these checks independently.

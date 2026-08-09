@@ -180,3 +180,15 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Independent copies: created and Git-verified the OneDrive bare mirror at `MediaHedge-Wiki-Archive.git` plus immutable full-history bundle `MediaHedge-Wiki-20260809-162444.bundle`; source and mirror both resolved to recovery baseline `282c6d8`.
 - Restore verification: cloned the mirror into a temporary folder, checked out the original `cfd2a54` generation with its 43 Markdown files, returned to current `282c6d8` and passed the complete wiki lint with 0 errors and 0 warnings.
 - Bundle verification: cloned the immutable bundle separately, confirmed its HEAD exactly matched `282c6d8` and confirmed both restored working trees were clean; all temporary test folders were safely removed.
+
+## [2026-08-09] lint | Recovery system redundant diagnostics
+
+- Scope: independently audited the working Git repository, every annotated milestone tag, the OneDrive bare mirror, every full-history bundle, Obsidian vault registration, Publish vault boundaries, the complete wiki lint and all 13 immutable raw-source hashes.
+- Repository integrity: full strict Git object verification passed; every milestone tag is annotated and reachable from `main`; source and mirror branch refs, tag refs, main commit and main tree matched exactly.
+- Bundle integrity: verified each existing bundle with Git, added an independent SHA-256 sidecar for each, confirmed each bundle's `HEAD` and `main` agree and confirmed every bundled head remains an ancestor of current `main`.
+- Restore verification: restored the mirror into an isolated temporary folder, matched its tracked index object-for-object, restored every milestone tag to its expected commit, linted the restored current generation, restored the newest bundle independently and confirmed clean working trees.
+- Failure-path verification: proved the archive tool rejects a dirty working tree before creating a backup; separately proved its successful path using a disposable clean repository and disposable bare mirror.
+- Tooling: added `tools\wiki-diagnostics.cmd` and `tools\wiki-diagnostics.ps1`; hardened `tools\wiki-archive.ps1` to compare all branch and tag refs and to create and verify bundle checksums; documented both workflows in `README.md`, `VERSION-HISTORY.md` and `AGENTS.md`.
+- Live defect found and repaired: Obsidian had recreated the parent `MD-wiki` Publish connection while that vault was open. After Obsidian was closed normally, preserved the configuration under a timestamped disabled filename and set the global registry to parent closed and canonical `MH Wiki` open.
+- Evidence integrity: no wiki claim, publication scope, source count, raw manifest entry or immutable raw source changed.
+- Lint: passed with 50 Markdown files, 37 wiki pages, 538 active wikilinks, 10 diagram embeds, nine SVG diagrams and 13 raw sources; 0 errors and 0 warnings.

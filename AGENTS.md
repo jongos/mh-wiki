@@ -217,6 +217,7 @@ After an Obsidian Publish deployment, run `tools\publish-audit.cmd`. It compares
 - After a completed, linted operation, create a descriptive commit. Use annotated `wiki-v*` tags for meaningful reader, evidence, architecture or deployment milestones.
 - Use `VERSION-HISTORY.md` as the human recovery guide and `tools\wiki-history.cmd` as the always-current commit-and-tag index.
 - After each completed commit, run `tools\wiki-archive.cmd` to update the independent bare mirror. At major milestones, use `tools\wiki-archive.cmd -CreateBundle` to create a timestamped immutable full-history bundle.
+- Keep a SHA-256 sidecar beside every bundle. Run `tools\wiki-diagnostics.cmd` after archive changes and use `tools\wiki-diagnostics.cmd -DeepRestore` for milestone or suspected-corruption audits.
 - Keep the mirror and bundles outside the vault so loss or corruption of the working directory does not remove every recovery copy.
 - Test recovery into a separate temporary folder. Never overwrite the working vault merely to prove that an old version can be restored.
 

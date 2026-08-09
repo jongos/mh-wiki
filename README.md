@@ -52,5 +52,6 @@ The vault is initialized as a Git repository on `main`. Markdown, tools and cano
 - **Lint:** ask the LLM to health-check the wiki, or run `tools\wiki-lint.cmd` on Windows. The launcher applies the local PowerShell execution-policy bypass required on this machine.
 - **History:** run `tools\wiki-history.cmd` for the current commit-and-tag index.
 - **Archive:** after a completed commit, run `tools\wiki-archive.cmd`; add `-CreateBundle` for an immutable milestone bundle.
+- **Diagnostics:** run `tools\wiki-diagnostics.cmd` for read-only checks or add `-DeepRestore` for independent mirror, tag and bundle restoration tests.
 
 This wiki is a credit-analysis aid, not legal, tax, accounting or investment advice. Transaction documents, current program rules and qualified professional review control.
