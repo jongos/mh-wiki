@@ -31,6 +31,7 @@ This is the human recovery index for the MediaHedge wiki. Git is the authoritati
 | Vault-root repair | `42d29b3` | 2026-08-09 | Correct Obsidian Publish vault boundary established. |
 | Vault registration | `0429aba` | 2026-08-09 | Canonical `MH Wiki` vault registered in Obsidian. |
 | `wiki-v0.6-publish-audit` | `f67b4b7` | 2026-08-09 | Live Publish deployment audit and real-DOM style repairs. |
+| `wiki-v1.0-recovery-baseline` | `282c6d8` | 2026-08-09 | Independent mirror, immutable-bundle tooling and recovery index established. |
 
 Run `tools\wiki-history.cmd` for the live commit-and-tag index. It reads Git directly, so it always includes generations created after this narrative table.
 
