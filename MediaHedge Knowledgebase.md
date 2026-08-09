@@ -11,6 +11,8 @@ tags:
   - index
 ---
 
+![[assets/mediahedge-banner.jpg|1000]]
+
 # Welcome to the MediaHedge Knowledgebase
 
 MediaHedge works at the intersection of creative production and disciplined credit. This knowledgebase explains how the company evaluates film and television financing, protects capital throughout a production, and works with financing partners over the life of an investment.

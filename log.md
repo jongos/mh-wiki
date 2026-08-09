@@ -80,3 +80,11 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Tooling: extended `tools\wiki-lint.ps1` to reject unmatched, nested, empty and multiline delimiters; empty aliases or anchors; missing or ambiguous files; and missing heading or block references, with file-and-line diagnostics.
 - Verification: a temporary malformed-link fixture was correctly rejected, then removed; the clean vault passed with 527 active wikilinks, including 8 heading or block links, 0 errors and 0 warnings.
 - Evidence integrity: all 13 immutable raw snapshots remained unchanged and matched the SHA-256 values in [[raw/manifest]].
+
+## [2026-08-09] maintenance | Public home-page banner
+
+- Asset added: copied the supplied 2,318-by-539-pixel MediaHedge JPEG unchanged into `assets/mediahedge-banner.jpg`; the external design original was not modified.
+- Page updated: added the banner above the welcome heading in `MediaHedge Knowledgebase.md` using an Obsidian image embed with a 1,000-pixel display-width hint.
+- Publish styling: updated `publish.css` so embedded images retain their aspect ratio and scale down to the available page width on smaller screens.
+- Evidence impact: presentation-only change; no source snapshot, claim, policy status or source count changed.
+- Lint: passed with 528 active wikilinks, 0 errors and 0 warnings; the embedded image target resolves inside the vault.

@@ -31,6 +31,18 @@ body {
   padding-bottom: 0.3rem;
 }
 
+/* Keep image embeds, including the home-page banner, responsive. */
+.markdown-rendered .image-embed,
+.markdown-rendered img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.markdown-rendered .image-embed {
+  margin: 0 auto 1.5rem;
+}
+
 .markdown-rendered table {
   border-collapse: separate;
   border-spacing: 0;
