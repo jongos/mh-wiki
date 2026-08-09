@@ -71,3 +71,12 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Key decision: the public site is a curated view of the maintained wiki, not a separate source of truth; raw snapshots remained immutable and private.
 - Open issues: current policy authority, transaction-specific legal and tax conclusions, operational thresholds and realized performance evidence remain unchanged in [[wiki/operations/research-backlog]].
 - Lint: passed with 49 Markdown files, 37 wiki pages and 13 raw sources; 0 errors and 0 warnings. Publish-scope audit found 21 public files, 0 visible private links and 0 visible maintenance-term findings.
+
+## [2026-08-09] lint | Obsidian wikilink syntax and target integrity
+
+- Scope: scanned all 49 Markdown files and interpreted active Obsidian wikilinks as paired `[[target]]`, `[[target|alias]]`, `[[target#heading]]` or block-reference syntax; examples inside inline or fenced code are not treated as live links.
+- Manual edits preserved: retained the wording in the home-page and financier-guide tables while repairing their split alias syntax with the table-safe `\|` separator.
+- Repairs: consolidated 18 duplicate path/display link pairs into valid aliased links and redirected the legacy welcome page's stale `Source summaries` heading link to [[wiki/operations/internal-catalog#Source summaries]].
+- Tooling: extended `tools\wiki-lint.ps1` to reject unmatched, nested, empty and multiline delimiters; empty aliases or anchors; missing or ambiguous files; and missing heading or block references, with file-and-line diagnostics.
+- Verification: a temporary malformed-link fixture was correctly rejected, then removed; the clean vault passed with 527 active wikilinks, including 8 heading or block links, 0 errors and 0 warnings.
+- Evidence integrity: all 13 immutable raw snapshots remained unchanged and matched the SHA-256 values in [[raw/manifest]].

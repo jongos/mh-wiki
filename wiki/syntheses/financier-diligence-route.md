@@ -24,8 +24,8 @@ This guide organizes the knowledgebase around eight questions.
 
 | Time available | Suggested route |
 | --- | --- |
-| Five minutes | Read [[wiki/overview|How the model works]], scan the [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]], and finish with [[wiki/evidence-and-limitations|Evidence and Limitations]]. |
-| Twenty minutes | Work through the eight questions below, then review the [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]]. |
+| Five minutes | Read [[wiki/overview\|How the model works]], scan the [[wiki/syntheses/repayment-and-risk-map\|Repayment and Risk Map]], and finish with [[wiki/evidence-and-limitations\|Evidence and Limitations]]. |
+| Twenty minutes | Work through the eight questions below, then review the [[wiki/syntheses/policy-rails-and-control-matrix\|Policy and Control Guide]]. |
 | Full review | Follow each question into its topic page and reconcile the framework to current policy, performance information and the proposed transaction documents. |
 
 ## Eight questions to explore

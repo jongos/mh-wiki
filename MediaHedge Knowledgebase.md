@@ -27,16 +27,16 @@ You do not need to be a film-finance specialist. Start with the question you car
 
 | Question | Where to begin |
 | --- | --- |
-| Can the production reach completion and delivery? | [[wiki/concepts/full-financing|Full Financing]] |
-| What is expected to repay the loan? | [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]] |
-| How is the loan amount determined? | [[wiki/concepts/loan-sizing|Loan Sizing]] |
-| How are production incentives evaluated? | [[wiki/concepts/tax-credit-collateral|Tax-Credit Collateral]] |
-| How are the assets and incoming cash protected? | [[wiki/concepts/security-package|Security Package]] and [[wiki/concepts/cash-control-and-waterfalls|Cash Control]] |
-| What does insurance cover—and what does it not cover? | [[wiki/concepts/production-insurance|Production Insurance]] and [[wiki/concepts/protection-stack|Protection Stack]] |
-| How is a loan managed after closing? | [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]] |
-| What happens when a project runs into trouble? | [[wiki/concepts/defaults-workouts-and-recoveries|Defaults, Workouts and Recoveries]] |
-| How are investor rights and decisions governed? | [[wiki/concepts/forward-flow-governance|Financing-Partner Governance]] |
-| How are concentration and return evaluated? | [[wiki/concepts/portfolio-construction|Portfolio Construction]] and [[wiki/concepts/financier-return-economics|Return Economics]] |
+| Can the production reach completion and delivery? | [[wiki/concepts/full-financing\|Full Financing]] |
+| What is expected to repay the loan? | [[wiki/syntheses/repayment-and-risk-map\|Repayment and Risk Map]] |
+| How is the loan amount determined? | [[wiki/concepts/loan-sizing\|Loan Sizing]] |
+| How are production incentives evaluated? | [[wiki/concepts/tax-credit-collateral\|Tax-Credit Collateral]] |
+| How are the assets and incoming cash protected? | [[wiki/concepts/security-package\|Security Package]] and [[wiki/concepts/cash-control-and-waterfalls\|Cash Control]] |
+| What does insurance cover—and what does it not cover? | [[wiki/concepts/production-insurance\|Production Insurance]] and [[wiki/concepts/protection-stack\|Protection Stack]] |
+| How is a loan managed after closing? | [[wiki/concepts/monitoring-and-servicing\|Monitoring and Servicing]] |
+| What happens when a project runs into trouble? | [[wiki/concepts/defaults-workouts-and-recoveries\|Defaults, Workouts and Recoveries]] |
+| How are investor rights and decisions governed? | [[wiki/concepts/forward-flow-governance\|Financing-Partner Governance]] |
+| How are concentration and return evaluated? | [[wiki/concepts/portfolio-construction\|Portfolio Construction]] and [[wiki/concepts/financier-return-economics\|Return Economics]] |
 
 ## Follow the financing journey
 

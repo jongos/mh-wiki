@@ -159,7 +159,9 @@ Do not file routine chat, unsupported speculation or low-confidence retrieval re
 
 Periodically check for:
 
+- unmatched, nested or empty Obsidian wikilink delimiters (`[[` and `]]`);
 - broken or ambiguous wikilinks;
+- wikilinks to missing headings or block references;
 - pages absent from the private internal catalog;
 - published pages absent from the public home note;
 - public pages that visibly link to private source, raw, operations or maintenance files;

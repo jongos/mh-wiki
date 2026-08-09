@@ -29,12 +29,17 @@ foreach ($file in $allFiles) {
 }
 
 function Resolve-WikiTarget {
-    param([string]$Target)
+    param(
+        [string]$Target,
+        [string]$SourceFile
+    )
 
-    $clean = ($Target -split '\|', 2)[0]
-    $clean = ($clean -split '#', 2)[0].Trim()
+    $clean = $Target.Trim()
     if ([string]::IsNullOrWhiteSpace($clean)) {
-        return @{ Status = 'skip'; Path = $null }
+        if ([string]::IsNullOrWhiteSpace($SourceFile)) {
+            return @{ Status = 'missing'; Path = $null }
+        }
+        return @{ Status = 'ok'; Path = $SourceFile }
     }
 
     $clean = [Uri]::UnescapeDataString($clean).Replace('/', [IO.Path]::DirectorySeparatorChar)
@@ -67,24 +72,184 @@ function Resolve-WikiTarget {
     return @{ Status = 'missing'; Path = $null }
 }
 
+function Get-WikiLinkParts {
+    param([string]$InnerText)
+
+    $pipeIndex = $InnerText.IndexOf('|')
+    $destination = $InnerText.Trim()
+    $alias = $null
+    if ($pipeIndex -ge 0) {
+        $destination = $InnerText.Substring(0, $pipeIndex).Trim()
+        if ($destination.EndsWith('\')) {
+            $destination = $destination.Substring(0, $destination.Length - 1).TrimEnd()
+        }
+        $alias = $InnerText.Substring($pipeIndex + 1)
+    }
+
+    $target = $destination
+    $fragment = $null
+    $hashIndex = $destination.IndexOf('#')
+    if ($hashIndex -ge 0) {
+        $target = $destination.Substring(0, $hashIndex).Trim()
+        $fragment = $destination.Substring($hashIndex + 1).Trim()
+    }
+
+    return @{
+        Target = $target
+        Fragment = $fragment
+        Alias = $alias
+    }
+}
+
+function Mask-MarkdownCode {
+    param([string]$Content)
+
+    $mask = {
+        param($Match)
+        return [regex]::Replace($Match.Value, '[^\r\n]', ' ')
+    }
+    $masked = [regex]::Replace(
+        $Content,
+        '(?ms)^[ \t]*(?:`{3,}|~{3,})[^\r\n]*(?:\r?\n).*?^[ \t]*(?:`{3,}|~{3,})[ \t]*$',
+        $mask
+    )
+    return [regex]::Replace($masked, '`+[^`\r\n]*`+', $mask)
+}
+
+function Get-LineNumber {
+    param(
+        [string]$Content,
+        [int]$Index
+    )
+
+    if ($Index -le 0) {
+        return 1
+    }
+    return [regex]::Matches($Content.Substring(0, $Index), "`r`n|`n|`r").Count + 1
+}
+
+function Normalize-WikiHeading {
+    param([string]$Heading)
+
+    try {
+        $normalized = [Uri]::UnescapeDataString($Heading)
+    } catch {
+        $normalized = $Heading
+    }
+    $normalized = $normalized.Trim()
+    $normalized = $normalized -replace '\s+#+\s*$', ''
+    $normalized = $normalized -replace '<[^>]+>', ''
+    $normalized = $normalized -replace '\[([^\]]+)\]\([^\)]+\)', '$1'
+    $normalized = $normalized -replace '\[\[[^\]|]+\|([^\]]+)\]\]', '$1'
+    $normalized = $normalized -replace '\[\[([^\]]+)\]\]', '$1'
+    $normalized = $normalized -replace '[`*_~]', ''
+    $normalized = $normalized -replace '\s+', ' '
+    return $normalized.Trim().ToLowerInvariant()
+}
+
+function Test-WikiFragment {
+    param(
+        [string]$TargetPath,
+        [string]$Fragment
+    )
+
+    if ([string]::IsNullOrWhiteSpace($Fragment) -or [IO.Path]::GetExtension($TargetPath) -ne '.md') {
+        return $false
+    }
+
+    $targetContent = Get-Content -Raw -LiteralPath $TargetPath
+    if ($Fragment.StartsWith('^')) {
+        $blockId = $Fragment.Substring(1).Trim()
+        if ([string]::IsNullOrWhiteSpace($blockId)) {
+            return $false
+        }
+        return $targetContent -match "(?m)(?:^|\\s)\^$([regex]::Escape($blockId))\\s*$"
+    }
+
+    $wantedHeading = Normalize-WikiHeading -Heading $Fragment
+    foreach ($headingMatch in [regex]::Matches($targetContent, '(?m)^#{1,6}\s+(.+?)\s*$')) {
+        if ((Normalize-WikiHeading -Heading $headingMatch.Groups[1].Value) -eq $wantedHeading) {
+            return $true
+        }
+    }
+    return $false
+}
+
 $inbound = @{}
 foreach ($file in $allFiles) {
     $inbound[$file.FullName] = 0
 }
 
+$wikiLinkCount = 0
+$anchoredWikiLinkCount = 0
 foreach ($file in $markdownFiles) {
     $relative = $relativeByFile[$file.FullName]
     $content = Get-Content -Raw -LiteralPath $file.FullName
-    foreach ($match in [regex]::Matches($content, '\[\[([^\]]+)\]\]')) {
-        $target = $match.Groups[1].Value
-        $resolved = Resolve-WikiTarget -Target $target
-        if ($resolved.Status -eq 'missing') {
-            $errors.Add("Broken link in ${relative}: [[$target]]")
-        } elseif ($resolved.Status -eq 'ambiguous') {
-            $errors.Add("Ambiguous short link in ${relative}: [[$target]]")
-        } elseif ($resolved.Status -eq 'ok' -and $resolved.Path -ne $file.FullName) {
-            $inbound[$resolved.Path] = [int]$inbound[$resolved.Path] + 1
+    $linkContent = Mask-MarkdownCode -Content $content
+    $openIndex = -1
+    foreach ($token in [regex]::Matches($linkContent, '(?<!\\)\[\[|(?<!\\)\]\]')) {
+        $line = Get-LineNumber -Content $content -Index $token.Index
+        if ($token.Value -eq '[[') {
+            if ($openIndex -ge 0) {
+                $errors.Add("Nested or unclosed opening wikilink delimiter in ${relative}:$line")
+            }
+            $openIndex = $token.Index
+            continue
         }
+
+        if ($openIndex -lt 0) {
+            $errors.Add("Closing wikilink delimiter without an opening delimiter in ${relative}:$line")
+            continue
+        }
+
+        $innerStart = $openIndex + 2
+        $innerText = $content.Substring($innerStart, $token.Index - $innerStart)
+        $openLine = Get-LineNumber -Content $content -Index $openIndex
+        $openIndex = -1
+        $wikiLinkCount++
+
+        if ([string]::IsNullOrWhiteSpace($innerText)) {
+            $errors.Add("Empty wikilink in ${relative}:$openLine")
+            continue
+        }
+        if ($innerText -match '[\r\n]') {
+            $errors.Add("Wikilink spans more than one line in ${relative}:$openLine")
+            continue
+        }
+
+        $linkParts = Get-WikiLinkParts -InnerText $innerText
+        if ($null -ne $linkParts.Alias -and [string]::IsNullOrWhiteSpace($linkParts.Alias)) {
+            $errors.Add("Wikilink has an empty display alias in ${relative}:${openLine}: [[$innerText]]")
+        }
+        if ([string]::IsNullOrWhiteSpace($linkParts.Target) -and $null -eq $linkParts.Fragment) {
+            $errors.Add("Wikilink has no target in ${relative}:${openLine}: [[$innerText]]")
+            continue
+        }
+        if ($null -ne $linkParts.Fragment -and [string]::IsNullOrWhiteSpace($linkParts.Fragment)) {
+            $errors.Add("Wikilink has an empty heading or block reference in ${relative}:${openLine}: [[$innerText]]")
+            continue
+        }
+
+        $resolved = Resolve-WikiTarget -Target $linkParts.Target -SourceFile $file.FullName
+        if ($resolved.Status -eq 'missing') {
+            $errors.Add("Broken link in ${relative}:${openLine}: [[$innerText]]")
+        } elseif ($resolved.Status -eq 'ambiguous') {
+            $errors.Add("Ambiguous short link in ${relative}:${openLine}: [[$innerText]]")
+        } elseif ($resolved.Status -eq 'ok') {
+            if ($resolved.Path -ne $file.FullName) {
+                $inbound[$resolved.Path] = [int]$inbound[$resolved.Path] + 1
+            }
+            if ($null -ne $linkParts.Fragment) {
+                $anchoredWikiLinkCount++
+                if (-not (Test-WikiFragment -TargetPath $resolved.Path -Fragment $linkParts.Fragment)) {
+                    $errors.Add("Broken heading or block reference in ${relative}:${openLine}: [[$innerText]]")
+                }
+            }
+        }
+    }
+    if ($openIndex -ge 0) {
+        $line = Get-LineNumber -Content $content -Index $openIndex
+        $errors.Add("Opening wikilink delimiter without a closing delimiter in ${relative}:$line")
     }
 }
 
@@ -278,6 +443,8 @@ foreach ($source in $sourceSnapshots) {
 Write-Output "MediaHedge wiki lint"
 Write-Output "Markdown files: $($markdownFiles.Count)"
 Write-Output "Wiki pages: $($wikiFiles.Count)"
+Write-Output "Wikilinks: $wikiLinkCount"
+Write-Output "Heading and block links: $anchoredWikiLinkCount"
 Write-Output "Raw sources: $($sourceSnapshots.Count)"
 Write-Output "Errors: $($errors.Count)"
 Write-Output "Warnings: $($warnings.Count)"

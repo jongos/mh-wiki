@@ -2,7 +2,7 @@
 title: Welcome to the MediaHedge Knowledgebase
 type: overview
 status: current
-updated: 2026-08-08
+updated: 2026-08-09
 source_count: 12
 publish: false
 tags:
@@ -70,4 +70,4 @@ Welcome in. Pick a thread, follow the links, and let the system reveal itself on
 
 ## Source basis
 
-This welcome page is derived from the twelve-source corpus summarized in [[wiki/overview]] and cataloged in [[MediaHedge Knowledgebase#Source summaries]]. It adds no independent evidence.
+This welcome page is derived from the twelve-source corpus summarized in [[wiki/overview]] and cataloged in [[wiki/operations/internal-catalog#Source summaries]]. It adds no independent evidence.
