@@ -2,7 +2,7 @@
 title: Welcome to the MediaHedge Knowledgebase - Word Guide
 type: source
 status: current
-updated: 2026-08-08
+updated: 2026-08-09
 ingested: 2026-08-08
 source_file: "[[raw/sources/MediaHedge_Knowledgebase_Introduction.docx]]"
 source_hash: D700584CFDDA0D328A532F603CFCA3F0D68CE8AA4B181254A6EA04E76DFDA840
@@ -51,6 +51,5 @@ This document is a **derived orientation artifact**. It summarizes existing page
 ## Provenance
 
 - Raw source: [[raw/sources/MediaHedge_Knowledgebase_Introduction.docx]]
-- Root deliverable: `MediaHedge_Knowledgebase_Introduction.docx`
 - Hash: `D700584CFDDA0D328A532F603CFCA3F0D68CE8AA4B181254A6EA04E76DFDA840`
 - Derived from: the twelve-source MediaHedge wiki corpus; no new factual assertions were introduced.

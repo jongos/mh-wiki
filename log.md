@@ -192,3 +192,12 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Live defect found and repaired: Obsidian had recreated the parent `MD-wiki` Publish connection while that vault was open. After Obsidian was closed normally, preserved the configuration under a timestamped disabled filename and set the global registry to parent closed and canonical `MH Wiki` open.
 - Evidence integrity: no wiki claim, publication scope, source count, raw manifest entry or immutable raw source changed.
 - Lint: passed with 50 Markdown files, 37 wiki pages, 538 active wikilinks, 10 diagram embeds, nine SVG diagrams and 13 raw sources; 0 errors and 0 warnings.
+
+## [2026-08-09] maintenance | Vault directory cleanup
+
+- Scope: inventoried tracked, untracked and ignored files; searched for temporary files, editor locks, caches, backups, empty directories, obsolete outputs and unreferenced tooling.
+- Duplicate verification: confirmed all 13 Word files at the vault root were byte-identical SHA-256 matches of their canonical snapshots under `raw/sources/` before removal.
+- Files removed: deleted the 13 redundant root Word copies and the obsolete one-time `tools/build-knowledgebase-introduction.py` generator, which was unreferenced and would recreate a stale root duplicate rather than safely versioning the immutable derived artifact.
+- Documentation: removed the obsolete root-copy ignore rules, documented canonical snapshot placement in `README.md` and removed the stale root-deliverable reference from [[wiki/sources/mediahedge-knowledgebase-introduction]].
+- Files retained: preserved Obsidian's ignored appearance and workspace state because the running app actively uses them; retained every canonical source, source-summary page, template, diagram, compatibility page, maintenance tool and recovery artifact because each has a current role.
+- Evidence integrity: no canonical file in `raw/sources/`, raw manifest entry, wiki claim, source count or publication setting changed.

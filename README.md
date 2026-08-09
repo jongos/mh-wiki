@@ -28,9 +28,9 @@ This vault is a persistent, source-grounded knowledge base for MediaHedge's medi
 - `log.md` is the append-only activity history.
 - `VERSION-HISTORY.md` is the human recovery guide and milestone index.
 
-The original Word briefs present in the vault root at initial setup were left untouched. Canonical ingestion snapshots are stored in `raw/sources/` and identified by SHA-256 in [[raw/manifest]].
+Canonical ingestion snapshots are stored in `raw/sources/` and identified by SHA-256 in [[raw/manifest]]. Byte-identical working copies are not retained at the vault root.
 
-The vault is initialized as a Git repository on `main`. Markdown, tools and canonical raw snapshots are trackable; the duplicate pre-architecture Word files at the vault root are intentionally ignored.
+The vault is initialized as a Git repository on `main`. Markdown, tools and canonical raw snapshots are tracked; new files at the vault root remain visible for deliberate review rather than being silently ignored as presumed duplicates.
 
 ## Obsidian Publish
 
@@ -41,7 +41,7 @@ The vault is initialized as a Git repository on `main`. Markdown, tools and cano
 - Publish the root `publish.css`, all `publish: true` notes and their files under `assets/`.
 - In **Publish changes**, remove the stale remote paths beginning with `MH Wiki/`. Those paths came from publishing the parent folder and include private maintenance material. The replacement files must appear without an `MH Wiki/` prefix.
 - Keep the Publish file explorer hidden or hide the internal folder tree; the home page provides the intended navigation.
-- Treat `publish: false` as the wiki's publication policy, not an automatic Obsidian security control: Obsidian will still publish a private file if it is manually selected. Review **Add linked** results and keep private Markdown and root Word originals unselected.
+- Treat `publish: false` as the wiki's publication policy, not an automatic Obsidian security control: Obsidian will still publish a private file if it is manually selected. Review **Add linked** results and keep private Markdown and all Word source documents unselected.
 - A complete deployment contains 32 files: 21 public Markdown notes, `publish.css`, the banner and nine SVG diagrams. Run `tools\publish-audit.cmd` after publishing to compare the live inventory with that intended set.
 
 ## Normal workflows
