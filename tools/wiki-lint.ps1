@@ -42,6 +42,51 @@ function Read-Utf8Text {
     }
 }
 
+function Test-PublishVaultConfiguration {
+    $obsidianDirectory = Join-Path $script:vault '.obsidian'
+    $publishConfigPath = Join-Path $obsidianDirectory 'publish.json'
+    $publishCssPath = Join-Path $script:vault 'publish.css'
+
+    if (-not (Test-Path -LiteralPath $obsidianDirectory -PathType Container)) {
+        $script:errors.Add("Missing root .obsidian directory; open this directory, not its parent, as the Obsidian vault")
+        return
+    }
+    if (-not (Test-Path -LiteralPath $publishConfigPath -PathType Leaf)) {
+        $script:errors.Add("Missing root .obsidian/publish.json; the correctly rooted vault is not connected to Obsidian Publish")
+        return
+    }
+    if (-not (Test-Path -LiteralPath $publishCssPath -PathType Leaf)) {
+        $script:errors.Add("Missing root publish.css; Obsidian Publish will not load a nested custom stylesheet")
+    }
+
+    try {
+        $publishConfig = (Read-Utf8Text -Path $publishConfigPath) | ConvertFrom-Json
+    } catch {
+        $script:errors.Add("Invalid JSON in .obsidian/publish.json: $($_.Exception.Message)")
+        return
+    }
+
+    if ([string]$publishConfig.siteId -notmatch '^[0-9a-fA-F]{32}$') {
+        $script:errors.Add('Invalid or missing siteId in .obsidian/publish.json')
+    }
+    if ([string]$publishConfig.host -notmatch '^publish-[0-9]+\.obsidian\.md$') {
+        $script:errors.Add('Invalid or missing Publish host in .obsidian/publish.json')
+    }
+
+    $parent = Split-Path -Parent $script:vault
+    $parentPublishConfigPath = Join-Path $parent '.obsidian\publish.json'
+    if (Test-Path -LiteralPath $parentPublishConfigPath -PathType Leaf) {
+        try {
+            $parentPublishConfig = (Read-Utf8Text -Path $parentPublishConfigPath) | ConvertFrom-Json
+            if ([string]$parentPublishConfig.siteId -eq [string]$publishConfig.siteId) {
+                $script:errors.Add("The parent directory is connected to the same Publish site; disable its .obsidian/publish.json to prevent prefixed paths and broken vault-relative links")
+            }
+        } catch {
+            $script:warnings.Add("Could not inspect the parent Publish configuration: $($_.Exception.Message)")
+        }
+    }
+}
+
 function Resolve-WikiTarget {
     param(
         [string]$Target,
@@ -354,6 +399,8 @@ function Test-PublishedPresentation {
         $script:errors.Add("Published page with external links needs a YYYY-MM-DD link-check date: $Relative")
     }
 }
+
+Test-PublishVaultConfiguration
 
 $inbound = @{}
 foreach ($file in $allFiles) {

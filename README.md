@@ -33,9 +33,12 @@ The vault is initialized as a Git repository on `main`. Markdown, tools and cano
 
 ## Obsidian Publish
 
+- Open `MH Wiki` itself as the Obsidian vault. Do not open its parent `MD-wiki` folder: the notes, links, assets and `publish.css` are all vault-relative to `MH Wiki`.
+- The tracked `.obsidian/publish.json` connects this correctly rooted vault to the existing Publish site; local window and plugin state remain ignored.
 - Reader-facing notes use `publish: true`; private evidence and maintenance notes use `publish: false`.
 - Set `MediaHedge Knowledgebase.md` as the Publish homepage.
-- Publish `publish.css` with the reader-facing notes.
+- Publish the root `publish.css`, all `publish: true` notes and their files under `assets/`.
+- In **Publish changes**, remove the stale remote paths beginning with `MH Wiki/`. Those paths came from publishing the parent folder and include private maintenance material. The replacement files must appear without an `MH Wiki/` prefix.
 - Keep the Publish file explorer hidden or hide the internal folder tree; the home page provides the intended navigation.
 - Review the selection before using **Add linked**. Private Markdown is excluded by property, while root Word originals should remain unselected.
 

@@ -134,3 +134,13 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Adversarial verification: temporary fixtures produced the expected failures for insecure and unlabeled links, missing check dates, missing diagram descriptions and captions, malformed dimensions, missing accessibility metadata, unsafe SVG content, duplicate identifiers, unresolved references and missing mobile styling; all fixtures and the temporary preview were removed afterward.
 - Evidence integrity: no immutable raw source, claim, policy rail, publication flag or `source_count` changed; external links remain contextual and do not increase evidence counts.
 - Lint: passed with 49 Markdown files, 37 wiki pages, 538 active wikilinks, 15 Markdown tables, six external links, ten published diagram embeds, nine SVG diagrams and 13 raw sources; 0 errors and 0 warnings.
+
+## [2026-08-09] maintenance | Obsidian Publish vault-root repair
+
+- Diagnosis: the active Obsidian configuration was one directory above the canonical wiki, so Publish treated `MD-wiki` as the vault and deployed files under an incorrect `MH Wiki/` prefix while the notes, wikilinks, assets and `publish.css` were authored relative to `MH Wiki` itself.
+- Live evidence: the Publish cache exposed 28 stale prefixed paths, including private source, operations, template and maintenance files; it contained none of the nine SVG diagrams and did not expose a root `publish.css`.
+- Configuration repair: added durable Obsidian and existing-site identity settings under the canonical root `.obsidian/`, kept local workspace and plugin state out of version control and disabled Obsidian Sync for this Dropbox-backed vault.
+- Recurrence prevention: moved the parent vault's 122-byte `publish.json` to the recoverable backup `publish.parent-vault-disabled.json` and added a linter failure for a missing root Publish configuration, a missing root stylesheet, malformed site identity or a parent directory connected to the same site.
+- Documentation: updated the human and agent instructions to require opening and publishing `MH Wiki` itself and to remove stale remote paths beginning with `MH Wiki/` during the next Publish reconciliation.
+- Evidence integrity: no public claim, reader page, source count, raw manifest or immutable raw source changed.
+- Verification: the enhanced linter passed with 49 Markdown files, 37 wiki pages, 538 active wikilinks, 10 published diagram embeds, nine SVG diagrams, 13 raw sources, 0 errors and 0 warnings.
