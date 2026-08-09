@@ -40,7 +40,8 @@ The vault is initialized as a Git repository on `main`. Markdown, tools and cano
 - Publish the root `publish.css`, all `publish: true` notes and their files under `assets/`.
 - In **Publish changes**, remove the stale remote paths beginning with `MH Wiki/`. Those paths came from publishing the parent folder and include private maintenance material. The replacement files must appear without an `MH Wiki/` prefix.
 - Keep the Publish file explorer hidden or hide the internal folder tree; the home page provides the intended navigation.
-- Review the selection before using **Add linked**. Private Markdown is excluded by property, while root Word originals should remain unselected.
+- Treat `publish: false` as the wiki's publication policy, not an automatic Obsidian security control: Obsidian will still publish a private file if it is manually selected. Review **Add linked** results and keep private Markdown and root Word originals unselected.
+- A complete deployment contains 32 files: 21 public Markdown notes, `publish.css`, the banner and nine SVG diagrams. Run `tools\publish-audit.cmd` after publishing to compare the live inventory with that intended set.
 
 ## Normal workflows
 

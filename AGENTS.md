@@ -118,6 +118,7 @@ Quantitative policy rails must show their source and effective date when availab
 - Treat this directory, `MH Wiki`, as the Obsidian vault root. Never publish from its parent directory; public paths, wikilinks, assets and `publish.css` are vault-relative to this root.
 - Treat `MediaHedge Knowledgebase.md` as the primary home note and preserve `index.md` as a compatibility alias for older exports and external links.
 - Publish only reader-facing knowledge pages. Keep source summaries, raw evidence, operations registers, logs, templates, tools and agent instructions marked or configured as private.
+- Do not assume Obsidian enforces the `publish` frontmatter property. It is the wiki's publication policy; any file manually selected in Publish can still become public.
 - Give financiers a decision-first route: financeability, repayment, sizing, control, protection, monitoring, recovery, portfolio construction and realized economics.
 - Every durable concept page should link back to the home note, the financier diligence route and the full credit lifecycle.
 - Keep source summaries available privately for traceability, but do not expose source registries, hashes, raw filenames or maintenance instructions in public pages.
@@ -206,6 +207,8 @@ Periodically check for:
 - research gaps that could be resolved with an authoritative source.
 
 Run `tools\wiki-lint.cmd` on Windows (`powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\tools\wiki-lint.ps1` is the explicit equivalent), then perform a semantic review. Mechanical success is not proof that the knowledge is correct.
+
+After an Obsidian Publish deployment, run `tools\publish-audit.cmd`. It compares the live server inventory with the local `publish: true` notes, their referenced assets and root `publish.css`; repair every missing or unexpected path before treating the site as healthy.
 
 ## Log format
 

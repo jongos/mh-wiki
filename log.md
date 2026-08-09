@@ -156,3 +156,15 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Remaining deployment action: reconcile Publish changes from the now-open `MH Wiki` vault so stale remote paths are deleted and the root stylesheet, public notes and assets are uploaded without the `MH Wiki/` prefix.
 - Evidence integrity: no reader-facing claim, raw manifest or immutable raw source changed.
 - Verification: the parent Publish configuration remained absent after the correctly registered child vault opened; JSON, PowerShell syntax and the complete wiki lint passed with 0 errors and 0 warnings.
+
+## [2026-08-09] maintenance | Live deployment inventory diagnosis
+
+- Live symptom: the root Publish URL displayed only the site welcome placeholder, while the site header still linked to the obsolete prefixed homepage path.
+- Exact inventory: the server exposed 22 files instead of the intended 32. It had all 20 public topic pages and the banner, but lacked `MediaHedge Knowledgebase.md`, root `publish.css` and all nine SVG diagrams; private `raw/README.md` was published unexpectedly.
+- Root result: the missing homepage explains the blank landing page, the missing stylesheet explains the default appearance and generated filename heading, and the missing diagrams leave nine public page embeds unresolved.
+- Tooling: added `tools/publish-audit.ps1` and its Windows launcher to derive the intended public set from frontmatter and asset embeds, read the live Publish inventory and fail with exact missing and unexpected paths.
+- Publication policy: clarified that `publish: false` is a MediaHedge selection rule, not an automatic Obsidian security control; a manually selected private file can still be published.
+- Vault process repair: found a stale parent-vault process repeatedly recreating its Publish configuration, closed all Obsidian processes, marked only the canonical child vault active, disabled the recreated parent configuration and relaunched by the child's exact vault ID; the parent configuration then remained absent.
+- Real-DOM stylesheet repair: inspected Obsidian Publish's rendered wrappers and expanded `publish.css` to hide its generated filename header and apply introductory, card, caption, external-context and continuation treatments through the actual `.el-*` containers.
+- Visual verification: rendered a temporary Publish-DOM fixture with the production stylesheet; CSSOM loaded 47 rules, the filename header and frontmatter were hidden, cards formed a three-column grid, captions and context panels styled correctly and no document overflow remained. The fixture and server were removed afterward.
+- Remaining deployment action: upload the 11 reported files, remove `raw/README.md`, reset the homepage to root `MediaHedge Knowledgebase` and hide the file explorer, then rerun the live audit.

@@ -53,7 +53,9 @@ body {
 
 /* Keep publishing metadata and maintenance properties out of the reading view. */
 .metadata-container,
-.frontmatter-container {
+.frontmatter-container,
+.markdown-rendered .el-pre.mod-frontmatter,
+.markdown-rendered .mod-header.mod-ui {
   display: none !important;
 }
 
@@ -76,7 +78,8 @@ body {
   line-height: 1.08;
 }
 
-.markdown-rendered h1 + p {
+.markdown-rendered h1 + p,
+.markdown-rendered .el-h1 + .el-p > p {
   max-width: 70ch;
   color: var(--text-muted);
   font-size: 1.08rem;
@@ -163,7 +166,8 @@ body {
   box-shadow: var(--mh-shadow);
 }
 
-.markdown-rendered p:has(.image-embed) + p > em:only-child {
+.markdown-rendered p:has(.image-embed) + p > em:only-child,
+.markdown-rendered .el-p:has(.image-embed) + .el-p > p > em:only-child {
   display: block;
   max-width: 74ch;
   margin: 0 0 1.75rem;
@@ -295,7 +299,8 @@ body {
   font-size: 1.12rem;
 }
 
-.markdown-rendered h2[data-heading="Continue Exploring"] + p {
+.markdown-rendered h2[data-heading="Continue Exploring"] + p,
+.markdown-rendered .el-h2:has(> h2[data-heading="Continue Exploring"]) + .el-p > p {
   margin-top: 0;
   padding: 0.25rem 1rem 0.9rem;
   border: 1px solid var(--background-modifier-border);
@@ -305,7 +310,8 @@ body {
 }
 
 /* Turn the home-page starting routes into three compact decision cards. */
-.markdown-rendered h2[data-heading="Start Here"] + ul {
+.markdown-rendered h2[data-heading="Start Here"] + ul,
+.markdown-rendered .el-h2:has(> h2[data-heading="Start Here"]) + .el-ul > ul {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.9rem;
@@ -313,7 +319,8 @@ body {
   list-style: none;
 }
 
-.markdown-rendered h2[data-heading="Start Here"] + ul > li {
+.markdown-rendered h2[data-heading="Start Here"] + ul > li,
+.markdown-rendered .el-h2:has(> h2[data-heading="Start Here"]) + .el-ul > ul > li {
   margin: 0;
   padding: 1rem 1.05rem;
   border: 1px solid var(--background-modifier-border);
@@ -323,7 +330,8 @@ body {
 }
 
 /* External context is useful, but remains visually secondary to the core model. */
-.markdown-rendered h2[data-heading="External Context"] + p {
+.markdown-rendered h2[data-heading="External Context"] + p,
+.markdown-rendered .el-h2:has(> h2[data-heading="External Context"]) + .el-p > p {
   padding: 1rem 1.1rem;
   border-inline-start: 4px solid var(--mh-teal);
   border-radius: 0 10px 10px 0;
@@ -358,7 +366,8 @@ body {
     padding: 0.62rem 0.68rem;
   }
 
-  .markdown-rendered h2[data-heading="Start Here"] + ul {
+  .markdown-rendered h2[data-heading="Start Here"] + ul,
+  .markdown-rendered .el-h2:has(> h2[data-heading="Start Here"]) + .el-ul > ul {
     grid-template-columns: 1fr;
   }
 
