@@ -20,6 +20,10 @@ MediaHedge's sizing method is a constraint system. Underwriting first converts h
 > [!tip] Decision Point
 > The approved commitment is the lowest amount permitted by every applicable test.
 
+![[assets/diagrams/loan-sizing-waterfall.svg|Conceptual waterfall from headline collateral value to the lowest permitted loan commitment]]
+
+*Conceptual view: the waterfall shows the order of the tests, not transaction data or currently approved policy limits.*
+
 ## Sequence
 
 1. **Eligibility:** verify ownership, enforceability, assignment, obligor quality, conditions, deductions, timing and absence of overlap.

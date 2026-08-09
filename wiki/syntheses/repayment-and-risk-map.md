@@ -16,6 +16,10 @@ tags:
 
 What are the principal repayment and protection paths in the model, how do they differ, and where do they share dependencies?
 
+![[assets/diagrams/repayment-source-map.svg|Conceptual map of repayment and protection sources and their shared dependencies]]
+
+*Conceptual view: these sources do not provide equal protection, and differently labeled assets may still depend on the same economic event.*
+
 ## Comparative Map
 
 | Value or protection source | Primary value driver | Principal conditions and risks | Primary controls | What it does not prove |

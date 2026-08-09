@@ -16,6 +16,10 @@ tags:
 
 Portfolio construction aggregates exposure by common economic failure driver rather than nominal deal count. A collection of sound loans can remain fragile if they depend on the same distributor, incentive program, completion guarantor, sales agent, producer, bank, platform, collateral market or collection window.
 
+![[assets/diagrams/portfolio-concentration-map.svg|Conceptual portfolio map connecting exposure to common economic failure drivers]]
+
+*Conceptual view: the map identifies dimensions to measure; it does not represent MediaHedge portfolio holdings or performance.*
+
 ## Dimensions
 
 1. **Obligor and counterparty:** distributors, platforms, governments, insurers, guarantors, collection managers, account banks and affiliates.
@@ -35,6 +39,10 @@ Report exposure and availability by obligor, collateral type, jurisdiction, guar
 ## Limits and Failure Modes
 
 Borrower SPVs, titles and territories do not create diversification when the underlying failure driver is shared. Different collateral categories within one film may all depend on delivery. Guarantees and insurance reduce net exposure only when enforceable, collectible and not concentrated in the same provider. Historical low loss may reflect a small sample, benign vintage or unresolved extensions. Correlation and illiquidity commonly rise together in stress.
+
+## External Context
+
+The SEC's [Asset Allocation and Diversification](https://www.investor.gov/introduction-investing/getting-started/asset-allocation) page provides a general explanation of diversification and concentration. It is broad investor education, not a substitute for private-credit concentration definitions, stress testing or transaction diligence. Links checked: 2026-08-09.
 
 ## Connections
 

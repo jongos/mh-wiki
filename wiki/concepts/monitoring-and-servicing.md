@@ -15,6 +15,10 @@ tags:
 
 Servicing is active credit management from first draw through final payoff. It maintains a current view of cost to complete, eligible collateral, cash conversion, covenant status and recovery timing, then links material variance to a defined decision right.
 
+![[assets/diagrams/monitoring-loop.svg|Monitoring loop from the approved baseline through evidence, comparison, diagnosis and decision]]
+
+*Conceptual view: monitoring becomes a control only when verified evidence is assigned to an owner and connected to a decision.*
+
 ## Why the Risk Changes
 
 After closing, budget and schedule performance can change, contracts can be amended, obligors can weaken, incentive compliance can fail and collections can slip. Collateral also changes state: production spend becomes an incentive claim, unsold rights become licenses, delivery makes receivables due and cash reduces exposure. A static closing model cannot capture those transitions.

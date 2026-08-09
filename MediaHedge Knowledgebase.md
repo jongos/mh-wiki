@@ -19,6 +19,10 @@ MediaHedge works at the intersection of creative production and disciplined cred
 
 You do not need to be a film-finance specialist. Start with the question you care about and follow the links as far as you would like to go.
 
+![[assets/diagrams/credit-journey.svg|Conceptual diagram of the MediaHedge credit journey from financeability through portfolio reporting]]
+
+*Conceptual view: each stage produces evidence and a decision, while current policy and transaction documents control any specific financing.*
+
 ## Start Here
 
 - **New to MediaHedge?** Read [[wiki/entities/mediahedge|Who MediaHedge is]] and [[wiki/overview|How the lending model works]].

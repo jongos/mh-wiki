@@ -30,6 +30,8 @@ The agent owns the Markdown layer: create, revise, cross-link and lint it. The h
 │                              primary welcome and content catalog
 ├── index.md                  compatibility alias for older links
 ├── log.md                    append-only activity history
+├── assets/
+│   └── diagrams/             original reader-facing SVG explanations
 ├── raw/
 │   ├── manifest.md           source identity, hash and ingest status
 │   ├── inbox/                new, not-yet-ingested sources
@@ -127,6 +129,10 @@ Quantitative policy rails must show their source and effective date when availab
 - End every durable published wiki page with one `## Continue Exploring` section containing human-readable navigation labels.
 - Use callouts sparingly and consistently: `important` for why a point matters, `tip` for a decision point, `note` for an important distinction and `warning` for an evidence limitation.
 - Keep comparative tables when the row-and-column relationship matters. Use escaped alias pipes inside tables and retain responsive horizontal scrolling for narrow screens.
+- Prefer original, editable SVG diagrams when a relationship is materially easier to understand visually. Every diagram must include a descriptive title, description, display alias and nearby conceptual/data limitation caption.
+- Never publish a chart that implies historical or forecast performance without source data. Label conceptual diagrams as conceptual and distinguish framework illustrations from portfolio, transaction or market data.
+- Use copyrighted film stills, celebrity images, posters, logos and quotations only when relevance and publication rights are documented. Do not imply endorsement; prefer original visuals when rights are uncertain.
+- Add external links selectively, use HTTPS and prioritize current government, regulatory, official program and primary sources. Identify general context as context, and do not let an external link silently change MediaHedge policy or transaction-specific conclusions.
 - Maintain readable contrast, visible keyboard focus, responsive images and mobile-safe tables in `publish.css`; do not rely on color alone to carry meaning.
 
 ## Ingest workflow
@@ -182,6 +188,9 @@ Periodically check for:
 - published navigation links that expose a vault path instead of a reader-facing label;
 - published headings that violate Title Case or lack blank-line spacing;
 - missing or duplicate `Continue Exploring` sections and unsupported public callout types;
+- missing diagram alternative text, captions, accessibility metadata or local asset targets;
+- unsafe SVG content, external image dependencies or unreferenced public diagrams;
+- malformed, insecure or unlabeled external Markdown links;
 - broken or incomplete responsive, dark-mode, table, callout and focus styling in `publish.css`;
 - orphan pages with no inbound wiki links;
 - missing, duplicate or invalid frontmatter fields and malformed heading hierarchy;

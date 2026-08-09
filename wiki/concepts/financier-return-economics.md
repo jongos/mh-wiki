@@ -16,6 +16,10 @@ tags:
 
 The financier's realized return is the result of actual dated cash flows, not the stated coupon alone. Analysis must incorporate advances, purchase price, fees, principal and interest collections, duration, prepayment, extension, default, nonaccrual, recovery cost, servicing expense and idle-capital or funding effects.
 
+![[assets/diagrams/return-economics-bridge.svg|Conceptual bridge from contractual coupon and fees to realized XIRR and cash multiple]]
+
+*Conceptual view: the bridge identifies economic drivers and does not present forecast or historical MediaHedge returns.*
+
 ## Components
 
 1. **Contractual coupon:** accrual on the defined balance under the actual day-count, payment and compounding terms.

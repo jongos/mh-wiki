@@ -36,6 +36,10 @@ Lender of record, purchaser, participant, agent, secured party, collateral agent
 
 A UCC financing statement does not prove ownership, attachment, priority in every asset or deposit-account control. Copyright interests, government receivables, foreign assets and anti-assignment rules may require separate treatment. Payment directions do not necessarily waive defenses or setoff. Powers of attorney can be limited. Statutory claims, guilds, unions, vendors and other stakeholders can alter practical priority. Enforcement value still depends on preserving completion, delivery and contract rights.
 
+## External Context
+
+For current public orientation, see the Uniform Law Commission's [Uniform Commercial Code overview](https://www.uniformlaws.org/acts/ucc) and the U.S. Copyright Office's [Recordation Overview](https://www.copyright.gov/recordation/). The UCC is enacted through state law, and the correct attachment, perfection, priority and recordation analysis still depends on the governing jurisdiction, collateral and transaction documents. Links checked: 2026-08-09.
+
 ## Connections
 
 The security package establishes the legal path; [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]] establishes the operational path of proceeds. [[wiki/concepts/forward-flow-governance|Forward-Flow Governance]] determines who may exercise the rights, and [[wiki/concepts/defaults-workouts-and-recoveries|Workout Governance]] determines how they are used under stress.

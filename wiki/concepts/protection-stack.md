@@ -15,6 +15,10 @@ tags:
 
 The MediaHedge protection stack is a layered credit architecture in which each control addresses a distinct failure mode. It avoids relying on one guaranty, one collateral class, one filing or a high coupon as blanket protection.
 
+![[assets/diagrams/protection-stack.svg|Five-layer MediaHedge protection stack with the distinct risks addressed by each layer]]
+
+*Conceptual view: the layers reinforce one another, but no layer substitutes for a missing eligibility, control or enforcement requirement.*
+
 ## Layers
 
 1. **Eligibility and verification:** only documented, enforceable and independently supported value enters the borrowing base.

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="sizing-title sizing-desc">
+  <title id="sizing-title">Loan sizing constraint waterfall</title>
+  <desc id="sizing-desc">Headline collateral is reduced through eligibility, advance rates, concentration limits, aggregate caps, and timing tests until the lowest permitted commitment remains.</desc>
+  <defs><style>.bg{fill:#fff}.eyebrow{font:700 15px Aptos,Segoe UI,Arial,sans-serif;letter-spacing:2px;fill:#176b73}.title{font:750 32px Aptos,Segoe UI,Arial,sans-serif;fill:#0c224f}.sub{font:400 17px Aptos,Segoe UI,Arial,sans-serif;fill:#52636b}.step{stroke:#fff;stroke-width:3}.label{font:750 18px Aptos,Segoe UI,Arial,sans-serif;fill:#0c224f;text-anchor:middle}.detail{font:400 14px Aptos,Segoe UI,Arial,sans-serif;fill:#52636b;text-anchor:middle}.inside{font:750 18px Aptos,Segoe UI,Arial,sans-serif;fill:#fff;text-anchor:middle}.result{fill:#0c224f}.resulthead{font:750 20px Aptos,Segoe UI,Arial,sans-serif;fill:#fff;text-anchor:middle}.resultsub{font:400 15px Aptos,Segoe UI,Arial,sans-serif;fill:#d7eef0;text-anchor:middle}.note{font:700 16px Aptos,Segoe UI,Arial,sans-serif;fill:#9b571c;text-anchor:middle}</style></defs>
+  <rect class="bg" width="1200" height="650" rx="24"/>
+  <text class="eyebrow" x="54" y="58">CONSTRAINT WATERFALL</text><text class="title" x="54" y="99">From Headline Value to Approved Commitment</text><text class="sub" x="54" y="132">Each test can reduce exposure; none can increase the amount permitted by another test.</text>
+  <path class="step" fill="#dceff0" d="M130 180H870L820 248H180Z"/><text class="label" x="500" y="220">Headline Collateral</text>
+  <path class="step" fill="#bfe4e7" d="M180 248H820L770 316H230Z"/><text class="label" x="500" y="288">Eligible Net Value</text>
+  <path class="step" fill="#8bd2d8" d="M230 316H770L720 384H280Z"/><text class="label" x="500" y="356">Asset-Level Advance</text>
+  <path class="step" fill="#52bdc7" d="M280 384H720L670 452H330Z"/><text class="inside" x="500" y="424">Concentration Limits</text>
+  <path class="step" fill="#2398a4" d="M330 452H670L620 520H380Z"/><text class="inside" x="500" y="492">Aggregate Caps</text>
+  <path class="step" fill="#176b73" d="M380 520H620L580 576H420Z"/><text class="inside" x="500" y="555">Term and Liquidity</text>
+  <g transform="translate(820 258)"><rect class="result" width="300" height="190" rx="22"/><text class="resulthead" x="150" y="56">Approved Commitment</text><text class="resultsub" x="150" y="91"><tspan x="150">The lowest amount permitted</tspan><tspan x="150" dy="24">by every applicable test</tspan></text><path d="M50 132H250" stroke="#12adbd" stroke-width="3"/><text class="resultsub" x="150" y="162">Binding constraint + cushion</text></g>
+  <text class="note" x="500" y="618">Pricing cannot cure ineligible collateral or a failed structural gate.</text>
+</svg>

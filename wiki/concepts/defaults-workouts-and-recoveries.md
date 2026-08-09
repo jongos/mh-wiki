@@ -16,6 +16,10 @@ tags:
 
 A workout is a governed process for diagnosing distress, preserving collateral and claims, and selecting the remedy that maximizes risk-adjusted net present recovery. It is not automatically a concession, and default is not one homogeneous event.
 
+![[assets/diagrams/workout-decision-path.svg|Conceptual workout decision path from a stress signal through diagnosis, governed execution and recovery accounting]]
+
+*Conceptual view: the appropriate remedy depends on the failure mode, available rights, execution cost, timing and approval authority.*
+
 ## Failure-Mode Diagnosis
 
 Film-finance stress can begin with a budget overage, missed schedule, delivery rejection, incentive reduction, obligor delay, covenant breach or diverted proceeds. The first distinction is whether the issue is temporary liquidity, documentation, project performance, obligor credit or fundamental collateral impairment. Different failures imply different rights, deadlines and value-preservation paths.

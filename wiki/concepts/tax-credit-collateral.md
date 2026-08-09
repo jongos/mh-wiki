@@ -51,6 +51,10 @@ An estimate is not an unconditional government receivable, and a completion guar
 
 Track eligible spend versus budget, cost reports, payroll and vendor support, filing milestones, audit status, certificate issuance, buyer settlement, expected-versus-actual timing and any change in program or claimant standing. Changes must update [[wiki/concepts/loan-sizing|the borrowing base]] and [[wiki/concepts/monitoring-and-servicing|the collection forecast]].
 
+## External Context
+
+Official program materials illustrate why production incentives require jurisdiction-specific underwriting. Compare the California Film Commission's [Film and Television Tax Credit Program 4.0](https://film.ca.gov/tax-credit/the-basics-4-0/) with Georgia's official [Film Incentives and Applications](https://georgia.org/industries/film/incentives). Program structure, transferability, qualified expenditures, application timing and audit requirements can differ. The California Film Commission's [Production Alerts](https://film.ca.gov/news-notices/production-alerts/) provide current administrative updates. These examples do not establish eligibility or value for another jurisdiction or transaction. Links checked: 2026-08-09.
+
 ## Continue Exploring
 
 [[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]

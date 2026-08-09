@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="repayment-title repayment-desc">
+  <title id="repayment-title">Repayment and protection source map</title>
+  <desc id="repayment-desc">Contracted receivables, tax incentives, unsold rights, insurance proceeds, and completion support connect to the financier outcome through shared dependencies.</desc>
+  <defs>
+    <marker id="repay-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 10 5 0 10z" fill="#12adbd"/></marker>
+    <style>.bg{fill:#fff}.eyebrow{font:700 15px Aptos,Segoe UI,Arial,sans-serif;letter-spacing:2px;fill:#176b73}.title{font:750 32px Aptos,Segoe UI,Arial,sans-serif;fill:#0c224f}.node{fill:#f7fbfb;stroke:#bdd9dc;stroke-width:2}.node2{fill:#edf7f7;stroke:#12adbd;stroke-width:2}.label{font:750 18px Aptos,Segoe UI,Arial,sans-serif;fill:#0c224f;text-anchor:middle}.detail{font:400 14px Aptos,Segoe UI,Arial,sans-serif;fill:#52636b;text-anchor:middle}.line{fill:none;stroke:#12adbd;stroke-width:3;marker-end:url(#repay-arrow)}.dash{fill:none;stroke:#7ca9ad;stroke-width:2;stroke-dasharray:7 7}.bar{fill:#0c224f}.barhead{font:750 17px Aptos,Segoe UI,Arial,sans-serif;fill:#fff}.bartext{font:400 15px Aptos,Segoe UI,Arial,sans-serif;fill:#d7eef0}.warning{font:700 15px Aptos,Segoe UI,Arial,sans-serif;fill:#9b571c;text-anchor:middle}</style>
+  </defs>
+  <rect class="bg" width="1200" height="650" rx="24"/>
+  <text class="eyebrow" x="54" y="58">VALUE AND PROTECTION PATHS</text><text class="title" x="54" y="99">Different Sources, Different Conditions</text>
+  <g transform="translate(60 170)"><rect class="node" width="190" height="116" rx="16"/><text class="label" x="95" y="42"><tspan x="95">Contracted</tspan><tspan x="95" dy="23">Receivables</tspan></text><text class="detail" x="95" y="94">Payment obligation</text></g>
+  <g transform="translate(270 170)"><rect class="node" width="190" height="116" rx="16"/><text class="label" x="95" y="52">Tax Incentives</text><text class="detail" x="95" y="82">Qualified activity</text></g>
+  <g transform="translate(480 170)"><rect class="node" width="190" height="116" rx="16"/><text class="label" x="95" y="42"><tspan x="95">Unsold-Rights</tspan><tspan x="95" dy="23">Value</tspan></text><text class="detail" x="95" y="94">Future market sale</text></g>
+  <g transform="translate(690 170)"><rect class="node" width="190" height="116" rx="16"/><text class="label" x="95" y="42"><tspan x="95">Insurance</tspan><tspan x="95" dy="23">Proceeds</tspan></text><text class="detail" x="95" y="94">Covered event</text></g>
+  <g transform="translate(900 170)"><rect class="node" width="190" height="116" rx="16"/><text class="label" x="95" y="42"><tspan x="95">Completion</tspan><tspan x="95" dy="23">Support</tspan></text><text class="detail" x="95" y="94">Finish and deliver</text></g>
+  <path class="line" d="M155 286V344H510"/><path class="line" d="M365 286V330H530"/><path class="line" d="M575 286V320"/><path class="line" d="M785 286V330H620"/><path class="line" d="M995 286V344H640"/>
+  <g transform="translate(460 320)"><rect class="node2" width="230" height="108" rx="54"/><text class="label" x="115" y="44">Financier Outcome</text><text class="detail" x="115" y="72">Dated net cash realization</text></g>
+  <path class="dash" d="M575 428V472"/>
+  <rect class="bar" x="54" y="472" width="1092" height="104" rx="16"/>
+  <text class="barhead" x="82" y="506">Shared dependencies</text><text class="bartext" x="82" y="538">Completion and delivery</text><circle cx="307" cy="533" r="4" fill="#12adbd"/><text class="bartext" x="327" y="538">Legal reach</text><circle cx="470" cy="533" r="4" fill="#12adbd"/><text class="bartext" x="490" y="538">Controlled cash</text><circle cx="672" cy="533" r="4" fill="#12adbd"/><text class="bartext" x="692" y="538">Collection timing</text><circle cx="886" cy="533" r="4" fill="#12adbd"/><text class="bartext" x="906" y="538">Counterparty strength</text>
+  <text class="warning" x="600" y="616">Different labels do not create diversification when the failure driver is shared.</text>
+</svg>

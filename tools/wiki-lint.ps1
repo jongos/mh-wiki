@@ -332,6 +332,27 @@ function Test-PublishedPresentation {
             $script:errors.Add("Published callout title is not in Title Case in ${Relative}:${line}: $calloutTitle")
         }
     }
+
+    foreach ($diagramMatch in [regex]::Matches($visible, '(?m)!\[\[(assets/diagrams/[^\]|]+\.svg)(?:\|([^\]]+))?\]\]')) {
+        $script:diagramEmbedCount++
+        $line = Get-LineNumber -Content $Content -Index $diagramMatch.Index
+        $alias = $diagramMatch.Groups[2].Value.Trim()
+        if ([string]::IsNullOrWhiteSpace($alias) -or $alias -match '^\d+$' -or $alias.Length -lt 12) {
+            $script:errors.Add("Published diagram needs descriptive alternative text in ${Relative}:${line}: $($diagramMatch.Groups[1].Value)")
+        }
+
+        $afterDiagram = $visible.Substring($diagramMatch.Index + $diagramMatch.Length)
+        $captionMatch = [regex]::Match($afterDiagram, '^\r?\n\r?\n\*([^*\r\n]+)\*')
+        if (-not $captionMatch.Success) {
+            $script:errors.Add("Published diagram needs an italic caption immediately after it in ${Relative}:${line}")
+        } elseif ($captionMatch.Groups[1].Value -notmatch '(?i)conceptual|illustrative') {
+            $script:errors.Add("Published diagram caption must identify conceptual or illustrative status in ${Relative}:${line}")
+        }
+    }
+
+    if ($visible -match '\]\(https?://' -and $visible -notmatch 'Links checked:\s*\d{4}-\d{2}-\d{2}') {
+        $script:errors.Add("Published page with external links needs a YYYY-MM-DD link-check date: $Relative")
+    }
 }
 
 $inbound = @{}
@@ -344,6 +365,8 @@ $wikiLinkCount = 0
 $anchoredWikiLinkCount = 0
 $markdownTableCount = 0
 $standardMarkdownLinkCount = 0
+$externalMarkdownLinkCount = 0
+$diagramEmbedCount = 0
 foreach ($file in $markdownFiles) {
     $relative = $relativeByFile[$file.FullName]
     $content = Read-Utf8Text -Path $file.FullName
@@ -451,8 +474,32 @@ foreach ($file in $markdownFiles) {
         }
     }
 
-    foreach ($standardLink in [regex]::Matches($linkContent, '!?\[[^\]\r\n]*\]\([^\)\r\n]+\)')) {
+    foreach ($standardLink in [regex]::Matches($linkContent, '(!?)\[([^\]\r\n]*)\]\(([^\)\r\n]+)\)')) {
         $standardMarkdownLinkCount++
+        $isImage = $standardLink.Groups[1].Value -eq '!'
+        $label = $standardLink.Groups[2].Value.Trim()
+        $destination = $standardLink.Groups[3].Value.Trim()
+        $standardLine = Get-LineNumber -Content $content -Index $standardLink.Index
+        if ($destination -match '^(?i)https?://') {
+            $externalMarkdownLinkCount++
+            if ($destination -notmatch '^https://') {
+                $errors.Add("External Markdown link must use HTTPS in ${relative}:${standardLine}: $destination")
+            }
+            if ([string]::IsNullOrWhiteSpace($label)) {
+                $errors.Add("External Markdown link needs a reader-facing label in ${relative}:${standardLine}: $destination")
+            }
+            if ($isImage) {
+                $errors.Add("Externally hosted images are not permitted in ${relative}:${standardLine}: $destination")
+            }
+            try {
+                $externalUri = [Uri]$destination
+                if (-not $externalUri.IsAbsoluteUri -or [string]::IsNullOrWhiteSpace($externalUri.Host)) {
+                    throw 'invalid URI'
+                }
+            } catch {
+                $errors.Add("Malformed external Markdown link in ${relative}:${standardLine}: $destination")
+            }
+        }
     }
 
     $openIndex = -1
@@ -804,7 +851,13 @@ if (-not (Test-Path -LiteralPath $publishCssPath -PathType Leaf)) {
     $requiredCssPatterns = @(
         'theme-dark',
         '@media (max-width:',
+        '@media print',
         'data-heading="Continue Exploring"',
+        'data-heading="Start Here"',
+        'data-heading="External Context"',
+        'img[src$=".svg"]',
+        'p:has(.image-embed)',
+        'width: 760px',
         '.table-wrapper',
         '.callout[data-callout=',
         ':focus-visible'
@@ -812,6 +865,77 @@ if (-not (Test-Path -LiteralPath $publishCssPath -PathType Leaf)) {
     foreach ($requiredPattern in $requiredCssPatterns) {
         if ($publishCss -notmatch [regex]::Escape($requiredPattern)) {
             $errors.Add("publish.css is missing required reader-style support: $requiredPattern")
+        }
+    }
+}
+
+$svgCount = 0
+$diagramDirectory = Join-Path $vault 'assets\diagrams'
+if (-not (Test-Path -LiteralPath $diagramDirectory -PathType Container)) {
+    $errors.Add('Missing original diagram directory: assets/diagrams')
+} else {
+    foreach ($svgFile in Get-ChildItem -LiteralPath $diagramDirectory -File -Filter '*.svg') {
+        $svgCount++
+        $svgRelative = $relativeByFile[$svgFile.FullName]
+        if ($svgFile.BaseName -notmatch '^[a-z0-9]+(?:-[a-z0-9]+)*$') {
+            $errors.Add("SVG diagram filename must use lowercase kebab-case: $svgRelative")
+        }
+        $svgContent = Read-Utf8Text -Path $svgFile.FullName
+        try {
+            $svgDocument = New-Object System.Xml.XmlDocument
+            $svgDocument.XmlResolver = $null
+            $svgDocument.LoadXml($svgContent)
+            $svgRoot = $svgDocument.DocumentElement
+            if ($svgRoot.LocalName -ne 'svg') {
+                $errors.Add("Diagram root element is not SVG: $svgRelative")
+                continue
+            }
+            if ($svgRoot.GetAttribute('viewBox') -notmatch '^\s*0\s+0\s+\d+\s+\d+\s*$') {
+                $errors.Add("SVG diagram needs a valid viewBox: $svgRelative")
+            } else {
+                $viewBoxParts = @($svgRoot.GetAttribute('viewBox') -split '\s+')
+                if ($svgRoot.GetAttribute('width') -ne $viewBoxParts[2] -or
+                    $svgRoot.GetAttribute('height') -ne $viewBoxParts[3]) {
+                    $errors.Add("SVG width and height must match its viewBox: $svgRelative")
+                }
+            }
+            if ($svgRoot.GetAttribute('role') -ne 'img') {
+                $errors.Add("SVG diagram needs role=img: $svgRelative")
+            }
+            $titleNode = $svgRoot.SelectSingleNode("*[local-name()='title']")
+            $descNode = $svgRoot.SelectSingleNode("*[local-name()='desc']")
+            if ($null -eq $titleNode -or [string]::IsNullOrWhiteSpace($titleNode.InnerText)) {
+                $errors.Add("SVG diagram needs a non-empty title: $svgRelative")
+            }
+            if ($null -eq $descNode -or [string]::IsNullOrWhiteSpace($descNode.InnerText)) {
+                $errors.Add("SVG diagram needs a non-empty description: $svgRelative")
+            }
+            $ariaIds = @($svgRoot.GetAttribute('aria-labelledby') -split '\s+' | Where-Object { -not [string]::IsNullOrWhiteSpace($_) })
+            $titleId = if ($null -ne $titleNode) { $titleNode.GetAttribute('id') } else { '' }
+            $descId = if ($null -ne $descNode) { $descNode.GetAttribute('id') } else { '' }
+            if ($ariaIds.Count -ne 2 -or $titleId -notin $ariaIds -or $descId -notin $ariaIds) {
+                $errors.Add("SVG aria-labelledby must reference its title and description: $svgRelative")
+            }
+            $svgIds = @($svgDocument.SelectNodes('//*[@id]') | ForEach-Object { $_.GetAttribute('id') })
+            foreach ($duplicateSvgId in $svgIds | Group-Object | Where-Object { $_.Count -gt 1 }) {
+                $errors.Add("SVG diagram has duplicate id '$($duplicateSvgId.Name)': $svgRelative")
+            }
+            $svgReferences = @([regex]::Matches($svgContent, 'url\(#([^\)]+)\)') |
+                ForEach-Object { $_.Groups[1].Value } | Select-Object -Unique)
+            foreach ($svgReference in $svgReferences) {
+                if ($svgReference -notin $svgIds) {
+                    $errors.Add("SVG diagram has an unresolved internal reference '$svgReference': $svgRelative")
+                }
+            }
+        } catch {
+            $errors.Add("Invalid SVG XML in ${svgRelative}: $($_.Exception.Message)")
+        }
+        if ($svgContent -match '(?i)<\s*(?:script|foreignObject|image)\b' -or
+            $svgContent -match '(?i)\s(?:href|xlink:href|on[a-z]+)\s*=') {
+            $errors.Add("SVG diagram contains unsafe or externally dependent content: $svgRelative")
+        }
+        if ([int]$inbound[$svgFile.FullName] -eq 0) {
+            $warnings.Add("Unreferenced SVG diagram: $svgRelative")
         }
     }
 }
@@ -835,6 +959,9 @@ Write-Output "Wikilinks: $wikiLinkCount"
 Write-Output "Heading and block links: $anchoredWikiLinkCount"
 Write-Output "Markdown tables: $markdownTableCount"
 Write-Output "Standard Markdown links: $standardMarkdownLinkCount"
+Write-Output "External Markdown links: $externalMarkdownLinkCount"
+Write-Output "Published diagram embeds: $diagramEmbedCount"
+Write-Output "SVG diagrams: $svgCount"
 Write-Output "Raw sources: $($sourceSnapshots.Count)"
 Write-Output "Errors: $($errors.Count)"
 Write-Output "Warnings: $($warnings.Count)"

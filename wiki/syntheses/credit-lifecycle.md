@@ -15,6 +15,10 @@ tags:
 
 How do the twelve briefs combine into one operating system for protecting financing capital from initial screen through final recovery?
 
+![[assets/diagrams/credit-journey.svg|Seven-stage film-finance credit lifecycle from full financing through portfolio reporting]]
+
+*Conceptual view: the lifecycle is iterative, and each state change must update value, cash timing, decision rights and expected return.*
+
 ## Lifecycle
 
 ### 1. Prove the Production Can Reach Delivery

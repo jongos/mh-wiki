@@ -16,6 +16,10 @@ tags:
 
 Cash control is the system that turns a payment obligation into captured and prioritized loan repayment. It combines payer-level directions, independent collection administration, legally effective account control, a contractual waterfall and operational reconciliation.
 
+![[assets/diagrams/cash-control-flow.svg|Conceptual cash-control flow from payment sources through controlled accounts and the waterfall]]
+
+*Conceptual view: payment directions, CAMA administration, account control, the waterfall and reconciliation remain distinct controls.*
+
 ## Components Are Distinct
 
 | Component | Primary function |
