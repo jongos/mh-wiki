@@ -14,7 +14,7 @@ tags:
 
 ## A-C
 
-**Account control agreement** - A qualifying arrangement with the depositary bank that may give the secured party control over a deposit account for perfection purposes. It does not itself define the economic waterfall. See [[wiki/concepts/cash-control-and-waterfalls]].
+**Account control agreement** - A qualifying arrangement with the depositary bank that may give the secured party control over a deposit account for perfection purposes. It does not itself define the economic waterfall. See [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]].
 
 **Advance rate** - The permitted loan exposure as a percentage of verified eligible value for a collateral category. It is a sizing control, not a statement of expected recovery.
 

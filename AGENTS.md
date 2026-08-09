@@ -162,12 +162,16 @@ Periodically check for:
 - unmatched, nested or empty Obsidian wikilink delimiters (`[[` and `]]`);
 - broken or ambiguous wikilinks;
 - unescaped wikilink alias separators inside Markdown tables;
+- inconsistent table column counts or missing alignment rows;
 - wikilinks to missing headings or block references;
+- duplicate headings, unclosed code fences or unclosed HTML maintenance comments;
+- invalid UTF-8, replacement characters or common mojibake sequences;
 - pages absent from the private internal catalog;
 - published pages absent from the public home note;
 - public pages that visibly link to private source, raw, operations or maintenance files;
+- published navigation links that expose a vault path instead of a reader-facing label;
 - orphan pages with no inbound wiki links;
-- missing frontmatter or invalid page types/statuses;
+- missing, duplicate or invalid frontmatter fields and malformed heading hierarchy;
 - concept pages without source basis;
 - source pages without a raw-source link or recorded hash;
 - stale quantitative or legal claims;

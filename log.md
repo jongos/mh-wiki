@@ -96,3 +96,13 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Repairs: changed 31 aliases across 24 table rows to the table-safe `\|` form in `wiki/syntheses/credit-lifecycle.md`, `wiki/concepts/protection-stack.md` and `raw/manifest.md`; no source snapshot was modified.
 - Tooling: added a permanent linter rule that reports the affected file, line and link whenever an unescaped alias separator appears inside a table.
 - Verification: a temporary broken-table fixture was correctly rejected and removed; the complete vault then passed with 528 active wikilinks, 0 errors and 0 warnings.
+
+## [2026-08-09] lint | Rendering-oriented repository audit
+
+- Scope: reviewed all 49 Markdown files, 528 active Obsidian links, 15 Markdown tables, the public image asset, frontmatter, headings, code fences, maintenance comments, public/private navigation, filename conventions, Publish styling and all 13 source hashes.
+- Confirmed defect: the public glossary used a path-only link that would display the technical filename `cash-control-and-waterfalls`; it now displays the reader-facing label `Cash Control and Waterfalls`.
+- Rendering checks added: table discovery with or without outer pipes, table header and row column counts, valid alignment rows, context-correct alias escaping, duplicate heading anchors, balanced code fences and HTML comments, exact path casing and readable public link labels.
+- Data-quality checks added: strict UTF-8 decoding, common mojibake and replacement-character detection, NUL detection, lowercase kebab-case wiki filenames, duplicate or malformed frontmatter fields, one-H1-per-page and heading-level continuity.
+- Adversarial verification: temporary fixtures for malformed leading- and optional-pipe tables, duplicate headings, unclosed comments, an unclosed code fence and an unlabeled public vault path all failed with file-and-line diagnostics; the fixtures were then removed.
+- Repository review: the duplicate Word files in the vault root are byte-identical to their canonical `raw/sources/` snapshots and remain intentionally untouched as documented in `README.md`; no raw source snapshot changed.
+- Final result: the normal command launcher and explicit linter both passed with 0 errors and 0 warnings.

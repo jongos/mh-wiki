@@ -28,6 +28,20 @@ foreach ($file in $allFiles) {
     $filesByStem[$stem].Add($file.FullName)
 }
 
+$strictUtf8 = New-Object System.Text.UTF8Encoding($false, $true)
+
+function Read-Utf8Text {
+    param([string]$Path)
+
+    try {
+        return [IO.File]::ReadAllText($Path, $script:strictUtf8)
+    } catch {
+        $relative = if ($script:relativeByFile.ContainsKey($Path)) { $script:relativeByFile[$Path] } else { $Path }
+        $script:errors.Add("Invalid UTF-8 encoding: $relative")
+        return [IO.File]::ReadAllText($Path, [Text.Encoding]::UTF8)
+    }
+}
+
 function Resolve-WikiTarget {
     param(
         [string]$Target,
@@ -119,6 +133,23 @@ function Mask-MarkdownCode {
     return [regex]::Replace($masked, '`+[^`\r\n]*`+', $mask)
 }
 
+function Get-MarkdownColumnCount {
+    param([string]$Line)
+
+    $trimmed = ($Line -replace '^\s*>\s*', '').Trim()
+    $pipeCount = [regex]::Matches($trimmed, '(?<!\\)\|').Count
+    $leadingPipe = if ($trimmed -match '^\|') { 1 } else { 0 }
+    $trailingPipe = if ($trimmed -match '(?<!\\)\|\s*$') { 1 } else { 0 }
+    return $pipeCount + 1 - $leadingPipe - $trailingPipe
+}
+
+function Test-MarkdownAlignmentRow {
+    param([string]$Line)
+
+    return $Line -match '^\s*(?:>\s*)?\|?\s*:?-{3,}:?\s*(?:\|\s*:?-{3,}:?\s*)+\|?\s*$' -or
+        $Line -match '^\s*(?:>\s*)?\|\s*:?-{3,}:?\s*\|\s*$'
+}
+
 function Get-LineNumber {
     param(
         [string]$Content,
@@ -160,7 +191,12 @@ function Test-WikiFragment {
         return $false
     }
 
-    $targetContent = Get-Content -Raw -LiteralPath $TargetPath
+    if ($script:contentByFile.ContainsKey($TargetPath)) {
+        $targetContent = $script:contentByFile[$TargetPath]
+    } else {
+        $targetContent = Read-Utf8Text -Path $TargetPath
+        $script:contentByFile[$TargetPath] = $targetContent
+    }
     if ($Fragment.StartsWith('^')) {
         $blockId = $Fragment.Substring(1).Trim()
         if ([string]::IsNullOrWhiteSpace($blockId)) {
@@ -183,12 +219,122 @@ foreach ($file in $allFiles) {
     $inbound[$file.FullName] = 0
 }
 
+$contentByFile = @{}
 $wikiLinkCount = 0
 $anchoredWikiLinkCount = 0
+$markdownTableCount = 0
+$standardMarkdownLinkCount = 0
 foreach ($file in $markdownFiles) {
     $relative = $relativeByFile[$file.FullName]
-    $content = Get-Content -Raw -LiteralPath $file.FullName
+    $content = Read-Utf8Text -Path $file.FullName
+    $contentByFile[$file.FullName] = $content
+
+    if ($content -match '\u00E2\u20AC|\u00C2\u00B7|\u00C3[\u0080-\u00BF]|\u00EF\u00BF\u00BD|\uFFFD') {
+        $errors.Add("Possible mojibake or replacement character: $relative")
+    }
+    if ($content.IndexOf([char]0) -ge 0) {
+        $errors.Add("NUL character in Markdown file: $relative")
+    }
+
+    $fenceMarker = $null
+    $fenceLength = 0
+    $fenceStartLine = 0
+    $structureLines = $content -split '\r?\n'
+    for ($lineIndex = 0; $lineIndex -lt $structureLines.Count; $lineIndex++) {
+        if ($structureLines[$lineIndex] -notmatch '^[ \t]*(`{3,}|~{3,})') {
+            continue
+        }
+        $marker = $Matches[1]
+        if ($null -eq $fenceMarker) {
+            $fenceMarker = $marker[0]
+            $fenceLength = $marker.Length
+            $fenceStartLine = $lineIndex + 1
+        } elseif ($marker[0] -eq $fenceMarker -and $marker.Length -ge $fenceLength) {
+            $fenceMarker = $null
+            $fenceLength = 0
+            $fenceStartLine = 0
+        }
+    }
+    if ($null -ne $fenceMarker) {
+        $errors.Add("Unclosed fenced code block in ${relative}:$fenceStartLine")
+    }
+
     $linkContent = Mask-MarkdownCode -Content $content
+
+    $commentOpenIndex = -1
+    foreach ($commentToken in [regex]::Matches($linkContent, '<!--|-->')) {
+        $commentLine = Get-LineNumber -Content $content -Index $commentToken.Index
+        if ($commentToken.Value -eq '<!--') {
+            if ($commentOpenIndex -ge 0) {
+                $errors.Add("Nested or unclosed HTML comment in ${relative}:$commentLine")
+            } else {
+                $commentOpenIndex = $commentToken.Index
+            }
+        } elseif ($commentOpenIndex -lt 0) {
+            $errors.Add("Closing HTML comment without an opening delimiter in ${relative}:$commentLine")
+        } else {
+            $commentOpenIndex = -1
+        }
+    }
+    if ($commentOpenIndex -ge 0) {
+        $commentLine = Get-LineNumber -Content $content -Index $commentOpenIndex
+        $errors.Add("Opening HTML comment without a closing delimiter in ${relative}:$commentLine")
+    }
+
+    $headingContent = [regex]::Replace($linkContent, '(?s)<!--.*?-->', '')
+    $seenHeadings = @{}
+    foreach ($headingMatch in [regex]::Matches($headingContent, '(?m)^#{1,6}\s+(.+?)\s*$')) {
+        $normalizedHeading = Normalize-WikiHeading -Heading $headingMatch.Groups[1].Value
+        if ($seenHeadings.ContainsKey($normalizedHeading)) {
+            $headingLine = Get-LineNumber -Content $content -Index $headingMatch.Index
+            $errors.Add("Duplicate heading creates an ambiguous anchor in ${relative}:${headingLine}: $($headingMatch.Groups[1].Value)")
+        } else {
+            $seenHeadings[$normalizedHeading] = $true
+        }
+    }
+
+    $tableLines = $linkContent -split '\r?\n'
+    $tableLineNumbers = [System.Collections.Generic.HashSet[int]]::new()
+    for ($alignmentIndex = 0; $alignmentIndex -lt $tableLines.Count; $alignmentIndex++) {
+        if (-not (Test-MarkdownAlignmentRow -Line $tableLines[$alignmentIndex])) {
+            continue
+        }
+        if ($alignmentIndex -eq 0 -or [string]::IsNullOrWhiteSpace($tableLines[$alignmentIndex - 1])) {
+            $errors.Add("Markdown alignment row has no header in ${relative}:$($alignmentIndex + 1)")
+            continue
+        }
+
+        $markdownTableCount++
+        $expectedColumns = Get-MarkdownColumnCount -Line $tableLines[$alignmentIndex]
+        $headerIndex = $alignmentIndex - 1
+        $null = $tableLineNumbers.Add($headerIndex + 1)
+        $null = $tableLineNumbers.Add($alignmentIndex + 1)
+        if ((Get-MarkdownColumnCount -Line $tableLines[$headerIndex]) -ne $expectedColumns) {
+            $errors.Add("Markdown table header has $((Get-MarkdownColumnCount -Line $tableLines[$headerIndex])) columns; expected $expectedColumns in ${relative}:$($headerIndex + 1)")
+        }
+
+        for ($dataIndex = $alignmentIndex + 1; $dataIndex -lt $tableLines.Count; $dataIndex++) {
+            $dataLine = $tableLines[$dataIndex]
+            if ([string]::IsNullOrWhiteSpace($dataLine)) {
+                break
+            }
+            $unescapedPipes = [regex]::Matches($dataLine, '(?<!\\)\|').Count
+            if (($expectedColumns -gt 1 -and $unescapedPipes -eq 0) -or
+                ($expectedColumns -eq 1 -and $dataLine -notmatch '^\s*(?:>\s*)?\|')) {
+                break
+            }
+            $null = $tableLineNumbers.Add($dataIndex + 1)
+            $actualColumns = Get-MarkdownColumnCount -Line $dataLine
+            if ($actualColumns -ne $expectedColumns) {
+                $errors.Add("Markdown table row has $actualColumns columns; expected $expectedColumns in ${relative}:$($dataIndex + 1)")
+            }
+        }
+    }
+
+    foreach ($standardLink in [regex]::Matches($linkContent, '!?\[[^\]\r\n]*\]\([^\)\r\n]+\)')) {
+        $standardMarkdownLinkCount++
+    }
+
     $openIndex = -1
     foreach ($token in [regex]::Matches($linkContent, '(?<!\\)\[\[|(?<!\\)\]\]')) {
         $line = Get-LineNumber -Content $content -Index $token.Index
@@ -221,20 +367,15 @@ foreach ($file in $markdownFiles) {
         }
 
         $linkParts = Get-WikiLinkParts -InnerText $innerText
-        $linkOpenIndex = $innerStart - 2
-        $lineStart = $content.LastIndexOf("`n", [Math]::Max(0, $linkOpenIndex - 1))
-        if ($lineStart -lt 0) {
-            $lineStart = 0
-        } else {
-            $lineStart++
+        $isTableRow = $tableLineNumbers.Contains($openLine)
+        if ([regex]::Matches($innerText, '\|').Count -gt 1) {
+            $errors.Add("Wikilink has multiple alias separators in ${relative}:${openLine}: [[$innerText]]")
         }
-        $lineEnd = $content.IndexOf("`n", $token.Index)
-        if ($lineEnd -lt 0) {
-            $lineEnd = $content.Length
-        }
-        $lineText = $content.Substring($lineStart, $lineEnd - $lineStart)
-        if ($null -ne $linkParts.Alias -and -not $linkParts.AliasEscaped -and $lineText -match '^\s*(?:>\s*)?\|') {
+        if ($null -ne $linkParts.Alias -and -not $linkParts.AliasEscaped -and $isTableRow) {
             $errors.Add("Wikilink alias separator must be escaped as \| inside a Markdown table in ${relative}:${openLine}: [[$innerText]]")
+        }
+        if ($null -ne $linkParts.Alias -and $linkParts.AliasEscaped -and -not $isTableRow) {
+            $errors.Add("Wikilink alias separator should not be escaped outside a Markdown table in ${relative}:${openLine}: [[$innerText]]")
         }
         if ($null -ne $linkParts.Alias -and [string]::IsNullOrWhiteSpace($linkParts.Alias)) {
             $errors.Add("Wikilink has an empty display alias in ${relative}:${openLine}: [[$innerText]]")
@@ -257,6 +398,21 @@ foreach ($file in $markdownFiles) {
             if ($resolved.Path -ne $file.FullName) {
                 $inbound[$resolved.Path] = [int]$inbound[$resolved.Path] + 1
             }
+            if ($linkParts.Target -match '[\\/]') {
+                $decodedTarget = [Uri]::UnescapeDataString($linkParts.Target).Replace('\', '/')
+                $resolvedRelative = $relativeByFile[$resolved.Path]
+                $targetExtension = [IO.Path]::GetExtension($decodedTarget)
+                $expectedTargets = if ($targetExtension) {
+                    @($decodedTarget)
+                } else {
+                    @($decodedTarget + '.md', $decodedTarget.TrimEnd('/') + '/index.md')
+                }
+                $caseInsensitiveMatch = @($expectedTargets | Where-Object { $_ -ieq $resolvedRelative }).Count -gt 0
+                $caseSensitiveMatch = @($expectedTargets | Where-Object { $_ -ceq $resolvedRelative }).Count -gt 0
+                if ($caseInsensitiveMatch -and -not $caseSensitiveMatch) {
+                    $errors.Add("Wikilink path casing differs from its target in ${relative}:${openLine}: [[$innerText]] -> $resolvedRelative")
+                }
+            }
             if ($null -ne $linkParts.Fragment) {
                 $anchoredWikiLinkCount++
                 if (-not (Test-WikiFragment -TargetPath $resolved.Path -Fragment $linkParts.Fragment)) {
@@ -278,15 +434,51 @@ $wikiFiles = Get-ChildItem -LiteralPath (Join-Path $vault 'wiki') -Recurse -File
 
 foreach ($file in $wikiFiles) {
     $relative = $relativeByFile[$file.FullName]
-    $content = Get-Content -Raw -LiteralPath $file.FullName
+    $content = $contentByFile[$file.FullName]
+    if ($file.BaseName -notmatch '^[a-z0-9]+(?:-[a-z0-9]+)*$') {
+        $errors.Add("Wiki filename must use lowercase kebab-case: $relative")
+    }
     if ($content -notmatch '(?s)^---\r?\n(.*?)\r?\n---\r?\n') {
         $errors.Add("Missing YAML frontmatter: $relative")
         continue
     }
     $frontmatter = $Matches[1]
+    $frontmatterKeys = [regex]::Matches($frontmatter, '(?m)^([A-Za-z_][A-Za-z0-9_-]*):') |
+        ForEach-Object { $_.Groups[1].Value }
+    foreach ($duplicateKey in $frontmatterKeys | Group-Object | Where-Object { $_.Count -gt 1 }) {
+        $errors.Add("Duplicate frontmatter key '$($duplicateKey.Name)': $relative")
+    }
     foreach ($key in $requiredKeys) {
         if ($frontmatter -notmatch "(?m)^${key}:") {
             $errors.Add("Missing frontmatter key '$key': $relative")
+        }
+    }
+    if ($frontmatter -match '(?m)^title:\s*([^\r\n]*)' -and [string]::IsNullOrWhiteSpace($Matches[1])) {
+        $errors.Add("Empty frontmatter title: $relative")
+    }
+    if ($frontmatter -match '(?m)^updated:\s*([^\r\n]+)' -and $Matches[1].Trim() -notmatch '^\d{4}-\d{2}-\d{2}$') {
+        $errors.Add("Invalid updated date; expected YYYY-MM-DD: $relative")
+    }
+    if ($frontmatter -match '(?m)^source_count:\s*([^\r\n]+)' -and $Matches[1].Trim() -notmatch '^\d+$') {
+        $errors.Add("Invalid source_count; expected a non-negative integer: $relative")
+    }
+    if ($frontmatter -notmatch '(?m)^\s+-\s+mediahedge\s*$') {
+        $errors.Add("Frontmatter tags must include mediahedge: $relative")
+    }
+
+    $pageStructure = Mask-MarkdownCode -Content $content
+    $pageStructure = [regex]::Replace($pageStructure, '(?s)<!--.*?-->', '')
+    $pageHeadings = [regex]::Matches($pageStructure, '(?m)^(#{1,6})\s+(.+?)\s*$')
+    $h1Count = @($pageHeadings | Where-Object { $_.Groups[1].Length -eq 1 }).Count
+    if ($h1Count -ne 1) {
+        $errors.Add("Wiki page must contain exactly one H1 heading: $relative (found $h1Count)")
+    }
+    for ($headingIndex = 1; $headingIndex -lt $pageHeadings.Count; $headingIndex++) {
+        $previousLevel = $pageHeadings[$headingIndex - 1].Groups[1].Length
+        $currentLevel = $pageHeadings[$headingIndex].Groups[1].Length
+        if ($currentLevel - $previousLevel -gt 1) {
+            $line = Get-LineNumber -Content $content -Index $pageHeadings[$headingIndex].Index
+            $errors.Add("Heading level jumps from H$previousLevel to H$currentLevel in ${relative}:$line")
         }
     }
     if ($frontmatter -match '(?m)^type:\s*([^\r\n]+)') {
@@ -358,9 +550,25 @@ if (-not (Test-Path -LiteralPath $homePath -PathType Leaf)) {
     $errors.Add('Missing public home note: MediaHedge Knowledgebase.md')
     $homeContent = ''
 } else {
-    $homeContent = Get-Content -Raw -LiteralPath $homePath
+    $homeContent = $contentByFile[$homePath]
     if ($homeContent -notmatch '(?m)^publish:\s*true\s*$') {
         $errors.Add('Public home note must be marked publish: true')
+    }
+    $homeVisibleContent = [regex]::Replace($homeContent, '(?s)<!--.*?-->', '')
+    $homeVisibleContent = Mask-MarkdownCode -Content $homeVisibleContent
+    foreach ($match in [regex]::Matches($homeVisibleContent, '\[\[([^\]]+)\]\]')) {
+        $homeParts = Get-WikiLinkParts -InnerText $match.Groups[1].Value
+        $homeTarget = $homeParts.Target
+        if ($homeTarget -match '^(raw/|wiki/sources/|wiki/operations/|AGENTS$|README$|index$|log$)') {
+            $errors.Add("Public home visibly links to private material: [[$($match.Groups[1].Value)]]")
+        }
+        $isEmbed = $match.Index -gt 0 -and $homeVisibleContent[$match.Index - 1] -eq '!'
+        if (-not $isEmbed -and $homeTarget -match '[\\/]' -and $null -eq $homeParts.Alias) {
+            $errors.Add("Public home link exposes a technical path instead of a display label: [[$($match.Groups[1].Value)]]")
+        }
+    }
+    if ($homeVisibleContent -match '(?i)SHA-256|source_hash|raw/sources|AGENTS\.md|wiki-lint|YAML frontmatter|Git history') {
+        $errors.Add('Public home displays maintenance terminology')
     }
 }
 
@@ -369,14 +577,14 @@ if (-not (Test-Path -LiteralPath $catalogPath -PathType Leaf)) {
     $errors.Add('Missing private internal catalog: wiki/operations/internal-catalog.md')
     $catalogContent = ''
 } else {
-    $catalogContent = Get-Content -Raw -LiteralPath $catalogPath
+    $catalogContent = $contentByFile[$catalogPath]
 }
 
 $publicWikiFiles = [System.Collections.Generic.List[System.IO.FileInfo]]::new()
 foreach ($file in $wikiFiles) {
     $relative = $relativeByFile[$file.FullName]
     $target = ($relative -replace '\.md$', '').Replace('\', '/')
-    $content = Get-Content -Raw -LiteralPath $file.FullName
+    $content = $contentByFile[$file.FullName]
     $isPublished = $content -match '(?m)^publish:\s*true\s*$'
     $shouldBePrivate = $relative -like 'wiki/sources/*' -or
         $relative -like 'wiki/operations/*' -or
@@ -395,13 +603,19 @@ foreach ($file in $wikiFiles) {
         }
 
         $visibleContent = [regex]::Replace($content, '(?s)<!--.*?-->', '')
+        $visibleContent = Mask-MarkdownCode -Content $visibleContent
         if ($visibleContent -notmatch [regex]::Escape('[[MediaHedge Knowledgebase')) {
             $errors.Add("Published wiki page does not link back to the public home: $relative")
         }
         foreach ($match in [regex]::Matches($visibleContent, '\[\[([^\]]+)\]\]')) {
-            $visibleTarget = ($match.Groups[1].Value -split '\|', 2)[0]
+            $visibleParts = Get-WikiLinkParts -InnerText $match.Groups[1].Value
+            $visibleTarget = $visibleParts.Target
             if ($visibleTarget -match '^(raw/|wiki/sources/|wiki/operations/|AGENTS(?:\||$)|README(?:\||$)|index(?:\||$)|log(?:\||$))') {
                 $errors.Add("Published page visibly links to private material: $relative -> [[$($match.Groups[1].Value)]]")
+            }
+            $isEmbed = $match.Index -gt 0 -and $visibleContent[$match.Index - 1] -eq '!'
+            if (-not $isEmbed -and $visibleTarget -match '[\\/]' -and $null -eq $visibleParts.Alias) {
+                $errors.Add("Published navigation link exposes a technical path instead of a display label: $relative -> [[$($match.Groups[1].Value)]]")
             }
         }
         if ($visibleContent -match '(?i)SHA-256|source_hash|raw/sources|AGENTS\.md|wiki-lint|YAML frontmatter|Git history') {
@@ -420,7 +634,7 @@ if ($homeContent -notmatch [regex]::Escape($financierGuideTarget)) {
 }
 foreach ($file in Get-ChildItem -LiteralPath (Join-Path $vault 'wiki\concepts') -File -Filter '*.md') {
     $relative = $relativeByFile[$file.FullName]
-    $content = Get-Content -Raw -LiteralPath $file.FullName
+    $content = $contentByFile[$file.FullName]
     if ($content -notmatch [regex]::Escape($financierGuideTarget)) {
         $errors.Add("Concept page missing financier navigation: $relative")
     }
@@ -433,21 +647,21 @@ foreach ($privateRelative in $privateRootFiles) {
         $errors.Add("Missing private maintenance file: $privateRelative")
         continue
     }
-    $privateContent = Get-Content -Raw -LiteralPath $privatePath
+    $privateContent = $contentByFile[$privatePath]
     if ($privateContent -notmatch '(?m)^publish:\s*false\s*$') {
         $errors.Add("Private maintenance file must be marked publish: false: $privateRelative")
     }
 }
 
 foreach ($template in Get-ChildItem -LiteralPath (Join-Path $vault 'templates') -File -Filter '*.md') {
-    $templateContent = Get-Content -Raw -LiteralPath $template.FullName
+    $templateContent = $contentByFile[$template.FullName]
     if ($templateContent -notmatch '(?m)^publish:\s*false\s*$') {
         $errors.Add("Template must be marked publish: false: $($relativeByFile[$template.FullName])")
     }
 }
 
 $sourceSnapshots = Get-ChildItem -LiteralPath (Join-Path $vault 'raw\sources') -File
-$manifest = Get-Content -Raw -LiteralPath (Join-Path $vault 'raw\manifest.md')
+$manifest = $contentByFile[(Join-Path $vault 'raw\manifest.md')]
 foreach ($source in $sourceSnapshots) {
     $hash = (Get-FileHash -LiteralPath $source.FullName -Algorithm SHA256).Hash
     if ($manifest -notmatch [regex]::Escape($source.Name)) {
@@ -463,6 +677,8 @@ Write-Output "Markdown files: $($markdownFiles.Count)"
 Write-Output "Wiki pages: $($wikiFiles.Count)"
 Write-Output "Wikilinks: $wikiLinkCount"
 Write-Output "Heading and block links: $anchoredWikiLinkCount"
+Write-Output "Markdown tables: $markdownTableCount"
+Write-Output "Standard Markdown links: $standardMarkdownLinkCount"
 Write-Output "Raw sources: $($sourceSnapshots.Count)"
 Write-Output "Errors: $($errors.Count)"
 Write-Output "Warnings: $($warnings.Count)"
