@@ -10,13 +10,13 @@ tags:
   - entity
 ---
 
-# Entity name
+# Entity Name
 
 ## Role
 
 The entity's role in the knowledge domain.
 
-## Responsibilities and rights
+## Responsibilities and Rights
 
 - Responsibility, authority or economic interest.
 
@@ -24,12 +24,12 @@ The entity's role in the knowledge domain.
 
 - Related entity, instrument or workflow.
 
-## Open questions
+## Open Questions
 
 - Unverified or changing information.
 
 <!--
-## Source basis
+## Source Basis
 
 - Add private source-summary links.
 -->

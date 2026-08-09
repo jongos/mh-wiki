@@ -84,7 +84,7 @@ Additional fields:
 - Derived source pages: `source_kind: derived-artifact`, `authority: non-evidentiary`, and `derived_from`.
 - Claims tied to a time or policy: `as_of` when known.
 - Superseded pages: `superseded_by`.
-- Pages using judgment beyond direct source synthesis: an `Analysis and inference` section.
+- Pages using judgment beyond direct source synthesis: an `Analysis and Inference` section.
 
 `source_count` means the number of distinct raw sources substantively supporting the page, not the number of links.
 
@@ -118,6 +118,16 @@ Quantitative policy rails must show their source and effective date when availab
 - Every durable concept page should link back to the home note, the financier diligence route and the full credit lifecycle.
 - Keep source summaries available privately for traceability, but do not expose source registries, hashes, raw filenames or maintenance instructions in public pages.
 - Put material evidence limitations near decision guidance, not only in the operations register.
+
+## Reader presentation
+
+- Use Title Case for every visible H1, H2 and H3 on published pages. Capitalize principal words while keeping short articles, conjunctions and prepositions lowercase unless they begin or end the heading. Preserve acronyms and MediaHedge capitalization.
+- Place concise introductory content between the H1 and the first H2 so a reader can understand the page before scanning its sections.
+- Follow every visible published heading with a blank line. Use exactly one H1 and do not skip heading levels.
+- End every durable published wiki page with one `## Continue Exploring` section containing human-readable navigation labels.
+- Use callouts sparingly and consistently: `important` for why a point matters, `tip` for a decision point, `note` for an important distinction and `warning` for an evidence limitation.
+- Keep comparative tables when the row-and-column relationship matters. Use escaped alias pipes inside tables and retain responsive horizontal scrolling for narrow screens.
+- Maintain readable contrast, visible keyboard focus, responsive images and mobile-safe tables in `publish.css`; do not rely on color alone to carry meaning.
 
 ## Ingest workflow
 
@@ -170,6 +180,9 @@ Periodically check for:
 - published pages absent from the public home note;
 - public pages that visibly link to private source, raw, operations or maintenance files;
 - published navigation links that expose a vault path instead of a reader-facing label;
+- published headings that violate Title Case or lack blank-line spacing;
+- missing or duplicate `Continue Exploring` sections and unsupported public callout types;
+- broken or incomplete responsive, dark-mode, table, callout and focus styling in `publish.css`;
 - orphan pages with no inbound wiki links;
 - missing, duplicate or invalid frontmatter fields and malformed heading hierarchy;
 - concept pages without source basis;

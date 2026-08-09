@@ -106,3 +106,16 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Adversarial verification: temporary fixtures for malformed leading- and optional-pipe tables, duplicate headings, unclosed comments, an unclosed code fence and an unlabeled public vault path all failed with file-and-line diagnostics; the fixtures were then removed.
 - Repository review: the duplicate Word files in the vault root are byte-identical to their canonical `raw/sources/` snapshots and remain intentionally untouched as documented in `README.md`; no raw source snapshot changed.
 - Final result: the normal command launcher and explicit linter both passed with 0 errors and 0 warnings.
+
+## [2026-08-09] maintenance | Human-reader visual system
+
+- Scope: reviewed all 21 published Markdown files, 191 visible H1-H3 headings, 15 Markdown tables, the home-page banner and the Obsidian Publish stylesheet from a non-technical financier's perspective.
+- Reading hierarchy: standardized visible H1-H3 headings in Title Case, removed shallow definition/question/status headings where the opening paragraph already served that purpose, restored clear introductory copy before the first section and standardized the 20 public wiki-page footers as `Continue Exploring`.
+- Visual guidance: added seven purposeful decision, distinction and evidence-limitation callouts without changing their underlying claims or wording.
+- Publish styling: expanded `publish.css` into a responsive MediaHedge design system with branded color and typography, a readable content width, a flexible banner, clearer headings and links, scannable tables, navigation-card treatment, dark-mode support, keyboard focus states, mobile layouts and reduced-motion support.
+- Templates and schema: updated the concept, entity, synthesis and source-summary templates plus `AGENTS.md` so future pages follow the same reader-presentation conventions.
+- Tooling: extended `tools\wiki-lint.ps1` to enforce Title Case, introductory copy, heading spacing, standardized continuation navigation, approved callout semantics and the required responsive, dark-mode, table and accessibility features in `publish.css`.
+- Adversarial verification: temporary fixtures for lowercase and malformed headings, missing introductions and navigation, unsupported callouts, non-Title-Case callout titles and unbalanced CSS were all correctly rejected and then removed.
+- Evidence integrity: no financial claim, policy rail, source count, publication status or immutable raw source was changed; existing manual prose and the banner asset were preserved.
+- Deferred: a final live visual check should be performed after uploading the revised notes and `publish.css` to Obsidian Publish; page-level tables of contents were intentionally omitted to keep short pages uncluttered.
+- Lint: passed with 49 Markdown files, 37 wiki pages, 528 active wikilinks, 15 Markdown tables and 13 raw sources; 0 errors and 0 warnings.

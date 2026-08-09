@@ -13,8 +13,6 @@ tags:
 
 # Protection Stack
 
-## Definition
-
 The MediaHedge protection stack is a layered credit architecture in which each control addresses a distinct failure mode. It avoids relying on one guaranty, one collateral class, one filing or a high coupon as blanket protection.
 
 ## Layers
@@ -25,7 +23,7 @@ The MediaHedge protection stack is a layered credit architecture in which each c
 4. **Completion and risk transfer:** full financing, completion protection and production insurance address specified delivery and insured-event risks.
 5. **Surveillance and enforcement:** reporting, covenants, triggers, cure rights, step-in powers and remedies preserve options after closing.
 
-## Failure-mode mapping
+## Failure-Mode Mapping
 
 | Risk | Primary protections |
 | --- | --- |
@@ -36,11 +34,12 @@ The MediaHedge protection stack is a layered credit architecture in which each c
 | Deterioration or default | [[wiki/concepts/monitoring-and-servicing\|Monitoring]], triggers, cure and [[wiki/concepts/defaults-workouts-and-recoveries\|workout governance]] |
 | Operational or agency failure | Custody, audit, data portability, reserved matters and replacement servicing |
 
-## Integration rule
+## Integration Rule
 
-The value of the stack depends on consistency across underwriting conclusions, loan documents, interparty arrangements, assignments, completion terms, insurance endorsements and actual bank/account operations. Duplicate documents do not create independent recovery if they rely on the same underlying value or event.
+> [!note] Important Distinction
+> The value of the stack depends on consistency across underwriting conclusions, loan documents, interparty arrangements, assignments, completion terms, insurance endorsements and actual bank/account operations. Duplicate documents do not create independent recovery if they rely on the same underlying value or event.
 
-## Limits and common errors
+## Limits and Common Errors
 
 - A completion guaranty does not insure distributor solvency, incentive realization or market performance.
 - Production insurance pays only for covered loss under policy terms.
@@ -49,12 +48,12 @@ The value of the stack depends on consistency across underwriting conclusions, l
 - Pricing cannot cure ineligible collateral or a broken enforcement path.
 - Correlated sources must be assessed at both transaction and portfolio levels.
 
-## Continue the diligence
+## Continue Exploring
 
 [[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
 
 <!--
-## Source basis
+## Source Basis
 
 - Primary: [[wiki/sources/mediahedge-protection-stack]].
 - Integrated from the related source pages listed in [[wiki/operations/internal-catalog#Source summaries]].

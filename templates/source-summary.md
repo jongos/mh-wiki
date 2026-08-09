@@ -13,17 +13,17 @@ tags:
   - source
 ---
 
-# Source title
+# Source Title
 
 ## Scope
 
 What the source covers, who it is for and what it does not establish.
 
-## Key claims
+## Key Claims
 
 - Source-backed claim.
 
-## Controls and decision points
+## Controls and Decision Points
 
 - Control, gate, evidence or escalation rule.
 
@@ -31,7 +31,7 @@ What the source covers, who it is for and what it does not establish.
 
 - Qualification, exclusion, uncertainty or date issue.
 
-## Related pages
+## Related Pages
 
 - [[wiki/overview]]
 

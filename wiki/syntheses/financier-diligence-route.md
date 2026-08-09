@@ -20,7 +20,7 @@ A financing partner is ultimately trying to answer a practical question: can the
 
 This guide organizes the knowledgebase around eight questions.
 
-## Choose your reading depth
+## Choose Your Reading Depth
 
 | Time available | Suggested route |
 | --- | --- |
@@ -28,60 +28,60 @@ This guide organizes the knowledgebase around eight questions.
 | Twenty minutes | Work through the eight questions below, then review the [[wiki/syntheses/policy-rails-and-control-matrix\|Policy and Control Guide]]. |
 | Full review | Follow each question into its topic page and reconcile the framework to current policy, performance information and the proposed transaction documents. |
 
-## Eight questions to explore
+## Eight Questions to Explore
 
-### 1. Can the production reach delivery?
+### 1. Can the Production Reach Delivery?
 
 Start with [[wiki/concepts/full-financing|Full Financing]]. Look for complete costs, committed funding, realistic timing, contingency and clear responsibility for overruns.
 
 **What you want to understand:** whether the project has enough money at the right times to finish and deliver.
 
-### 2. What is expected to repay the loan?
+### 2. What Is Expected to Repay the Loan?
 
 Use the [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]] to separate contracted receivables, [[wiki/concepts/tax-credit-collateral|tax incentives]], unsold-rights value, insurance proceeds, completion support and controlled cash.
 
 **What you want to understand:** who is expected to pay, under what conditions, when the money may arrive and which repayment sources share the same risks.
 
-### 3. How is the maximum loan amount determined?
+### 3. How Is the Maximum Loan Amount Determined?
 
 Follow [[wiki/concepts/loan-sizing|Loan Sizing]] from eligible collateral through advance rates, concentration limits, overall leverage, budget exposure, term and liquidity.
 
 **What you want to understand:** which limit actually controls the commitment, how much cushion remains and whether any exception is being requested.
 
-> [!caution] Confirm current policy
+> [!warning] Evidence Limitation
 > The limits described in the available material do not include an effective date or approving authority. Use the [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]] to understand the framework, then confirm the current policy before relying on the figures.
 
-### 4. Can the financier reach the assets and incoming cash?
+### 4. Can the Financier Reach the Assets and Incoming Cash?
 
 Read [[wiki/concepts/security-package|Security Package]] alongside [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]]. The legal rights, payer instructions, collection accounts and payment priorities should all point to the same assets and proceeds.
 
 **What you want to understand:** whether the promised value can be reached legally and collected operationally.
 
-### 5. Which protection addresses each risk?
+### 5. Which Protection Addresses Each Risk?
 
 Use [[wiki/concepts/protection-stack|Protection Stack]] to compare structural safeguards, completion support, [[wiki/concepts/production-insurance|Production Insurance]], monitoring and enforcement.
 
 **What you want to understand:** what each layer covers, what it excludes and which risks remain shared across several repayment sources.
 
-### 6. How will changing risk become a decision?
+### 6. How Will Changing Risk Become a Decision?
 
 Read [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]] with [[wiki/concepts/forward-flow-governance|Financing-Partner Governance]]. Information becomes useful when it is timely, verified and connected to a responsible decision-maker.
 
 **What you want to understand:** what is reported, what triggers action, which decisions MediaHedge handles and which decisions remain with the financing partner.
 
-### 7. What happens when the original plan breaks?
+### 7. What Happens When the Original Plan Breaks?
 
 Use [[wiki/concepts/defaults-workouts-and-recoveries|Defaults, Workouts and Recoveries]] to compare temporary liquidity problems, documentation issues, project-performance problems, payer credit problems and fundamental collateral impairment.
 
 **What you want to understand:** which options preserve value, how additional funding is evaluated and who has authority to approve a remedy.
 
-### 8. Does the portfolio diversify and deliver realized return?
+### 8. Does the Portfolio Diversify and Deliver Realized Return?
 
 Finish with [[wiki/concepts/portfolio-construction|Portfolio Construction]] and [[wiki/concepts/financier-return-economics|Return Economics]]. Multiple loans may still share the same payer, jurisdiction, guarantor, bank, market or delivery dependency.
 
 **What you want to understand:** where common risks accumulate and how actual cash timing, costs, extensions and losses affect investor performance.
 
-## Reasons to pause and ask another question
+## Reasons to Pause and Ask Another Question
 
 - The budget balances overall, but funding arrives after an important payment is due.
 - Collateral has a headline value, but ownership, conditions or collection timing remain uncertain.
@@ -92,22 +92,22 @@ Finish with [[wiki/concepts/portfolio-construction|Portfolio Construction]] and 
 - Apparent diversification depends on several assets with the same underlying failure point.
 - Expected return is described by interest rate alone, without cash timing, costs or losses.
 
-## What still requires independent verification
+## What Still Requires Independent Verification
 
 The knowledgebase explains the framework; it does not replace current policy, executed contracts, legal and tax advice, insurance review or historical performance analysis. See [[wiki/evidence-and-limitations|Evidence and Limitations]] for a practical list of items a financing partner may want to request.
 
-## Suggested page trail
+## Continue Exploring
 
 [[MediaHedge Knowledgebase|Home]] → [[wiki/overview|Overview]] → [[wiki/syntheses/repayment-and-risk-map|Repayment Map]] → [[wiki/concepts/loan-sizing|Sizing]] → [[wiki/concepts/security-package|Security]] → [[wiki/concepts/cash-control-and-waterfalls|Cash Control]] → [[wiki/concepts/monitoring-and-servicing|Monitoring]] → [[wiki/concepts/defaults-workouts-and-recoveries|Recovery]] → [[wiki/concepts/portfolio-construction|Portfolio]] → [[wiki/concepts/financier-return-economics|Returns]]
 
 For the same material organized from origination through recovery, use the [[wiki/syntheses/credit-lifecycle|Film-Finance Credit Lifecycle]].
 
-## Analysis and inference
+## Analysis and Inference
 
 The eight-question order and the suggested pause points are a reader-oriented synthesis. They are not an approval checklist, current policy, legal conclusion or investment recommendation.
 
 <!--
-## Source basis
+## Source Basis
 
 This guide synthesizes the twelve source-summary pages listed in [[wiki/operations/internal-catalog#Source summaries]].
 -->

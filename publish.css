@@ -1,18 +1,45 @@
 /* MediaHedge reader-facing Obsidian Publish theme */
 
+:root,
 body {
   --font-text-theme: "Aptos", "Segoe UI", sans-serif;
   --font-interface-theme: "Aptos", "Segoe UI", sans-serif;
+  --font-text-size: 17px;
+  --file-line-width: 880px;
   --background-primary: #fbfaf7;
   --background-secondary: #f2f5f5;
+  --background-modifier-border: #d9e2e3;
   --text-normal: #243238;
   --text-muted: #637177;
   --text-accent: #176b73;
   --text-accent-hover: #0f5258;
   --interactive-accent: #176b73;
-  --h1-color: #143f49;
-  --h2-color: #1c5660;
-  --h3-color: #2e6870;
+  --h1-color: #0c224f;
+  --h2-color: #143f49;
+  --h3-color: #1c5d66;
+  --mh-navy: #0c224f;
+  --mh-teal: #12adbd;
+  --mh-soft-teal: #e8f3f3;
+  --mh-warm-white: #fbfaf7;
+  --mh-rule: rgba(23, 107, 115, 0.2);
+}
+
+body.theme-dark,
+.theme-dark {
+  --background-primary: #111923;
+  --background-secondary: #18232d;
+  --background-modifier-border: #344550;
+  --text-normal: #e6ecee;
+  --text-muted: #aab8bd;
+  --text-accent: #6bd3dc;
+  --text-accent-hover: #95e6ec;
+  --interactive-accent: #4bc2cd;
+  --h1-color: #f4f8f9;
+  --h2-color: #bde8eb;
+  --h3-color: #8fd9df;
+  --mh-soft-teal: #1a3038;
+  --mh-warm-white: #111923;
+  --mh-rule: rgba(107, 211, 220, 0.28);
 }
 
 /* Keep publishing metadata and maintenance properties out of the reading view. */
@@ -21,14 +48,63 @@ body {
   display: none !important;
 }
 
+.markdown-rendered {
+  line-height: 1.68;
+  overflow-wrap: anywhere;
+}
+
+.markdown-rendered p,
+.markdown-rendered li {
+  max-width: 78ch;
+}
+
 .markdown-rendered h1 {
-  letter-spacing: -0.025em;
-  line-height: 1.15;
+  margin: 1.4rem 0 0.9rem;
+  color: var(--h1-color);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 750;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+}
+
+.markdown-rendered h1 + p {
+  max-width: 70ch;
+  color: var(--text-muted);
+  font-size: 1.08rem;
+  line-height: 1.65;
 }
 
 .markdown-rendered h2 {
-  border-bottom: 1px solid rgba(23, 107, 115, 0.18);
-  padding-bottom: 0.3rem;
+  margin: 2.6rem 0 1rem;
+  padding-bottom: 0.38rem;
+  border-bottom: 1px solid var(--mh-rule);
+  color: var(--h2-color);
+  font-size: clamp(1.35rem, 2.4vw, 1.65rem);
+  font-weight: 720;
+  letter-spacing: -0.018em;
+  line-height: 1.2;
+}
+
+.markdown-rendered h3 {
+  margin: 1.8rem 0 0.7rem;
+  color: var(--h3-color);
+  font-size: 1.14rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.markdown-rendered ul,
+.markdown-rendered ol {
+  padding-inline-start: 1.4rem;
+}
+
+.markdown-rendered li {
+  margin-block: 0.32rem;
+}
+
+.markdown-rendered strong {
+  color: var(--text-normal);
+  font-weight: 700;
 }
 
 /* Keep image embeds, including the home-page banner, responsive. */
@@ -40,28 +116,164 @@ body {
 }
 
 .markdown-rendered .image-embed {
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 1.75rem;
+  padding: clamp(0.25rem, 1vw, 0.75rem);
+  overflow: hidden;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+/* Tables remain comparative on desktop and scroll rather than collapse on small screens. */
+.markdown-rendered .table-wrapper {
+  max-width: 100%;
+  margin: 1.15rem 0 1.5rem;
+  overflow-x: auto;
+  border-radius: 10px;
+  -webkit-overflow-scrolling: touch;
 }
 
 .markdown-rendered table {
+  width: 100%;
+  margin: 1.15rem 0 1.5rem;
+  border: 1px solid var(--background-modifier-border);
   border-collapse: separate;
   border-spacing: 0;
-  border: 1px solid rgba(20, 63, 73, 0.14);
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
+  font-size: 0.94rem;
+  line-height: 1.48;
+}
+
+.markdown-rendered th,
+.markdown-rendered td {
+  padding: 0.7rem 0.8rem;
+  border-color: var(--background-modifier-border);
+  vertical-align: top;
 }
 
 .markdown-rendered th {
-  background: #e8f0f0;
-  color: #143f49;
+  background: var(--mh-soft-teal);
+  color: var(--h2-color);
+  font-weight: 700;
+  text-align: left;
 }
 
+.markdown-rendered tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--background-secondary) 52%, transparent);
+}
+
+.markdown-rendered tbody tr:hover {
+  background: color-mix(in srgb, var(--mh-soft-teal) 72%, transparent);
+}
+
+/* A restrained callout system for recurring reader decisions. */
 .markdown-rendered .callout {
-  border-radius: 8px;
+  margin: 1.2rem 0 1.5rem;
+  padding: 0.2rem 0.35rem;
+  border-radius: 10px;
   box-shadow: none;
 }
 
+.markdown-rendered .callout[data-callout="important"] {
+  --callout-color: 12, 34, 79;
+}
+
+.markdown-rendered .callout[data-callout="tip"] {
+  --callout-color: 23, 107, 115;
+}
+
+.markdown-rendered .callout[data-callout="note"] {
+  --callout-color: 46, 104, 112;
+}
+
+.markdown-rendered .callout[data-callout="warning"] {
+  --callout-color: 172, 96, 25;
+}
+
+.markdown-rendered .callout-title {
+  font-weight: 750;
+  letter-spacing: 0.01em;
+}
+
+.markdown-rendered blockquote:not(.callout) {
+  margin-inline: 0;
+  padding: 0.15rem 1rem;
+  border-inline-start: 3px solid var(--text-accent);
+  color: var(--text-muted);
+}
+
 .markdown-rendered a.internal-link {
+  color: var(--text-accent);
+  text-decoration-line: underline;
+  text-decoration-color: color-mix(in srgb, var(--text-accent) 45%, transparent);
   text-decoration-thickness: 1px;
-  text-underline-offset: 0.16em;
+  text-underline-offset: 0.18em;
+}
+
+.markdown-rendered a.internal-link:hover {
+  color: var(--text-accent-hover);
+  text-decoration-color: currentColor;
+}
+
+.markdown-rendered a:focus-visible {
+  border-radius: 3px;
+  outline: 3px solid color-mix(in srgb, var(--text-accent) 55%, transparent);
+  outline-offset: 3px;
+}
+
+/* Give the consistent page trail a quiet, card-like finish. */
+.markdown-rendered h2[data-heading="Continue Exploring"] {
+  margin-top: 3rem;
+  padding: 0.8rem 1rem 0.25rem;
+  border: 1px solid var(--background-modifier-border);
+  border-bottom: 0;
+  border-radius: 10px 10px 0 0;
+  background: var(--background-secondary);
+  font-size: 1.12rem;
+}
+
+.markdown-rendered h2[data-heading="Continue Exploring"] + p {
+  margin-top: 0;
+  padding: 0.25rem 1rem 0.9rem;
+  border: 1px solid var(--background-modifier-border);
+  border-top: 0;
+  border-radius: 0 0 10px 10px;
+  background: var(--background-secondary);
+}
+
+@media (max-width: 700px) {
+  :root,
+  body {
+    --font-text-size: 16px;
+    --file-line-width: 100%;
+  }
+
+  .markdown-rendered h1 {
+    font-size: clamp(1.8rem, 9vw, 2.3rem);
+  }
+
+  .markdown-rendered h2 {
+    margin-top: 2.15rem;
+  }
+
+  .markdown-rendered table {
+    width: max-content;
+    min-width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .markdown-rendered th,
+  .markdown-rendered td {
+    min-width: 9rem;
+    padding: 0.62rem 0.68rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
 }

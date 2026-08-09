@@ -15,9 +15,10 @@ tags:
 
 # Loan Sizing
 
-## Definition
+MediaHedge's sizing method is a constraint system. Underwriting first converts headline collateral into eligible net value, then applies asset-specific advance rates, concentration limits, aggregate leverage, budget exposure, tenor and liquidity tests.
 
-MediaHedge's sizing method is a constraint system. Underwriting first converts headline collateral into eligible net value, then applies asset-specific advance rates, concentration limits, aggregate leverage, budget exposure, tenor and liquidity tests. The approved commitment is the lowest amount permitted by every applicable test.
+> [!tip] Decision Point
+> The approved commitment is the lowest amount permitted by every applicable test.
 
 ## Sequence
 
@@ -28,20 +29,20 @@ MediaHedge's sizing method is a constraint system. Underwriting first converts h
 5. **Term and liquidity:** align maturity with stressed collection timing, required reserves and extension risk.
 6. **Full-financing reconciliation:** confirm that the sized facility, equity and other sources still fund every use through delivery.
 
-## Limits described in the available material
+## Limits Described in the Available Material
 
 | Test | Stated MediaHedge treatment |
 | --- | --- |
-| Tax-credit advance | `<=85%` of verified eligible value |
-| Gap advance | `<=50%` of supported low value |
-| Gap concentration | Generally `<=30%` of actual final gross loan |
-| Aggregate LTV | `<=60%` |
-| Gross loan-to-budget | `<=80%` |
-| Term | Generally `<=15 months` |
+| Tax-credit advance | `≤85%` of verified eligible value |
+| Gap advance | `≤50%` of supported low value |
+| Gap concentration | Generally `≤30%` of actual final gross loan |
+| Aggregate LTV | `≤60%` |
+| Gross loan-to-budget | `≤80%` |
+| Term | Generally `≤15 months` |
 
 The available material does not state an effective date or policy version. Confirm current authority and calculation definitions before applying the limits. See the [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]].
 
-## Required output
+## Required Output
 
 A finance expert should be able to reproduce the commitment from the collateral schedule and identify:
 
@@ -52,16 +53,16 @@ A finance expert should be able to reproduce the commitment from the collateral 
 - pricing, risk score and approval status as separate outputs;
 - every exception and its approval authority.
 
-## Limits and failure modes
+## Limits and Failure Modes
 
 Aggregate LTV does not protect capital if the value is ineligible, correlated, unreachable or maturing after the loan. Gross loan-to-budget is not a substitute for [[wiki/concepts/full-financing|sources-and-uses sufficiency]]. Fees and capitalized interest can increase exposure after closing. A gap cap calculated against a final loan that itself contains gap creates circularity and must be solved and audited explicitly. High pricing cannot cure a failed structural gate.
 
-## Continue the diligence
+## Continue Exploring
 
 [[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
 
 <!--
-## Source basis
+## Source Basis
 
 - Primary: [[wiki/sources/how-mediahedge-sizes-a-loan]].
 - Related: [[wiki/sources/tax-credit-receivables-as-collateral]], [[wiki/sources/why-a-production-must-be-fully-financed]] and [[wiki/sources/mediahedge-protection-stack]].

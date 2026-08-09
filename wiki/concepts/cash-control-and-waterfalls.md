@@ -14,11 +14,9 @@ tags:
 
 # Cash Control and Waterfalls
 
-## Definition
-
 Cash control is the system that turns a payment obligation into captured and prioritized loan repayment. It combines payer-level directions, independent collection administration, legally effective account control, a contractual waterfall and operational reconciliation.
 
-## Components are distinct
+## Components Are Distinct
 
 | Component | Primary function |
 | --- | --- |
@@ -30,7 +28,7 @@ Cash control is the system that turns a payment obligation into captured and pri
 
 No one component substitutes for the others.
 
-## Operating architecture
+## Operating Architecture
 
 1. Build a source-to-account matrix by obligor, contract, territory, currency and expected date.
 2. Obtain acknowledged directions and restrict unilateral account or instruction changes.
@@ -39,11 +37,11 @@ No one component substitutes for the others.
 5. Distinguish invoiced, received, cleared, allocated and distributed amounts in reconciliation.
 6. Escalate mismatches, aging, chargebacks, unauthorized changes and broadly defined deductions.
 
-## Financier rights
+## Financier Rights
 
 The financing partner should be expressly protected in the waterfall and control documents or through a clear agent/collateral-agent structure. Reserved matters commonly include account changes, payment instructions, waterfall amendments, manager replacement, extraordinary deductions, collateral releases and junior distributions during stress.
 
-## Limits and failure modes
+## Limits and Failure Modes
 
 Obligors may retain setoff, withholding or deduction rights. Manager exculpation, bank liens, FX, sanctions screening, chargebacks, cyber events and dormant-account rules can delay cash. A CAMA does not automatically create Article 9 control, and legal control without correct payer onboarding does not ensure that money enters the account. Broad senior deductions or third-party claims can leak value before debt service.
 
@@ -51,12 +49,12 @@ Obligors may retain setoff, withholding or deduction rights. Manager exculpation
 
 Cash control operationalizes the [[wiki/concepts/security-package|Security Package]], supplies evidence to [[wiki/concepts/monitoring-and-servicing|Servicing]], and preserves recoveries during [[wiki/concepts/defaults-workouts-and-recoveries|Workout]]. It also provides the dated ledger needed for [[wiki/concepts/financier-return-economics|Return Economics]].
 
-## Continue the diligence
+## Continue Exploring
 
 [[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
 
 <!--
-## Source basis
+## Source Basis
 
 - Primary: [[wiki/sources/cama-account-control-and-collection-waterfalls]].
 - Related: [[wiki/sources/mediahedge-security-package]], [[wiki/sources/monitoring-and-servicing-after-closing]] and [[wiki/sources/where-the-financiers-return-comes-from]].

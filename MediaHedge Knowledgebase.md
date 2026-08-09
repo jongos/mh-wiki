@@ -19,13 +19,13 @@ MediaHedge works at the intersection of creative production and disciplined cred
 
 You do not need to be a film-finance specialist. Start with the question you care about and follow the links as far as you would like to go.
 
-## Start here
+## Start Here
 
 - **New to MediaHedge?** Read [[wiki/entities/mediahedge|Who MediaHedge is]] and [[wiki/overview|How the lending model works]].
 - **Evaluating an investment?** Follow the [[wiki/syntheses/financier-diligence-route|Financier's Guide]].
 - **Looking for a term?** Open the [[wiki/glossary|Plain-English Glossary]].
 
-## Questions a financing partner may ask
+## Questions a Financing Partner May Ask
 
 | Question | Where to begin |
 | --- | --- |
@@ -40,39 +40,39 @@ You do not need to be a film-finance specialist. Start with the question you car
 | How are investor rights and decisions governed? | [[wiki/concepts/forward-flow-governance\|Financing-Partner Governance]] |
 | How are concentration and return evaluated? | [[wiki/concepts/portfolio-construction\|Portfolio Construction]] and [[wiki/concepts/financier-return-economics\|Return Economics]] |
 
-## Follow the financing journey
+## Follow the Financing Journey
 
 The [[wiki/syntheses/credit-lifecycle|Film-Finance Credit Lifecycle]] follows a loan from the first screen through underwriting, closing, servicing, recovery and portfolio reporting.
 
 For a quicker comparison of repayment sources, open the [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]]. For the source-stated limits and major decision gates, use the [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]].
 
-## Explore the model
+## Explore the Model
 
-### Build a financeable loan
+### Build a Financeable Loan
 
 - [[wiki/concepts/full-financing|Full Financing]] — why all costs and timing must work through delivery.
 - [[wiki/concepts/loan-sizing|Loan Sizing]] — how eligible value and the tightest limit determine exposure.
 - [[wiki/concepts/tax-credit-collateral|Tax-Credit Collateral]] — how production incentives become potential repayment value.
 
-### Protect the capital
+### Protect the Capital
 
 - [[wiki/concepts/protection-stack|Protection Stack]] — how different safeguards address different risks.
 - [[wiki/concepts/security-package|Security Package]] — how rights to assets and proceeds are established.
 - [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]] — how collections reach the right accounts in the right order.
 - [[wiki/concepts/production-insurance|Production Insurance]] — what coverage contributes and where its limits begin.
 
-### Manage change and downside
+### Manage Change and Downside
 
 - [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]] — how changing facts become timely decisions.
 - [[wiki/concepts/defaults-workouts-and-recoveries|Defaults, Workouts and Recoveries]] — how options and value are preserved during stress.
 
-### Build a durable financing partnership
+### Build a Durable Financing Partnership
 
 - [[wiki/concepts/forward-flow-governance|Financing-Partner Governance]] — how authority, ownership and servicing responsibilities are divided.
 - [[wiki/concepts/portfolio-construction|Portfolio Construction]] — how shared risks and liquidity are managed across investments.
 - [[wiki/concepts/financier-return-economics|Return Economics]] — how actual cash timing, costs and losses affect realized performance.
 
-## Understand the boundaries
+## Understand the Boundaries
 
 Read [[wiki/evidence-and-limitations|Evidence and Limitations]] for a clear explanation of what this knowledgebase establishes, what remains subject to current policy or transaction documents, and what a financing partner should verify independently.
 

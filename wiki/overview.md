@@ -13,13 +13,16 @@ tags:
 
 # How the MediaHedge Lending Model Works
 
-## Core thesis
+> [!important] Why It Matters
+> The MediaHedge framework treats film-finance lending as a connected control system, not a bet on one document, one repayment source or one headline yield.
 
-The MediaHedge framework treats film-finance lending as a connected control system, not a bet on one document, one repayment source or one headline yield. Capital protection starts with [[wiki/concepts/full-financing|full financing]] because completion and delivery are common dependencies across distributor receivables, tax incentives and unsold-rights value. It continues through conservative [[wiki/concepts/loan-sizing|loan sizing]], an enforceable [[wiki/concepts/security-package|security package]], operational [[wiki/concepts/cash-control-and-waterfalls|cash control]], narrow credit for [[wiki/concepts/production-insurance|insurance and other risk-transfer instruments]], active [[wiki/concepts/monitoring-and-servicing|servicing]], and value-preserving [[wiki/concepts/defaults-workouts-and-recoveries|workout governance]].
+Capital protection starts with [[wiki/concepts/full-financing|full financing]] because completion and delivery are common dependencies across distributor receivables, tax incentives and unsold-rights value.
+
+It continues through conservative [[wiki/concepts/loan-sizing|loan sizing]], an enforceable [[wiki/concepts/security-package|security package]], operational [[wiki/concepts/cash-control-and-waterfalls|cash control]], narrow credit for [[wiki/concepts/production-insurance|insurance and other risk-transfer instruments]], active [[wiki/concepts/monitoring-and-servicing|servicing]], and value-preserving [[wiki/concepts/defaults-workouts-and-recoveries|workout governance]].
 
 The portfolio and capital-partner layers matter as much as the individual loan. [[wiki/concepts/portfolio-construction|Portfolio construction]] looks through deal count to common failure drivers. [[wiki/concepts/forward-flow-governance|Forward-flow governance]] allocates funding, ownership, servicing, exception and enforcement authority. [[wiki/concepts/financier-return-economics|Return analysis]] then measures what the financier actually receives, when it receives it, and what credit and operating frictions consumed.
 
-## The lending model in one view
+## The Lending Model in One View
 
 | Stage | Principal question | Primary controls | Durable output |
 | --- | --- | --- | --- |
@@ -33,7 +36,7 @@ The portfolio and capital-partner layers matter as much as the individual loan. 
 
 See [[wiki/syntheses/credit-lifecycle|Film-Finance Credit Lifecycle]] for the expanded sequence.
 
-## What supports repayment
+## What Supports Repayment
 
 The corpus identifies multiple possible value sources but repeatedly warns that they are not interchangeable:
 
@@ -45,7 +48,7 @@ The corpus identifies multiple possible value sources but repeatedly warns that 
 
 [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]] compares these paths and their shared dependencies.
 
-## Policy limits described in the available material
+## Policy Limits Described in the Available Material
 
 The briefs state the following MediaHedge film-policy controls:
 
@@ -57,9 +60,10 @@ The briefs state the following MediaHedge film-policy controls:
 - term generally no longer than 15 months;
 - final commitment equal to the lowest amount permitted by all applicable constraints.
 
-These are internal source statements, not universal market constants. The briefs do not state an effective date, so current application should be verified before use. See [[wiki/syntheses/policy-rails-and-control-matrix|Policy Rails and Control Matrix]].
+> [!warning] Evidence Limitation
+> These are internal source statements, not universal market constants. The briefs do not state an effective date, so current application should be verified before use. See [[wiki/syntheses/policy-rails-and-control-matrix|Policy Rails and Control Matrix]].
 
-## The recurring distinctions
+## The Recurring Distinctions
 
 The strongest connective tissue across the corpus is the discipline of not confusing adjacent concepts:
 
@@ -72,14 +76,14 @@ The strongest connective tissue across the corpus is the discipline of not confu
 - a balanced total budget is not sufficient if cash arrives after the production's liquidity trough;
 - many loans are not diversified when they share the same obligor, jurisdiction, guarantor or delivery dependency.
 
-## How to use this wiki
+## Continue Exploring
 
 Use [[MediaHedge Knowledgebase]] as the home page. Financing partners can follow the [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] by investment question, while the [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] organizes the same system chronologically. Material transaction decisions still require current policy, executed documents and qualified legal, tax, insurance and program-specific analysis.
 
 Read [[wiki/evidence-and-limitations|Evidence and Limitations]] for a plain-language explanation of what the knowledgebase establishes and what still needs independent verification.
 
 <!--
-## Source basis
+## Source Basis
 
 This overview synthesizes the twelve source-summary pages listed in [[wiki/operations/internal-catalog#Source summaries]]. No external authority was added during the initial ingest.
 -->

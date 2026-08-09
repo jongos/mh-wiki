@@ -15,11 +15,10 @@ tags:
 
 # Policy and Control Guide
 
-## Status
+> [!warning] Evidence Limitation
+> The figures below are described in the available material as MediaHedge film-policy limits. The material does not provide a policy version, approval date or effective date. Verify current authority before applying them to a transaction.
 
-The figures below are described in the available material as MediaHedge film-policy limits. The material does not provide a policy version, approval date or effective date. Verify current authority before applying them to a transaction.
-
-## Quantitative rails
+## Quantitative Rails
 
 | Rail | Stated treatment | Purpose |
 | --- | --- | --- |
@@ -31,7 +30,7 @@ The figures below are described in the available material as MediaHedge film-pol
 | Term | Generally no longer than 15 months | Aligns maturity with realistic collection timing and liquidity |
 | Commitment | Lowest amount permitted by all applicable constraints | Ensures the tightest structural ceiling controls |
 
-## Non-quantitative gates
+## Non-Quantitative Gates
 
 | Gate | Required finding | Primary evidence | If not satisfied |
 | --- | --- | --- | --- |
@@ -42,7 +41,7 @@ The figures below are described in the available material as MediaHedge film-pol
 | Insurance/completion | Coverage, endorsements, limits, exclusions and completion obligations align with the approved budget and delivery specification | Policies, endorsements, bond/guaranty and premium evidence | Correct coverage or reduce credited protection |
 | Monitoring | Baseline, data, triggers, authority and continuity are operational at closing | Servicing plan, calendar, data dictionary, consent matrix and custody plan | Do not treat reporting promises as controls |
 
-## Failure-mode control matrix
+## Failure-Mode Control Matrix
 
 | Failure mode | Preventive control | Detection signal | Response path |
 | --- | --- | --- | --- |
@@ -54,7 +53,7 @@ The figures below are described in the available material as MediaHedge film-pol
 | Collateral shortfall | Conservative sizing and dynamic borrowing base | Coverage or concentration breach | Paydown, additional collateral, reserve, extension, sale or enforcement |
 | Servicer failure | Custody, audit, data portability and backup servicing | Service-level breach, missing records or reconciliation failure | Cure, replace servicer, transition data and authority |
 
-## Controls that cannot substitute for one another
+## Controls That Cannot Substitute for One Another
 
 - Higher coupon cannot cure ineligible collateral.
 - Aggregate LTV cannot cure correlated or legally unreachable value.
@@ -64,16 +63,16 @@ The figures below are described in the available material as MediaHedge film-pol
 - A completion guaranty cannot substitute for obligor, tax-credit or commercial-value underwriting.
 - More reports cannot substitute for verified evidence, triggers and decision authority.
 
-## Evidence and limitations
+## Evidence and Limitations
 
 These figures are useful for understanding the stated framework, but they are not a certification of current policy. Review [[wiki/evidence-and-limitations|Evidence and Limitations]] before applying them to a financing decision.
 
-## Continue exploring
+## Continue Exploring
 
 [[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/concepts/loan-sizing|Loan Sizing]]
 
 <!--
-## Source basis
+## Source Basis
 
 Primary: [[wiki/sources/how-mediahedge-sizes-a-loan]], [[wiki/sources/tax-credit-receivables-as-collateral]], [[wiki/sources/why-a-production-must-be-fully-financed]], [[wiki/sources/mediahedge-protection-stack]], [[wiki/sources/mediahedge-security-package]], [[wiki/sources/cama-account-control-and-collection-waterfalls]] and [[wiki/sources/monitoring-and-servicing-after-closing]]. Gaps are maintained in [[wiki/operations/research-backlog]].
 -->

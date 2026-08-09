@@ -214,6 +214,126 @@ function Test-WikiFragment {
     return $false
 }
 
+function Get-TitleCaseIssue {
+    param([string]$Heading)
+
+    $smallWords = @(
+        'a', 'an', 'and', 'as', 'at', 'but', 'by', 'for', 'from', 'in', 'into',
+        'nor', 'of', 'on', 'or', 'over', 'per', 'the', 'to', 'up', 'via', 'vs',
+        'with', 'without', 'yet'
+    )
+    $tokens = $Heading -split '\s+'
+    $lexicalTokens = @($tokens | Where-Object { $_ -match '\p{L}' })
+    $lexicalIndex = 0
+    $forceCapital = $true
+
+    foreach ($token in $tokens) {
+        if ($token -notmatch '\p{L}') {
+            if ($token.EndsWith(':')) {
+                $forceCapital = $true
+            }
+            continue
+        }
+
+        $segments = $token -split '-'
+        $wordSegments = @($segments | Where-Object { $_ -match '\p{L}' })
+        $wordSegmentIndex = 0
+        foreach ($segment in $segments) {
+            $wordMatch = [regex]::Match($segment, '\p{L}+[\p{L}0-9]*')
+            if (-not $wordMatch.Success) {
+                continue
+            }
+
+            $word = $wordMatch.Value
+            $lowerWord = $word.ToLowerInvariant()
+            $isFirst = $lexicalIndex -eq 0 -and $wordSegmentIndex -eq 0
+            $isLast = $lexicalIndex -eq ($lexicalTokens.Count - 1) -and
+                $wordSegmentIndex -eq ($wordSegments.Count - 1)
+            $isSmallWord = $lowerWord -in $smallWords
+            $mustBeCapitalized = $forceCapital -or $isFirst -or $isLast -or -not $isSmallWord
+
+            if ($mustBeCapitalized -and -not [char]::IsUpper($word[0])) {
+                return $word
+            }
+            if (-not $mustBeCapitalized -and -not [char]::IsLower($word[0])) {
+                return $word
+            }
+
+            $forceCapital = $false
+            $wordSegmentIndex++
+        }
+        if ($token.EndsWith(':')) {
+            $forceCapital = $true
+        }
+        $lexicalIndex++
+    }
+    return $null
+}
+
+function Test-PublishedPresentation {
+    param(
+        [string]$Content,
+        [string]$Relative,
+        [bool]$RequireContinueExploring
+    )
+
+    $mask = {
+        param($Match)
+        return [regex]::Replace($Match.Value, '[^\r\n]', ' ')
+    }
+    $visible = [regex]::Replace($Content, '(?s)<!--.*?-->', $mask)
+    $visible = Mask-MarkdownCode -Content $visible
+
+    foreach ($headingMatch in [regex]::Matches($visible, '(?m)^(#{1,3})\s+(.+?)\s*$')) {
+        $heading = $headingMatch.Groups[2].Value
+        $issue = Get-TitleCaseIssue -Heading $heading
+        if ($null -ne $issue) {
+            $line = Get-LineNumber -Content $Content -Index $headingMatch.Index
+            $script:errors.Add("Published heading is not in Title Case in ${Relative}:${line}: $heading")
+        }
+    }
+
+    $h1Match = [regex]::Match($visible, '(?m)^#\s+.+?\s*$')
+    if ($h1Match.Success) {
+        $nextH2 = [regex]::Match($visible.Substring($h1Match.Index + $h1Match.Length), '(?m)^##\s+')
+        $introEnd = if ($nextH2.Success) {
+            $h1Match.Index + $h1Match.Length + $nextH2.Index
+        } else {
+            $visible.Length
+        }
+        $intro = $visible.Substring($h1Match.Index + $h1Match.Length, $introEnd - ($h1Match.Index + $h1Match.Length))
+        if ($intro -notmatch '\p{L}') {
+            $script:errors.Add("Published page needs concise introductory content before its first H2: $Relative")
+        }
+    }
+
+    foreach ($spacingMatch in [regex]::Matches($visible, '(?m)^#{1,3}\s+[^\r\n]+\r?\n(?!\r?\n)')) {
+        $line = Get-LineNumber -Content $Content -Index $spacingMatch.Index
+        $script:errors.Add("Published heading must be followed by a blank line in ${Relative}:$line")
+    }
+
+    if ($RequireContinueExploring) {
+        $continueCount = [regex]::Matches($visible, '(?m)^## Continue Exploring\s*$').Count
+        if ($continueCount -ne 1) {
+            $script:errors.Add("Published wiki page must contain exactly one 'Continue Exploring' section: $Relative (found $continueCount)")
+        }
+    }
+
+    $allowedCalloutTypes = @('important', 'tip', 'note', 'warning')
+    foreach ($calloutMatch in [regex]::Matches($visible, '(?m)^>\s*\[!([^\]]+)\]\s*(.*?)\s*$')) {
+        $calloutType = $calloutMatch.Groups[1].Value.ToLowerInvariant()
+        $calloutTitle = $calloutMatch.Groups[2].Value.Trim()
+        $line = Get-LineNumber -Content $Content -Index $calloutMatch.Index
+        if ($calloutType -notin $allowedCalloutTypes) {
+            $script:errors.Add("Published page uses an unsupported callout type in ${Relative}:${line}: $calloutType")
+        }
+        if (-not [string]::IsNullOrWhiteSpace($calloutTitle) -and
+            $null -ne (Get-TitleCaseIssue -Heading $calloutTitle)) {
+            $script:errors.Add("Published callout title is not in Title Case in ${Relative}:${line}: $calloutTitle")
+        }
+    }
+}
+
 $inbound = @{}
 foreach ($file in $allFiles) {
     $inbound[$file.FullName] = 0
@@ -528,7 +648,7 @@ foreach ($file in $wikiFiles) {
         }
     }
     if ($relative -like 'wiki/concepts/*') {
-        if ($content -notmatch '(?m)^## Source basis\s*$') {
+        if ($content -notmatch '(?m)^## Source Basis\s*$') {
             $errors.Add("Concept page missing Source basis section: $relative")
         }
         if ($content -notmatch '\[\[wiki/concepts/') {
@@ -554,6 +674,7 @@ if (-not (Test-Path -LiteralPath $homePath -PathType Leaf)) {
     if ($homeContent -notmatch '(?m)^publish:\s*true\s*$') {
         $errors.Add('Public home note must be marked publish: true')
     }
+    Test-PublishedPresentation -Content $homeContent -Relative 'MediaHedge Knowledgebase.md' -RequireContinueExploring $false
     $homeVisibleContent = [regex]::Replace($homeContent, '(?s)<!--.*?-->', '')
     $homeVisibleContent = Mask-MarkdownCode -Content $homeVisibleContent
     foreach ($match in [regex]::Matches($homeVisibleContent, '\[\[([^\]]+)\]\]')) {
@@ -598,6 +719,7 @@ foreach ($file in $wikiFiles) {
     }
     if ($isPublished) {
         $publicWikiFiles.Add($file)
+        Test-PublishedPresentation -Content $content -Relative $relative -RequireContinueExploring $true
         if ($homeContent -notmatch [regex]::Escape("[[$target")) {
             $warnings.Add("Published page absent from public home: $relative")
         }
@@ -657,6 +779,40 @@ foreach ($template in Get-ChildItem -LiteralPath (Join-Path $vault 'templates') 
     $templateContent = $contentByFile[$template.FullName]
     if ($templateContent -notmatch '(?m)^publish:\s*false\s*$') {
         $errors.Add("Template must be marked publish: false: $($relativeByFile[$template.FullName])")
+    }
+}
+
+$publishCssPath = Join-Path $vault 'publish.css'
+if (-not (Test-Path -LiteralPath $publishCssPath -PathType Leaf)) {
+    $errors.Add('Missing reader-facing stylesheet: publish.css')
+} else {
+    $publishCss = Read-Utf8Text -Path $publishCssPath
+    $braceDepth = 0
+    foreach ($character in $publishCss.ToCharArray()) {
+        if ($character -eq '{') {
+            $braceDepth++
+        } elseif ($character -eq '}') {
+            $braceDepth--
+            if ($braceDepth -lt 0) {
+                break
+            }
+        }
+    }
+    if ($braceDepth -ne 0) {
+        $errors.Add('publish.css has unbalanced braces')
+    }
+    $requiredCssPatterns = @(
+        'theme-dark',
+        '@media (max-width:',
+        'data-heading="Continue Exploring"',
+        '.table-wrapper',
+        '.callout[data-callout=',
+        ':focus-visible'
+    )
+    foreach ($requiredPattern in $requiredCssPatterns) {
+        if ($publishCss -notmatch [regex]::Escape($requiredPattern)) {
+            $errors.Add("publish.css is missing required reader-style support: $requiredPattern")
+        }
     }
 }
 

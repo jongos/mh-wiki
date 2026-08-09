@@ -12,6 +12,8 @@ tags:
 
 # MediaHedge Film-Finance Glossary
 
+Use this glossary to translate recurring film-finance, credit and servicing terms into the meaning used throughout the MediaHedge knowledgebase.
+
 ## A-C
 
 **Account control agreement** - A qualifying arrangement with the depositary bank that may give the secured party control over a deposit account for perfection purposes. It does not itself define the economic waterfall. See [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]].
@@ -78,10 +80,10 @@ tags:
 
 **XIRR** - Annualized return calculated from actual dated cash flows. It is sensitive to draw, repayment, fee, extension and recovery timing.
 
-## Usage note
+## Usage Note
 
 Definitions here summarize the MediaHedge framework. Transaction documents and applicable law control their meaning in any specific financing. See [[wiki/evidence-and-limitations|Evidence and Limitations]] for additional context.
 
-## Continue exploring
+## Continue Exploring
 
 [[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/overview|How the Model Works]]

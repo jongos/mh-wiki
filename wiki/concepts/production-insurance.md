@@ -13,11 +13,9 @@ tags:
 
 # Production Insurance
 
-## Definition
-
 Film-production insurance is a portfolio of policies that transfers defined physical, personnel, liability, professional and specialty risks. It can preserve budget and collateral value after a covered event, but it is not a completion guaranty, collateral guaranty or general promise of loan repayment.
 
-## Coverage architecture
+## Coverage Architecture
 
 1. **Production package:** cast, negative/media, props, sets, wardrobe, equipment and extra-expense coverage.
 2. **Liability and workforce:** general liability, workers compensation, employer liability, auto and umbrella/excess.
@@ -25,15 +23,15 @@ Film-production insurance is a portfolio of policies that transfers defined phys
 4. **Specialty coverage:** cyber, crime, political risk, weather, animal, aviation or other production-specific policies.
 5. **Financier endorsements:** loss-payee, additional-insured, mortgagee or lender status appropriate to the insured interest.
 
-## Closing test
+## Closing Test
 
 The broker maps activities, assets, personnel, locations and delivery duties to policies, limits, deductibles, periods and named entities. Certificates are evidence, not the policy or endorsement. The closing set should contain the actual endorsements, premium evidence, available cancellation/material-change notice, waiver-of-subrogation treatment, primary/noncontributory terms where relevant, claims contacts and alignment with completion and security documents.
 
-## Proceeds and claims
+## Proceeds and Claims
 
 After a covered event, timely notice, mitigation, documentation and proof of loss preserve the claim. Loan documents should direct proceeds to repair, replacement, extra expense, completion or repayment according to the loss, policy and financier election rights.
 
-## Limits and failure modes
+## Limits and Failure Modes
 
 Coverage can be limited by exclusions, warranties, misrepresentation, late notice, unpaid premium, deductibles, sublimits, aggregation and policy periods. Cast, communicable-disease, cyber, war, governmental-action and labor limitations can be material. E&O does not replace chain-of-title diligence. Loss-payee status concerns proceeds; additional-insured status concerns liability protection; neither automatically provides every notice, control or payment right.
 
@@ -41,12 +39,12 @@ Coverage can be limited by exclusions, warranties, misrepresentation, late notic
 
 Production insurance sits within the [[wiki/concepts/protection-stack|Protection Stack]] but cannot replace [[wiki/concepts/full-financing|Full Financing]], completion protection, collateral underwriting or [[wiki/concepts/security-package|security]]. Claims and proceeds are monitored under [[wiki/concepts/monitoring-and-servicing|Servicing]].
 
-## Continue the diligence
+## Continue Exploring
 
 [[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
 
 <!--
-## Source basis
+## Source Basis
 
 - Primary: [[wiki/sources/film-production-insurance-stack]].
 - Related: [[wiki/sources/mediahedge-protection-stack]] and [[wiki/sources/why-a-production-must-be-fully-financed]].

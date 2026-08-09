@@ -9,42 +9,42 @@ tags:
   - mediahedge
 ---
 
-# Concept title
+# Concept Title
 
 ## Definition
 
 What the concept means in this wiki.
 
-## Why it matters
+## Why It Matters
 
 Credit, operating or decision significance.
 
-## How it works
+## How It Works
 
 Core mechanism, sequence or control structure.
 
-## Decision rules
+## Decision Rules
 
 - Rule or gate.
 
-## Limits and failure modes
+## Limits and Failure Modes
 
 - Limitation, exception or common confusion.
 
-## Related pages
+## Related Pages
 
 - [[wiki/overview]]
 
-## Continue the diligence
+## Continue Exploring
 
 [[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
 
 <!--
-## Source basis
+## Source Basis
 
 - Add private source-summary links for each material source.
 -->
 
-## Analysis and inference
+## Analysis and Inference
 
 Label any reasoning not directly stated in the sources. Remove this section if unused.
