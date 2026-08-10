@@ -1,3 +1,7 @@
+---
+publish: false
+---
+
 # Raw Source Layer
 
 This directory is the immutable evidence layer for the MediaHedge wiki.

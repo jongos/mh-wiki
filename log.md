@@ -253,3 +253,11 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Evidence boundary: external examples are labeled as general or jurisdiction-specific context and do not validate MediaHedge policy, issuer eligibility, collateral value, pricing, coverage or transaction terms; no source count, raw manifest entry or immutable source changed.
 - Open issues: the existing current-policy, transaction-form, legal, jurisdictional and realized-performance verification items remain in the research backlog; no new contradiction was identified.
 - Verification: complete wiki lint passed with 58 Markdown files, 45 wiki pages, 823 active wikilinks, 23 tables, 14 external links, 14 published diagram embeds, nine SVG diagrams and 17 raw sources; 0 errors and 0 warnings.
+
+## [2026-08-10] maintenance | Custom domain and Publish inventory repair
+
+- Cloudflare: verified the apex `mediafinance.guide` CNAME targets `publish-main.obsidian.md`, remains proxied, and uses Full SSL/TLS mode; added the matching proxied `www` CNAME and an active path-preserving 301 redirect from `www.mediafinance.guide/*` to `mediafinance.guide/*` with query strings preserved.
+- Obsidian Publish: enabled Obsidian's local command interface, retained the existing custom-domain redirect from `publish.obsidian.md/mediahdge`, and changed the site homepage from the obsolete nested `MH Wiki/MediaHedge Knowledgebase.md` path to the canonical root `MediaHedge Knowledgebase.md` note.
+- Remote cleanup: compared Obsidian's authoritative 70-file inventory with the local publication policy, then unpublished exactly 34 obsolete paths: the duplicated `MH Wiki/` tree and two private raw-layer README files. No local wiki file, raw source or Git history was deleted.
+- Prevention: added `publish: false` to `raw/README.md` and `raw/inbox/README.md`, eliminating both from Obsidian's change queue and preventing accidental republication; added the canonical live-domain link to the repository README.
+- Verification: Obsidian reports 36 published files and no pending Publish changes; the live Publish audit reports 36 expected, 36 remote, 0 missing and 0 unexpected/private paths. Final DNS, HTTPS, redirect, wiki lint, archive, GitHub and live-link checks follow this logged operation.

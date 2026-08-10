@@ -18,6 +18,8 @@ MediaHedge sits at the intersection of creative production and disciplined credi
 
 You do not need to be a film-finance specialist. Pick the question that brought you here and follow the trail.
 
+**Explore the live knowledgebase:** [mediafinance.guide](https://mediafinance.guide/)
+
 ## Choose Your Route
 
 | If You Want To… | Start Here |
