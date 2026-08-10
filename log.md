@@ -242,3 +242,14 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Freshness: marked the gap policy and pricing statements `needs-review` because the briefs provide no policy version, approving authority or effective date. The source-stated three-to-five-point pricing context is not represented as a forecast of realized return.
 - Contradictions and gaps: no direct contradiction was found. Added verification needs for current gap pricing, completion and surety forms, pre-sale eligibility and sales-estimate review standards.
 - Lint: passed with 58 Markdown files, 45 wiki pages, 745 active wikilinks, 23 Markdown tables, 14 published diagram embeds, nine SVG diagrams and 17 raw sources; 0 errors and 0 warnings.
+
+## [2026-08-09] maintenance | Semantic knowledge-map and credibility pass
+
+- Scope: reviewed all 24 published wiki pages as one knowledge graph, checked high-value concept mentions against their outbound links, inspected contextual overlap and compared the reader routes, glossary, control matrix and repayment map for navigation gaps.
+- Knowledge mapping: added 39 unique published-page relationships, bringing the public graph to 25 home-and-page nodes and 288 unique directed edges; every public page is reachable from the home note, and every durable concept retains direct Home, Financier's Guide and Credit Lifecycle navigation.
+- Reader improvements: repaired the underlinked tax-credit path, connected the glossary and policy matrix to their durable concept pages, and added targeted links among full financing, collateral states, protection, security, cash control, monitoring, portfolio construction and realized economics.
+- Overlap review: found no exact repeated long sentence across published pages. Retained the overview, financier route, lifecycle, repayment map and policy guide as distinct reader lenses rather than merging decision, chronological, repayment and control views.
+- External context: supplemented Completion Protection, Surety and Credit Protection, Pre-Sales Collateral and Gap Collateral with official Screen Australia, NAIC and U.S. Treasury context checked on 2026-08-09.
+- Evidence boundary: external examples are labeled as general or jurisdiction-specific context and do not validate MediaHedge policy, issuer eligibility, collateral value, pricing, coverage or transaction terms; no source count, raw manifest entry or immutable source changed.
+- Open issues: the existing current-policy, transaction-form, legal, jurisdictional and realized-performance verification items remain in the research backlog; no new contradiction was identified.
+- Verification: complete wiki lint passed with 58 Markdown files, 45 wiki pages, 823 active wikilinks, 23 tables, 14 external links, 14 published diagram embeds, nine SVG diagrams and 17 raw sources; 0 errors and 0 warnings.

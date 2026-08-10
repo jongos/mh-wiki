@@ -21,7 +21,7 @@ A completion bond or guaranty is a contractual layer designed to help an approve
 
 ![[assets/diagrams/protection-stack.svg|Five-layer MediaHedge protection stack showing completion protection as one distinct layer]]
 
-*Conceptual view: completion protection reinforces full financing, insurance, security and monitoring; it does not replace them.*
+*Conceptual view: completion protection reinforces [[wiki/concepts/full-financing|Full Financing]], [[wiki/concepts/production-insurance|Production Insurance]], the [[wiki/concepts/security-package|Security Package]] and [[wiki/concepts/monitoring-and-servicing|Monitoring]]; it does not replace them.*
 
 ## How the Protection Works
 
@@ -38,8 +38,8 @@ A completion bond or guaranty is a contractual layer designed to help an approve
 | Budget overrun or failure to deliver | Completion protection, subject to its conditions and remedies |
 | Covered casualty, cast, equipment or property loss | [[wiki/concepts/production-insurance\|Production Insurance]] |
 | Distributor or other obligor fails to pay | Obligor underwriting and targeted [[wiki/concepts/surety-credit-protection\|Surety or Credit Protection]], if available |
-| Tax-incentive reduction or delay | Program, spend, filing, timing and collection controls |
-| Weak audience demand or unsold-rights performance | Market and equity risk; completion does not guarantee commercial success |
+| Tax-incentive reduction or delay | Program, spend, filing, timing and [[wiki/concepts/tax-credit-collateral\|tax-credit controls]] |
+| Weak audience demand or unsold-rights performance | [[wiki/concepts/gap-collateral\|Gap underwriting]] and equity risk; completion does not guarantee commercial success |
 
 ## Financier Position
 
@@ -60,13 +60,16 @@ Loss-payee or additional-insured status under production insurance is not a subs
 
 Coverage is transaction-specific. Common limitations may include uncovered events, late notice, unpaid premium, failure to maintain the approved financing or production plan, and remedies that exclude interest, fees or consequential loss. The final executed guaranty and endorsements—not a specimen or summary—determine the available protection.
 
+## External Context
+
+Screen Australia's [Terms of Trade](https://www.screenaustralia.gov.au/getmedia/2e7f34c9-1f1c-420e-a8d6-66e984ea3c92/Terms-of-trade) say that it generally requires a completion guarantor for film and television production investments, with the decision informed by the producer, project and assessed completion risk. Its August 2025 [Narrative Content Production Guidelines](https://www.screenaustralia.gov.au/getmedia/f1a9729d-1263-4cf4-b0b5-54a6ede23340/Guidelines-Narrative-Content-Production-rev-7-8-2025-issued.pdf) also require completion-guarantor documentation for specified applications at or above an A$500,000 direct-funding request. This official Australian funding practice illustrates the institutional importance of completion risk; it does not define MediaHedge coverage, a universal threshold or the remedy in any transaction. Links checked: 2026-08-09.
+
 ## Continue Exploring
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier's Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/concepts/surety-credit-protection|Surety and Credit Protection]] · [[wiki/concepts/production-insurance|Production Insurance]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier's Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/concepts/protection-stack|Protection Stack]] · [[wiki/concepts/surety-credit-protection|Surety and Credit Protection]]
 
 <!--
 ## Source Basis
 
 [[wiki/sources/completion-bonds-crash-course]], [[wiki/sources/why-a-production-must-be-fully-financed]], [[wiki/sources/film-production-insurance-stack]] and [[wiki/sources/mediahedge-protection-stack]].
 -->
-

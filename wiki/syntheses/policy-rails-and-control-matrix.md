@@ -22,26 +22,26 @@ tags:
 
 | Rail | Stated treatment | Purpose |
 | --- | --- | --- |
-| Tax-credit advance | No more than 85% of verified eligible tax-credit value | Cushion for audit, timing, transfer and monetization risk |
-| Gap advance | No more than 50% of supported low value | Limits exposure to market-dependent unsold-rights value |
-| Gap concentration | Generally no more than 30% of actual final gross loan | Prevents gap risk from dominating repayment |
+| [[wiki/concepts/tax-credit-collateral\|Tax-credit advance]] | No more than 85% of verified eligible tax-credit value | Cushion for audit, timing, transfer and monetization risk |
+| [[wiki/concepts/gap-collateral\|Gap advance]] | No more than 50% of supported low value | Limits exposure to market-dependent unsold-rights value |
+| [[wiki/concepts/gap-collateral\|Gap concentration]] | Generally no more than 30% of actual final gross loan | Prevents gap risk from dominating repayment |
 | Aggregate LTV | No more than 60% | Caps total exposure relative to eligible value |
 | Gross loan-to-budget | No more than 80% | Limits lender exposure relative to production budget |
 | Term | Generally no longer than 15 months | Aligns maturity with realistic collection timing and liquidity |
-| Commitment | Lowest amount permitted by all applicable constraints | Ensures the tightest structural ceiling controls |
+| [[wiki/concepts/loan-sizing\|Commitment]] | Lowest amount permitted by all applicable constraints | Ensures the tightest structural ceiling controls |
 
 ## Non-Quantitative Gates
 
 | Gate | Required finding | Primary evidence | If not satisfied |
 | --- | --- | --- | --- |
-| Full financing | Verified, timely sources and committed equity cover all uses through delivery, financing costs, reserves and contingency | Executed commitments, funded equity, approved budget, cash-flow schedule, closing statement | Do not close; restructure sources/uses or reduce exposure |
+| [[wiki/concepts/full-financing\|Full financing]] | Verified, timely sources and committed equity cover all uses through delivery, financing costs, reserves and contingency | Executed commitments, funded equity, approved budget, cash-flow schedule, closing statement | Do not close; restructure sources/uses or reduce exposure |
 | Eligibility | Collateral is owned, enforceable, supported, non-duplicative and collectible on the modeled timeline | Contracts, schedules, opinions, obligor diligence and valuation evidence | Exclude or haircut; do not cure with price |
-| Contracted pre-sale | The minimum guarantee is final, authorized, deliverable, collectible and assignable for the eligible net amount | Executed agreement, delivery terms, obligor diligence, accepted assignment and deduction schedule | Exclude conditional or unsupported value; resolve contract and control gaps |
-| Gap evidence | Unsold rights are owned and available, and the supported low case survives concentration and timing stress | Rights schedule, chain of title, sales-agent authority, territory support, comparable sales and stress model | Exclude unsupported value or reduce the gap component |
-| Security and priority | Correct grant, perfection, assignment, acknowledgment and control method applies to each asset | Searches, releases, filings, control agreements, recordation and counsel analysis | Hold funding or condition use of proceeds |
-| Cash control | Every payer and currency has a controlled destination, priority and reconciliation process | Payment directions, CAMA, control agreement, bank onboarding and test reconciliation | Remediate before relying on proceeds |
-| Completion, surety and insurance | Each instrument covers the intended risk, parties and amount, and its conditions align with the approved budget, contract and delivery specification | Policies, endorsements, final guaranties or bonds, underlying contracts and premium evidence | Correct the instrument or remove the credited protection |
-| Monitoring | Baseline, data, triggers, authority and continuity are operational at closing | Servicing plan, calendar, data dictionary, consent matrix and custody plan | Do not treat reporting promises as controls |
+| [[wiki/concepts/pre-sales-collateral\|Contracted pre-sale]] | The minimum guarantee is final, authorized, deliverable, collectible and assignable for the eligible net amount | Executed agreement, delivery terms, obligor diligence, accepted assignment and deduction schedule | Exclude conditional or unsupported value; resolve contract and control gaps |
+| [[wiki/concepts/gap-collateral\|Gap evidence]] | Unsold rights are owned and available, and the supported low case survives concentration and timing stress | Rights schedule, chain of title, sales-agent authority, territory support, comparable sales and stress model | Exclude unsupported value or reduce the gap component |
+| [[wiki/concepts/security-package\|Security and priority]] | Correct grant, perfection, assignment, acknowledgment and control method applies to each asset | Searches, releases, filings, control agreements, recordation and counsel analysis | Hold funding or condition use of proceeds |
+| [[wiki/concepts/cash-control-and-waterfalls\|Cash control]] | Every payer and currency has a controlled destination, priority and reconciliation process | Payment directions, CAMA, control agreement, bank onboarding and test reconciliation | Remediate before relying on proceeds |
+| [[wiki/concepts/protection-stack\|Completion, surety and insurance]] | Each instrument covers the intended risk, parties and amount, and its conditions align with the approved budget, contract and delivery specification | Policies, endorsements, final guaranties or bonds, underlying contracts and premium evidence | Correct the instrument or remove the credited protection |
+| [[wiki/concepts/monitoring-and-servicing\|Monitoring]] | Baseline, data, triggers, authority and continuity are operational at closing | Servicing plan, calendar, data dictionary, consent matrix and custody plan | Do not treat reporting promises as controls |
 
 ## Failure-Mode Control Matrix
 
@@ -59,12 +59,12 @@ tags:
 
 - Higher coupon cannot cure ineligible collateral.
 - Aggregate LTV cannot cure correlated or legally unreachable value.
-- A CAMA cannot substitute for Article 9 account control.
-- A UCC filing cannot substitute for asset-specific attachment, control, recordation or counterparty rights.
-- [[wiki/concepts/production-insurance|Insurance]] cannot substitute for full financing or a [[wiki/concepts/completion-protection|completion guaranty]].
-- A completion guaranty cannot substitute for obligor, tax-credit or commercial-value underwriting.
+- A [[wiki/concepts/cash-control-and-waterfalls|CAMA]] cannot substitute for Article 9 account control.
+- A [[wiki/concepts/security-package|UCC filing]] cannot substitute for asset-specific attachment, control, recordation or counterparty rights.
+- [[wiki/concepts/production-insurance|Insurance]] cannot substitute for [[wiki/concepts/full-financing|Full Financing]] or a [[wiki/concepts/completion-protection|completion guaranty]].
+- A completion guaranty cannot substitute for obligor, [[wiki/concepts/tax-credit-collateral|tax-credit]] or commercial-value underwriting.
 - [[wiki/concepts/surety-credit-protection|Surety protection]] cannot substitute for completion, collateral eligibility or compliance with the bonded obligation and claim process.
-- More reports cannot substitute for verified evidence, triggers and decision authority.
+- More reports cannot substitute for [[wiki/concepts/monitoring-and-servicing|verified evidence, triggers and decision authority]].
 
 ## Evidence and Limitations
 

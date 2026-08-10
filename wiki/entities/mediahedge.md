@@ -14,7 +14,7 @@ tags:
 
 # MediaHedge
 
-MediaHedge is presented as a specialist film-finance originator, underwriter and servicer that can operate alongside a capital provider in a forward-flow, purchase, participation, agency or similar structure. The available material describes functions and controls; it does not, by itself, establish the company's legal form, licensing status, capitalization, historical performance or the terms of any specific partnership.
+MediaHedge is presented as a specialist film-finance originator, underwriter and servicer that can operate alongside a capital provider in a [[wiki/concepts/forward-flow-governance|forward-flow]], purchase, participation, agency or similar structure. The available material describes functions and controls; it does not, by itself, establish the company's legal form, licensing status, capitalization, historical performance or the terms of any specific partnership.
 
 ## Responsibilities Across the Asset Lifecycle
 
@@ -24,7 +24,7 @@ MediaHedge maps complete sources and uses, tests collateral ownership and eligib
 
 ### Closing and Collateral Control
 
-MediaHedge coordinates the collateral schedule, assignments, notices, lien and control mechanics, [[wiki/concepts/completion-protection|completion]], [[wiki/concepts/surety-credit-protection|surety]], insurance, account structure and contractual waterfall. Exact legal roles must remain explicit: lender of record, purchaser, participant, agent, secured party and collateral agent are not interchangeable. See [[wiki/concepts/security-package|Security Package]] and [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]].
+MediaHedge coordinates the collateral schedule, assignments, notices, lien and control mechanics, [[wiki/concepts/completion-protection|completion]], [[wiki/concepts/surety-credit-protection|surety]], [[wiki/concepts/production-insurance|insurance]], account structure and contractual waterfall. Exact legal roles must remain explicit: lender of record, purchaser, participant, agent, secured party and collateral agent are not interchangeable. See [[wiki/concepts/security-package|Security Package]] and [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]].
 
 ### Servicing and Monitoring
 

@@ -31,7 +31,7 @@ MediaHedge's sizing method is a constraint system. Underwriting first converts h
 3. **Concentration:** limit any single risk component or common failure driver.
 4. **Aggregate ceilings:** apply the overall LTV and gross loan-to-budget caps.
 5. **Term and liquidity:** align maturity with stressed collection timing, required reserves and extension risk.
-6. **Full-financing reconciliation:** confirm that the sized facility, equity and other sources still fund every use through delivery.
+6. **Full-financing reconciliation:** confirm through [[wiki/concepts/full-financing|Full Financing]] that the sized facility, equity and other sources still fund every use through delivery.
 
 ## Limits Described in the Available Material
 

@@ -40,7 +40,7 @@ The gross contract amount is not automatically eligible collateral. Underwriting
 | Stage | Financier's Question | Primary Evidence and Control |
 | --- | --- | --- |
 | Execution | Is the minimum guarantee final, binding and authorized? | Signed long-form agreement, party and authority verification, satisfied closing conditions |
-| Production | Can the project meet the contract? | [[wiki/concepts/full-financing\|Full Financing]], completion protection, budget and schedule controls |
+| Production | Can the project meet the contract? | [[wiki/concepts/full-financing\|Full Financing]], [[wiki/concepts/completion-protection\|Completion Protection]], budget and schedule controls |
 | Delivery | Are requirements and acceptance standards workable? | Delivery schedule, objective specifications, rejection notice, cure and deemed-acceptance terms |
 | Payment | What net amount is due, when and in which currency? | Acknowledged assignment, no-diversion direction, controlled account and waterfall |
 
@@ -51,19 +51,22 @@ The gross contract amount is not automatically eligible collateral. Underwriting
 - What defenses, setoff, withholding, deductions, taxes and commissions reduce the collectible amount?
 - What does the distributor's credit and payment history indicate?
 - Are assignment, acknowledgment, payment, notice and amendment protections enforceable for the transaction?
-- Do security, copyright, completion and collection documents point to the same rights and proceeds?
+- Do the [[wiki/concepts/security-package|security]], copyright, completion and collection documents point to the same rights and proceeds?
 
 ## Limits and Evidence
 
 An offer letter, unsigned draft or future negotiation is not an executed receivable. A signed pre-sale can still be reduced, delayed, disputed or terminated. Interest and lender fees are not automatically obligations of the distributor. Final contracts, actual counterparty credit and the operative collection structure control the result.
 
+## External Context
+
+Screen Australia's current [Market and Audience Insights](https://www.screenaustralia.gov.au/market-audience-insights/) reviewed 197 feature-film and television applications submitted from January 2023 through October 2025. It found marketplace finance—including distribution advances, minimum guarantees, pre-sales and gap—to be important but rarely sufficient on its own. Its August 2025 [Narrative Content Production Guidelines](https://www.screenaustralia.gov.au/getmedia/f1a9729d-1263-4cf4-b0b5-54a6ede23340/Guidelines-Narrative-Content-Production-rev-7-8-2025-issued.pdf) require evidence for finance-plan lines and, for specified applications, marketplace offers with terms, sales estimates and revenue projections. This is useful evidence of layered screen-finance practice, not proof that a particular pre-sale is eligible or collectible for MediaHedge. Links checked: 2026-08-09.
+
 ## Continue Exploring
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier's Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/concepts/gap-collateral|Gap Collateral]] · [[wiki/concepts/surety-credit-protection|Surety and Credit Protection]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier's Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]] · [[wiki/concepts/gap-collateral|Gap Collateral]]
 
 <!--
 ## Source Basis
 
 [[wiki/sources/pre-sales-as-collateral-crash-course]], [[wiki/sources/how-mediahedge-sizes-a-loan]], [[wiki/sources/mediahedge-security-package]], [[wiki/sources/cama-account-control-and-collection-waterfalls]] and [[wiki/sources/why-a-production-must-be-fully-financed]].
 -->
-

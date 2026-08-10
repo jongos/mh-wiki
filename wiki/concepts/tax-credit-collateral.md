@@ -45,11 +45,15 @@ Cost reports track qualified spend during production. After completion, required
 - statutory anti-assignment and imperfect payment capture;
 - timing beyond loan maturity.
 
-An estimate is not an unconditional government receivable, and a completion guaranty ordinarily does not reimburse an incentive shortfall.
+An estimate is not an unconditional government receivable, and a [[wiki/concepts/completion-protection|completion guaranty]] ordinarily does not reimburse an incentive shortfall.
 
 ## Monitoring Evidence
 
 Track eligible spend versus budget, cost reports, payroll and vendor support, filing milestones, audit status, certificate issuance, buyer settlement, expected-versus-actual timing and any change in program or claimant standing. Changes must update [[wiki/concepts/loan-sizing|the borrowing base]] and [[wiki/concepts/monitoring-and-servicing|the collection forecast]].
+
+## Connections
+
+Tax-credit collateral depends on [[wiki/concepts/full-financing|Full Financing]] to generate qualifying spend, the [[wiki/concepts/security-package|Security Package]] to establish the available legal claim and [[wiki/concepts/cash-control-and-waterfalls|Cash Control]] to capture realization proceeds. At portfolio level, [[wiki/concepts/portfolio-construction|jurisdiction and program concentration]] can create correlated timing or policy exposure across otherwise separate productions.
 
 ## External Context
 

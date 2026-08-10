@@ -23,8 +23,8 @@ The MediaHedge protection stack is a layered credit architecture in which each c
 
 1. **Eligibility and verification:** only documented, enforceable and independently supported value enters the borrowing base.
 2. **Sizing and structural subordination:** advance rates, LTV, concentration, budget limits, reserves and tenor create downside cushion.
-3. **Priority and cash control:** grants, perfection, assignments, notices, accounts and waterfalls make collateral reachable and proceeds capturable.
-4. **Completion and risk transfer:** full financing, completion protection and production insurance address specified delivery and insured-event risks.
+3. **Priority and cash control:** the [[wiki/concepts/security-package|Security Package]] and [[wiki/concepts/cash-control-and-waterfalls|Cash Control]] make collateral reachable and proceeds capturable through grants, perfection, assignments, notices, accounts and waterfalls.
+4. **Completion and risk transfer:** [[wiki/concepts/full-financing|Full Financing]], [[wiki/concepts/completion-protection|Completion Protection]] and [[wiki/concepts/production-insurance|Production Insurance]] address specified delivery and insured-event risks.
 5. **Surveillance and enforcement:** reporting, covenants, triggers, cure rights, step-in powers and remedies preserve options after closing.
 
 ## Failure-Mode Mapping

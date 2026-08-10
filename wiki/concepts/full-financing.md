@@ -17,7 +17,7 @@ A production is fully financed when verified and properly timed financing source
 
 ## Why It Is the First Credit Protection
 
-Completion and delivery are common dependencies across several repayment paths. [[wiki/concepts/pre-sales-collateral|Pre-sale minimum guarantees]] often require conforming delivery; tax incentives require qualifying spend and filings; [[wiki/concepts/gap-collateral|unsold rights]] generally become monetizable after completion; and [[wiki/concepts/completion-protection|completion guarantors]] commonly require an approved, fully financed bonded budget. A gap in production liquidity can therefore impair multiple assets at once.
+Completion and delivery are common dependencies across several repayment paths. [[wiki/concepts/pre-sales-collateral|Pre-sale minimum guarantees]] often require conforming delivery; [[wiki/concepts/tax-credit-collateral|tax incentives]] require qualifying spend and filings; [[wiki/concepts/gap-collateral|unsold rights]] generally become monetizable after completion; and [[wiki/concepts/completion-protection|completion guarantors]] commonly require an approved, fully financed bonded budget. A gap in production liquidity can therefore impair multiple assets at once.
 
 ## Five-Part Test
 

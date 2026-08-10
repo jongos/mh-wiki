@@ -14,7 +14,7 @@ tags:
 
 # Portfolio Construction
 
-Portfolio construction aggregates exposure by common economic failure driver rather than nominal deal count. A collection of sound loans can remain fragile if they depend on the same distributor, incentive program, completion guarantor, sales agent, producer, bank, platform, collateral market or collection window.
+Portfolio construction aggregates exposure by common economic failure driver rather than nominal deal count. A collection of sound loans can remain fragile if they depend on the same distributor, incentive program, [[wiki/concepts/completion-protection|completion guarantor]], sales agent, producer, bank, platform, collateral market or collection window.
 
 ![[assets/diagrams/portfolio-concentration-map.svg|Conceptual portfolio map connecting exposure to common economic failure drivers]]
 
@@ -23,7 +23,7 @@ Portfolio construction aggregates exposure by common economic failure driver rat
 ## Dimensions
 
 1. **Obligor and counterparty:** distributors, platforms, governments, insurers, guarantors, collection managers, account banks and affiliates.
-2. **Collateral and structure:** [[wiki/concepts/pre-sales-collateral|pre-sale]], tax-credit, [[wiki/concepts/gap-collateral|gap]] and other exposures measured by principal and stressed loss contribution.
+2. **Collateral and structure:** [[wiki/concepts/pre-sales-collateral|pre-sale]], [[wiki/concepts/tax-credit-collateral|tax-credit]], [[wiki/concepts/gap-collateral|gap]] and other exposures measured by principal and stressed loss contribution.
 3. **Production ecosystem:** producers, sales agents, jurisdictions, unions, vendors, genres and completion dependencies.
 4. **Maturity and liquidity:** expected collections, extensions, undrawn commitments and funding obligations.
 5. **Risk and return cohorts:** score, advance rate, exception, duration, delinquency, recovery and realized economics.
