@@ -2,8 +2,8 @@
 title: Research Backlog
 type: operations
 status: current
-updated: 2026-08-09
-source_count: 16
+updated: 2026-08-10
+source_count: 17
 publish: false
 tags:
   - mediahedge
@@ -25,6 +25,10 @@ Questions whose answers would materially improve the wiki. New evidence should b
 
 ## Priority 2 - legal and jurisdictional validation
 
+- Who owns the market-landscape refresh, how often is it repeated, and what evidence is required before a provider is added, removed or reclassified?
+- Which legal lending vehicles, hold sizes, approval processes, syndication dependencies and product mandates are current for each potential capital provider?
+- For every insurer, completion platform or credit provider, which entity issues the operative instrument, adjusts claims and bears the covered loss, and what direct rights exist against any syndicate or reinsurer?
+- Which provider relationships create producing, brokerage, advisory, servicing, equity, underwriting or claims conflicts that require disclosure or governance?
 - Which incentive jurisdictions have approved counsel templates for assignment, lockbox, claimant ownership, setoff and government receivable restrictions?
 - What perfection and copyright-recordation rules apply to each standard collateral category and borrower structure?
 - What bank and collection-manager forms satisfy the intended control and waterfall mechanics?

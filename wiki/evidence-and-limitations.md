@@ -2,8 +2,8 @@
 title: Evidence and Limitations
 type: synthesis
 status: current
-updated: 2026-08-09
-source_count: 16
+updated: 2026-08-10
+source_count: 17
 publish: true
 description: What the MediaHedge knowledgebase explains, and what a financing partner should verify independently.
 tags:
@@ -14,7 +14,7 @@ tags:
 
 # Evidence and Limitations
 
-This knowledgebase brings together sixteen evidentiary internal MediaHedge briefs about film- and television-finance credit. It explains the company’s framework, the relationships among the major controls, and the questions a financing partner may want to explore.
+This knowledgebase brings together seventeen evidentiary internal MediaHedge briefs about film- and television-finance credit and its surrounding market. It explains the company’s framework, the relationships among the major controls, and the questions a financing partner may want to explore.
 
 ## How to Read the Material
 
@@ -32,6 +32,7 @@ This knowledgebase brings together sixteen evidentiary internal MediaHedge brief
 - how servicing turns changing production and payment information into decisions;
 - how downside options, portfolio concentration and realized return can be evaluated;
 - how MediaHedge and a financing partner may divide routine authority and major decisions.
+- how banks, specialty lenders, private-credit managers, insurers, completion guarantors and surety providers differ by role.
 
 ## What It Does Not Establish by Itself
 
@@ -40,6 +41,7 @@ This knowledgebase brings together sixteen evidentiary internal MediaHedge brief
 - that a tax-incentive estimate will be approved, paid on time or free from reduction;
 - that historical portfolio performance supports a particular expected return or loss assumption;
 - that any proposed loan has been approved.
+- that a named provider currently offers a product, has available capacity, has approved a transaction or will contract through the entity shown on a public website.
 
 ## Important Policy Note
 
@@ -57,10 +59,11 @@ Depending on the stage of review, a financing partner may want:
 5. current legal, tax, incentive-program and insurance advice;
 6. the servicing and investor-reporting package;
 7. relevant historical performance, extensions, losses and recoveries.
+8. current provider mandates, legal-entity names, authority, capacity, financial strength and executed forms for every lender or risk-bearing party.
 
 ## Continue Exploring
 
-Return to the [[MediaHedge Knowledgebase|Knowledgebase Home]], follow the [[wiki/syntheses/financier-diligence-route|Financier’s Guide]], or review the [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]].
+Return to the [[MediaHedge Knowledgebase|Knowledgebase Home]], follow the [[wiki/syntheses/financier-diligence-route|Financier’s Guide]], compare roles in the [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]], or review the [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]].
 
 ## Analysis and Inference
 
@@ -69,5 +72,5 @@ The reader-oriented groupings above are a synthesis of the existing material. Th
 <!--
 ## Source Basis
 
-Internal maintenance support: [[wiki/operations/research-backlog]], [[wiki/operations/contradictions]], and the sixteen evidentiary source-summary pages listed in [[wiki/operations/internal-catalog#Source summaries]].
+Internal maintenance support: [[wiki/operations/research-backlog]], [[wiki/operations/contradictions]], and the seventeen evidentiary source-summary pages listed in [[wiki/operations/internal-catalog#Source summaries]].
 -->

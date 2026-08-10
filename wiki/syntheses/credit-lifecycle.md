@@ -2,8 +2,8 @@
 title: Film-Finance Credit Lifecycle
 type: synthesis
 status: current
-updated: 2026-08-09
-source_count: 16
+updated: 2026-08-10
+source_count: 17
 publish: true
 tags:
   - mediahedge
@@ -13,7 +13,7 @@ tags:
 
 # Film-Finance Credit Lifecycle
 
-How do the sixteen evidentiary briefs combine into one operating system for protecting financing capital from initial screen through final recovery?
+How do the seventeen evidentiary briefs combine into one operating system for protecting financing capital from initial screen through final recovery?
 
 ![[assets/diagrams/credit-journey.svg|Seven-stage film-finance credit lifecycle from full financing through portfolio reporting]]
 
@@ -41,7 +41,7 @@ Underwriting tests ownership, enforceability, obligor capacity, conditions, dedu
 
 ### 4. Translate Underwriting into Enforceable Rights
 
-The [[wiki/concepts/security-package|security package]] connects obligations to the appropriate grant, perfection method, assignment, acknowledgment, control and enforcement mechanism. [[wiki/concepts/cash-control-and-waterfalls|Cash control]] maps each payment source through instructions, independent collection administration, bank control, priority and reconciliation. [[wiki/concepts/completion-protection|Completion]], [[wiki/concepts/surety-credit-protection|surety]] and [[wiki/concepts/production-insurance|insurance]] documents are aligned but credited only for defined risks.
+The [[wiki/concepts/security-package|security package]] connects obligations to the appropriate grant, perfection method, assignment, acknowledgment, control and enforcement mechanism. [[wiki/concepts/cash-control-and-waterfalls|Cash control]] maps each payment source through instructions, independent collection administration, bank control, priority and reconciliation. The [[wiki/syntheses/media-finance-lending-landscape|Market Landscape]] helps identify which bank, lender, insurer, completion platform or credit provider fills each role; the legal entity in the executed document controls. [[wiki/concepts/completion-protection|Completion]], [[wiki/concepts/surety-credit-protection|surety]] and [[wiki/concepts/production-insurance|insurance]] documents are aligned but credited only for defined risks.
 
 **Decision output:** closing set, perfection evidence, source-to-account map, policy endorsements, completion coverage and authority matrix.
 
@@ -84,7 +84,7 @@ The source briefs separately describe each control area. Treating them as a stat
 
 ## Continue Exploring
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/evidence-and-limitations|Evidence and Limitations]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/media-finance-lending-landscape|Market Landscape]] · [[wiki/evidence-and-limitations|Evidence and Limitations]]
 
 <!--
 ## Source Basis

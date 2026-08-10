@@ -2,8 +2,8 @@
 title: Raw Source Manifest
 type: operations
 status: current
-updated: 2026-08-09
-source_count: 17
+updated: 2026-08-10
+source_count: 18
 publish: false
 tags:
   - mediahedge
@@ -22,6 +22,7 @@ Canonical ingestion snapshots. SHA-256 identifies the exact binary reviewed duri
 | [[raw/sources/MediaHedge_Film_Production_Insurance_Stack_Financier_Brief.docx\|Film-Production Insurance Stack]] | `1DBDC7B33A8CC0DB662D6562A122B63AFEDED8E4DDAEB740A9C8A1918DB0A97C` | ingested | [[wiki/sources/film-production-insurance-stack]] |
 | [[raw/sources/MediaHedge_Forward_Flow_Partnerships_and_Financier_Governance_Financier_Brief.docx\|Forward-Flow Partnerships and Financier Governance]] | `792B462E681F713385EF366B93F3CAFFEB3A63B42A3DA7A2EEB86D713C8C895D` | ingested | [[wiki/sources/forward-flow-partnerships-and-financier-governance]] |
 | [[raw/sources/MediaHedge_How_MediaHedge_Sizes_a_Loan_Financier_Brief.docx\|How MediaHedge Sizes a Loan]] | `FD5D0D32236D413B95FA54510FE738050989BE99D04E845763A733D4655DD83F` | ingested | [[wiki/sources/how-mediahedge-sizes-a-loan]] |
+| [[raw/sources/MediaHedge_Media_Finance_Lending_Landscape_Financier_Brief.docx\|The Media Finance Capital and Risk Landscape]] | `2CF1FA25FCF4531DA92035D64475BC2560C2771C674044DBE3CCE3295CD3D7B3` | ingested - as of 2026-08-10 | [[wiki/sources/media-finance-capital-and-risk-landscape]] |
 | [[raw/sources/MediaHedge_Monitoring_and_Servicing_After_Closing_Financier_Brief.docx\|Monitoring and Servicing After Closing]] | `0B1DBCE4521762D1BE62F3CD1DD370434180674C918881ED05414DCF2EFFB0F3` | ingested | [[wiki/sources/monitoring-and-servicing-after-closing]] |
 | [[raw/sources/MediaHedge_Portfolio_Construction_and_Concentration_Risk_Financier_Brief.docx\|Portfolio Construction and Concentration Risk]] | `817CBE3AD2C9AB4C3296532CE9A1A6B44ADCAD8F5846816BFF51F637085D1CD7` | ingested | [[wiki/sources/portfolio-construction-and-concentration-risk]] |
 | [[raw/sources/MediaHedge_PreSales_Collateral_Crash_Course_MHPS-20260808-A91D.docx\|Pre-Sales as Collateral: A Financier's Crash Course]] | `0FF352355524BBE40E60844EECDD01849A3819A9A143CF82EB834C25E3BC7502` | ingested | [[wiki/sources/pre-sales-as-collateral-crash-course]] |
@@ -36,6 +37,8 @@ Canonical ingestion snapshots. SHA-256 identifies the exact binary reviewed duri
 
 ## Ingestion Note
 
-The sixteen evidentiary financier briefs did not expose an explicit publication or policy-effective date. Time-sensitive claims therefore remain `needs-review` items in [[wiki/operations/research-backlog]] until dated authority is added.
+The first sixteen evidentiary financier briefs did not expose an explicit publication or policy-effective date. Time-sensitive policy claims from those briefs therefore remain `needs-review` items in [[wiki/operations/research-backlog]] until dated authority is added.
+
+`MediaHedge_Media_Finance_Lending_Landscape_Financier_Brief.docx` is explicitly a public-capability map as of August 10, 2026. Its provider, ownership and product statements require periodic refresh and do not establish current capacity, pricing, approval or a transaction's legal counterparty.
 
 `MediaHedge_Knowledgebase_Introduction.docx` is a derived orientation artifact generated from the compiled wiki. It adds no independent evidence and must not be used to corroborate or increase the source count of the claims it summarizes.

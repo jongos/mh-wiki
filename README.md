@@ -27,6 +27,7 @@ You do not need to be a film-finance specialist. Pick the question that brought 
 | Meet MediaHedge and understand its role | [Who MediaHedge Is](wiki/entities/mediahedge.md) |
 | Grasp the complete lending model quickly | [How the MediaHedge Lending Model Works](wiki/overview.md) |
 | Evaluate the model as a financing partner | [A Financier’s Guide](wiki/syntheses/financier-diligence-route.md) |
+| Compare banks, specialty lenders, insurers, and completion guarantors | [Media Finance Lending Landscape](wiki/syntheses/media-finance-lending-landscape.md) |
 | Follow a loan from screening through recovery | [Film-Finance Credit Lifecycle](wiki/syntheses/credit-lifecycle.md) |
 | Compare repayment sources and their risks | [Repayment and Risk Map](wiki/syntheses/repayment-and-risk-map.md) |
 | Distinguish contracted pre-sales from unsold-rights value | [Pre-Sales Collateral](wiki/concepts/pre-sales-collateral.md) and [Gap Collateral](wiki/concepts/gap-collateral.md) |

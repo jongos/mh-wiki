@@ -2,8 +2,8 @@
 title: MediaHedge Film-Finance Glossary
 type: glossary
 status: current
-updated: 2026-08-09
-source_count: 16
+updated: 2026-08-10
+source_count: 17
 publish: true
 tags:
   - mediahedge
@@ -50,11 +50,17 @@ Use this glossary to translate recurring film-finance, credit and servicing term
 
 **Interparty agreement** - The document allocating authority, economics, expenses, enforcement and recovery rights among financing stakeholders.
 
+**Institutional private credit** - Debt or structured capital commonly underwritten against companies, libraries, catalogues, contractual revenues, enterprise value or diversified portfolios. It can overlap with media lending while differing from a short-term single-production receivables loan. See [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]].
+
+**Lloyd's market** - A specialist insurance and reinsurance marketplace in which syndicates underwrite risk. Lloyd's is not one insurance company; the policy and schedule should identify the subscribing risk bearers and their shares. See [[wiki/concepts/production-insurance|Production Insurance]].
+
 **LTV** - Loan-to-value. In this corpus, aggregate exposure relative to eligible collateral value, subject to definition and policy limits.
 
 ## M-R
 
 **MG** - Minimum guarantee, commonly a contracted distributor commitment that may become payable after conforming delivery and satisfaction of other conditions. See [[wiki/concepts/pre-sales-collateral|Pre-Sales Collateral]].
+
+**MGU** - Managing general underwriter. A business with delegated underwriting or related authority for an insurer. The MGU or service brand may not be the legal entity that issues the policy, guaranty or bond. See [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]].
 
 **Notice of assignment / payment direction** - Notice instructing an obligor where to pay and establishing specified notice or cure mechanics. It does not automatically eliminate defenses, setoff or amendment rights.
 
@@ -72,11 +78,15 @@ Use this glossary to translate recurring film-finance, credit and servicing term
 
 **Reserved matter** - A decision that exceeds ordinary delegated servicing authority and requires the specified investor approval. See [[wiki/concepts/forward-flow-governance|Financing-Partner Governance]].
 
+**Risk carrier** - The legal entity or subscribed market participant that bears the covered loss under the executed policy, guaranty or bond, as distinct from a broker, MGU, risk manager, reinsurer or service brand.
+
 ## S-X
 
 **Sales estimate** - A forecast of what unsold rights may generate by territory, medium or window. It is not an executed receivable or a guaranteed sale. See [[wiki/concepts/gap-collateral|Gap Collateral]].
 
 **Source-to-account matrix** - A mapping of each obligor, contract, territory, currency and expected payment date to the approved collection destination. See [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]].
+
+**Specialty project lender** - A lender whose products are organized around project-level collateral such as tax incentives, pre-sales, minimum guarantees, bridge takeouts, gap or finishing needs. Product scope, lien position and legal lending vehicle remain transaction-specific. See [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]].
 
 **Surety bond** - A three-party instrument under which a surety conditionally backs a principal's specifically described duty for an obligee, up to the stated terms and limit. See [[wiki/concepts/surety-credit-protection|Surety and Credit Protection]].
 
@@ -94,4 +104,4 @@ Definitions here summarize the MediaHedge framework. Transaction documents and a
 
 ## Continue Exploring
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/overview|How the Model Works]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/overview|How the Model Works]] · [[wiki/syntheses/media-finance-lending-landscape|Market Landscape]]

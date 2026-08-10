@@ -2,8 +2,8 @@
 title: Contradictions Register
 type: operations
 status: current
-updated: 2026-08-09
-source_count: 16
+updated: 2026-08-10
+source_count: 17
 publish: false
 tags:
   - mediahedge
@@ -15,7 +15,7 @@ tags:
 
 ## Open contradictions
 
-No direct claim-to-claim contradiction was identified in the expanded sixteen-brief evidentiary corpus.
+No direct claim-to-claim contradiction was identified in the expanded seventeen-brief evidentiary corpus.
 
 ## Scope tensions to monitor
 
@@ -31,6 +31,8 @@ These are not current contradictions, but they could produce inconsistent future
 | Cash control | CAMA and payment directions route and allocate proceeds. | Article 9 control, bank onboarding and reconciliation remain separate requirements. | Map each function to its specific document and operating evidence. |
 | Higher pricing in stress | Extension/default economics may increase contractual amounts. | Delay, nonaccrual, cost and loss can reduce XIRR and net return. | Report cash realization and risk-adjusted results, not nominal rate alone. |
 | Diversified collateral | A loan may include several collateral categories. | Those categories can share completion, delivery or obligor dependencies. | Test common failure drivers before giving diversification credit. |
+| Provider brand and legal counterparty | Public materials can establish that a platform describes a media-finance capability. | The lender, policy issuer, guarantor, syndicate, reinsurer, claims authority or beneficiary can be a different legal entity. | Record the service platform and legal risk bearer separately; rely on executed documents for privity and remedies. |
+| Current and legacy market platforms | Legacy brands and teams can remain visible after an acquisition or combination. | Counting both the legacy and combined platform can overstate the number of independent providers. | Use an explicit as-of date, preserve name lineage and avoid double-counting without evidence of independent current capacity. |
 
 ## Resolution protocol
 

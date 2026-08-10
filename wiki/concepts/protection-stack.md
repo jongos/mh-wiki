@@ -2,8 +2,8 @@
 title: Protection Stack
 type: concept
 status: current
-updated: 2026-08-09
-source_count: 10
+updated: 2026-08-10
+source_count: 11
 publish: true
 tags:
   - mediahedge
@@ -24,7 +24,7 @@ The MediaHedge protection stack is a layered credit architecture in which each c
 1. **Eligibility and verification:** only documented, enforceable and independently supported value enters the borrowing base.
 2. **Sizing and structural subordination:** advance rates, LTV, concentration, budget limits, reserves and tenor create downside cushion.
 3. **Priority and cash control:** the [[wiki/concepts/security-package|Security Package]] and [[wiki/concepts/cash-control-and-waterfalls|Cash Control]] make collateral reachable and proceeds capturable through grants, perfection, assignments, notices, accounts and waterfalls.
-4. **Completion and risk transfer:** [[wiki/concepts/full-financing|Full Financing]], [[wiki/concepts/completion-protection|Completion Protection]] and [[wiki/concepts/production-insurance|Production Insurance]] address specified delivery and insured-event risks.
+4. **Completion and risk transfer:** [[wiki/concepts/full-financing|Full Financing]], [[wiki/concepts/completion-protection|Completion Protection]] and [[wiki/concepts/production-insurance|Production Insurance]] address specified delivery and insured-event risks. The service platform, legal issuer and ultimate risk-bearing entity must be identified separately.
 5. **Surveillance and enforcement:** reporting, covenants, triggers, cure rights, step-in powers and remedies preserve options after closing.
 
 ## Failure-Mode Mapping
@@ -49,6 +49,7 @@ The MediaHedge protection stack is a layered credit architecture in which each c
 - [[wiki/concepts/completion-protection|Completion protection]] does not insure distributor solvency, incentive realization or market performance.
 - [[wiki/concepts/surety-credit-protection|Surety protection]] covers only the specifically bonded obligation and remains subject to claim compliance and its stated limit.
 - Production insurance pays only for covered loss under policy terms.
+- A familiar brand, broker, MGU, risk manager or marketplace name is not proof of the legal lender, policy issuer, guarantor or entity responsible for payment.
 - A lien cannot create value that the borrower does not own.
 - Cash control cannot compensate for a collateral shortfall.
 - Pricing cannot cure ineligible collateral or a broken enforcement path.
@@ -56,11 +57,11 @@ The MediaHedge protection stack is a layered credit architecture in which each c
 
 ## Continue Exploring
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/syntheses/media-finance-lending-landscape|Market Landscape]]
 
 <!--
 ## Source Basis
 
 - Primary: [[wiki/sources/mediahedge-protection-stack]].
-- Integrated from related sources including [[wiki/sources/completion-bonds-crash-course]] and [[wiki/sources/surety-bonds-crash-course]], with the broader source set listed in [[wiki/operations/internal-catalog#Source summaries]].
+- Integrated from related sources including [[wiki/sources/completion-bonds-crash-course]], [[wiki/sources/surety-bonds-crash-course]] and [[wiki/sources/media-finance-capital-and-risk-landscape]], with the broader source set listed in [[wiki/operations/internal-catalog#Source summaries]].
 -->

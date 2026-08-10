@@ -2,8 +2,8 @@
 title: Welcome to the MediaHedge Knowledgebase
 type: operations
 status: current
-updated: 2026-08-09
-source_count: 16
+updated: 2026-08-10
+source_count: 17
 publish: true
 description: A reader-friendly guide to MediaHedge's approach to film and television finance.
 tags:
@@ -27,6 +27,7 @@ You do not need to be a film-finance specialist. Start with the question you car
 
 - **New to MediaHedge?** Read [[wiki/entities/mediahedge|Who MediaHedge is]] and [[wiki/overview|How the lending model works]].
 - **Evaluating an investment?** Follow the [[wiki/syntheses/financier-diligence-route|Financier's Guide]].
+- **Mapping the market?** Compare participants in the [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]].
 - **Looking for a term?** Open the [[wiki/glossary|Plain-English Glossary]].
 
 ## Questions a Financing Partner May Ask
@@ -34,6 +35,7 @@ You do not need to be a film-finance specialist. Start with the question you car
 | Question | Where to begin |
 | --- | --- |
 | Can the production reach completion and delivery? | [[wiki/concepts/full-financing\|Full Financing]] |
+| Which market participant provides capital or bears each risk? | [[wiki/syntheses/media-finance-lending-landscape\|Media Finance Lending Landscape]] |
 | What is expected to repay the loan? | [[wiki/syntheses/repayment-and-risk-map\|Repayment and Risk Map]] |
 | How do contracted pre-sales differ from unsold-rights value? | [[wiki/concepts/pre-sales-collateral\|Pre-Sales Collateral]] and [[wiki/concepts/gap-collateral\|Gap Collateral]] |
 | How is the loan amount determined? | [[wiki/concepts/loan-sizing\|Loan Sizing]] |
@@ -52,6 +54,10 @@ The [[wiki/syntheses/credit-lifecycle|Film-Finance Credit Lifecycle]] follows a 
 For a quicker comparison of repayment sources, open the [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]]. For the source-stated limits and major decision gates, use the [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]].
 
 ## Explore the Model
+
+### Understand the Market
+
+- [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]] — how banks, specialty lenders, private credit, insurers and completion guarantors differ.
 
 ### Build a Financeable Loan
 

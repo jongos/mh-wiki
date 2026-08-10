@@ -2,8 +2,8 @@
 title: MediaHedge Wiki Activity Log
 type: operations
 status: current
-updated: 2026-08-09
-source_count: 16
+updated: 2026-08-10
+source_count: 17
 publish: false
 tags:
   - mediahedge
@@ -261,3 +261,16 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Remote cleanup: compared Obsidian's authoritative 70-file inventory with the local publication policy, then unpublished exactly 34 obsolete paths: the duplicated `MH Wiki/` tree and two private raw-layer README files. No local wiki file, raw source or Git history was deleted.
 - Prevention: added `publish: false` to `raw/README.md` and `raw/inbox/README.md`, eliminating both from Obsidian's change queue and preventing accidental republication; added the canonical live-domain link to the repository README.
 - Verification: Obsidian reports 36 published files and no pending Publish changes; the live Publish audit reports 36 expected, 36 remote, 0 missing and 0 unexpected/private paths. Final DNS, HTTPS, redirect, wiki lint, archive, GitHub and live-link checks follow this logged operation.
+
+## [2026-08-10] ingest | Media finance capital and risk landscape
+
+- Source read: `MediaHedge_Media_Finance_Lending_Landscape_Financier_Brief.docx`; SHA-256 `2CF1FA25FCF4531DA92035D64475BC2560C2771C674044DBE3CCE3295CD3D7B3` was absent from the manifest before ingest and matched the new immutable snapshot byte for byte after copying.
+- Document review: inspected all 126 body paragraphs, 12 tables, header, footer, 34 external hyperlink relationships and package metadata; the source contains no embedded media, comments, tracked insertions or tracked deletions.
+- Visual-review limitation: the bundled renderer could not run because LibreOffice is not installed, Word's background exporter stalled on the generated file and Windows-app automation was unavailable. The original remained untouched, task-created Word processes were closed and the complete structural fallback was used.
+- Source layer: added [[wiki/sources/media-finance-capital-and-risk-landscape]] and registered the raw snapshot with its explicit August 10, 2026 market-map cutoff.
+- Reader layer: added [[wiki/syntheses/media-finance-lending-landscape]] as a dated, role-based guide to banks, specialty project lenders, institutional private credit, production insurers, completion guarantors and targeted credit or surety providers.
+- Integration: added the landscape to the public home, GitHub README, overview, financier guide, credit lifecycle, glossary, evidence guide and legacy welcome; strengthened completion, production-insurance, surety, protection-stack and security pages around legal-entity and risk-carrier identification.
+- Current-source review: checked representative bank, lender, insurer and completion-platform claims against current official provider pages; checked the Fifth Third/Comerica and Allianz/Arch transactions against official releases and treated the Film Finances/Media Guarantors combination as dated trade-reported context.
+- Contradictions and gaps: no direct conflict with the prior sixteen-brief corpus was found. Added scope controls for service brand versus legal counterparty and legacy versus combined platforms, plus research needs for current mandates, vehicles, capacity, authority, claims responsibility and conflicts.
+- Publication: deployed exactly 12 reader-facing files through the canonical `MH Wiki` vault. Obsidian then reported no pending Publish changes; the live inventory audit found 37 expected and 37 remote files with 0 missing and 0 unexpected or private paths, and the new custom-domain route returned HTTP 200.
+- Verification: complete wiki lint passed with 60 Markdown files, 47 wiki pages, 886 active wikilinks, 27 Markdown tables, 44 external Markdown links, 14 published diagram embeds, nine SVG diagrams and 18 raw sources; 0 errors and 0 warnings.

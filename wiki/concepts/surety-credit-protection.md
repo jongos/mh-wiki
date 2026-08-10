@@ -2,8 +2,8 @@
 title: Surety and Credit Protection
 type: concept
 status: current
-updated: 2026-08-09
-source_count: 3
+updated: 2026-08-10
+source_count: 4
 publish: true
 tags:
   - mediahedge
@@ -29,6 +29,10 @@ A surety bond or media-credit guarantee can support a specifically defined payme
 2. **Surety:** the company conditionally backing that obligation, commonly with indemnity or collateral rights against the principal.
 3. **Obligee or beneficiary:** the party protected by the instrument. MediaHedge and its financing partner must be covered expressly if they are intended claimants.
 4. **Bonded obligation and penal sum:** the exact promise and the maximum stated liability, which may exclude interest, fees or other losses unless included.
+
+## Provider Identity Check
+
+The brand that arranges or administers a surety or media-credit product may not be the legal issuer. Confirm the licensed surety or insurer, signing authority, financial strength, any syndicate or reinsurance structure, claims authority and whether MediaHedge or its financing partner has direct rights. The [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]] places this identity test alongside the equivalent lender, insurer and completion-guarantor checks.
 
 ## Protection Compared
 
@@ -65,10 +69,10 @@ Combining completion and surety can protect different links in a repayment seque
 
 ## Continue Exploring
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier's Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/concepts/protection-stack|Protection Stack]] · [[wiki/concepts/completion-protection|Completion Protection]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier's Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/concepts/protection-stack|Protection Stack]] · [[wiki/concepts/completion-protection|Completion Protection]] · [[wiki/syntheses/media-finance-lending-landscape|Market Landscape]]
 
 <!--
 ## Source Basis
 
-[[wiki/sources/surety-bonds-crash-course]], [[wiki/sources/completion-bonds-crash-course]] and [[wiki/sources/mediahedge-protection-stack]].
+[[wiki/sources/surety-bonds-crash-course]], [[wiki/sources/completion-bonds-crash-course]], [[wiki/sources/mediahedge-protection-stack]] and [[wiki/sources/media-finance-capital-and-risk-landscape]].
 -->

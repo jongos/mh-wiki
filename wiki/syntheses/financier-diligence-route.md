@@ -2,8 +2,8 @@
 title: Financier's Guide
 type: synthesis
 status: current
-updated: 2026-08-09
-source_count: 16
+updated: 2026-08-10
+source_count: 17
 publish: true
 description: Eight questions for understanding the MediaHedge film- and television-finance model.
 tags:
@@ -25,8 +25,12 @@ This guide organizes the knowledgebase around eight questions.
 | Time available | Suggested route |
 | --- | --- |
 | Five minutes | Read [[wiki/overview\|How the model works]], scan the [[wiki/syntheses/repayment-and-risk-map\|Repayment and Risk Map]], and finish with [[wiki/evidence-and-limitations\|Evidence and Limitations]]. |
-| Twenty minutes | Work through the eight questions below, then review the [[wiki/syntheses/policy-rails-and-control-matrix\|Policy and Control Guide]]. |
+| Twenty minutes | Start with the [[wiki/syntheses/media-finance-lending-landscape\|Media Finance Lending Landscape]], work through the eight questions below, then review the [[wiki/syntheses/policy-rails-and-control-matrix\|Policy and Control Guide]]. |
 | Full review | Follow each question into its topic page and reconcile the framework to current policy, performance information and the proposed transaction documents. |
+
+## Classify the Participant Before Comparing Terms
+
+A familiar institution can act through several legally distinct products and entities. Use the [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]] to separate project lending, corporate or institutional credit, production insurance, completion protection and targeted payment support. Confirm the legal lender or issuer before comparing pricing, capacity or financial strength.
 
 ## Eight Questions to Explore
 
@@ -90,17 +94,18 @@ Finish with [[wiki/concepts/portfolio-construction|Portfolio Construction]] and 
 - The legal documents and the actual path of cash do not match.
 - Insurance or completion support is being treated as if it covers unrelated credit or market risk.
 - A surety instrument is described as blanket loan insurance without mapping the bonded obligation, trigger, protected party, claim requirements and penal sum.
+- A provider is described only by its brand, while the legal lender, policy issuer, guarantor, syndicate or risk-bearing entity remains unclear.
 - Reports are promised, but triggers, owners and decision authority are unclear.
 - Apparent diversification depends on several assets with the same underlying failure point.
 - Expected return is described by interest rate alone, without cash timing, costs or losses.
 
 ## What Still Requires Independent Verification
 
-The knowledgebase explains the framework; it does not replace current policy, executed contracts, legal and tax advice, insurance review or historical performance analysis. See [[wiki/evidence-and-limitations|Evidence and Limitations]] for a practical list of items a financing partner may want to request.
+The knowledgebase explains the framework; it does not replace current policy, executed contracts, current provider capacity and authority, legal and tax advice, insurance review or historical performance analysis. See [[wiki/evidence-and-limitations|Evidence and Limitations]] for a practical list of items a financing partner may want to request.
 
 ## Continue Exploring
 
-[[MediaHedge Knowledgebase|Home]] → [[wiki/overview|Overview]] → [[wiki/syntheses/repayment-and-risk-map|Repayment Map]] → [[wiki/concepts/loan-sizing|Sizing]] → [[wiki/concepts/security-package|Security]] → [[wiki/concepts/cash-control-and-waterfalls|Cash Control]] → [[wiki/concepts/monitoring-and-servicing|Monitoring]] → [[wiki/concepts/defaults-workouts-and-recoveries|Recovery]] → [[wiki/concepts/portfolio-construction|Portfolio]] → [[wiki/concepts/financier-return-economics|Returns]]
+[[MediaHedge Knowledgebase|Home]] → [[wiki/syntheses/media-finance-lending-landscape|Market Landscape]] → [[wiki/overview|Overview]] → [[wiki/syntheses/repayment-and-risk-map|Repayment Map]] → [[wiki/concepts/loan-sizing|Sizing]] → [[wiki/concepts/security-package|Security]] → [[wiki/concepts/cash-control-and-waterfalls|Cash Control]] → [[wiki/concepts/monitoring-and-servicing|Monitoring]] → [[wiki/concepts/defaults-workouts-and-recoveries|Recovery]] → [[wiki/concepts/portfolio-construction|Portfolio]] → [[wiki/concepts/financier-return-economics|Returns]]
 
 For the same material organized from origination through recovery, use the [[wiki/syntheses/credit-lifecycle|Film-Finance Credit Lifecycle]].
 
@@ -111,5 +116,5 @@ The eight-question order and the suggested pause points are a reader-oriented sy
 <!--
 ## Source Basis
 
-This guide synthesizes the sixteen evidentiary source-summary pages listed in [[wiki/operations/internal-catalog#Source summaries]].
+This guide synthesizes the seventeen evidentiary source-summary pages listed in [[wiki/operations/internal-catalog#Source summaries]].
 -->

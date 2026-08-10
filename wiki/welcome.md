@@ -2,8 +2,8 @@
 title: Welcome to the MediaHedge Knowledgebase
 type: overview
 status: current
-updated: 2026-08-09
-source_count: 16
+updated: 2026-08-10
+source_count: 17
 publish: false
 tags:
   - mediahedge
@@ -38,7 +38,7 @@ Start with [[wiki/overview|MediaHedge Wiki Overview]], keep [[wiki/glossary|the 
 
 ### If you are a financier or credit partner
 
-Begin with the [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]], check the [[wiki/syntheses/policy-rails-and-control-matrix|Policy Rails and Control Matrix]], walk [[wiki/syntheses/credit-lifecycle|the Credit Lifecycle]], and then explore [[wiki/concepts/portfolio-construction|Portfolio Construction]] and [[wiki/concepts/financier-return-economics|Return Economics]].
+Begin with the [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]], compare participant roles in the [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]], check the [[wiki/syntheses/policy-rails-and-control-matrix|Policy Rails and Control Matrix]], walk [[wiki/syntheses/credit-lifecycle|the Credit Lifecycle]], and then explore [[wiki/concepts/portfolio-construction|Portfolio Construction]] and [[wiki/concepts/financier-return-economics|Return Economics]].
 
 ### If you work in legal, closing or operations
 
@@ -70,4 +70,4 @@ Welcome in. Pick a thread, follow the links, and let the system reveal itself on
 
 ## Source basis
 
-This welcome page is derived from the sixteen-source evidentiary corpus summarized in [[wiki/overview]] and cataloged in [[wiki/operations/internal-catalog#Source summaries]]. It adds no independent evidence.
+This welcome page is derived from the seventeen-source evidentiary corpus summarized in [[wiki/overview]] and cataloged in [[wiki/operations/internal-catalog#Source summaries]]. It adds no independent evidence.

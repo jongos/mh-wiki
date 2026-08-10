@@ -2,8 +2,8 @@
 title: Internal Wiki Catalog
 type: operations
 status: current
-updated: 2026-08-09
-source_count: 16
+updated: 2026-08-10
+source_count: 17
 publish: false
 tags:
   - mediahedge
@@ -44,6 +44,7 @@ Private maintenance catalog for the complete knowledge layer. The public reader 
 ## Public syntheses
 
 - [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]]
+- [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]]
 - [[wiki/syntheses/credit-lifecycle|Film-Finance Credit Lifecycle]]
 - [[wiki/syntheses/policy-rails-and-control-matrix|Policy Rails and Control Matrix]]
 - [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]]
@@ -63,6 +64,7 @@ Private maintenance catalog for the complete knowledge layer. The public reader 
 - [[wiki/sources/film-production-insurance-stack|Film-Production Insurance Stack]]
 - [[wiki/sources/forward-flow-partnerships-and-financier-governance|Forward-Flow Partnerships and Financier Governance]]
 - [[wiki/sources/how-mediahedge-sizes-a-loan|How MediaHedge Sizes a Loan]]
+- [[wiki/sources/media-finance-capital-and-risk-landscape|The Media Finance Capital and Risk Landscape]]
 - [[wiki/sources/mediahedge-knowledgebase-introduction|Welcome Guide - Derived Artifact]]
 - [[wiki/sources/mediahedge-protection-stack|MediaHedge Protection Stack]]
 - [[wiki/sources/mediahedge-security-package|MediaHedge Security Package]]

@@ -2,8 +2,8 @@
 title: Security Package
 type: concept
 status: current
-updated: 2026-08-09
-source_count: 6
+updated: 2026-08-10
+source_count: 7
 publish: true
 tags:
   - mediahedge
@@ -30,7 +30,7 @@ For each collateral item, identify the owner, obligor, governing jurisdiction, v
 
 ## Roles and Governance
 
-Lender of record, purchaser, participant, agent, secured party, collateral agent and co-obligee are distinct capacities. Interparty documents must allocate voting, consent, enforcement, expense, indemnity and recovery sharing. If MediaHedge holds collateral or acts for a financing partner, agency, segregation, custody and replacement mechanics must preserve the partner's rights.
+Lender of record, purchaser, participant, agent, secured party, collateral agent and co-obligee are distinct capacities. The market-facing brand is not proof of which entity occupies any of them; confirm the legal lender, issuer and beneficiary using the [[wiki/syntheses/media-finance-lending-landscape|Market Landscape]] and transaction documents. Interparty documents must allocate voting, consent, enforcement, expense, indemnity and recovery sharing. If MediaHedge holds collateral or acts for a financing partner, agency, segregation, custody and replacement mechanics must preserve the partner's rights.
 
 ## Limits and Failure Modes
 
@@ -52,5 +52,5 @@ The security package establishes the legal path; [[wiki/concepts/cash-control-an
 ## Source Basis
 
 - Primary: [[wiki/sources/mediahedge-security-package]].
-- Related: [[wiki/sources/cama-account-control-and-collection-waterfalls]], [[wiki/sources/forward-flow-partnerships-and-financier-governance]], [[wiki/sources/mediahedge-protection-stack]], [[wiki/sources/pre-sales-as-collateral-crash-course]] and [[wiki/sources/sales-estimates-and-gap-as-collateral-crash-course]].
+- Related: [[wiki/sources/cama-account-control-and-collection-waterfalls]], [[wiki/sources/forward-flow-partnerships-and-financier-governance]], [[wiki/sources/mediahedge-protection-stack]], [[wiki/sources/pre-sales-as-collateral-crash-course]], [[wiki/sources/sales-estimates-and-gap-as-collateral-crash-course]] and [[wiki/sources/media-finance-capital-and-risk-landscape]].
 -->

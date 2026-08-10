@@ -2,8 +2,8 @@
 title: Completion Protection
 type: concept
 status: current
-updated: 2026-08-09
-source_count: 4
+updated: 2026-08-10
+source_count: 5
 publish: true
 tags:
   - mediahedge
@@ -31,6 +31,10 @@ A completion bond or guaranty is a contractual layer designed to help an approve
 4. **Intervention:** depending on the documents, the guarantor may modify the plan, replace personnel, advance completion funds or exercise takeover rights.
 5. **Completion or stated remedy:** after a covered default, the guarantor may elect to complete and deliver or provide the contractually defined payment remedy.
 
+## Platform and Risk-Bearer Check
+
+The completion company that evaluates and monitors a production may operate as a service platform, MGU or risk manager while an insurer or Lloyd's syndicate issues the instrument. Identify the platform, legal issuer, carrier or syndicate, reinsurer, claims authority and the parties with direct payment rights. A strong parent, marketplace or reinsurer name does not create direct privity unless the executed documents do. Current provider examples and ownership changes are summarized in the [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]].
+
 ## Risk Boundaries
 
 | Risk | Primary Response |
@@ -50,6 +54,7 @@ Loss-payee or additional-insured status under production insurance is not a subs
 ## Diligence Questions
 
 - Is the final guarantor identified, authorized and financially capable?
+- Is the visible completion platform also the legal risk bearer, and if not, who issues, adjusts and pays under the guaranty?
 - Do the bonded budget, schedule and delivery requirements match the approved financing case?
 - Are MediaHedge and the financing partner named correctly, with direct notice and remedy rights?
 - What are the liability cap, exclusions, premium conditions, claim deadlines and guarantor elections?
@@ -66,10 +71,10 @@ Screen Australia's [Terms of Trade](https://www.screenaustralia.gov.au/getmedia/
 
 ## Continue Exploring
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier's Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/concepts/protection-stack|Protection Stack]] · [[wiki/concepts/surety-credit-protection|Surety and Credit Protection]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier's Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/concepts/protection-stack|Protection Stack]] · [[wiki/concepts/surety-credit-protection|Surety and Credit Protection]] · [[wiki/syntheses/media-finance-lending-landscape|Market Landscape]]
 
 <!--
 ## Source Basis
 
-[[wiki/sources/completion-bonds-crash-course]], [[wiki/sources/why-a-production-must-be-fully-financed]], [[wiki/sources/film-production-insurance-stack]] and [[wiki/sources/mediahedge-protection-stack]].
+[[wiki/sources/completion-bonds-crash-course]], [[wiki/sources/why-a-production-must-be-fully-financed]], [[wiki/sources/film-production-insurance-stack]], [[wiki/sources/mediahedge-protection-stack]] and [[wiki/sources/media-finance-capital-and-risk-landscape]].
 -->

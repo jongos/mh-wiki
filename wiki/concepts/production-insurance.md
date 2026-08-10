@@ -2,8 +2,8 @@
 title: Production Insurance
 type: concept
 status: current
-updated: 2026-08-09
-source_count: 5
+updated: 2026-08-10
+source_count: 6
 publish: true
 tags:
   - mediahedge
@@ -27,6 +27,12 @@ Film-production insurance is a portfolio of policies that transfers defined phys
 
 The broker maps activities, assets, personnel, locations and delivery duties to policies, limits, deductibles, periods and named entities. Certificates are evidence, not the policy or endorsement. The closing set should contain the actual endorsements, premium evidence, available cancellation/material-change notice, waiver-of-subrogation treatment, primary/noncontributory terms where relevant, claims contacts and alignment with completion and security documents.
 
+## Market and Carrier Classification
+
+The market-facing name may identify a broker, underwriting platform, MGU, syndicate marketplace or insurer group rather than the entity that signs the policy. [Lloyd's](https://www.lloyds.com/about-lloyds/our-market) describes itself as an insurance and reinsurance marketplace in which syndicates underwrite risk; it is not one insurance company. For every placement, identify the issuing carrier or subscribing syndicates, shares, managing agent, claims authority, financial strength and any reinsurance on which recovery materially depends. See the [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]] for the broader role map.
+
+Links checked: 2026-08-10.
+
 ## Proceeds and Claims
 
 After a covered event, timely notice, mitigation, documentation and proof of loss preserve the claim. Loan documents should direct proceeds to repair, replacement, extra expense, completion or repayment according to the loss, policy and financier election rights.
@@ -41,11 +47,11 @@ Production insurance sits within the [[wiki/concepts/protection-stack|Protection
 
 ## Continue Exploring
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/syntheses/media-finance-lending-landscape|Market Landscape]]
 
 <!--
 ## Source Basis
 
 - Primary: [[wiki/sources/film-production-insurance-stack]].
-- Related: [[wiki/sources/mediahedge-protection-stack]], [[wiki/sources/why-a-production-must-be-fully-financed]], [[wiki/sources/completion-bonds-crash-course]] and [[wiki/sources/surety-bonds-crash-course]].
+- Related: [[wiki/sources/mediahedge-protection-stack]], [[wiki/sources/why-a-production-must-be-fully-financed]], [[wiki/sources/completion-bonds-crash-course]], [[wiki/sources/surety-bonds-crash-course]] and [[wiki/sources/media-finance-capital-and-risk-landscape]].
 -->
