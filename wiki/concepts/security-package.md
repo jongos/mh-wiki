@@ -3,7 +3,7 @@ title: Security Package
 type: concept
 status: current
 updated: 2026-08-09
-source_count: 4
+source_count: 6
 publish: true
 tags:
   - mediahedge
@@ -20,7 +20,7 @@ The security package translates an underwriting conclusion into enforceable cred
 
 1. **Grant of security:** the correct owner pledges defined assets and proceeds and represents authority and lien status.
 2. **Perfection and priority:** filings, possession, control, copyright recordation and local-law steps make the interest effective against relevant third parties.
-3. **Collateral assignments:** distributor, sales-agent, tax-credit, insurance and other material contracts are assigned to the legally permitted extent.
+3. **Collateral assignments:** [[wiki/concepts/pre-sales-collateral|distributor contracts]], [[wiki/concepts/gap-collateral|sales-agent and unsold-rights proceeds]], tax-credit, insurance and other material contracts are assigned to the legally permitted extent.
 4. **Counterparty acknowledgment:** notices address payment direction, duplicate notices, amendment limits, cure rights, defenses and setoff.
 5. **Control and enforcement:** account control, powers of attorney, materials access, step-in rights and authority provisions make remedies operational.
 
@@ -34,7 +34,7 @@ Lender of record, purchaser, participant, agent, secured party, collateral agent
 
 ## Limits and Failure Modes
 
-A UCC financing statement does not prove ownership, attachment, priority in every asset or deposit-account control. Copyright interests, government receivables, foreign assets and anti-assignment rules may require separate treatment. Payment directions do not necessarily waive defenses or setoff. Powers of attorney can be limited. Statutory claims, guilds, unions, vendors and other stakeholders can alter practical priority. Enforcement value still depends on preserving completion, delivery and contract rights.
+A UCC financing statement does not prove ownership, attachment, priority in every asset or deposit-account control. Copyright interests, government receivables, foreign assets and anti-assignment rules may require separate treatment. Payment directions do not necessarily waive defenses or setoff. Powers of attorney can be limited. Statutory claims, guilds, unions, vendors and other stakeholders can alter practical priority. Enforcement value still depends on preserving completion, delivery and contract rights. An assignment of unsold rights does not turn an estimate into a receivable, while an assignment of a pre-sale remains subject to the contract's conditions, defenses and consent rules.
 
 ## External Context
 
@@ -52,5 +52,5 @@ The security package establishes the legal path; [[wiki/concepts/cash-control-an
 ## Source Basis
 
 - Primary: [[wiki/sources/mediahedge-security-package]].
-- Related: [[wiki/sources/cama-account-control-and-collection-waterfalls]], [[wiki/sources/forward-flow-partnerships-and-financier-governance]] and [[wiki/sources/mediahedge-protection-stack]].
+- Related: [[wiki/sources/cama-account-control-and-collection-waterfalls]], [[wiki/sources/forward-flow-partnerships-and-financier-governance]], [[wiki/sources/mediahedge-protection-stack]], [[wiki/sources/pre-sales-as-collateral-crash-course]] and [[wiki/sources/sales-estimates-and-gap-as-collateral-crash-course]].
 -->

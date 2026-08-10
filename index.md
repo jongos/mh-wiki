@@ -2,8 +2,8 @@
 title: MediaHedge Knowledgebase Index
 type: operations
 status: current
-updated: 2026-08-08
-source_count: 12
+updated: 2026-08-09
+source_count: 16
 publish: false
 tags:
   - mediahedge

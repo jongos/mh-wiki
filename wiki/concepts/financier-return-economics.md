@@ -1,9 +1,10 @@
 ---
 title: Financing-Partner Return Economics
 type: concept
-status: current
+status: needs-review
 updated: 2026-08-09
-source_count: 4
+as_of: unknown
+source_count: 5
 publish: true
 tags:
   - mediahedge
@@ -45,6 +46,10 @@ Build the dated ledger from the financier's perspective: advances, purchase amou
 
 Forward-flow documents should allocate purchase price, coupon, fees, servicing compensation, extension/default economics, expense reimbursement, prepayment and recoveries. Report gross borrower yield, MediaHedge compensation, financier gross return and financier net return separately.
 
+## Sourced Gap-Pricing Context
+
+The undated gap-collateral brief states that gap inclusion generally contributes approximately three to five percentage points to blended pricing. This is an internal pricing statement, not a current-policy certification or a forecast of financing-partner return. Current pricing authority, transaction mix and realized loan-tape evidence require separate verification.
+
 ## Limits and Failure Modes
 
 A simple average of loan rates is not a portfolio yield. Upfront fees can inflate annualized return on short assets. Extension or default pricing can increase nominal claims while delay reduces XIRR. Capitalized interest is exposure, not cash. Default interest can be due but uncollectible. Gross yield omits credit loss, legal and servicing cost, funding expense and unused-capital drag.
@@ -61,5 +66,5 @@ Return measurement depends on the dated evidence produced by [[wiki/concepts/cas
 ## Source Basis
 
 - Primary: [[wiki/sources/where-the-financiers-return-comes-from]].
-- Related: [[wiki/sources/cama-account-control-and-collection-waterfalls]], [[wiki/sources/defaults-workouts-and-recoveries]] and [[wiki/sources/portfolio-construction-and-concentration-risk]].
+- Related: [[wiki/sources/cama-account-control-and-collection-waterfalls]], [[wiki/sources/defaults-workouts-and-recoveries]], [[wiki/sources/portfolio-construction-and-concentration-risk]] and [[wiki/sources/sales-estimates-and-gap-as-collateral-crash-course]].
 -->

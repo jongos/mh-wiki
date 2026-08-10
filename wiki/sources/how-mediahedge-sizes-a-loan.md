@@ -45,6 +45,8 @@ The thresholds are MediaHedge controls rather than universal constants. LTV is i
 ## Related pages
 
 - [[wiki/concepts/loan-sizing|Loan Sizing]]
+- [[wiki/concepts/pre-sales-collateral|Pre-Sales Collateral]]
+- [[wiki/concepts/gap-collateral|Gap Collateral]]
 - [[wiki/concepts/full-financing|Full Financing]]
 - [[wiki/concepts/tax-credit-collateral|Tax-Credit Collateral]]
 - [[wiki/syntheses/policy-rails-and-control-matrix|Policy Rails and Control Matrix]]

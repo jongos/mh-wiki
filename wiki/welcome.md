@@ -3,7 +3,7 @@ title: Welcome to the MediaHedge Knowledgebase
 type: overview
 status: current
 updated: 2026-08-09
-source_count: 12
+source_count: 16
 publish: false
 tags:
   - mediahedge
@@ -23,9 +23,9 @@ Prefer a polished offline guide? Open [[raw/sources/MediaHedge_Knowledgebase_Int
 
 ## What you will learn
 
-1. **Why completion comes first.** [[wiki/concepts/full-financing|Full Financing]] explains how the path to delivery supports distributor receivables, tax incentives, unsold-rights value and completion protection.
+1. **Why completion comes first.** [[wiki/concepts/full-financing|Full Financing]] explains how the path to delivery supports [[wiki/concepts/pre-sales-collateral|pre-sales]], tax incentives, [[wiki/concepts/gap-collateral|unsold-rights value]] and [[wiki/concepts/completion-protection|completion protection]].
 2. **How a loan earns its size.** [[wiki/concepts/loan-sizing|Loan Sizing]] follows eligible net collateral through advance rates, concentration, leverage, budget, term and liquidity constraints.
-3. **How protection becomes operational.** [[wiki/concepts/protection-stack|Protection Stack]], [[wiki/concepts/security-package|Security Package]] and [[wiki/concepts/production-insurance|Production Insurance]] map different failure modes to the tools that actually address them.
+3. **How protection becomes operational.** [[wiki/concepts/protection-stack|Protection Stack]], [[wiki/concepts/completion-protection|Completion Protection]], [[wiki/concepts/surety-credit-protection|Surety and Credit Protection]], [[wiki/concepts/security-package|Security Package]] and [[wiki/concepts/production-insurance|Production Insurance]] map different failure modes to the tools that actually address them.
 4. **How each dollar finds the lender.** [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]] separates payment directions, collection administration, account control, priority and reconciliation.
 5. **How risk evolves after closing.** [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]] shows how changing production, collateral and payment facts become draw, reserve, consent, cure or workout decisions.
 6. **How outcomes are measured.** [[wiki/concepts/portfolio-construction|Portfolio Construction]] and [[wiki/concepts/financier-return-economics|Financier Return Economics]] connect common failure drivers, liquidity, dated cash realization and risk-adjusted performance.
@@ -70,4 +70,4 @@ Welcome in. Pick a thread, follow the links, and let the system reveal itself on
 
 ## Source basis
 
-This welcome page is derived from the twelve-source corpus summarized in [[wiki/overview]] and cataloged in [[wiki/operations/internal-catalog#Source summaries]]. It adds no independent evidence.
+This welcome page is derived from the sixteen-source evidentiary corpus summarized in [[wiki/overview]] and cataloged in [[wiki/operations/internal-catalog#Source summaries]]. It adds no independent evidence.

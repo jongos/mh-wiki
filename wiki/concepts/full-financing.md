@@ -3,7 +3,7 @@ title: Full Financing
 type: concept
 status: current
 updated: 2026-08-09
-source_count: 3
+source_count: 6
 publish: true
 tags:
   - mediahedge
@@ -17,7 +17,7 @@ A production is fully financed when verified and properly timed financing source
 
 ## Why It Is the First Credit Protection
 
-Completion and delivery are common dependencies across several repayment paths. Pre-sale minimum guarantees often require conforming delivery; tax incentives require qualifying spend and filings; unsold rights generally become monetizable after completion; and completion guarantors commonly require an approved, fully financed bonded budget. A gap in production liquidity can therefore impair multiple assets at once.
+Completion and delivery are common dependencies across several repayment paths. [[wiki/concepts/pre-sales-collateral|Pre-sale minimum guarantees]] often require conforming delivery; tax incentives require qualifying spend and filings; [[wiki/concepts/gap-collateral|unsold rights]] generally become monetizable after completion; and [[wiki/concepts/completion-protection|completion guarantors]] commonly require an approved, fully financed bonded budget. A gap in production liquidity can therefore impair multiple assets at once.
 
 ## Five-Part Test
 
@@ -32,7 +32,7 @@ Completion and delivery are common dependencies across several repayment paths. 
 - Evidence of every credited financing source and its conditions.
 - Equity funded in the required order.
 - Approved budget, cash flow, delivery specification and closing statement reconciled.
-- Required reserves funded and completion coverage effective on the same budget.
+- Required reserves funded and [[wiki/concepts/completion-protection|completion coverage]] effective on the same budget.
 - No hidden circularity or double counting among sources.
 - Each draw leaves enough committed liquidity to finish and deliver under the current forecast.
 
@@ -42,7 +42,7 @@ A sources-and-uses table can balance while remaining unfinanceable. Common failu
 
 ## Connections
 
-Full financing is the prerequisite for [[wiki/concepts/loan-sizing|Loan Sizing]], supports [[wiki/concepts/production-insurance|Production Insurance]] and completion coverage, and reduces the chance that [[wiki/concepts/defaults-workouts-and-recoveries|protective advances]] become necessary. [[wiki/concepts/monitoring-and-servicing|Servicing]] keeps the test current through cost-to-complete analysis.
+Full financing is the prerequisite for [[wiki/concepts/loan-sizing|Loan Sizing]], supports [[wiki/concepts/production-insurance|Production Insurance]] and [[wiki/concepts/completion-protection|Completion Protection]], and reduces the chance that [[wiki/concepts/defaults-workouts-and-recoveries|protective advances]] become necessary. [[wiki/concepts/monitoring-and-servicing|Servicing]] keeps the test current through cost-to-complete analysis.
 
 ## Continue Exploring
 
@@ -52,5 +52,5 @@ Full financing is the prerequisite for [[wiki/concepts/loan-sizing|Loan Sizing]]
 ## Source Basis
 
 - Primary: [[wiki/sources/why-a-production-must-be-fully-financed]].
-- Corroborating: [[wiki/sources/how-mediahedge-sizes-a-loan]] and [[wiki/sources/mediahedge-protection-stack]].
+- Related: [[wiki/sources/how-mediahedge-sizes-a-loan]], [[wiki/sources/mediahedge-protection-stack]], [[wiki/sources/completion-bonds-crash-course]], [[wiki/sources/pre-sales-as-collateral-crash-course]] and [[wiki/sources/sales-estimates-and-gap-as-collateral-crash-course]].
 -->

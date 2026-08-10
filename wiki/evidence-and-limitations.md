@@ -3,7 +3,7 @@ title: Evidence and Limitations
 type: synthesis
 status: current
 updated: 2026-08-09
-source_count: 12
+source_count: 16
 publish: true
 description: What the MediaHedge knowledgebase explains, and what a financing partner should verify independently.
 tags:
@@ -14,7 +14,7 @@ tags:
 
 # Evidence and Limitations
 
-This knowledgebase brings together twelve internal MediaHedge briefs about film- and television-finance credit. It explains the company’s framework, the relationships among the major controls, and the questions a financing partner may want to explore.
+This knowledgebase brings together sixteen evidentiary internal MediaHedge briefs about film- and television-finance credit. It explains the company’s framework, the relationships among the major controls, and the questions a financing partner may want to explore.
 
 ## How to Read the Material
 
@@ -26,8 +26,9 @@ This knowledgebase brings together twelve internal MediaHedge briefs about film-
 ## What the Knowledgebase Can Help Explain
 
 - why completion and delivery affect several repayment paths at once;
+- how contracted pre-sales differ from market-dependent unsold-rights value;
 - how collateral is evaluated before it supports a loan amount;
-- how security, cash control, completion support and insurance address different risks;
+- how security, cash control, completion, surety and insurance address different risks;
 - how servicing turns changing production and payment information into decisions;
 - how downside options, portfolio concentration and realized return can be evaluated;
 - how MediaHedge and a financing partner may divide routine authority and major decisions.
@@ -68,5 +69,5 @@ The reader-oriented groupings above are a synthesis of the existing material. Th
 <!--
 ## Source Basis
 
-Internal maintenance support: [[wiki/operations/research-backlog]], [[wiki/operations/contradictions]], and the twelve source-summary pages listed in [[wiki/operations/internal-catalog#Source summaries]].
+Internal maintenance support: [[wiki/operations/research-backlog]], [[wiki/operations/contradictions]], and the sixteen evidentiary source-summary pages listed in [[wiki/operations/internal-catalog#Source summaries]].
 -->

@@ -3,7 +3,7 @@ title: How the MediaHedge Lending Model Works
 type: overview
 status: current
 updated: 2026-08-09
-source_count: 12
+source_count: 16
 publish: true
 tags:
   - mediahedge
@@ -16,9 +16,9 @@ tags:
 > [!important] Why It Matters
 > The MediaHedge framework treats film-finance lending as a connected control system, not a bet on one document, one repayment source or one headline yield.
 
-Capital protection starts with [[wiki/concepts/full-financing|full financing]] because completion and delivery are common dependencies across distributor receivables, tax incentives and unsold-rights value.
+Capital protection starts with [[wiki/concepts/full-financing|full financing]] because completion and delivery are common dependencies across [[wiki/concepts/pre-sales-collateral|contracted pre-sales]], tax incentives and [[wiki/concepts/gap-collateral|unsold-rights value]].
 
-It continues through conservative [[wiki/concepts/loan-sizing|loan sizing]], an enforceable [[wiki/concepts/security-package|security package]], operational [[wiki/concepts/cash-control-and-waterfalls|cash control]], narrow credit for [[wiki/concepts/production-insurance|insurance and other risk-transfer instruments]], active [[wiki/concepts/monitoring-and-servicing|servicing]], and value-preserving [[wiki/concepts/defaults-workouts-and-recoveries|workout governance]].
+It continues through conservative [[wiki/concepts/loan-sizing|loan sizing]], an enforceable [[wiki/concepts/security-package|security package]], operational [[wiki/concepts/cash-control-and-waterfalls|cash control]], narrow credit for [[wiki/concepts/completion-protection|completion]], [[wiki/concepts/surety-credit-protection|surety]], [[wiki/concepts/production-insurance|insurance]] and other risk-transfer instruments, active [[wiki/concepts/monitoring-and-servicing|servicing]], and value-preserving [[wiki/concepts/defaults-workouts-and-recoveries|workout governance]].
 
 The portfolio and capital-partner layers matter as much as the individual loan. [[wiki/concepts/portfolio-construction|Portfolio construction]] looks through deal count to common failure drivers. [[wiki/concepts/forward-flow-governance|Forward-flow governance]] allocates funding, ownership, servicing, exception and enforcement authority. [[wiki/concepts/financier-return-economics|Return analysis]] then measures what the financier actually receives, when it receives it, and what credit and operating frictions consumed.
 
@@ -40,11 +40,12 @@ See [[wiki/syntheses/credit-lifecycle|Film-Finance Credit Lifecycle]] for the ex
 
 The corpus identifies multiple possible value sources but repeatedly warns that they are not interchangeable:
 
-- Distributor or other contracted receivables depend on enforceable contracts, conforming delivery, obligor credit, deductions and payment control.
+- [[wiki/concepts/pre-sales-collateral|Pre-sales and other contracted receivables]] depend on enforceable contracts, conforming delivery, obligor credit, deductions, assignment and payment control.
 - Tax incentives depend on qualifying activity, program rules, verified spend, audits, assignment or capture mechanics and collection timing.
-- Unsold-rights or gap value depends more heavily on market realization and receives a deeper haircut and concentration limit under the stated policy.
+- [[wiki/concepts/gap-collateral|Unsold-rights or gap value]] depends more heavily on market realization and receives a deeper haircut and concentration limit under the stated policy.
 - Production insurance responds only to covered events and does not guarantee completion, collateral value or repayment.
-- Completion protection can preserve delivery value but does not insure distributor solvency, incentive realization or commercial performance.
+- [[wiki/concepts/completion-protection|Completion protection]] can preserve delivery value but does not insure distributor solvency, incentive realization or commercial performance.
+- [[wiki/concepts/surety-credit-protection|Surety or credit protection]] can support a specifically bonded obligation but remains subject to its trigger, penal sum and claim requirements.
 
 [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]] compares these paths and their shared dependencies.
 
@@ -85,5 +86,5 @@ Read [[wiki/evidence-and-limitations|Evidence and Limitations]] for a plain-lang
 <!--
 ## Source Basis
 
-This overview synthesizes the twelve source-summary pages listed in [[wiki/operations/internal-catalog#Source summaries]]. No external authority was added during the initial ingest.
+This overview synthesizes the sixteen evidentiary source-summary pages listed in [[wiki/operations/internal-catalog#Source summaries]].
 -->

@@ -44,6 +44,7 @@ Simple rate averages are misleading. Upfront fees may overstate annualized econo
 ## Related pages
 
 - [[wiki/concepts/financier-return-economics|Financier Return Economics]]
+- [[wiki/concepts/gap-collateral|Gap Collateral]]
 - [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]]
 - [[wiki/concepts/portfolio-construction|Portfolio Construction]]
 - [[wiki/concepts/forward-flow-governance|Forward-Flow Governance]]

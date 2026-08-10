@@ -3,7 +3,7 @@ title: MediaHedge
 type: entity
 status: current
 updated: 2026-08-09
-source_count: 12
+source_count: 16
 publish: true
 tags:
   - mediahedge
@@ -20,11 +20,11 @@ MediaHedge is presented as a specialist film-finance originator, underwriter and
 
 ### Origination and Underwriting
 
-MediaHedge maps complete sources and uses, tests collateral ownership and eligibility, applies asset-specific haircuts and transaction limits, evaluates obligors and jurisdictions, and identifies the binding constraint that determines commitment size. See [[wiki/concepts/full-financing|Full Financing]] and [[wiki/concepts/loan-sizing|Loan Sizing]].
+MediaHedge maps complete sources and uses, tests collateral ownership and eligibility, distinguishes [[wiki/concepts/pre-sales-collateral|contracted pre-sales]] from [[wiki/concepts/gap-collateral|unsold-rights value]], applies asset-specific haircuts and transaction limits, evaluates obligors and jurisdictions, and identifies the binding constraint that determines commitment size. See [[wiki/concepts/full-financing|Full Financing]] and [[wiki/concepts/loan-sizing|Loan Sizing]].
 
 ### Closing and Collateral Control
 
-MediaHedge coordinates the collateral schedule, assignments, notices, lien and control mechanics, insurance and completion documentation, account structure and contractual waterfall. Exact legal roles must remain explicit: lender of record, purchaser, participant, agent, secured party and collateral agent are not interchangeable. See [[wiki/concepts/security-package|Security Package]] and [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]].
+MediaHedge coordinates the collateral schedule, assignments, notices, lien and control mechanics, [[wiki/concepts/completion-protection|completion]], [[wiki/concepts/surety-credit-protection|surety]], insurance, account structure and contractual waterfall. Exact legal roles must remain explicit: lender of record, purchaser, participant, agent, secured party and collateral agent are not interchangeable. See [[wiki/concepts/security-package|Security Package]] and [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]].
 
 ### Servicing and Monitoring
 
@@ -60,5 +60,5 @@ The available material does not establish policy effective dates, delegated appr
 <!--
 ## Source Basis
 
-All twelve source-summary pages in [[wiki/operations/internal-catalog#Source summaries]], with role descriptions concentrated in [[wiki/sources/forward-flow-partnerships-and-financier-governance]], [[wiki/sources/monitoring-and-servicing-after-closing]], [[wiki/sources/mediahedge-security-package]] and [[wiki/sources/defaults-workouts-and-recoveries]].
+All sixteen evidentiary source-summary pages in [[wiki/operations/internal-catalog#Source summaries]], with role descriptions concentrated in [[wiki/sources/forward-flow-partnerships-and-financier-governance]], [[wiki/sources/monitoring-and-servicing-after-closing]], [[wiki/sources/mediahedge-security-package]] and [[wiki/sources/defaults-workouts-and-recoveries]].
 -->

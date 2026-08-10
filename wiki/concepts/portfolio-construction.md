@@ -3,7 +3,7 @@ title: Portfolio Construction
 type: concept
 status: current
 updated: 2026-08-09
-source_count: 5
+source_count: 6
 publish: true
 tags:
   - mediahedge
@@ -23,7 +23,7 @@ Portfolio construction aggregates exposure by common economic failure driver rat
 ## Dimensions
 
 1. **Obligor and counterparty:** distributors, platforms, governments, insurers, guarantors, collection managers, account banks and affiliates.
-2. **Collateral and structure:** pre-sale, tax-credit, gap and other exposures measured by principal and stressed loss contribution.
+2. **Collateral and structure:** [[wiki/concepts/pre-sales-collateral|pre-sale]], tax-credit, [[wiki/concepts/gap-collateral|gap]] and other exposures measured by principal and stressed loss contribution.
 3. **Production ecosystem:** producers, sales agents, jurisdictions, unions, vendors, genres and completion dependencies.
 4. **Maturity and liquidity:** expected collections, extensions, undrawn commitments and funding obligations.
 5. **Risk and return cohorts:** score, advance rate, exception, duration, delinquency, recovery and realized economics.
@@ -56,5 +56,5 @@ Portfolio construction aggregates the outputs of [[wiki/concepts/loan-sizing|Loa
 ## Source Basis
 
 - Primary: [[wiki/sources/portfolio-construction-and-concentration-risk]].
-- Related: [[wiki/sources/how-mediahedge-sizes-a-loan]], [[wiki/sources/monitoring-and-servicing-after-closing]], [[wiki/sources/forward-flow-partnerships-and-financier-governance]] and [[wiki/sources/where-the-financiers-return-comes-from]].
+- Related: [[wiki/sources/how-mediahedge-sizes-a-loan]], [[wiki/sources/monitoring-and-servicing-after-closing]], [[wiki/sources/forward-flow-partnerships-and-financier-governance]], [[wiki/sources/where-the-financiers-return-comes-from]] and [[wiki/sources/sales-estimates-and-gap-as-collateral-crash-course]].
 -->

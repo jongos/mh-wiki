@@ -43,6 +43,8 @@ A UCC filing does not prove ownership, attachment, universal priority or deposit
 ## Related pages
 
 - [[wiki/concepts/security-package|Security Package]]
+- [[wiki/concepts/pre-sales-collateral|Pre-Sales Collateral]]
+- [[wiki/concepts/gap-collateral|Gap Collateral]]
 - [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]]
 - [[wiki/concepts/defaults-workouts-and-recoveries|Defaults, Workouts and Recoveries]]
 - [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]]

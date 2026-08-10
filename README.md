@@ -27,6 +27,8 @@ You do not need to be a film-finance specialist. Pick the question that brought 
 | Evaluate the model as a financing partner | [A Financier’s Guide](wiki/syntheses/financier-diligence-route.md) |
 | Follow a loan from screening through recovery | [Film-Finance Credit Lifecycle](wiki/syntheses/credit-lifecycle.md) |
 | Compare repayment sources and their risks | [Repayment and Risk Map](wiki/syntheses/repayment-and-risk-map.md) |
+| Distinguish contracted pre-sales from unsold-rights value | [Pre-Sales Collateral](wiki/concepts/pre-sales-collateral.md) and [Gap Collateral](wiki/concepts/gap-collateral.md) |
+| Compare completion, surety, and insurance protection | [Protection Stack](wiki/concepts/protection-stack.md) |
 | Understand what the evidence does—and does not—establish | [Evidence and Limitations](wiki/evidence-and-limitations.md) |
 | Translate the specialized language | [Plain-English Glossary](wiki/glossary.md) |
 
@@ -43,10 +45,10 @@ The central idea is simple: film-finance credit is a connected system. A loan is
 ## What You Will Learn
 
 - **Financeability:** why complete sources, uses, timing, contingency, and delivery matter to several repayment paths at once. Start with [Full Financing](wiki/concepts/full-financing.md).
-- **Repayment:** how contracted receivables, tax incentives, unsold-rights value, insurance proceeds, and controlled cash differ. See the [Repayment and Risk Map](wiki/syntheses/repayment-and-risk-map.md).
+- **Repayment:** how [contracted pre-sales](wiki/concepts/pre-sales-collateral.md), tax incentives, [unsold-rights value](wiki/concepts/gap-collateral.md), insurance proceeds, and controlled cash differ. See the [Repayment and Risk Map](wiki/syntheses/repayment-and-risk-map.md).
 - **Exposure:** how eligible value meets advance rates, concentration limits, leverage, budget exposure, term, and liquidity. Follow [Loan Sizing](wiki/concepts/loan-sizing.md).
 - **Control:** how security interests, assignments, notices, accounts, and waterfalls make rights operational. Explore [Security Package](wiki/concepts/security-package.md) and [Cash Control and Waterfalls](wiki/concepts/cash-control-and-waterfalls.md).
-- **Protection:** why insurance, completion support, structural cushion, and monitoring address different failure modes. Walk through the [Protection Stack](wiki/concepts/protection-stack.md).
+- **Protection:** why [Completion Protection](wiki/concepts/completion-protection.md), [Surety and Credit Protection](wiki/concepts/surety-credit-protection.md), production insurance, structural cushion, and monitoring address different failure modes. Walk through the [Protection Stack](wiki/concepts/protection-stack.md).
 - **Change and downside:** how servicing information becomes action and how recovery options are preserved under stress. Read [Monitoring and Servicing](wiki/concepts/monitoring-and-servicing.md) and [Defaults, Workouts, and Recoveries](wiki/concepts/defaults-workouts-and-recoveries.md).
 - **Partnership and performance:** how authority, concentration, cash timing, costs, and losses affect a financing relationship. Continue to [Financing-Partner Governance](wiki/concepts/forward-flow-governance.md), [Portfolio Construction](wiki/concepts/portfolio-construction.md), and [Return Economics](wiki/concepts/financier-return-economics.md).
 

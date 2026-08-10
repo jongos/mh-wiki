@@ -43,6 +43,8 @@ Exclusions, warranties, late notice, unpaid premiums, aggregation, policy period
 ## Related pages
 
 - [[wiki/concepts/production-insurance|Production Insurance]]
+- [[wiki/concepts/completion-protection|Completion Protection]]
+- [[wiki/concepts/surety-credit-protection|Surety and Credit Protection]]
 - [[wiki/concepts/protection-stack|Protection Stack]]
 - [[wiki/concepts/full-financing|Full Financing]]
 - [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]]

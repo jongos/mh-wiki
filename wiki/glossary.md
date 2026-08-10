@@ -3,7 +3,7 @@ title: MediaHedge Film-Finance Glossary
 type: glossary
 status: current
 updated: 2026-08-09
-source_count: 12
+source_count: 16
 publish: true
 tags:
   - mediahedge
@@ -28,7 +28,7 @@ Use this glossary to translate recurring film-finance, credit and servicing term
 
 **Collateral eligibility** - The threshold determination that an asset is owned, documented, enforceable, non-duplicative and capable of supporting exposure under policy.
 
-**Completion guaranty** - A contractual instrument addressing specified completion and delivery risks, often including takeover rights. It does not ordinarily cover distributor solvency, tax-credit shortfalls or commercial performance.
+**Completion guaranty** - A contractual instrument addressing specified completion and delivery risks, often including takeover rights. It does not ordinarily cover distributor solvency, tax-credit shortfalls or commercial performance. See [[wiki/concepts/completion-protection|Completion Protection]].
 
 **Cost to complete** - The current estimate of remaining cash required to finish and deliver the production.
 
@@ -44,7 +44,7 @@ Use this glossary to translate recurring film-finance, credit and servicing term
 
 **Full financing** - A condition in which verified, timely financing sources and committed equity cover all production and delivery uses, financing costs, required reserves and contingency.
 
-**Gap / unsold-rights value** - Collateral value associated with rights not yet contracted for sale. It is more market-dependent than a verified contracted receivable and receives deeper policy haircuts and concentration limits.
+**Gap / unsold-rights value** - Collateral value associated with rights not yet contracted for sale. It is more market-dependent than a verified contracted receivable and receives deeper policy haircuts and concentration limits. See [[wiki/concepts/gap-collateral|Gap Collateral]].
 
 **Gross loan-to-budget** - Gross loan exposure divided by the production budget under the applicable policy definition.
 
@@ -54,13 +54,17 @@ Use this glossary to translate recurring film-finance, credit and servicing term
 
 ## M-R
 
-**MG** - Minimum guarantee, commonly a contracted distributor commitment that may become payable after conforming delivery and satisfaction of other conditions.
+**MG** - Minimum guarantee, commonly a contracted distributor commitment that may become payable after conforming delivery and satisfaction of other conditions. See [[wiki/concepts/pre-sales-collateral|Pre-Sales Collateral]].
 
 **Notice of assignment / payment direction** - Notice instructing an obligor where to pay and establishing specified notice or cure mechanics. It does not automatically eliminate defenses, setoff or amendment rights.
 
 **Nonaccrual** - Accounting treatment separating interest that is contractually due from income whose collectibility is no longer sufficiently probable.
 
 **Perfection** - The legal step making a security interest effective against relevant third parties, which may require filing, possession, control, recordation or local-law action depending on the asset.
+
+**Penal sum** - The stated maximum liability under a surety bond. It may be an aggregate ceiling and may not include interest, fees or other losses unless the instrument says so.
+
+**Pre-sale** - An executed distribution or license agreement entered before completion that grants defined rights in exchange for a minimum guarantee or other payment obligation. See [[wiki/concepts/pre-sales-collateral|Pre-Sales Collateral]].
 
 **Protective advance** - Additional capital advanced during stress to preserve collateral or completion value. It should be governed by an explicit net-value test and approval authority.
 
@@ -70,7 +74,11 @@ Use this glossary to translate recurring film-finance, credit and servicing term
 
 ## S-X
 
+**Sales estimate** - A forecast of what unsold rights may generate by territory, medium or window. It is not an executed receivable or a guaranteed sale.
+
 **Source-to-account matrix** - A mapping of each obligor, contract, territory, currency and expected payment date to the approved collection destination.
+
+**Surety bond** - A three-party instrument under which a surety conditionally backs a principal's specifically described duty for an obligee, up to the stated terms and limit. See [[wiki/concepts/surety-credit-protection|Surety and Credit Protection]].
 
 **Tax-credit receivable** - Expected value arising from a production incentive program. It remains conditional on program, claimant, spend, filing, audit and realization requirements until paid or monetized.
 

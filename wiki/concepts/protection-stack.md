@@ -3,7 +3,7 @@ title: Protection Stack
 type: concept
 status: current
 updated: 2026-08-09
-source_count: 8
+source_count: 10
 publish: true
 tags:
   - mediahedge
@@ -31,10 +31,11 @@ The MediaHedge protection stack is a layered credit architecture in which each c
 
 | Risk | Primary protections |
 | --- | --- |
-| Failure to finish or deliver | [[wiki/concepts/full-financing\|Full Financing]], contingency, completion guaranty and takeover rights |
+| Failure to finish or deliver | [[wiki/concepts/full-financing\|Full Financing]], contingency, [[wiki/concepts/completion-protection\|Completion Protection]] and takeover rights |
 | Collateral impairment | [[wiki/concepts/loan-sizing\|Eligibility and sizing]], assignments, liens, reserves and obligor analysis |
 | Cash diversion | Payment directions, [[wiki/concepts/cash-control-and-waterfalls\|controlled accounts and waterfall]] |
 | Casualty or liability | [[wiki/concepts/production-insurance\|Risk-specific insurance]] |
+| Specifically bonded payment default | Obligor underwriting and [[wiki/concepts/surety-credit-protection\|Surety or Credit Protection]], if available |
 | Deterioration or default | [[wiki/concepts/monitoring-and-servicing\|Monitoring]], triggers, cure and [[wiki/concepts/defaults-workouts-and-recoveries\|workout governance]] |
 | Operational or agency failure | Custody, audit, data portability, reserved matters and replacement servicing |
 
@@ -45,7 +46,8 @@ The MediaHedge protection stack is a layered credit architecture in which each c
 
 ## Limits and Common Errors
 
-- A completion guaranty does not insure distributor solvency, incentive realization or market performance.
+- [[wiki/concepts/completion-protection|Completion protection]] does not insure distributor solvency, incentive realization or market performance.
+- [[wiki/concepts/surety-credit-protection|Surety protection]] covers only the specifically bonded obligation and remains subject to claim compliance and its stated limit.
 - Production insurance pays only for covered loss under policy terms.
 - A lien cannot create value that the borrower does not own.
 - Cash control cannot compensate for a collateral shortfall.
@@ -60,5 +62,5 @@ The MediaHedge protection stack is a layered credit architecture in which each c
 ## Source Basis
 
 - Primary: [[wiki/sources/mediahedge-protection-stack]].
-- Integrated from the related source pages listed in [[wiki/operations/internal-catalog#Source summaries]].
+- Integrated from related sources including [[wiki/sources/completion-bonds-crash-course]] and [[wiki/sources/surety-bonds-crash-course]], with the broader source set listed in [[wiki/operations/internal-catalog#Source summaries]].
 -->

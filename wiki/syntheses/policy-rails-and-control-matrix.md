@@ -4,7 +4,7 @@ type: synthesis
 status: needs-review
 updated: 2026-08-09
 as_of: unknown
-source_count: 7
+source_count: 11
 publish: true
 tags:
   - mediahedge
@@ -36,9 +36,11 @@ tags:
 | --- | --- | --- | --- |
 | Full financing | Verified, timely sources and committed equity cover all uses through delivery, financing costs, reserves and contingency | Executed commitments, funded equity, approved budget, cash-flow schedule, closing statement | Do not close; restructure sources/uses or reduce exposure |
 | Eligibility | Collateral is owned, enforceable, supported, non-duplicative and collectible on the modeled timeline | Contracts, schedules, opinions, obligor diligence and valuation evidence | Exclude or haircut; do not cure with price |
+| Contracted pre-sale | The minimum guarantee is final, authorized, deliverable, collectible and assignable for the eligible net amount | Executed agreement, delivery terms, obligor diligence, accepted assignment and deduction schedule | Exclude conditional or unsupported value; resolve contract and control gaps |
+| Gap evidence | Unsold rights are owned and available, and the supported low case survives concentration and timing stress | Rights schedule, chain of title, sales-agent authority, territory support, comparable sales and stress model | Exclude unsupported value or reduce the gap component |
 | Security and priority | Correct grant, perfection, assignment, acknowledgment and control method applies to each asset | Searches, releases, filings, control agreements, recordation and counsel analysis | Hold funding or condition use of proceeds |
 | Cash control | Every payer and currency has a controlled destination, priority and reconciliation process | Payment directions, CAMA, control agreement, bank onboarding and test reconciliation | Remediate before relying on proceeds |
-| Insurance/completion | Coverage, endorsements, limits, exclusions and completion obligations align with the approved budget and delivery specification | Policies, endorsements, bond/guaranty and premium evidence | Correct coverage or reduce credited protection |
+| Completion, surety and insurance | Each instrument covers the intended risk, parties and amount, and its conditions align with the approved budget, contract and delivery specification | Policies, endorsements, final guaranties or bonds, underlying contracts and premium evidence | Correct the instrument or remove the credited protection |
 | Monitoring | Baseline, data, triggers, authority and continuity are operational at closing | Servicing plan, calendar, data dictionary, consent matrix and custody plan | Do not treat reporting promises as controls |
 
 ## Failure-Mode Control Matrix
@@ -59,8 +61,9 @@ tags:
 - Aggregate LTV cannot cure correlated or legally unreachable value.
 - A CAMA cannot substitute for Article 9 account control.
 - A UCC filing cannot substitute for asset-specific attachment, control, recordation or counterparty rights.
-- Insurance cannot substitute for full financing or a completion guaranty.
+- [[wiki/concepts/production-insurance|Insurance]] cannot substitute for full financing or a [[wiki/concepts/completion-protection|completion guaranty]].
 - A completion guaranty cannot substitute for obligor, tax-credit or commercial-value underwriting.
+- [[wiki/concepts/surety-credit-protection|Surety protection]] cannot substitute for completion, collateral eligibility or compliance with the bonded obligation and claim process.
 - More reports cannot substitute for verified evidence, triggers and decision authority.
 
 ## Evidence and Limitations
@@ -74,5 +77,5 @@ These figures are useful for understanding the stated framework, but they are no
 <!--
 ## Source Basis
 
-Primary: [[wiki/sources/how-mediahedge-sizes-a-loan]], [[wiki/sources/tax-credit-receivables-as-collateral]], [[wiki/sources/why-a-production-must-be-fully-financed]], [[wiki/sources/mediahedge-protection-stack]], [[wiki/sources/mediahedge-security-package]], [[wiki/sources/cama-account-control-and-collection-waterfalls]] and [[wiki/sources/monitoring-and-servicing-after-closing]]. Gaps are maintained in [[wiki/operations/research-backlog]].
+Primary: [[wiki/sources/how-mediahedge-sizes-a-loan]], [[wiki/sources/tax-credit-receivables-as-collateral]], [[wiki/sources/why-a-production-must-be-fully-financed]], [[wiki/sources/mediahedge-protection-stack]], [[wiki/sources/mediahedge-security-package]], [[wiki/sources/cama-account-control-and-collection-waterfalls]], [[wiki/sources/monitoring-and-servicing-after-closing]], [[wiki/sources/completion-bonds-crash-course]], [[wiki/sources/surety-bonds-crash-course]], [[wiki/sources/pre-sales-as-collateral-crash-course]] and [[wiki/sources/sales-estimates-and-gap-as-collateral-crash-course]]. Gaps are maintained in [[wiki/operations/research-backlog]].
 -->

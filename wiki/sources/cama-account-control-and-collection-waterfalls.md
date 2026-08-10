@@ -44,6 +44,8 @@ Setoff, withholding, manager exculpation, bank liens, chargebacks, FX, sanctions
 ## Related pages
 
 - [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]]
+- [[wiki/concepts/pre-sales-collateral|Pre-Sales Collateral]]
+- [[wiki/concepts/gap-collateral|Gap Collateral]]
 - [[wiki/concepts/security-package|Security Package]]
 - [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]]
 - [[wiki/syntheses/credit-lifecycle|Film-Finance Credit Lifecycle]]

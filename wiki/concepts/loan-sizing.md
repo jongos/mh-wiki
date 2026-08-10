@@ -4,7 +4,7 @@ type: concept
 status: needs-review
 updated: 2026-08-09
 as_of: unknown
-source_count: 4
+source_count: 6
 publish: true
 tags:
   - mediahedge
@@ -57,6 +57,10 @@ A finance expert should be able to reproduce the commitment from the collateral 
 - pricing, risk score and approval status as separate outputs;
 - every exception and its approval authority.
 
+## Collateral States Matter
+
+An executed [[wiki/concepts/pre-sales-collateral|pre-sale]] can produce a contractual receivable after delivery and acceptance. [[wiki/concepts/gap-collateral|Gap collateral]] begins as market-dependent unsold-rights value and may later convert into receivables as licenses are signed. The two states should not receive the same eligibility assumptions, advance treatment or concentration credit.
+
 ## Limits and Failure Modes
 
 Aggregate LTV does not protect capital if the value is ineligible, correlated, unreachable or maturing after the loan. Gross loan-to-budget is not a substitute for [[wiki/concepts/full-financing|sources-and-uses sufficiency]]. Fees and capitalized interest can increase exposure after closing. A gap cap calculated against a final loan that itself contains gap creates circularity and must be solved and audited explicitly. High pricing cannot cure a failed structural gate.
@@ -69,5 +73,5 @@ Aggregate LTV does not protect capital if the value is ineligible, correlated, u
 ## Source Basis
 
 - Primary: [[wiki/sources/how-mediahedge-sizes-a-loan]].
-- Related: [[wiki/sources/tax-credit-receivables-as-collateral]], [[wiki/sources/why-a-production-must-be-fully-financed]] and [[wiki/sources/mediahedge-protection-stack]].
+- Related: [[wiki/sources/tax-credit-receivables-as-collateral]], [[wiki/sources/why-a-production-must-be-fully-financed]], [[wiki/sources/mediahedge-protection-stack]], [[wiki/sources/pre-sales-as-collateral-crash-course]] and [[wiki/sources/sales-estimates-and-gap-as-collateral-crash-course]].
 -->

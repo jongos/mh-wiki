@@ -3,7 +3,7 @@ title: Monitoring and Servicing
 type: concept
 status: current
 updated: 2026-08-09
-source_count: 5
+source_count: 8
 publish: true
 tags:
   - mediahedge
@@ -21,11 +21,11 @@ Servicing is active credit management from first draw through final payoff. It m
 
 ## Why the Risk Changes
 
-After closing, budget and schedule performance can change, contracts can be amended, obligors can weaken, incentive compliance can fail and collections can slip. Collateral also changes state: production spend becomes an incentive claim, unsold rights become licenses, delivery makes receivables due and cash reduces exposure. A static closing model cannot capture those transitions.
+After closing, budget and schedule performance can change, contracts can be amended, obligors can weaken, incentive compliance can fail and collections can slip. Collateral also changes state: production spend becomes an incentive claim, [[wiki/concepts/gap-collateral|unsold rights]] become licenses, delivery makes [[wiki/concepts/pre-sales-collateral|receivables]] due and cash reduces exposure. A static closing model cannot capture those transitions.
 
 ## Architecture
 
-1. **Production surveillance:** cost reports, schedules, completion-guarantor reporting, contingency and draw controls.
+1. **Production surveillance:** cost reports, schedules, [[wiki/concepts/completion-protection|completion-guarantor reporting]], contingency and draw controls.
 2. **Collateral surveillance:** contracts, obligors, incentive status, rights, valuation, eligibility and concentration.
 3. **Cash servicing:** invoices, controlled accounts, waterfalls, remittances and subledger reconciliation.
 4. **Covenant and exception control:** breaches, waivers, amendments and expirations logged, aged and escalated.
@@ -55,5 +55,5 @@ Servicing keeps [[wiki/concepts/full-financing|Full Financing]], [[wiki/concepts
 ## Source Basis
 
 - Primary: [[wiki/sources/monitoring-and-servicing-after-closing]].
-- Related: [[wiki/sources/cama-account-control-and-collection-waterfalls]], [[wiki/sources/defaults-workouts-and-recoveries]], [[wiki/sources/forward-flow-partnerships-and-financier-governance]] and [[wiki/sources/where-the-financiers-return-comes-from]].
+- Related: [[wiki/sources/cama-account-control-and-collection-waterfalls]], [[wiki/sources/defaults-workouts-and-recoveries]], [[wiki/sources/forward-flow-partnerships-and-financier-governance]], [[wiki/sources/where-the-financiers-return-comes-from]], [[wiki/sources/completion-bonds-crash-course]], [[wiki/sources/pre-sales-as-collateral-crash-course]] and [[wiki/sources/sales-estimates-and-gap-as-collateral-crash-course]].
 -->

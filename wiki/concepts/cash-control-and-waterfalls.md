@@ -3,7 +3,7 @@ title: Cash Control and Waterfalls
 type: concept
 status: current
 updated: 2026-08-09
-source_count: 4
+source_count: 6
 publish: true
 tags:
   - mediahedge
@@ -34,7 +34,7 @@ No one component substitutes for the others.
 
 ## Operating Architecture
 
-1. Build a source-to-account matrix by obligor, contract, territory, currency and expected date.
+1. Build a source-to-account matrix by obligor, contract, territory, currency and expected date, distinguishing assigned [[wiki/concepts/pre-sales-collateral|pre-sale receivables]] from future [[wiki/concepts/gap-collateral|unsold-rights proceeds]].
 2. Obtain acknowledged directions and restrict unilateral account or instruction changes.
 3. Align collection-manager and bank duties with the loan and interparty documents.
 4. Model deductions, reserves, payment frequency, senior priority, shortfalls and junior blockers.
@@ -61,5 +61,5 @@ Cash control operationalizes the [[wiki/concepts/security-package|Security Packa
 ## Source Basis
 
 - Primary: [[wiki/sources/cama-account-control-and-collection-waterfalls]].
-- Related: [[wiki/sources/mediahedge-security-package]], [[wiki/sources/monitoring-and-servicing-after-closing]] and [[wiki/sources/where-the-financiers-return-comes-from]].
+- Related: [[wiki/sources/mediahedge-security-package]], [[wiki/sources/monitoring-and-servicing-after-closing]], [[wiki/sources/where-the-financiers-return-comes-from]], [[wiki/sources/pre-sales-as-collateral-crash-course]] and [[wiki/sources/sales-estimates-and-gap-as-collateral-crash-course]].
 -->

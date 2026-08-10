@@ -3,7 +3,7 @@ title: Film-Finance Credit Lifecycle
 type: synthesis
 status: current
 updated: 2026-08-09
-source_count: 12
+source_count: 16
 publish: true
 tags:
   - mediahedge
@@ -13,7 +13,7 @@ tags:
 
 # Film-Finance Credit Lifecycle
 
-How do the twelve briefs combine into one operating system for protecting financing capital from initial screen through final recovery?
+How do the sixteen evidentiary briefs combine into one operating system for protecting financing capital from initial screen through final recovery?
 
 ![[assets/diagrams/credit-journey.svg|Seven-stage film-finance credit lifecycle from full financing through portfolio reporting]]
 
@@ -29,7 +29,7 @@ How do the twelve briefs combine into one operating system for protecting financ
 
 ### 2. Convert Headline Collateral into Eligible Net Value
 
-Underwriting tests ownership, enforceability, obligor capacity, conditions, deductions, setoff, assignment, timing and overlap. Tax incentives receive program-specific verification; contracted receivables remain subject to delivery and obligor terms; unsold-rights value receives limited credit because it depends on future market realization.
+Underwriting tests ownership, enforceability, obligor capacity, conditions, deductions, setoff, assignment, timing and overlap. Tax incentives receive program-specific verification; [[wiki/concepts/pre-sales-collateral|contracted pre-sales]] remain subject to delivery, acceptance and obligor terms; [[wiki/concepts/gap-collateral|unsold-rights value]] receives limited credit because it depends on future market realization.
 
 **Decision output:** collateral schedule with eligibility status, net amount, timing, obligor and evidence.
 
@@ -41,7 +41,7 @@ Underwriting tests ownership, enforceability, obligor capacity, conditions, dedu
 
 ### 4. Translate Underwriting into Enforceable Rights
 
-The [[wiki/concepts/security-package|security package]] connects obligations to the appropriate grant, perfection method, assignment, acknowledgment, control and enforcement mechanism. [[wiki/concepts/cash-control-and-waterfalls|Cash control]] maps each payment source through instructions, independent collection administration, bank control, priority and reconciliation. [[wiki/concepts/production-insurance|Insurance]] and completion documents are aligned but credited only for defined risks.
+The [[wiki/concepts/security-package|security package]] connects obligations to the appropriate grant, perfection method, assignment, acknowledgment, control and enforcement mechanism. [[wiki/concepts/cash-control-and-waterfalls|Cash control]] maps each payment source through instructions, independent collection administration, bank control, priority and reconciliation. [[wiki/concepts/completion-protection|Completion]], [[wiki/concepts/surety-credit-protection|surety]] and [[wiki/concepts/production-insurance|insurance]] documents are aligned but credited only for defined risks.
 
 **Decision output:** closing set, perfection evidence, source-to-account map, policy endorsements, completion coverage and authority matrix.
 
@@ -72,9 +72,9 @@ The lifecycle is iterative rather than linear. Production progress turns costs i
 | Lifecycle stage | Related reading |
 | --- | --- |
 | Full financing | [[wiki/concepts/full-financing\|Full Financing]] |
-| Eligibility and sizing | [[wiki/concepts/loan-sizing\|Loan Sizing]] and [[wiki/concepts/tax-credit-collateral\|Tax-Credit Collateral]] |
+| Eligibility and sizing | [[wiki/concepts/loan-sizing\|Loan Sizing]], [[wiki/concepts/pre-sales-collateral\|Pre-Sales Collateral]], [[wiki/concepts/gap-collateral\|Gap Collateral]] and [[wiki/concepts/tax-credit-collateral\|Tax-Credit Collateral]] |
 | Closing protection | [[wiki/concepts/protection-stack\|Protection Stack]], [[wiki/concepts/security-package\|Security Package]] and [[wiki/concepts/cash-control-and-waterfalls\|Cash Control]] |
-| Risk transfer | [[wiki/concepts/production-insurance\|Production Insurance]] |
+| Risk transfer | [[wiki/concepts/completion-protection\|Completion Protection]], [[wiki/concepts/surety-credit-protection\|Surety and Credit Protection]] and [[wiki/concepts/production-insurance\|Production Insurance]] |
 | Servicing and recovery | [[wiki/concepts/monitoring-and-servicing\|Monitoring and Servicing]] and [[wiki/concepts/defaults-workouts-and-recoveries\|Defaults, Workouts and Recoveries]] |
 | Portfolio and partner | [[wiki/concepts/portfolio-construction\|Portfolio Construction]], [[wiki/concepts/forward-flow-governance\|Financing-Partner Governance]] and [[wiki/concepts/financier-return-economics\|Return Economics]] |
 

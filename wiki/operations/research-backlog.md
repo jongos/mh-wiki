@@ -2,8 +2,8 @@
 title: Research Backlog
 type: operations
 status: current
-updated: 2026-08-08
-source_count: 12
+updated: 2026-08-09
+source_count: 16
 publish: false
 tags:
   - mediahedge
@@ -21,6 +21,7 @@ Questions whose answers would materially improve the wiki. New evidence should b
 - Which limits are hard prohibitions, delegated exceptions or watch thresholds?
 - How are denominator terms defined in policy, including gross loan, budget, eligible value, supported low value and final gross loan?
 - What is the exact method for solving and auditing the circular gap-concentration formula?
+- What are the current authority, definition and approved range for the statement that gap inclusion generally contributes approximately three to five percentage points to blended pricing?
 
 ## Priority 2 - legal and jurisdictional validation
 
@@ -28,6 +29,9 @@ Questions whose answers would materially improve the wiki. New evidence should b
 - What perfection and copyright-recordation rules apply to each standard collateral category and borrower structure?
 - What bank and collection-manager forms satisfy the intended control and waterfall mechanics?
 - Which material counterparty forms provide acknowledgment, cure, amendment restrictions and duplicate notices?
+- Which current completion-guaranty forms, endorsements and interparty provisions establish beneficiary, notice, cure, takeover, payment, subrogation and priority rights for MediaHedge and each financing partner?
+- Which current surety or media-credit forms are approved, which obligations may be bonded, and what issuer-strength, penal-sum, claim, amendment, cancellation and tail standards apply?
+- Which pre-sale contract, delivery, acceptance, assignment and distributor-credit criteria determine eligibility by territory and counterparty?
 
 ## Priority 3 - operational policy
 
@@ -35,6 +39,7 @@ Questions whose answers would materially improve the wiki. New evidence should b
 - Which decisions are within delegated servicing authority and which are reserved matters by capital partner or facility?
 - What are the document-custody, backup-servicing, cyber and data-portability standards?
 - What claims calendar, vendor panel and protective-advance approval test are approved for workouts?
+- What evidence, review cadence and independent challenge are required for sales-agent estimates, comparable titles and the conversion of unsold rights into executed receivables?
 
 ## Priority 4 - performance evidence
 

@@ -3,7 +3,7 @@ title: Production Insurance
 type: concept
 status: current
 updated: 2026-08-09
-source_count: 3
+source_count: 5
 publish: true
 tags:
   - mediahedge
@@ -37,7 +37,7 @@ Coverage can be limited by exclusions, warranties, misrepresentation, late notic
 
 ## Connections
 
-Production insurance sits within the [[wiki/concepts/protection-stack|Protection Stack]] but cannot replace [[wiki/concepts/full-financing|Full Financing]], completion protection, collateral underwriting or [[wiki/concepts/security-package|security]]. Claims and proceeds are monitored under [[wiki/concepts/monitoring-and-servicing|Servicing]].
+Production insurance sits within the [[wiki/concepts/protection-stack|Protection Stack]] but cannot replace [[wiki/concepts/full-financing|Full Financing]], [[wiki/concepts/completion-protection|Completion Protection]], [[wiki/concepts/surety-credit-protection|targeted credit protection]], collateral underwriting or [[wiki/concepts/security-package|security]]. Claims and proceeds are monitored under [[wiki/concepts/monitoring-and-servicing|Servicing]].
 
 ## Continue Exploring
 
@@ -47,5 +47,5 @@ Production insurance sits within the [[wiki/concepts/protection-stack|Protection
 ## Source Basis
 
 - Primary: [[wiki/sources/film-production-insurance-stack]].
-- Related: [[wiki/sources/mediahedge-protection-stack]] and [[wiki/sources/why-a-production-must-be-fully-financed]].
+- Related: [[wiki/sources/mediahedge-protection-stack]], [[wiki/sources/why-a-production-must-be-fully-financed]], [[wiki/sources/completion-bonds-crash-course]] and [[wiki/sources/surety-bonds-crash-course]].
 -->

@@ -3,7 +3,7 @@ title: Welcome to the MediaHedge Knowledgebase
 type: operations
 status: current
 updated: 2026-08-09
-source_count: 12
+source_count: 16
 publish: true
 description: A reader-friendly guide to MediaHedge's approach to film and television finance.
 tags:
@@ -35,10 +35,11 @@ You do not need to be a film-finance specialist. Start with the question you car
 | --- | --- |
 | Can the production reach completion and delivery? | [[wiki/concepts/full-financing\|Full Financing]] |
 | What is expected to repay the loan? | [[wiki/syntheses/repayment-and-risk-map\|Repayment and Risk Map]] |
+| How do contracted pre-sales differ from unsold-rights value? | [[wiki/concepts/pre-sales-collateral\|Pre-Sales Collateral]] and [[wiki/concepts/gap-collateral\|Gap Collateral]] |
 | How is the loan amount determined? | [[wiki/concepts/loan-sizing\|Loan Sizing]] |
 | How are production incentives evaluated? | [[wiki/concepts/tax-credit-collateral\|Tax-Credit Collateral]] |
 | How are the assets and incoming cash protected? | [[wiki/concepts/security-package\|Security Package]] and [[wiki/concepts/cash-control-and-waterfalls\|Cash Control]] |
-| What does insurance cover—and what does it not cover? | [[wiki/concepts/production-insurance\|Production Insurance]] and [[wiki/concepts/protection-stack\|Protection Stack]] |
+| Which instrument protects completion, casualty or payment risk? | [[wiki/concepts/completion-protection\|Completion Protection]], [[wiki/concepts/production-insurance\|Production Insurance]] and [[wiki/concepts/surety-credit-protection\|Surety and Credit Protection]] |
 | How is a loan managed after closing? | [[wiki/concepts/monitoring-and-servicing\|Monitoring and Servicing]] |
 | What happens when a project runs into trouble? | [[wiki/concepts/defaults-workouts-and-recoveries\|Defaults, Workouts and Recoveries]] |
 | How are investor rights and decisions governed? | [[wiki/concepts/forward-flow-governance\|Financing-Partner Governance]] |
@@ -56,11 +57,15 @@ For a quicker comparison of repayment sources, open the [[wiki/syntheses/repayme
 
 - [[wiki/concepts/full-financing|Full Financing]] — why all costs and timing must work through delivery.
 - [[wiki/concepts/loan-sizing|Loan Sizing]] — how eligible value and the tightest limit determine exposure.
+- [[wiki/concepts/pre-sales-collateral|Pre-Sales Collateral]] — how an executed minimum guarantee becomes an eligible net receivable.
+- [[wiki/concepts/gap-collateral|Gap Collateral]] — how unsold-rights value receives limited, market-dependent credit.
 - [[wiki/concepts/tax-credit-collateral|Tax-Credit Collateral]] — how production incentives become potential repayment value.
 
 ### Protect the Capital
 
 - [[wiki/concepts/protection-stack|Protection Stack]] — how different safeguards address different risks.
+- [[wiki/concepts/completion-protection|Completion Protection]] — how a guarantor may preserve the path to delivery.
+- [[wiki/concepts/surety-credit-protection|Surety and Credit Protection]] — how a specifically bonded obligation may receive targeted support.
 - [[wiki/concepts/security-package|Security Package]] — how rights to assets and proceeds are established.
 - [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]] — how collections reach the right accounts in the right order.
 - [[wiki/concepts/production-insurance|Production Insurance]] — what coverage contributes and where its limits begin.

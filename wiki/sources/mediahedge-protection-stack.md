@@ -43,6 +43,8 @@ Layering does not eliminate risk. Duplicate documents may not create independent
 ## Related pages
 
 - [[wiki/concepts/protection-stack|Protection Stack]]
+- [[wiki/concepts/completion-protection|Completion Protection]]
+- [[wiki/concepts/surety-credit-protection|Surety and Credit Protection]]
 - [[wiki/overview|MediaHedge Wiki Overview]]
 - [[wiki/syntheses/policy-rails-and-control-matrix|Policy Rails and Control Matrix]]
 - [[wiki/syntheses/credit-lifecycle|Film-Finance Credit Lifecycle]]

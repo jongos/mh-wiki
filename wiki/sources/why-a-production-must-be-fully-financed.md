@@ -45,6 +45,9 @@ A balanced table may use conditional, delayed, circular or duplicated sources. D
 ## Related pages
 
 - [[wiki/concepts/full-financing|Full Financing]]
+- [[wiki/concepts/completion-protection|Completion Protection]]
+- [[wiki/concepts/pre-sales-collateral|Pre-Sales Collateral]]
+- [[wiki/concepts/gap-collateral|Gap Collateral]]
 - [[wiki/concepts/loan-sizing|Loan Sizing]]
 - [[wiki/concepts/protection-stack|Protection Stack]]
 - [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]]

@@ -44,6 +44,7 @@ Different collateral categories can share the same completion or delivery event.
 ## Related pages
 
 - [[wiki/concepts/portfolio-construction|Portfolio Construction]]
+- [[wiki/concepts/gap-collateral|Gap Collateral]]
 - [[wiki/concepts/loan-sizing|Loan Sizing]]
 - [[wiki/concepts/forward-flow-governance|Forward-Flow Governance]]
 - [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]]

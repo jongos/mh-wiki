@@ -2,8 +2,8 @@
 title: MediaHedge Wiki Activity Log
 type: operations
 status: current
-updated: 2026-08-08
-source_count: 12
+updated: 2026-08-09
+source_count: 16
 publish: false
 tags:
   - mediahedge
@@ -228,3 +228,17 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Safety: preserved additive history and prohibited force-pushes, public tag deletion and credential publication; the OneDrive mirror and checksum bundles remain independent recovery copies rather than being replaced by GitHub.
 - Documentation: added the public GitHub remote to `README.md` and `VERSION-HISTORY.md` so both human and agent workflows retain the destination.
 - Evidence integrity: no wiki claim, publication scope, source count, raw manifest entry or immutable raw source changed.
+
+## [2026-08-09] ingest | Collateral and protection crash courses
+
+- Sources read: `MediaHedge_Completion_Bond_Crash_Course_MHCB-20260808-7F3C (1).docx`, `MediaHedge_Surety_Bond_Crash_Course_MHSB-20260808-C4E7 (1).docx`, `MediaHedge_PreSales_Collateral_Crash_Course_MHPS-20260808-A91D.docx` and `MediaHedge_Sales_Estimates_Gap_Collateral_Crash_Course_MHGE-20260808-D72B.docx`.
+- Duplicate and integrity check: all four SHA-256 values were absent from the existing manifest; canonical copies were added under `raw/sources/` and rehashed byte-for-byte after copying.
+- Document review: inspected every paragraph, list, table, header, footer, relationship, note/comment, tracked-change marker and embedded-media part. Each source contains 33 top-level content blocks, one comparison table, two page-specific headers/footers and no embedded media, external relationships, comments or tracked changes.
+- Visual-review limitation: LibreOffice was unavailable and Word's hidden read-only exporter did not complete while an existing Office session was active. The originals were untouched, the hidden task-created processes were closed and the document skill's complete structural fallback was used; temporary review artifacts were removed.
+- Source layer: created four private provenance pages for completion bonds, surety bonds, pre-sales collateral and sales-estimate/gap collateral, each linked to its immutable snapshot and recorded hash.
+- Reader layer: created [[wiki/concepts/completion-protection]], [[wiki/concepts/surety-credit-protection]], [[wiki/concepts/pre-sales-collateral]] and [[wiki/concepts/gap-collateral]] with decision-focused explanations, comparison tables, evidence limits and existing rights-cleared conceptual diagrams.
+- Integration: updated the public home, GitHub README, overview, glossary, MediaHedge entity, credit lifecycle, financier guide, repayment map, policy guide and related underwriting, protection, security, cash-control, servicing, portfolio and return pages; updated the private catalog, source pages, research backlog and contradictions register.
+- Key distinctions: preserved completion, production-insurance and surety functions as separate; preserved executed pre-sales as conditional contracted receivables and gap as market-dependent unsold-rights value; did not treat repeated internal rails as independent proof of current policy.
+- Freshness: marked the gap policy and pricing statements `needs-review` because the briefs provide no policy version, approving authority or effective date. The source-stated three-to-five-point pricing context is not represented as a forecast of realized return.
+- Contradictions and gaps: no direct contradiction was found. Added verification needs for current gap pricing, completion and surety forms, pre-sale eligibility and sales-estimate review standards.
+- Lint: passed with 58 Markdown files, 45 wiki pages, 745 active wikilinks, 23 Markdown tables, 14 published diagram embeds, nine SVG diagrams and 17 raw sources; 0 errors and 0 warnings.

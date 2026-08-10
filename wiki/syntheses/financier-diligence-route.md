@@ -3,7 +3,7 @@ title: Financier's Guide
 type: synthesis
 status: current
 updated: 2026-08-09
-source_count: 12
+source_count: 16
 publish: true
 description: Eight questions for understanding the MediaHedge film- and television-finance model.
 tags:
@@ -38,7 +38,7 @@ Start with [[wiki/concepts/full-financing|Full Financing]]. Look for complete co
 
 ### 2. What Is Expected to Repay the Loan?
 
-Use the [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]] to separate contracted receivables, [[wiki/concepts/tax-credit-collateral|tax incentives]], unsold-rights value, insurance proceeds, completion support and controlled cash.
+Use the [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]] to separate [[wiki/concepts/pre-sales-collateral|contracted pre-sales]], [[wiki/concepts/tax-credit-collateral|tax incentives]], [[wiki/concepts/gap-collateral|unsold-rights value]], insurance proceeds, completion support, surety and controlled cash.
 
 **What you want to understand:** who is expected to pay, under what conditions, when the money may arrive and which repayment sources share the same risks.
 
@@ -59,7 +59,7 @@ Read [[wiki/concepts/security-package|Security Package]] alongside [[wiki/concep
 
 ### 5. Which Protection Addresses Each Risk?
 
-Use [[wiki/concepts/protection-stack|Protection Stack]] to compare structural safeguards, completion support, [[wiki/concepts/production-insurance|Production Insurance]], monitoring and enforcement.
+Use [[wiki/concepts/protection-stack|Protection Stack]] to compare structural safeguards, [[wiki/concepts/completion-protection|Completion Protection]], [[wiki/concepts/surety-credit-protection|Surety and Credit Protection]], [[wiki/concepts/production-insurance|Production Insurance]], monitoring and enforcement.
 
 **What you want to understand:** what each layer covers, what it excludes and which risks remain shared across several repayment sources.
 
@@ -85,9 +85,11 @@ Finish with [[wiki/concepts/portfolio-construction|Portfolio Construction]] and 
 
 - The budget balances overall, but funding arrives after an important payment is due.
 - Collateral has a headline value, but ownership, conditions or collection timing remain uncertain.
+- A sales estimate is being treated as if it were an executed receivable, or a gross minimum guarantee is being treated as eligible net value.
 - The proposed amount depends on an undated policy limit or an unclear calculation.
 - The legal documents and the actual path of cash do not match.
 - Insurance or completion support is being treated as if it covers unrelated credit or market risk.
+- A surety instrument is described as blanket loan insurance without mapping the bonded obligation, trigger, protected party, claim requirements and penal sum.
 - Reports are promised, but triggers, owners and decision authority are unclear.
 - Apparent diversification depends on several assets with the same underlying failure point.
 - Expected return is described by interest rate alone, without cash timing, costs or losses.
@@ -109,5 +111,5 @@ The eight-question order and the suggested pause points are a reader-oriented sy
 <!--
 ## Source Basis
 
-This guide synthesizes the twelve source-summary pages listed in [[wiki/operations/internal-catalog#Source summaries]].
+This guide synthesizes the sixteen evidentiary source-summary pages listed in [[wiki/operations/internal-catalog#Source summaries]].
 -->
