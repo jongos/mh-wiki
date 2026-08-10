@@ -191,6 +191,15 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Tooling: added `tools\wiki-diagnostics.cmd` and `tools\wiki-diagnostics.ps1`; hardened `tools\wiki-archive.ps1` to compare all branch and tag refs and to create and verify bundle checksums; documented both workflows in `README.md`, `VERSION-HISTORY.md` and `AGENTS.md`.
 - Live defect found and repaired: Obsidian had recreated the parent `MD-wiki` Publish connection while that vault was open. After Obsidian was closed normally, preserved the configuration under a timestamped disabled filename and set the global registry to parent closed and canonical `MH Wiki` open.
 - Evidence integrity: no wiki claim, publication scope, source count, raw manifest entry or immutable raw source changed.
+
+## [2026-08-09] maintenance | GitHub README reader experience
+
+- Scope: redesigned `README.md` as the public GitHub front door for potential financing partners, first-time readers and maintainers.
+- Editorial structure: opened with the central film-finance credit question, added role-based reading routes, summarized the connected credit system and organized the major topics around financeability, repayment, exposure, control, protection, downside, governance and return.
+- Visual presentation: reused the rights-cleared MediaHedge banner and original conceptual credit-journey SVG; no third-party image, film still, celebrity image, quotation or endorsement was introduced.
+- Navigation: replaced Obsidian-only wikilinks in the README with GitHub-native relative Markdown links, added a complete repository map and retained a compact collapsible maintenance section for technical readers.
+- Evidence boundaries: preserved the existing educational, policy-status, transaction-document and professional-advice limitations; no new company, policy, performance or market claim was introduced.
+- Verification: all 28 local README links resolved, the complete wiki lint passed with 0 errors and 0 warnings and Git formatting checks passed.
 - Lint: passed with 50 Markdown files, 37 wiki pages, 538 active wikilinks, 10 diagram embeds, nine SVG diagrams and 13 raw sources; 0 errors and 0 warnings.
 
 ## [2026-08-09] maintenance | Vault directory cleanup
