@@ -295,3 +295,14 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Publish safety: the redundant check detected that the parent `MD-wiki` vault had recreated the same Publish identity; preserved that configuration as `publish.json.disabled-20260811-site-navigator` before deployment so prefixed duplicate paths could not return.
 - Evidence integrity: no company, policy, transaction, legal, market, performance or source claim changed; no raw source, source count or immutable snapshot changed.
 - Verification: complete lint passed with 61 Markdown files, 48 wiki pages, 921 active wikilinks, 27 tables, 44 external links, 14 published diagram embeds, nine SVGs and 18 raw sources; 0 errors and 0 warnings. Obsidian published the new page, welcome-page link and stylesheet; the live audit found 38 expected and 38 remote files with 0 missing and 0 unexpected paths. Rendered checks confirmed a 420-pixel interactive graph panel at a 1280-pixel viewport and the linked-directory fallback with the graph hidden at 1000 pixels.
+
+## [2026-08-11] maintenance | Reader search and navigation system
+
+- Scope: improved site-wide discovery without renaming files, moving pages or changing any established public URL.
+- Search: exposed Obsidian Publish's native page-and-heading search on every page and styled it as a persistent, keyboard-accessible type-ahead field.
+- Reader labels: added a custom-domain navigation layer that presents technical folders as Knowledgebase Library, Financing Essentials, About MediaHedge and Guides & Decision Maps while preserving their vault paths.
+- Site Navigator: promoted the Site Navigator as a highlighted root shortcut in the sidebar and retained its canonical location within the Guides & Decision Maps section.
+- Footer continuity: added the Site Navigator to the `Continue Exploring` footer of every published page, including the welcome page and the Site Navigator itself.
+- Maintenance safeguards: extended the wiki lint to require the shared footer route and the reader-navigation script; extended the live Publish audit to inventory `publish.js` alongside `publish.css`.
+- Evidence integrity: no company, policy, transaction, legal, market, performance or source claim changed; no raw source, source count or immutable snapshot changed.
+- Verification: enabled the native Search bar component in the live Publish settings, deployed `publish.js` and `publish.css`, and confirmed that a typed `cash` query returns reader-labeled page and heading suggestions, hides technical asset matches and opens the selected destination. Desktop and tablet checks confirmed the friendly folder labels and root Site Navigator shortcut; source inspection confirmed the Site Navigator footer route on every public page. Final wiki lint passed with 61 Markdown files, 48 wiki pages, 951 wikilinks, 27 tables, 44 external links, 14 published diagram embeds, nine SVGs and 18 raw sources; 0 errors and 0 warnings.

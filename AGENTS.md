@@ -31,6 +31,8 @@ The agent owns the Markdown layer: create, revise, cross-link and lint it. The h
 │                              primary welcome and content catalog
 ├── index.md                  compatibility alias for older links
 ├── log.md                    append-only activity history
+├── publish.css               reader-facing Publish presentation
+├── publish.js                reader-facing search and navigation labels
 ├── assets/
 │   └── diagrams/             original reader-facing SVG explanations
 ├── raw/
@@ -115,7 +117,7 @@ Quantitative policy rails must show their source and effective date when availab
 
 ## Reader navigation
 
-- Treat this directory, `MH Wiki`, as the Obsidian vault root. Never publish from its parent directory; public paths, wikilinks, assets and `publish.css` are vault-relative to this root.
+- Treat this directory, `MH Wiki`, as the Obsidian vault root. Never publish from its parent directory; public paths, wikilinks, assets, `publish.css` and `publish.js` are vault-relative to this root.
 - Treat `MediaHedge Knowledgebase.md` as the primary home note and preserve `index.md` as a compatibility alias for older exports and external links.
 - Publish only reader-facing knowledge pages. Keep source summaries, raw evidence, operations registers, logs, templates, tools and agent instructions marked or configured as private.
 - Do not assume Obsidian enforces the `publish` frontmatter property. It is the wiki's publication policy; any file manually selected in Publish can still become public.
@@ -130,6 +132,7 @@ Quantitative policy rails must show their source and effective date when availab
 - Place concise introductory content between the H1 and the first H2 so a reader can understand the page before scanning its sections.
 - Follow every visible published heading with a blank line. Use exactly one H1 and do not skip heading levels.
 - End every durable published wiki page with one `## Continue Exploring` section containing human-readable navigation labels.
+- Include the [[wiki/syntheses/site-navigator|Site Navigator]] in every published page's `Continue Exploring` footer.
 - Use callouts sparingly and consistently: `important` for why a point matters, `tip` for a decision point, `note` for an important distinction and `warning` for an evidence limitation.
 - Keep comparative tables when the row-and-column relationship matters. Use escaped alias pipes inside tables and retain responsive horizontal scrolling for narrow screens.
 - Prefer original, editable SVG diagrams when a relationship is materially easier to understand visually. Every diagram must include a descriptive title, description, display alias and nearby conceptual/data limitation caption.
@@ -178,7 +181,7 @@ Do not file routine chat, unsupported speculation or low-confidence retrieval re
 
 Periodically check for:
 
-- a missing root `.obsidian/publish.json`, a missing root `publish.css` or any other sign that Obsidian is using the parent directory as the vault;
+- a missing root `.obsidian/publish.json`, `publish.css`, `publish.js` or any other sign that Obsidian is using the parent directory as the vault;
 - unmatched, nested or empty Obsidian wikilink delimiters (`[[` and `]]`);
 - broken or ambiguous wikilinks;
 - unescaped wikilink alias separators inside Markdown tables;
@@ -208,7 +211,7 @@ Periodically check for:
 
 Run `tools\wiki-lint.cmd` on Windows (`powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\tools\wiki-lint.ps1` is the explicit equivalent), then perform a semantic review. Mechanical success is not proof that the knowledge is correct.
 
-After an Obsidian Publish deployment, run `tools\publish-audit.cmd`. It compares the live server inventory with the local `publish: true` notes, their referenced assets and root `publish.css`; repair every missing or unexpected path before treating the site as healthy.
+After an Obsidian Publish deployment, run `tools\publish-audit.cmd`. It compares the live server inventory with the local `publish: true` notes, their referenced assets, root `publish.css` and root `publish.js`; repair every missing or unexpected path before treating the site as healthy.
 
 ## Version Control and Recovery
 

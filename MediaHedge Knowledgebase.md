@@ -93,3 +93,7 @@ For a quicker comparison of repayment sources, open the [[wiki/syntheses/repayme
 Read [[wiki/evidence-and-limitations|Evidence and Limitations]] for a clear explanation of what this knowledgebase establishes, what remains subject to current policy or transaction documents, and what a financing partner should verify independently.
 
 This knowledgebase is educational. Current approved policy, executed transaction documents and qualified legal, tax, insurance and program advice control any specific financing decision.
+
+## Continue Exploring
+
+[[wiki/syntheses/site-navigator|Open the Site Navigator]] · [[wiki/syntheses/financier-diligence-route|Follow the Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Trace the Credit Lifecycle]]

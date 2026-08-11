@@ -57,7 +57,7 @@ The MediaHedge protection stack is a layered credit architecture in which each c
 
 ## Continue Exploring
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/syntheses/media-finance-lending-landscape|Market Landscape]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/syntheses/media-finance-lending-landscape|Market Landscape]] · [[wiki/syntheses/site-navigator|Site Navigator]]
 
 <!--
 ## Source Basis

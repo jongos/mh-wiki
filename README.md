@@ -29,6 +29,7 @@ You do not need to be a film-finance specialist. Pick the question that brought 
 | Evaluate the model as a financing partner | [A Financier’s Guide](wiki/syntheses/financier-diligence-route.md) |
 | Compare banks, specialty lenders, insurers, and completion guarantors | [Media Finance Lending Landscape](wiki/syntheses/media-finance-lending-landscape.md) |
 | Follow a loan from screening through recovery | [Film-Finance Credit Lifecycle](wiki/syntheses/credit-lifecycle.md) |
+| Browse the knowledgebase as a visual map | [Site Navigator](wiki/syntheses/site-navigator.md) |
 | Compare repayment sources and their risks | [Repayment and Risk Map](wiki/syntheses/repayment-and-risk-map.md) |
 | Distinguish contracted pre-sales from unsold-rights value | [Pre-Sales Collateral](wiki/concepts/pre-sales-collateral.md) and [Gap Collateral](wiki/concepts/gap-collateral.md) |
 | Compare completion, surety, and insurance protection | [Protection Stack](wiki/concepts/protection-stack.md) |

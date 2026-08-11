@@ -63,7 +63,7 @@ Depending on the stage of review, a financing partner may want:
 
 ## Continue Exploring
 
-Return to the [[MediaHedge Knowledgebase|Knowledgebase Home]], follow the [[wiki/syntheses/financier-diligence-route|Financier’s Guide]], compare roles in the [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]], or review the [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]].
+Return to the [[MediaHedge Knowledgebase|Knowledgebase Home]], follow the [[wiki/syntheses/financier-diligence-route|Financier’s Guide]], compare roles in the [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]], or review the [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]]. · [[wiki/syntheses/site-navigator|Site Navigator]]
 
 ## Analysis and Inference
 

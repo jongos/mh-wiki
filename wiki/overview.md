@@ -82,7 +82,7 @@ The strongest connective tissue across the corpus is the discipline of not confu
 
 ## Continue Exploring
 
-Use [[MediaHedge Knowledgebase]] as the home page. Financing partners can follow the [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] by investment question, compare participant roles in the [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]], or use the [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] to organize the same system chronologically. Material transaction decisions still require current policy, executed documents and qualified legal, tax, insurance and program-specific analysis.
+Use [[MediaHedge Knowledgebase]] as the home page. Financing partners can follow the [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] by investment question, compare participant roles in the [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]], or use the [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] to organize the same system chronologically. Material transaction decisions still require current policy, executed documents and qualified legal, tax, insurance and program-specific analysis. · [[wiki/syntheses/site-navigator|Site Navigator]]
 
 Read [[wiki/evidence-and-limitations|Evidence and Limitations]] for a plain-language explanation of what the knowledgebase establishes and what still needs independent verification.
 

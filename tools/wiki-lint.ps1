@@ -46,6 +46,7 @@ function Test-PublishVaultConfiguration {
     $obsidianDirectory = Join-Path $script:vault '.obsidian'
     $publishConfigPath = Join-Path $obsidianDirectory 'publish.json'
     $publishCssPath = Join-Path $script:vault 'publish.css'
+    $publishJsPath = Join-Path $script:vault 'publish.js'
 
     if (-not (Test-Path -LiteralPath $obsidianDirectory -PathType Container)) {
         $script:errors.Add("Missing root .obsidian directory; open this directory, not its parent, as the Obsidian vault")
@@ -57,6 +58,9 @@ function Test-PublishVaultConfiguration {
     }
     if (-not (Test-Path -LiteralPath $publishCssPath -PathType Leaf)) {
         $script:errors.Add("Missing root publish.css; Obsidian Publish will not load a nested custom stylesheet")
+    }
+    if (-not (Test-Path -LiteralPath $publishJsPath -PathType Leaf)) {
+        $script:errors.Add("Missing root publish.js; custom-domain reader navigation will not load")
     }
 
     try {
@@ -381,6 +385,10 @@ function Test-PublishedPresentation {
         if ($continueCount -ne 1) {
             $script:errors.Add("Published wiki page must contain exactly one 'Continue Exploring' section: $Relative (found $continueCount)")
         }
+    }
+
+    if ($visible -notmatch [regex]::Escape('[[wiki/syntheses/site-navigator|')) {
+        $script:errors.Add("Published page footer must link to the Site Navigator: $Relative")
     }
 
     $allowedCalloutTypes = @('important', 'tip', 'note', 'warning')
@@ -787,7 +795,7 @@ if (-not (Test-Path -LiteralPath $homePath -PathType Leaf)) {
     if ($homeContent -notmatch '(?m)^publish:\s*true\s*$') {
         $errors.Add('Public home note must be marked publish: true')
     }
-    Test-PublishedPresentation -Content $homeContent -Relative 'MediaHedge Knowledgebase.md' -RequireContinueExploring $false
+    Test-PublishedPresentation -Content $homeContent -Relative 'MediaHedge Knowledgebase.md' -RequireContinueExploring $true
     $homeVisibleContent = [regex]::Replace($homeContent, '(?s)<!--.*?-->', '')
     $homeVisibleContent = Mask-MarkdownCode -Content $homeVisibleContent
     foreach ($match in [regex]::Matches($homeVisibleContent, '\[\[([^\]]+)\]\]')) {
@@ -934,6 +942,25 @@ if (-not (Test-Path -LiteralPath $publishCssPath -PathType Leaf)) {
     foreach ($requiredPattern in $requiredCssPatterns) {
         if ($publishCss -notmatch [regex]::Escape($requiredPattern)) {
             $errors.Add("publish.css is missing required reader-style support: $requiredPattern")
+        }
+    }
+}
+
+$publishJsPath = Join-Path $vault 'publish.js'
+if (-not (Test-Path -LiteralPath $publishJsPath -PathType Leaf)) {
+    $errors.Add('Missing reader-navigation script: publish.js')
+} else {
+    $publishJs = Read-Utf8Text -Path $publishJsPath
+    $requiredJsPatterns = @(
+        'Search the Knowledgebase',
+        'MutationObserver',
+        'wiki/syntheses/site-navigator.md',
+        'Financing Essentials',
+        'Guides & Decision Maps'
+    )
+    foreach ($requiredPattern in $requiredJsPatterns) {
+        if ($publishJs -notmatch [regex]::Escape($requiredPattern)) {
+            $errors.Add("publish.js is missing required reader-navigation support: $requiredPattern")
         }
     }
 }

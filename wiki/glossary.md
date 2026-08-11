@@ -104,4 +104,4 @@ Definitions here summarize the MediaHedge framework. Transaction documents and a
 
 ## Continue Exploring
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/overview|How the Model Works]] · [[wiki/syntheses/media-finance-lending-landscape|Market Landscape]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/overview|How the Model Works]] · [[wiki/syntheses/media-finance-lending-landscape|Market Landscape]] · [[wiki/syntheses/site-navigator|Site Navigator]]

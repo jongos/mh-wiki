@@ -54,7 +54,7 @@ Taken together, the material suggests a useful hierarchy: first preserve the pro
 
 ## Continue Exploring
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/evidence-and-limitations|Evidence and Limitations]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/evidence-and-limitations|Evidence and Limitations]] · [[wiki/syntheses/site-navigator|Site Navigator]]
 
 <!--
 ## Source Basis

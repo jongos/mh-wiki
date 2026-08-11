@@ -105,7 +105,7 @@ The knowledgebase explains the framework; it does not replace current policy, ex
 
 ## Continue Exploring
 
-[[MediaHedge Knowledgebase|Home]] → [[wiki/syntheses/media-finance-lending-landscape|Market Landscape]] → [[wiki/overview|Overview]] → [[wiki/syntheses/repayment-and-risk-map|Repayment Map]] → [[wiki/concepts/loan-sizing|Sizing]] → [[wiki/concepts/security-package|Security]] → [[wiki/concepts/cash-control-and-waterfalls|Cash Control]] → [[wiki/concepts/monitoring-and-servicing|Monitoring]] → [[wiki/concepts/defaults-workouts-and-recoveries|Recovery]] → [[wiki/concepts/portfolio-construction|Portfolio]] → [[wiki/concepts/financier-return-economics|Returns]]
+[[MediaHedge Knowledgebase|Home]] → [[wiki/syntheses/media-finance-lending-landscape|Market Landscape]] → [[wiki/overview|Overview]] → [[wiki/syntheses/repayment-and-risk-map|Repayment Map]] → [[wiki/concepts/loan-sizing|Sizing]] → [[wiki/concepts/security-package|Security]] → [[wiki/concepts/cash-control-and-waterfalls|Cash Control]] → [[wiki/concepts/monitoring-and-servicing|Monitoring]] → [[wiki/concepts/defaults-workouts-and-recoveries|Recovery]] → [[wiki/concepts/portfolio-construction|Portfolio]] → [[wiki/concepts/financier-return-economics|Returns]] · [[wiki/syntheses/site-navigator|Site Navigator]]
 
 For the same material organized from origination through recovery, use the [[wiki/syntheses/credit-lifecycle|Film-Finance Credit Lifecycle]].
 

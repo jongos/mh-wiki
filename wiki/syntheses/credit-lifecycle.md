@@ -84,7 +84,7 @@ The source briefs separately describe each control area. Treating them as a stat
 
 ## Continue Exploring
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/media-finance-lending-landscape|Market Landscape]] · [[wiki/evidence-and-limitations|Evidence and Limitations]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/media-finance-lending-landscape|Market Landscape]] · [[wiki/evidence-and-limitations|Evidence and Limitations]] · [[wiki/syntheses/site-navigator|Site Navigator]]
 
 <!--
 ## Source Basis

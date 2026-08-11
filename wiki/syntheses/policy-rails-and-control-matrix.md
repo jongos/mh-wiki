@@ -72,7 +72,7 @@ These figures are useful for understanding the stated framework, but they are no
 
 ## Continue Exploring
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/concepts/loan-sizing|Loan Sizing]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/concepts/loan-sizing|Loan Sizing]] · [[wiki/syntheses/site-navigator|Site Navigator]]
 
 <!--
 ## Source Basis

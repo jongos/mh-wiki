@@ -32,4 +32,4 @@ Explore the MediaHedge knowledgebase as a connected system. The interactive grap
 
 ## Continue Exploring
 
-[[MediaHedge Knowledgebase|Return Home]] · [[wiki/syntheses/financier-diligence-route|Follow the Financier's Guide]] · [[wiki/syntheses/credit-lifecycle|Trace the Full Credit Lifecycle]]
+[[MediaHedge Knowledgebase|Return Home]] · [[wiki/syntheses/financier-diligence-route|Follow the Financier's Guide]] · [[wiki/syntheses/credit-lifecycle|Trace the Full Credit Lifecycle]] · [[wiki/syntheses/site-navigator|Site Navigator]]

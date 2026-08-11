@@ -51,6 +51,12 @@ if (-not (Test-Path -LiteralPath $publishCss -PathType Leaf)) {
 }
 [void]$desired.Add('publish.css')
 
+$publishJs = Join-Path $vault 'publish.js'
+if (-not (Test-Path -LiteralPath $publishJs -PathType Leaf)) {
+    throw 'Missing root publish.js'
+}
+[void]$desired.Add('publish.js')
+
 $publishConfigPath = Join-Path $vault '.obsidian\publish.json'
 if (-not (Test-Path -LiteralPath $publishConfigPath -PathType Leaf)) {
     throw 'Missing .obsidian/publish.json'
@@ -81,7 +87,7 @@ foreach ($path in $missing) { Write-Output "MISSING: $path" }
 Write-Output "Unexpected/private: $($extra.Count)"
 foreach ($path in $extra) { Write-Output "UNEXPECTED: $path" }
 Write-Output 'Required site homepage: MediaHedge Knowledgebase'
-Write-Output 'Recommended Publish navigation setting: hidden file explorer'
+Write-Output 'Reader navigation: visible file explorer, native search and Site Navigator shortcut'
 
 if ($missing.Count -gt 0 -or $extra.Count -gt 0) {
     exit 1
