@@ -2,7 +2,7 @@
 title: Internal Wiki Catalog
 type: operations
 status: current
-updated: 2026-08-10
+updated: 2026-08-11
 source_count: 17
 publish: false
 tags:
@@ -48,6 +48,7 @@ Private maintenance catalog for the complete knowledge layer. The public reader 
 - [[wiki/syntheses/credit-lifecycle|Film-Finance Credit Lifecycle]]
 - [[wiki/syntheses/policy-rails-and-control-matrix|Policy Rails and Control Matrix]]
 - [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]]
+- [[wiki/syntheses/site-navigator|Site Navigator]]
 
 ## Private orientation and operations
 

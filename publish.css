@@ -415,6 +415,48 @@ body .published-container {
   }
 }
 
+/*
+  The Site Navigator deliberately restores the native graph on its own page.
+  The wider canvas is page-scoped so ordinary reading and table layouts retain
+  the responsive behavior above.
+*/
+@media (min-width: 1200px) {
+  body:has(.site-navigator-page) .site-body-right-column {
+    display: flex !important;
+    flex: 0 0 clamp(420px, 45vw, 720px);
+    width: clamp(420px, 45vw, 720px);
+    min-width: 420px;
+    max-width: 720px;
+  }
+
+  body:has(.site-navigator-page) .site-body-right-column-inner {
+    width: calc(100% - 48px);
+    max-width: none;
+  }
+
+  body:has(.site-navigator-page) .graph-view-outer {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    width: 100%;
+    min-height: calc(100vh - 2rem);
+  }
+
+  body:has(.site-navigator-page) .graph-view-container {
+    flex: 1 1 auto;
+    width: 100%;
+    min-height: calc(100vh - 7rem);
+  }
+
+  body:has(.site-navigator-page) .outline-view-outer {
+    display: none !important;
+  }
+
+  body:has(.site-navigator-page) .markdown-preview-sizer {
+    margin-right: clamp(420px, 45vw, 720px) !important;
+  }
+}
+
 @media (max-width: 700px) {
   :root,
   body {

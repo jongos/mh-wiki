@@ -284,3 +284,14 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Publish safety repair: diagnostics found that the parent `MD-wiki` vault had reconnected to the same Publish site and created 37 prefixed duplicate paths. Preserved its identity as a timestamped disabled backup, unpublished exactly the verified `MH Wiki/` duplicate set from the parent context and reloaded that vault without force-closing Obsidian or deleting local files.
 - Evidence integrity: no wiki claim, source count, raw manifest entry, immutable source, public note content or core navigation meaning changed.
 - Verification: final wiki lint passed with 60 Markdown files, 47 wiki pages, 889 wikilinks, 27 tables, 44 external links, 14 published diagram embeds, nine SVGs and 18 raw sources; 0 errors and 0 warnings. Obsidian reported zero pending Publish changes, and the live audit found 37 expected and 37 remote files with 0 missing and 0 unexpected or private paths.
+
+## [2026-08-11] maintenance | Standalone Site Navigator
+
+- Scope: created [[wiki/syntheses/site-navigator]] as a dedicated visual-navigation page while preserving the existing responsive sidebar behavior on every other published page.
+- Knowledge graph: linked the navigator to all 26 existing public knowledge pages so Obsidian's native local graph presents the public wiki as a connected, reader-selectable map rather than an isolated page neighborhood.
+- Reader fallback: included a collapsed, categorized directory for narrow screens and readers who prefer text navigation; described graph edges as conceptual and navigational rather than risk, priority or economic weights.
+- Presentation: added page-scoped desktop styling that restores and enlarges the native Obsidian Publish graph only when the `Site Navigator` page is open; no global table, sidebar or reading-width behavior changed.
+- Navigation: added the Site Navigator to the public welcome page and private internal catalog.
+- Publish safety: the redundant check detected that the parent `MD-wiki` vault had recreated the same Publish identity; preserved that configuration as `publish.json.disabled-20260811-site-navigator` before deployment so prefixed duplicate paths could not return.
+- Evidence integrity: no company, policy, transaction, legal, market, performance or source claim changed; no raw source, source count or immutable snapshot changed.
+- Verification: complete lint passed with 61 Markdown files, 48 wiki pages, 921 active wikilinks, 27 tables, 44 external links, 14 published diagram embeds, nine SVGs and 18 raw sources; 0 errors and 0 warnings. Obsidian published the new page, welcome-page link and stylesheet; the live audit found 38 expected and 38 remote files with 0 missing and 0 unexpected paths. Rendered checks confirmed a 420-pixel interactive graph panel at a 1280-pixel viewport and the linked-directory fallback with the graph hidden at 1000 pixels.

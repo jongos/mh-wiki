@@ -2,7 +2,7 @@
 title: Welcome to the MediaHedge Knowledgebase
 type: operations
 status: current
-updated: 2026-08-10
+updated: 2026-08-11
 source_count: 17
 publish: true
 description: A reader-friendly guide to MediaHedge's approach to film and television finance.
@@ -29,6 +29,7 @@ You do not need to be a film-finance specialist. Start with the question you car
 - **Evaluating an investment?** Follow the [[wiki/syntheses/financier-diligence-route|Financier's Guide]].
 - **Mapping the market?** Compare participants in the [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]].
 - **Looking for a term?** Open the [[wiki/glossary|Plain-English Glossary]].
+- **Prefer a visual route?** Explore the connected knowledgebase in the [[wiki/syntheses/site-navigator|Site Navigator]].
 
 ## Questions a Financing Partner May Ask
 
