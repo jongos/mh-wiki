@@ -55,7 +55,7 @@ $lintOutput = @(& powershell.exe -NoProfile -ExecutionPolicy Bypass -File $lintS
 if ($LASTEXITCODE -ne 0) { throw "Wiki lint failed:`n$($lintOutput | Out-String)" }
 
 $credentialPattern = '(gh[pousr]_[A-Za-z0-9_]{20,}|github_pat_[A-Za-z0-9_]{20,}|AKIA[0-9A-Z]{16}|-----BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY-----|sk-[A-Za-z0-9]{20,}|xox[baprs]-[A-Za-z0-9-]{10,})'
-$credentialMatches = [System.Collections.Generic.List[string]]::new()
+$credentialLocations = [System.Collections.Generic.List[string]]::new()
 $commits = @(Invoke-Git -Arguments @('-C', $vault, 'rev-list', '--all') -FailureMessage 'Unable to inventory commit history for credential scanning')
 foreach ($commit in $commits) {
     $oldErrorActionPreference = $ErrorActionPreference
@@ -67,13 +67,22 @@ foreach ($commit in $commits) {
         $ErrorActionPreference = $oldErrorActionPreference
     }
     if ($grepExitCode -eq 0) {
-        foreach ($match in $found) { $credentialMatches.Add([string]$match) }
+        $shortCommit = $commit.Substring(0, [Math]::Min(12, $commit.Length))
+        foreach ($match in $found) {
+            $location = [string]$match
+            if ($location -match '^[0-9a-f]{40,64}:(?<path>.*?):(?<line>\d+):') {
+                $credentialLocations.Add("$shortCommit $($Matches['path']):$($Matches['line'])")
+            } else {
+                $credentialLocations.Add("$shortCommit (location unavailable)")
+            }
+        }
     } elseif ($grepExitCode -ne 1) {
         throw "Credential scan failed at commit $commit"
     }
 }
-if ($credentialMatches.Count -gt 0) {
-    throw "Possible credential or private-key material detected. Nothing was pushed.`n$($credentialMatches | Out-String)"
+if ($credentialLocations.Count -gt 0) {
+    $redactedLocations = @($credentialLocations | Sort-Object -Unique)
+    throw "Possible credential or private-key material detected. Values are redacted and nothing was pushed. Review these locations:`n$($redactedLocations | Out-String)"
 }
 
 $archiveScript = Join-Path $vault 'tools\wiki-archive.ps1'

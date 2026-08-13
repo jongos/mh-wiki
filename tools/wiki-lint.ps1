@@ -42,6 +42,22 @@ function Read-Utf8Text {
     }
 }
 
+function Get-FrontmatterValue {
+    param(
+        [string]$Frontmatter,
+        [string]$Name
+    )
+
+    $match = [regex]::Match($Frontmatter, "(?m)^$([regex]::Escape($Name)):\s*([^\r\n]*)$")
+    if (-not $match.Success) { return $null }
+    $value = $match.Groups[1].Value.Trim()
+    if (($value.StartsWith('"') -and $value.EndsWith('"')) -or
+        ($value.StartsWith("'") -and $value.EndsWith("'"))) {
+        return $value.Substring(1, $value.Length - 2)
+    }
+    return $value
+}
+
 function Test-PublishVaultConfiguration {
     $obsidianDirectory = Join-Path $script:vault '.obsidian'
     $publishConfigPath = Join-Path $obsidianDirectory 'publish.json'
@@ -672,6 +688,42 @@ $requiredKeys = @('title', 'type', 'status', 'updated', 'source_count', 'publish
 $allowedTypes = @('overview', 'source', 'concept', 'entity', 'synthesis', 'glossary', 'operations')
 $allowedStatuses = @('current', 'needs-review', 'superseded', 'seed')
 $wikiFiles = Get-ChildItem -LiteralPath (Join-Path $vault 'wiki') -Recurse -File -Filter '*.md'
+$manifestPath = Join-Path $vault 'raw\manifest.md'
+$manifestRows = [System.Collections.Generic.List[object]]::new()
+if (-not $contentByFile.ContainsKey($manifestPath)) {
+    $errors.Add('Missing raw source manifest: raw/manifest.md')
+} else {
+    $manifestContent = $contentByFile[$manifestPath]
+    foreach ($line in $manifestContent -split '\r?\n') {
+        $rowMatch = [regex]::Match(
+            $line,
+            '^\|\s*\[\[(?<source>raw/sources/.+?)\\\|[^\]]+\]\]\s*\|\s*`(?<hash>[A-Fa-f0-9]{64})`\s*\|[^|]*\|\s*\[\[(?<page>wiki/sources/[^\]|]+)(?:\\\|[^\]]+)?\]\]\s*\|\s*$'
+        )
+        if (-not $rowMatch.Success) {
+            if ($line -match '^\|\s*\[\[') {
+                $errors.Add("Malformed raw source manifest row: $line")
+            }
+            continue
+        }
+        $manifestRows.Add([pscustomobject]@{
+            Source = $rowMatch.Groups['source'].Value
+            Hash = $rowMatch.Groups['hash'].Value.ToUpperInvariant()
+            Page = $rowMatch.Groups['page'].Value
+        })
+    }
+    if ($manifestRows.Count -eq 0) {
+        $errors.Add('Raw source manifest contains no parseable source registry rows')
+    }
+    if ($manifestContent -notmatch '(?m)^source_count:\s*(\d+)\s*$' -or [int]$Matches[1] -ne $manifestRows.Count) {
+        $errors.Add("Raw source manifest source_count does not equal its $($manifestRows.Count) registry rows")
+    }
+    foreach ($duplicate in $manifestRows | Group-Object Source | Where-Object { $_.Count -gt 1 }) {
+        $errors.Add("Raw source manifest contains duplicate source rows: $($duplicate.Name)")
+    }
+    foreach ($duplicate in $manifestRows | Group-Object Page | Where-Object { $_.Count -gt 1 }) {
+        $errors.Add("Raw source manifest contains duplicate source-page rows: $($duplicate.Name)")
+    }
+}
 
 foreach ($file in $wikiFiles) {
     $relative = $relativeByFile[$file.FullName]
@@ -741,11 +793,48 @@ foreach ($file in $wikiFiles) {
         }
     }
     if ($relative -like 'wiki/sources/*') {
-        if ($frontmatter -notmatch '(?m)^source_file:') {
-            $errors.Add("Source page missing source_file: $relative")
+        $sourceFileValue = Get-FrontmatterValue -Frontmatter $frontmatter -Name 'source_file'
+        $sourceHashValue = Get-FrontmatterValue -Frontmatter $frontmatter -Name 'source_hash'
+        $sourceTargetMatch = if ($null -ne $sourceFileValue) {
+            [regex]::Match($sourceFileValue, '^\[\[(raw/sources/[^\]|#]+)(?:\|[^\]]+)?\]\]$')
+        } else {
+            $null
         }
-        if ($frontmatter -notmatch '(?m)^source_hash:\s*[A-Fa-f0-9]{64}\s*$') {
+        if ($null -eq $sourceFileValue) {
+            $errors.Add("Source page missing source_file: $relative")
+        } elseif ($null -eq $sourceTargetMatch -or -not $sourceTargetMatch.Success) {
+            $errors.Add("Source page source_file must be one exact raw/sources wikilink: $relative")
+        }
+        if ($null -eq $sourceHashValue -or $sourceHashValue -notmatch '^[A-Fa-f0-9]{64}$') {
             $errors.Add("Source page has missing or invalid SHA-256: $relative")
+        }
+        if ($null -ne $sourceTargetMatch -and $sourceTargetMatch.Success -and
+            $null -ne $sourceHashValue -and $sourceHashValue -match '^[A-Fa-f0-9]{64}$') {
+            $sourceTarget = $sourceTargetMatch.Groups[1].Value
+            $sourceDiskPath = Join-Path $vault $sourceTarget.Replace('/', [IO.Path]::DirectorySeparatorChar)
+            if (-not (Test-Path -LiteralPath $sourceDiskPath -PathType Leaf)) {
+                $errors.Add("Source page references a missing raw snapshot: $relative -> $sourceTarget")
+            } else {
+                $resolvedSourcePath = (Resolve-Path -LiteralPath $sourceDiskPath).Path
+                $resolvedSourceRelative = $relativeByFile[$resolvedSourcePath]
+                if ($resolvedSourceRelative -cne $sourceTarget) {
+                    $errors.Add("Source page raw-file path casing differs from the snapshot: $relative -> $sourceTarget versus $resolvedSourceRelative")
+                }
+                $calculatedHash = (Get-FileHash -LiteralPath $resolvedSourcePath -Algorithm SHA256).Hash.ToUpperInvariant()
+                if ($sourceHashValue.ToUpperInvariant() -ne $calculatedHash) {
+                    $errors.Add("Source page hash does not match its raw snapshot: $relative -> $sourceTarget")
+                }
+                $sourcePageTarget = $relative.Substring(0, $relative.Length - 3)
+                $matchingRows = @($manifestRows | Where-Object {
+                    $_.Source -ceq $sourceTarget -and $_.Page -ceq $sourcePageTarget
+                })
+                if ($matchingRows.Count -ne 1) {
+                    $errors.Add("Source page does not have one exact manifest lineage row: $relative -> $sourceTarget")
+                } elseif ($matchingRows[0].Hash -ne $calculatedHash -or
+                    $matchingRows[0].Hash -ne $sourceHashValue.ToUpperInvariant()) {
+                    $errors.Add("Source page, raw snapshot and manifest hashes do not agree: $relative -> $sourceTarget")
+                }
+            }
         }
         if ($frontmatter -notmatch '(?m)^source_count:\s*1\s*$') {
             $errors.Add("Source page source_count must be 1: $relative")
@@ -896,6 +985,38 @@ foreach ($privateRelative in $privateRootFiles) {
     }
 }
 
+$requiredToolPatterns = @{
+    'publish-audit.ps1' = @('Get-RemoteFileHash', 'publish-browser-audit.ps1')
+    'publish-browser-audit.ps1' = @('search-results', 'Financing Essentials', 'footerHasNavigator')
+    'wiki-archive.ps1' = @("fetch origin 'refs/heads/*:refs/heads/*'", 'Preserved archive-only refs')
+    'github-sync.ps1' = @('credentialLocations', 'Values are redacted')
+}
+foreach ($toolName in $requiredToolPatterns.Keys) {
+    $toolPath = Join-Path $vault (Join-Path 'tools' $toolName)
+    if (-not (Test-Path -LiteralPath $toolPath -PathType Leaf)) {
+        $errors.Add("Missing required maintenance tool: tools/$toolName")
+        continue
+    }
+    $toolContent = Read-Utf8Text -Path $toolPath
+    foreach ($requiredPattern in $requiredToolPatterns[$toolName]) {
+        if ($toolContent -notmatch [regex]::Escape($requiredPattern)) {
+            $errors.Add("tools/$toolName is missing required integrity support: $requiredPattern")
+        }
+    }
+}
+$archiveToolContent = Read-Utf8Text -Path (Join-Path $vault 'tools\wiki-archive.ps1')
+if ($archiveToolContent -match 'fetch\s+--prune' -or $archiveToolContent -match "fetch[^\r\n]*'\+refs/") {
+    $errors.Add('tools/wiki-archive.ps1 must not prune or force-update recovery refs')
+}
+foreach ($toolFile in Get-ChildItem -LiteralPath (Join-Path $vault 'tools') -File -Filter '*.ps1') {
+    $tokens = $null
+    $parseErrors = $null
+    [void][Management.Automation.Language.Parser]::ParseFile($toolFile.FullName, [ref]$tokens, [ref]$parseErrors)
+    foreach ($parseError in $parseErrors) {
+        $errors.Add("PowerShell parse error in tools/$($toolFile.Name): $($parseError.Message)")
+    }
+}
+
 foreach ($template in Get-ChildItem -LiteralPath (Join-Path $vault 'templates') -File -Filter '*.md') {
     $templateContent = $contentByFile[$template.FullName]
     if ($templateContent -notmatch '(?m)^publish:\s*false\s*$') {
@@ -1037,15 +1158,21 @@ if (-not (Test-Path -LiteralPath $diagramDirectory -PathType Container)) {
 }
 
 $sourceSnapshots = Get-ChildItem -LiteralPath (Join-Path $vault 'raw\sources') -File
-$manifest = $contentByFile[(Join-Path $vault 'raw\manifest.md')]
 foreach ($source in $sourceSnapshots) {
-    $hash = (Get-FileHash -LiteralPath $source.FullName -Algorithm SHA256).Hash
-    if ($manifest -notmatch [regex]::Escape($source.Name)) {
-        $errors.Add("Raw source missing from manifest: $($source.Name)")
+    $sourceTarget = 'raw/sources/' + $source.Name
+    $matchingRows = @($manifestRows | Where-Object { $_.Source -ceq $sourceTarget })
+    if ($matchingRows.Count -ne 1) {
+        $errors.Add("Raw source must have one exact manifest row: $($source.Name) (found $($matchingRows.Count))")
+        continue
     }
-    if ($manifest -notmatch [regex]::Escape($hash)) {
-        $errors.Add("Raw source hash missing or changed: $($source.Name)")
+    $hash = (Get-FileHash -LiteralPath $source.FullName -Algorithm SHA256).Hash.ToUpperInvariant()
+    if ($matchingRows[0].Hash -ne $hash) {
+        $errors.Add("Raw source hash does not match its manifest row: $($source.Name)")
     }
+}
+$sourcePages = @(Get-ChildItem -LiteralPath (Join-Path $vault 'wiki\sources') -File -Filter '*.md')
+if ($manifestRows.Count -ne $sourceSnapshots.Count -or $manifestRows.Count -ne $sourcePages.Count) {
+    $errors.Add("Source registry cardinality differs: $($sourceSnapshots.Count) raw snapshots, $($sourcePages.Count) source pages and $($manifestRows.Count) manifest rows")
 }
 
 Write-Output "MediaHedge wiki lint"

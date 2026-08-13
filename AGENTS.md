@@ -211,12 +211,13 @@ Periodically check for:
 
 Run `tools\wiki-lint.cmd` on Windows (`powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\tools\wiki-lint.ps1` is the explicit equivalent), then perform a semantic review. Mechanical success is not proof that the knowledge is correct.
 
-After an Obsidian Publish deployment, run `tools\publish-audit.cmd`. It compares the live server inventory with the local `publish: true` notes, their referenced assets, root `publish.css` and root `publish.js`; repair every missing or unexpected path before treating the site as healthy.
+After an Obsidian Publish deployment, run `tools\publish-audit.cmd`. It compares the live server inventory with the local `publish: true` notes and referenced assets, requires deployed `publish.css` and `publish.js` to match their local SHA-256 values, checks representative routes and exercises real type-ahead search, reader-facing navigation labels and Site Navigator footer behavior in an isolated headless browser. Repair every missing, unexpected or behaviorally broken result before treating the site as healthy.
 
 ## Version Control and Recovery
 
 - Treat all uncommitted changes as user-owned. Inspect them before editing, preserve them and never discard them to simplify an operation.
 - Keep recovery history additive. Do not amend, rebase, force-update, delete recovery tags or use destructive resets during ordinary wiki maintenance.
+- The independent mirror must fetch without pruning or force-updating refs. Current source refs must match exactly, while archive-only refs left by later source deletion remain preserved and valid for recovery.
 - After a completed, linted operation, create a descriptive commit. Use annotated `wiki-v*` tags for meaningful reader, evidence, architecture or deployment milestones.
 - Use `VERSION-HISTORY.md` as the human recovery guide and `tools\wiki-history.cmd` as the always-current commit-and-tag index.
 - After each completed commit, run `tools\wiki-archive.cmd` to update the independent bare mirror. At major milestones, use `tools\wiki-archive.cmd -CreateBundle` to create a timestamped immutable full-history bundle.
@@ -230,6 +231,7 @@ After an Obsidian Publish deployment, run `tools\publish-audit.cmd`. It compares
 - The repository is intentionally public. The user explicitly approved publishing the complete tracked wiki and its additive history; credentials, private keys and other authentication material remain prohibited.
 - Every completed Codex-authored change to tracked vault files must be logged, linted, committed, copied to the independent OneDrive mirror and pushed to `origin/main` before the operation is reported complete.
 - Run `tools\github-sync.cmd` after the completed commit. It must refuse a dirty tree, a branch other than `main`, a missing or mismatched remote, a credential-pattern finding, a lint failure, an archive failure or a remote verification mismatch.
+- Credential scans may report only a redacted commit, filename and line location; never echo a detected token, key or matching source line into terminal or task output.
 - Push annotated milestone tags with the associated completed operation. Never force-push, rewrite public history or delete public recovery tags during ordinary maintenance.
 - If GitHub authentication or network access is unavailable, preserve the local commit and mirror, report the exact unsynchronized commit and do not imply that publication completed.
 

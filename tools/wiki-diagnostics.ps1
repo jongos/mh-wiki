@@ -74,6 +74,20 @@ function Get-RefSnapshot {
     )
 }
 
+function ConvertTo-RefMap {
+    param([string[]]$Snapshot)
+
+    $map = @{}
+    foreach ($record in $Snapshot) {
+        $parts = [string]$record -split ' ', 2
+        if ($parts.Count -ne 2 -or [string]::IsNullOrWhiteSpace($parts[0]) -or $parts[1] -notmatch '^[0-9a-f]{40,64}$') {
+            throw "Malformed Git ref inventory record: $record"
+        }
+        $map[$parts[0]] = $parts[1]
+    }
+    return $map
+}
+
 function Get-TrackedIndexDigest {
     param([string]$Repository)
 
@@ -123,8 +137,9 @@ $sourceRefs = @()
 try {
     $sourceHead = (Invoke-Git -Arguments @('-C', $vault, 'rev-parse', 'refs/heads/main') -FailureMessage 'Unable to resolve source main').Trim()
     $sourceRefs = @(Get-RefSnapshot -Repository $vault)
-    if ($sourceRefs.Count -lt 2) { throw 'source repository has no milestone tags' }
-    Add-Pass "source main and $($sourceRefs.Count - 1) milestone tags resolve"
+    $sourceTagRefs = @($sourceRefs | Where-Object { $_ -like 'refs/tags/*' })
+    if ($sourceTagRefs.Count -eq 0) { throw 'source repository has no milestone tags' }
+    Add-Pass "source main and $($sourceTagRefs.Count) milestone tag refs resolve"
 } catch { Add-Failure $_.Exception.Message }
 
 try {
@@ -150,13 +165,21 @@ try {
 try {
     $archiveHead = (Invoke-Git -Arguments @("--git-dir=$ArchiveGit", 'rev-parse', 'refs/heads/main') -FailureMessage 'Unable to resolve archive main').Trim()
     $archiveRefs = @(Get-RefSnapshot -Repository $ArchiveGit -Bare)
-    $refDifferences = @(Compare-Object -ReferenceObject $sourceRefs -DifferenceObject $archiveRefs)
-    if ($refDifferences.Count -gt 0) { throw "source and archive branch/tag refs differ:`n$($refDifferences | Out-String)" }
+    $sourceRefMap = ConvertTo-RefMap -Snapshot $sourceRefs
+    $archiveRefMap = ConvertTo-RefMap -Snapshot $archiveRefs
+    foreach ($refName in $sourceRefMap.Keys) {
+        if (-not $archiveRefMap.ContainsKey($refName)) { throw "archive is missing current source ref: $refName" }
+        if ($archiveRefMap[$refName] -ne $sourceRefMap[$refName]) { throw "source and archive ref differ: $refName" }
+    }
+    $archiveOnlyRefs = @($archiveRefMap.Keys | Where-Object { -not $sourceRefMap.ContainsKey($_) } | Sort-Object)
+    foreach ($refName in $archiveOnlyRefs) {
+        [void](Invoke-Git -Arguments @("--git-dir=$ArchiveGit", 'cat-file', '-e', "$($archiveRefMap[$refName])^{object}") -FailureMessage "Archive-only recovery ref is invalid: $refName")
+    }
     if ($sourceHead -ne $archiveHead) { throw "source and archive main differ: $sourceHead versus $archiveHead" }
     $sourceTree = (Invoke-Git -Arguments @('-C', $vault, 'rev-parse', 'refs/heads/main^{tree}') -FailureMessage 'Unable to resolve source tree').Trim()
     $archiveTree = (Invoke-Git -Arguments @("--git-dir=$ArchiveGit", 'rev-parse', 'refs/heads/main^{tree}') -FailureMessage 'Unable to resolve archive tree').Trim()
     if ($sourceTree -ne $archiveTree) { throw "source and archive tree objects differ: $sourceTree versus $archiveTree" }
-    Add-Pass 'source and archive have identical branch refs, tag refs, main commit and main tree'
+    Add-Pass "archive contains every current source ref, preserves $($archiveOnlyRefs.Count) archive-only refs, and matches main commit and tree"
 } catch { Add-Failure $_.Exception.Message }
 
 $bundles = @()

@@ -58,6 +58,36 @@ function Test-BundleChecksum {
     }
 }
 
+function Get-RefSnapshot {
+    param(
+        [string]$Repository,
+        [switch]$Bare
+    )
+
+    $arguments = if ($Bare) {
+        @("--git-dir=$Repository", 'for-each-ref', '--format=%(refname) %(objectname)', 'refs/heads', 'refs/tags')
+    } else {
+        @('-C', $Repository, 'for-each-ref', '--format=%(refname) %(objectname)', 'refs/heads', 'refs/tags')
+    }
+    $snapshot = @(& $script:git @arguments | Where-Object { -not [string]::IsNullOrWhiteSpace([string]$_) } | Sort-Object)
+    if ($LASTEXITCODE -ne 0) { throw "Unable to inventory branches and tags in $Repository" }
+    return $snapshot
+}
+
+function ConvertTo-RefMap {
+    param([string[]]$Snapshot)
+
+    $map = @{}
+    foreach ($record in $Snapshot) {
+        $parts = [string]$record -split ' ', 2
+        if ($parts.Count -ne 2 -or [string]::IsNullOrWhiteSpace($parts[0]) -or $parts[1] -notmatch '^[0-9a-f]{40,64}$') {
+            throw "Malformed Git ref inventory record: $record"
+        }
+        $map[$parts[0]] = $parts[1]
+    }
+    return $map
+}
+
 $inside = & $git -C $vault rev-parse --is-inside-work-tree
 if ($LASTEXITCODE -ne 0 -or $inside.Trim() -ne 'true') {
     throw "Not a Git working repository: $vault"
@@ -73,6 +103,7 @@ if (-not (Test-Path -LiteralPath $archiveParent -PathType Container)) {
     [void](New-Item -ItemType Directory -Path $archiveParent)
 }
 
+$priorArchiveRefs = @()
 if (-not (Test-Path -LiteralPath $ArchiveGit)) {
     & $git clone --mirror $vault $ArchiveGit
     if ($LASTEXITCODE -ne 0) { throw 'Unable to create the bare archive mirror' }
@@ -85,8 +116,11 @@ if (-not (Test-Path -LiteralPath $ArchiveGit)) {
     if ($LASTEXITCODE -ne 0 -or [IO.Path]::GetFullPath($origin).TrimEnd([char[]]'\/') -ne $vault.TrimEnd([char[]]'\/')) {
         throw "Archive origin does not match the MediaHedge vault: $origin"
     }
-    & $git --git-dir=$ArchiveGit fetch --prune origin '+refs/heads/*:refs/heads/*' '+refs/tags/*:refs/tags/*'
-    if ($LASTEXITCODE -ne 0) { throw 'Unable to update the archive mirror' }
+    $priorArchiveRefs = @(Get-RefSnapshot -Repository $ArchiveGit -Bare)
+    & $git --git-dir=$ArchiveGit fetch origin 'refs/heads/*:refs/heads/*' 'refs/tags/*:refs/tags/*'
+    if ($LASTEXITCODE -ne 0) {
+        throw 'Unable to update the archive mirror without deleting or force-updating recovery refs'
+    }
 }
 
 & $git --git-dir=$ArchiveGit fsck --full --strict
@@ -98,14 +132,29 @@ if ($sourceHead -ne $archiveHead) {
     throw "Archive main does not match the source: $archiveHead versus $sourceHead"
 }
 
-$sourceRefs = @(& $git -C $vault for-each-ref '--format=%(refname) %(objectname)' refs/heads refs/tags | Sort-Object)
-if ($LASTEXITCODE -ne 0) { throw 'Unable to inventory source branches and tags' }
-$archiveRefs = @(& $git --git-dir=$ArchiveGit for-each-ref '--format=%(refname) %(objectname)' refs/heads refs/tags | Sort-Object)
-if ($LASTEXITCODE -ne 0) { throw 'Unable to inventory archive branches and tags' }
-$refDifferences = @(Compare-Object -ReferenceObject $sourceRefs -DifferenceObject $archiveRefs)
-if ($refDifferences.Count -gt 0) {
-    throw "Archive branches or tags do not exactly match the source:`n$($refDifferences | Out-String)"
+$sourceRefs = @(Get-RefSnapshot -Repository $vault)
+$archiveRefs = @(Get-RefSnapshot -Repository $ArchiveGit -Bare)
+$sourceRefMap = ConvertTo-RefMap -Snapshot $sourceRefs
+$archiveRefMap = ConvertTo-RefMap -Snapshot $archiveRefs
+$priorArchiveRefMap = ConvertTo-RefMap -Snapshot $priorArchiveRefs
+
+foreach ($refName in $sourceRefMap.Keys) {
+    if (-not $archiveRefMap.ContainsKey($refName)) {
+        throw "Archive is missing current source ref: $refName"
+    }
+    if ($archiveRefMap[$refName] -ne $sourceRefMap[$refName]) {
+        throw "Archive ref does not match the source: $refName"
+    }
 }
+foreach ($refName in $priorArchiveRefMap.Keys) {
+    if (-not $archiveRefMap.ContainsKey($refName)) {
+        throw "Archive update removed a pre-existing recovery ref: $refName"
+    }
+    if (-not $sourceRefMap.ContainsKey($refName) -and $archiveRefMap[$refName] -ne $priorArchiveRefMap[$refName]) {
+        throw "Archive-only recovery ref changed unexpectedly: $refName"
+    }
+}
+$archiveOnlyRefs = @($archiveRefMap.Keys | Where-Object { -not $sourceRefMap.ContainsKey($_) } | Sort-Object)
 
 $bundlePath = $null
 if ($CreateBundle) {
@@ -138,7 +187,8 @@ Write-Output 'MediaHedge wiki archive updated.'
 Write-Output "Source HEAD: $sourceHead"
 Write-Output "Mirror HEAD: $archiveHead"
 Write-Output "Mirror: $ArchiveGit"
-Write-Output "Verified branches and tags: $($sourceRefs.Count)"
+Write-Output "Verified current source refs: $($sourceRefs.Count)"
+Write-Output "Preserved archive-only refs: $($archiveOnlyRefs.Count)"
 Write-Output "Verified bundles: $bundleCount"
 if ($null -ne $bundlePath) {
     Write-Output "Bundle: $bundlePath"
