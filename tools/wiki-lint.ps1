@@ -48,7 +48,7 @@ function Get-FrontmatterValue {
         [string]$Name
     )
 
-    $match = [regex]::Match($Frontmatter, "(?m)^$([regex]::Escape($Name)):\s*([^\r\n]*)$")
+    $match = [regex]::Match($Frontmatter, "(?m)^$([regex]::Escape($Name)):\s*([^\r\n]*)\r?$")
     if (-not $match.Success) { return $null }
     $value = $match.Groups[1].Value.Trim()
     if (($value.StartsWith('"') -and $value.EndsWith('"')) -or

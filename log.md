@@ -316,3 +316,10 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Maintenance safeguards: the wiki lint now requires the browser audit and the four integrity controls, rejects destructive mirror refspecs and parses every PowerShell maintenance script.
 - Evidence scope: no reader-facing knowledge, company claim, policy, transaction, legal, market, performance, source count, raw source or immutable snapshot changed.
 - Verification: complete lint passed with 61 Markdown files, 48 wiki pages, 951 wikilinks, 27 tables, 44 external links, 14 published diagram embeds, nine SVGs and 18 raw sources; 0 errors and 0 warnings. The production audit found 39 expected and 39 remote files, three healthy representative routes, exact deployed asset hashes and passing live reader behavior. Negative fixtures independently proved lineage mismatch detection, archive-only tag preservation and credential-value redaction.
+
+## [2026-08-13] maintenance | Cross-Platform Restore Lint Repair
+
+- Diagnostic finding: the first deep restore proved that the mirror, commits, tags, tracked index, bundles and checksums were intact, but its restored Windows working tree failed exact source-lineage lint because Git materialized Markdown with CRLF line endings and the new frontmatter helper expected LF at the end of `source_file` and `source_hash` lines.
+- Repair: made exact frontmatter extraction accept both LF and CRLF without weakening path, hash, manifest or cardinality checks.
+- Evidence scope: no reader-facing knowledge, source record, raw source or immutable snapshot changed.
+- Verification: the complete current-vault lint and an isolated CRLF conversion of all 18 source pages both passed with 0 errors and 0 warnings.
