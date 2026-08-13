@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MediaHedge Publish Navigation Fixture</title>
+  <script>
+    window.mhAnimationFrames = 0;
+    const nativeRequestAnimationFrame = window.requestAnimationFrame.bind(window);
+    window.requestAnimationFrame = (callback) => {
+      window.mhAnimationFrames += 1;
+      return nativeRequestAnimationFrame(callback);
+    };
+    window.mhObservedMutations = [];
+    const NativeMutationObserver = window.MutationObserver;
+    window.MutationObserver = class extends NativeMutationObserver {
+      constructor(callback) {
+        super((mutations, observer) => {
+          window.mhObservedMutations.push(...mutations.map((mutation) => ({
+            type: mutation.type,
+            attribute: mutation.attributeName || '',
+            target: mutation.target.className || mutation.target.nodeName
+          })));
+          callback(mutations, observer);
+        });
+      }
+    };
+  </script>
+</head>
+<body>
+  <div class="site-body">
+    <aside class="site-body-left-column">
+      <div class="search-view-outer">
+        <div class="search-view-container">
+          <span class="published-search-icon" aria-hidden="true"></span>
+          <input class="search-bar" value="cash">
+        </div>
+        <div class="search-results">
+          <div class="suggestion-item is-selected">
+            <div class="suggestion-title">cash-control-and-waterfalls</div>
+            <div class="suggestion-note">wiki/concepts</div>
+          </div>
+          <div class="suggestion-item">
+            <div class="suggestion-title">loan-sizing</div>
+            <div class="suggestion-note">wiki/concepts</div>
+          </div>
+        </div>
+      </div>
+      <nav class="nav-view-outer">
+        <div class="tree-item">
+          <div class="tree-item-self mod-root" data-path=""></div>
+          <div class="tree-item-children">
+            <div class="tree-item">
+              <div class="tree-item-self" data-path="MediaHedge Knowledgebase.md">
+                <div class="tree-item-inner"><a href="#home">MediaHedge Knowledgebase</a></div>
+              </div>
+            </div>
+            <div class="tree-item" id="wiki-folder">
+              <div class="tree-item-self mod-collapsible is-clickable" data-path="wiki">
+                <div class="tree-item-icon collapse-icon"></div>
+                <div class="tree-item-inner">wiki</div>
+              </div>
+              <div class="tree-item-children"></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </aside>
+    <main class="site-body-center-column" id="main-content"></main>
+  </div>
+  <script src="../../publish.js"></script>
+</body>
+</html>

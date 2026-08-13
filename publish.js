@@ -3,15 +3,13 @@
 (() => {
   "use strict";
 
+  // BEGIN GENERATED READER LABELS
   const readerLabels = new Map([
     ["MediaHedge Knowledgebase.md", "Welcome & Start Here"],
     ["wiki", "Knowledgebase Library"],
     ["wiki/concepts", "Financing Essentials"],
     ["wiki/entities", "About MediaHedge"],
     ["wiki/syntheses", "Guides & Decision Maps"],
-    ["wiki/evidence-and-limitations.md", "Evidence & Limitations"],
-    ["wiki/glossary.md", "Plain-English Glossary"],
-    ["wiki/overview.md", "How the Lending Model Works"],
     ["wiki/concepts/cash-control-and-waterfalls.md", "Cash Control & Waterfalls"],
     ["wiki/concepts/completion-protection.md", "Completion Protection"],
     ["wiki/concepts/defaults-workouts-and-recoveries.md", "Defaults, Workouts & Recoveries"],
@@ -29,6 +27,9 @@
     ["wiki/concepts/surety-credit-protection.md", "Surety & Credit Protection"],
     ["wiki/concepts/tax-credit-collateral.md", "Tax-Credit Collateral"],
     ["wiki/entities/mediahedge.md", "Who MediaHedge Is"],
+    ["wiki/evidence-and-limitations.md", "Evidence & Limitations"],
+    ["wiki/glossary.md", "Plain-English Glossary"],
+    ["wiki/overview.md", "How the Lending Model Works"],
     ["wiki/syntheses/credit-lifecycle.md", "Film-Finance Credit Lifecycle"],
     ["wiki/syntheses/financier-diligence-route.md", "Financier's Guide"],
     ["wiki/syntheses/media-finance-lending-landscape.md", "Media Finance Lending Landscape"],
@@ -36,9 +37,16 @@
     ["wiki/syntheses/repayment-and-risk-map.md", "Repayment & Risk Map"],
     ["wiki/syntheses/site-navigator.md", "Site Navigator"]
   ]);
+  // END GENERATED READER LABELS
 
   const navigatorPath = "wiki/syntheses/site-navigator.md";
+  const searchListId = "mh-search-suggestions";
+  const searchStatusId = "mh-search-status";
+  const relevantNavigationSelector = ".nav-view-outer, .search-view-outer, .search-view-container, .search-results";
   let updateScheduled = false;
+  let navigationObserver;
+  let layoutObserver;
+  let observedNavigationRoot;
 
   const normalizePath = (path) => (path || "").replaceAll("\\", "/");
 
@@ -52,14 +60,24 @@
   };
 
   const setHighlightedLabel = (element, label, query) => {
+    const normalizedQuery = query || "";
+    if (element.dataset.mhReaderLabel === label &&
+        element.dataset.mhReaderQuery === normalizedQuery) return;
+
+    const rememberRendering = () => {
+      element.dataset.mhReaderLabel = label;
+      element.dataset.mhReaderQuery = normalizedQuery;
+    };
     if (!query || element.textContent === label) {
       if (element.textContent !== label) element.textContent = label;
+      rememberRendering();
       return;
     }
 
     const matchIndex = label.toLocaleLowerCase().indexOf(query.toLocaleLowerCase());
     if (matchIndex < 0) {
       element.textContent = label;
+      rememberRendering();
       return;
     }
 
@@ -71,6 +89,7 @@
       match,
       label.slice(matchIndex + query.length)
     );
+    rememberRendering();
   };
 
   const labelNavigation = () => {
@@ -120,10 +139,11 @@
     if (!home && rootChildren.firstElementChild !== shortcut) rootChildren.prepend(shortcut);
 
     const currentPath = decodeURIComponent(window.location.pathname).replaceAll("+", " ");
-    shortcut.querySelector(".tree-item-self")?.classList.toggle(
-      "mod-active",
-      currentPath.endsWith("/wiki/syntheses/site-navigator")
-    );
+    const shortcutItem = shortcut.querySelector(".tree-item-self");
+    const isNavigatorActive = currentPath.endsWith("/wiki/syntheses/site-navigator");
+    if (shortcutItem && shortcutItem.classList.contains("mod-active") !== isNavigatorActive) {
+      shortcutItem.classList.toggle("mod-active", isNavigatorActive);
+    }
   };
 
   const enhanceSearch = () => {
@@ -139,21 +159,60 @@
       container.prepend(label);
     }
 
+    if (!container.querySelector(`#${searchStatusId}`)) {
+      const status = document.createElement("span");
+      status.id = searchStatusId;
+      status.className = "mh-search-status";
+      status.setAttribute("role", "status");
+      status.setAttribute("aria-live", "polite");
+      status.setAttribute("aria-atomic", "true");
+      container.append(status);
+    }
+
     input.id = "mh-site-search";
     input.placeholder = "Search pages and topics…";
     input.setAttribute("aria-label", "Search the MediaHedge knowledgebase");
     input.setAttribute("aria-autocomplete", "list");
+    input.setAttribute("aria-controls", searchListId);
+    input.setAttribute("aria-describedby", searchStatusId);
+    if (!input.hasAttribute("aria-expanded")) input.setAttribute("aria-expanded", "false");
+    input.setAttribute("aria-haspopup", "listbox");
     input.setAttribute("autocomplete", "off");
     input.setAttribute("role", "combobox");
+
+    if (input.dataset.mhComboboxBound !== "true") {
+      input.dataset.mhComboboxBound = "true";
+      input.addEventListener("input", scheduleReaderNavigation);
+      input.addEventListener("keydown", () => window.setTimeout(scheduleReaderNavigation, 0));
+    }
   };
 
   const enhanceSearchResults = () => {
-    const query = document.querySelector("input.search-bar")?.value.trim() || "";
+    const input = document.querySelector("input.search-bar");
+    const results = document.querySelector(".search-results");
+    const status = document.getElementById(searchStatusId);
+    if (!input) return;
 
-    document.querySelectorAll(".search-results .suggestion-item").forEach((item) => {
+    const query = input.value.trim();
+    const items = [...document.querySelectorAll(".search-results .suggestion-item")];
+    const selectedItem = items.find((item) =>
+      item.matches(".is-selected, .mod-active") || item.contains(document.activeElement)
+    );
+
+    if (results) {
+      results.id = searchListId;
+      results.setAttribute("role", "listbox");
+      results.setAttribute("aria-label", "Search suggestions");
+    }
+
+    items.forEach((item, index) => {
       const title = item.querySelector(".suggestion-title");
       const note = item.querySelector(".suggestion-note");
       if (!title || !note) return;
+
+      item.id = `mh-search-option-${index + 1}`;
+      item.setAttribute("role", "option");
+      item.setAttribute("aria-selected", item === selectedItem ? "true" : "false");
 
       const rawTitle = title.dataset.mhRawTitle || title.textContent.trim();
       const rawPath = note.dataset.mhRawPath || note.textContent.trim();
@@ -168,16 +227,35 @@
 
       const categoryLabel = categoryLabelForPath(rawPath);
       if (categoryLabel && note.textContent !== categoryLabel) note.textContent = categoryLabel;
-      if (categoryLabel) note.classList.add("mh-reader-category");
+      if (categoryLabel && !note.classList.contains("mh-reader-category")) {
+        note.classList.add("mh-reader-category");
+      }
 
       item.querySelectorAll(".suggestion-detail").forEach((detail) => {
         const detailText = detail.textContent.trim();
-        detail.classList.toggle(
-          "mh-technical-search-detail",
-          /(^|\/)assets\//i.test(detailText) || /\.(svg|png|jpe?g|webp)$/i.test(detailText)
-        );
+        const isTechnicalDetail = /(^|\/)assets\//i.test(detailText) || /\.(svg|png|jpe?g|webp)$/i.test(detailText);
+        if (detail.classList.contains("mh-technical-search-detail") !== isTechnicalDetail) {
+          detail.classList.toggle("mh-technical-search-detail", isTechnicalDetail);
+        }
       });
     });
+
+    const isExpanded = query.length > 0 && items.length > 0;
+    input.setAttribute("aria-expanded", String(isExpanded));
+    if (selectedItem?.id) {
+      input.setAttribute("aria-activedescendant", selectedItem.id);
+    } else {
+      input.removeAttribute("aria-activedescendant");
+    }
+
+    if (status) {
+      const announcement = !query
+        ? ""
+        : items.length > 0
+          ? `${items.length} suggestion${items.length === 1 ? "" : "s"} available. Use the up and down arrow keys to review them.`
+          : "No suggestions found.";
+      if (status.textContent !== announcement) status.textContent = announcement;
+    }
   };
 
   const applyReaderNavigation = () => {
@@ -194,12 +272,52 @@
     window.requestAnimationFrame(applyReaderNavigation);
   };
 
-  const start = () => {
-    scheduleReaderNavigation();
-    new MutationObserver(scheduleReaderNavigation).observe(document.body, {
+  const mutationTouchesReaderNavigation = (mutation) => {
+    const target = mutation.target instanceof Element
+      ? mutation.target
+      : mutation.target.parentElement;
+    if (target?.closest(relevantNavigationSelector)) return true;
+
+    return [...mutation.addedNodes, ...mutation.removedNodes].some((node) =>
+      node instanceof Element &&
+      (node.matches(relevantNavigationSelector) || node.querySelector(relevantNavigationSelector))
+    );
+  };
+
+  const getNavigationRoot = () =>
+    document.querySelector(".site-body-left-column") ||
+    document.querySelector(".nav-view-outer")?.parentElement ||
+    document.querySelector(".search-view-outer")?.parentElement;
+
+  const observeReaderNavigation = () => {
+    const navigationRoot = getNavigationRoot();
+    if (!navigationRoot || navigationRoot === observedNavigationRoot) return;
+
+    navigationObserver?.disconnect();
+    observedNavigationRoot = navigationRoot;
+    navigationObserver = new MutationObserver((mutations) => {
+      if (mutations.some(mutationTouchesReaderNavigation)) scheduleReaderNavigation();
+    });
+    navigationObserver.observe(navigationRoot, {
+      attributes: true,
+      attributeFilter: ["class"],
       childList: true,
       subtree: true
     });
+  };
+
+  const start = () => {
+    scheduleReaderNavigation();
+    observeReaderNavigation();
+
+    const layoutRoot = document.querySelector(".site-body") || document.body;
+    layoutObserver = new MutationObserver(() => {
+      if (getNavigationRoot() !== observedNavigationRoot) {
+        observeReaderNavigation();
+        scheduleReaderNavigation();
+      }
+    });
+    layoutObserver.observe(layoutRoot, { childList: true });
   };
 
   if (document.readyState === "loading") {

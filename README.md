@@ -8,6 +8,8 @@ publish: false
 
 # MediaHedge Knowledgebase
 
+[![Wiki integrity](https://github.com/jongos/mh-wiki/actions/workflows/wiki-integrity.yml/badge.svg)](https://github.com/jongos/mh-wiki/actions/workflows/wiki-integrity.yml)
+
 ### Film and Television Finance, Explained as a Credit System
 
 How do you lend against money that may arrive from tax incentives, distribution contracts, controlled accounts, insurance proceeds, or rights that have not yet been sold—while a production is still moving toward completion and delivery?
@@ -64,7 +66,7 @@ This is not a pile of marketing pages. It is designed as a maintained knowledge 
 - **Decision-first:** navigation begins with the questions a financing partner is likely to ask.
 - **Explicit about uncertainty:** policy status, missing authority, inference, and open questions remain visible.
 - **Designed for distinctions:** eligibility is not valuation; cash direction is not account control; insurance is not a completion guaranty; stated coupon is not realized return.
-- **Recoverable and auditable:** additive Git history, milestone tags, an independent mirror, and checksum-protected bundles preserve prior generations.
+- **Recoverable and auditable:** Windows regression checks, additive Git history, milestone tags, an independent mirror, and checksum-protected bundles preserve prior generations.
 
 ## Explore It in Obsidian
 

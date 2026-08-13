@@ -1,0 +1,34 @@
+{
+  "home_path": "MediaHedge Knowledgebase.md",
+  "folder_labels": [
+    {
+      "path": "wiki",
+      "label": "Knowledgebase Library"
+    },
+    {
+      "path": "wiki/concepts",
+      "label": "Financing Essentials"
+    },
+    {
+      "path": "wiki/entities",
+      "label": "About MediaHedge"
+    },
+    {
+      "path": "wiki/syntheses",
+      "label": "Guides & Decision Maps"
+    }
+  ],
+  "label_overrides": {
+    "MediaHedge Knowledgebase.md": "Welcome & Start Here",
+    "wiki/concepts/cash-control-and-waterfalls.md": "Cash Control & Waterfalls",
+    "wiki/concepts/defaults-workouts-and-recoveries.md": "Defaults, Workouts & Recoveries",
+    "wiki/concepts/monitoring-and-servicing.md": "Monitoring & Servicing",
+    "wiki/concepts/surety-credit-protection.md": "Surety & Credit Protection",
+    "wiki/entities/mediahedge.md": "Who MediaHedge Is",
+    "wiki/evidence-and-limitations.md": "Evidence & Limitations",
+    "wiki/glossary.md": "Plain-English Glossary",
+    "wiki/overview.md": "How the Lending Model Works",
+    "wiki/syntheses/policy-rails-and-control-matrix.md": "Policy & Control Guide",
+    "wiki/syntheses/repayment-and-risk-map.md": "Repayment & Risk Map"
+  }
+}

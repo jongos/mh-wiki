@@ -1,0 +1,32 @@
+name: Wiki integrity
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wiki-integrity-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  windows-regression-suite:
+    name: Windows regression suite
+    runs-on: windows-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out the complete recovery history
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Run wiki, recovery and reader-interface tests
+        shell: powershell
+        run: .\tools\wiki-test.cmd

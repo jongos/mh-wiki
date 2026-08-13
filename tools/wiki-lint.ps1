@@ -987,7 +987,11 @@ foreach ($privateRelative in $privateRootFiles) {
 
 $requiredToolPatterns = @{
     'publish-audit.ps1' = @('Get-RemoteFileHash', 'publish-browser-audit.ps1')
-    'publish-browser-audit.ps1' = @('search-results', 'Financing Essentials', 'footerHasNavigator')
+    'browser-audit-lib.ps1' = @('Start-BrowserAuditSession', 'Stop-BrowserAuditSession')
+    'generate-publish-navigation.ps1' = @('BEGIN GENERATED READER LABELS', 'label_overrides', 'publish: true notes')
+    'publish-browser-audit.ps1' = @('accessibleCombobox', 'accessibleListbox', 'announcedResults')
+    'publish-ui-fixture-audit.ps1' = @('aria-activedescendant', 'mhAnimationFrames', 'Financing Essentials')
+    'wiki-test.ps1' = @('navigation-drift', 'lineage-mismatch', 'archive-additivity', 'credential-redaction')
     'wiki-archive.ps1' = @("fetch origin 'refs/heads/*:refs/heads/*'", 'Preserved archive-only refs')
     'github-sync.ps1' = @('credentialLocations', 'Values are redacted')
 }
@@ -1008,12 +1012,46 @@ $archiveToolContent = Read-Utf8Text -Path (Join-Path $vault 'tools\wiki-archive.
 if ($archiveToolContent -match 'fetch\s+--prune' -or $archiveToolContent -match "fetch[^\r\n]*'\+refs/") {
     $errors.Add('tools/wiki-archive.ps1 must not prune or force-update recovery refs')
 }
+$navigationConfigPath = Join-Path $vault 'tools\publish-navigation.json'
+if (-not (Test-Path -LiteralPath $navigationConfigPath -PathType Leaf)) {
+    $errors.Add('Missing generated-navigation configuration: tools/publish-navigation.json')
+} else {
+    try {
+        [void]((Read-Utf8Text -Path $navigationConfigPath) | ConvertFrom-Json)
+    } catch {
+        $errors.Add("Invalid tools/publish-navigation.json: $($_.Exception.Message)")
+    }
+}
+$generatorOutput = @()
+$savedErrorActionPreference = $ErrorActionPreference
+try {
+    $ErrorActionPreference = 'Continue'
+    $generatorOutput = @(& powershell.exe -NoProfile -ExecutionPolicy Bypass -File (Join-Path $vault 'tools\generate-publish-navigation.ps1') -VaultRoot $vault -Check 2>&1)
+    $generatorExitCode = $LASTEXITCODE
+} finally {
+    $ErrorActionPreference = $savedErrorActionPreference
+}
+if ($generatorExitCode -ne 0) {
+    $errors.Add("Generated reader-navigation metadata is stale or invalid: $($generatorOutput | Out-String)")
+}
 foreach ($toolFile in Get-ChildItem -LiteralPath (Join-Path $vault 'tools') -File -Filter '*.ps1') {
     $tokens = $null
     $parseErrors = $null
     [void][Management.Automation.Language.Parser]::ParseFile($toolFile.FullName, [ref]$tokens, [ref]$parseErrors)
     foreach ($parseError in $parseErrors) {
         $errors.Add("PowerShell parse error in tools/$($toolFile.Name): $($parseError.Message)")
+    }
+}
+
+$workflowPath = Join-Path $vault '.github\workflows\wiki-integrity.yml'
+if (-not (Test-Path -LiteralPath $workflowPath -PathType Leaf)) {
+    $errors.Add('Missing Windows integrity workflow: .github/workflows/wiki-integrity.yml')
+} else {
+    $workflowContent = Read-Utf8Text -Path $workflowPath
+    foreach ($requiredPattern in @('runs-on: windows-latest', 'permissions:', 'contents: read', 'persist-credentials: false', '.\tools\wiki-test.cmd')) {
+        if ($workflowContent -notmatch [regex]::Escape($requiredPattern)) {
+            $errors.Add("Windows integrity workflow is missing required safety or test support: $requiredPattern")
+        }
     }
 }
 
@@ -1058,6 +1096,7 @@ if (-not (Test-Path -LiteralPath $publishCssPath -PathType Leaf)) {
         'width: 760px',
         '.table-wrapper',
         '.callout[data-callout=',
+        '.mh-search-status',
         ':focus-visible'
     )
     foreach ($requiredPattern in $requiredCssPatterns) {
@@ -1074,7 +1113,12 @@ if (-not (Test-Path -LiteralPath $publishJsPath -PathType Leaf)) {
     $publishJs = Read-Utf8Text -Path $publishJsPath
     $requiredJsPatterns = @(
         'Search the Knowledgebase',
+        'BEGIN GENERATED READER LABELS',
         'MutationObserver',
+        'aria-controls',
+        'aria-activedescendant',
+        'role", "listbox',
+        'getNavigationRoot',
         'wiki/syntheses/site-navigator.md',
         'Financing Essentials',
         'Guides & Decision Maps'
@@ -1083,6 +1127,9 @@ if (-not (Test-Path -LiteralPath $publishJsPath -PathType Leaf)) {
         if ($publishJs -notmatch [regex]::Escape($requiredPattern)) {
             $errors.Add("publish.js is missing required reader-navigation support: $requiredPattern")
         }
+    }
+    if ($publishJs -match 'observe\(document\.body') {
+        $errors.Add('publish.js must not observe the entire document body for reader-navigation changes')
     }
 }
 

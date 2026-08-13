@@ -125,6 +125,7 @@ Quantitative policy rails must show their source and effective date when availab
 - Every durable concept page should link back to the home note, the financier diligence route and the full credit lifecycle.
 - Keep source summaries available privately for traceability, but do not expose source registries, hashes, raw filenames or maintenance instructions in public pages.
 - Put material evidence limitations near decision guidance, not only in the operations register.
+- Reader labels in `publish.js` are generated from every `publish: true` note plus the deliberate overrides in `tools\publish-navigation.json`. After adding, renaming, retitling or changing the publication status of a reader page, run `tools\generate-publish-navigation.cmd`; never hand-edit the generated label block.
 
 ## Reader presentation
 
@@ -140,6 +141,7 @@ Quantitative policy rails must show their source and effective date when availab
 - Use copyrighted film stills, celebrity images, posters, logos and quotations only when relevance and publication rights are documented. Do not imply endorsement; prefer original visuals when rights are uncertain.
 - Add external links selectively, use HTTPS and prioritize current government, regulatory, official program and primary sources. Identify general context as context, and do not let an external link silently change MediaHedge policy or transaction-specific conclusions.
 - Maintain readable contrast, visible keyboard focus, responsive images and mobile-safe tables in `publish.css`; do not rely on color alone to carry meaning.
+- Keep site search aligned with the ARIA combobox/listbox pattern, including announced result counts and active-option relationships. Observe only the reader-navigation region for dynamic relabeling; do not attach an unfiltered subtree observer to the full document body.
 
 ## Ingest workflow
 
@@ -209,7 +211,7 @@ Periodically check for:
 - important ideas mentioned repeatedly but lacking a durable page;
 - research gaps that could be resolved with an authoritative source.
 
-Run `tools\wiki-lint.cmd` on Windows (`powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\tools\wiki-lint.ps1` is the explicit equivalent), then perform a semantic review. Mechanical success is not proof that the knowledge is correct.
+Run `tools\wiki-test.cmd` on Windows before a completed code or architecture change. It includes generated-navigation, lint, JavaScript, browser-interface, CRLF, source-lineage, additive-archive and credential-redaction regression checks. Run `tools\wiki-lint.cmd` for faster content-only iteration, then perform a semantic review. Mechanical success is not proof that the knowledge is correct.
 
 After an Obsidian Publish deployment, run `tools\publish-audit.cmd`. It compares the live server inventory with the local `publish: true` notes and referenced assets, requires deployed `publish.css` and `publish.js` to match their local SHA-256 values, checks representative routes and exercises real type-ahead search, reader-facing navigation labels and Site Navigator footer behavior in an isolated headless browser. Repair every missing, unexpected or behaviorally broken result before treating the site as healthy.
 
@@ -232,6 +234,7 @@ After an Obsidian Publish deployment, run `tools\publish-audit.cmd`. It compares
 - Every completed Codex-authored change to tracked vault files must be logged, linted, committed, copied to the independent OneDrive mirror and pushed to `origin/main` before the operation is reported complete.
 - Run `tools\github-sync.cmd` after the completed commit. It must refuse a dirty tree, a branch other than `main`, a missing or mismatched remote, a credential-pattern finding, a lint failure, an archive failure or a remote verification mismatch.
 - Credential scans may report only a redacted commit, filename and line location; never echo a detected token, key or matching source line into terminal or task output.
+- Keep `.github/workflows/wiki-integrity.yml` enabled on `main` and pull requests. A completed code or architecture change must pass its Windows regression suite as well as local verification.
 - Push annotated milestone tags with the associated completed operation. Never force-push, rewrite public history or delete public recovery tags during ordinary maintenance.
 - If GitHub authentication or network access is unavailable, preserve the local commit and mirror, report the exact unsynchronized commit and do not imply that publication completed.
 

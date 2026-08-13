@@ -323,3 +323,13 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Repair: made exact frontmatter extraction accept both LF and CRLF without weakening path, hash, manifest or cardinality checks.
 - Evidence scope: no reader-facing knowledge, source record, raw source or immutable snapshot changed.
 - Verification: the complete current-vault lint and an isolated CRLF conversion of all 18 source pages both passed with 0 errors and 0 warnings.
+
+## [2026-08-13] maintenance | Automated Integrity and Accessible Navigation
+
+- Generated navigation: replaced the manually maintained reader-label map with deterministic metadata generated from all 27 `publish: true` notes and a small explicit override registry. Lint now rejects published-page drift until `publish.js` is regenerated.
+- Search accessibility: completed the search field's combobox relationship with controlled listbox and option roles, expanded state, active-descendant support and a polite live-region result count while preserving Obsidian's native interaction behavior.
+- Runtime efficiency: scoped dynamic observation to the left reader-navigation region, added guarded idempotent class and highlight changes and verified that unrelated article mutations schedule no navigation work while dynamically added navigation still receives reader labels.
+- Continuous integration: added a read-only Windows GitHub Actions workflow and a nine-check regression suite covering generated labels, lint, JavaScript syntax, browser-rendered navigation and ARIA behavior, title drift, CRLF source pages, exact lineage failures, archive-only ref preservation and credential redaction.
+- Test architecture: extracted shared Chrome DevTools Protocol lifecycle helpers so local and production browser audits use the same isolated-profile implementation, with bounded launch retries and per-attempt diagnostics for transient browser-start failures.
+- Evidence scope: no company, policy, transaction, legal, market, performance, source count, raw source or immutable snapshot changed.
+- Verification: the complete local Windows regression suite passed all nine checks; wiki lint passed with 0 errors and 0 warnings. Obsidian published only `publish.css` and `publish.js`; the post-deployment audit found 39 expected and 39 remote files, no missing or private files, three healthy representative routes, exact deployed asset hashes and passing live reader behavior.
