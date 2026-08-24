@@ -4,6 +4,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
+. (Join-Path $PSScriptRoot 'hash-lib.ps1')
 if ([string]::IsNullOrWhiteSpace($VaultRoot)) {
     $VaultRoot = Split-Path -Parent $PSScriptRoot
 }
@@ -820,7 +821,7 @@ foreach ($file in $wikiFiles) {
                 if ($resolvedSourceRelative -cne $sourceTarget) {
                     $errors.Add("Source page raw-file path casing differs from the snapshot: $relative -> $sourceTarget versus $resolvedSourceRelative")
                 }
-                $calculatedHash = (Get-FileHash -LiteralPath $resolvedSourcePath -Algorithm SHA256).Hash.ToUpperInvariant()
+                $calculatedHash = (Get-Sha256Hash -Path $resolvedSourcePath).ToUpperInvariant()
                 if ($sourceHashValue.ToUpperInvariant() -ne $calculatedHash) {
                     $errors.Add("Source page hash does not match its raw snapshot: $relative -> $sourceTarget")
                 }
@@ -986,13 +987,14 @@ foreach ($privateRelative in $privateRootFiles) {
 }
 
 $requiredToolPatterns = @{
+    'hash-lib.ps1' = @('Get-Sha256Hash', 'Security.Cryptography.SHA256', 'IO.File]::OpenRead')
     'publish-audit.ps1' = @('Get-RemoteFileHash', 'publish-browser-audit.ps1')
     'browser-audit-lib.ps1' = @('Start-BrowserAuditSession', 'Stop-BrowserAuditSession')
     'generate-publish-navigation.ps1' = @('BEGIN GENERATED READER LABELS', 'label_overrides', 'publish: true notes')
     'publish-browser-audit.ps1' = @('accessibleCombobox', 'accessibleListbox', 'announcedResults')
     'publish-ui-fixture-audit.ps1' = @('aria-activedescendant', 'mhAnimationFrames', 'Financing Essentials')
     'wiki-test.ps1' = @('navigation-drift', 'lineage-mismatch', 'archive-additivity', 'credential-redaction')
-    'wiki-archive.ps1' = @("fetch origin 'refs/heads/*:refs/heads/*'", 'Preserved archive-only refs')
+    'wiki-archive.ps1' = @("fetch --no-prune --no-prune-tags origin 'refs/heads/*:refs/heads/*'", 'Preserved archive-only refs')
     'github-sync.ps1' = @('credentialLocations', 'Values are redacted')
 }
 foreach ($toolName in $requiredToolPatterns.Keys) {
@@ -1212,7 +1214,7 @@ foreach ($source in $sourceSnapshots) {
         $errors.Add("Raw source must have one exact manifest row: $($source.Name) (found $($matchingRows.Count))")
         continue
     }
-    $hash = (Get-FileHash -LiteralPath $source.FullName -Algorithm SHA256).Hash.ToUpperInvariant()
+    $hash = (Get-Sha256Hash -Path $source.FullName).ToUpperInvariant()
     if ($matchingRows[0].Hash -ne $hash) {
         $errors.Add("Raw source hash does not match its manifest row: $($source.Name)")
     }

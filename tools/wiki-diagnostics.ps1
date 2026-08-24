@@ -7,6 +7,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
+. (Join-Path $PSScriptRoot 'hash-lib.ps1')
 if ([string]::IsNullOrWhiteSpace($VaultRoot)) {
     $VaultRoot = Split-Path -Parent $PSScriptRoot
 }
@@ -194,7 +195,7 @@ try {
         $record = (Get-Content -LiteralPath $checksumPath -Raw).Trim()
         if ($record -notmatch '^([0-9A-Fa-f]{64}) \*(.+)$') { throw "Malformed checksum sidecar: $checksumPath" }
         if ($Matches[2] -ne $bundle.Name) { throw "Checksum filename does not match bundle: $checksumPath" }
-        $actualHash = (Get-FileHash -LiteralPath $bundle.FullName -Algorithm SHA256).Hash
+        $actualHash = Get-Sha256Hash -Path $bundle.FullName
         if ($Matches[1] -ne $actualHash) { throw "Bundle checksum mismatch: $($bundle.FullName)" }
         $heads = @(Invoke-Git -Arguments @('bundle', 'list-heads', $bundle.FullName) -FailureMessage "Unable to inventory bundle refs: $($bundle.FullName)")
         $mainLine = @($heads | Where-Object { $_ -match '^[0-9a-f]{40} refs/heads/main$' })

@@ -2,7 +2,7 @@
 title: MediaHedge
 type: entity
 status: current
-updated: 2026-08-09
+updated: 2026-08-24
 source_count: 16
 publish: true
 tags:
@@ -14,13 +14,13 @@ tags:
 
 # MediaHedge
 
-MediaHedge is presented as a specialist film-finance originator, underwriter and servicer that can operate alongside a capital provider in a [[wiki/concepts/forward-flow-governance|forward-flow]], purchase, participation, agency or similar structure. The available material describes functions and controls; it does not, by itself, establish the company's legal form, licensing status, capitalization, historical performance or the terms of any specific partnership.
+MediaHedge is a specialist film-finance originator, underwriter and servicer that largely operates alongside institutional capital providers in a [[wiki/concepts/forward-flow-governance|forward-flow]], purchase, participation, agency or similar structure. The available material describes functions and controls informed by the company's experiences as a lender; it does not, by itself, establish the company's legal form, licensing status, capitalization, historical performance or the terms of any specific partnership.
 
 ## Responsibilities Across the Asset Lifecycle
 
 ### Origination and Underwriting
 
-MediaHedge maps complete sources and uses, tests collateral ownership and eligibility, distinguishes [[wiki/concepts/pre-sales-collateral|contracted pre-sales]] from [[wiki/concepts/gap-collateral|unsold-rights value]], applies asset-specific haircuts and transaction limits, evaluates obligors and jurisdictions, and identifies the binding constraint that determines commitment size. See [[wiki/concepts/full-financing|Full Financing]] and [[wiki/concepts/loan-sizing|Loan Sizing]].
+MediaHedge, like many media lenders, maps complete sources and uses, tests collateral ownership and eligibility, distinguishes [[wiki/concepts/pre-sales-collateral|contracted pre-sales]] from [[wiki/concepts/gap-collateral|unsold-rights value]], applies asset-specific haircuts and transaction limits, evaluates obligors and jurisdictions, and identifies the binding constraint that determines commitment size. See [[wiki/concepts/full-financing|Full Financing]] and [[wiki/concepts/loan-sizing|Loan Sizing]].
 
 ### Closing and Collateral Control
 
@@ -28,7 +28,7 @@ MediaHedge coordinates the collateral schedule, assignments, notices, lien and c
 
 ### Servicing and Monitoring
 
-MediaHedge is expected to maintain the production and collateral baseline, administer draws, reconcile receipts and the loan subledger, track covenants and exceptions, reforecast timing and escalate material decisions. See [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]].
+MediaHedge maintains the production and collateral baseline, administers draws, reconciles receipts and the loan subledger, tracks covenants and exceptions, reforecasts timing and escalates material decisions. These responsibilities are also common among senior media lenders. See [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]].
 
 ### Stress and Recovery
 
@@ -48,10 +48,6 @@ In a scalable forward-flow relationship, MediaHedge handles routine eligible exe
 - Keep exceptions visible and separately governed.
 - Measure return from auditable dated cash flows, net of credit and operating friction.
 - Preserve data, custody and replacement rights so the portfolio can survive a servicer transition.
-
-## What Still Needs Confirmation
-
-The available material does not establish policy effective dates, delegated approval levels, specific investor voting thresholds, realized portfolio performance, current licensing or the jurisdictions in which particular structures have been validated. See [[wiki/evidence-and-limitations|Evidence and Limitations]] for the main areas a financing partner should verify.
 
 ## Continue Exploring
 

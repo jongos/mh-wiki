@@ -6,6 +6,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
+. (Join-Path $PSScriptRoot 'hash-lib.ps1')
 if ([string]::IsNullOrWhiteSpace($VaultRoot)) {
     $VaultRoot = Split-Path -Parent $PSScriptRoot
 }
@@ -102,7 +103,7 @@ function Get-RemoteFileHash {
     $temporaryFile = Join-Path ([IO.Path]::GetTempPath()) ("MediaHedge-Publish-" + [Guid]::NewGuid().ToString('N'))
     try {
         Invoke-WebRequest -Uri $Uri -UseBasicParsing -TimeoutSec 30 -OutFile $temporaryFile
-        return (Get-FileHash -LiteralPath $temporaryFile -Algorithm SHA256).Hash
+        return Get-Sha256Hash -Path $temporaryFile
     } catch {
         throw "Unable to download deployed ${Label}: $($_.Exception.Message)"
     } finally {
@@ -128,12 +129,12 @@ foreach ($route in $liveRoutes) {
 }
 
 $assetRoot = "https://$($publishConfig.host)/access/$($publishConfig.siteId)"
-$localCssHash = (Get-FileHash -LiteralPath $publishCss -Algorithm SHA256).Hash
+$localCssHash = Get-Sha256Hash -Path $publishCss
 $remoteCssHash = Get-RemoteFileHash -Uri "$assetRoot/publish.css" -Label 'publish.css'
 if ($localCssHash -ne $remoteCssHash) {
     throw "Deployed publish.css does not match the local file: $remoteCssHash versus $localCssHash"
 }
-$localJsHash = (Get-FileHash -LiteralPath $publishJs -Algorithm SHA256).Hash
+$localJsHash = Get-Sha256Hash -Path $publishJs
 $remoteJsHash = Get-RemoteFileHash -Uri "$assetRoot/publish.js" -Label 'publish.js'
 if ($localJsHash -ne $remoteJsHash) {
     throw "Deployed publish.js does not match the local file: $remoteJsHash versus $localJsHash"

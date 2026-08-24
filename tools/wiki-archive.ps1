@@ -7,6 +7,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
+. (Join-Path $PSScriptRoot 'hash-lib.ps1')
 if ([string]::IsNullOrWhiteSpace($VaultRoot)) {
     $VaultRoot = Split-Path -Parent $PSScriptRoot
 }
@@ -30,7 +31,7 @@ function Write-BundleChecksum {
     param([string]$BundlePath)
 
     $checksumPath = Get-BundleChecksumPath -BundlePath $BundlePath
-    $hash = (Get-FileHash -LiteralPath $BundlePath -Algorithm SHA256).Hash.ToUpperInvariant()
+    $hash = (Get-Sha256Hash -Path $BundlePath).ToUpperInvariant()
     $record = "$hash *$([IO.Path]::GetFileName($BundlePath))`r`n"
     [IO.File]::WriteAllText($checksumPath, $record, (New-Object Text.UTF8Encoding($false)))
     return $checksumPath
@@ -52,7 +53,7 @@ function Test-BundleChecksum {
     if ($Matches[2] -ne $expectedName) {
         throw "Checksum filename does not match its bundle: $checksumPath"
     }
-    $actualHash = (Get-FileHash -LiteralPath $BundlePath -Algorithm SHA256).Hash
+    $actualHash = Get-Sha256Hash -Path $BundlePath
     if ($Matches[1] -ne $actualHash) {
         throw "Bundle SHA-256 checksum mismatch: $BundlePath"
     }
@@ -117,7 +118,7 @@ if (-not (Test-Path -LiteralPath $ArchiveGit)) {
         throw "Archive origin does not match the MediaHedge vault: $origin"
     }
     $priorArchiveRefs = @(Get-RefSnapshot -Repository $ArchiveGit -Bare)
-    & $git --git-dir=$ArchiveGit fetch origin 'refs/heads/*:refs/heads/*' 'refs/tags/*:refs/tags/*'
+    & $git --git-dir=$ArchiveGit fetch --no-prune --no-prune-tags origin 'refs/heads/*:refs/heads/*' 'refs/tags/*:refs/tags/*'
     if ($LASTEXITCODE -ne 0) {
         throw 'Unable to update the archive mirror without deleting or force-updating recovery refs'
     }
