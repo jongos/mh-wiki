@@ -11,11 +11,27 @@ $session = $null
 try {
     $session = Start-BrowserAuditSession -TimeoutSeconds $TimeoutSeconds
     $socket = $session.Socket
-    $homeUrl = $SiteUrl.TrimEnd('/') + '/MediaHedge+Knowledgebase'
-    [void](Invoke-CdpCommand -Socket $socket -Method 'Page.navigate' -Parameters @{ url = $homeUrl })
-    Wait-ForBrowserCondition -Socket $socket -TimeoutSeconds $TimeoutSeconds `
-        -Expression "document.readyState === 'complete' && !!document.querySelector('input.search-bar') && !!document.querySelector('.nav-view-outer')" `
-        -FailureMessage 'Published home page did not load its search and navigation controls.'
+    $legacyWikiUrl = $SiteUrl.TrimEnd('/') + '/wiki'
+    [void](Invoke-CdpCommand -Socket $socket -Method 'Page.navigate' -Parameters @{ url = $legacyWikiUrl })
+    $legacyRedirectExpression = "decodeURIComponent(window.location.pathname).replaceAll('+', ' ').replace(/\/+$/, '') === '/MediaHedge Knowledgebase' && document.readyState === 'complete' && !!document.querySelector('input.search-bar') && !!document.querySelector('.nav-view-outer') && [...document.querySelectorAll('h1')].some((heading) => heading.innerText.trim() === 'Welcome to the MediaHedge Knowledgebase') && !document.body.innerText.includes('This page does not exist')"
+    try {
+        Wait-ForBrowserCondition -Socket $socket -TimeoutSeconds $TimeoutSeconds `
+            -Expression $legacyRedirectExpression `
+            -FailureMessage 'Legacy /wiki route did not redirect to the published knowledgebase home page.'
+    } catch {
+        $legacyState = Invoke-BrowserExpression -Socket $socket -Expression @'
+(() => ({
+  href: window.location.href,
+  pathname: window.location.pathname,
+  readyState: document.readyState,
+  hasSearch: !!document.querySelector('input.search-bar'),
+  hasNavigation: !!document.querySelector('.nav-view-outer'),
+  hasHomeHeading: [...document.querySelectorAll('h1')].some((heading) => heading.innerText.trim() === 'Welcome to the MediaHedge Knowledgebase'),
+  hasVisibleNotFound: document.body.innerText.includes('This page does not exist')
+}))()
+'@
+        throw "$($_.Exception.Message) State: $($legacyState | ConvertTo-Json -Compress)"
+    }
 
     $searchStarted = Invoke-BrowserExpression -Socket $socket -Expression @'
 (() => {
@@ -127,7 +143,7 @@ try {
         throw 'Published home-page footer is missing the Site Navigator route.'
     }
 
-    Write-Output 'Live reader behavior: accessible search suggestions, friendly navigation labels and Site Navigator footer passed'
+    Write-Output 'Live reader behavior: legacy /wiki redirect, accessible search suggestions, friendly navigation labels and Site Navigator footer passed'
 } finally {
     Stop-BrowserAuditSession -Session $session
 }

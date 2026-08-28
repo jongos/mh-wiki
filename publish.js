@@ -3,6 +3,16 @@
 (() => {
   "use strict";
 
+  const legacyWikiPathPattern = /\/wiki\/?$/;
+  if (legacyWikiPathPattern.test(window.location.pathname)) {
+    const homeUrl = new URL(window.location.href);
+    homeUrl.pathname = homeUrl.pathname.replace(legacyWikiPathPattern, "/MediaHedge+Knowledgebase");
+    homeUrl.search = "";
+    homeUrl.hash = "";
+    window.location.replace(homeUrl.href);
+    return;
+  }
+
   // BEGIN GENERATED READER LABELS
   const readerLabels = new Map([
     ["MediaHedge Knowledgebase.md", "Welcome & Start Here"],

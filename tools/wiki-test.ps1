@@ -122,6 +122,11 @@ try {
     if ($LASTEXITCODE -ne 0) { throw "publish.js syntax check failed.`n$($nodeOutput | Out-String)" }
     Add-TestPass 'publish.js passed the Node.js syntax check'
 
+    $routeAuditPath = Join-Path $vault 'tools\publish-route-compatibility-audit.js'
+    $routeOutput = @(& $node $routeAuditPath (Join-Path $vault 'publish.js') 2>&1)
+    if ($LASTEXITCODE -ne 0) { throw "Legacy Publish route compatibility check failed.`n$($routeOutput | Out-String)" }
+    Add-TestPass 'legacy /wiki routes redirect to the published knowledgebase home page'
+
     $uiAudit = Invoke-PowerShellCapture -ScriptPath (Join-Path $vault 'tools\publish-ui-fixture-audit.ps1') -Arguments @('-VaultRoot', $vault)
     if ($uiAudit.ExitCode -ne 0) { throw "Local Publish UI fixture failed.`n$($uiAudit.Output | Out-String)" }
     Add-TestPass 'local Publish UI fixture passed generated-label, accessibility and observer-scope checks'

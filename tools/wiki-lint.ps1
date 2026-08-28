@@ -991,7 +991,8 @@ $requiredToolPatterns = @{
     'publish-audit.ps1' = @('Get-RemoteFileHash', 'publish-browser-audit.ps1')
     'browser-audit-lib.ps1' = @('Start-BrowserAuditSession', 'Stop-BrowserAuditSession')
     'generate-publish-navigation.ps1' = @('BEGIN GENERATED READER LABELS', 'label_overrides', 'publish: true notes')
-    'publish-browser-audit.ps1' = @('accessibleCombobox', 'accessibleListbox', 'announcedResults')
+    'publish-browser-audit.ps1' = @('legacy /wiki route', 'accessibleCombobox', 'accessibleListbox', 'announcedResults')
+    'publish-route-compatibility-audit.js' = @('mediafinance.guide/wiki', 'publish.obsidian.md/mediahdge/wiki', 'Legacy /wiki compatibility redirects')
     'publish-ui-fixture-audit.ps1' = @('aria-activedescendant', 'mhAnimationFrames', 'Financing Essentials')
     'wiki-test.ps1' = @('navigation-drift', 'lineage-mismatch', 'archive-additivity', 'credential-redaction')
     'wiki-archive.ps1' = @("fetch --no-prune --no-prune-tags origin 'refs/heads/*:refs/heads/*'", 'Preserved archive-only refs')
@@ -1121,6 +1122,8 @@ if (-not (Test-Path -LiteralPath $publishJsPath -PathType Leaf)) {
         'aria-activedescendant',
         'role", "listbox',
         'getNavigationRoot',
+        'legacyWikiPathPattern',
+        'window.location.replace',
         'wiki/syntheses/site-navigator.md',
         'Financing Essentials',
         'Guides & Decision Maps'
