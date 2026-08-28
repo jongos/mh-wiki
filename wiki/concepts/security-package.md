@@ -2,9 +2,10 @@
 title: Security Package
 type: concept
 status: current
-updated: 2026-08-10
+updated: 2026-08-28
 source_count: 7
 publish: true
+description: Understand how a film-finance security package establishes priority, preserves collateral, captures proceeds and supports practical enforcement for each repayment asset.
 tags:
   - mediahedge
   - security

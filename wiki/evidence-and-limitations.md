@@ -2,10 +2,10 @@
 title: Evidence and Limitations
 type: synthesis
 status: current
-updated: 2026-08-10
+updated: 2026-08-28
 source_count: 17
 publish: true
-description: What the MediaHedge knowledgebase explains, and what a financing partner should verify independently.
+description: Understand the evidence supporting this knowledgebase, its limitations and the legal, policy, market and transaction facts financiers should verify.
 tags:
   - mediahedge
   - evidence

@@ -2,10 +2,11 @@
 title: Loan Sizing
 type: concept
 status: needs-review
-updated: 2026-08-09
+updated: 2026-08-28
 as_of: unknown
 source_count: 6
 publish: true
+description: Learn how eligible collateral value, advance rates, concentration limits, leverage, budget exposure, tenor and liquidity constraints determine loan size.
 tags:
   - mediahedge
   - underwriting

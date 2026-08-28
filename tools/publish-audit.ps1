@@ -128,6 +128,42 @@ foreach ($route in $liveRoutes) {
     }
 }
 
+try {
+    $robotsResponse = Invoke-WebRequest -Uri "$siteRoot/robots.txt" -UseBasicParsing -TimeoutSec 30
+} catch {
+    throw "Unable to read live robots.txt: $($_.Exception.Message)"
+}
+$robotsText = [string]$robotsResponse.Content
+if ([int]$robotsResponse.StatusCode -ne 200 -or
+    $robotsText -notmatch '(?im)^User-agent:\s*\*\s*$' -or
+    $robotsText -notmatch '(?im)^Allow:\s*/\s*$' -or
+    $robotsText -match '(?im)^Disallow:\s*/\s*$') {
+    throw "Live robots.txt does not clearly allow public-site crawling: $($robotsText -replace '\s+', ' ')"
+}
+
+try {
+    $sitemapResponse = Invoke-WebRequest -Uri "$siteRoot/sitemap.xml" -UseBasicParsing -TimeoutSec 30
+    [xml]$sitemapXml = $sitemapResponse.Content
+} catch {
+    throw "Unable to read or parse live sitemap.xml: $($_.Exception.Message)"
+}
+$namespace = New-Object System.Xml.XmlNamespaceManager($sitemapXml.NameTable)
+$namespace.AddNamespace('s', 'http://www.sitemaps.org/schemas/sitemap/0.9')
+$sitemapUrls = @($sitemapXml.SelectNodes('//s:url/s:loc', $namespace) | ForEach-Object { $_.InnerText.Trim() })
+$expectedSitemapUrls = [System.Collections.Generic.HashSet[string]]::new([StringComparer]::Ordinal)
+foreach ($file in $publicMarkdown) {
+    $relative = $file.FullName.Substring($vault.Length).TrimStart([char[]]'\/').Replace('\', '/')
+    $route = $relative.Substring(0, $relative.Length - 3).Split('/') |
+        ForEach-Object { [Uri]::EscapeDataString($_).Replace('%20', '+') }
+    [void]$expectedSitemapUrls.Add("$siteRoot/$($route -join '/')")
+}
+$sitemapMissing = @($expectedSitemapUrls | Where-Object { $_ -notin $sitemapUrls } | Sort-Object)
+$sitemapUnexpected = @($sitemapUrls | Where-Object { -not $expectedSitemapUrls.Contains($_) } | Sort-Object)
+$sitemapDuplicates = @($sitemapUrls | Group-Object | Where-Object { $_.Count -gt 1 })
+if ($sitemapMissing.Count -gt 0 -or $sitemapUnexpected.Count -gt 0 -or $sitemapDuplicates.Count -gt 0) {
+    throw "Live sitemap inventory mismatch. Missing: $($sitemapMissing -join ', '); unexpected: $($sitemapUnexpected -join ', '); duplicate: $(($sitemapDuplicates.Name) -join ', ')"
+}
+
 $assetRoot = "https://$($publishConfig.host)/access/$($publishConfig.siteId)"
 $localCssHash = Get-Sha256Hash -Path $publishCss
 $remoteCssHash = Get-RemoteFileHash -Uri "$assetRoot/publish.css" -Label 'publish.css'
@@ -153,5 +189,6 @@ if (-not $SkipBrowserAudit) {
 }
 
 Write-Output 'Live routes: homepage, Site Navigator and representative concept returned HTTP 200'
+Write-Output "Crawl controls: robots.txt allows the public site and sitemap.xml contains exactly $($sitemapUrls.Count) canonical note URLs"
 Write-Output 'Deployed assets: publish.css and publish.js exactly match their local SHA-256 values'
 Write-Output 'Publish inventory and live reader behavior match the intended public wiki.'

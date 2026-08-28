@@ -29,6 +29,12 @@ try {
   const options = [...document.querySelectorAll('.suggestion-item')];
   const selected = options.find((item) => item.getAttribute('aria-selected') === 'true');
   const labels = [...document.querySelectorAll('.nav-view-outer .tree-item-inner')].map((node) => node.textContent.trim());
+  const jsonLd = JSON.parse(document.getElementById('mh-seo-jsonld')?.textContent || '{}');
+  const schemaTypes = (jsonLd['@graph'] || []).map((node) => node['@type']);
+  const visibleH1s = [...document.querySelectorAll('h1')].filter((heading) => {
+    const style = getComputedStyle(heading);
+    return style.display !== 'none' && style.visibility !== 'hidden';
+  }).map((heading) => heading.textContent.trim());
   return {
     combobox: input?.getAttribute('role') === 'combobox',
     autocomplete: input?.getAttribute('aria-autocomplete') === 'list',
@@ -42,11 +48,23 @@ try {
     friendlyHome: labels.includes('Welcome & Start Here'),
     friendlyLibrary: labels.includes('Knowledgebase Library'),
     navigatorShortcut: document.querySelector('.mh-navigator-shortcut a')?.textContent.trim() === 'Site Navigator',
+    seoTitle: document.title === 'Loan Sizing | Media Finance Guide',
+    seoDescription: document.querySelector('meta[name="description"]')?.content.startsWith('Learn how eligible collateral value') === true,
+    seoCanonical: document.querySelector('link[rel="canonical"]')?.href === 'https://mediafinance.guide/wiki/concepts/loan-sizing',
+    seoRobots: document.querySelector('meta[name="robots"]')?.content.includes('max-image-preview:large') === true,
+    seoSocial: document.querySelector('meta[property="og:title"]')?.content === document.title &&
+      document.querySelector('meta[name="twitter:card"]')?.content === 'summary_large_image',
+    seoStructuredData: schemaTypes.includes('Article') && schemaTypes.includes('BreadcrumbList') && schemaTypes.includes('Organization') && schemaTypes.includes('WebSite'),
+    singleVisibleH1: visibleH1s.length === 1 && visibleH1s[0] === 'Loan Sizing',
     frames: window.mhAnimationFrames
   };
 })()
 '@
-    foreach ($property in @('combobox', 'autocomplete', 'controlsList', 'describedByStatus', 'expanded', 'activeDescendant', 'listbox', 'friendlyHome', 'friendlyLibrary', 'navigatorShortcut')) {
+    foreach ($property in @(
+        'combobox', 'autocomplete', 'controlsList', 'describedByStatus', 'expanded', 'activeDescendant',
+        'listbox', 'friendlyHome', 'friendlyLibrary', 'navigatorShortcut', 'seoTitle', 'seoDescription',
+        'seoCanonical', 'seoRobots', 'seoSocial', 'seoStructuredData', 'singleVisibleH1'
+    )) {
         if (-not $initial.$property) { throw "Local Publish fixture failed accessibility/navigation assertion: $property" }
     }
     if ([int]$initial.optionCount -ne 2 -or $initial.statusText -notmatch '^2 suggestions available\.') {
@@ -94,7 +112,7 @@ try {
         throw 'Relevant navigation mutation did not schedule reader-navigation work.'
     }
 
-    Write-Output 'Local Publish UI fixture: generated labels, ARIA combobox semantics and scoped observation passed'
+    Write-Output 'Local Publish UI fixture: generated labels, SEO metadata, single visible H1, ARIA combobox semantics and scoped observation passed'
 } finally {
     Stop-BrowserAuditSession -Session $session
 }

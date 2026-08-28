@@ -2,9 +2,10 @@
 title: Production Insurance
 type: concept
 status: current
-updated: 2026-08-10
+updated: 2026-08-28
 source_count: 6
 publish: true
+description: Learn how film-production insurance transfers defined casualty, personnel, liability and specialty risks without becoming a completion or repayment guaranty.
 tags:
   - mediahedge
   - insurance

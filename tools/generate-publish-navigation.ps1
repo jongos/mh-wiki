@@ -57,6 +57,8 @@ try {
 }
 
 $publishedPages = @{}
+$publishedSeo = @{}
+$seenDescriptions = [System.Collections.Generic.HashSet[string]]::new([StringComparer]::OrdinalIgnoreCase)
 foreach ($file in Get-ChildItem -LiteralPath $vault -Recurse -File -Filter '*.md' |
     Where-Object { $_.FullName -notmatch '[\\/]\.git(?:[\\/]|$)' -and $_.FullName -notmatch '[\\/]\.tmp_' }) {
     $content = Read-Utf8Text -Path $file.FullName
@@ -72,11 +74,43 @@ foreach ($file in Get-ChildItem -LiteralPath $vault -Recurse -File -Filter '*.md
     if ([string]::IsNullOrWhiteSpace($title)) {
         throw "Published note has no usable title: $($file.FullName)"
     }
+    $description = Get-FrontmatterScalar -Frontmatter $frontmatter -Name 'description'
+    if ([string]::IsNullOrWhiteSpace($description)) {
+        throw "Published note has no SEO description: $($file.FullName)"
+    }
+    if ($description.Length -lt 80 -or $description.Length -gt 180) {
+        throw "Published-note SEO description must contain 80-180 characters: $($file.FullName) ($($description.Length))"
+    }
+    if (-not $seenDescriptions.Add($description)) {
+        throw "Published-note SEO descriptions must be unique: $description"
+    }
+    $seoTitle = Get-FrontmatterScalar -Frontmatter $frontmatter -Name 'seo_title'
+    if ([string]::IsNullOrWhiteSpace($seoTitle)) {
+        $seoTitle = "$title | Media Finance Guide"
+    }
+    if ($seoTitle.Length -lt 20 -or $seoTitle.Length -gt 65) {
+        throw "Published-note SEO title must contain 20-65 characters: $($file.FullName) ($($seoTitle.Length))"
+    }
+    $updated = Get-FrontmatterScalar -Frontmatter $frontmatter -Name 'updated'
+    if ($updated -notmatch '^\d{4}-\d{2}-\d{2}$') {
+        throw "Published note has no valid updated date for SEO metadata: $($file.FullName)"
+    }
+    $pageType = Get-FrontmatterScalar -Frontmatter $frontmatter -Name 'type'
+    if ([string]::IsNullOrWhiteSpace($pageType)) {
+        throw "Published note has no usable type for SEO metadata: $($file.FullName)"
+    }
     $relative = $file.FullName.Substring($vault.Length).TrimStart([char[]]'\/').Replace('\', '/')
     if ($publishedPages.ContainsKey($relative)) {
         throw "Duplicate published navigation path: $relative"
     }
     $publishedPages[$relative] = $title
+    $publishedSeo[$relative] = [pscustomobject]@{
+        Title = $title
+        SeoTitle = $seoTitle
+        Description = $description
+        Updated = $updated
+        Type = $pageType
+    }
 }
 if ($publishedPages.Count -eq 0) { throw 'No publish: true notes were found.' }
 
@@ -154,13 +188,46 @@ $updatedPublishJs = $publishJs.Substring(0, $beginIndex) +
     $generatedBlock +
     $publishJs.Substring($endIndex + $endMarker.Length)
 
+$seoBeginMarker = '  // BEGIN GENERATED SEO METADATA'
+$seoEndMarker = '  // END GENERATED SEO METADATA'
+$seoBeginIndex = $updatedPublishJs.IndexOf($seoBeginMarker, [StringComparison]::Ordinal)
+$seoEndIndex = $updatedPublishJs.IndexOf($seoEndMarker, [StringComparison]::Ordinal)
+if ($seoBeginIndex -lt 0 -or $seoEndIndex -le $seoBeginIndex -or
+    $updatedPublishJs.IndexOf($seoBeginMarker, $seoBeginIndex + $seoBeginMarker.Length, [StringComparison]::Ordinal) -ge 0 -or
+    $updatedPublishJs.IndexOf($seoEndMarker, $seoEndIndex + $seoEndMarker.Length, [StringComparison]::Ordinal) -ge 0) {
+    throw 'publish.js must contain exactly one ordered generated-SEO-metadata marker pair.'
+}
+
+$seoLines = [System.Collections.Generic.List[string]]::new()
+$seoLines.Add($seoBeginMarker)
+$seoLines.Add('  const seoPages = new Map([')
+$seoPaths = @($publishedSeo.Keys | Sort-Object)
+for ($index = 0; $index -lt $seoPaths.Count; $index++) {
+    $path = $seoPaths[$index]
+    $metadata = $publishedSeo[$path]
+    $suffix = if ($index -lt $seoPaths.Count - 1) { ',' } else { '' }
+    $pathJson = ConvertTo-JavaScriptString -Value $path
+    $titleJson = ConvertTo-JavaScriptString -Value $metadata.Title
+    $seoTitleJson = ConvertTo-JavaScriptString -Value $metadata.SeoTitle
+    $descriptionJson = ConvertTo-JavaScriptString -Value $metadata.Description
+    $updatedJson = ConvertTo-JavaScriptString -Value $metadata.Updated
+    $typeJson = ConvertTo-JavaScriptString -Value $metadata.Type
+    $seoLines.Add("    [$pathJson, { title: $titleJson, seoTitle: $seoTitleJson, description: $descriptionJson, updated: $updatedJson, type: $typeJson }]$suffix")
+}
+$seoLines.Add('  ]);')
+$seoLines.Add($seoEndMarker)
+$seoBlock = $seoLines -join $newline
+$updatedPublishJs = $updatedPublishJs.Substring(0, $seoBeginIndex) +
+    $seoBlock +
+    $updatedPublishJs.Substring($seoEndIndex + $seoEndMarker.Length)
+
 if ($updatedPublishJs -ceq $publishJs) {
-    Write-Output "Reader navigation metadata is current for $($publishedPages.Count) published notes."
+    Write-Output "Reader navigation and SEO metadata are current for $($publishedPages.Count) published notes."
     exit 0
 }
 if ($Check) {
-    throw 'publish.js reader labels are stale. Run tools\generate-publish-navigation.cmd and commit the result.'
+    throw 'publish.js reader labels or SEO metadata are stale. Run tools\generate-publish-navigation.cmd and commit the result.'
 }
 
 [IO.File]::WriteAllText($publishJsPath, $updatedPublishJs, $utf8NoBom)
-Write-Output "Updated publish.js reader labels for $($publishedPages.Count) published notes."
+Write-Output "Updated publish.js reader labels and SEO metadata for $($publishedPages.Count) published notes."

@@ -2,9 +2,10 @@
 title: Defaults, Workouts and Recoveries
 type: concept
 status: current
-updated: 2026-08-09
+updated: 2026-08-28
 source_count: 5
 publish: true
+description: Explore how lenders diagnose film-finance distress, preserve collateral and claims, govern workouts and select remedies that maximize risk-adjusted recovery.
 tags:
   - mediahedge
   - workout

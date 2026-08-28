@@ -2,9 +2,10 @@
 title: Protection Stack
 type: concept
 status: current
-updated: 2026-08-10
+updated: 2026-08-28
 source_count: 11
 publish: true
+description: Explore the layered controls MediaHedge uses to address financeability, collateral, completion, payment, cash, servicing and recovery risks without relying on one safeguard.
 tags:
   - mediahedge
   - credit

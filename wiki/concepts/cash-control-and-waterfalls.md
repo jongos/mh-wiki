@@ -2,9 +2,10 @@
 title: Cash Control and Waterfalls
 type: concept
 status: current
-updated: 2026-08-09
+updated: 2026-08-28
 source_count: 6
 publish: true
+description: Learn how payment directions, collection accounts, account control, contractual waterfalls and reconciliation turn proceeds into prioritized loan repayment.
 tags:
   - mediahedge
   - collections

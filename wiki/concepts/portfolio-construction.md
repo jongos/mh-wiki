@@ -2,9 +2,10 @@
 title: Portfolio Construction
 type: concept
 status: current
-updated: 2026-08-09
+updated: 2026-08-28
 source_count: 6
 publish: true
+description: Learn how film-finance portfolios manage concentration by distributor, incentive program, guarantor, producer, platform, collateral market and collection timing.
 tags:
   - mediahedge
   - portfolio

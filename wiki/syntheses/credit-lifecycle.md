@@ -2,9 +2,10 @@
 title: Film-Finance Credit Lifecycle
 type: synthesis
 status: current
-updated: 2026-08-10
+updated: 2026-08-28
 source_count: 17
 publish: true
+description: Follow the film-finance credit lifecycle from screening and underwriting through closing, funding, production, servicing, recovery and portfolio reporting.
 tags:
   - mediahedge
   - synthesis

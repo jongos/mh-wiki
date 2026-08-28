@@ -2,9 +2,10 @@
 title: Site Navigator
 type: synthesis
 status: current
-updated: 2026-08-11
+updated: 2026-08-28
 source_count: 0
 publish: true
+description: Navigate the MediaHedge knowledgebase as a connected map of financeability, collateral, control, protection, servicing, recovery and portfolio economics.
 cssclasses:
   - site-navigator-page
 tags:

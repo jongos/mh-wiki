@@ -2,9 +2,10 @@
 title: Full Financing
 type: concept
 status: current
-updated: 2026-08-09
+updated: 2026-08-28
 source_count: 6
 publish: true
+description: Learn why a film or television production must have complete, verified and properly timed sources to cover production, delivery, reserves and contingency.
 tags:
   - mediahedge
   - underwriting

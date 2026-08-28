@@ -2,9 +2,10 @@
 title: Financing-Partner Governance
 type: concept
 status: current
-updated: 2026-08-09
+updated: 2026-08-28
 source_count: 5
 publish: true
+description: See how MediaHedge and financing partners divide eligibility, delegated authority, reserved decisions, servicing duties and risk oversight in forward-flow programs.
 tags:
   - mediahedge
   - forward-flow

@@ -2,11 +2,11 @@
 title: Media Finance Lending Landscape
 type: synthesis
 status: current
-updated: 2026-08-10
+updated: 2026-08-28
 as_of: 2026-08-10
 source_count: 7
 publish: true
-description: A role-based map of capital providers, insurers, completion guarantors and targeted credit protection in film and television finance.
+description: Compare banks, specialty lenders, private-credit managers, account banks, insurers, completion guarantors and surety providers across media finance.
 tags:
   - mediahedge
   - synthesis

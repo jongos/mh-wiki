@@ -2,10 +2,11 @@
 title: Tax-Credit Collateral
 type: concept
 status: needs-review
-updated: 2026-08-09
+updated: 2026-08-28
 as_of: unknown
 source_count: 4
 publish: true
+description: Understand how production incentives become potential collateral through program eligibility, qualified spending, verification, assignment, timing and monetization.
 tags:
   - mediahedge
   - collateral

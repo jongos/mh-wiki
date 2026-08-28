@@ -59,7 +59,8 @@ body .published-container {
 .metadata-container,
 .frontmatter-container,
 .markdown-rendered .el-pre.mod-frontmatter,
-.markdown-rendered .mod-header.mod-ui {
+.markdown-rendered .mod-header.mod-ui,
+.site-body-center-column .page-header {
   display: none !important;
 }
 

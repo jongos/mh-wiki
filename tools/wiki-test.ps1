@@ -139,10 +139,28 @@ try {
     if ($changedDriftContent -eq $driftContent) { throw 'Could not prepare the generated-navigation drift fixture.' }
     [IO.File]::WriteAllText($driftPage, $changedDriftContent, $utf8NoBom)
     $driftCheck = Invoke-PowerShellCapture -ScriptPath (Join-Path $driftVault 'tools\generate-publish-navigation.ps1') -Arguments @('-VaultRoot', $driftVault, '-Check')
-    if ($driftCheck.ExitCode -eq 0 -or ($driftCheck.Output -join "`n") -notmatch 'reader labels are stale') {
+    if ($driftCheck.ExitCode -eq 0 -or ($driftCheck.Output -join "`n") -notmatch 'reader labels or SEO metadata are stale') {
         throw 'Generated-navigation drift fixture did not fail safely.'
     }
     Add-TestPass 'published-title drift is rejected until publish.js is regenerated'
+
+    $seoDriftVault = Copy-VaultFixture -Name 'seo-description-drift'
+    Set-TestVaultRegistration -RegisteredVault $seoDriftVault
+    $seoDriftPage = Join-Path $seoDriftVault 'wiki\concepts\loan-sizing.md'
+    $seoDriftContent = [IO.File]::ReadAllText($seoDriftPage, [Text.Encoding]::UTF8)
+    $changedSeoDriftContent = [regex]::Replace(
+        $seoDriftContent,
+        '(?m)^description:\s*Learn how eligible collateral value,',
+        'description: See how eligible collateral value,',
+        1
+    )
+    if ($changedSeoDriftContent -eq $seoDriftContent) { throw 'Could not prepare the generated-SEO drift fixture.' }
+    [IO.File]::WriteAllText($seoDriftPage, $changedSeoDriftContent, $utf8NoBom)
+    $seoDriftCheck = Invoke-PowerShellCapture -ScriptPath (Join-Path $seoDriftVault 'tools\generate-publish-navigation.ps1') -Arguments @('-VaultRoot', $seoDriftVault, '-Check')
+    if ($seoDriftCheck.ExitCode -eq 0 -or ($seoDriftCheck.Output -join "`n") -notmatch 'reader labels or SEO metadata are stale') {
+        throw 'Generated-SEO drift fixture did not fail safely.'
+    }
+    Add-TestPass 'published-description drift is rejected until publish.js is regenerated'
 
     $crlfVault = Copy-VaultFixture -Name 'crlf-lineage'
     Set-TestVaultRegistration -RegisteredVault $crlfVault

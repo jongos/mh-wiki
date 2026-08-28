@@ -5,6 +5,7 @@ status: seed
 updated: YYYY-MM-DD
 source_count: 0
 publish: false
+description:
 tags:
   - mediahedge
   - synthesis

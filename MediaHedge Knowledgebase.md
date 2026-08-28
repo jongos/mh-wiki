@@ -2,10 +2,11 @@
 title: Welcome to the MediaHedge Knowledgebase
 type: operations
 status: current
-updated: 2026-08-11
+updated: 2026-08-28
 source_count: 17
 publish: true
-description: A reader-friendly guide to MediaHedge's approach to film and television finance.
+description: Explore film and television finance through MediaHedge's guide to collateral, loan sizing, cash control, risk protection, servicing, recovery and returns.
+seo_title: Film and Television Finance Guide | MediaHedge
 tags:
   - mediahedge
   - index

@@ -85,6 +85,7 @@ tags:
 Additional fields:
 
 - `publish: true` for reader-facing knowledge and `publish: false` for private evidence, operations and maintenance pages.
+- Reader-facing pages: a unique `description` of 80-180 characters for search and social previews; an optional `seo_title` of 20-65 characters when the default `title | Media Finance Guide` is not ideal.
 - Source pages: `source_file`, `source_hash`, and `ingested`.
 - Derived source pages: `source_kind: derived-artifact`, `authority: non-evidentiary`, and `derived_from`.
 - Claims tied to a time or policy: `as_of` when known.
@@ -125,7 +126,7 @@ Quantitative policy rails must show their source and effective date when availab
 - Every durable concept page should link back to the home note, the financier diligence route and the full credit lifecycle.
 - Keep source summaries available privately for traceability, but do not expose source registries, hashes, raw filenames or maintenance instructions in public pages.
 - Put material evidence limitations near decision guidance, not only in the operations register.
-- Reader labels in `publish.js` are generated from every `publish: true` note plus the deliberate overrides in `tools\publish-navigation.json`. After adding, renaming, retitling or changing the publication status of a reader page, run `tools\generate-publish-navigation.cmd`; never hand-edit the generated label block.
+- Reader labels and SEO metadata in `publish.js` are generated from every `publish: true` note plus the deliberate overrides in `tools\publish-navigation.json`. After adding, renaming, retitling, changing a description or changing the publication status of a reader page, run `tools\generate-publish-navigation.cmd`; never hand-edit either generated block.
 
 ## Reader presentation
 
@@ -199,6 +200,7 @@ Periodically check for:
 - missing or duplicate `Continue Exploring` sections and unsupported public callout types;
 - missing diagram alternative text, captions, accessibility metadata or local asset targets;
 - unsafe SVG content, external image dependencies or unreferenced public diagrams;
+- missing, duplicate or weak published-page descriptions; stale generated SEO metadata; missing canonical, robots, social-card or JSON-LD signals in the live reader;
 - malformed, insecure or unlabeled external Markdown links;
 - broken or incomplete responsive, dark-mode, table, callout and focus styling in `publish.css`;
 - orphan pages with no inbound wiki links;

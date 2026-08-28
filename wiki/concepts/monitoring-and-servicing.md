@@ -2,9 +2,10 @@
 title: Monitoring and Servicing
 type: concept
 status: current
-updated: 2026-08-09
+updated: 2026-08-28
 source_count: 8
 publish: true
+description: See how active servicing tracks production progress, collateral, cash, covenants and recovery timing while escalating material variances for decision.
 tags:
   - mediahedge
   - servicing

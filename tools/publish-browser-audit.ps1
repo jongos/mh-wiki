@@ -33,6 +33,41 @@ try {
         throw "$($_.Exception.Message) State: $($legacyState | ConvertTo-Json -Compress)"
     }
 
+    $homeSeo = Invoke-BrowserExpression -Socket $socket -Expression @'
+(() => {
+  let jsonLd = {};
+  try { jsonLd = JSON.parse(document.getElementById('mh-seo-jsonld')?.textContent || '{}'); } catch {}
+  const schemaTypes = (jsonLd['@graph'] || []).map((node) => node['@type']);
+  const visibleH1s = [...document.querySelectorAll('h1')].filter((heading) => {
+    const style = getComputedStyle(heading);
+    return style.display !== 'none' && style.visibility !== 'hidden';
+  }).map((heading) => heading.innerText.trim());
+  return {
+    title: document.title,
+    description: document.querySelector('meta[name="description"]')?.content || '',
+    canonical: document.querySelector('link[rel="canonical"]')?.href || '',
+    robots: document.querySelector('meta[name="robots"]')?.content || '',
+    ogTitle: document.querySelector('meta[property="og:title"]')?.content || '',
+    twitterCard: document.querySelector('meta[name="twitter:card"]')?.content || '',
+    schemaTypes,
+    visibleH1s
+  };
+})()
+'@
+    if ($homeSeo.title -ne 'Film and Television Finance Guide | MediaHedge' -or
+        $homeSeo.description -notmatch '^Explore film and television finance' -or
+        $homeSeo.canonical -ne "$($SiteUrl.TrimEnd('/'))/MediaHedge+Knowledgebase" -or
+        $homeSeo.robots -notmatch 'index,follow' -or
+        $homeSeo.ogTitle -ne $homeSeo.title -or
+        $homeSeo.twitterCard -ne 'summary_large_image' -or
+        'Organization' -notin @($homeSeo.schemaTypes) -or
+        'WebSite' -notin @($homeSeo.schemaTypes) -or
+        'WebPage' -notin @($homeSeo.schemaTypes) -or
+        @($homeSeo.visibleH1s).Count -ne 1 -or
+        $homeSeo.visibleH1s[0] -ne 'Welcome to the MediaHedge Knowledgebase') {
+        throw "Published home page is missing complete SEO metadata or a single reader-facing H1. State: $($homeSeo | ConvertTo-Json -Compress -Depth 5)"
+    }
+
     $searchStarted = Invoke-BrowserExpression -Socket $socket -Expression @'
 (() => {
   const input = document.querySelector('input.search-bar');
@@ -143,7 +178,58 @@ try {
         throw 'Published home-page footer is missing the Site Navigator route.'
     }
 
-    Write-Output 'Live reader behavior: legacy /wiki redirect, accessible search suggestions, friendly navigation labels and Site Navigator footer passed'
+    $conceptUrl = $SiteUrl.TrimEnd('/') + '/wiki/concepts/loan-sizing'
+    [void](Invoke-CdpCommand -Socket $socket -Method 'Page.navigate' -Parameters @{ url = $conceptUrl })
+    try {
+        Wait-ForBrowserCondition -Socket $socket -TimeoutSeconds $TimeoutSeconds `
+            -Expression "document.readyState === 'complete' && !!document.getElementById('mh-seo-jsonld')" `
+            -FailureMessage 'Representative concept did not finish loading its SEO runtime.'
+    } catch {
+        $conceptState = Invoke-BrowserExpression -Socket $socket -Expression @'
+(() => ({
+  href: window.location.href,
+  readyState: document.readyState,
+  title: document.title,
+  canonical: document.querySelector('link[rel="canonical"]')?.href || '',
+  hasSeoRuntime: !!document.getElementById('mh-seo-jsonld'),
+  bodyPreview: document.body.innerText.slice(0, 180)
+}))()
+'@
+        throw "$($_.Exception.Message) State: $($conceptState | ConvertTo-Json -Compress)"
+    }
+    $conceptSeo = Invoke-BrowserExpression -Socket $socket -Expression @'
+(() => {
+  let jsonLd = {};
+  try { jsonLd = JSON.parse(document.getElementById('mh-seo-jsonld')?.textContent || '{}'); } catch {}
+  const schemaTypes = (jsonLd['@graph'] || []).map((node) => node['@type']);
+  const visibleH1s = [...document.querySelectorAll('h1')].filter((heading) => {
+    const style = getComputedStyle(heading);
+    return style.display !== 'none' && style.visibility !== 'hidden';
+  }).map((heading) => heading.innerText.trim());
+  return {
+    title: document.title,
+    description: document.querySelector('meta[name="description"]')?.content || '',
+    canonical: document.querySelector('link[rel="canonical"]')?.href || '',
+    ogUrl: document.querySelector('meta[property="og:url"]')?.content || '',
+    ogImage: document.querySelector('meta[property="og:image"]')?.content || '',
+    schemaTypes,
+    visibleH1s
+  };
+})()
+'@
+    if ($conceptSeo.title -ne 'Loan Sizing | Media Finance Guide' -or
+        $conceptSeo.description -notmatch '^Learn how eligible collateral value' -or
+        $conceptSeo.canonical -ne $conceptUrl -or
+        $conceptSeo.ogUrl -ne $conceptUrl -or
+        $conceptSeo.ogImage -notmatch '^https://publish-01\.obsidian\.md/access/.+/assets/mediahedge-banner\.jpg$' -or
+        'Article' -notin @($conceptSeo.schemaTypes) -or
+        'BreadcrumbList' -notin @($conceptSeo.schemaTypes) -or
+        @($conceptSeo.visibleH1s).Count -ne 1 -or
+        $conceptSeo.visibleH1s[0] -ne 'Loan Sizing') {
+        throw "Published concept is missing complete SEO metadata or a single reader-facing H1. State: $($conceptSeo | ConvertTo-Json -Compress -Depth 5)"
+    }
+
+    Write-Output 'Live reader behavior: legacy /wiki redirect, unique SEO metadata, canonical and structured data, accessible search, friendly navigation and Site Navigator footer passed'
 } finally {
     Stop-BrowserAuditSession -Session $session
 }

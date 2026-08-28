@@ -2,10 +2,11 @@
 title: Gap Collateral
 type: concept
 status: needs-review
-updated: 2026-08-09
+updated: 2026-08-28
 as_of: unknown
 source_count: 6
 publish: true
+description: Understand gap financing against discounted unsold film and television rights, including valuation, eligibility, concentration and repayment risks.
 tags:
   - mediahedge
   - gap

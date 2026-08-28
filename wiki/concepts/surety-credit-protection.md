@@ -2,9 +2,10 @@
 title: Surety and Credit Protection
 type: concept
 status: current
-updated: 2026-08-10
+updated: 2026-08-28
 source_count: 4
 publish: true
+description: Learn how surety bonds and media-credit guarantees support specifically defined payment or performance obligations and where their loan protection ends.
 tags:
   - mediahedge
   - surety

@@ -2,9 +2,10 @@
 title: Completion Protection
 type: concept
 status: current
-updated: 2026-08-10
+updated: 2026-08-28
 source_count: 5
 publish: true
+description: Understand how completion bonds and guaranties support production and delivery, what remedies they may provide and why they do not guarantee loan repayment.
 tags:
   - mediahedge
   - completion

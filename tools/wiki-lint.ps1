@@ -988,10 +988,10 @@ foreach ($privateRelative in $privateRootFiles) {
 
 $requiredToolPatterns = @{
     'hash-lib.ps1' = @('Get-Sha256Hash', 'Security.Cryptography.SHA256', 'IO.File]::OpenRead')
-    'publish-audit.ps1' = @('Get-RemoteFileHash', 'publish-browser-audit.ps1')
+    'publish-audit.ps1' = @('Get-RemoteFileHash', 'publish-browser-audit.ps1', 'robots.txt', 'sitemap.xml', 'expectedSitemapUrls')
     'browser-audit-lib.ps1' = @('Start-BrowserAuditSession', 'Stop-BrowserAuditSession')
     'generate-publish-navigation.ps1' = @('BEGIN GENERATED READER LABELS', 'label_overrides', 'publish: true notes')
-    'publish-browser-audit.ps1' = @('legacy /wiki route', 'accessibleCombobox', 'accessibleListbox', 'announcedResults')
+    'publish-browser-audit.ps1' = @('legacy /wiki route', 'accessibleCombobox', 'accessibleListbox', 'announcedResults', 'mh-seo-jsonld', 'BreadcrumbList', 'single reader-facing H1')
     'publish-route-compatibility-audit.js' = @('mediafinance.guide/wiki', 'publish.obsidian.md/mediahdge/wiki', 'Legacy /wiki compatibility redirects')
     'publish-ui-fixture-audit.ps1' = @('aria-activedescendant', 'mhAnimationFrames', 'Financing Essentials')
     'wiki-test.ps1' = @('navigation-drift', 'lineage-mismatch', 'archive-additivity', 'credential-redaction')
@@ -1100,6 +1100,7 @@ if (-not (Test-Path -LiteralPath $publishCssPath -PathType Leaf)) {
         '.table-wrapper',
         '.callout[data-callout=',
         '.mh-search-status',
+        '.site-body-center-column .page-header',
         ':focus-visible'
     )
     foreach ($requiredPattern in $requiredCssPatterns) {
@@ -1117,6 +1118,7 @@ if (-not (Test-Path -LiteralPath $publishJsPath -PathType Leaf)) {
     $requiredJsPatterns = @(
         'Search the Knowledgebase',
         'BEGIN GENERATED READER LABELS',
+        'BEGIN GENERATED SEO METADATA',
         'MutationObserver',
         'aria-controls',
         'aria-activedescendant',
@@ -1124,6 +1126,12 @@ if (-not (Test-Path -LiteralPath $publishJsPath -PathType Leaf)) {
         'getNavigationRoot',
         'legacyWikiPathPattern',
         'window.location.replace',
+        'link[rel="canonical"]',
+        'max-image-preview:large',
+        'application/ld+json',
+        'BreadcrumbList',
+        'summary_large_image',
+        'getContentRoot',
         'wiki/syntheses/site-navigator.md',
         'Financing Essentials',
         'Guides & Decision Maps'

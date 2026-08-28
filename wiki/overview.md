@@ -2,9 +2,10 @@
 title: How the MediaHedge Lending Model Works
 type: overview
 status: current
-updated: 2026-08-10
+updated: 2026-08-28
 source_count: 17
 publish: true
+description: See how MediaHedge connects full financing, collateral eligibility, loan sizing, cash control, protection, servicing, recovery and portfolio discipline.
 tags:
   - mediahedge
   - film-finance

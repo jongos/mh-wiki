@@ -2,9 +2,10 @@
 title: Repayment and Risk Map
 type: synthesis
 status: current
-updated: 2026-08-09
+updated: 2026-08-28
 source_count: 12
 publish: true
+description: Compare contracted receivables, tax incentives, unsold rights, insurance, completion support and surety as distinct repayment and protection paths.
 tags:
   - mediahedge
   - synthesis

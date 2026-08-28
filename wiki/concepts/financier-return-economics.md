@@ -2,10 +2,11 @@
 title: Financing-Partner Return Economics
 type: concept
 status: needs-review
-updated: 2026-08-09
+updated: 2026-08-28
 as_of: unknown
 source_count: 5
 publish: true
+description: Evaluate film-finance returns through actual dated cash flows, fees, duration, prepayment, extensions, defaults, recoveries, expenses and capital utilization.
 tags:
   - mediahedge
   - returns

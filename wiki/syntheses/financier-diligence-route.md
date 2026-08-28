@@ -2,10 +2,10 @@
 title: Financier's Guide
 type: synthesis
 status: current
-updated: 2026-08-10
+updated: 2026-08-28
 source_count: 17
 publish: true
-description: Eight questions for understanding the MediaHedge film- and television-finance model.
+description: Use eight financier-focused questions to evaluate financeability, repayment, sizing, control, protection, monitoring, recovery and portfolio economics.
 tags:
   - mediahedge
   - synthesis

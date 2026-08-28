@@ -2,10 +2,11 @@
 title: Policy and Control Guide
 type: synthesis
 status: needs-review
-updated: 2026-08-09
+updated: 2026-08-28
 as_of: unknown
 source_count: 11
 publish: true
+description: Review the source-stated MediaHedge sizing rails, exposure limits and operating controls that govern collateral, commitment, closing, servicing and exceptions.
 tags:
   - mediahedge
   - synthesis

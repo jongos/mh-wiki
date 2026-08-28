@@ -2,9 +2,10 @@
 title: MediaHedge
 type: entity
 status: current
-updated: 2026-08-24
+updated: 2026-08-28
 source_count: 16
 publish: true
+description: Meet MediaHedge, a specialist film-finance originator, underwriter and servicer working with institutional capital across structured financing relationships.
 tags:
   - mediahedge
   - entity

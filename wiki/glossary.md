@@ -2,9 +2,10 @@
 title: MediaHedge Film-Finance Glossary
 type: glossary
 status: current
-updated: 2026-08-10
+updated: 2026-08-28
 source_count: 17
 publish: true
+description: Learn the film-finance, private-credit, collateral, production, servicing and return terms used throughout the MediaHedge knowledgebase.
 tags:
   - mediahedge
   - glossary

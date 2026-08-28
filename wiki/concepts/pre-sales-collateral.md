@@ -2,9 +2,10 @@
 title: Pre-Sales Collateral
 type: concept
 status: current
-updated: 2026-08-09
+updated: 2026-08-28
 source_count: 5
 publish: true
+description: Understand how executed distribution agreements create minimum-guarantee receivables and how financiers verify, discount and control pre-sales collateral.
 tags:
   - mediahedge
   - pre-sales
