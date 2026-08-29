@@ -2,7 +2,7 @@
 title: Tax-Credit Collateral
 type: concept
 status: needs-review
-updated: 2026-08-28
+updated: 2026-08-29
 as_of: unknown
 source_count: 4
 publish: true
@@ -30,7 +30,7 @@ The expected amount is rebuilt from governing rules, the production budget, qual
 
 ### Advance and Structure
 
-The tax-credit brief states a current MediaHedge cap of 85% of verified eligible value, subject to tighter transaction constraints. Security, notices, claimant ownership, lockbox or account control and certificate-transfer documentation must fit local anti-assignment and program rules.
+MediaHedge applies the current asset-specific advance rule to verified eligible value, subject to tighter transaction constraints. Exact thresholds are internal and intentionally not reproduced in this public guide. Security, notices, claimant ownership, lockbox or account control and certificate-transfer documentation must fit local anti-assignment and program rules.
 
 ### Realization
 

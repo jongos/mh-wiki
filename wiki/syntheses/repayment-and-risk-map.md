@@ -2,7 +2,7 @@
 title: Repayment and Risk Map
 type: synthesis
 status: current
-updated: 2026-08-28
+updated: 2026-08-29
 source_count: 12
 publish: true
 description: Compare contracted receivables, tax incentives, unsold rights, insurance, completion support and surety as distinct repayment and protection paths.
@@ -26,8 +26,8 @@ What are the principal repayment and protection paths in the model, how do they 
 | Value or protection source | Primary value driver | Principal conditions and risks | Primary controls | What it does not prove |
 | --- | --- | --- | --- | --- |
 | [[wiki/concepts/pre-sales-collateral\|Contracted pre-sale or platform receivable]] | Enforceable payment obligation | Conforming delivery, acceptance, obligor credit, defenses, setoff, deductions, timing and assignment limits | Contract diligence, NOA/acknowledgment, delivery controls, account routing and aging | That every gross contract amount is eligible or collectible |
-| [[wiki/concepts/tax-credit-collateral\|Tax incentive]] | Qualifying local production activity under a program | Claimant and cost eligibility, audits, filing, assignment restrictions, setoff, recapture, transfer discount and delay | Specialist model, ≤85% advance cap, cost surveillance, counsel, lockbox/control and filing covenants | That an estimate is an issued unconditional receivable |
-| [[wiki/concepts/gap-collateral\|Unsold-rights or gap value]] | Future market sale or license value | Completion, delivery, market demand, sales execution, correlation and liquidity | Supported low case, ≤50% advance, generally ≤30% of final gross loan, portfolio limits | That appraisal or sales estimates equal cash |
+| [[wiki/concepts/tax-credit-collateral\|Tax incentive]] | Qualifying local production activity under a program | Claimant and cost eligibility, audits, filing, assignment restrictions, setoff, recapture, transfer discount and delay | Specialist model, current asset-specific advance rule, cost surveillance, counsel, lockbox/control and filing covenants | That an estimate is an issued unconditional receivable |
+| [[wiki/concepts/gap-collateral\|Unsold-rights or gap value]] | Future market sale or license value | Completion, delivery, market demand, sales execution, correlation and liquidity | Supported low case, current advance and concentration review, portfolio limits | That appraisal or sales estimates equal cash |
 | [[wiki/concepts/production-insurance\|Production insurance]] | Covered physical, personnel, liability or professional event | Policy period, exclusions, warranties, deductibles, sublimits, notice and claims proof | Coverage map, policies and endorsements, premium continuity and claims protocol | Completion, obligor solvency, incentive realization or loan repayment |
 | [[wiki/concepts/completion-protection\|Completion guaranty]] | Ability to complete and deliver within covered terms | Fully financed bonded budget, exclusions, guarantor elections, takeover mechanics and claim deadlines | Budget alignment, contingency, guarantor reporting, notice and takeover/claim rights | Distributor payment, tax-credit amount or commercial performance |
 | [[wiki/concepts/surety-credit-protection\|Surety or credit protection]] | Specifically bonded payment or performance obligation | Exact obligation, trigger, acceptance, notice, proof, waiting period, penal sum and issuer capacity | Final authenticated instrument, named obligees, aligned contract and claim calendar | Blanket loan repayment, completion, tax-credit validity or market performance |

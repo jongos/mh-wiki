@@ -2,7 +2,7 @@
 title: Financing-Partner Return Economics
 type: concept
 status: needs-review
-updated: 2026-08-28
+updated: 2026-08-29
 as_of: unknown
 source_count: 5
 publish: true
@@ -47,9 +47,9 @@ Build the dated ledger from the financier's perspective: advances, purchase amou
 
 Forward-flow documents should allocate purchase price, coupon, fees, servicing compensation, extension/default economics, expense reimbursement, prepayment and recoveries. Report gross borrower yield, MediaHedge compensation, financier gross return and financier net return separately.
 
-## Sourced Gap-Pricing Context
+## Gap-Pricing Context
 
-The undated gap-collateral brief states that gap inclusion generally contributes approximately three to five percentage points to blended pricing. This is an internal pricing statement, not a current-policy certification or a forecast of financing-partner return. Current pricing authority, transaction mix and realized loan-tape evidence require separate verification.
+Gap exposure can affect transaction pricing because its value depends on future market realization rather than an existing payment obligation. Current pricing parameters are internal and transaction-specific; they are not reproduced in this public guide and should not be treated as a forecast of financing-partner return. Transaction mix and realized loan-tape evidence require separate verification.
 
 ## Limits and Failure Modes
 

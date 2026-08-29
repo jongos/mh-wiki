@@ -112,6 +112,25 @@ function Get-RemoteFileHash {
 }
 
 $siteRoot = $SiteUrl.TrimEnd('/')
+try {
+    $rootResponse = Invoke-WebRequest -Uri "$siteRoot/" -UseBasicParsing -MaximumRedirection 5 -TimeoutSec 30
+} catch {
+    throw "Live site-root request failed: $($_.Exception.Message)"
+}
+$rootHtml = [string]$rootResponse.Content
+if ([int]$rootResponse.StatusCode -ne 200) {
+    throw "Live site root returned HTTP $($rootResponse.StatusCode): $siteRoot/"
+}
+if ($rootHtml -notmatch [regex]::Escape('window.preloadPage')) {
+    throw 'Live site-root HTML does not declare an Obsidian Publish preload target.'
+}
+if ($rootHtml -match '(?i)Knowledgebase(?:%20|\+|\s)*\.md\.md' -or
+    $rootHtml -match '(?i)does not exist') {
+    throw 'Live site-root HTML exposes a broken crawler preload target or missing-page response.'
+}
+if ($rootHtml -notmatch [regex]::Escape('/MediaHedge%20Knowledgebase.md')) {
+    throw 'Live site-root HTML does not preload the canonical MediaHedge Knowledgebase note with exactly one .md extension.'
+}
 $liveRoutes = @(
     @{ Label = 'homepage'; Uri = "$siteRoot/MediaHedge+Knowledgebase" },
     @{ Label = 'Site Navigator'; Uri = "$siteRoot/wiki/syntheses/site-navigator" },
@@ -189,6 +208,6 @@ if (-not $SkipBrowserAudit) {
 }
 
 Write-Output 'Live routes: homepage, Site Navigator and representative concept returned HTTP 200'
-Write-Output "Crawl controls: robots.txt allows the public site and sitemap.xml contains exactly $($sitemapUrls.Count) canonical note URLs"
+Write-Output "Crawl controls: the site-root preload uses one .md extension, robots.txt allows the public site and sitemap.xml contains exactly $($sitemapUrls.Count) canonical note URLs"
 Write-Output 'Deployed assets: publish.css and publish.js exactly match their local SHA-256 values'
 Write-Output 'Publish inventory and live reader behavior match the intended public wiki.'

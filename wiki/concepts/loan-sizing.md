@@ -2,7 +2,7 @@
 title: Loan Sizing
 type: concept
 status: needs-review
-updated: 2026-08-28
+updated: 2026-08-29
 as_of: unknown
 source_count: 6
 publish: true
@@ -34,18 +34,19 @@ MediaHedge's sizing method is a constraint system. Underwriting first converts h
 5. **Term and liquidity:** align maturity with stressed collection timing, required reserves and extension risk.
 6. **Full-financing reconciliation:** confirm through [[wiki/concepts/full-financing|Full Financing]] that the sized facility, equity and other sources still fund every use through delivery.
 
-## Limits Described in the Available Material
+## Policy Application
 
-| Test | Stated MediaHedge treatment |
+| Test | Public Decision Framework |
 | --- | --- |
-| Tax-credit advance | `≤85%` of verified eligible value |
-| Gap advance | `≤50%` of supported low value |
-| Gap concentration | Generally `≤30%` of actual final gross loan |
-| Aggregate LTV | `≤60%` |
-| Gross loan-to-budget | `≤80%` |
-| Term | Generally `≤15 months` |
+| Tax-credit advance | Apply the current asset-specific rule to verified eligible value after program, timing and realization adjustments |
+| Gap advance | Apply the current asset-specific rule to a supported low case after rights, market and collection adjustments |
+| Gap concentration | Test uncertain and correlated exposure against current concentration-review and approval requirements |
+| Aggregate leverage | Apply current approved ceilings only after collateral eligibility and legal reachability are established |
+| Budget exposure | Compare total exposure with the approved production budget without treating the ratio as a substitute for full financing |
+| Term and liquidity | Align maturity, reserves and extension capacity with stressed collection timing |
 
-The available material does not state an effective date or policy version. Confirm current authority and calculation definitions before applying the limits. See the [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]].
+> [!warning] Evidence Limitation
+> Exact thresholds and exception authorities are internal, versioned controls and are intentionally not reproduced here. Use current approved policy and transaction documents. The [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]] explains how the tests interact.
 
 ## Required Output
 

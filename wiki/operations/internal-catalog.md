@@ -2,7 +2,7 @@
 title: Internal Wiki Catalog
 type: operations
 status: current
-updated: 2026-08-11
+updated: 2026-08-29
 source_count: 17
 publish: false
 tags:
@@ -14,6 +14,8 @@ tags:
 # Internal Wiki Catalog
 
 Private maintenance catalog for the complete knowledge layer. The public reader experience begins at [[MediaHedge Knowledgebase]].
+
+Public control pages were re-scoped on 2026-08-29 to explain decision logic without exposing current numeric underwriting or pricing parameters. Legacy figures remain in private source summaries for provenance pending policy reconciliation.
 
 ## Public orientation
 
@@ -46,7 +48,7 @@ Private maintenance catalog for the complete knowledge layer. The public reader 
 - [[wiki/syntheses/financier-diligence-route|Financier Diligence Guide]]
 - [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]]
 - [[wiki/syntheses/credit-lifecycle|Film-Finance Credit Lifecycle]]
-- [[wiki/syntheses/policy-rails-and-control-matrix|Policy Rails and Control Matrix]]
+- [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]]
 - [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]]
 - [[wiki/syntheses/site-navigator|Site Navigator]]
 

@@ -2,7 +2,7 @@
 title: Gap Collateral
 type: concept
 status: needs-review
-updated: 2026-08-28
+updated: 2026-08-29
 as_of: unknown
 source_count: 6
 publish: true
@@ -20,7 +20,7 @@ tags:
 Gap financing advances against a discounted portion of the potential value of verified unsold film or television rights before binding licenses exist. The asset is market-dependent rights and future sale proceeds—not cash, a guaranteed sale or a contracted minimum-guarantee receivable.
 
 > [!warning] Evidence Limitation
-> The quantitative limits and pricing statement below appear in undated internal briefs. They explain the sourced framework but must be checked against current approved policy before use.
+> Legacy briefs contain undated quantitative limits and pricing parameters. Those values are preserved privately for provenance but are intentionally not reproduced in this public guide. Current approved policy and transaction documents control.
 
 ![[assets/diagrams/repayment-source-map.svg|Conceptual map distinguishing unsold-rights value from contracted receivables and other repayment sources]]
 
@@ -42,17 +42,11 @@ Gap financing advances against a discounted portion of the potential value of ve
 | Executed license | Identified distributor and contractual minimum guarantee | Delivery, acceptance, obligor credit, defenses and deductions | [[wiki/concepts/pre-sales-collateral\|Pre-Sales Diligence]], assignment and acknowledgment |
 | Collected cash | Cleared proceeds in the controlled account | Diversion, priority, deductions and reconciliation | [[wiki/concepts/cash-control-and-waterfalls\|Cash Control and Waterfalls]] |
 
-## Sourced MediaHedge Rails
+## Current Policy Application
 
-The available material states that gap exposure is limited by the tightest applicable constraint, including:
+Gap exposure is limited by the tightest applicable constraint. Underwriting applies the current asset-specific advance rule to a supported low case, tests the result against concentration-review requirements, and then applies aggregate leverage, budget-exposure, term and liquidity controls. Unsupported or highly correlated value receives no credit merely because another ratio has remaining capacity.
 
-- advance no greater than 50% of supported low value;
-- gap generally no greater than 30% of the final gross loan;
-- aggregate LTV no greater than 60%;
-- gross loan-to-budget no greater than 80%;
-- term generally no longer than 15 months.
-
-The same source states that gap inclusion generally contributes approximately three to five percentage points to blended pricing. That is an undated internal pricing statement, not a forecast of financier return. Transaction mix, cash timing, extension, loss, [[wiki/concepts/monitoring-and-servicing|servicing]] and actual loan-tape performance control [[wiki/concepts/financier-return-economics|realized economics]].
+Gap can affect transaction pricing, but current pricing parameters are internal and transaction-specific. Cash timing, extensions, losses, [[wiki/concepts/monitoring-and-servicing|servicing]] and actual loan-tape performance determine [[wiki/concepts/financier-return-economics|realized economics]].
 
 ## Diligence Questions
 

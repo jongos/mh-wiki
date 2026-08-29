@@ -131,6 +131,23 @@ try {
     if ($uiAudit.ExitCode -ne 0) { throw "Local Publish UI fixture failed.`n$($uiAudit.Output | Out-String)" }
     Add-TestPass 'local Publish UI fixture passed generated-label, accessibility and observer-scope checks'
 
+    $policyLeakVault = Copy-VaultFixture -Name 'public-policy-leak'
+    Set-TestVaultRegistration -RegisteredVault $policyLeakVault
+    $policyLeakPage = Join-Path $policyLeakVault 'wiki\concepts\loan-sizing.md'
+    $policyLeakContent = [IO.File]::ReadAllText($policyLeakPage, [Text.Encoding]::UTF8)
+    $changedPolicyLeakContent = $policyLeakContent.Replace(
+        "MediaHedge's sizing method is a constraint system.",
+        "MediaHedge's sizing method uses an 85% tax-credit advance as a constraint."
+    )
+    if ($changedPolicyLeakContent -eq $policyLeakContent) { throw 'Could not prepare the public-policy leak fixture.' }
+    [IO.File]::WriteAllText($policyLeakPage, $changedPolicyLeakContent, $utf8NoBom)
+    $policyLeakLint = Invoke-PowerShellCapture -ScriptPath (Join-Path $policyLeakVault 'tools\wiki-lint.ps1') -Arguments @('-VaultRoot', $policyLeakVault)
+    $policyLeakOutput = $policyLeakLint.Output -join "`n"
+    if ($policyLeakLint.ExitCode -eq 0 -or $policyLeakOutput -notmatch 'Published page exposes a legacy tax-credit advance') {
+        throw 'Public-policy leak fixture did not fail safely.'
+    }
+    Add-TestPass 'published legacy numeric underwriting rails are rejected'
+
     $driftVault = Copy-VaultFixture -Name 'navigation-drift'
     Set-TestVaultRegistration -RegisteredVault $driftVault
     $driftPage = Join-Path $driftVault 'wiki\concepts\loan-sizing.md'

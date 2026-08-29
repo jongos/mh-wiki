@@ -2,7 +2,7 @@
 title: Research Backlog
 type: operations
 status: current
-updated: 2026-08-10
+updated: 2026-08-29
 source_count: 17
 publish: false
 tags:
@@ -15,15 +15,16 @@ tags:
 
 Questions whose answers would materially improve the wiki. New evidence should be sourced, ingested and integrated under [[AGENTS]].
 
-## Priority 1 - policy authority and freshness
+## Priority 1 - Policy Authority and Freshness
 
-- What are the effective date, version owner and approval authority for the 60% aggregate LTV, 80% gross loan-to-budget, 85% tax-credit advance, 50% gap advance, 30% gap concentration and 15-month term rails?
-- Which limits are hard prohibitions, delegated exceptions or watch thresholds?
+- What are the effective date, version owner and approval authority for each current advance, concentration, aggregate leverage, budget-exposure and term control?
+- Reconcile legacy briefs that describe gap concentration as a hard limit with current canonical underwriting guidance that treats the threshold as an amber human-review trigger rather than an automatic decline.
+- Which limits are hard prohibitions, delegated exceptions or watch thresholds, and which policy document controls when sources differ?
 - How are denominator terms defined in policy, including gross loan, budget, eligible value, supported low value and final gross loan?
 - What is the exact method for solving and auditing the circular gap-concentration formula?
 - What are the current authority, definition and approved range for the statement that gap inclusion generally contributes approximately three to five percentage points to blended pricing?
 
-## Priority 2 - legal and jurisdictional validation
+## Priority 2 - Legal and Jurisdictional Validation
 
 - Who owns the market-landscape refresh, how often is it repeated, and what evidence is required before a provider is added, removed or reclassified?
 - Which legal lending vehicles, hold sizes, approval processes, syndication dependencies and product mandates are current for each potential capital provider?
@@ -37,7 +38,7 @@ Questions whose answers would materially improve the wiki. New evidence should b
 - Which current surety or media-credit forms are approved, which obligations may be bonded, and what issuer-strength, penal-sum, claim, amendment, cancellation and tail standards apply?
 - Which pre-sale contract, delivery, acceptance, assignment and distributor-credit criteria determine eligibility by territory and counterparty?
 
-## Priority 3 - operational policy
+## Priority 3 - Operational Policy
 
 - What are the formal monitoring cadence, data fields, severity taxonomy, cure aging and escalation thresholds?
 - Which decisions are within delegated servicing authority and which are reserved matters by capital partner or facility?
@@ -45,14 +46,14 @@ Questions whose answers would materially improve the wiki. New evidence should b
 - What claims calendar, vendor panel and protective-advance approval test are approved for workouts?
 - What evidence, review cadence and independent challenge are required for sales-agent estimates, comparable titles and the conversion of unsold rights into executed receivables?
 
-## Priority 4 - performance evidence
+## Priority 4 - Performance Evidence
 
 - What do realized loan-tape results show by collateral type, obligor, jurisdiction, vintage, exception and internal risk tier?
 - How do expected maturity, actual maturity, extension frequency, XIRR, cash multiple, default, loss severity and net recovery compare?
 - Which common factors explain correlated delay or loss across otherwise distinct productions?
 - How much of gross borrower yield reaches the financing partner after servicing, legal, funding and idle-capital drag?
 
-## Candidate source types
+## Candidate Source Types
 
 - current credit policy and approval matrix;
 - standard underwriting and closing checklists;

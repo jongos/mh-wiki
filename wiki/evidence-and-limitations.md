@@ -2,7 +2,7 @@
 title: Evidence and Limitations
 type: synthesis
 status: current
-updated: 2026-08-28
+updated: 2026-08-29
 source_count: 17
 publish: true
 description: Understand the evidence supporting this knowledgebase, its limitations and the legal, policy, market and transaction facts financiers should verify.
@@ -46,7 +46,7 @@ This knowledgebase brings together seventeen evidentiary internal MediaHedge bri
 ## Important Policy Note
 
 > [!warning] Evidence Limitation
-> Several pages describe limits stated in the internal briefs, including advance rates, concentration limits, leverage limits and maximum term. The briefs do not identify their effective date or approving authority. Those figures are useful for understanding the framework, but current policy should be confirmed before they are used in a financing decision.
+> Legacy internal briefs contain quantitative advance, concentration, leverage, term and pricing parameters without a complete version or approval history. The public guide explains how those controls work but intentionally does not reproduce the values. Current approved policy and transaction documents control every financing decision.
 
 ## What a Financing Partner Should Request
 

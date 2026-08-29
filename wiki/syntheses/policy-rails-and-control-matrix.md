@@ -2,11 +2,11 @@
 title: Policy and Control Guide
 type: synthesis
 status: needs-review
-updated: 2026-08-28
+updated: 2026-08-29
 as_of: unknown
 source_count: 11
 publish: true
-description: Review the source-stated MediaHedge sizing rails, exposure limits and operating controls that govern collateral, commitment, closing, servicing and exceptions.
+description: Review the control framework governing MediaHedge collateral, sizing, commitment, closing, servicing, exceptions and transaction-level approval.
 tags:
   - mediahedge
   - synthesis
@@ -17,18 +17,18 @@ tags:
 # Policy and Control Guide
 
 > [!warning] Evidence Limitation
-> The figures below are described in the available material as MediaHedge film-policy limits. The material does not provide a policy version, approval date or effective date. Verify current authority before applying them to a transaction.
+> This public guide explains the role of MediaHedge's controls without publishing current numeric underwriting limits or pricing parameters. Approved internal policy and transaction documents govern any specific financing.
 
-## Quantitative Rails
+## Sizing and Exposure Controls
 
-| Rail | Stated treatment | Purpose |
+| Control | Public Decision Framework | Purpose |
 | --- | --- | --- |
-| [[wiki/concepts/tax-credit-collateral\|Tax-credit advance]] | No more than 85% of verified eligible tax-credit value | Cushion for audit, timing, transfer and monetization risk |
-| [[wiki/concepts/gap-collateral\|Gap advance]] | No more than 50% of supported low value | Limits exposure to market-dependent unsold-rights value |
-| [[wiki/concepts/gap-collateral\|Gap concentration]] | Generally no more than 30% of actual final gross loan | Prevents gap risk from dominating repayment |
-| Aggregate LTV | No more than 60% | Caps total exposure relative to eligible value |
-| Gross loan-to-budget | No more than 80% | Limits lender exposure relative to production budget |
-| Term | Generally no longer than 15 months | Aligns maturity with realistic collection timing and liquidity |
+| [[wiki/concepts/tax-credit-collateral\|Tax-credit advance]] | Apply the current asset-specific rule to verified eligible value | Cushions audit, timing, transfer and monetization risk |
+| [[wiki/concepts/gap-collateral\|Gap advance]] | Apply the current asset-specific rule to a supported low case | Limits exposure to market-dependent unsold-rights value |
+| [[wiki/concepts/gap-collateral\|Gap concentration]] | Apply current concentration-review and approval requirements | Prevents uncertain or correlated value from dominating repayment |
+| Aggregate leverage | Apply current approved ceilings to eligible, legally reachable value | Caps total exposure relative to supportable collateral |
+| Budget exposure | Apply current approved ceilings without substituting for full financing | Limits lender exposure relative to production uses |
+| Term and liquidity | Align maturity, reserves and extension capacity with stressed collection timing | Protects against timing mismatch and liquidity shortfalls |
 | [[wiki/concepts/loan-sizing\|Commitment]] | Lowest amount permitted by all applicable constraints | Ensures the tightest structural ceiling controls |
 
 ## Non-Quantitative Gates
@@ -69,7 +69,7 @@ tags:
 
 ## Evidence and Limitations
 
-These figures are useful for understanding the stated framework, but they are not a certification of current policy. Review [[wiki/evidence-and-limitations|Evidence and Limitations]] before applying them to a financing decision.
+These controls explain the framework, but they do not certify current thresholds, definitions or delegated exception authority. Review [[wiki/evidence-and-limitations|Evidence and Limitations]] and current approved policy before applying them to a financing decision.
 
 ## Continue Exploring
 

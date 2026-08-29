@@ -2,7 +2,7 @@
 title: Welcome to the MediaHedge Knowledgebase
 type: operations
 status: current
-updated: 2026-08-28
+updated: 2026-08-29
 source_count: 17
 publish: true
 description: Explore film and television finance through MediaHedge's guide to collateral, loan sizing, cash control, risk protection, servicing, recovery and returns.
@@ -19,6 +19,9 @@ tags:
 MediaHedge works at the intersection of creative production and disciplined credit. This knowledgebase explains how the company evaluates film and television financing, protects capital throughout a production, and works with financing partners over the life of an investment.
 
 You do not need to be a film-finance specialist. Start with the question you care about and follow the links as far as you would like to go.
+
+> [!note] Public Framework
+> This guide explains how MediaHedge's controls work without publishing current numeric underwriting limits or pricing parameters. Approved internal policy and transaction documents govern any specific financing.
 
 ![[assets/diagrams/credit-journey.svg|Conceptual diagram of the MediaHedge credit journey from financeability through portfolio reporting]]
 
@@ -53,7 +56,7 @@ You do not need to be a film-finance specialist. Start with the question you car
 
 The [[wiki/syntheses/credit-lifecycle|Film-Finance Credit Lifecycle]] follows a loan from the first screen through underwriting, closing, servicing, recovery and portfolio reporting.
 
-For a quicker comparison of repayment sources, open the [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]]. For the source-stated limits and major decision gates, use the [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]].
+For a quicker comparison of repayment sources, open the [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]]. For the major sizing, approval and operating gates, use the [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]].
 
 ## Explore the Model
 

@@ -2,7 +2,7 @@
 title: How the MediaHedge Lending Model Works
 type: overview
 status: current
-updated: 2026-08-28
+updated: 2026-08-29
 source_count: 17
 publish: true
 description: See how MediaHedge connects full financing, collateral eligibility, loan sizing, cash control, protection, servicing, recovery and portfolio discipline.
@@ -52,20 +52,18 @@ The corpus identifies multiple possible value sources but repeatedly warns that 
 
 [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]] compares these paths and their shared dependencies.
 
-## Policy Limits Described in the Available Material
+## How Policy Limits Work
 
-The briefs state the following MediaHedge film-policy controls:
+MediaHedge's sizing framework combines several controls rather than relying on one headline ratio:
 
-- tax-credit advance at no more than 85% of verified eligible value;
-- gap advance at no more than 50% of supported low value;
-- gap generally no more than 30% of the actual final gross loan;
-- aggregate LTV at no more than 60%;
-- gross loan-to-budget at no more than 80%;
-- term generally no longer than 15 months;
-- final commitment equal to the lowest amount permitted by all applicable constraints.
+- asset-specific advance rules reflect the reliability and volatility of each eligible repayment source;
+- concentration tests limit uncertain, correlated or difficult-to-realize exposure;
+- aggregate leverage and budget-exposure ceilings constrain the overall structure;
+- term, reserves and liquidity tests align maturity with stressed collection timing; and
+- the lowest amount permitted by every applicable constraint sets the maximum commitment.
 
 > [!warning] Evidence Limitation
-> These are internal source statements, not universal market constants. The briefs do not state an effective date, so current application should be verified before use. See [[wiki/syntheses/policy-rails-and-control-matrix|Policy Rails and Control Matrix]].
+> Current numeric thresholds, exception authorities and pricing parameters are internal, versioned controls and are intentionally not reproduced in this public guide. Approved policy and transaction documents control. See the [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]] for the public decision framework.
 
 ## The Recurring Distinctions
 

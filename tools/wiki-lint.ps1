@@ -444,6 +444,31 @@ function Test-PublishedPresentation {
     }
 }
 
+function Test-PublishedPolicyBoundary {
+    param(
+        [string]$Content,
+        [string]$Relative
+    )
+
+    $visible = [regex]::Replace($Content, '(?s)<!--.*?-->', '')
+    $visible = Mask-MarkdownCode -Content $visible
+    $legacyPolicyPatterns = @(
+        @{ Label = 'legacy tax-credit advance'; Pattern = '(?i)(?:85\s*%[^.\r\n]{0,120}(?:tax|verified eligible)|(?:tax|verified eligible)[^.\r\n]{0,120}85\s*%)' },
+        @{ Label = 'legacy gap advance'; Pattern = '(?i)(?:50\s*%[^.\r\n]{0,120}gap|gap[^.\r\n]{0,120}50\s*%)' },
+        @{ Label = 'legacy gap concentration'; Pattern = '(?i)(?:30\s*%[^.\r\n]{0,120}gap|gap[^.\r\n]{0,120}30\s*%)' },
+        @{ Label = 'legacy aggregate leverage'; Pattern = '(?i)(?:60\s*%[^.\r\n]{0,120}(?:LTV|aggregate leverage)|(?:LTV|aggregate leverage)[^.\r\n]{0,120}60\s*%)' },
+        @{ Label = 'legacy budget-exposure limit'; Pattern = '(?i)(?:80\s*%[^.\r\n]{0,120}(?:loan-to-budget|budget exposure)|(?:loan-to-budget|budget exposure)[^.\r\n]{0,120}80\s*%)' },
+        @{ Label = 'legacy term limit'; Pattern = '(?i)(?:15[- ]month[^.\r\n]{0,120}(?:term|maturity)|(?:term|maturity)[^.\r\n]{0,120}15[- ]month)' },
+        @{ Label = 'legacy gap-pricing increment'; Pattern = '(?i)three\s+to\s+five\s+percentage\s+points' }
+    )
+
+    foreach ($policyPattern in $legacyPolicyPatterns) {
+        if ($visible -match $policyPattern.Pattern) {
+            $script:errors.Add("Published page exposes a $($policyPattern.Label): $Relative")
+        }
+    }
+}
+
 Test-PublishVaultConfiguration
 
 $inbound = @{}
@@ -886,6 +911,7 @@ if (-not (Test-Path -LiteralPath $homePath -PathType Leaf)) {
         $errors.Add('Public home note must be marked publish: true')
     }
     Test-PublishedPresentation -Content $homeContent -Relative 'MediaHedge Knowledgebase.md' -RequireContinueExploring $true
+    Test-PublishedPolicyBoundary -Content $homeContent -Relative 'MediaHedge Knowledgebase.md'
     $homeVisibleContent = [regex]::Replace($homeContent, '(?s)<!--.*?-->', '')
     $homeVisibleContent = Mask-MarkdownCode -Content $homeVisibleContent
     foreach ($match in [regex]::Matches($homeVisibleContent, '\[\[([^\]]+)\]\]')) {
@@ -931,6 +957,7 @@ foreach ($file in $wikiFiles) {
     if ($isPublished) {
         $publicWikiFiles.Add($file)
         Test-PublishedPresentation -Content $content -Relative $relative -RequireContinueExploring $true
+        Test-PublishedPolicyBoundary -Content $content -Relative $relative
         if ($homeContent -notmatch [regex]::Escape("[[$target")) {
             $warnings.Add("Published page absent from public home: $relative")
         }
@@ -988,13 +1015,13 @@ foreach ($privateRelative in $privateRootFiles) {
 
 $requiredToolPatterns = @{
     'hash-lib.ps1' = @('Get-Sha256Hash', 'Security.Cryptography.SHA256', 'IO.File]::OpenRead')
-    'publish-audit.ps1' = @('Get-RemoteFileHash', 'publish-browser-audit.ps1', 'robots.txt', 'sitemap.xml', 'expectedSitemapUrls')
+    'publish-audit.ps1' = @('Get-RemoteFileHash', 'publish-browser-audit.ps1', 'robots.txt', 'sitemap.xml', 'expectedSitemapUrls', 'window.preloadPage', 'broken crawler preload target')
     'browser-audit-lib.ps1' = @('Start-BrowserAuditSession', 'Stop-BrowserAuditSession')
     'generate-publish-navigation.ps1' = @('BEGIN GENERATED READER LABELS', 'label_overrides', 'publish: true notes')
     'publish-browser-audit.ps1' = @('legacy /wiki route', 'accessibleCombobox', 'accessibleListbox', 'announcedResults', 'mh-seo-jsonld', 'BreadcrumbList', 'single reader-facing H1')
     'publish-route-compatibility-audit.js' = @('mediafinance.guide/wiki', 'publish.obsidian.md/mediahdge/wiki', 'Legacy /wiki compatibility redirects')
     'publish-ui-fixture-audit.ps1' = @('aria-activedescendant', 'mhAnimationFrames', 'Financing Essentials')
-    'wiki-test.ps1' = @('navigation-drift', 'lineage-mismatch', 'archive-additivity', 'credential-redaction')
+    'wiki-test.ps1' = @('navigation-drift', 'public-policy-leak', 'lineage-mismatch', 'archive-additivity', 'credential-redaction')
     'wiki-archive.ps1' = @("fetch --no-prune --no-prune-tags origin 'refs/heads/*:refs/heads/*'", 'Preserved archive-only refs')
     'github-sync.ps1' = @('credentialLocations', 'Values are redacted')
 }
