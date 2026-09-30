@@ -2,7 +2,7 @@
 title: Gap Collateral
 type: concept
 status: needs-review
-updated: 2026-08-29
+updated: 2026-09-30
 as_of: unknown
 source_count: 6
 publish: true
@@ -19,8 +19,11 @@ tags:
 
 Gap financing advances against a discounted portion of the potential value of verified unsold film or television rights before binding licenses exist. The asset is market-dependent rights and future sale proceeds—not cash, a guaranteed sale or a contracted minimum-guarantee receivable.
 
+> [!warning] Policy Review Pending
+> This explanation is a framework. The policy date is not established in this wiki, and current approved policy controls.
+
 > [!warning] Evidence Limitation
-> Legacy briefs contain undated quantitative limits and pricing parameters. Those values are preserved privately for provenance but are intentionally not reproduced in this public guide. Current approved policy and transaction documents control.
+> Legacy briefs contain undated quantitative limits and pricing parameters. Those values remain in the intentionally public GitHub evidence history for provenance but are intentionally not reproduced in this public guide. Current approved policy and transaction documents control.
 
 ![[assets/diagrams/repayment-source-map.svg|Conceptual map distinguishing unsold-rights value from contracted receivables and other repayment sources]]
 

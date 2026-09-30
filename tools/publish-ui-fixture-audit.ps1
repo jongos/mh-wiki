@@ -144,7 +144,26 @@ try {
         -Expression "document.querySelector('.suggestion-title .suggestion-highlight')?.textContent === 'Sizing'" `
         -FailureMessage 'Changing the query failed to update the existing result highlight.'
 
-    Write-Output 'Local Publish UI fixture: generated labels, SEO metadata, single visible H1, ARIA combobox semantics, reused results, query highlights, hidden results and scoped observation passed'
+    $readerTools = Invoke-BrowserExpression -Socket $socket -Expression @'
+(() => {
+  document.querySelector('.mh-skip-link').click();
+  const frame = document.querySelector('.image-embed');
+  const link = document.querySelector('.mh-diagram-tools a');
+  return {
+    skipFocusedArticle: document.activeElement.id === 'mh-reader-content',
+    editDate: /^Page Updated \d{4}-\d{2}-\d{2}$/.test(document.querySelector('.mh-page-meta time')?.textContent || ''),
+    oneMetadataRow: document.querySelectorAll('.mh-page-meta').length === 1,
+    metadataBeforeReaderHeading: document.querySelector('.mh-page-meta').nextElementSibling.matches('h1.publish-article-heading'),
+    diagramKeyboard: frame.tabIndex === 0 && frame.getAttribute('role') === 'region',
+    diagramLink: link.href === frame.querySelector('img').src && link.rel === 'noopener',
+    tableKeyboard: document.querySelector('.table-wrapper').tabIndex === 0
+  };
+})()
+'@
+    foreach ($property in @('skipFocusedArticle', 'editDate', 'oneMetadataRow', 'metadataBeforeReaderHeading', 'diagramKeyboard', 'diagramLink', 'tableKeyboard')) {
+        if (-not $readerTools.$property) { throw "Reader field-guide enhancement failed: $property" }
+    }
+    Write-Output 'Local Publish UI fixture: metadata, skip link, diagram/table keyboard access, SEO, search states and scoped observation passed'
 } finally {
     Stop-BrowserAuditSession -Session $session
 }

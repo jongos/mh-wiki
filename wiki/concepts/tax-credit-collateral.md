@@ -2,7 +2,7 @@
 title: Tax-Credit Collateral
 type: concept
 status: needs-review
-updated: 2026-08-29
+updated: 2026-09-30
 as_of: unknown
 source_count: 4
 publish: true
@@ -17,6 +17,9 @@ tags:
 # Tax-Credit Collateral
 
 A production incentive can support a bridge loan when the project, claimant and expenditures qualify under the governing program and the expected refund, rebate, grant or transferable certificate can be assigned or otherwise captured for the lender. The expected incentive is conditional value until program, audit, filing and realization requirements are satisfied.
+
+> [!warning] Policy Review Pending
+> This explanation is a framework. The policy date is not established in this wiki, and current approved policy controls.
 
 ## Underwriting Architecture
 

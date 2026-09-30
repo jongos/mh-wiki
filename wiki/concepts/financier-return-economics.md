@@ -2,7 +2,7 @@
 title: Financing-Partner Return Economics
 type: concept
 status: needs-review
-updated: 2026-08-29
+updated: 2026-09-30
 as_of: unknown
 source_count: 5
 publish: true
@@ -17,6 +17,9 @@ tags:
 # Financing-Partner Return Economics
 
 The financier's realized return is the result of actual dated cash flows, not the stated coupon alone. Analysis must incorporate advances, purchase price, fees, principal and interest collections, duration, prepayment, extension, default, nonaccrual, recovery cost, servicing expense and idle-capital or funding effects.
+
+> [!warning] Policy Review Pending
+> This explanation is a framework. The policy date is not established in this wiki, and current approved policy controls.
 
 ![[assets/diagrams/return-economics-bridge.svg|Conceptual bridge from contractual coupon and fees to realized XIRR and cash multiple]]
 

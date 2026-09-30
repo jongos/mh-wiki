@@ -14,11 +14,20 @@ tags:
 
 ![[assets/mediahedge-banner.jpg|1000]]
 
-# Welcome to the MediaHedge Knowledgebase
+# MediaHedge Knowledgebase
 
 MediaHedge works at the intersection of creative production and disciplined credit. This knowledgebase explains how the company evaluates film and television financing, protects capital throughout a production, and works with financing partners over the life of an investment.
 
 You do not need to be a film-finance specialist. Start with the question you care about and follow the links as far as you would like to go.
+
+## Start Here
+
+- **New to Film Finance?** Begin with [[wiki/overview|How the Lending Model Works]], keep the [[wiki/glossary|Plain-English Glossary]] nearby, then explore the [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]].
+- **Evaluating a Financing?** Meet [[wiki/entities/mediahedge|MediaHedge and FilmHedge]], then follow the eight questions in the [[wiki/syntheses/financier-diligence-route|Financier's Guide]].
+- **Closing or Production Counsel?** Follow the [[wiki/concepts/security-package|Security Package]], [[wiki/concepts/cash-control-and-waterfalls|Cash Control]] and [[wiki/concepts/forward-flow-governance|Financing-Partner Governance]] trail.
+- **Monitoring a Troubled Project?** Start with the [[wiki/concepts/protection-stack|Protection Stack]], then read [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]] and [[wiki/concepts/defaults-workouts-and-recoveries|Defaults, Workouts and Recoveries]].
+
+For a wider view, compare the [[wiki/syntheses/media-finance-lending-landscape|Market Participants]] or explore the visual [[wiki/syntheses/site-navigator|Site Navigator]].
 
 > [!note] Public Framework
 > The reader website summarizes the controls qualitatively. The intentionally public GitHub repository and its history also contain legacy internal briefs and numerical examples; those are historical evidence, not a statement of current approved policy. Current approved policy and executed transaction documents govern each financing.
@@ -26,14 +35,6 @@ You do not need to be a film-finance specialist. Start with the question you car
 ![[assets/diagrams/credit-journey.svg|Conceptual diagram of the MediaHedge credit journey from financeability through portfolio reporting]]
 
 *Conceptual view: each stage produces evidence and a decision, while current policy and transaction documents control any specific financing.*
-
-## Start Here
-
-- **New to MediaHedge?** Read [[wiki/entities/mediahedge|Who MediaHedge is]] and [[wiki/overview|How the lending model works]].
-- **Evaluating an investment?** Follow the [[wiki/syntheses/financier-diligence-route|Financier's Guide]].
-- **Mapping the market?** Compare participants in the [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]].
-- **Looking for a term?** Open the [[wiki/glossary|Plain-English Glossary]].
-- **Prefer a visual route?** Explore the connected knowledgebase in the [[wiki/syntheses/site-navigator|Site Navigator]].
 
 ## Questions a Financing Partner May Ask
 

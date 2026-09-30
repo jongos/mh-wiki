@@ -16,7 +16,9 @@ tags:
 
 # Policy and Control Guide
 
-> [!warning] Evidence Limitation
+> [!warning] Policy Review Pending
+> This explanation is a framework. The policy date is not established in this wiki, and current approved policy controls.
+>
 > The reader website summarizes the controls qualitatively. The intentionally public GitHub repository and its history also contain legacy internal briefs and numerical examples; those are historical evidence, not a statement of current approved policy. Current approved policy and executed transaction documents govern each financing.
 
 ## Sizing and Exposure Controls

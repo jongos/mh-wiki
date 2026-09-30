@@ -19,6 +19,8 @@ Public control pages were re-scoped on 2026-08-29 to explain decision logic with
 
 ## Public orientation
 
+The 2026-09-30 reader-interface refinement places four audience/task routes near the top of the public home and makes the existing policy-review status visible on loan sizing, gap collateral, tax-credit collateral, return economics and the policy-control matrix. This changes presentation and navigation, not approved policy or source counts. The interface decisions are recorded in the root `DESIGN.md` maintenance file.
+
 - [[wiki/overview|MediaHedge Wiki Overview]]
 - [[wiki/evidence-and-limitations|Evidence and Limitations]]
 - [[wiki/glossary|Film-Finance Glossary]]

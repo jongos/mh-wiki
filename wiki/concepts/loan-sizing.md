@@ -18,6 +18,9 @@ tags:
 
 MediaHedge's sizing method is a constraint system. Underwriting first converts headline collateral into eligible net value, then applies asset-specific advance rates, concentration limits, aggregate leverage, budget exposure, tenor and liquidity tests.
 
+> [!warning] Policy Review Pending
+> This explanation is a framework. The policy date is not established in this wiki, and current approved policy controls.
+
 > [!tip] Decision Point
 > The approved commitment is the lowest amount permitted by every applicable test.
 

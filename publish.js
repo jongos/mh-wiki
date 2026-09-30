@@ -55,10 +55,10 @@
     ["wiki/concepts/cash-control-and-waterfalls.md", { title: "Cash Control and Waterfalls", seoTitle: "Cash Control and Waterfalls | Media Finance Guide", description: "Learn how payment directions, collection accounts, account control, contractual waterfalls and reconciliation turn proceeds into prioritized loan repayment.", updated: "2026-08-28", type: "concept" }],
     ["wiki/concepts/completion-protection.md", { title: "Completion Protection", seoTitle: "Completion Protection | Media Finance Guide", description: "Understand how completion bonds and guaranties support production and delivery, what remedies they may provide and why they do not guarantee loan repayment.", updated: "2026-09-30", type: "concept" }],
     ["wiki/concepts/defaults-workouts-and-recoveries.md", { title: "Defaults, Workouts and Recoveries", seoTitle: "Defaults, Workouts and Recoveries | Media Finance Guide", description: "Explore how lenders diagnose film-finance distress, preserve collateral and claims, govern workouts and select remedies that maximize risk-adjusted recovery.", updated: "2026-08-28", type: "concept" }],
-    ["wiki/concepts/financier-return-economics.md", { title: "Financing-Partner Return Economics", seoTitle: "Financing-Partner Return Economics | Media Finance Guide", description: "Evaluate film-finance returns through actual dated cash flows, fees, duration, prepayment, extensions, defaults, recoveries, expenses and capital utilization.", updated: "2026-08-29", type: "concept" }],
+    ["wiki/concepts/financier-return-economics.md", { title: "Financing-Partner Return Economics", seoTitle: "Financing-Partner Return Economics | Media Finance Guide", description: "Evaluate film-finance returns through actual dated cash flows, fees, duration, prepayment, extensions, defaults, recoveries, expenses and capital utilization.", updated: "2026-09-30", type: "concept" }],
     ["wiki/concepts/forward-flow-governance.md", { title: "Financing-Partner Governance", seoTitle: "Financing-Partner Governance | Media Finance Guide", description: "See how MediaHedge and financing partners divide eligibility, delegated authority, reserved decisions, servicing duties and risk oversight in forward-flow programs.", updated: "2026-08-28", type: "concept" }],
     ["wiki/concepts/full-financing.md", { title: "Full Financing", seoTitle: "Full Financing | Media Finance Guide", description: "Learn why a film or television production must have complete, verified and properly timed sources to cover production, delivery, reserves and contingency.", updated: "2026-08-28", type: "concept" }],
-    ["wiki/concepts/gap-collateral.md", { title: "Gap Collateral", seoTitle: "Gap Collateral | Media Finance Guide", description: "Understand gap financing against discounted unsold film and television rights, including valuation, eligibility, concentration and repayment risks.", updated: "2026-08-29", type: "concept" }],
+    ["wiki/concepts/gap-collateral.md", { title: "Gap Collateral", seoTitle: "Gap Collateral | Media Finance Guide", description: "Understand gap financing against discounted unsold film and television rights, including valuation, eligibility, concentration and repayment risks.", updated: "2026-09-30", type: "concept" }],
     ["wiki/concepts/loan-sizing.md", { title: "Loan Sizing", seoTitle: "Loan Sizing | Media Finance Guide", description: "Learn how eligible collateral value, advance rates, concentration limits, leverage, budget exposure, tenor and liquidity constraints determine loan size.", updated: "2026-09-30", type: "concept" }],
     ["wiki/concepts/monitoring-and-servicing.md", { title: "Monitoring and Servicing", seoTitle: "Monitoring and Servicing | Media Finance Guide", description: "See how active servicing tracks production progress, collateral, cash, covenants and recovery timing while escalating material variances for decision.", updated: "2026-08-28", type: "concept" }],
     ["wiki/concepts/portfolio-construction.md", { title: "Portfolio Construction", seoTitle: "Portfolio Construction | Media Finance Guide", description: "Learn how film-finance portfolios manage concentration by distributor, incentive program, guarantor, producer, platform, collateral market and collection timing.", updated: "2026-08-28", type: "concept" }],
@@ -67,7 +67,7 @@
     ["wiki/concepts/protection-stack.md", { title: "Protection Stack", seoTitle: "Protection Stack | Media Finance Guide", description: "Explore the layered controls MediaHedge uses to address financeability, collateral, completion, payment, cash, servicing and recovery risks without relying on one safeguard.", updated: "2026-08-28", type: "concept" }],
     ["wiki/concepts/security-package.md", { title: "Security Package", seoTitle: "Security Package | Media Finance Guide", description: "Understand how a film-finance security package establishes priority, preserves collateral, captures proceeds and supports practical enforcement for each repayment asset.", updated: "2026-08-28", type: "concept" }],
     ["wiki/concepts/surety-credit-protection.md", { title: "Surety and Credit Protection", seoTitle: "Surety and Credit Protection | Media Finance Guide", description: "Learn how surety bonds and media-credit guarantees support specifically defined payment or performance obligations and where their loan protection ends.", updated: "2026-08-28", type: "concept" }],
-    ["wiki/concepts/tax-credit-collateral.md", { title: "Tax-Credit Collateral", seoTitle: "Tax-Credit Collateral | Media Finance Guide", description: "Understand how production incentives become potential collateral through program eligibility, qualified spending, verification, assignment, timing and monetization.", updated: "2026-08-29", type: "concept" }],
+    ["wiki/concepts/tax-credit-collateral.md", { title: "Tax-Credit Collateral", seoTitle: "Tax-Credit Collateral | Media Finance Guide", description: "Understand how production incentives become potential collateral through program eligibility, qualified spending, verification, assignment, timing and monetization.", updated: "2026-09-30", type: "concept" }],
     ["wiki/entities/mediahedge.md", { title: "MediaHedge", seoTitle: "MediaHedge | Media Finance Guide", description: "Meet MediaHedge, a specialist film-finance originator, underwriter and servicer working with institutional capital across structured financing relationships.", updated: "2026-09-30", type: "entity" }],
     ["wiki/evidence-and-limitations.md", { title: "Evidence and Limitations", seoTitle: "Evidence and Limitations | Media Finance Guide", description: "Understand the evidence supporting this knowledgebase, its limitations and the legal, policy, market and transaction facts financiers should verify.", updated: "2026-09-30", type: "synthesis" }],
     ["wiki/glossary.md", { title: "MediaHedge Film-Finance Glossary", seoTitle: "MediaHedge Film-Finance Glossary | Media Finance Guide", description: "Learn the film-finance, private-credit, collateral, production, servicing and return terms used throughout the MediaHedge knowledgebase.", updated: "2026-09-30", type: "glossary" }],
@@ -249,6 +249,84 @@
     if (script.textContent !== json) script.textContent = json;
   };
 
+  const enhanceReaderContent = (pagePath, metadata) => {
+    const article = getContentRoot()?.querySelector(".markdown-rendered");
+    const heading = [...(article?.querySelectorAll("h1") || [])]
+      .find((node) => !node.matches(".page-header") && !node.closest(".mod-header.mod-ui"));
+    if (!article || !heading) return;
+
+    article.id = "mh-reader-content";
+    article.tabIndex = -1;
+    let skip = document.querySelector(".mh-skip-link");
+    if (!skip) {
+      skip = document.createElement("a");
+      skip.className = "mh-skip-link";
+      skip.href = "#mh-reader-content";
+      skip.textContent = "Skip to Article";
+      skip.addEventListener("click", (event) => {
+        const currentArticle = document.getElementById("mh-reader-content");
+        if (!currentArticle) return;
+        event.preventDefault();
+        currentArticle.focus({ preventScroll: true });
+        currentArticle.scrollIntoView({ block: "start" });
+      });
+      document.body.prepend(skip);
+    }
+
+    let meta = article.querySelector(".mh-page-meta");
+    if (!meta) {
+      meta = document.createElement("div");
+      meta.className = "mh-page-meta";
+      const category = document.createElement("span");
+      category.className = "mh-page-category";
+      const date = document.createElement("time");
+      date.title = "Page edit date; not a policy verification date";
+      meta.append(category, date);
+      (heading.parentElement.classList.contains("el-h1") ? heading.parentElement : heading).before(meta);
+    }
+    const category = meta.querySelector(".mh-page-category");
+    const label = categoryLabelForPath(pagePath) || "Media Finance Guide";
+    if (category.textContent !== label) category.textContent = label;
+    const date = meta.querySelector("time");
+    const dateLabel = `Page Updated ${metadata.updated}`;
+    if (date.textContent !== dateLabel) date.textContent = dateLabel;
+    if (date.dateTime !== metadata.updated) date.dateTime = metadata.updated;
+
+    article.querySelectorAll('.image-embed:has(img[src*=".svg"])').forEach((frame) => {
+      const img = frame.querySelector("img");
+      let source;
+      try { source = new URL(img.src, window.location.href); } catch { return; }
+      if (!["https:", "http:", "file:"].includes(source.protocol)) return;
+      frame.classList.add("mh-scroll-region");
+      frame.tabIndex = 0;
+      frame.setAttribute("role", "region");
+      frame.setAttribute("aria-label", `${img.alt || "Conceptual diagram"}. Scroll horizontally to explore.`);
+      let controls = frame.nextElementSibling;
+      if (!controls?.classList.contains("mh-diagram-tools")) {
+        controls = document.createElement("span");
+        controls.className = "mh-diagram-tools";
+        const hint = document.createElement("span");
+        hint.className = "mh-diagram-hint";
+        hint.textContent = "Scroll to Explore →";
+        const link = document.createElement("a");
+        link.textContent = "Open Full Diagram ↗";
+        link.target = "_blank";
+        link.rel = "noopener";
+        controls.append(hint, link);
+        frame.after(controls);
+      }
+      const link = controls.querySelector("a");
+      if (link.href !== source.href) link.href = source.href;
+      link.setAttribute("aria-label", `Open full diagram: ${img.alt || "conceptual illustration"} (new tab)`);
+    });
+    article.querySelectorAll(".el-table, .table-wrapper").forEach((wrapper) => {
+      wrapper.tabIndex = 0;
+      wrapper.setAttribute("role", "region");
+      wrapper.setAttribute("aria-label", "Comparison table; scroll horizontally if needed");
+      wrapper.classList.add("mh-scroll-region");
+    });
+  };
+
   const applySeoMetadata = () => {
     seoUpdateScheduled = false;
     const pagePath = pagePathForLocation();
@@ -275,6 +353,7 @@
     setMeta("name", "twitter:image", socialImageUrl);
     setMeta("name", "twitter:image:alt", "MediaHedge film and television finance knowledgebase");
     setStructuredData(pagePath, metadata, canonicalUrl);
+    enhanceReaderContent(pagePath, metadata);
   };
 
   const scheduleSeoMetadata = () => {
