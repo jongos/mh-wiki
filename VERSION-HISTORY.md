@@ -15,7 +15,7 @@ This is the human recovery index for the MediaHedge wiki. Git is the authoritati
 | Immutable bundles | Off-repository bundle directory | Timestamped, single-file full-history backups with separate SHA-256 checksum records for major milestones. |
 | Public GitHub remote | `https://github.com/jongos/mh-wiki` | Canonical off-device collaboration remote; `origin/main` must match every completed Codex-authored wiki operation. |
 
-Exact configured locations are reported locally by `tools\wiki-diagnostics.cmd`. The archive tools resolve the current Windows Documents folder and accept explicit archive and bundle paths; keep machine-specific recovery notes outside this public repository. Historical commits retain the old paths because recovery history is additive.
+The archive update reports the resolved mirror location locally. The archive tools resolve the current Windows Documents folder and accept explicit archive and bundle paths; keep machine-specific recovery notes outside this public repository. Historical commits retain the old paths because recovery history is additive.
 
 ## Retroactive Generation Index
 
