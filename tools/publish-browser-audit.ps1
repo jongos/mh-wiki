@@ -13,7 +13,7 @@ try {
     $socket = $session.Socket
     $legacyWikiUrl = $SiteUrl.TrimEnd('/') + '/wiki'
     [void](Invoke-CdpCommand -Socket $socket -Method 'Page.navigate' -Parameters @{ url = $legacyWikiUrl })
-    $legacyRedirectExpression = "decodeURIComponent(window.location.pathname).replaceAll('+', ' ').replace(/\/+$/, '') === '/MediaHedge Knowledgebase' && document.readyState === 'complete' && !!document.querySelector('input.search-bar') && !!document.querySelector('.nav-view-outer') && [...document.querySelectorAll('h1')].some((heading) => heading.innerText.trim() === 'Welcome to the MediaHedge Knowledgebase') && !document.body.innerText.includes('This page does not exist')"
+    $legacyRedirectExpression = "decodeURIComponent(window.location.pathname).replaceAll('+', ' ').replace(/\/+$/, '') === '/MediaHedge Knowledgebase' && document.readyState === 'complete' && !!document.querySelector('input.search-bar') && !!document.querySelector('.nav-view-outer') && [...document.querySelectorAll('h1')].some((heading) => heading.innerText.trim() === 'MediaHedge Knowledgebase') && !document.body.innerText.includes('This page does not exist')"
     try {
         Wait-ForBrowserCondition -Socket $socket -TimeoutSeconds $TimeoutSeconds `
             -Expression $legacyRedirectExpression `
@@ -26,7 +26,7 @@ try {
   readyState: document.readyState,
   hasSearch: !!document.querySelector('input.search-bar'),
   hasNavigation: !!document.querySelector('.nav-view-outer'),
-  hasHomeHeading: [...document.querySelectorAll('h1')].some((heading) => heading.innerText.trim() === 'Welcome to the MediaHedge Knowledgebase'),
+  hasHomeHeading: [...document.querySelectorAll('h1')].some((heading) => heading.innerText.trim() === 'MediaHedge Knowledgebase'),
   hasVisibleNotFound: document.body.innerText.includes('This page does not exist')
 }))()
 '@
@@ -64,7 +64,7 @@ try {
         'WebSite' -notin @($homeSeo.schemaTypes) -or
         'WebPage' -notin @($homeSeo.schemaTypes) -or
         @($homeSeo.visibleH1s).Count -ne 1 -or
-        $homeSeo.visibleH1s[0] -ne 'Welcome to the MediaHedge Knowledgebase') {
+        $homeSeo.visibleH1s[0] -ne 'MediaHedge Knowledgebase') {
         throw "Published home page is missing complete SEO metadata or a single reader-facing H1. State: $($homeSeo | ConvertTo-Json -Compress -Depth 5)"
     }
 
@@ -182,7 +182,7 @@ try {
     [void](Invoke-CdpCommand -Socket $socket -Method 'Page.navigate' -Parameters @{ url = $conceptUrl })
     try {
         Wait-ForBrowserCondition -Socket $socket -TimeoutSeconds $TimeoutSeconds `
-            -Expression "document.readyState === 'complete' && !!document.getElementById('mh-seo-jsonld')" `
+            -Expression "location.pathname === '/wiki/concepts/loan-sizing' && document.readyState === 'complete' && !!document.getElementById('mh-seo-jsonld') && document.querySelector('h1.publish-article-heading')?.innerText.trim() === 'Loan Sizing' && !!document.querySelector('.mh-diagram-tools a')" `
             -FailureMessage 'Representative concept did not finish loading its SEO runtime.'
     } catch {
         $conceptState = Invoke-BrowserExpression -Socket $socket -Expression @'
@@ -229,7 +229,32 @@ try {
         throw "Published concept is missing complete SEO metadata or a single reader-facing H1. State: $($conceptSeo | ConvertTo-Json -Compress -Depth 5)"
     }
 
-    Write-Output 'Live reader behavior: legacy /wiki redirect, unique SEO metadata, canonical and structured data, accessible search, friendly navigation and Site Navigator footer passed'
+    $reader = Invoke-BrowserExpression -Socket $socket -Expression @'
+(() => {
+  document.querySelector('.mh-skip-link')?.click();
+  const frame = document.querySelector('.mh-scroll-region');
+  const link = document.querySelector('.mh-diagram-tools a');
+  return {
+    skipFocus: document.activeElement.id === 'mh-reader-content',
+    editDate: /^Page Updated \d{4}-\d{2}-\d{2}$/.test(document.querySelector('.mh-page-meta time')?.textContent || ''),
+    oneMetadataRow: document.querySelectorAll('.mh-page-meta').length === 1,
+    policyReview: !!document.querySelector('.callout[data-callout="warning"]')?.innerText.includes('Policy Review Pending'),
+    diagramLink: !!link && link.href === frame?.querySelector('img')?.src && link.rel === 'noopener'
+  };
+})()
+'@
+    foreach ($property in @('skipFocus', 'editDate', 'oneMetadataRow', 'policyReview', 'diagramLink')) {
+        if (-not $reader.$property) { throw "Live reader enhancement failed: $property" }
+    }
+    [void](Invoke-CdpCommand -Socket $socket -Method 'Emulation.setDeviceMetricsOverride' -Parameters @{ width = 390; height = 844; deviceScaleFactor = 1; mobile = $false })
+    [void](Invoke-BrowserExpression -Socket $socket -Expression "document.querySelector('.mh-scroll-region').focus(); true")
+    [void](Invoke-CdpCommand -Socket $socket -Method 'Input.dispatchKeyEvent' -Parameters @{ type = 'keyDown'; key = 'ArrowRight'; code = 'ArrowRight'; windowsVirtualKeyCode = 39 })
+    [void](Invoke-CdpCommand -Socket $socket -Method 'Input.dispatchKeyEvent' -Parameters @{ type = 'keyUp'; key = 'ArrowRight'; code = 'ArrowRight'; windowsVirtualKeyCode = 39 })
+    Wait-ForBrowserCondition -Socket $socket -TimeoutSeconds $TimeoutSeconds `
+        -Expression "document.querySelector('.mh-scroll-region').scrollLeft > 0 && document.documentElement.scrollWidth <= innerWidth && getComputedStyle(document.activeElement).outlineStyle !== 'none'" `
+        -FailureMessage 'Live mobile diagram did not scroll with keyboard input and visible focus, or the document overflowed.'
+
+    Write-Output 'Live reader behavior: legacy /wiki redirect, SEO, accessible search, friendly navigation, Site Navigator footer, visible dates/review status, skip link and mobile keyboard diagrams passed'
 } finally {
     Stop-BrowserAuditSession -Session $session
 }
