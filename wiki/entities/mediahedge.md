@@ -2,7 +2,7 @@
 title: MediaHedge
 type: entity
 status: current
-updated: 2026-08-28
+updated: 2026-09-30
 source_count: 16
 publish: true
 description: Meet MediaHedge, a specialist film-finance originator, underwriter and servicer working with institutional capital across structured financing relationships.
@@ -16,6 +16,10 @@ tags:
 # MediaHedge
 
 MediaHedge is a specialist film-finance originator, underwriter and servicer that largely operates alongside institutional capital providers in a [[wiki/concepts/forward-flow-governance|forward-flow]], purchase, participation, agency or similar structure. The available material describes functions and controls informed by the company's experiences as a lender; it does not, by itself, establish the company's legal form, licensing status, capitalization, historical performance or the terms of any specific partnership.
+
+MediaHedge, Inc. is the corporate parent of its wholly owned operating subsidiary, FilmHedge, LLC. This guide covers the group's financing framework.
+
+<!-- Orientation verified against live MediaHedge Brain Company/Company Overview.md on September 30, 2026; no additional raw snapshot is retained in this vault. -->
 
 ## Responsibilities Across the Asset Lifecycle
 

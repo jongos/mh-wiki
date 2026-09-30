@@ -2,7 +2,7 @@
 title: Evidence and Limitations
 type: synthesis
 status: current
-updated: 2026-08-29
+updated: 2026-09-30
 source_count: 17
 publish: true
 description: Understand the evidence supporting this knowledgebase, its limitations and the legal, policy, market and transaction facts financiers should verify.
@@ -46,7 +46,7 @@ This knowledgebase brings together seventeen evidentiary internal MediaHedge bri
 ## Important Policy Note
 
 > [!warning] Evidence Limitation
-> Legacy internal briefs contain quantitative advance, concentration, leverage, term and pricing parameters without a complete version or approval history. The public guide explains how those controls work but intentionally does not reproduce the values. Current approved policy and transaction documents control every financing decision.
+> The reader website summarizes the controls qualitatively. The intentionally public GitHub repository and its history also contain legacy internal briefs and numerical examples; those are historical evidence, not a statement of current approved policy. Current approved policy and executed transaction documents govern each financing.
 
 ## What a Financing Partner Should Request
 

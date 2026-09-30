@@ -73,7 +73,7 @@ This is not a pile of marketing pages. It is designed as a maintained knowledge 
 The repository is also a complete Obsidian vault.
 
 1. Clone the repository or use GitHub’s **Download ZIP** option.
-2. Open the repository’s `MH Wiki` folder as an Obsidian vault.
+2. Open the cloned repository root (the folder containing `.obsidian`, `wiki`, and `publish.js`) as an Obsidian vault.
 3. Begin with [MediaHedge Knowledgebase.md](MediaHedge%20Knowledgebase.md).
 4. Follow the internal links by question, concept, or stage of the credit lifecycle.
 

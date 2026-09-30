@@ -2,7 +2,7 @@
 title: Welcome to the MediaHedge Knowledgebase
 type: operations
 status: current
-updated: 2026-08-29
+updated: 2026-09-30
 source_count: 17
 publish: true
 description: Explore film and television finance through MediaHedge's guide to collateral, loan sizing, cash control, risk protection, servicing, recovery and returns.
@@ -21,7 +21,7 @@ MediaHedge works at the intersection of creative production and disciplined cred
 You do not need to be a film-finance specialist. Start with the question you care about and follow the links as far as you would like to go.
 
 > [!note] Public Framework
-> This guide explains how MediaHedge's controls work without publishing current numeric underwriting limits or pricing parameters. Approved internal policy and transaction documents govern any specific financing.
+> The reader website summarizes the controls qualitatively. The intentionally public GitHub repository and its history also contain legacy internal briefs and numerical examples; those are historical evidence, not a statement of current approved policy. Current approved policy and executed transaction documents govern each financing.
 
 ![[assets/diagrams/credit-journey.svg|Conceptual diagram of the MediaHedge credit journey from financeability through portfolio reporting]]
 

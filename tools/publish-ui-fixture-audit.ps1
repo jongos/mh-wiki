@@ -112,7 +112,39 @@ try {
         throw 'Relevant navigation mutation did not schedule reader-navigation work.'
     }
 
-    Write-Output 'Local Publish UI fixture: generated labels, SEO metadata, single visible H1, ARIA combobox semantics and scoped observation passed'
+    [void](Invoke-BrowserExpression -Socket $socket -Expression "document.querySelector('.search-results').hidden = true")
+    Wait-ForBrowserCondition -Socket $socket -TimeoutSeconds $TimeoutSeconds `
+        -Expression "document.querySelector('input.search-bar').getAttribute('aria-expanded') === 'false' && !document.querySelector('input.search-bar').hasAttribute('aria-activedescendant')" `
+        -FailureMessage 'Hidden results remained expanded or active for assistive technology.'
+    [void](Invoke-BrowserExpression -Socket $socket -Expression @'
+(() => {
+  const results = document.querySelector('.search-results');
+  results.hidden = false;
+  const item = results.querySelector('.suggestion-item');
+  item.querySelector('.suggestion-title').textContent = 'loan-sizing';
+  item.querySelector('.suggestion-note').textContent = 'wiki/concepts';
+  const input = document.querySelector('input.search-bar');
+  input.value = 'loan';
+  input.dispatchEvent(new Event('input', { bubbles: true }));
+  return true;
+})()
+'@)
+    Wait-ForBrowserCondition -Socket $socket -TimeoutSeconds $TimeoutSeconds `
+        -Expression "document.querySelector('.suggestion-title').textContent === 'Loan Sizing' && document.querySelector('.suggestion-title .suggestion-highlight')?.textContent === 'Loan'" `
+        -FailureMessage 'Reused search result retained the previous label or lost its query highlight.'
+    [void](Invoke-BrowserExpression -Socket $socket -Expression @'
+(() => {
+  const input = document.querySelector('input.search-bar');
+  input.value = 'sizing';
+  input.dispatchEvent(new Event('input', { bubbles: true }));
+  return true;
+})()
+'@)
+    Wait-ForBrowserCondition -Socket $socket -TimeoutSeconds $TimeoutSeconds `
+        -Expression "document.querySelector('.suggestion-title .suggestion-highlight')?.textContent === 'Sizing'" `
+        -FailureMessage 'Changing the query failed to update the existing result highlight.'
+
+    Write-Output 'Local Publish UI fixture: generated labels, SEO metadata, single visible H1, ARIA combobox semantics, reused results, query highlights, hidden results and scoped observation passed'
 } finally {
     Stop-BrowserAuditSession -Session $session
 }

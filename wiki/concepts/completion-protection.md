@@ -2,7 +2,7 @@
 title: Completion Protection
 type: concept
 status: current
-updated: 2026-08-28
+updated: 2026-09-30
 source_count: 5
 publish: true
 description: Understand how completion bonds and guaranties support production and delivery, what remedies they may provide and why they do not guarantee loan repayment.
@@ -68,7 +68,7 @@ Coverage is transaction-specific. Common limitations may include uncovered event
 
 ## External Context
 
-Screen Australia's [Terms of Trade](https://www.screenaustralia.gov.au/getmedia/2e7f34c9-1f1c-420e-a8d6-66e984ea3c92/Terms-of-trade) say that it generally requires a completion guarantor for film and television production investments, with the decision informed by the producer, project and assessed completion risk. Its August 2025 [Narrative Content Production Guidelines](https://www.screenaustralia.gov.au/getmedia/f1a9729d-1263-4cf4-b0b5-54a6ede23340/Guidelines-Narrative-Content-Production-rev-7-8-2025-issued.pdf) also require completion-guarantor documentation for specified applications at or above an A$500,000 direct-funding request. This official Australian funding practice illustrates the institutional importance of completion risk; it does not define MediaHedge coverage, a universal threshold or the remedy in any transaction. Links checked: 2026-08-09.
+Screen Australia's [Terms of Trade](https://www.screenaustralia.gov.au/doing-business-with-us/terms-of-trade/) identify completion guarantees among its funding conditions and direct applicants to the applicable program and recipient requirements. Its [Narrative Content Production program](https://www.screenaustralia.gov.au/fund/narrative-content-production/) links the current guidelines. The replacement guidelines do not substantiate the older completion-guarantor threshold previously summarized here, so that threshold has been removed. These are Australian program requirements, not MediaHedge policy or a universal completion rule. Links checked: 2026-09-30.
 
 ## Continue Exploring
 

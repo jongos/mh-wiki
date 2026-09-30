@@ -2,7 +2,7 @@
 title: Pre-Sales Collateral
 type: concept
 status: current
-updated: 2026-08-28
+updated: 2026-09-30
 source_count: 5
 publish: true
 description: Understand how executed distribution agreements create minimum-guarantee receivables and how financiers verify, discount and control pre-sales collateral.
@@ -60,7 +60,7 @@ An offer letter, unsigned draft or future negotiation is not an executed receiva
 
 ## External Context
 
-Screen Australia's current [Market and Audience Insights](https://www.screenaustralia.gov.au/market-audience-insights/) reviewed 197 feature-film and television applications submitted from January 2023 through October 2025. It found marketplace finance—including distribution advances, minimum guarantees, pre-sales and gap—to be important but rarely sufficient on its own. Its August 2025 [Narrative Content Production Guidelines](https://www.screenaustralia.gov.au/getmedia/f1a9729d-1263-4cf4-b0b5-54a6ede23340/Guidelines-Narrative-Content-Production-rev-7-8-2025-issued.pdf) require evidence for finance-plan lines and, for specified applications, marketplace offers with terms, sales estimates and revenue projections. This is useful evidence of layered screen-finance practice, not proof that a particular pre-sale is eligible or collectible for MediaHedge. Links checked: 2026-08-09.
+Screen Australia's [Narrative Content Production program](https://www.screenaustralia.gov.au/fund/narrative-content-production/) assesses marketplace and finance alongside story, team, audience and budget, and directs applicants to its current guidelines for project-specific requirements. This illustrates layered screen-finance review; it does not establish that a particular pre-sale is eligible or collectible for MediaHedge. Links checked: 2026-09-30.
 
 ## Continue Exploring
 

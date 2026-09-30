@@ -2,7 +2,7 @@
 title: Policy and Control Guide
 type: synthesis
 status: needs-review
-updated: 2026-08-29
+updated: 2026-09-30
 as_of: unknown
 source_count: 11
 publish: true
@@ -17,7 +17,7 @@ tags:
 # Policy and Control Guide
 
 > [!warning] Evidence Limitation
-> This public guide explains the role of MediaHedge's controls without publishing current numeric underwriting limits or pricing parameters. Approved internal policy and transaction documents govern any specific financing.
+> The reader website summarizes the controls qualitatively. The intentionally public GitHub repository and its history also contain legacy internal briefs and numerical examples; those are historical evidence, not a statement of current approved policy. Current approved policy and executed transaction documents govern each financing.
 
 ## Sizing and Exposure Controls
 

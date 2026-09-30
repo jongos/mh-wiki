@@ -2,7 +2,7 @@
 title: Internal Wiki Catalog
 type: operations
 status: current
-updated: 2026-08-29
+updated: 2026-09-30
 source_count: 17
 publish: false
 tags:
@@ -15,7 +15,7 @@ tags:
 
 Private maintenance catalog for the complete knowledge layer. The public reader experience begins at [[MediaHedge Knowledgebase]].
 
-Public control pages were re-scoped on 2026-08-29 to explain decision logic without exposing current numeric underwriting or pricing parameters. Legacy figures remain in private source summaries for provenance pending policy reconciliation.
+Public control pages were re-scoped on 2026-08-29 to explain decision logic without exposing current numeric underwriting or pricing parameters. Legacy figures remain in source summaries excluded from the reader website but available in the intentionally public GitHub repository and history, pending policy reconciliation. On 2026-09-30, the glossary and company orientation gained current qualitative score definitions and the FilmHedge relationship, verified from the live Brain; the reader-site/repository boundary and broken external citations were corrected.
 
 ## Public orientation
 

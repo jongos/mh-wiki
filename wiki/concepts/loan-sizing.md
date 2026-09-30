@@ -2,7 +2,7 @@
 title: Loan Sizing
 type: concept
 status: needs-review
-updated: 2026-08-29
+updated: 2026-09-30
 as_of: unknown
 source_count: 6
 publish: true
@@ -46,7 +46,7 @@ MediaHedge's sizing method is a constraint system. Underwriting first converts h
 | Term and liquidity | Align maturity, reserves and extension capacity with stressed collection timing |
 
 > [!warning] Evidence Limitation
-> Exact thresholds and exception authorities are internal, versioned controls and are intentionally not reproduced here. Use current approved policy and transaction documents. The [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]] explains how the tests interact.
+> The reader website summarizes the controls qualitatively. The intentionally public GitHub repository and its history also contain legacy internal briefs and numerical examples; those are historical evidence, not a statement of current approved policy. Current approved policy and executed transaction documents govern each financing.
 
 ## Required Output
 
@@ -56,7 +56,7 @@ A finance expert should be able to reproduce the commitment from the collateral 
 - permitted exposure by sizing test;
 - the binding constraint and remaining cushion;
 - the effect of stress on value, timing and principal recovery;
-- pricing, risk score and approval status as separate outputs;
+- pricing, [[wiki/glossary#M-R|Risk Score, Obligor Score and MH Score]], and approval status as distinct concepts: risk inputs inform human review, while MH Score classifies the approved blended rate;
 - every exception and its approval authority.
 
 ## Collateral States Matter

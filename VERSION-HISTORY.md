@@ -10,10 +10,12 @@ This is the human recovery index for the MediaHedge wiki. Git is the authoritati
 
 | Copy | Location | Purpose |
 | --- | --- | --- |
-| Working repository | `C:\Users\jongo\FilmHedge Dropbox\FH Master Folder\-- Wiki\MD-wiki\MH Wiki` | Current editable vault and complete Git history. |
-| Bare mirror | `C:\Users\jongo\OneDrive\Documents\New project\MediaHedge-Wiki-Archive.git` | Independent Git database containing every branch, tag and commit. |
-| Immutable bundles | `C:\Users\jongo\OneDrive\Documents\New project\MediaHedge-Wiki-Bundles` | Timestamped, single-file full-history backups with separate SHA-256 checksum records for major milestones. |
+| Working repository | Local working vault (cloned repository root) | Current editable vault and complete Git history. |
+| Bare mirror | Off-repository bare mirror | Independent Git database containing every branch, tag and commit. |
+| Immutable bundles | Off-repository bundle directory | Timestamped, single-file full-history backups with separate SHA-256 checksum records for major milestones. |
 | Public GitHub remote | `https://github.com/jongos/mh-wiki` | Canonical off-device collaboration remote; `origin/main` must match every completed Codex-authored wiki operation. |
+
+Exact configured locations are reported locally by `tools\wiki-diagnostics.cmd`. The archive tools resolve the current Windows Documents folder and accept explicit archive and bundle paths; keep machine-specific recovery notes outside this public repository. Historical commits retain the old paths because recovery history is additive.
 
 ## Retroactive Generation Index
 
@@ -43,7 +45,7 @@ Prefer restoring into a separate folder first. This preserves the current vault 
 ### Restore the Current Archive Into a Separate Folder
 
 ```powershell
-git clone "C:\Users\jongo\OneDrive\Documents\New project\MediaHedge-Wiki-Archive.git" "C:\Users\jongo\OneDrive\Documents\New project\MediaHedge-Wiki-Restored"
+git clone "<absolute-path-to-off-repository-mirror>" "<new-separate-restore-folder>"
 ```
 
 ### Inspect an Older Generation

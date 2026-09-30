@@ -2,7 +2,7 @@
 title: Research Backlog
 type: operations
 status: current
-updated: 2026-08-29
+updated: 2026-09-30
 source_count: 17
 publish: false
 tags:
@@ -14,6 +14,13 @@ tags:
 # Research Backlog
 
 Questions whose answers would materially improve the wiki. New evidence should be sourced, ingested and integrated under [[AGENTS]].
+
+## September 2026 Review Follow-Up
+
+- Score terminology and the FilmHedge relationship were verified against the live Brain on September 30, 2026. No score scale, formula or pricing band is inferred or published in the reader pages.
+- The obsolete Screen Australia completion-guarantor threshold was removed after checking the replacement program guidelines and Terms of Trade. Re-check applicable program and recipient conditions before transaction use.
+- The dead Intectus completion-bond citation was removed because the current homepage did not substantiate that offering. Re-establish a current primary source before adding it back.
+- Repository publication is intentional and includes historical briefs. Website exclusion is not confidentiality; current-policy authority still requires reconciliation.
 
 ## Priority 1 - Policy Authority and Freshness
 

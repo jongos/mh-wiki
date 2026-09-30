@@ -2,7 +2,7 @@
 title: MediaHedge Film-Finance Glossary
 type: glossary
 status: current
-updated: 2026-08-28
+updated: 2026-09-30
 source_count: 17
 publish: true
 description: Learn the film-finance, private-credit, collateral, production, servicing and return terms used throughout the MediaHedge knowledgebase.
@@ -41,6 +41,8 @@ Use this glossary to translate recurring film-finance, credit and servicing term
 
 **Expected loss** - A forward-looking credit cost reflecting default probability, loss severity, recovery timing and related expense.
 
+**FilmHedge** - FilmHedge, LLC is the wholly owned operating subsidiary of MediaHedge, Inc. See [[wiki/entities/mediahedge|MediaHedge]].
+
 **Forward flow** - A relationship in which an originator supplies eligible assets under agreed purchase or funding mechanics while a financing partner provides capital and holds defined ownership, governance and economic rights. See [[wiki/concepts/forward-flow-governance|Financing-Partner Governance]].
 
 **Full financing** - A condition in which verified, timely financing sources and committed equity cover all production and delivery uses, financing costs, required reserves and contingency. See [[wiki/concepts/full-financing|Full Financing]].
@@ -60,6 +62,12 @@ Use this glossary to translate recurring film-finance, credit and servicing term
 ## M-R
 
 **MG** - Minimum guarantee, commonly a contracted distributor commitment that may become payable after conforming delivery and satisfaction of other conditions. See [[wiki/concepts/pre-sales-collateral|Pre-Sales Collateral]].
+
+**MH Score** - Classifies the final approved blended interest rate under approved price bands, after the underwriting decision. It does not set the rate and is distinct from the Risk Score and Obligor Score. No bands or formulas are reproduced here.
+
+**MH Risk Score / Risk Score** - Summarizes the broader transaction risk assessment to inform human underwriting judgment. It does not mechanically set pricing, collateral eligibility, advance rates or approval.
+
+**Obligor Score** - Territory- and legal-entity-specific counterparty guidance used as one input to deal review. A counterparty score alone does not determine approval, interest or MH Score.
 
 **MGU** - Managing general underwriter. A business with delegated underwriting or related authority for an insurer. The MGU or service brand may not be the legal entity that issues the policy, guaranty or bond. See [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]].
 
@@ -98,6 +106,8 @@ Use this glossary to translate recurring film-finance, credit and servicing term
 **Waterfall** - Contractual priority for applying collections among taxes or approved costs, senior principal, interest, fees and subordinate distributions. See [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]].
 
 **XIRR** - Annualized return calculated from actual dated cash flows. It is sensitive to draw, repayment, fee, extension and recovery timing. See [[wiki/concepts/financier-return-economics|Return Economics]].
+
+<!-- Definition provenance: live MediaHedge Brain, Underwriting/Risk and Obligor Scores.md (owner-approved September 25, 2026) and Company/Company Overview.md, refreshed September 30, 2026. Only the requested qualitative definitions are reproduced; no confidential source document or pricing bands are copied. These canonical references do not increase the count of raw snapshots retained in this vault. -->
 
 ## Usage Note
 

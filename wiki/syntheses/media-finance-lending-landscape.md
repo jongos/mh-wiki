@@ -2,7 +2,7 @@
 title: Media Finance Lending Landscape
 type: synthesis
 status: current
-updated: 2026-08-28
+updated: 2026-09-30
 as_of: 2026-08-10
 source_count: 7
 publish: true
@@ -60,7 +60,7 @@ Production insurance and completion support can preserve financeability, but nei
 | Function | Representative public platforms | Financier's identity check |
 | --- | --- | --- |
 | Production insurance | The [Lloyd's market](https://www.lloyds.com/about-lloyds/our-market), [Arch](https://www.archgroup.com/offering/entertainment/production/), [AXA XL](https://axaxl.com/insurance/products/media-and-entertainment-insurance), [Chubb](https://www.chubb.com/us-en/business-insurance/film-producers.html), [Intact Specialty](https://www.intactspecialty.com/intactspecialty/industries/entertainment) and [Allianz Commercial](https://commercial.allianz.com/solutions/entertainment-insurance.html) | Identify the policy issuer, syndicate participation, limits, deductibles, endorsements, claims authority and any material reinsurance dependence |
-| Completion guaranty | [UniFi Completion Guarantors](https://www.unifibonds.com/who-we-are/), [Film Finances International](https://www.filmfinances.com/about), [Paterson James](https://www.patersonjames.com/services/completion-guarantee/) and [Intectus](https://www.intectus.de/completion-bond/) | Identify the service platform, legal issuer or carrier, beneficiary, liability cap, remedies, exclusions, claim path and interparty rights |
+| Completion guaranty | [UniFi Completion Guarantors](https://www.unifibonds.com/who-we-are/), [Film Finances International](https://www.filmfinances.com/about) and [Paterson James](https://www.patersonjames.com/services/completion-guarantee/) | Identify the service platform, legal issuer or carrier, beneficiary, liability cap, remedies, exclusions, claim path and interparty rights |
 | Targeted payment protection | Transaction-specific surety, credit or media-obligation product, if available | Identify the principal, surety or insurer, obligee, bonded obligation, trigger, penal sum or policy limit and post-payment rights |
 
 > [!note] Current Market Context
@@ -91,7 +91,7 @@ Production insurance and completion support can preserve financeability, but nei
 
 This is a capability map as of August 10, 2026, not an endorsement, league table, capacity survey, pricing survey or credit opinion. Provider websites describe their own capabilities. Current ownership, licensing, product availability, capacity, financial strength and underwriting appetite should be refreshed before use. Executed loan documents, policies, guaranties, bonds, endorsements and interparty agreements determine the actual exposure and remedy.
 
-Links checked: 2026-08-10.
+Links checked: 2026-08-10. On 2026-09-30, the dead Intectus completion-bond reference was removed; its current homepage did not verify that offering. Other provider links have not been revalidated as part of this targeted correction.
 
 ## Analysis and Inference
 

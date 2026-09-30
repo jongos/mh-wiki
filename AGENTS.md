@@ -118,7 +118,7 @@ Quantitative policy rails must show their source and effective date when availab
 
 ## Reader navigation
 
-- Treat this directory, `MH Wiki`, as the Obsidian vault root. Never publish from its parent directory; public paths, wikilinks, assets, `publish.css` and `publish.js` are vault-relative to this root.
+- Treat the cloned repository root (the directory containing this file, `.obsidian/`, and `wiki/`) as the Obsidian vault root. Never publish from its parent directory; public paths, wikilinks, assets, `publish.css` and `publish.js` are vault-relative to this root.
 - Treat `MediaHedge Knowledgebase.md` as the primary home note and preserve `index.md` as a compatibility alias for older exports and external links.
 - Publish only reader-facing knowledge pages. Keep source summaries, raw evidence, operations registers, logs, templates, tools and agent instructions marked or configured as private.
 - Do not assume Obsidian enforces the `publish` frontmatter property. It is the wiki's publication policy; any file manually selected in Publish can still become public.
@@ -233,7 +233,7 @@ After an Obsidian Publish deployment, run `tools\publish-audit.cmd`. It compares
 
 - The canonical GitHub remote is named `origin` and must resolve exactly to `https://github.com/jongos/mh-wiki.git`.
 - The repository is intentionally public. The user explicitly approved publishing the complete tracked wiki and its additive history; credentials, private keys and other authentication material remain prohibited.
-- Every completed Codex-authored change to tracked vault files must be logged, linted, committed, copied to the independent OneDrive mirror and pushed to `origin/main` before the operation is reported complete.
+- Every completed Codex-authored change to tracked vault files must be logged, linted, committed, copied to the independent off-repository mirror and pushed to `origin/main` before the operation is reported complete.
 - Run `tools\github-sync.cmd` after the completed commit. It must refuse a dirty tree, a branch other than `main`, a missing or mismatched remote, a credential-pattern finding, a lint failure, an archive failure or a remote verification mismatch.
 - Credential scans may report only a redacted commit, filename and line location; never echo a detected token, key or matching source line into terminal or task output.
 - Keep `.github/workflows/wiki-integrity.yml` enabled on `main` and pull requests. A completed code or architecture change must pass its Windows regression suite as well as local verification.

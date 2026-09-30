@@ -28,17 +28,23 @@ function Get-AvailableTcpPort {
 }
 
 function Receive-WebSocketText {
-    param([Net.WebSockets.ClientWebSocket]$Socket)
+    param(
+        [Net.WebSockets.ClientWebSocket]$Socket,
+        [Threading.CancellationToken]$CancellationToken = [Threading.CancellationToken]::None
+    )
 
     $builder = [Text.StringBuilder]::new()
     $buffer = New-Object byte[] 65536
+    $decoder = [Text.Encoding]::UTF8.GetDecoder()
+    $characters = New-Object char[] 65536
     do {
         $segment = [ArraySegment[byte]]::new($buffer)
-        $result = $Socket.ReceiveAsync($segment, [Threading.CancellationToken]::None).GetAwaiter().GetResult()
+        $result = $Socket.ReceiveAsync($segment, $CancellationToken).GetAwaiter().GetResult()
         if ($result.MessageType -eq [Net.WebSockets.WebSocketMessageType]::Close) {
             throw 'Headless browser closed its debugging connection unexpectedly.'
         }
-        [void]$builder.Append([Text.Encoding]::UTF8.GetString($buffer, 0, $result.Count))
+        $count = $decoder.GetChars($buffer, 0, $result.Count, $characters, 0, $result.EndOfMessage)
+        [void]$builder.Append($characters, 0, $count)
     } until ($result.EndOfMessage)
     return $builder.ToString()
 }
@@ -48,7 +54,8 @@ function Invoke-CdpCommand {
     param(
         [Net.WebSockets.ClientWebSocket]$Socket,
         [string]$Method,
-        [hashtable]$Parameters = @{}
+        [hashtable]$Parameters = @{},
+        [int]$TimeoutSeconds = 30
     )
 
     $script:cdpCommandId++
@@ -59,20 +66,25 @@ function Invoke-CdpCommand {
         params = $Parameters
     } | ConvertTo-Json -Compress -Depth 20
     $bytes = [Text.Encoding]::UTF8.GetBytes($payload)
+    $cancellation = [Threading.CancellationTokenSource]::new([TimeSpan]::FromSeconds($TimeoutSeconds))
+    try {
     [void]$Socket.SendAsync(
         [ArraySegment[byte]]::new($bytes),
         [Net.WebSockets.WebSocketMessageType]::Text,
         $true,
-        [Threading.CancellationToken]::None
+        $cancellation.Token
     ).GetAwaiter().GetResult()
 
     while ($true) {
-        $message = (Receive-WebSocketText -Socket $Socket) | ConvertFrom-Json
+        $message = (Receive-WebSocketText -Socket $Socket -CancellationToken $cancellation.Token) | ConvertFrom-Json
         if ($message.id -ne $id) { continue }
         if ($null -ne $message.error) {
             throw "Headless browser command failed ($Method): $($message.error.message)"
         }
         return $message.result
+    }
+    } finally {
+        $cancellation.Dispose()
     }
 }
 
@@ -177,7 +189,12 @@ function Start-BrowserAuditSession {
             }
 
             $socket = [Net.WebSockets.ClientWebSocket]::new()
-            [void]$socket.ConnectAsync([Uri]$pageTarget.webSocketDebuggerUrl, [Threading.CancellationToken]::None).GetAwaiter().GetResult()
+            $connectCancellation = [Threading.CancellationTokenSource]::new([TimeSpan]::FromSeconds($TimeoutSeconds))
+            try {
+                [void]$socket.ConnectAsync([Uri]$pageTarget.webSocketDebuggerUrl, $connectCancellation.Token).GetAwaiter().GetResult()
+            } finally {
+                $connectCancellation.Dispose()
+            }
             [void](Invoke-CdpCommand -Socket $socket -Method 'Page.enable')
             [void](Invoke-CdpCommand -Socket $socket -Method 'Runtime.enable')
 
