@@ -15,11 +15,13 @@ tags:
 
 # MediaHedge
 
-MediaHedge is a specialist film-finance originator, underwriter and servicer that largely operates alongside institutional capital providers in a [[wiki/concepts/forward-flow-governance|forward-flow]], purchase, participation, agency or similar structure. The available material describes functions and controls informed by the company's experiences as a lender; it does not, by itself, establish the company's legal form, licensing status, capitalization, historical performance or the terms of any specific partnership.
+MediaHedge is a specialist film-finance originator, underwriter and servicer that largely operates alongside institutional capital providers in a [[wiki/concepts/forward-flow-governance|forward-flow]], purchase, participation, agency or similar structure. Current company guidance identifies MediaHedge as an institutional media-finance and private-credit platform. This guide describes its lending functions and controls; it does not establish licensing, capitalization, historical performance or the terms of a specific partnership.
 
 MediaHedge, Inc. is the corporate parent of its wholly owned operating subsidiary, FilmHedge, LLC. This guide covers the group's financing framework.
 
 <!-- Orientation verified against live MediaHedge Brain Company/Company Overview.md on September 30, 2026; no additional raw snapshot is retained in this vault. -->
+
+The lifecycle includes institutional and non-institutional financing. Eligibility, funding, servicing and participant rights are determined separately for each facility or instrument; a production-level label does not establish the status of every portion.
 
 ## Responsibilities Across the Asset Lifecycle
 
@@ -63,3 +65,5 @@ In a scalable forward-flow relationship, MediaHedge handles routine eligible exe
 
 All sixteen evidentiary source-summary pages in [[wiki/operations/internal-catalog#Source summaries]], with role descriptions concentrated in [[wiki/sources/forward-flow-partnerships-and-financier-governance]], [[wiki/sources/monitoring-and-servicing-after-closing]], [[wiki/sources/mediahedge-security-package]] and [[wiki/sources/defaults-workouts-and-recoveries]].
 -->
+
+<!-- Qualitative credit-sequence and funding-scope reconciliation: live Brain MH Underwriting (owner-approved September 25, 2026) and Lifecycle of a Media Loan (owner-approved September 27, 2026), checked September 30, 2026. No additional raw evidence source counted. -->

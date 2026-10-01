@@ -2,7 +2,7 @@
 title: Financier's Guide
 type: synthesis
 status: current
-updated: 2026-08-28
+updated: 2026-09-30
 source_count: 17
 publish: true
 description: Use eight financier-focused questions to evaluate financeability, repayment, sizing, control, protection, monitoring, recovery and portfolio economics.
@@ -98,6 +98,10 @@ Finish with [[wiki/concepts/portfolio-construction|Portfolio Construction]] and 
 - Reports are promised, but triggers, owners and decision authority are unclear.
 - Apparent diversification depends on several assets with the same underlying failure point.
 - Expected return is described by interest rate alone, without cash timing, costs or losses.
+
+## Questions Before a Deal Review
+
+For questions about whether a film qualifies, its rate or a distributor's approval, read [[wiki/evidence-and-limitations#Questions Readers Ask|Questions Readers Ask]]. This educational route does not decide those outcomes.
 
 ## What Still Requires Independent Verification
 

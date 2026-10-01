@@ -3,7 +3,7 @@ title: Tax-Credit Collateral
 type: concept
 status: needs-review
 updated: 2026-09-30
-as_of: unknown
+as_of: 2026-09-30
 source_count: 4
 publish: true
 description: Understand how production incentives become potential collateral through program eligibility, qualified spending, verification, assignment, timing and monetization.
@@ -19,7 +19,7 @@ tags:
 A production incentive can support a bridge loan when the project, claimant and expenditures qualify under the governing program and the expected refund, rebate, grant or transferable certificate can be assigned or otherwise captured for the lender. The expected incentive is conditional value until program, audit, filing and realization requirements are satisfied.
 
 > [!warning] Policy Review Pending
-> This explanation is a framework. The policy date is not established in this wiki, and current approved policy controls.
+> The qualitative framework was reconciled with current owner-approved underwriting guidance on September 30, 2026. Transaction-specific mandates, numerical assumptions and delegated exception authority still require verification; this page does not certify a financing.
 
 ## Underwriting Architecture
 
@@ -33,7 +33,7 @@ The expected amount is rebuilt from governing rules, the production budget, qual
 
 ### Advance and Structure
 
-MediaHedge applies the current asset-specific advance rule to verified eligible value, subject to tighter transaction constraints. Exact thresholds are internal and intentionally not reproduced in this public guide. Security, notices, claimant ownership, lockbox or account control and certificate-transfer documentation must fit local anti-assignment and program rules.
+MediaHedge sets the advance assumption from verified eligible value, timing, deductions and the approved transaction or lender mandate. A worked example is not a universal advance limit. Exact thresholds are internal and intentionally not reproduced in this public guide. Security, notices, claimant ownership, lockbox or account control and certificate-transfer documentation must fit local anti-assignment and program rules.
 
 ### Realization
 
@@ -73,3 +73,5 @@ Official program materials illustrate why production incentives require jurisdic
 - Primary: [[wiki/sources/tax-credit-receivables-as-collateral]].
 - Related: [[wiki/sources/how-mediahedge-sizes-a-loan]], [[wiki/sources/why-a-production-must-be-fully-financed]] and [[wiki/sources/mediahedge-security-package]].
 -->
+
+<!-- Current qualitative authority: live MediaHedge Brain Underwriting/MH Underwriting.md and Underwriting/Risk and Obligor Scores.md (owner-approved reference, September 25, 2026), and Operations/Lifecycle of a Media Loan.md (owner-approved narrative, September 27, 2026), checked September 30, 2026. This is a scoped reconciliation, not a new raw evidence source or a transaction approval. -->

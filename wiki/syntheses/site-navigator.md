@@ -2,7 +2,7 @@
 title: Site Navigator
 type: synthesis
 status: current
-updated: 2026-08-28
+updated: 2026-09-30
 source_count: 0
 publish: true
 description: Navigate the MediaHedge knowledgebase as a connected map of financeability, collateral, control, protection, servicing, recovery and portfolio economics.
@@ -21,6 +21,8 @@ Explore the MediaHedge knowledgebase as a connected system. The interactive grap
 > Select a node to open that page, drag the canvas to move around and use the graph controls to expand the view or switch to the global graph. Connections represent navigation and conceptual relationships—not transaction priority, risk weight or economic importance.
 
 > [!note]- Browse as a Directory
+> **Recent updates:** [[wiki/what-changed|What Changed]]
+>
 > **Orientation:** [[MediaHedge Knowledgebase|Home]] · [[wiki/overview|How the Lending Model Works]] · [[wiki/entities/mediahedge|Who MediaHedge Is]] · [[wiki/evidence-and-limitations|Evidence and Limitations]] · [[wiki/glossary|Plain-English Glossary]]
 >
 > **Decision routes:** [[wiki/syntheses/financier-diligence-route|Financier's Guide]] · [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]] · [[wiki/syntheses/credit-lifecycle|Film-Finance Credit Lifecycle]] · [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]] · [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]]

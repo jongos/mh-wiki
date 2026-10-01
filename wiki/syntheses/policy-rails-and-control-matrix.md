@@ -3,7 +3,7 @@ title: Policy and Control Guide
 type: synthesis
 status: needs-review
 updated: 2026-09-30
-as_of: unknown
+as_of: 2026-09-30
 source_count: 11
 publish: true
 description: Review the control framework governing MediaHedge collateral, sizing, commitment, closing, servicing, exceptions and transaction-level approval.
@@ -16,8 +16,10 @@ tags:
 
 # Policy and Control Guide
 
+Use this guide to connect collateral evidence, transaction-specific sizing and authorized decisions through closing and servicing. A review trigger, a mandatory limit and a funding condition have different consequences.
+
 > [!warning] Policy Review Pending
-> This explanation is a framework. The policy date is not established in this wiki, and current approved policy controls.
+> The qualitative framework was reconciled with current owner-approved underwriting guidance on September 30, 2026. Transaction-specific mandates, numerical assumptions and delegated exception authority still require verification; this page does not certify a financing.
 >
 > The reader website summarizes the controls qualitatively. The intentionally public GitHub repository and its history also contain legacy internal briefs and numerical examples; those are historical evidence, not a statement of current approved policy. Current approved policy and executed transaction documents govern each financing.
 
@@ -27,11 +29,17 @@ tags:
 | --- | --- | --- |
 | [[wiki/concepts/tax-credit-collateral\|Tax-credit advance]] | Apply the current asset-specific rule to verified eligible value | Cushions audit, timing, transfer and monetization risk |
 | [[wiki/concepts/gap-collateral\|Gap advance]] | Apply the current asset-specific rule to a supported low case | Limits exposure to market-dependent unsold-rights value |
-| [[wiki/concepts/gap-collateral\|Gap concentration]] | Apply current concentration-review and approval requirements | Prevents uncertain or correlated value from dominating repayment |
-| Aggregate leverage | Apply current approved ceilings to eligible, legally reachable value | Caps total exposure relative to supportable collateral |
-| Budget exposure | Apply current approved ceilings without substituting for full financing | Limits lender exposure relative to production uses |
+| [[wiki/concepts/gap-collateral\|Gap concentration]] | Require explicit concentration analysis; distinguish a review trigger from a mandatory mandate limit | Prevents uncertain or correlated value from dominating repayment |
+| Aggregate leverage | Apply approved transaction and mandate requirements to eligible value on a stated valuation base | Caps total exposure relative to supportable collateral |
+| Budget exposure | Set the approved capital structure and test net production cash and full financing | Limits lender exposure relative to production uses |
 | Term and liquidity | Align maturity, reserves and extension capacity with stressed collection timing | Protects against timing mismatch and liquidity shortfalls |
-| [[wiki/concepts/loan-sizing\|Commitment]] | Lowest amount permitted by all applicable constraints | Ensures the tightest structural ceiling controls |
+| [[wiki/concepts/loan-sizing\|Commitment]] | Amount satisfying approved limits, completion needs and authorized conditions | Keeps mandatory limits distinct from review triggers |
+
+## Decision Sequence and Funding Channels
+
+Screen the project, issue indicative terms and refine them during diligence. Verify collateral and net completion cash; model base, downside and stress cases; form separate Risk and Obligor Scores; recommend structure and pricing; obtain authorized approval; then classify the approved rate as MH Score and Tier. Documentary closing and actual funding are later, distinct events.
+
+Institutional eligibility is assessed by facility or tranche. Eligible contracted receivables and incentives do not make a project's gap, sales-estimate or other excluded portion eligible. Completion protection does not change that exclusion. Non-institutional financing and participations follow their own instruments, funding routes and consent rights.
 
 ## Non-Quantitative Gates
 
@@ -82,3 +90,5 @@ These controls explain the framework, but they do not certify current thresholds
 
 Primary: [[wiki/sources/how-mediahedge-sizes-a-loan]], [[wiki/sources/tax-credit-receivables-as-collateral]], [[wiki/sources/why-a-production-must-be-fully-financed]], [[wiki/sources/mediahedge-protection-stack]], [[wiki/sources/mediahedge-security-package]], [[wiki/sources/cama-account-control-and-collection-waterfalls]], [[wiki/sources/monitoring-and-servicing-after-closing]], [[wiki/sources/completion-bonds-crash-course]], [[wiki/sources/surety-bonds-crash-course]], [[wiki/sources/pre-sales-as-collateral-crash-course]] and [[wiki/sources/sales-estimates-and-gap-as-collateral-crash-course]]. Gaps are maintained in [[wiki/operations/research-backlog]].
 -->
+
+<!-- Current qualitative authority: live MediaHedge Brain Underwriting/MH Underwriting.md and Underwriting/Risk and Obligor Scores.md (owner-approved reference, September 25, 2026), and Operations/Lifecycle of a Media Loan.md (owner-approved narrative, September 27, 2026), checked September 30, 2026. This is a scoped reconciliation, not a new raw evidence source or a transaction approval. -->

@@ -21,6 +21,8 @@ Use this glossary to translate recurring film-finance, credit and servicing term
 
 **Advance rate** - The permitted loan exposure as a percentage of verified eligible value for a collateral category. It is a sizing control, not a statement of expected recovery. See [[wiki/concepts/loan-sizing|Loan Sizing]].
 
+**Article 9** - The secured-transactions part of the Uniform Commercial Code as enacted in the applicable US jurisdiction. In this wiki, references to Article 9 account control concern legal control of a deposit account, not the CAMA payment order. See [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]].
+
 **Borrowing base** - The aggregate permitted exposure derived from eligible collateral after applicable haircuts, exclusions and concentration rules. See [[wiki/concepts/loan-sizing|Loan Sizing]].
 
 **CAMA** - Collection account management agreement. It appoints an independent collection account manager and governs receipt allocation and distribution mechanics; it is distinct from deposit-account control. See [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]].
@@ -47,15 +49,21 @@ Use this glossary to translate recurring film-finance, credit and servicing term
 
 **Full financing** - A condition in which verified, timely financing sources and committed equity cover all production and delivery uses, financing costs, required reserves and contingency. See [[wiki/concepts/full-financing|Full Financing]].
 
-**Gap / unsold-rights value** - Collateral value associated with rights not yet contracted for sale. It is more market-dependent than a verified contracted receivable and receives deeper policy haircuts and concentration limits. See [[wiki/concepts/gap-collateral|Gap Collateral]].
+**Gap / unsold-rights value** - Collateral value associated with rights not yet contracted for sale. It is more market-dependent than a verified contracted receivable and receives more conservative advance treatment and explicit concentration review under the approved transaction and funding mandate. See [[wiki/concepts/gap-collateral|Gap Collateral]].
 
 **Gross loan-to-budget** - Gross loan exposure divided by the production budget under the applicable policy definition.
+
+**Holdback** - An amount withheld or reserved until specified conditions are met. In incentive valuation it can reduce or delay proceeds; in a collection waterfall it may be a contractual reserve. The governing program or agreement defines its purpose and release conditions. See [[wiki/concepts/tax-credit-collateral|Tax-Credit Collateral]] and [[wiki/concepts/cash-control-and-waterfalls|Cash Control]].
+
+**Intercreditor agreement** - An agreement among creditors allocating matters such as payment priority, enforcement, consent and recoveries. Its scope depends on the executed terms; an interparty agreement may address a broader group of stakeholders. See [[wiki/concepts/security-package|Security Package]] and [[wiki/concepts/defaults-workouts-and-recoveries|Workouts]].
 
 **Interparty agreement** - The document allocating authority, economics, expenses, enforcement and recovery rights among financing stakeholders.
 
 **Institutional private credit** - Debt or structured capital commonly underwritten against companies, libraries, catalogues, contractual revenues, enterprise value or diversified portfolios. It can overlap with media lending while differing from a short-term single-production receivables loan. See [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]].
 
 **Lloyd's market** - A specialist insurance and reinsurance marketplace in which syndicates underwrite risk. Lloyd's is not one insurance company; the policy and schedule should identify the subscribing risk bearers and their shares. See [[wiki/concepts/production-insurance|Production Insurance]].
+
+**Lockbox** - A designated payment-collection arrangement used to route receipts to an agreed account. Its label alone does not establish legal account control or payment priority. See [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]].
 
 **LTV** - Loan-to-value. In this corpus, aggregate exposure relative to eligible collateral value, subject to definition and policy limits.
 
@@ -83,6 +91,8 @@ Use this glossary to translate recurring film-finance, credit and servicing term
 
 **Protective advance** - Additional capital advanced during stress to preserve collateral or completion value. It should be governed by an explicit net-value test and approval authority. See [[wiki/concepts/defaults-workouts-and-recoveries|Defaults, Workouts and Recoveries]].
 
+**Recapture** - Recovery of a tax benefit previously allowed or used when the governing rules permit it. It is distinct from an initial estimate being reduced or a payment arriving late. The liable party, trigger and remedy depend on the program and transaction. See [[wiki/concepts/tax-credit-collateral|Tax-Credit Collateral]].
+
 **Recovery accounting** - Tracking gross collections, enforcement and servicing expenses, interest treatment, charge-offs, timing and net recovery by source. See [[wiki/concepts/defaults-workouts-and-recoveries|Defaults, Workouts and Recoveries]].
 
 **Reserved matter** - A decision that exceeds ordinary delegated servicing authority and requires the specified investor approval. See [[wiki/concepts/forward-flow-governance|Financing-Partner Governance]].
@@ -108,6 +118,10 @@ Use this glossary to translate recurring film-finance, credit and servicing term
 **XIRR** - Annualized return calculated from actual dated cash flows. It is sensitive to draw, repayment, fee, extension and recovery timing. See [[wiki/concepts/financier-return-economics|Return Economics]].
 
 <!-- Definition provenance: live MediaHedge Brain, Underwriting/Risk and Obligor Scores.md (owner-approved September 25, 2026) and Company/Company Overview.md, refreshed September 30, 2026. Only the requested qualitative definitions are reproduced; no confidential source document or pricing bands are copied. These canonical references do not increase the count of raw snapshots retained in this vault. -->
+
+## Legal Context for These Terms
+
+New York's [UCC deposit-account control provision](https://www.nysenate.gov/legislation/laws/UCC/9-104) illustrates the distinction between legally defined control and collection administration. Its [subordination provision](https://www.nysenate.gov/legislation/laws/UCC/9-339) recognizes agreed subordination by a party entitled to priority. Louisiana's [motion-picture production tax-credit statute](https://www.legis.la.gov/legis/Law.aspx?d=102363) illustrates program-specific recapture. These are jurisdiction-specific examples, not conclusions about another state's law or any financing. Links checked: 2026-09-30.
 
 ## Usage Note
 

@@ -2,7 +2,7 @@
 title: How MediaHedge Sizes a Loan
 type: source
 status: needs-review
-updated: 2026-08-08
+updated: 2026-09-30
 as_of: unknown
 ingested: 2026-08-08
 source_file: "[[raw/sources/MediaHedge_How_MediaHedge_Sizes_a_Loan_Financier_Brief.docx]]"
@@ -20,7 +20,7 @@ tags:
 
 ## Scope
 
-Financier brief setting out MediaHedge's constraint-based loan-sizing method and current film-policy rails. The source does not identify its policy effective date or version.
+Financier brief setting out MediaHedge's constraint-based loan-sizing method and historically stated film-policy rails. The source does not identify its policy effective date or version.
 
 ## Key claims
 
@@ -40,7 +40,13 @@ Financier brief setting out MediaHedge's constraint-based loan-sizing method and
 
 ## Limits
 
-The thresholds are MediaHedge controls rather than universal constants. LTV is ineffective when value is correlated or legally unreachable. Fees and capitalized interest can raise post-close exposure. Gross loan-to-budget does not replace the full-financing test.
+The source describes these as MediaHedge controls; that historical claim is superseded for current interpretation by the reconciliation below. LTV is ineffective when value is correlated or legally unreachable. Fees and capitalized interest can raise post-close exposure. Gross loan-to-budget does not replace the full-financing test.
+
+## Current Interpretation - September 30, 2026
+
+This summary preserves what the immutable legacy brief states. Its numerical limits or pricing examples are historical source claims, not current universal MediaHedge policy. Owner-approved underwriting guidance dated September 25, 2026 and the lifecycle narrative dated September 27 establish transaction-specific assumptions and mandates, explicit gap concentration review rather than automatic decline, and human approval. The current interpretation is documented in [[wiki/operations/underwriting-refresh-2026-09-30|September Underwriting Reconciliation]].
+
+Reader-safe use: explain collateral evidence, timing, control and qualified transaction review. Do not promote the legacy figures or fixed pricing uplift into reader guidance. The source's effective date remains unknown; its original hash and contents remain unchanged.
 
 ## Related pages
 

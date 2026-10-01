@@ -2,7 +2,7 @@
 title: Repayment and Risk Map
 type: synthesis
 status: current
-updated: 2026-08-29
+updated: 2026-09-30
 source_count: 12
 publish: true
 description: Compare contracted receivables, tax incentives, unsold rights, insurance, completion support and surety as distinct repayment and protection paths.
@@ -43,7 +43,7 @@ Even sound payment obligations do not protect a lender if proceeds are diverted,
 
 ## Shared Dependency: State Changes After Closing
 
-Collateral changes form over time: production spend becomes an incentive claim, delivery makes contract payments due, new licenses can convert unsold rights into receivables, and collections reduce exposure. [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]] must update eligibility, timing, concentration and expected return as those transitions occur.
+Collateral changes form over time: production spend becomes an incentive claim, delivery and satisfaction of contractual conditions can make payments due, new licenses can convert unsold rights into receivables, and collections reduce exposure. [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]] must update eligibility, timing, concentration and expected return as those transitions occur.
 
 ## Portfolio Implication
 

@@ -105,6 +105,8 @@ Use these labels when they materially improve trust:
 
 Quantitative policy rails must show their source and effective date when available. Never silently generalize MediaHedge policy into a universal market rule.
 
+Source summaries must distinguish claims suitable for the reader website from excluded claims and identify authority, scope, effective date and scoped review date separately. Ingestion and page-update dates are not verification dates. Website-excluded files and HTML comments remain visible in the intentionally public GitHub repository; they are not confidential storage. A qualitative reconciliation with the live Brain must identify its canonical authority and preserve historical source claims without importing confidential documents or increasing raw evidence counts. Update `wiki/what-changed.md` for substantive reader-facing releases; summarize changes, not private maintenance records.
+
 ## Linking and naming
 
 - Use lowercase kebab-case filenames.

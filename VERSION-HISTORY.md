@@ -38,6 +38,10 @@ The archive update reports the resolved mirror location locally. The archive too
 
 Run `tools\wiki-history.cmd` for the live commit-and-tag index. It reads Git directly, so it always includes generations created after this narrative table.
 
+## Current Content Milestone
+
+`wiki-v1.18-underwriting-context` records the Phase 1/2 evidence-template, glossary, reader-question and changelog refresh, reconciled with current owner-approved underwriting guidance. It preserves legacy raw evidence and separates transaction-specific assumptions from review triggers. This is a repository content milestone; Obsidian deployment remains separately verified in the operation log.
+
 ## Safe Recovery
 
 Prefer restoring into a separate folder first. This preserves the current vault and any manual edits while the recovered generation is inspected.

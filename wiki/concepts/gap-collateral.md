@@ -3,7 +3,7 @@ title: Gap Collateral
 type: concept
 status: needs-review
 updated: 2026-09-30
-as_of: unknown
+as_of: 2026-09-30
 source_count: 6
 publish: true
 description: Understand gap financing against discounted unsold film and television rights, including valuation, eligibility, concentration and repayment risks.
@@ -20,7 +20,7 @@ tags:
 Gap financing advances against a discounted portion of the potential value of verified unsold film or television rights before binding licenses exist. The asset is market-dependent rights and future sale proceeds—not cash, a guaranteed sale or a contracted minimum-guarantee receivable.
 
 > [!warning] Policy Review Pending
-> This explanation is a framework. The policy date is not established in this wiki, and current approved policy controls.
+> The qualitative framework was reconciled with current owner-approved underwriting guidance on September 30, 2026. Transaction-specific mandates, numerical assumptions and delegated exception authority still require verification; this page does not certify a financing.
 
 > [!warning] Evidence Limitation
 > Legacy briefs contain undated quantitative limits and pricing parameters. Those values remain in the intentionally public GitHub evidence history for provenance but are intentionally not reproduced in this public guide. Current approved policy and transaction documents control.
@@ -47,9 +47,9 @@ Gap financing advances against a discounted portion of the potential value of ve
 
 ## Current Policy Application
 
-Gap exposure is limited by the tightest applicable constraint. Underwriting applies the current asset-specific advance rule to a supported low case, tests the result against concentration-review requirements, and then applies aggregate leverage, budget-exposure, term and liquidity controls. Unsupported or highly correlated value receives no credit merely because another ratio has remaining capacity.
+Gap exposure is subject to approved transaction requirements and any applicable funding mandate. Underwriting applies the current asset-specific advance rule to a supported low case, tests the result against concentration-review requirements, and then applies transaction-specific leverage, budget-exposure, term and liquidity requirements. A concentration-review trigger requires explicit human analysis rather than automatic resizing or decline. Unsupported or highly correlated value receives no credit merely because another ratio has remaining capacity.
 
-Gap can affect transaction pricing, but current pricing parameters are internal and transaction-specific. Cash timing, extensions, losses, [[wiki/concepts/monitoring-and-servicing|servicing]] and actual loan-tape performance determine [[wiki/concepts/financier-return-economics|realized economics]].
+Gap remains excluded from the current institutional segment even when another portion of the same production is eligible. Other funding arrangements require their own approval. Gap can affect transaction pricing, but there is no mechanical fixed uplift: the complete collateral mix, timing, protection and risk analysis inform the recommendation. Cash timing, extensions, losses, [[wiki/concepts/monitoring-and-servicing|servicing]] and actual loan-tape performance determine [[wiki/concepts/financier-return-economics|realized economics]].
 
 ## Diligence Questions
 
@@ -77,3 +77,5 @@ Screen Australia's current [Market and Audience Insights](https://www.screenaust
 
 [[wiki/sources/sales-estimates-and-gap-as-collateral-crash-course]], [[wiki/sources/how-mediahedge-sizes-a-loan]], [[wiki/sources/why-a-production-must-be-fully-financed]], [[wiki/sources/mediahedge-security-package]], [[wiki/sources/cama-account-control-and-collection-waterfalls]] and [[wiki/sources/portfolio-construction-and-concentration-risk]].
 -->
+
+<!-- Current qualitative authority: live MediaHedge Brain Underwriting/MH Underwriting.md and Underwriting/Risk and Obligor Scores.md (owner-approved reference, September 25, 2026), and Operations/Lifecycle of a Media Loan.md (owner-approved narrative, September 27, 2026), checked September 30, 2026. This is a scoped reconciliation, not a new raw evidence source or a transaction approval. -->

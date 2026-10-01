@@ -93,6 +93,10 @@ For a quicker comparison of repayment sources, open the [[wiki/syntheses/repayme
 - [[wiki/concepts/portfolio-construction|Portfolio Construction]] — how shared risks and liquidity are managed across investments.
 - [[wiki/concepts/financier-return-economics|Return Economics]] — how actual cash timing, costs and losses affect realized performance.
 
+## Recent Changes
+
+Read [[wiki/what-changed|What Changed]] for the latest underwriting, terminology and reader-guidance updates.
+
 ## Understand the Boundaries
 
 Read [[wiki/evidence-and-limitations|Evidence and Limitations]] for a clear explanation of what this knowledgebase establishes, what remains subject to current policy or transaction documents, and what a financing partner should verify independently.

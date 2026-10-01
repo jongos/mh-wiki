@@ -2,7 +2,7 @@
 title: "Sales Estimates and Gap as Collateral: A Financier's Crash Course"
 type: source
 status: needs-review
-updated: 2026-08-09
+updated: 2026-09-30
 as_of: unknown
 ingested: 2026-08-09
 source_file: "[[raw/sources/MediaHedge_Sales_Estimates_Gap_Collateral_Crash_Course_MHGE-20260808-D72B.docx]]"
@@ -43,6 +43,12 @@ Two-page internal financier brief explaining how verified unsold distribution ri
 
 The source does not identify a policy version, approval authority or effective date for its quantitative rails or pricing statement. Values can be correlated across territories and can decline because of market demand, delivery, rights, timing, currency, tax, commission or expense assumptions. Completion coverage does not ordinarily insure a weak sales result.
 
+## Current Interpretation - September 30, 2026
+
+This summary preserves what the immutable legacy brief states. Its numerical limits or pricing examples are historical source claims, not current universal MediaHedge policy. Owner-approved underwriting guidance dated September 25, 2026 and the lifecycle narrative dated September 27 establish transaction-specific assumptions and mandates, explicit gap concentration review rather than automatic decline, and human approval. The current interpretation is documented in [[wiki/operations/underwriting-refresh-2026-09-30|September Underwriting Reconciliation]].
+
+Reader-safe use: explain collateral evidence, timing, control and qualified transaction review. Do not promote the legacy figures or fixed pricing uplift into reader guidance. The source's effective date remains unknown; its original hash and contents remain unchanged.
+
 ## Related Pages
 
 - [[wiki/concepts/gap-collateral|Gap Collateral]]
@@ -56,4 +62,3 @@ The source does not identify a policy version, approval authority or effective d
 
 - Raw source: [[raw/sources/MediaHedge_Sales_Estimates_Gap_Collateral_Crash_Course_MHGE-20260808-D72B.docx]]
 - Hash: `0196098FC22389A60E0333EB2DB9F4275E81E35DDC4CE09F01159B89605E62B1`
-

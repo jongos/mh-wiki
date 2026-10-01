@@ -3,7 +3,7 @@ title: Loan Sizing
 type: concept
 status: needs-review
 updated: 2026-09-30
-as_of: unknown
+as_of: 2026-09-30
 source_count: 6
 publish: true
 description: Learn how eligible collateral value, advance rates, concentration limits, leverage, budget exposure, tenor and liquidity constraints determine loan size.
@@ -16,24 +16,24 @@ tags:
 
 # Loan Sizing
 
-MediaHedge's sizing method is a constraint system. Underwriting first converts headline collateral into eligible net value, then applies asset-specific advance rates, concentration limits, aggregate leverage, budget exposure, tenor and liquidity tests.
+MediaHedge sizes each loan against evidenced repayment sources and the cash needed to complete and deliver the production. Underwriting establishes eligible net value, collateral-specific advances and reserves, then applies approved transaction limits, funding mandates and timing stress. Advance rates, leverage, equity, fees and tenor are transaction assumptions subject to approval, not universal ratios inferred from legacy examples.
 
 > [!warning] Policy Review Pending
-> This explanation is a framework. The policy date is not established in this wiki, and current approved policy controls.
+> The qualitative framework was reconciled with current owner-approved underwriting guidance on September 30, 2026. Transaction-specific mandates, numerical assumptions and delegated exception authority still require verification; this page does not certify a financing.
 
 > [!tip] Decision Point
-> The approved commitment is the lowest amount permitted by every applicable test.
+> The proposed amount must satisfy all applicable approved limits and completion needs. A concentration-review trigger calls for analysis and an authorized decision; it is not automatically a hard cap or a loan approval.
 
-![[assets/diagrams/loan-sizing-waterfall.svg|Conceptual waterfall from headline collateral value to the lowest permitted loan commitment]]
+![[assets/diagrams/loan-sizing-waterfall.svg|Conceptual sizing sequence from collateral evidence through approved limits and human credit review]]
 
-*Conceptual view: the waterfall shows the order of the tests, not transaction data or currently approved policy limits.*
+*Conceptual view: the diagram separates concentration review from approved limits. It shows no transaction data or numerical policy limits.*
 
 ## Sequence
 
 1. **Eligibility:** verify ownership, enforceability, assignment, obligor quality, conditions, deductions, timing and absence of overlap.
 2. **Asset-level advance:** apply a haircut appropriate to the asset's certainty and volatility.
-3. **Concentration:** limit any single risk component or common failure driver.
-4. **Aggregate ceilings:** apply the overall LTV and gross loan-to-budget caps.
+3. **Concentration:** assess common failure drivers and distinguish mandatory mandate limits from triggers requiring explicit human review.
+4. **Transaction requirements:** apply approved leverage, loan-to-budget and equity requirements; identify whether collateral LTV uses face or discounted value and avoid double deductions.
 5. **Term and liquidity:** align maturity with stressed collection timing, required reserves and extension risk.
 6. **Full-financing reconciliation:** confirm through [[wiki/concepts/full-financing|Full Financing]] that the sized facility, equity and other sources still fund every use through delivery.
 
@@ -44,12 +44,18 @@ MediaHedge's sizing method is a constraint system. Underwriting first converts h
 | Tax-credit advance | Apply the current asset-specific rule to verified eligible value after program, timing and realization adjustments |
 | Gap advance | Apply the current asset-specific rule to a supported low case after rights, market and collection adjustments |
 | Gap concentration | Test uncertain and correlated exposure against current concentration-review and approval requirements |
-| Aggregate leverage | Apply current approved ceilings only after collateral eligibility and legal reachability are established |
+| Aggregate leverage | Apply approved transaction and mandate requirements on a clearly stated collateral valuation base |
 | Budget exposure | Compare total exposure with the approved production budget without treating the ratio as a substitute for full financing |
 | Term and liquidity | Align maturity, reserves and extension capacity with stressed collection timing |
 
 > [!warning] Evidence Limitation
 > The reader website summarizes the controls qualitatively. The intentionally public GitHub repository and its history also contain legacy internal briefs and numerical examples; those are historical evidence, not a statement of current approved policy. Current approved policy and executed transaction documents govern each financing.
+
+## Approval and Production Cash
+
+Model base, downside and stress cases before recommending structure and pricing. Risk Score and the legal-entity- and territory-specific Obligor Score inform the review. Management or an authorized underwriter approves the structure and blended rate, with required capital-provider consent; MH Score and Tier classify that approved rate afterward. A spreadsheet result or counterparty lookup is not approval.
+
+Gross commitment is not cash available to production. Deduct prepaid interest, fees, reserves and other closing deductions, then reconcile net cash and its timing to remaining uses. A smaller loan does not cure a production funding shortfall unless other verified sources fill it.
 
 ## Required Output
 
@@ -68,7 +74,7 @@ An executed [[wiki/concepts/pre-sales-collateral|pre-sale]] can produce a contra
 
 ## Limits and Failure Modes
 
-Aggregate LTV does not protect capital if the value is ineligible, correlated, unreachable or maturing after the loan. Gross loan-to-budget is not a substitute for [[wiki/concepts/full-financing|sources-and-uses sufficiency]]. Fees and capitalized interest can increase exposure after closing. A gap cap calculated against a final loan that itself contains gap creates circularity and must be solved and audited explicitly. High pricing cannot cure a failed structural gate.
+Aggregate LTV does not protect capital if the value is ineligible, correlated, unreachable or maturing after the loan. Gross loan-to-budget is not a substitute for [[wiki/concepts/full-financing|sources-and-uses sufficiency]]. Fees and capitalized interest can increase exposure after closing. Where a particular mandate imposes a cap calculated against a final loan that itself includes gap, solve that circularity explicitly. Do not turn a concentration-review trigger into such a cap. High pricing cannot cure a failed structural gate.
 
 ## Continue Exploring
 
@@ -80,3 +86,5 @@ Aggregate LTV does not protect capital if the value is ineligible, correlated, u
 - Primary: [[wiki/sources/how-mediahedge-sizes-a-loan]].
 - Related: [[wiki/sources/tax-credit-receivables-as-collateral]], [[wiki/sources/why-a-production-must-be-fully-financed]], [[wiki/sources/mediahedge-protection-stack]], [[wiki/sources/pre-sales-as-collateral-crash-course]] and [[wiki/sources/sales-estimates-and-gap-as-collateral-crash-course]].
 -->
+
+<!-- Current qualitative authority: live MediaHedge Brain Underwriting/MH Underwriting.md and Underwriting/Risk and Obligor Scores.md (owner-approved reference, September 25, 2026), and Operations/Lifecycle of a Media Loan.md (owner-approved narrative, September 27, 2026), checked September 30, 2026. This is a scoped reconciliation, not a new raw evidence source or a transaction approval. -->

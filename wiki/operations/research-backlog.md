@@ -22,14 +22,16 @@ Questions whose answers would materially improve the wiki. New evidence should b
 - The dead Intectus completion-bond citation was removed because the current homepage did not substantiate that offering. Re-establish a current primary source before adding it back.
 - Repository publication is intentional and includes historical briefs. Website exclusion is not confidentiality; current-policy authority still requires reconciliation.
 
-## Priority 1 - Policy Authority and Freshness
+## Priority 1 - Transaction Authority and Freshness
 
-- What are the effective date, version owner and approval authority for each current advance, concentration, aggregate leverage, budget-exposure and term control?
-- Reconcile legacy briefs that describe gap concentration as a hard limit with current canonical underwriting guidance that treats the threshold as an amber human-review trigger rather than an automatic decline.
-- Which limits are hard prohibitions, delegated exceptions or watch thresholds, and which policy document controls when sources differ?
-- How are denominator terms defined in policy, including gross loan, budget, eligible value, supported low value and final gross loan?
-- What is the exact method for solving and auditing the circular gap-concentration formula?
-- What are the current authority, definition and approved range for the statement that gap inclusion generally contributes approximately three to five percentage points to blended pricing?
+The September 30 [[wiki/operations/underwriting-refresh-2026-09-30|underwriting reconciliation]] resolves the legacy universal-cap and gap-review classifications for qualitative guidance. Current owner-approved authority is identified; the following deal-level questions remain:
+
+- Which dated capital-provider mandate and named approving or delegated authority control the proposed facility?
+- Which advance assumptions, reserves, fees, leverage, equity requirements and tenor were approved for this transaction?
+- Which conditions are mandatory, which permit authorized exceptions, and which are review triggers?
+- Is the LTV denominator face value or discounted value, and are collateral coverage and deductions consistent with it?
+- If a specific mandate imposes a circular exposure cap, how is it solved and independently checked without converting the general gap review trigger into a cap?
+- What current evidence supports recommended pricing and realized returns? Do not reinstate a fixed gap uplift from a legacy brief.
 
 ## Priority 2 - Legal and Jurisdictional Validation
 

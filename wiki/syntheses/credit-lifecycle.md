@@ -2,7 +2,7 @@
 title: Film-Finance Credit Lifecycle
 type: synthesis
 status: current
-updated: 2026-08-28
+updated: 2026-09-30
 source_count: 17
 publish: true
 description: Follow the film-finance credit lifecycle from screening and underwriting through closing, funding, production, servicing, recovery and portfolio reporting.
@@ -14,11 +14,15 @@ tags:
 
 # Film-Finance Credit Lifecycle
 
-How do the seventeen evidentiary briefs combine into one operating system for protecting financing capital from initial screen through final recovery?
+Follow a financing from screening through repayment or recovery. This guide combines the retained briefs with the current owner-approved credit sequence, reconciled September 30, 2026.
 
 ![[assets/diagrams/credit-journey.svg|Seven-stage film-finance credit lifecycle from full financing through portfolio reporting]]
 
 *Conceptual view: the lifecycle is iterative, and each state change must update value, cash timing, decision rights and expected return.*
+
+## Screening and Indicative Terms
+
+Screen the project, sponsor, repayment paths, completion funding, timing and controls. Issue indicative borrower terms after screening and refine them during diligence. Preliminary terms are not final approval, a funding commitment or cash advanced; any separately binding provisions follow the term sheet itself.
 
 ## Lifecycle
 
@@ -26,7 +30,7 @@ How do the seventeen evidentiary briefs combine into one operating system for pr
 
 [[wiki/concepts/full-financing|Full financing]] is the first gate because multiple collateral paths depend on completion and delivery. The approved budget must include production, post, delivery, premiums, financing costs, reserves and contingency. Only binding, available and properly timed sources receive credit. The cash-flow schedule must cover the deepest liquidity trough, not merely balance in total.
 
-**Decision output:** approved sources and uses, cash-flow baseline, equity-first evidence, contingency and overage allocation.
+**Decision output:** approved sources and uses, cash-flow baseline, evidence of equity funding in the agreed order, contingency and overage allocation.
 
 ### 2. Convert Headline Collateral into Eligible Net Value
 
@@ -36,7 +40,7 @@ Underwriting tests ownership, enforceability, obligor capacity, conditions, dedu
 
 ### 3. Let the Tightest Sizing Constraint Control
 
-[[wiki/concepts/loan-sizing|Loan sizing]] applies asset-specific advance rates, concentration limits, aggregate LTV, gross loan-to-budget, tenor and liquidity stress. The final commitment is the smallest permitted amount. Pricing, score and approval remain separate outputs and cannot cure ineligible collateral.
+[[wiki/concepts/loan-sizing|Loan sizing]] applies collateral-specific advances and reserves, approved transaction and mandate requirements, and value and timing stress. Reconcile gross commitment to net production cash. Distinguish concentration-review triggers from mandatory limits. Risk and Obligor Scores inform the human decision; MH Score and Tier classify the approved blended rate afterward.
 
 **Decision output:** reproducible commitment, binding test, cushion and explicit exceptions.
 
@@ -45,6 +49,10 @@ Underwriting tests ownership, enforceability, obligor capacity, conditions, dedu
 The [[wiki/concepts/security-package|security package]] connects obligations to the appropriate grant, perfection method, assignment, acknowledgment, control and enforcement mechanism. [[wiki/concepts/cash-control-and-waterfalls|Cash control]] maps each payment source through instructions, independent collection administration, bank control, priority and reconciliation. The [[wiki/syntheses/media-finance-lending-landscape|Market Landscape]] helps identify which bank, lender, insurer, completion platform or credit provider fills each role; the legal entity in the executed document controls. [[wiki/concepts/completion-protection|Completion]], [[wiki/concepts/surety-credit-protection|surety]] and [[wiki/concepts/production-insurance|insurance]] documents are aligned but credited only for defined risks.
 
 **Decision output:** closing set, perfection evidence, source-to-account map, policy endorsements, completion coverage and authority matrix.
+
+### Funding Is a Separate Gate
+
+Credit approval and signed documents do not prove cash was advanced. Confirm applicable conditions, effective controls, actual funding entity and disbursement before recording funding. Recheck remaining availability and cost to complete before later draws. Institutional, non-institutional and participant obligations remain separate even when they relate to the same production.
 
 ### 5. Preserve Rights Through Active Servicing
 
@@ -66,7 +74,7 @@ The [[wiki/concepts/security-package|security package]] connects obligations to 
 
 ## Control Loop
 
-The lifecycle is iterative rather than linear. Production progress turns costs into incentive claims; delivery turns contracts into due receivables; collections reduce exposure; amendments can change eligibility; stress can move a loan from monitoring into workout. Each state change must update the borrowing base, cash forecast, decision rights and expected return.
+The lifecycle is iterative rather than linear. Production progress turns costs into incentive claims; conforming delivery and satisfaction of contractual payment conditions can make receivables due; collections reduce exposure; amendments can change eligibility; stress can move a loan from monitoring into workout. Each state change must update the borrowing base, cash forecast, decision rights and expected return.
 
 ## Explore Each Stage
 
@@ -92,3 +100,5 @@ The source briefs separately describe each control area. Treating them as a stat
 
 The source-summary pages supporting each stage are listed in [[wiki/operations/internal-catalog#Source summaries]].
 -->
+
+<!-- Qualitative credit-sequence and funding-scope reconciliation: live Brain MH Underwriting (owner-approved September 25, 2026) and Lifecycle of a Media Loan (owner-approved September 27, 2026), checked September 30, 2026. No additional raw evidence source counted. -->

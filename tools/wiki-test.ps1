@@ -135,10 +135,8 @@ try {
     Set-TestVaultRegistration -RegisteredVault $policyLeakVault
     $policyLeakPage = Join-Path $policyLeakVault 'wiki\concepts\loan-sizing.md'
     $policyLeakContent = [IO.File]::ReadAllText($policyLeakPage, [Text.Encoding]::UTF8)
-    $changedPolicyLeakContent = $policyLeakContent.Replace(
-        "MediaHedge's sizing method is a constraint system.",
-        "MediaHedge's sizing method uses an 85% tax-credit advance as a constraint."
-    )
+    # Append the deliberate leak instead of depending on an editorial opening sentence.
+    $changedPolicyLeakContent = $policyLeakContent + "`r`nMediaHedge's sizing method uses an 85% tax-credit advance as a constraint.`r`n"
     if ($changedPolicyLeakContent -eq $policyLeakContent) { throw 'Could not prepare the public-policy leak fixture.' }
     [IO.File]::WriteAllText($policyLeakPage, $changedPolicyLeakContent, $utf8NoBom)
     $policyLeakLint = Invoke-PowerShellCapture -ScriptPath (Join-Path $policyLeakVault 'tools\wiki-lint.ps1') -Arguments @('-VaultRoot', $policyLeakVault)

@@ -17,6 +17,8 @@ Private maintenance catalog for the complete knowledge layer. The public reader 
 
 Public control pages were re-scoped on 2026-08-29 to explain decision logic without exposing current numeric underwriting or pricing parameters. Legacy figures remain in source summaries excluded from the reader website but available in the intentionally public GitHub repository and history, pending policy reconciliation. On 2026-09-30, the glossary and company orientation gained current qualitative score definitions and the FilmHedge relationship, verified from the live Brain; the reader-site/repository boundary and broken external citations were corrected.
 
+The September 30 Phase 1/2 refresh reconciles qualitative underwriting with owner-approved Brain guidance dated September 25 and 27. Numerical examples and confidential source documents are not imported. Five glossary entries and the reader FAQ/open questions are integrated; What Changed is a reader changelog with zero independent evidence sources. Source templates now distinguish publication suitability, authority and review dates. The separate reconciliation record preserves exact canonical page references and current treatment.
+
 ## Public orientation
 
 The 2026-09-30 reader-interface refinement places four audience/task routes near the top of the public home and makes the existing policy-review status visible on loan sizing, gap collateral, tax-credit collateral, return economics and the policy-control matrix. This changes presentation and navigation, not approved policy or source counts. The interface decisions are recorded in the root `DESIGN.md` maintenance file.
@@ -24,6 +26,7 @@ The 2026-09-30 reader-interface refinement places four audience/task routes near
 - [[wiki/overview|MediaHedge Wiki Overview]]
 - [[wiki/evidence-and-limitations|Evidence and Limitations]]
 - [[wiki/glossary|Film-Finance Glossary]]
+- [[wiki/what-changed|What Changed]]
 - [[wiki/entities/mediahedge|MediaHedge]]
 
 ## Public concepts
@@ -60,6 +63,7 @@ The 2026-09-30 reader-interface refinement places four audience/task routes near
 - [[wiki/operations/internal-catalog|Internal Wiki Catalog]]
 - [[wiki/operations/contradictions|Contradictions Register]]
 - [[wiki/operations/research-backlog|Research Backlog]]
+- [[wiki/operations/underwriting-refresh-2026-09-30|September Underwriting Reconciliation]]
 
 ## Source summaries
 

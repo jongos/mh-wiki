@@ -3,7 +3,7 @@ title: Financing-Partner Return Economics
 type: concept
 status: needs-review
 updated: 2026-09-30
-as_of: unknown
+as_of: 2026-09-30
 source_count: 5
 publish: true
 description: Evaluate film-finance returns through actual dated cash flows, fees, duration, prepayment, extensions, defaults, recoveries, expenses and capital utilization.
@@ -19,7 +19,7 @@ tags:
 The financier's realized return is the result of actual dated cash flows, not the stated coupon alone. Analysis must incorporate advances, purchase price, fees, principal and interest collections, duration, prepayment, extension, default, nonaccrual, recovery cost, servicing expense and idle-capital or funding effects.
 
 > [!warning] Policy Review Pending
-> This explanation is a framework. The policy date is not established in this wiki, and current approved policy controls.
+> The qualitative framework was reconciled with current owner-approved underwriting guidance on September 30, 2026. Transaction-specific mandates, numerical assumptions and delegated exception authority still require verification; this page does not certify a financing.
 
 ![[assets/diagrams/return-economics-bridge.svg|Conceptual bridge from contractual coupon and fees to realized XIRR and cash multiple]]
 
@@ -27,7 +27,7 @@ The financier's realized return is the result of actual dated cash flows, not th
 
 ## Components
 
-1. **Contractual coupon:** accrual on the defined balance under the actual day-count, payment and compounding terms.
+1. **Contractual interest:** first establish whether the agreed rate is fixed for the loan or annual. A fixed charge does not accrue again merely because another year passes; apply the actual balance, duration, day-count and payment terms.
 2. **Upfront economics:** OID, commitment, closing and structuring fees attributed consistently to net invested capital.
 3. **Duration and timing:** draw dates, amortization, prepayment and maturity determine capital velocity.
 4. **Stress economics:** extension fees, default interest, nonaccrual, loss and recovery timing change nominal and realized results.
@@ -52,7 +52,7 @@ Forward-flow documents should allocate purchase price, coupon, fees, servicing c
 
 ## Gap-Pricing Context
 
-Gap exposure can affect transaction pricing because its value depends on future market realization rather than an existing payment obligation. Current pricing parameters are internal and transaction-specific; they are not reproduced in this public guide and should not be treated as a forecast of financing-partner return. Transaction mix and realized loan-tape evidence require separate verification.
+Gap exposure can affect transaction pricing because its value depends on future market realization rather than an existing payment obligation. Pricing is recommended from the complete collateral mix, timing, protections and risk analysis rather than a fixed gap uplift. Current pricing parameters are internal and transaction-specific; they are not reproduced in this public guide and should not be treated as a forecast of financing-partner return. Transaction mix and realized loan-tape evidence require separate verification.
 
 ## Limits and Failure Modes
 
@@ -72,3 +72,5 @@ Return measurement depends on the dated evidence produced by [[wiki/concepts/cas
 - Primary: [[wiki/sources/where-the-financiers-return-comes-from]].
 - Related: [[wiki/sources/cama-account-control-and-collection-waterfalls]], [[wiki/sources/defaults-workouts-and-recoveries]], [[wiki/sources/portfolio-construction-and-concentration-risk]] and [[wiki/sources/sales-estimates-and-gap-as-collateral-crash-course]].
 -->
+
+<!-- Current qualitative authority: live MediaHedge Brain Underwriting/MH Underwriting.md and Underwriting/Risk and Obligor Scores.md (owner-approved reference, September 25, 2026), and Operations/Lifecycle of a Media Loan.md (owner-approved narrative, September 27, 2026), checked September 30, 2026. This is a scoped reconciliation, not a new raw evidence source or a transaction approval. -->

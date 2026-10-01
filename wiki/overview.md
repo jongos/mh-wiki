@@ -2,7 +2,7 @@
 title: How the MediaHedge Lending Model Works
 type: overview
 status: current
-updated: 2026-08-29
+updated: 2026-09-30
 source_count: 17
 publish: true
 description: See how MediaHedge connects full financing, collateral eligibility, loan sizing, cash control, protection, servicing, recovery and portfolio discipline.
@@ -29,7 +29,7 @@ The portfolio and capital-partner layers matter as much as the individual loan. 
 
 | Stage | Principal question | Primary controls | Durable output |
 | --- | --- | --- | --- |
-| Screen | Is the project financeable through delivery? | Complete uses, verified sources, committed equity, contingency | Approved sources-and-uses baseline |
+| Screen | Is the project financeable through delivery? | Complete uses, verified sources, committed equity, contingency | Screening outcome and preliminary financing plan |
 | Underwrite | What collateral is eligible and collectible? | Contract, obligor, jurisdiction, conditions, deductions and timing review | Eligible net collateral schedule |
 | Size | What is the maximum safe commitment? | Asset haircuts, concentration, LTV, budget, term and liquidity limits | Reproducible binding constraint |
 | Close | Can the financier reach and control the assets? | Security, perfection, assignments, notices, insurance, completion and accounts | Enforceable closing set and cash path |
@@ -45,7 +45,7 @@ The corpus identifies multiple possible value sources but repeatedly warns that 
 
 - [[wiki/concepts/pre-sales-collateral|Pre-sales and other contracted receivables]] depend on enforceable contracts, conforming delivery, obligor credit, deductions, assignment and payment control.
 - [[wiki/concepts/tax-credit-collateral|Tax incentives]] depend on qualifying activity, program rules, verified spend, audits, assignment or capture mechanics and collection timing.
-- [[wiki/concepts/gap-collateral|Unsold-rights or gap value]] depends more heavily on market realization and receives a deeper haircut and concentration limit under the stated policy.
+- [[wiki/concepts/gap-collateral|Unsold-rights or gap value]] depends more heavily on market realization and receives conservative advance treatment and explicit concentration analysis under the approved transaction and mandate.
 - [[wiki/concepts/production-insurance|Production insurance]] responds only to covered events and does not guarantee completion, collateral value or repayment.
 - [[wiki/concepts/completion-protection|Completion protection]] can preserve delivery value but does not insure distributor solvency, incentive realization or commercial performance.
 - [[wiki/concepts/surety-credit-protection|Surety or credit protection]] can support a specifically bonded obligation but remains subject to its trigger, penal sum and claim requirements.
@@ -57,13 +57,13 @@ The corpus identifies multiple possible value sources but repeatedly warns that 
 MediaHedge's sizing framework combines several controls rather than relying on one headline ratio:
 
 - asset-specific advance rules reflect the reliability and volatility of each eligible repayment source;
-- concentration tests limit uncertain, correlated or difficult-to-realize exposure;
-- aggregate leverage and budget-exposure ceilings constrain the overall structure;
+- concentration tests identify uncertain or correlated exposure and distinguish review triggers from mandatory limits;
+- approved transaction and mandate requirements govern leverage, equity and budget exposure;
 - term, reserves and liquidity tests align maturity with stressed collection timing; and
-- the lowest amount permitted by every applicable constraint sets the maximum commitment.
+- the recommendation must satisfy applicable limits and completion needs before authorized human approval.
 
 > [!warning] Evidence Limitation
-> Current numeric thresholds, exception authorities and pricing parameters are internal, versioned controls and are intentionally not reproduced in this public guide. Approved policy and transaction documents control. See the [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]] for the public decision framework.
+> Current numerical assumptions, mandate limits, exception authorities and pricing parameters are transaction-specific controls and are intentionally not reproduced in this public guide. Approved policy and transaction documents control. See the [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]] for the public decision framework.
 
 ## The Recurring Distinctions
 
@@ -90,3 +90,5 @@ Read [[wiki/evidence-and-limitations|Evidence and Limitations]] for a plain-lang
 
 This overview synthesizes the seventeen evidentiary source-summary pages listed in [[wiki/operations/internal-catalog#Source summaries]].
 -->
+
+<!-- Qualitative credit-sequence and funding-scope reconciliation: live Brain MH Underwriting (owner-approved September 25, 2026) and Lifecycle of a Media Loan (owner-approved September 27, 2026), checked September 30, 2026. No additional raw evidence source counted. -->

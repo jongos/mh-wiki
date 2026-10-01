@@ -14,7 +14,7 @@ tags:
 
 # Evidence and Limitations
 
-This knowledgebase brings together seventeen evidentiary internal MediaHedge briefs about film- and television-finance credit and its surrounding market. It explains the company’s framework, the relationships among the major controls, and the questions a financing partner may want to explore.
+This knowledgebase brings together seventeen evidentiary internal MediaHedge briefs about film- and television-finance credit and its surrounding market. The qualitative underwriting explanation was also reconciled with owner-approved company guidance reviewed September 25 and 27, 2026. It explains the company’s framework, the relationships among the major controls, and the questions a financing partner may want to explore.
 
 ## How to Read the Material
 
@@ -48,6 +48,30 @@ This knowledgebase brings together seventeen evidentiary internal MediaHedge bri
 > [!warning] Evidence Limitation
 > The reader website summarizes the controls qualitatively. The intentionally public GitHub repository and its history also contain legacy internal briefs and numerical examples; those are historical evidence, not a statement of current approved policy. Current approved policy and executed transaction documents govern each financing.
 
+## Questions Readers Ask
+
+- **Can you finance my film?** This guide cannot determine whether your production qualifies; begin with [[wiki/concepts/full-financing|Full Financing]] and the transaction review described below.
+- **What rate will this cost?** This guide does not quote transaction pricing; [[wiki/concepts/financier-return-economics|Return Economics]] explains cash outcomes and [[wiki/concepts/loan-sizing|Loan Sizing]] explains eligibility and exposure.
+- **Is this distributor approved?** This guide does not establish counterparty approval; [[wiki/concepts/pre-sales-collateral|Pre-Sales Collateral]] explains why the legal entity, territory and complete contract matter.
+
+## Questions This Guide Leaves Open
+
+| Question | What This Guide Does Not Establish | Evidence Needed for a Decision |
+| --- | --- | --- |
+| Which requirements govern this loan? | The applicable mandate, transaction assumptions, conditions or exception authority for a proposed financing | Approved credit decision and current capital-provider requirements |
+| Who can bind or pay for a provider? | A brand's legal issuer, capacity, beneficiary rights or willingness to transact | Current entity verification and executed instruments |
+| Who decides after closing? | The reporting cadence, delegated authority and reserved decisions for a particular facility | Servicing arrangements and consent matrix |
+| What returns or losses have investors realized? | A verified performance record or a forecast supported by this educational guide | Dated cash flows, population definitions and reconciled performance evidence |
+| Is a legal or incentive structure effective? | Enforceability, program eligibility or claim recovery for a particular jurisdiction and transaction | Current primary authority, executed documents and qualified review |
+
+A gap in this guide does not mean the company lacks the information. The site explains the questions; the relevant decision file supplies the answers.
+
+## Dates and Review Scope
+
+**Page Updated** records an edit to a page. It is not certification that every linked law, provider or transaction assumption was reverified on that date. A dated review statement identifies the topic actually checked. The September 30, 2026 underwriting refresh covers the qualitative credit sequence, transaction-specific sizing, score distinctions and funding-channel boundaries; it does not validate particular loans, numerical examples or realized performance.
+
+See [[wiki/what-changed|What Changed]] for reader-facing changes. Review-queue material and newly generated summaries are not automatically approved company guidance.
+
 ## What a Financing Partner Should Request
 
 Depending on the stage of review, a financing partner may want:
@@ -61,13 +85,13 @@ Depending on the stage of review, a financing partner may want:
 7. relevant historical performance, extensions, losses and recoveries.
 8. current provider mandates, legal-entity names, authority, capacity, financial strength and executed forms for every lender or risk-bearing party.
 
-## Continue Exploring
-
-Return to the [[MediaHedge Knowledgebase|Knowledgebase Home]], follow the [[wiki/syntheses/financier-diligence-route|Financier’s Guide]], compare roles in the [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]], or review the [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]]. · [[wiki/syntheses/site-navigator|Site Navigator]]
-
 ## Analysis and Inference
 
 The reader-oriented groupings above are a synthesis of the existing material. They are not a transaction checklist, legal opinion, current policy certification or investment recommendation.
+
+## Continue Exploring
+
+Return to the [[MediaHedge Knowledgebase|Knowledgebase Home]], follow the [[wiki/syntheses/financier-diligence-route|Financier’s Guide]], compare roles in the [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]], or review the [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]]. · [[wiki/syntheses/site-navigator|Site Navigator]]
 
 <!--
 ## Source Basis

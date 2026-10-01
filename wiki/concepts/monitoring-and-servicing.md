@@ -2,7 +2,7 @@
 title: Monitoring and Servicing
 type: concept
 status: current
-updated: 2026-08-28
+updated: 2026-09-30
 source_count: 8
 publish: true
 description: See how active servicing tracks production progress, collateral, cash, covenants and recovery timing while escalating material variances for decision.
@@ -22,7 +22,7 @@ Servicing is active credit management from first draw through final payoff. It m
 
 ## Why the Risk Changes
 
-After closing, budget and schedule performance can change, contracts can be amended, obligors can weaken, incentive compliance can fail and collections can slip. Collateral also changes state: production spend becomes an incentive claim, [[wiki/concepts/gap-collateral|unsold rights]] become licenses, delivery makes [[wiki/concepts/pre-sales-collateral|receivables]] due and cash reduces exposure. A static closing model cannot capture those transitions.
+After closing, budget and schedule performance can change, contracts can be amended, obligors can weaken, incentive compliance can fail and collections can slip. Collateral also changes state: production spend becomes an incentive claim, [[wiki/concepts/gap-collateral|unsold rights]] become licenses, delivery and other contractual payment conditions can make [[wiki/concepts/pre-sales-collateral|receivables]] due and cash reduces exposure. A static closing model cannot capture those transitions.
 
 ## Architecture
 
