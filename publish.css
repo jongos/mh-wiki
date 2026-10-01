@@ -697,6 +697,7 @@ body .published-container {
 .markdown-rendered .mh-scroll-region:focus-visible,
 .markdown-rendered a:focus-visible,
 .site-body-left-column a:focus-visible,
+.site-body-left-column .tree-item-self[role="button"]:focus-visible,
 .site-body-left-column input.search-bar:focus-visible { outline: 3px solid var(--text-accent); outline-offset: 3px; }
 @media (max-width: 700px) {
   .markdown-rendered h1 { max-width: 100%; font-size: clamp(1.9rem, 8vw, 2.45rem); }

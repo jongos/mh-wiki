@@ -268,7 +268,7 @@
         if (!currentArticle) return;
         event.preventDefault();
         currentArticle.focus({ preventScroll: true });
-        currentArticle.scrollIntoView({ block: "start" });
+        currentArticle.scrollTop = 0;
       });
       document.body.prepend(skip);
     }
@@ -282,7 +282,9 @@
       const date = document.createElement("time");
       date.title = "Page edit date; not a policy verification date";
       meta.append(category, date);
-      (heading.parentElement.classList.contains("el-h1") ? heading.parentElement : heading).before(meta);
+      // Obsidian owns the sizer's section children. A new sibling section is
+      // repeatedly removed by virtualization, shifting the scroll anchor.
+      heading.before(meta);
     }
     const category = meta.querySelector(".mh-page-category");
     const label = categoryLabelForPath(pagePath) || "Media Finance Guide";
@@ -406,6 +408,20 @@
       if (labelTarget.textContent !== label) labelTarget.textContent = label;
       item.setAttribute("aria-label", label);
       item.setAttribute("title", label);
+      if (item.classList.contains("mod-collapsible")) {
+        item.tabIndex = 0;
+        item.setAttribute("role", "button");
+        item.setAttribute("aria-expanded", String(!item.parentElement.classList.contains("is-collapsed")));
+        if (item.dataset.mhKeyboardBound !== "true") {
+          item.dataset.mhKeyboardBound = "true";
+          item.addEventListener("keydown", (event) => {
+            if (event.target !== item || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+            if (event.key !== "Enter" && event.key !== " ") return;
+            event.preventDefault();
+            item.click();
+          });
+        }
+      }
     });
   };
 
@@ -492,7 +508,14 @@
     if (input.dataset.mhComboboxBound !== "true") {
       input.dataset.mhComboboxBound = "true";
       input.addEventListener("input", scheduleReaderNavigation);
-      input.addEventListener("keydown", () => window.setTimeout(scheduleReaderNavigation, 0));
+      input.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !event.isComposing && input.value) {
+          event.preventDefault();
+          input.value = "";
+          input.dispatchEvent(new Event("input", { bubbles: true }));
+        }
+        window.setTimeout(scheduleReaderNavigation, 0);
+      });
     }
   };
 

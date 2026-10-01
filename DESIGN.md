@@ -31,3 +31,7 @@ Rendered contrast checks sampled metadata, introductory text, links and warning/
 Before treating a release as deployed, run the repository's live Publish audit and verify the selected reader notes. Keep raw evidence, sources, operations and this design record out of the website selection.
 
 Live deployment verified on 2026-09-30: 39-file inventory and exact asset hashes matched; all six revised reader notes matched local content. The live browser passed search, SEO, navigation, visible dates/review warnings, skip focus and mobile diagram keyboard scrolling.
+
+## Native Scrolling Contract
+
+The 2026-09-30 interaction review found and fixed backward scroll drift caused by inserting metadata directly into Obsidian's virtualized sizer. All custom article UI must live inside an existing native section; never add sibling sections to `.markdown-preview-sizer`. The date row belongs inside `.el-h1`. The live regression audit must prove that finite wheel input settles without continued movement, including vertical wheel input over mobile diagrams. Skip to Article resets the article scroll container. Search Escape dismisses results; native folder controls expose keyboard focus, Enter/Space activation and expanded state. Browser shortcuts remain native. Synthetic Chrome wheel tests do not certify every trackball driver or physical device.

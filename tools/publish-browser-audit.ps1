@@ -1,7 +1,8 @@
 [CmdletBinding()]
 param(
     [string]$SiteUrl = 'https://mediafinance.guide',
-    [int]$TimeoutSeconds = 30
+    [int]$TimeoutSeconds = 30,
+    [switch]$UseLocalAssets
 )
 
 $ErrorActionPreference = 'Stop'
@@ -11,8 +12,24 @@ $session = $null
 try {
     $session = Start-BrowserAuditSession -TimeoutSeconds $TimeoutSeconds
     $socket = $session.Socket
+    if ($UseLocalAssets) {
+        [void](Invoke-CdpCommand -Socket $socket -Method 'Network.enable')
+        [void](Invoke-CdpCommand -Socket $socket -Method 'Network.setBlockedURLs' -Parameters @{ urls = @('*publish.js*', '*publish.css*') })
+    }
+    function Initialize-LocalAssets {
+        if (-not $UseLocalAssets) { return }
+        Wait-ForBrowserCondition -Socket $socket -TimeoutSeconds $TimeoutSeconds `
+            -Expression "document.readyState === 'complete' && !!document.querySelector('.markdown-rendered h1:not(.page-header)')" `
+            -FailureMessage 'Native article did not render before local asset testing.'
+        $vault = Split-Path -Parent $PSScriptRoot
+        $css = [IO.File]::ReadAllText((Join-Path $vault 'publish.css')) | ConvertTo-Json -Compress
+        [void](Invoke-BrowserExpression -Socket $socket -Expression "(() => { const style = document.createElement('style'); style.textContent = $css; document.head.append(style); return true; })()")
+        [void](Invoke-BrowserExpression -Socket $socket -Expression ([IO.File]::ReadAllText((Join-Path $vault 'publish.js')) + ';true'))
+    }
     $legacyWikiUrl = $SiteUrl.TrimEnd('/') + '/wiki'
+    if ($UseLocalAssets) { $legacyWikiUrl = $SiteUrl.TrimEnd('/') + '/MediaHedge+Knowledgebase' }
     [void](Invoke-CdpCommand -Socket $socket -Method 'Page.navigate' -Parameters @{ url = $legacyWikiUrl })
+    Initialize-LocalAssets
     $legacyRedirectExpression = "decodeURIComponent(window.location.pathname).replaceAll('+', ' ').replace(/\/+$/, '') === '/MediaHedge Knowledgebase' && document.readyState === 'complete' && !!document.querySelector('input.search-bar') && !!document.querySelector('.nav-view-outer') && [...document.querySelectorAll('h1')].some((heading) => heading.innerText.trim() === 'MediaHedge Knowledgebase') && !document.body.innerText.includes('This page does not exist')"
     try {
         Wait-ForBrowserCondition -Socket $socket -TimeoutSeconds $TimeoutSeconds `
@@ -178,8 +195,26 @@ try {
         throw 'Published home-page footer is missing the Site Navigator route.'
     }
 
+    [void](Invoke-BrowserExpression -Socket $socket -Expression "document.querySelector('input.search-bar').focus(); true")
+    foreach ($type in @('rawKeyDown', 'keyUp')) {
+        [void](Invoke-CdpCommand -Socket $socket -Method 'Input.dispatchKeyEvent' -Parameters @{ type = $type; key = 'Escape'; code = 'Escape'; windowsVirtualKeyCode = 27 })
+    }
+    Wait-ForBrowserCondition -Socket $socket -TimeoutSeconds $TimeoutSeconds `
+        -Expression "document.querySelector('input.search-bar').value === '' && document.querySelector('input.search-bar').getAttribute('aria-expanded') === 'false'" `
+        -FailureMessage 'Escape did not clear and dismiss the native search results.'
+    $folderBefore = Invoke-BrowserExpression -Socket $socket -Expression @'
+(() => { const folder = document.querySelector('.tree-item-self[data-path="wiki"]'); folder.focus(); return folder.getAttribute('aria-expanded'); })()
+'@
+    foreach ($type in @('rawKeyDown', 'keyUp')) {
+        [void](Invoke-CdpCommand -Socket $socket -Method 'Input.dispatchKeyEvent' -Parameters @{ type = $type; key = 'Enter'; code = 'Enter'; windowsVirtualKeyCode = 13 })
+    }
+    Wait-ForBrowserCondition -Socket $socket -TimeoutSeconds $TimeoutSeconds `
+        -Expression "document.querySelector('.tree-item-self[data-path=wiki]').getAttribute('aria-expanded') !== '$folderBefore'" `
+        -FailureMessage 'Enter did not toggle the keyboard-focused navigation folder.'
+
     $conceptUrl = $SiteUrl.TrimEnd('/') + '/wiki/concepts/loan-sizing'
     [void](Invoke-CdpCommand -Socket $socket -Method 'Page.navigate' -Parameters @{ url = $conceptUrl })
+    Initialize-LocalAssets
     try {
         Wait-ForBrowserCondition -Socket $socket -TimeoutSeconds $TimeoutSeconds `
             -Expression "location.pathname === '/wiki/concepts/loan-sizing' && document.readyState === 'complete' && !!document.getElementById('mh-seo-jsonld') && document.querySelector('h1.publish-article-heading')?.innerText.trim() === 'Loan Sizing' && !!document.querySelector('.mh-diagram-tools a')" `
@@ -229,6 +264,27 @@ try {
         throw "Published concept is missing complete SEO metadata or a single reader-facing H1. State: $($conceptSeo | ConvertTo-Json -Compress -Depth 5)"
     }
 
+    # Obsidian virtualizes direct sizer children. A custom metadata sibling used
+    # to be removed/reinserted every scroll, causing continuous backward drift.
+    [void](Invoke-BrowserExpression -Socket $socket -Expression "document.querySelector('.mh-skip-link').click(); true")
+    foreach ($delta in @(240, 180, 90, 30)) {
+        [void](Invoke-CdpCommand -Socket $socket -Method 'Input.dispatchMouseEvent' -Parameters @{ type = 'mouseWheel'; x = 600; y = 400; deltaX = 0; deltaY = $delta })
+        Start-Sleep -Milliseconds 60
+    }
+    Start-Sleep -Milliseconds 300
+    $settled = Invoke-BrowserExpression -Socket $socket -Expression @'
+(async () => {
+  const article = document.querySelector('.markdown-rendered');
+  const samples = [];
+  for (let i = 0; i < 12; i++) { samples.push(article.scrollTop); await new Promise(resolve => setTimeout(resolve, 100)); }
+  return { min: Math.min(...samples), max: Math.max(...samples), position: article.scrollTop,
+    ownsSections: !document.querySelector('.markdown-preview-sizer > .mh-page-meta') };
+})()
+'@
+    if (-not $settled.ownsSections -or $settled.position -lt 500 -or ($settled.max - $settled.min) -gt 2) {
+        throw "Wheel motion continued after input ended or native sections were changed: $($settled | ConvertTo-Json -Compress)"
+    }
+
     $reader = Invoke-BrowserExpression -Socket $socket -Expression @'
 (() => {
   document.querySelector('.mh-skip-link')?.click();
@@ -236,6 +292,7 @@ try {
   const link = document.querySelector('.mh-diagram-tools a');
   return {
     skipFocus: document.activeElement.id === 'mh-reader-content',
+    skipTop: document.getElementById('mh-reader-content').scrollTop === 0,
     editDate: /^Page Updated \d{4}-\d{2}-\d{2}$/.test(document.querySelector('.mh-page-meta time')?.textContent || ''),
     oneMetadataRow: document.querySelectorAll('.mh-page-meta').length === 1,
     policyReview: !!document.querySelector('.callout[data-callout="warning"]')?.innerText.includes('Policy Review Pending'),
@@ -243,7 +300,7 @@ try {
   };
 })()
 '@
-    foreach ($property in @('skipFocus', 'editDate', 'oneMetadataRow', 'policyReview', 'diagramLink')) {
+    foreach ($property in @('skipFocus', 'skipTop', 'editDate', 'oneMetadataRow', 'policyReview', 'diagramLink')) {
         if (-not $reader.$property) { throw "Live reader enhancement failed: $property" }
     }
     [void](Invoke-CdpCommand -Socket $socket -Method 'Emulation.setDeviceMetricsOverride' -Parameters @{ width = 390; height = 844; deviceScaleFactor = 1; mobile = $false })
@@ -254,7 +311,20 @@ try {
         -Expression "document.querySelector('.mh-scroll-region').scrollLeft > 0 && document.documentElement.scrollWidth <= innerWidth && getComputedStyle(document.activeElement).outlineStyle !== 'none'" `
         -FailureMessage 'Live mobile diagram did not scroll with keyboard input and visible focus, or the document overflowed.'
 
-    Write-Output 'Live reader behavior: legacy /wiki redirect, SEO, accessible search, friendly navigation, Site Navigator footer, visible dates/review status, skip link and mobile keyboard diagrams passed'
+    $mobileWheel = Invoke-BrowserExpression -Socket $socket -Expression @'
+(() => { const frame = document.querySelector('.mh-scroll-region'); const rect = frame.getBoundingClientRect();
+  return { x: Math.max(25, Math.min(innerWidth - 25, rect.left + 60)), y: Math.max(60, Math.min(innerHeight - 60, rect.top + 80)), before: document.querySelector('.markdown-rendered').scrollTop }; })()
+'@
+    [void](Invoke-CdpCommand -Socket $socket -Method 'Input.dispatchMouseEvent' -Parameters @{ type = 'mouseWheel'; x = $mobileWheel.x; y = $mobileWheel.y; deltaX = 0; deltaY = 180 })
+    Start-Sleep -Milliseconds 350
+    $mobileAfter = Invoke-BrowserExpression -Socket $socket -Expression "document.querySelector('.markdown-rendered').scrollTop"
+    if ($mobileAfter -le $mobileWheel.before) { throw 'Vertical wheel input over the mobile diagram failed to scroll the article.' }
+    Start-Sleep -Milliseconds 700
+    $mobileFinal = Invoke-BrowserExpression -Socket $socket -Expression "document.querySelector('.markdown-rendered').scrollTop"
+    if ([Math]::Abs($mobileFinal - $mobileAfter) -gt 2) { throw 'Mobile article continued drifting after wheel input stopped.' }
+
+    if ($UseLocalAssets) { Write-Output 'Prepublication mode used local assets on the native canonical home and concept routes; legacy redirect is checked only in live mode.' }
+    Write-Output 'Reader behavior passed: SEO, search Escape, keyboard folder navigation, Site Navigator, visible metadata, skip-to-top, desktop wheel settling, mobile wheel chaining and keyboard diagrams'
 } finally {
     Stop-BrowserAuditSession -Session $session
 }

@@ -154,16 +154,31 @@ try {
     editDate: /^Page Updated \d{4}-\d{2}-\d{2}$/.test(document.querySelector('.mh-page-meta time')?.textContent || ''),
     oneMetadataRow: document.querySelectorAll('.mh-page-meta').length === 1,
     metadataBeforeReaderHeading: document.querySelector('.mh-page-meta').nextElementSibling.matches('h1.publish-article-heading'),
+    nativeSectionsPreserved: !document.querySelector('.markdown-preview-sizer > .mh-page-meta'),
     diagramKeyboard: frame.tabIndex === 0 && frame.getAttribute('role') === 'region',
     diagramLink: link.href === frame.querySelector('img').src && link.rel === 'noopener',
     tableKeyboard: document.querySelector('.table-wrapper').tabIndex === 0
   };
 })()
 '@
-    foreach ($property in @('skipFocusedArticle', 'editDate', 'oneMetadataRow', 'metadataBeforeReaderHeading', 'diagramKeyboard', 'diagramLink', 'tableKeyboard')) {
+    foreach ($property in @('skipFocusedArticle', 'editDate', 'oneMetadataRow', 'metadataBeforeReaderHeading', 'nativeSectionsPreserved', 'diagramKeyboard', 'diagramLink', 'tableKeyboard')) {
         if (-not $readerTools.$property) { throw "Reader field-guide enhancement failed: $property" }
     }
-    Write-Output 'Local Publish UI fixture: metadata, skip link, diagram/table keyboard access, SEO, search states and scoped observation passed'
+    $keyboard = Invoke-BrowserExpression -Socket $socket -Expression @'
+(() => {
+  const folder = document.querySelector('.tree-item-self[data-path="wiki/concepts"]');
+  let clicks = 0;
+  folder.addEventListener('click', () => clicks++);
+  folder.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true, cancelable: true }));
+  folder.dispatchEvent(new KeyboardEvent('keydown', { key: ' ', bubbles: true, cancelable: true }));
+  folder.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', ctrlKey: true, bubbles: true, cancelable: true }));
+  const search = document.querySelector('input.search-bar');
+  search.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true, cancelable: true }));
+  return { folderKeys: clicks === 2 && folder.tabIndex === 0 && folder.getAttribute('role') === 'button', escape: search.value === '' };
+})()
+'@
+    if (-not $keyboard.folderKeys -or -not $keyboard.escape) { throw 'Folder activation or search Escape keyboard behavior failed.' }
+    Write-Output 'Local Publish UI fixture: native section ownership, metadata, skip link, diagram/table keyboard access, folder keys, search Escape, SEO and scoped observation passed'
 } finally {
     Stop-BrowserAuditSession -Session $session
 }
