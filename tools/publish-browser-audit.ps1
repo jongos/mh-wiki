@@ -30,7 +30,7 @@ try {
     if ($UseLocalAssets) { $legacyWikiUrl = $SiteUrl.TrimEnd('/') + '/MediaHedge+Knowledgebase' }
     [void](Invoke-CdpCommand -Socket $socket -Method 'Page.navigate' -Parameters @{ url = $legacyWikiUrl })
     Initialize-LocalAssets
-    $legacyRedirectExpression = "decodeURIComponent(window.location.pathname).replaceAll('+', ' ').replace(/\/+$/, '') === '/MediaHedge Knowledgebase' && document.readyState === 'complete' && !!document.querySelector('input.search-bar') && !!document.querySelector('.nav-view-outer') && [...document.querySelectorAll('h1')].some((heading) => heading.innerText.trim() === 'MediaHedge Knowledgebase') && !document.body.innerText.includes('This page does not exist')"
+    $legacyRedirectExpression = "decodeURIComponent(window.location.pathname).replaceAll('+', ' ').replace(/\/+$/, '') === '/MediaHedge Knowledgebase' && document.readyState === 'complete' && !!document.querySelector('input.search-bar') && !!document.querySelector('.nav-view-outer') && [...document.querySelectorAll('.markdown-rendered h1:not(.page-header)')].some((heading) => heading.innerText.trim() === 'MediaHedge Knowledgebase' && getComputedStyle(heading).display !== 'none' && getComputedStyle(heading).visibility !== 'hidden') && !document.body.innerText.includes('This page does not exist')"
     try {
         Wait-ForBrowserCondition -Socket $socket -TimeoutSeconds $TimeoutSeconds `
             -Expression $legacyRedirectExpression `

@@ -424,3 +424,11 @@ Append-only record. New entries go at the end and use the heading pattern define
 
 - Repository delivery verified: implementation commit `eca060c` matched GitHub main and the independent mirror; milestone `wiki-v1.18-underwriting-context` has a full-history bundle and SHA-256 sidecar. Hosted Windows CI passed at https://github.com/jongos/mh-wiki/actions/runs/36807340617. All 14 deep-restore checks passed, including all 30 annotated tags and all 24 bundles. The revised sizing SVG was rendered and visually checked with all labels fitting.
 - Prepared website scope: 16 reader notes (15 existing updates plus the new What Changed note), publish.js and the sizing SVG. AGENTS.md, templates, log, recovery guide, source summaries and operations records remain excluded from Obsidian Publish. No website-dependent issue was closed.
+
+## [2026-09-30] maintenance | Publish Underwriting and Evidence Refresh
+
+- Authorization: owner requested publication of the prepared Phase 1/2 and current underwriting refresh.
+- Deployment: Obsidian confirmed publication of 16 reader notes, publish.js and the sizing SVG. No removals or private pages were selected. Live inventory contains exactly 40 expected files with no missing or unexpected files.
+- Verification: SHA-256 comparisons match all 16 deployed reader notes, the sizing SVG, publish.js and unchanged publish.css. Live reader checks pass SEO, search Escape, keyboard folders, Site Navigator, metadata, skip-to-top, desktop wheel settling, mobile wheel chaining and keyboard diagrams.
+- Audit repair: the home readiness condition now waits for the visible article H1 rather than accepting the hidden native page title before article rendering finishes. All 12 Windows regression checks pass.
+- Remaining verification: the live sitemap still lists 27 notes and omits the accessible What Changed page. The strict full audit correctly remains unsuccessful until all 28 canonical note URLs appear; no sitemap check was relaxed. Website-dependent issues remain open pending full verification.
