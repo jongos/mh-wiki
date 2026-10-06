@@ -2,7 +2,7 @@
 title: Research Backlog
 type: operations
 status: current
-updated: 2026-09-30
+updated: 2026-10-06
 source_count: 17
 publish: false
 tags:
@@ -71,3 +71,12 @@ The September 30 [[wiki/operations/underwriting-refresh-2026-09-30|underwriting 
 - insurer, broker and completion-guarantor forms;
 - servicing data dictionary and sample investor reports;
 - anonymized loan tape and recovery case studies.
+
+## U.S. Incentive Review Follow-Up - October 6, 2026
+
+- Confirm New Mexico FY 2027 statutory payment ceiling, current claims/remaining capacity and partner exclusions before replacing the scoped gap in its state page.
+- Resolve California’s duplicated local-hire wording by category using current binding guidance or written agency confirmation.
+- Extend primary review to the remaining 30 report profiles before adding their numerical rules as current wiki guidance; prioritize the report’s Montana availability, North Carolina commitments, Kentucky 2026 thresholds and Rhode Island cap reconciliations.
+- Refresh application windows, tax forms, transfer fees and award-year availability at transaction review; no point-in-time public summary establishes an available allocation or payment date.
+- Verify the three supplied public reading links in a rendered browser when accessible; web fetches failed during this review. The actual supplied report was readable locally.
+- Keep local/GitHub completion distinct from Obsidian Publish; require the full live inventory, asset-hash, sitemap and browser audit after deployment.

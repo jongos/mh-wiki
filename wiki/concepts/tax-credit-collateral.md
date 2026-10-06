@@ -2,9 +2,9 @@
 title: Tax-Credit Collateral
 type: concept
 status: needs-review
-updated: 2026-09-30
+updated: 2026-10-06
 as_of: 2026-09-30
-source_count: 4
+source_count: 5
 publish: true
 description: Understand how production incentives become potential collateral through program eligibility, qualified spending, verification, assignment, timing and monetization.
 tags:
@@ -20,6 +20,10 @@ A production incentive can support a bridge loan when the project, claimant and 
 
 > [!warning] Policy Review Pending
 > The qualitative framework was reconciled with current owner-approved underwriting guidance on September 30, 2026. Transaction-specific mandates, numerical assumptions and delegated exception authority still require verification; this page does not certify a financing.
+
+## U.S. Program Comparisons
+
+Use the [[wiki/syntheses/us-film-tax-incentives|U.S. Incentive Guide]] for eight state profiles and [[wiki/concepts/incentive-monetization|Turning Production Incentives Into Cash]] for refunds, sales, buybacks and grants. Program rates describe earned benefits on eligible expenses; they do not establish MediaHedge advance rates. Official program facts were checked within each profile’s stated scope on October 6, 2026.
 
 ## Underwriting Architecture
 
@@ -61,7 +65,9 @@ Tax-credit collateral depends on [[wiki/concepts/full-financing|Full Financing]]
 
 ## External Context
 
-Official program materials illustrate why production incentives require jurisdiction-specific underwriting. Compare the California Film Commission's [Film and Television Tax Credit Program 4.0](https://film.ca.gov/tax-credit/the-basics-4-0/) with Georgia's official [Film Incentives and Applications](https://georgia.org/industries/film/incentives). Program structure, transferability, qualified expenditures, application timing and audit requirements can differ. The California Film Commission's [Production Alerts](https://film.ca.gov/news-notices/production-alerts/) provide current administrative updates. These examples do not establish eligibility or value for another jurisdiction or transaction. Links checked: 2026-08-09.
+Official program materials illustrate why production incentives require jurisdiction-specific underwriting. Compare the California Film Commission's [Film and Television Tax Credit Program 4.0](https://film.ca.gov/tax-credit/the-basics-4-0/) with Georgia's official [Film Incentives and Applications](https://georgia.org/industries/film/incentives). Program structure, transferability, qualified expenditures, application timing and audit requirements can differ. The California Film Commission's [Production Alerts](https://film.ca.gov/news-notices/production-alerts/) provide current administrative updates. These examples do not establish eligibility or value for another jurisdiction or transaction. The linked California and Georgia overviews were rechecked for the new state profiles on October 6, 2026; the Production Alerts link retains its August 9, 2026 review date.
+
+Links checked: 2026-10-06. Review scope and unresolved items are stated above.
 
 ## Continue Exploring
 
@@ -71,6 +77,7 @@ Official program materials illustrate why production incentives require jurisdic
 ## Source Basis
 
 - Primary: [[wiki/sources/tax-credit-receivables-as-collateral]].
+- Program comparison: [[wiki/sources/filmhedge-us-tax-incentives-2026]].
 - Related: [[wiki/sources/how-mediahedge-sizes-a-loan]], [[wiki/sources/why-a-production-must-be-fully-financed]] and [[wiki/sources/mediahedge-security-package]].
 -->
 

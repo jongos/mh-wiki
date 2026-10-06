@@ -2,7 +2,7 @@
 title: Contradictions Register
 type: operations
 status: current
-updated: 2026-09-30
+updated: 2026-10-06
 source_count: 17
 publish: false
 tags:
@@ -47,3 +47,13 @@ These are not current contradictions, but they could produce inconsistent future
 ## Resolution Protocol
 
 When a true conflict appears, add a row with both source links, dates, scope, affected pages, provisional status, owner and evidence needed. Do not resolve it by silently overwriting one claim.
+
+## October 6, 2026 Program Reconciliation
+
+| Topic | Evidence and Scope | Treatment and Verification Needed |
+| --- | --- | --- |
+| Louisiana caps | General LED overview still states $150M issuance/$180M claims; Revenue’s later notice states $125M for each from July 1, 2025. | Resolved for the stated periods using the later Revenue notice linked in [[wiki/entities/louisiana-film-incentives\|Louisiana]]. Preserve the older claim as historical; confirm project reservation separately. |
+| California local-hire uplift | CFC overview repeats inconsistent independent-film local-hire descriptions. | Unresolved: no blanket local-hire percentage adopted. Obtain category-specific current guidelines or agency confirmation before adding the figure to [[wiki/entities/california-film-incentives\|California]]. Owner: next program review. |
+| New Mexico fiscal year | Report states $150M FY 2027; current agency landing page labels its displayed $140M as FY 2026. | Different periods, not a proven same-period contradiction. [[wiki/entities/new-mexico-film-incentives\|New Mexico]] is needs-review pending FY 2027 authority and current capacity. Owner: next program review. |
+| Massachusetts location test | DOR website lists two eligibility bullets without an explicit conjunction; 2026 application states expenses above 75% OR photography days at least 75%. | Use explicit application instruction in [[wiki/entities/massachusetts-film-incentives\|Massachusetts]]; do not silently convert the alternatives into cumulative conditions. |
+| Companion lineage | Workbooks identify an illustrated report precursor in their Notes rather than the supplied final filename. | Preserve final DOCX as the ingested source; companion data is dependent cross-check material, not an additional evidentiary source. |

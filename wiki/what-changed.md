@@ -2,7 +2,7 @@
 title: What Changed
 type: operations
 status: current
-updated: 2026-09-30
+updated: 2026-10-06
 source_count: 0
 publish: true
 description: See substantive updates to the MediaHedge guide, including underwriting explanations, plain-English terms, reader questions and evidence boundaries.
@@ -14,6 +14,12 @@ tags:
 # What Changed
 
 Use this page to find substantive changes since your last visit. Dates describe changes to the guide, not new loan approvals, policy effective dates or investment results.
+
+## October 6, 2026
+
+- **U.S. incentives added:** the [[wiki/syntheses/us-film-tax-incentives|U.S. Incentive Guide]] compares eight selected state programs, with individual California, Georgia, Illinois, Louisiana, Massachusetts, New Jersey, New Mexico and New York profiles and broader FilmHedge report links.
+- **Cash conversion explained:** [[wiki/concepts/incentive-monetization|Turning Production Incentives Into Cash]] distinguishes refunds, transfers, state purchases and grants, with clearly hypothetical arithmetic.
+- **Conditions made visible:** program profiles separate gross rates from net proceeds, dated capacity from remaining funds, and agency guidance from a project’s approval. Louisiana’s cap conflict and New Mexico’s fiscal-year verification gap are explicit.
 
 ## September 30, 2026
 

@@ -2,7 +2,7 @@
 title: Welcome to the MediaHedge Knowledgebase
 type: operations
 status: current
-updated: 2026-09-30
+updated: 2026-10-06
 source_count: 17
 publish: true
 description: Explore film and television finance through MediaHedge's guide to collateral, loan sizing, cash control, risk protection, servicing, recovery and returns.
@@ -92,6 +92,21 @@ For a quicker comparison of repayment sources, open the [[wiki/syntheses/repayme
 - [[wiki/concepts/forward-flow-governance|Financing-Partner Governance]] — how authority, ownership and servicing responsibilities are divided.
 - [[wiki/concepts/portfolio-construction|Portfolio Construction]] — how shared risks and liquidity are managed across investments.
 - [[wiki/concepts/financier-return-economics|Return Economics]] — how actual cash timing, costs and losses affect realized performance.
+
+## U.S. Production Incentives
+
+Start with the U.S. guide, compare cash routes, then open a state profile. The eight profiles have a scoped October 6, 2026 official-source review; the linked report provides broader coverage.
+
+- [[wiki/syntheses/us-film-tax-incentives|U.S. Film and Television Tax Incentives]]
+- [[wiki/concepts/incentive-monetization|Turning Production Incentives into Cash]]
+- [[wiki/entities/california-film-incentives|California Film and Television Incentives]]
+- [[wiki/entities/georgia-film-incentives|Georgia Film and Television Incentives]]
+- [[wiki/entities/illinois-film-incentives|Illinois Film and Television Incentives]]
+- [[wiki/entities/louisiana-film-incentives|Louisiana Film and Television Incentives]]
+- [[wiki/entities/massachusetts-film-incentives|Massachusetts Film and Television Incentives]]
+- [[wiki/entities/new-jersey-film-incentives|New Jersey Film and Television Incentives]]
+- [[wiki/entities/new-mexico-film-incentives|New Mexico Film and Television Incentives]]
+- [[wiki/entities/new-york-film-incentives|New York Film and Television Incentives]]
 
 ## Recent Changes
 

@@ -2,7 +2,7 @@
 title: Financier's Guide
 type: synthesis
 status: current
-updated: 2026-09-30
+updated: 2026-10-06
 source_count: 17
 publish: true
 description: Use eight financier-focused questions to evaluate financeability, repayment, sizing, control, protection, monitoring, recovery and portfolio economics.
@@ -45,6 +45,8 @@ Start with [[wiki/concepts/full-financing|Full Financing]]. Look for complete co
 Use the [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]] to separate [[wiki/concepts/pre-sales-collateral|contracted pre-sales]], [[wiki/concepts/tax-credit-collateral|tax incentives]], [[wiki/concepts/gap-collateral|unsold-rights value]], insurance proceeds, completion support, surety and controlled cash.
 
 **What you want to understand:** who is expected to pay, under what conditions, when the money may arrive and which repayment sources share the same risks.
+
+For U.S. production incentives, compare the [[wiki/syntheses/us-film-tax-incentives|State Program Profiles]] and trace the [[wiki/concepts/incentive-monetization|Route to Net Cash]].
 
 ### 3. How Is the Maximum Loan Amount Determined?
 

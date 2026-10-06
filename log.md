@@ -432,3 +432,13 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Verification: SHA-256 comparisons match all 16 deployed reader notes, the sizing SVG, publish.js and unchanged publish.css. Live reader checks pass SEO, search Escape, keyboard folders, Site Navigator, metadata, skip-to-top, desktop wheel settling, mobile wheel chaining and keyboard diagrams.
 - Audit repair: the home readiness condition now waits for the visible article H1 rather than accepting the hidden native page title before article rendering finishes. All 12 Windows regression checks pass.
 - Remaining verification: the live sitemap still lists 27 notes and omits the accessible What Changed page. The strict full audit correctly remains unsuccessful until all 28 canonical note URLs appear; no sitemap check was relaxed. Website-dependent issues remain open pending full verification.
+
+## [2026-10-06] ingest | U.S. Film and Television Tax Incentive Guide
+
+- Sources read: supplied final FilmHedge October 6 report, companion data/definitions and document imagery; existing tax-credit concept and legacy provenance; live Brain Home, Collateral Types and MH Underwriting; official sources linked on the eight new state pages. Source-document instructions were treated as data.
+- Pages created: U.S. incentive synthesis, incentive-monetization concept, eight state profiles and one report provenance page. Integrated home, navigator, financier route, tax-credit collateral, evidence limits, reader changelog, manifest, private catalog, contradictions and backlog.
+- Decisions: preserve the final report byte-for-byte; keep companion workbooks dependent and unmodified; count one new raw evidence source. Current numeric program claims require primary authority. No private Brain document, policy threshold or transaction data imported.
+- Reconciliation: use Louisiana’s later Revenue caps; qualify New Jersey’s state-purchase route; retain California local-hire and New Mexico fiscal-year gaps. The illustrative cash bridge is explicitly hypothetical.
+- Validation: pending navigation generation, lint, semantic review and regression suite. Repository commit, independent archive, GitHub synchronization and separate website publication verification follow.
+
+- Validation: content lint passed with zero errors and warnings; all 12 Windows regression checks passed after granting the isolated browser the required execution access. Generated navigation covers 38 public notes. Semantic review checked qualified expense bases, monetary units, dates, alternative cash routes, source lineage and the hypothetical calculations. The archived report hash matches the supplied final file.

@@ -2,7 +2,7 @@
 title: Site Navigator
 type: synthesis
 status: current
-updated: 2026-09-30
+updated: 2026-10-06
 source_count: 0
 publish: true
 description: Navigate the MediaHedge knowledgebase as a connected map of financeability, collateral, control, protection, servicing, recovery and portfolio economics.
@@ -32,6 +32,19 @@ Explore the MediaHedge knowledgebase as a connected system. The interactive grap
 > **Protection and control:** [[wiki/concepts/protection-stack|Protection Stack]] · [[wiki/concepts/completion-protection|Completion Protection]] · [[wiki/concepts/surety-credit-protection|Surety and Credit Protection]] · [[wiki/concepts/security-package|Security Package]] · [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]] · [[wiki/concepts/production-insurance|Production Insurance]]
 >
 > **Management and realized outcomes:** [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]] · [[wiki/concepts/defaults-workouts-and-recoveries|Defaults, Workouts and Recoveries]] · [[wiki/concepts/forward-flow-governance|Financing-Partner Governance]] · [[wiki/concepts/portfolio-construction|Portfolio Construction]] · [[wiki/concepts/financier-return-economics|Return Economics]]
+
+## U.S. Production Incentives
+
+- [[wiki/syntheses/us-film-tax-incentives|U.S. Film and Television Tax Incentives]]
+- [[wiki/concepts/incentive-monetization|Turning Production Incentives into Cash]]
+- [[wiki/entities/california-film-incentives|California Film and Television Incentives]]
+- [[wiki/entities/georgia-film-incentives|Georgia Film and Television Incentives]]
+- [[wiki/entities/illinois-film-incentives|Illinois Film and Television Incentives]]
+- [[wiki/entities/louisiana-film-incentives|Louisiana Film and Television Incentives]]
+- [[wiki/entities/massachusetts-film-incentives|Massachusetts Film and Television Incentives]]
+- [[wiki/entities/new-jersey-film-incentives|New Jersey Film and Television Incentives]]
+- [[wiki/entities/new-mexico-film-incentives|New Mexico Film and Television Incentives]]
+- [[wiki/entities/new-york-film-incentives|New York Film and Television Incentives]]
 
 ## Continue Exploring
 

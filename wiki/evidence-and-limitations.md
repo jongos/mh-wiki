@@ -2,7 +2,7 @@
 title: Evidence and Limitations
 type: synthesis
 status: current
-updated: 2026-09-30
+updated: 2026-10-06
 source_count: 17
 publish: true
 description: Understand the evidence supporting this knowledgebase, its limitations and the legal, policy, market and transaction facts financiers should verify.
@@ -65,6 +65,10 @@ This knowledgebase brings together seventeen evidentiary internal MediaHedge bri
 | Is a legal or incentive structure effective? | Enforceability, program eligibility or claim recovery for a particular jurisdiction and transaction | Current primary authority, executed documents and qualified review |
 
 A gap in this guide does not mean the company lacks the information. The site explains the questions; the relevant decision file supplies the answers.
+
+## U.S. Incentive Review Scope
+
+The [[wiki/syntheses/us-film-tax-incentives|U.S. Incentive Guide]] separates eight official-source-reviewed state profiles from the broader 38-state secondary report. The review covers stated rules, not remaining funds, project acceptance, agency payment dates or buyer bids. A report and its companion workbooks represent one research lineage. New Mexico’s current fiscal-year capacity and California’s category-specific local-hire wording remain identified verification questions.
 
 ## Dates and Review Scope
 

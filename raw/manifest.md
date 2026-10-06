@@ -2,8 +2,8 @@
 title: Raw Source Manifest
 type: operations
 status: current
-updated: 2026-08-10
-source_count: 18
+updated: 2026-10-06
+source_count: 19
 publish: false
 tags:
   - mediahedge
@@ -34,6 +34,7 @@ Canonical ingestion snapshots. SHA-256 identifies the exact binary reviewed duri
 | [[raw/sources/MediaHedge_Where_the_Financiers_Return_Comes_From_Financier_Brief.docx\|Where the Financier's Return Comes From]] | `9304612BB193C0F7489D7DA2C6ECC4020A237E8D87823D66B3CA9703F56BB685` | ingested | [[wiki/sources/where-the-financiers-return-comes-from]] |
 | [[raw/sources/MediaHedge_Why_a_Production_Must_Be_Fully_Financed_Financier_Brief.docx\|Why a Production Must Be Fully Financed]] | `117445873358AEA423C25C9CDE1A073231C5D04F70FDCE9F9C6D6998A15553D9` | ingested | [[wiki/sources/why-a-production-must-be-fully-financed]] |
 | [[raw/sources/MediaHedge_Knowledgebase_Introduction.docx\|Welcome to the MediaHedge Knowledgebase]] | `D700584CFDDA0D328A532F603CFCA3F0D68CE8AA4B181254A6EA04E76DFDA840` | ingested - derived, non-evidentiary | [[wiki/sources/mediahedge-knowledgebase-introduction]] |
+| [[raw/sources/FilmHedge_Tax_Incentives_2026_10_06_final.docx\|FilmHedge U.S. Tax Incentives Report 2026]] | `A504786268256FD74011359D1931E8BCB533BAB2321EBA4668AA42AF34388BDB` | ingested - secondary research, primary review scoped | [[wiki/sources/filmhedge-us-tax-incentives-2026]] |
 
 ## Ingestion Note
 

@@ -2,7 +2,7 @@
 title: Internal Wiki Catalog
 type: operations
 status: current
-updated: 2026-09-30
+updated: 2026-10-06
 source_count: 17
 publish: false
 tags:
@@ -85,3 +85,19 @@ The 2026-09-30 reader-interface refinement places four audience/task routes near
 - [[wiki/sources/tax-credit-receivables-as-collateral|Tax-Credit Receivables as Collateral]]
 - [[wiki/sources/where-the-financiers-return-comes-from|Where the Financier's Return Comes From]]
 - [[wiki/sources/why-a-production-must-be-fully-financed|Why a Production Must Be Fully Financed]]
+
+## October 2026 U.S. Incentive Expansion
+
+Ten public pages add a comparison hub, cash-conversion framework and eight selected state profiles. One secondary report is archived; companion workbooks do not increase evidence counts. Exact primary links and scoped gaps are retained on each state page.
+
+- [[wiki/syntheses/us-film-tax-incentives|U.S. Film and Television Tax Incentives]]
+- [[wiki/concepts/incentive-monetization|Turning Production Incentives into Cash]]
+- [[wiki/entities/california-film-incentives|California Film and Television Incentives]]
+- [[wiki/entities/georgia-film-incentives|Georgia Film and Television Incentives]]
+- [[wiki/entities/illinois-film-incentives|Illinois Film and Television Incentives]]
+- [[wiki/entities/louisiana-film-incentives|Louisiana Film and Television Incentives]]
+- [[wiki/entities/massachusetts-film-incentives|Massachusetts Film and Television Incentives]]
+- [[wiki/entities/new-jersey-film-incentives|New Jersey Film and Television Incentives]]
+- [[wiki/entities/new-mexico-film-incentives|New Mexico Film and Television Incentives]]
+- [[wiki/entities/new-york-film-incentives|New York Film and Television Incentives]]
+- [[wiki/sources/filmhedge-us-tax-incentives-2026|FilmHedge U.S. Tax Incentives Report 2026]]
