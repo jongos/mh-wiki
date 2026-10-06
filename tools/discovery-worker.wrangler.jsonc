@@ -1,0 +1,13 @@
+{
+  "name": "mediafinance-discovery",
+  "main": "discovery-worker.mjs",
+  "account_id": "d2bc308a60a5449f16b2684bec2429d2",
+  "compatibility_date": "2026-10-06",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    { "pattern": "mediafinance.guide/sitemap.xml", "zone_name": "mediafinance.guide" },
+    { "pattern": "mediafinance.guide/robots.txt", "zone_name": "mediafinance.guide" }
+  ],
+  "observability": { "enabled": false }
+}

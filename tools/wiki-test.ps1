@@ -122,6 +122,14 @@ try {
     if ($LASTEXITCODE -ne 0) { throw "publish.js syntax check failed.`n$($nodeOutput | Out-String)" }
     Add-TestPass 'publish.js passed the Node.js syntax check'
 
+    $responseAudit = Invoke-PowerShellCapture -ScriptPath (Join-Path $vault 'tools\publish-response-test.ps1')
+    if ($responseAudit.ExitCode -ne 0) { throw "Crawler response regression failed.`n$($responseAudit.Output | Out-String)" }
+    Add-TestPass 'crawler responses reject indexing blocks, wrong preload targets and soft missing pages'
+
+    $discoveryOutput = @(& $node (Join-Path $vault 'tools\discovery-worker-test.mjs') 2>&1)
+    if ($LASTEXITCODE -ne 0) { throw "Discovery worker regression failed.`n$($discoveryOutput | Out-String)" }
+    Add-TestPass 'discovery endpoints include only public reader pages and fail safely on upstream errors'
+
     $routeAuditPath = Join-Path $vault 'tools\publish-route-compatibility-audit.js'
     $routeOutput = @(& $node $routeAuditPath (Join-Path $vault 'publish.js') 2>&1)
     if ($LASTEXITCODE -ne 0) { throw "Legacy Publish route compatibility check failed.`n$($routeOutput | Out-String)" }

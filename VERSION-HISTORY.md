@@ -40,7 +40,9 @@ Run `tools\wiki-history.cmd` for the live commit-and-tag index. It reads Git dir
 
 ## Current Content Milestone
 
-`wiki-v1.18-underwriting-context` records the Phase 1/2 evidence-template, glossary, reader-question and changelog refresh, reconciled with current owner-approved underwriting guidance. It preserves legacy raw evidence and separates transaction-specific assumptions from review triggers. This is a repository content milestone; Obsidian deployment remains separately verified in the operation log.
+`wiki-v1.19-us-tax-incentives` adds the U.S. incentive guide, cash-monetization explanation and eight state profiles, with one preserved report source and current primary-authority review. The preceding `wiki-v1.18-underwriting-context` milestone preserves the qualitative underwriting refresh and its evidence boundaries.
+
+`wiki-v1.20-search-discovery` completes the 38-page sitemap through the narrowly routed Cloudflare discovery Worker and adds full-corpus deployment verification, crawler-response regressions and transport checks. Its operation log records the verified Google Search Console submission separately from Google's eventual indexing decisions. Worker rollback and deployment boundaries are documented in README.md.
 
 ## Safe Recovery
 

@@ -1,5 +1,6 @@
 # Temporary working files
 .tmp_*/
+.wrangler/
 
 # Microsoft Office lock files
 ~$*.docx

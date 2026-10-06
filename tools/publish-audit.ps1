@@ -7,6 +7,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 . (Join-Path $PSScriptRoot 'hash-lib.ps1')
+. (Join-Path $PSScriptRoot 'publish-response-lib.ps1')
 if ([string]::IsNullOrWhiteSpace($VaultRoot)) {
     $VaultRoot = Split-Path -Parent $PSScriptRoot
 }
@@ -112,6 +113,16 @@ function Get-RemoteFileHash {
 }
 
 $siteRoot = $SiteUrl.TrimEnd('/')
+$httpRequest = [Net.HttpWebRequest]::Create("http://$(([Uri]$siteRoot).Host)/")
+$httpRequest.AllowAutoRedirect = $false
+$httpRequest.Timeout = 30000
+$httpResponse = $httpRequest.GetResponse()
+try {
+    if ([int]$httpResponse.StatusCode -notin @(301, 308) -or
+        $httpResponse.Headers['Location'] -notin @("$siteRoot/", "$siteRoot/MediaHedge+Knowledgebase")) {
+        throw 'The public HTTP root must permanently redirect to the canonical HTTPS root or home note.'
+    }
+} finally { $httpResponse.Close() }
 try {
     $rootResponse = Invoke-WebRequest -Uri "$siteRoot/" -UseBasicParsing -MaximumRedirection 5 -TimeoutSec 30
 } catch {
@@ -154,14 +165,19 @@ try {
 }
 $robotsText = [string]$robotsResponse.Content
 if ([int]$robotsResponse.StatusCode -ne 200 -or
+    [string]$robotsResponse.Headers['Content-Type'] -notmatch '^text/plain(?:;|$)' -or
     $robotsText -notmatch '(?im)^User-agent:\s*\*\s*$' -or
     $robotsText -notmatch '(?im)^Allow:\s*/\s*$' -or
+    $robotsText -notmatch ('(?im)^Sitemap:\s*' + [regex]::Escape("$siteRoot/sitemap.xml") + '\s*$') -or
     $robotsText -match '(?im)^Disallow:\s*/\s*$') {
     throw "Live robots.txt does not clearly allow public-site crawling: $($robotsText -replace '\s+', ' ')"
 }
 
 try {
     $sitemapResponse = Invoke-WebRequest -Uri "$siteRoot/sitemap.xml" -UseBasicParsing -TimeoutSec 30
+    if ([string]$sitemapResponse.Headers['Content-Type'] -notmatch '^(?:application|text)/xml(?:;|$)') {
+        throw 'Sitemap response is not XML.'
+    }
     [xml]$sitemapXml = $sitemapResponse.Content
 } catch {
     throw "Unable to read or parse live sitemap.xml: $($_.Exception.Message)"
@@ -180,7 +196,8 @@ $sitemapMissing = @($expectedSitemapUrls | Where-Object { $_ -notin $sitemapUrls
 $sitemapUnexpected = @($sitemapUrls | Where-Object { -not $expectedSitemapUrls.Contains($_) } | Sort-Object)
 $sitemapDuplicates = @($sitemapUrls | Group-Object | Where-Object { $_.Count -gt 1 })
 if ($sitemapMissing.Count -gt 0 -or $sitemapUnexpected.Count -gt 0 -or $sitemapDuplicates.Count -gt 0) {
-    throw "Live sitemap inventory mismatch. Missing: $($sitemapMissing -join ', '); unexpected: $($sitemapUnexpected -join ', '); duplicate: $(($sitemapDuplicates.Name) -join ', ')"
+    $sitemapFailure = "Live sitemap inventory mismatch. Missing: $($sitemapMissing -join ', '); unexpected: $($sitemapUnexpected -join ', '); duplicate: $(($sitemapDuplicates.Name) -join ', ')"
+    Write-Warning $sitemapFailure
 }
 
 $assetRoot = "https://$($publishConfig.host)/access/$($publishConfig.siteId)"
@@ -195,6 +212,25 @@ if ($localJsHash -ne $remoteJsHash) {
     throw "Deployed publish.js does not match the local file: $remoteJsHash versus $localJsHash"
 }
 
+# Verify the complete published corpus, even while an upstream sitemap is stale.
+# A correct inventory alone cannot establish that the deployed bytes are current.
+foreach ($path in @($desired | Sort-Object)) {
+    if ($path -in @('publish.css', 'publish.js')) { continue }
+    $encodedPath = ($path.Split('/') | ForEach-Object { [Uri]::EscapeDataString($_) }) -join '/'
+    $localHash = Get-Sha256Hash -Path (Join-Path $vault $path)
+    $remoteHash = Get-RemoteFileHash -Uri "$assetRoot/$encodedPath" -Label $path
+    if ($localHash -ne $remoteHash) { throw "Deployed content does not match local SHA-256: $path" }
+    if ($path.EndsWith('.md')) {
+        $route = $encodedPath.Substring(0, $encodedPath.Length - 3).Replace('%20', '+')
+        $pageResponse = Invoke-WebRequest -Uri "$siteRoot/$route" -UseBasicParsing -TimeoutSec 30
+        Assert-PublishPageResponse -StatusCode ([int]$pageResponse.StatusCode) `
+            -ContentType ([string]$pageResponse.Headers['Content-Type']) `
+            -RobotsHeader ([string]$pageResponse.Headers['X-Robots-Tag']) `
+            -Html ([string]$pageResponse.Content) -ExpectedAssetUrl "$assetRoot/$encodedPath" -Label $route
+    }
+}
+Write-Output "Full-corpus verification: all $($desired.Count) published files match local SHA-256; all $($publicMarkdown.Count) public note routes pass crawler-response checks"
+
 if (-not $SkipBrowserAudit) {
     $browserAudit = Join-Path $vault 'tools\publish-browser-audit.ps1'
     if (-not (Test-Path -LiteralPath $browserAudit -PathType Leaf)) {
@@ -207,7 +243,9 @@ if (-not $SkipBrowserAudit) {
     $browserOutput | Write-Output
 }
 
-Write-Output 'Live routes: homepage, Site Navigator and representative concept returned HTTP 200'
+if ($sitemapFailure) { throw $sitemapFailure }
+Write-Output 'Live routes: every public note returned HTTP 200 HTML with the correct crawler preload and no indexing block'
+Write-Output 'Transport and discovery: HTTP permanently redirects to HTTPS; robots.txt is plain text and advertises the XML sitemap'
 Write-Output "Crawl controls: the site-root preload uses one .md extension, robots.txt allows the public site and sitemap.xml contains exactly $($sitemapUrls.Count) canonical note URLs"
 Write-Output 'Deployed assets: publish.css and publish.js exactly match their local SHA-256 values'
 Write-Output 'Publish inventory and live reader behavior match the intended public wiki.'

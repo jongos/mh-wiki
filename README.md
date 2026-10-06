@@ -81,6 +81,16 @@ The repository is also a complete Obsidian vault.
 git clone https://github.com/jongos/mh-wiki.git
 ```
 
+## Deployment and Search Verification
+
+Run `tools\generate-publish-navigation.cmd` to rebuild the reader labels and SEO index from all public notes. Run `tools\wiki-test.cmd` before releasing code changes. After publishing, run `tools\publish-audit.cmd`: it requires the exact public inventory, SHA-256 agreement for every public note and asset, working crawler preload targets and no indexing blocks on every public note, complete sitemap coverage, and real-browser navigation/search checks. A stale sitemap remains a failed deployment audit even when the content checks pass.
+
+Submit `https://mediafinance.guide/sitemap.xml` in the verified Google Search Console property after the full deployment audit passes. Sitemap submission requests discovery and crawling; it does not confirm that Google indexed every page. Keep DNS verification records in the DNS provider, and do not store account credentials in this public repository. Record the actual submission result and any unresolved coverage errors in the operation log.
+
+The narrow Cloudflare discovery Worker is maintained in `tools/discovery-worker.mjs`. Its routes are `mediafinance.guide/sitemap.xml` and `mediafinance.guide/robots.txt`. It builds the sitemap from Obsidian's current public index, requires boolean `publish: true`, excludes evidence and operations paths, and includes valid page-update dates. It returns HTTP 503 instead of an empty successful sitemap when the upstream index fails. Its short cache lifetime allows newly published pages to appear without redeploying a static URL list. If public page naming conventions change, update the allowlist and tests together. To roll back, detach only these two Worker routes; Obsidian resumes serving its native discovery files. Never attach this Worker to the entire site.
+
+Deploy the discovery service with an already-authorized Cloudflare CLI session using `wrangler deploy --config tools/discovery-worker.wrangler.jsonc`. Run the full local suite before deployment and the live audit afterward. The configuration disables public Worker preview URLs and limits routing to the two discovery paths.
+
 ## Repository Map
 
 | Location | What It Contains |
