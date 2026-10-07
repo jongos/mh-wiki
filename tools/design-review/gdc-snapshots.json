@@ -1,0 +1,89 @@
+[
+  {
+    "environment": {
+      "id": "mobile-dark",
+      "width": 390,
+      "height": 844,
+      "colorScheme": "dark"
+    },
+    "measurements": {
+      "overflow": {
+        "scrollWidth": 390,
+        "clientWidth": 390
+      },
+      "title": {
+        "text": "FilmHedge Research Library ",
+        "visible": true
+      },
+      "title-font": {
+        "value": "\"Libre Baskerville\", Georgia, serif"
+      },
+      "table-contrast": {
+        "foreground": "#ffffff",
+        "background": "#243e60"
+      }
+    },
+    "adapter": "Codex tab CDP; GDC-compatible explicit measurements",
+    "capturedAt": "2026-10-07T15:07:29.260Z",
+    "schemaVersion": 1,
+    "planHash": "34d7975f740b6b8fd0ea9fc8b1f68d45e2cc61f8ba5b32e8eb62ec346c37c17e"
+  },
+  {
+    "environment": {
+      "id": "mobile",
+      "width": 390,
+      "height": 844,
+      "colorScheme": "light"
+    },
+    "measurements": {
+      "overflow": {
+        "scrollWidth": 390,
+        "clientWidth": 390
+      },
+      "title": {
+        "text": "FilmHedge Research Library ",
+        "visible": true
+      },
+      "title-font": {
+        "value": "\"Libre Baskerville\", Georgia, serif"
+      },
+      "table-contrast": {
+        "foreground": "#ffffff",
+        "background": "#0c224f"
+      }
+    },
+    "adapter": "Codex tab CDP; GDC-compatible explicit measurements",
+    "capturedAt": "2026-10-07T15:07:29.420Z",
+    "schemaVersion": 1,
+    "planHash": "34d7975f740b6b8fd0ea9fc8b1f68d45e2cc61f8ba5b32e8eb62ec346c37c17e"
+  },
+  {
+    "environment": {
+      "id": "desktop",
+      "width": 1280,
+      "height": 720,
+      "colorScheme": "light"
+    },
+    "measurements": {
+      "overflow": {
+        "scrollWidth": 1280,
+        "clientWidth": 1280
+      },
+      "title": {
+        "text": "FilmHedge Research Library ",
+        "visible": true
+      },
+      "title-font": {
+        "value": "\"Libre Baskerville\", Georgia, serif"
+      },
+      "table-contrast": {
+        "foreground": "#ffffff",
+        "background": "#0c224f"
+      }
+    },
+    "adapter": "Codex tab CDP; GDC-compatible explicit measurements",
+    "capturedAt": "2026-10-07T15:07:29.482Z",
+    "schemaVersion": 1,
+    "planHash": "34d7975f740b6b8fd0ea9fc8b1f68d45e2cc61f8ba5b32e8eb62ec346c37c17e"
+  }
+]

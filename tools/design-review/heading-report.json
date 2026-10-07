@@ -1,0 +1,19 @@
+{
+  "scope": "All authored visible public Markdown headings; hidden maintenance comments excluded. Representative live headings visually checked.",
+  "standard": {
+    "status": "pass",
+    "checked": 339,
+    "failures": []
+  },
+  "exceptions": {
+    "status": "pass",
+    "checked": 3,
+    "failures": []
+  },
+  "exceptionReason": "AGENTS.md keeps short prepositions lowercase; visual-only task preserves the existing three into headings.",
+  "exceptionLocations": [
+    "wiki/concepts/incentive-monetization.md:17",
+    "wiki/syntheses/credit-lifecycle.md:35",
+    "wiki/syntheses/credit-lifecycle.md:47"
+  ]
+}

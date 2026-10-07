@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "mh-wiki-dazzler",
+  "revision": "2026-10-07-shared-theme",
+  "medium": "html",
+  "environments": [
+    {
+      "id": "desktop",
+      "width": 1280,
+      "height": 720,
+      "colorScheme": "light"
+    },
+    {
+      "id": "mobile",
+      "width": 390,
+      "height": 844,
+      "colorScheme": "light"
+    },
+    {
+      "id": "mobile-dark",
+      "width": 390,
+      "height": 844,
+      "colorScheme": "dark"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "overflow",
+      "check": "viewport-overflow"
+    },
+    {
+      "id": "title",
+      "check": "visible-text",
+      "selector": "h1.publish-article-heading",
+      "text": "FilmHedge Research Library"
+    },
+    {
+      "id": "title-font",
+      "check": "style-equals",
+      "selector": "h1.publish-article-heading",
+      "property": "font-family",
+      "expected": "\"Libre Baskerville\", Georgia, serif"
+    },
+    {
+      "id": "table-contrast",
+      "check": "text-contrast",
+      "selector": "thead th:first-child",
+      "minRatio": 4.5
+    }
+  ]
+}

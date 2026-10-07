@@ -1,0 +1,3 @@
+Copyright notices extracted verbatim from the bundled font name tables.
+
+Copyright 2012 The Libre Baskerville Project Authors (https://github.com/impallari/Libre-Baskerville)

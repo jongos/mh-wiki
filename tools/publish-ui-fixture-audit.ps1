@@ -149,6 +149,8 @@ try {
   document.querySelector('.mh-skip-link').click();
   const frame = document.querySelector('.image-embed');
   const link = document.querySelector('.mh-diagram-tools a');
+  const research = document.querySelector('.image-embed:has(img[src*="assets/research/"])');
+  const researchLink = research.nextElementSibling.querySelector('a');
   return {
     skipFocusedArticle: document.activeElement.id === 'mh-reader-content',
     editDate: /^Page Updated \d{4}-\d{2}-\d{2}$/.test(document.querySelector('.mh-page-meta time')?.textContent || ''),
@@ -157,11 +159,13 @@ try {
     nativeSectionsPreserved: !document.querySelector('.markdown-preview-sizer > .mh-page-meta'),
     diagramKeyboard: frame.tabIndex === 0 && frame.getAttribute('role') === 'region',
     diagramLink: link.href === frame.querySelector('img').src && link.rel === 'noopener',
+    researchKeyboard: research.tabIndex === 0 && research.getAttribute('role') === 'region',
+    researchLink: researchLink.href === research.querySelector('img').src && researchLink.target === '_blank' && researchLink.rel === 'noopener' && researchLink.textContent.startsWith('Open Full Graphic') && researchLink.getAttribute('aria-label').includes('(new tab)'),
     tableKeyboard: document.querySelector('.table-wrapper').tabIndex === 0
   };
 })()
 '@
-    foreach ($property in @('skipFocusedArticle', 'editDate', 'oneMetadataRow', 'metadataBeforeReaderHeading', 'nativeSectionsPreserved', 'diagramKeyboard', 'diagramLink', 'tableKeyboard')) {
+    foreach ($property in @('skipFocusedArticle', 'editDate', 'oneMetadataRow', 'metadataBeforeReaderHeading', 'nativeSectionsPreserved', 'diagramKeyboard', 'diagramLink', 'researchKeyboard', 'researchLink', 'tableKeyboard')) {
         if (-not $readerTools.$property) { throw "Reader field-guide enhancement failed: $property" }
     }
     $keyboard = Invoke-BrowserExpression -Socket $socket -Expression @'

@@ -1,0 +1,10 @@
+/* Unmodified bundled fonts; keep accompanying licenses and SOURCE.md. */
+
+@font-face {
+  font-family: "Inter Variable";
+  src: url("./InterVariable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}

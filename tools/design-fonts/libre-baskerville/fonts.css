@@ -1,0 +1,19 @@
+/* Unmodified bundled fonts; keep accompanying licenses and SOURCE.md. */
+
+@font-face {
+  font-family: "Libre Baskerville";
+  src: url("./LibreBaskerville-Italic%5Bwght%5D.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: italic;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libre Baskerville";
+  src: url("./LibreBaskerville%5Bwght%5D.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}

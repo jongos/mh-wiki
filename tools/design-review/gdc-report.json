@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "engineVersion": "0.1.0",
+  "planHash": "34d7975f740b6b8fd0ea9fc8b1f68d45e2cc61f8ba5b32e8eb62ec346c37c17e",
+  "status": "pass",
+  "results": [
+    {
+      "environment": "desktop",
+      "requirement": "overflow",
+      "check": "viewport-overflow",
+      "status": "pass",
+      "value": 0
+    },
+    {
+      "environment": "desktop",
+      "requirement": "title",
+      "check": "visible-text",
+      "status": "pass",
+      "value": true
+    },
+    {
+      "environment": "desktop",
+      "requirement": "title-font",
+      "check": "style-equals",
+      "status": "pass",
+      "value": "\"Libre Baskerville\", Georgia, serif"
+    },
+    {
+      "environment": "desktop",
+      "requirement": "table-contrast",
+      "check": "text-contrast",
+      "status": "pass",
+      "value": 15.471366948756387
+    },
+    {
+      "environment": "mobile",
+      "requirement": "overflow",
+      "check": "viewport-overflow",
+      "status": "pass",
+      "value": 0
+    },
+    {
+      "environment": "mobile",
+      "requirement": "title",
+      "check": "visible-text",
+      "status": "pass",
+      "value": true
+    },
+    {
+      "environment": "mobile",
+      "requirement": "title-font",
+      "check": "style-equals",
+      "status": "pass",
+      "value": "\"Libre Baskerville\", Georgia, serif"
+    },
+    {
+      "environment": "mobile",
+      "requirement": "table-contrast",
+      "check": "text-contrast",
+      "status": "pass",
+      "value": 15.471366948756387
+    },
+    {
+      "environment": "mobile-dark",
+      "requirement": "overflow",
+      "check": "viewport-overflow",
+      "status": "pass",
+      "value": 0
+    },
+    {
+      "environment": "mobile-dark",
+      "requirement": "title",
+      "check": "visible-text",
+      "status": "pass",
+      "value": true
+    },
+    {
+      "environment": "mobile-dark",
+      "requirement": "title-font",
+      "check": "style-equals",
+      "status": "pass",
+      "value": "\"Libre Baskerville\", Georgia, serif"
+    },
+    {
+      "environment": "mobile-dark",
+      "requirement": "table-contrast",
+      "check": "text-contrast",
+      "status": "pass",
+      "value": 10.864116241899517
+    }
+  ],
+  "scope": "Declared checks and captured states only; not accessibility certification or design quality. Supplied observations are not authenticated."
+}

@@ -15,6 +15,10 @@ tags:
 
 Use this page to find substantive changes since your last visit. Dates describe changes to the guide, not new loan approvals, policy effective dates or investment results.
 
+## October 7, 2026 — Reader Design Refresh
+
+The guide now pairs editorial serif headings with clearer reading typography, a navy reference rail and stronger comparison-table headers. Report charts and infographics have keyboard-scroll regions and full-size links for closer inspection on small screens. The shared design applies throughout the knowledgebase; source findings and financing qualifications are unchanged.
+
 ## October 7, 2026
 
 - **Research connected to decisions:** the [[wiki/syntheses/filmhedge-research-library|FilmHedge Research Library]] links all five reports and the illustrated Medium guide, with topic-specific references across incentives, production budgets, sizing, repayment, monitoring, portfolios and returns.

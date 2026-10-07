@@ -318,15 +318,16 @@
     if (date.textContent !== dateLabel) date.textContent = dateLabel;
     if (date.dateTime !== metadata.updated) date.dateTime = metadata.updated;
 
-    article.querySelectorAll('.image-embed:has(img[src*=".svg"])').forEach((frame) => {
+    article.querySelectorAll('.image-embed:has(img[src*=".svg"]), .image-embed:has(img[src*="assets/research/"])').forEach((frame) => {
       const img = frame.querySelector("img");
+      const isResearch = img.src.includes("assets/research/");
       let source;
       try { source = new URL(img.src, window.location.href); } catch { return; }
       if (!["https:", "http:", "file:"].includes(source.protocol)) return;
       frame.classList.add("mh-scroll-region");
       frame.tabIndex = 0;
       frame.setAttribute("role", "region");
-      frame.setAttribute("aria-label", `${img.alt || "Conceptual diagram"}. Scroll horizontally to explore.`);
+      frame.setAttribute("aria-label", `${img.alt || "Evidence graphic"}. Scroll horizontally to explore.`);
       let controls = frame.nextElementSibling;
       if (!controls?.classList.contains("mh-diagram-tools")) {
         controls = document.createElement("span");
@@ -335,7 +336,7 @@
         hint.className = "mh-diagram-hint";
         hint.textContent = "Scroll to Explore →";
         const link = document.createElement("a");
-        link.textContent = "Open Full Diagram ↗";
+        link.textContent = isResearch ? "Open Full Graphic ↗" : "Open Full Diagram ↗";
         link.target = "_blank";
         link.rel = "noopener";
         controls.append(hint, link);
@@ -343,7 +344,7 @@
       }
       const link = controls.querySelector("a");
       if (link.href !== source.href) link.href = source.href;
-      link.setAttribute("aria-label", `Open full diagram: ${img.alt || "conceptual illustration"} (new tab)`);
+      link.setAttribute("aria-label", `Open full ${isResearch ? "graphic" : "diagram"}: ${img.alt || "conceptual illustration"} (new tab)`);
     });
     article.querySelectorAll(".el-table, .table-wrapper").forEach((wrapper) => {
       wrapper.tabIndex = 0;

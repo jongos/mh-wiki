@@ -1,0 +1,103 @@
+{
+  "scope": "Georgia profile; solid and composited background samples; not a full accessibility audit",
+  "samples": [
+    {
+      "background": [
+        12,
+        34,
+        79
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 15.471366948756389,
+      "selector": ".site-body-left-column-site-name"
+    },
+    {
+      "background": [
+        12,
+        34,
+        79
+      ],
+      "foreground": [
+        232,
+        237,
+        245
+      ],
+      "ratio": 13.16049739059501,
+      "selector": ".site-body-left-column .tree-item-inner"
+    },
+    {
+      "background": [
+        16,
+        43,
+        83
+      ],
+      "foreground": [
+        182,
+        198,
+        217
+      ],
+      "ratio": 8.086222996898341,
+      "selector": ".mh-search-label"
+    },
+    {
+      "background": [
+        251,
+        250,
+        247
+      ],
+      "foreground": [
+        23,
+        107,
+        115
+      ],
+      "ratio": 5.939990921767808,
+      "selector": ".mh-page-category"
+    },
+    {
+      "background": [
+        251,
+        250,
+        247
+      ],
+      "foreground": [
+        85,
+        102,
+        109
+      ],
+      "ratio": 5.735825284329977,
+      "selector": ".mh-page-meta time"
+    },
+    {
+      "background": [
+        251,
+        250,
+        247
+      ],
+      "foreground": [
+        12,
+        34,
+        79
+      ],
+      "ratio": 14.82243066613448,
+      "selector": "h1.publish-article-heading"
+    },
+    {
+      "background": [
+        251,
+        250,
+        247
+      ],
+      "foreground": [
+        85,
+        102,
+        109
+      ],
+      "ratio": 5.735825284329977,
+      "selector": ".markdown-rendered p"
+    }
+  ]
+}
