@@ -44,6 +44,8 @@ Run `tools\wiki-history.cmd` for the live commit-and-tag index. It reads Git dir
 
 `wiki-v1.20-search-discovery` completes the 38-page sitemap through the narrowly routed Cloudflare discovery Worker and adds full-corpus deployment verification, crawler-response regressions and transport checks. Its operation log records the verified Google Search Console submission separately from Google's eventual indexing decisions. Worker rollback and deployment boundaries are documented in README.md.
 
+`wiki-v1.21-research-library` integrates all five FilmHedge reports and the illustrated Medium tax guide across relevant reader topics. It adds one research-library page, fourteen original report visuals and four immutable report editions with source provenance and scoped evidence limits. The live release contains 39 public notes and 65 public files verified against local hashes.
+
 ## Safe Recovery
 
 Prefer restoring into a separate folder first. This preserves the current vault and any manual edits while the recovered generation is inspected.

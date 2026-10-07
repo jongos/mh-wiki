@@ -2,8 +2,8 @@
 title: Monitoring and Servicing
 type: concept
 status: current
-updated: 2026-09-30
-source_count: 8
+updated: 2026-10-07
+source_count: 9
 publish: true
 description: See how active servicing tracks production progress, collateral, cash, covenants and recovery timing while escalating material variances for decision.
 tags:
@@ -48,6 +48,14 @@ Volume is not control. Stale or unaudited reports, percentage-complete measures 
 
 Servicing keeps [[wiki/concepts/full-financing|Full Financing]], [[wiki/concepts/loan-sizing|the borrowing base]] and [[wiki/concepts/cash-control-and-waterfalls|cash control]] current after closing. Material exceptions move into [[wiki/concepts/defaults-workouts-and-recoveries|Defaults, Workouts and Recoveries]] under the authority matrix in [[wiki/concepts/forward-flow-governance|Forward-Flow Governance]].
 
+## Research on Better Outcome Records
+
+The [Divergent Correlation study](https://filmhedge.com/report-2026-divergent-correlation), pages 16 and 19–20, shows why funding capture, dated status changes and realized receipts need separate fields. Missing funding records are not zero funding; active loans contribute unfinished follow-up, while undetermined outcomes cannot be presumed active or repaid.
+
+The study’s proposed measurement improvements—versioned scores, exact obligor identities, tranche-level collateral, dated advances and net lender receipts—are a research agenda, not a claim that every historical record already contains them. See the [[wiki/syntheses/filmhedge-research-library#Read the Credit Study Charts|Study Coverage Chart]].
+
+Research links checked: 2026-10-07. Other review dates retain their stated scope.
+
 ## Continue Exploring
 
 [[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/syntheses/site-navigator|Site Navigator]]
@@ -58,3 +66,5 @@ Servicing keeps [[wiki/concepts/full-financing|Full Financing]], [[wiki/concepts
 - Primary: [[wiki/sources/monitoring-and-servicing-after-closing]].
 - Related: [[wiki/sources/cama-account-control-and-collection-waterfalls]], [[wiki/sources/defaults-workouts-and-recoveries]], [[wiki/sources/forward-flow-partnerships-and-financier-governance]], [[wiki/sources/where-the-financiers-return-comes-from]], [[wiki/sources/completion-bonds-crash-course]], [[wiki/sources/pre-sales-as-collateral-crash-course]] and [[wiki/sources/sales-estimates-and-gap-as-collateral-crash-course]].
 -->
+
+<!-- Research source basis: [[wiki/sources/filmhedge-divergent-correlation-2026]]. Dated research, not current policy. -->

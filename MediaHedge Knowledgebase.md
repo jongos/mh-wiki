@@ -2,8 +2,8 @@
 title: Welcome to the MediaHedge Knowledgebase
 type: operations
 status: current
-updated: 2026-10-06
-source_count: 17
+updated: 2026-10-07
+source_count: 22
 publish: true
 description: Explore film and television finance through MediaHedge's guide to collateral, loan sizing, cash control, risk protection, servicing, recovery and returns.
 seo_title: Film and Television Finance Guide | MediaHedge
@@ -117,6 +117,14 @@ Read [[wiki/what-changed|What Changed]] for the latest underwriting, terminology
 Read [[wiki/evidence-and-limitations|Evidence and Limitations]] for a clear explanation of what this knowledgebase establishes, what remains subject to current policy or transaction documents, and what a financing partner should verify independently.
 
 This knowledgebase is educational. Current approved policy, executed transaction documents and qualified legal, tax, insurance and program advice control any specific financing decision.
+
+## FilmHedge Research and Illustrated Reports
+
+Explore the [[wiki/syntheses/filmhedge-research-library|FilmHedge Research Library]] for five reports on production incentives, finance plans, private credit and lender outcomes. Start with the [illustrated 2026 tax-guide article](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437), or browse [all FilmHedge reports](https://filmhedge.com/reports).
+
+Report visuals appear beside the relevant wiki topics, including the [[wiki/syntheses/us-film-tax-incentives#A Map of Payment Routes|State Payment-Route Map]], [[wiki/concepts/incentive-monetization#Follow the Cash Routes|Incentive Cash Routes]] and [[wiki/syntheses/filmhedge-research-library#Read the Credit Study Charts|Credit Study Coverage]]. Dates, conditional program rules and study limits travel with each visual.
+
+Research links checked: 2026-10-07. Other review dates retain their stated scope.
 
 ## Continue Exploring
 

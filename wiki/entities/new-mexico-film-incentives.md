@@ -2,7 +2,7 @@
 title: New Mexico Film and Television Incentives
 type: entity
 status: needs-review
-updated: 2026-10-06
+updated: 2026-10-07
 as_of: 2026-10-06
 source_count: 1
 publish: true
@@ -34,6 +34,16 @@ Separate resident and nonresident labor, approved vendors, locations and the sta
 Sources checked October 6, 2026; FY 2027 capacity and the production’s payment position remain open. This scoped gap is why the page remains under review. Follow [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]] for the collection forecast.
 
 Links checked: 2026-10-06. Review scope and unresolved items are stated above.
+
+## Report Context
+
+![[assets/research/new-mexico-incentive-region.png|FilmHedge regional snapshot locating New Mexico and summarizing its incentive cash route alongside neighboring programs]]
+
+*Source: FilmHedge’s [2026 Tax Incentives Guide](https://filmhedge.com/report-2026-tax-incentives), October 6, 2026. Regional research snapshot, not a ranking or a full statement of eligibility. Neighboring-state labels have not received this profile’s official-source review; consult current agency rules.*
+
+Open the [New Mexico report entry](https://filmhedge.com/report-2026-tax-incentives#state-new-mexico) and the [Medium explainer](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437) for wider context. This page’s official sources and review boundary govern its program discussion; the report does not establish an award, transfer price or collection date.
+
+Research links checked: 2026-10-07. Other review dates retain their stated scope.
 
 ## Continue Exploring
 

@@ -2,7 +2,7 @@
 title: Financier's Guide
 type: synthesis
 status: current
-updated: 2026-10-06
+updated: 2026-10-07
 source_count: 17
 publish: true
 description: Use eight financier-focused questions to evaluate financeability, repayment, sizing, control, protection, monitoring, recovery and portfolio economics.
@@ -108,6 +108,10 @@ For questions about whether a film qualifies, its rate or a distributor's approv
 ## What Still Requires Independent Verification
 
 The knowledgebase explains the framework; it does not replace current policy, executed contracts, current provider capacity and authority, legal and tax advice, insurance review or historical performance analysis. See [[wiki/evidence-and-limitations|Evidence and Limitations]] for a practical list of items a financing partner may want to request.
+
+## Read the Supporting Research
+
+Use the [[wiki/syntheses/filmhedge-research-library|FilmHedge Research Library]] to choose a report for the question at hand: incentive value, production budgets, repayment structure, empirical credit evidence or historical private-credit comparisons. The catalog links directly to all five reports and the illustrated tax-guide article, with edition dates and limits.
 
 ## Continue Exploring
 

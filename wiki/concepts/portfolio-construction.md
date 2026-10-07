@@ -2,8 +2,8 @@
 title: Portfolio Construction
 type: concept
 status: current
-updated: 2026-08-28
-source_count: 6
+updated: 2026-10-07
+source_count: 8
 publish: true
 description: Learn how film-finance portfolios manage concentration by distributor, incentive program, guarantor, producer, platform, collateral market and collection timing.
 tags:
@@ -49,6 +49,14 @@ The SEC's [Asset Allocation and Diversification](https://www.investor.gov/introd
 
 Portfolio construction aggregates the outputs of [[wiki/concepts/loan-sizing|Loan Sizing]], [[wiki/concepts/monitoring-and-servicing|Servicing]], [[wiki/concepts/forward-flow-governance|Forward-Flow Governance]] and [[wiki/concepts/financier-return-economics|Return Economics]].
 
+## Research on Cohorts and Shared Evidence
+
+The [Divergent Correlation study](https://filmhedge.com/report-2026-divergent-correlation), pages 7–9 and 20–21, uses different cohorts for payoff timing, public gross and obligor matching. Twenty-two observed payoffs do not resolve the eight active loans or four undetermined outcomes. The [[wiki/syntheses/filmhedge-research-library#Read the Credit Study Charts|Data-Availability Chart]] makes those gaps visible.
+
+The [2026 Insights companion](https://filmhedge.com/report-2026-private-credit-insights) interprets the same study; it is not an independent replication. Neither publication establishes a stable diversification benefit, a calibrated default model or a causal advantage from blended collateral. Portfolio decisions still require common-dependency analysis and reconciled cash outcomes.
+
+Research links checked: 2026-10-07. Other review dates retain their stated scope.
+
 ## Continue Exploring
 
 [[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/syntheses/site-navigator|Site Navigator]]
@@ -59,3 +67,5 @@ Portfolio construction aggregates the outputs of [[wiki/concepts/loan-sizing|Loa
 - Primary: [[wiki/sources/portfolio-construction-and-concentration-risk]].
 - Related: [[wiki/sources/how-mediahedge-sizes-a-loan]], [[wiki/sources/monitoring-and-servicing-after-closing]], [[wiki/sources/forward-flow-partnerships-and-financier-governance]], [[wiki/sources/where-the-financiers-return-comes-from]] and [[wiki/sources/sales-estimates-and-gap-as-collateral-crash-course]].
 -->
+
+<!-- Research source basis: [[wiki/sources/filmhedge-divergent-correlation-2026]], [[wiki/sources/filmhedge-private-credit-insights-2026]]. Dated research, not current policy. -->

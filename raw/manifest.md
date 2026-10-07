@@ -2,8 +2,8 @@
 title: Raw Source Manifest
 type: operations
 status: current
-updated: 2026-10-06
-source_count: 19
+updated: 2026-10-07
+source_count: 23
 publish: false
 tags:
   - mediahedge
@@ -35,6 +35,10 @@ Canonical ingestion snapshots. SHA-256 identifies the exact binary reviewed duri
 | [[raw/sources/MediaHedge_Why_a_Production_Must_Be_Fully_Financed_Financier_Brief.docx\|Why a Production Must Be Fully Financed]] | `117445873358AEA423C25C9CDE1A073231C5D04F70FDCE9F9C6D6998A15553D9` | ingested | [[wiki/sources/why-a-production-must-be-fully-financed]] |
 | [[raw/sources/MediaHedge_Knowledgebase_Introduction.docx\|Welcome to the MediaHedge Knowledgebase]] | `D700584CFDDA0D328A532F603CFCA3F0D68CE8AA4B181254A6EA04E76DFDA840` | ingested - derived, non-evidentiary | [[wiki/sources/mediahedge-knowledgebase-introduction]] |
 | [[raw/sources/FilmHedge_Tax_Incentives_2026_10_06_final.docx\|FilmHedge U.S. Tax Incentives Report 2026]] | `A504786268256FD74011359D1931E8BCB533BAB2321EBA4668AA42AF34388BDB` | ingested - secondary research, primary review scoped | [[wiki/sources/filmhedge-us-tax-incentives-2026]] |
+| [[raw/sources/filmhedge-private-credit-insights-2022-v2.pdf\|FilmHedge Private Credit Insights 2022 - Revised Edition]] | `1431DF52BE141DE42F1B37637C2E31F156EED7025DD55BE705427A571232986E` | ingested - dated publisher research | [[wiki/sources/filmhedge-private-credit-insights-2022-v2]] |
+| [[raw/sources/filmhedge-private-credit-insights-2023-v2.pdf\|FilmHedge Private Credit Insights 2023 - Revised Edition]] | `5A9D6A18FF6641859218CEEDDBD40C486CD5295A0DD39A369FA60AB93597A37E` | ingested - dated publisher research | [[wiki/sources/filmhedge-private-credit-insights-2023-v2]] |
+| [[raw/sources/filmhedge-divergent-correlation-2026.pdf\|FilmHedge Divergent Correlation 2026]] | `3A45F2E0B4758E1AB021DEF89B2550D28A92D837B0075C34892FA45F6B6E5F14` | ingested - dated publisher research | [[wiki/sources/filmhedge-divergent-correlation-2026]] |
+| [[raw/sources/filmhedge-private-credit-insights-2026.pdf\|FilmHedge Private Credit Insights 2026]] | `A3BF68493E30640E57BD9980BF0F2EC4C6273835800E0570A9AB55FF2F9B3B58` | ingested - dated publisher research | [[wiki/sources/filmhedge-private-credit-insights-2026]] |
 
 ## Ingestion Note
 

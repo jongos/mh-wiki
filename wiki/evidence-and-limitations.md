@@ -2,8 +2,8 @@
 title: Evidence and Limitations
 type: synthesis
 status: current
-updated: 2026-10-06
-source_count: 17
+updated: 2026-10-07
+source_count: 22
 publish: true
 description: Understand the evidence supporting this knowledgebase, its limitations and the legal, policy, market and transaction facts financiers should verify.
 tags:
@@ -14,7 +14,7 @@ tags:
 
 # Evidence and Limitations
 
-This knowledgebase brings together seventeen evidentiary internal MediaHedge briefs about film- and television-finance credit and its surrounding market. The qualitative underwriting explanation was also reconciled with owner-approved company guidance reviewed September 25 and 27, 2026. It explains the company’s framework, the relationships among the major controls, and the questions a financing partner may want to explore.
+This knowledgebase brings together seventeen evidentiary internal MediaHedge briefs and five FilmHedge research publications about film- and television-finance credit, production incentives and the surrounding market. The qualitative underwriting explanation was also reconciled with owner-approved company guidance reviewed September 25 and 27, 2026. It explains the company’s framework, the relationships among the major controls, and the questions a financing partner may want to explore.
 
 ## How to Read the Material
 
@@ -93,6 +93,16 @@ Depending on the stage of review, a financing partner may want:
 
 The reader-oriented groupings above are a synthesis of the existing material. They are not a transaction checklist, legal opinion, current policy certification or investment recommendation.
 
+## Published Research and Chart Boundaries
+
+The [[wiki/syntheses/filmhedge-research-library|FilmHedge Research Library]] adds dated publisher research and original report illustrations. The 2026 Insights companion and Divergent Correlation share one study, so they do not independently corroborate each other. Thirty-four study projects do not mean every field is observed for 34 projects; active, paid-off and undetermined outcomes remain distinct.
+
+The [2023 report](https://filmhedge.com/report-2023-private-credit-insights) contains an opening outperformance assertion inconsistent with its own methodology addendum. Some narrative language in the [2026 companion](https://filmhedge.com/report-2026-private-credit-insights) is stronger than the technical study’s limited findings. The wiki therefore retains the narrower conclusions: no validated predictive model, no demonstrated causal leverage benefit, no matched-basis universal return ranking, and no conversion of underwritten principal into verified cash funded.
+
+Tax graphics retain their October 6, 2026 research date. Conceptual cash routes do not promise payment, and state maps do not certify current law or available allocations. Reader captions preserve each figure’s source, measure and limits.
+
+Research links checked: 2026-10-07. Other review dates retain their stated scope.
+
 ## Continue Exploring
 
 Return to the [[MediaHedge Knowledgebase|Knowledgebase Home]], follow the [[wiki/syntheses/financier-diligence-route|Financier’s Guide]], compare roles in the [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]], or review the [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]]. · [[wiki/syntheses/site-navigator|Site Navigator]]
@@ -102,3 +112,5 @@ Return to the [[MediaHedge Knowledgebase|Knowledgebase Home]], follow the [[wiki
 
 Internal maintenance support: [[wiki/operations/research-backlog]], [[wiki/operations/contradictions]], and the seventeen evidentiary source-summary pages listed in [[wiki/operations/internal-catalog#Source summaries]].
 -->
+
+<!-- Research source basis: [[wiki/sources/filmhedge-private-credit-insights-2022-v2]], [[wiki/sources/filmhedge-private-credit-insights-2023-v2]], [[wiki/sources/filmhedge-private-credit-insights-2026]], [[wiki/sources/filmhedge-divergent-correlation-2026]]. Dated research, not current policy. -->

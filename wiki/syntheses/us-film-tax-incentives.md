@@ -2,7 +2,7 @@
 title: U.S. Film and Television Tax Incentives
 type: synthesis
 status: current
-updated: 2026-10-06
+updated: 2026-10-07
 as_of: 2026-10-06
 source_count: 1
 publish: true
@@ -54,6 +54,16 @@ The supplied report also covers Alabama, Arizona, Arkansas, Colorado, Connecticu
 The comparison is a production-planning and lender-diligence framework. It does not rate state credit quality, establish an incentive buyer’s price, confirm remaining allocations or approve a loan. Several productions can share the same agency-processing or payment-cap exposure; incorporate that dependency into [[wiki/concepts/portfolio-construction|Portfolio Construction]].
 
 Links checked: 2026-10-06. Review scope and unresolved items are stated above.
+
+## A Map of Payment Routes
+
+![[assets/research/incentive-payment-map.png|FilmHedge map classifying the guide’s 38 state profiles by refundable credit, transferable credit, cash award, alternative routes and special treatment]]
+
+*Source: FilmHedge’s [October 6, 2026 report](https://filmhedge.com/report-2026-tax-incentives) and [illustrated article](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437). This dated research map is not a ranking, funding-availability map or current legal certification. “Not Covered” means outside the report, not no incentive. Montana’s hatching concerns allocation constraints. California and Massachusetts have conditional alternative routes; state purchases and hybrid programs require their own review.*
+
+The eight profiles above retain their individually stated official-source review. For all 38 textual program descriptions, use FilmHedge’s [state directory](https://filmhedge.com/report-2026-tax-incentives#state-incentives). See the [[wiki/syntheses/filmhedge-research-library|Research Library]] for the other reports and evidence limits.
+
+Research links checked: 2026-10-07. Other review dates retain their stated scope.
 
 ## Continue Exploring
 

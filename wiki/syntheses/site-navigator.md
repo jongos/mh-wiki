@@ -2,7 +2,7 @@
 title: Site Navigator
 type: synthesis
 status: current
-updated: 2026-10-06
+updated: 2026-10-07
 source_count: 0
 publish: true
 description: Navigate the MediaHedge knowledgebase as a connected map of financeability, collateral, control, protection, servicing, recovery and portfolio economics.
@@ -45,6 +45,10 @@ Explore the MediaHedge knowledgebase as a connected system. The interactive grap
 - [[wiki/entities/new-jersey-film-incentives|New Jersey Film and Television Incentives]]
 - [[wiki/entities/new-mexico-film-incentives|New Mexico Film and Television Incentives]]
 - [[wiki/entities/new-york-film-incentives|New York Film and Television Incentives]]
+
+## FilmHedge Research
+
+[[wiki/syntheses/filmhedge-research-library|Browse the Research Library]] — choose among the five reports, read the illustrated tax-guide article, and find charts by financing question.
 
 ## Continue Exploring
 

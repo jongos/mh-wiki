@@ -2,7 +2,7 @@
 title: Illinois Film and Television Incentives
 type: entity
 status: current
-updated: 2026-10-06
+updated: 2026-10-07
 as_of: 2026-10-06
 source_count: 1
 publish: true
@@ -34,6 +34,16 @@ Tag each wage by residency, role, compensation limit and bonus eligibility. Avoi
 Sources checked October 6, 2026 for the categories and transfer distinction above. The guide does not determine whether a particular production satisfies the current bonus, application or withholding requirements. Compare [[wiki/concepts/incentive-monetization|Cash Routes]].
 
 Links checked: 2026-10-06. Review scope and unresolved items are stated above.
+
+## Report Context
+
+![[assets/research/illinois-incentive-region.png|FilmHedge regional snapshot locating Illinois and summarizing its incentive cash route alongside neighboring programs]]
+
+*Source: FilmHedge’s [2026 Tax Incentives Guide](https://filmhedge.com/report-2026-tax-incentives), October 6, 2026. Regional research snapshot, not a ranking or a full statement of eligibility. Neighboring-state labels have not received this profile’s official-source review; consult current agency rules.*
+
+Open the [Illinois report entry](https://filmhedge.com/report-2026-tax-incentives#state-illinois) and the [Medium explainer](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437) for wider context. This page’s official sources and review boundary govern its program discussion; the report does not establish an award, transfer price or collection date.
+
+Research links checked: 2026-10-07. Other review dates retain their stated scope.
 
 ## Continue Exploring
 

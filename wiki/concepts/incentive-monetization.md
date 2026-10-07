@@ -2,7 +2,7 @@
 title: Turning Production Incentives into Cash
 type: concept
 status: current
-updated: 2026-10-06
+updated: 2026-10-07
 as_of: 2026-10-06
 source_count: 1
 publish: true
@@ -60,6 +60,16 @@ For illustration, six additional months on an unchanged $1,000,000 principal bal
 ## Evidence to Collect
 
 Keep the application and award, applicable rules, qualified-cost model, payroll and vendor support, audit engagement, filing calendar, certificate, buyer or agency payment evidence, and [[wiki/concepts/cash-control-and-waterfalls|Cash-Control Documents]] aligned. Track changes through [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]]. A completion guaranty does not by itself cure an ineligible cost, missed filing or incentive shortfall.
+
+## Follow the Cash Routes
+
+![[assets/research/incentive-cash-routes.png|FilmHedge flowchart from program qualification through documented spending and award verification to refund, credit sale, state buyback, cash award or tax offset]]
+
+*Source: FilmHedge’s [2026 incentive report](https://filmhedge.com/report-2026-tax-incentives), October 6, 2026. Conceptual illustration: routes are alternatives where permitted, not additive benefits or a payment schedule. A bridge loan is a repayable advance; financing changes timing and does not increase the incentive.*
+
+The [illustrated Medium article](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437) walks through this diagram and the difference between face value and cash proceeds. Use the [report and companion workbooks](https://filmhedge.com/report-2026-tax-incentives) for the underlying research, then confirm the applicable agency rules and transaction assumptions.
+
+Research links checked: 2026-10-07. Other review dates retain their stated scope.
 
 ## Continue Exploring
 

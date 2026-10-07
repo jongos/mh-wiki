@@ -2,8 +2,8 @@
 title: Full Financing
 type: concept
 status: current
-updated: 2026-08-28
-source_count: 6
+updated: 2026-10-07
+source_count: 8
 publish: true
 description: Learn why a film or television production must have complete, verified and properly timed sources to cover production, delivery, reserves and contingency.
 tags:
@@ -45,6 +45,14 @@ A sources-and-uses table can balance while remaining unfinanceable. Common failu
 
 Full financing is the prerequisite for [[wiki/concepts/loan-sizing|Loan Sizing]], supports [[wiki/concepts/production-insurance|Production Insurance]] and [[wiki/concepts/completion-protection|Completion Protection]], and reduces the chance that [[wiki/concepts/defaults-workouts-and-recoveries|protective advances]] become necessary. [[wiki/concepts/monitoring-and-servicing|Servicing]] keeps the test current through cost-to-complete analysis.
 
+## Research on Production Finance Plans
+
+The [2026 Private Credit Insights](https://filmhedge.com/report-2026-private-credit-insights), pages 22–24, connects a finance plan to identifiable payers, payment conditions, timing and collateral slices. Use it alongside the [2026 incentive article](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437) when a location benefit is one of the budget’s expected sources.
+
+The [2022 revised report](https://filmhedge.com/report-2022-private-credit-insights), pages 9–14, provides a historical ten-transaction budget sample and explicitly records reconciliation problems. Its unexplained cost residuals are not identified contingency, and its sample averages are not recommended budget allocations. Those limits reinforce the need to reconcile the actual production’s uses and financing.
+
+Research links checked: 2026-10-07. Other review dates retain their stated scope.
+
 ## Continue Exploring
 
 [[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/syntheses/site-navigator|Site Navigator]]
@@ -55,3 +63,5 @@ Full financing is the prerequisite for [[wiki/concepts/loan-sizing|Loan Sizing]]
 - Primary: [[wiki/sources/why-a-production-must-be-fully-financed]].
 - Related: [[wiki/sources/how-mediahedge-sizes-a-loan]], [[wiki/sources/mediahedge-protection-stack]], [[wiki/sources/completion-bonds-crash-course]], [[wiki/sources/pre-sales-as-collateral-crash-course]] and [[wiki/sources/sales-estimates-and-gap-as-collateral-crash-course]].
 -->
+
+<!-- Research source basis: [[wiki/sources/filmhedge-private-credit-insights-2026]], [[wiki/sources/filmhedge-private-credit-insights-2022-v2]]. Dated research, not current policy. -->

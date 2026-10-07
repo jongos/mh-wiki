@@ -2,8 +2,8 @@
 title: Repayment and Risk Map
 type: synthesis
 status: current
-updated: 2026-09-30
-source_count: 12
+updated: 2026-10-07
+source_count: 14
 publish: true
 description: Compare contracted receivables, tax incentives, unsold rights, insurance, completion support and surety as distinct repayment and protection paths.
 tags:
@@ -53,6 +53,14 @@ Different labels do not guarantee diversification. Several repayment sources can
 
 Taken together, the material suggests a useful hierarchy: first preserve the project and legal claim, then preserve the cash path, then measure timing and net realization. No single layer is sufficient, and apparently distinct assets should receive diversification credit only after their shared dependencies are mapped.
 
+## Research on Repayment and Box Office
+
+The [2026 Insights companion](https://filmhedge.com/report-2026-private-credit-insights), pages 5 and 22–24, distinguishes financing a contracted payment from taking residual equity exposure. The [Divergent Correlation study](https://filmhedge.com/report-2026-divergent-correlation), page 17, finds only a weak and uncertain association between public-gross efficiency and payoff days in its 15-project joint cohort. This is not proof that the measures are independent.
+
+For the incentive branch, the [illustrated tax-guide article](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437) and [[wiki/concepts/incentive-monetization#Follow the Cash Routes|Cash-Route Diagram]] distinguish refunds, sales, state purchases, grants and offsets. Contractual rights, verification and controlled collections connect those sources to repayment.
+
+Research links checked: 2026-10-07. Other review dates retain their stated scope.
+
 ## Continue Exploring
 
 [[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/evidence-and-limitations|Evidence and Limitations]] · [[wiki/syntheses/site-navigator|Site Navigator]]
@@ -62,3 +70,5 @@ Taken together, the material suggests a useful hierarchy: first preserve the pro
 
 [[wiki/sources/why-a-production-must-be-fully-financed]], [[wiki/sources/how-mediahedge-sizes-a-loan]], [[wiki/sources/tax-credit-receivables-as-collateral]], [[wiki/sources/film-production-insurance-stack]], [[wiki/sources/mediahedge-protection-stack]], [[wiki/sources/mediahedge-security-package]], [[wiki/sources/cama-account-control-and-collection-waterfalls]], [[wiki/sources/portfolio-construction-and-concentration-risk]], [[wiki/sources/completion-bonds-crash-course]], [[wiki/sources/surety-bonds-crash-course]], [[wiki/sources/pre-sales-as-collateral-crash-course]] and [[wiki/sources/sales-estimates-and-gap-as-collateral-crash-course]].
 -->
+
+<!-- Research source basis: [[wiki/sources/filmhedge-private-credit-insights-2026]], [[wiki/sources/filmhedge-divergent-correlation-2026]]. Dated research, not current policy. -->

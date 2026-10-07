@@ -2,7 +2,7 @@
 title: Research Backlog
 type: operations
 status: current
-updated: 2026-10-06
+updated: 2026-10-07
 source_count: 17
 publish: false
 tags:
@@ -80,3 +80,10 @@ The September 30 [[wiki/operations/underwriting-refresh-2026-09-30|underwriting 
 - Refresh application windows, tax forms, transfer fees and award-year availability at transaction review; no point-in-time public summary establishes an available allocation or payment date.
 - Verify the three supplied public reading links in a rendered browser when accessible; web fetches failed during this review. The actual supplied report was readable locally.
 - Keep local/GitHub completion distinct from Obsidian Publish; require the full live inventory, asset-hash, sitemap and browser audit after deployment.
+
+## Research Publication Follow-Up - October 7, 2026
+
+- Resolve the 2023 outperformance sentence and 2026 companion predictive/measurement inconsistencies recorded in [[wiki/operations/contradictions#October 7, 2026 Research Reconciliation]]. Preserve current snapshots; ingest corrected versions additively.
+- Obtain reconciled dated cash flows, clear cohort cutoffs, adverse outcomes, score versions and tranche allocations before presenting a validated model, default probability, net return series or diversification estimate.
+- The report library, five landing pages and Medium article are now browser-verified. Local PDF editions agree in title and page count; direct public PDF byte equivalence was not checked. Access forms were not submitted.
+- Extend program authority review separately; new dated infographic reuse does not certify all 38 states, remaining funding or neighboring-state labels. Report/link review dates do not replace the eight profiles’ scoped official review dates.

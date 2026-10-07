@@ -2,7 +2,7 @@
 title: New Jersey Film and Television Incentives
 type: entity
 status: current
-updated: 2026-10-06
+updated: 2026-10-07
 as_of: 2026-10-06
 source_count: 1
 publish: true
@@ -34,6 +34,16 @@ Determine the claimant’s category before using any purchase assumption. Separa
 Sources checked October 6, 2026. Award-year availability, studio-partner eligibility, tax clearance and transaction-specific transfer terms remain to be verified. Read [[wiki/concepts/tax-credit-collateral|Tax-Credit Collateral]] for collection controls.
 
 Links checked: 2026-10-06. Review scope and unresolved items are stated above.
+
+## Report Context
+
+![[assets/research/new-jersey-incentive-region.png|FilmHedge regional snapshot locating New Jersey and summarizing its incentive cash route alongside neighboring programs]]
+
+*Source: FilmHedge’s [2026 Tax Incentives Guide](https://filmhedge.com/report-2026-tax-incentives), October 6, 2026. Regional research snapshot, not a ranking or a full statement of eligibility. Neighboring-state labels have not received this profile’s official-source review; consult current agency rules.*
+
+Open the [New Jersey report entry](https://filmhedge.com/report-2026-tax-incentives#state-new-jersey) and the [Medium explainer](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437) for wider context. This page’s official sources and review boundary govern its program discussion; the report does not establish an award, transfer price or collection date.
+
+Research links checked: 2026-10-07. Other review dates retain their stated scope.
 
 ## Continue Exploring
 

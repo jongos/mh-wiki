@@ -2,7 +2,7 @@
 title: Contradictions Register
 type: operations
 status: current
-updated: 2026-10-06
+updated: 2026-10-07
 source_count: 17
 publish: false
 tags:
@@ -57,3 +57,12 @@ When a true conflict appears, add a row with both source links, dates, scope, af
 | New Mexico fiscal year | Report states $150M FY 2027; current agency landing page labels its displayed $140M as FY 2026. | Different periods, not a proven same-period contradiction. [[wiki/entities/new-mexico-film-incentives\|New Mexico]] is needs-review pending FY 2027 authority and current capacity. Owner: next program review. |
 | Massachusetts location test | DOR website lists two eligibility bullets without an explicit conjunction; 2026 application states expenses above 75% OR photography days at least 75%. | Use explicit application instruction in [[wiki/entities/massachusetts-film-incentives\|Massachusetts]]; do not silently convert the alternatives into cumulative conditions. |
 | Companion lineage | Workbooks identify an illustrated report precursor in their Notes rather than the supplied final filename. | Preserve final DOCX as the ingested source; companion data is dependent cross-check material, not an additional evidentiary source. |
+
+## October 7, 2026 Research Reconciliation
+
+| Topic | Positions and Scope | Treatment and Verification Needed |
+| --- | --- | --- |
+| 2023 outperformance | [[wiki/sources/filmhedge-private-credit-insights-2023-v2\|2023 v2]], page 4, asserts universal common-period net risk-adjusted outperformance; pages 26, 32 and 38 expressly reject that inference from mixed-basis benchmarks. | Unresolved publisher inconsistency. Wiki excludes universal outperformance and uses the qualified methodology. Owner: report editor; requires corrected publisher edition or reconciled dated cash-flow evidence. Source snapshot unchanged. |
+| 2026 predictive claims | [[wiki/sources/filmhedge-private-credit-insights-2026\|2026 companion]], pages 16-17, uses strong grading/performance and uncorrelated wording; [[wiki/sources/filmhedge-divergent-correlation-2026\|technical study]], pages 20-21, concludes relationships remain unproven. Companion page 26 mentions cast and genre despite page 13 excluding star-power coding. | Unresolved narrative overreach. Wiki attributes empirical conclusions to the technical study and does not equate inconclusive tests with independence or include unmodeled predictors. Owner: report editor; requires aligned language and verified model specification. |
+| Funded versus underwritten amount | 2026 companion page 11 describes mean loan size as funded; page 12 and technical study page 6 define amounts as underwritten principal. | Wiki does not publish a cash-funded total from these amounts. Owner: report editor; reconcile to actual advances before any funded-volume claim. |
+| 2022 cost reconciliation | [[wiki/sources/filmhedge-private-credit-insights-2022-v2\|2022 v2]], pages 9 and 12, retain conflicting Buddies BTL and three negative budget residuals. | Historical unresolved differences, not contingency allowances. Owner: research review; original budget schedules needed. No source values silently corrected. |

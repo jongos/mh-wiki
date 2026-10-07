@@ -2,7 +2,7 @@
 title: New York Film and Television Incentives
 type: entity
 status: current
-updated: 2026-10-06
+updated: 2026-10-07
 as_of: 2026-10-06
 source_count: 1
 publish: true
@@ -40,6 +40,16 @@ Map facility days, location days, qualified costs and each bonus separately. Do 
 Official program pages checked October 6, 2026. This review does not establish remaining allocations, project acceptance or a refund date. Continue with [[wiki/concepts/incentive-monetization|Incentive Monetization]].
 
 Links checked: 2026-10-06. Review scope and unresolved items are stated above.
+
+## Report Context
+
+![[assets/research/new-york-incentive-region.png|FilmHedge regional snapshot locating New York and summarizing its incentive cash route alongside neighboring programs]]
+
+*Source: FilmHedge’s [2026 Tax Incentives Guide](https://filmhedge.com/report-2026-tax-incentives), October 6, 2026. Regional research snapshot, not a ranking or a full statement of eligibility. Neighboring-state labels have not received this profile’s official-source review; consult current agency rules.*
+
+Open the [New York report entry](https://filmhedge.com/report-2026-tax-incentives#state-new-york) and the [Medium explainer](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437) for wider context. This page’s official sources and review boundary govern its program discussion; the report does not establish an award, transfer price or collection date.
+
+Research links checked: 2026-10-07. Other review dates retain their stated scope.
 
 ## Continue Exploring
 

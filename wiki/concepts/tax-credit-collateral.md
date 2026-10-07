@@ -2,7 +2,7 @@
 title: Tax-Credit Collateral
 type: concept
 status: needs-review
-updated: 2026-10-06
+updated: 2026-10-07
 as_of: 2026-09-30
 source_count: 5
 publish: true
@@ -68,6 +68,12 @@ Tax-credit collateral depends on [[wiki/concepts/full-financing|Full Financing]]
 Official program materials illustrate why production incentives require jurisdiction-specific underwriting. Compare the California Film Commission's [Film and Television Tax Credit Program 4.0](https://film.ca.gov/tax-credit/the-basics-4-0/) with Georgia's official [Film Incentives and Applications](https://georgia.org/industries/film/incentives). Program structure, transferability, qualified expenditures, application timing and audit requirements can differ. The California Film Commission's [Production Alerts](https://film.ca.gov/news-notices/production-alerts/) provide current administrative updates. These examples do not establish eligibility or value for another jurisdiction or transaction. The linked California and Georgia overviews were rechecked for the new state profiles on October 6, 2026; the Production Alerts link retains its August 9, 2026 review date.
 
 Links checked: 2026-10-06. Review scope and unresolved items are stated above.
+
+## Related FilmHedge Research
+
+Read the [illustrated 2026 state-guide article](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437) for payment routes, expense-specific rates and allocation constraints, and the [full report and data workbooks](https://filmhedge.com/report-2026-tax-incentives) for broader comparisons. The guide is dated October 6, 2026; it is research context, not proof of eligibility, collectible value or an approved advance. The [[wiki/syntheses/filmhedge-research-library|Research Library]] connects it to the wider credit research.
+
+Research links checked: 2026-10-07. Other review dates retain their stated scope.
 
 ## Continue Exploring
 

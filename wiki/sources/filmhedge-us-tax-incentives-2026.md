@@ -2,7 +2,7 @@
 title: FilmHedge U.S. Tax Incentives Report 2026
 type: source
 status: current
-updated: 2026-10-06
+updated: 2026-10-07
 as_of: 2026-10-06
 ingested: 2026-10-06
 source_file: "[[raw/sources/FilmHedge_Tax_Incentives_2026_10_06_final.docx]]"
@@ -27,7 +27,7 @@ The supplied final report profiles 38 states and selected local programs, with a
 
 The report distinguishes credits, refunds, transfers, buybacks, grants, rebates and exemptions; qualifies rates by expense category; separates annual, biennial, project and spending caps; and emphasizes application, audit and payment conditions. These distinctions support [[wiki/syntheses/us-film-tax-incentives|U.S. Incentive Guide]], [[wiki/concepts/incentive-monetization|Incentive Monetization]] and [[wiki/concepts/tax-credit-collateral|Tax-Credit Collateral]].
 
-Reader-suitable claims are the comparison framework and state facts specifically checked against the linked official authorities. Excluded from current reader assertions are unverified remaining funds, guaranteed payments, general financing approval, performance rankings and unchecked rules for the other 30 state profiles. Supplied public report/article/comparison URLs are reading links; their rendered contents were not retrieved successfully with the web tool.
+Reader-suitable claims are the comparison framework and state facts specifically checked against the linked official authorities. Excluded from current reader assertions are unverified remaining funds, guaranteed payments, general financing approval, performance rankings and unchecked rules for the other 30 state profiles. On October 7, 2026, the public report landing page, five-report library and complete Medium article were read in a rendered browser. The earlier web-tool retrieval failure remains part of the October 6 review history.
 
 ## Dates and Scoped Review
 
@@ -53,3 +53,7 @@ The live Brain Home, Underwriting/Collateral Types and Underwriting/MH Underwrit
 ## Related Pages
 
 [[wiki/syntheses/us-film-tax-incentives|U.S. Incentive Guide]] · [[wiki/concepts/incentive-monetization|Incentive Monetization]] · [[wiki/concepts/tax-credit-collateral|Tax-Credit Collateral]] · [[wiki/overview|Overview]]
+
+## October 7 Visual Reuse
+
+The original cash-route, rate-ladder and payment-map artwork plus eight regional snapshots were extracted byte-for-byte from this immutable report. They remain dependent illustrations, not new raw evidence. The owner expressly requested relevant report images in the wiki. Film stills and celebrity photographs from the article were excluded. The exact asset mapping and SHA-256 values are recorded in [[wiki/operations/internal-catalog#Visual Lineage]]. Official Georgia, West Virginia and Mississippi program overviews were checked for the displayed rate-ladder claims on October 7; this does not extend the full state-profile review to those entire programs.

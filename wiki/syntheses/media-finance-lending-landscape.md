@@ -2,9 +2,9 @@
 title: Media Finance Lending Landscape
 type: synthesis
 status: current
-updated: 2026-09-30
+updated: 2026-10-07
 as_of: 2026-08-10
-source_count: 7
+source_count: 9
 publish: true
 description: Compare banks, specialty lenders, private-credit managers, account banks, insurers, completion guarantors and surety providers across media finance.
 tags:
@@ -97,6 +97,18 @@ Links checked: 2026-08-10. On 2026-09-30, the dead Intectus completion-bond refe
 
 The groupings above are a reader-oriented synthesis. They identify the most comparable role and product from public descriptions; they do not determine which provider is best for a transaction or establish that any named provider will approve, fund or cover it.
 
+## Research on Production Lending and Trade Finance
+
+The [2023 Private Credit Insights revised edition](https://filmhedge.com/report-2023-private-credit-insights), pages 21–24, explains production lending through the relationship among producer, contracted buyer and lender.
+
+![[assets/research/production-trade-finance.jpg|FilmHedge conceptual illustration of production lending, completion protection, conditional buyer payment and separate tax-incentive collection before loan repayment]]
+
+*Source: FilmHedge, Private Credit Insights 2023 — v2, page 24; revised September 2026. Conceptual transaction sequence, not a performance chart, guaranteed repayment or promised timing. Completion protection is subject to the bond; buyer credit, delivery conditions and collection risks remain. Tax incentives follow their own eligibility and payment process.*
+
+Use this structural comparison alongside the [2026 Insights companion](https://filmhedge.com/report-2026-private-credit-insights). The historical report’s pricing and mixed-period benchmark comparisons do not update the provider capabilities or evidence dates above. All editions are collected in the [[wiki/syntheses/filmhedge-research-library|Research Library]].
+
+Research links checked: 2026-10-07. Other review dates retain their stated scope.
+
 ## Continue Exploring
 
 [[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier's Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/concepts/protection-stack|Protection Stack]] · [[wiki/evidence-and-limitations|Evidence and Limitations]] · [[wiki/syntheses/site-navigator|Site Navigator]]
@@ -106,3 +118,5 @@ The groupings above are a reader-oriented synthesis. They identify the most comp
 
 [[wiki/sources/media-finance-capital-and-risk-landscape]], [[wiki/sources/mediahedge-protection-stack]], [[wiki/sources/film-production-insurance-stack]], [[wiki/sources/completion-bonds-crash-course]], [[wiki/sources/surety-bonds-crash-course]], [[wiki/sources/pre-sales-as-collateral-crash-course]] and [[wiki/sources/sales-estimates-and-gap-as-collateral-crash-course]].
 -->
+
+<!-- Research source basis: [[wiki/sources/filmhedge-private-credit-insights-2023-v2]], [[wiki/sources/filmhedge-private-credit-insights-2026]]. Dated research, not current policy. -->

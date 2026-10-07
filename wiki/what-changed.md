@@ -2,7 +2,7 @@
 title: What Changed
 type: operations
 status: current
-updated: 2026-10-06
+updated: 2026-10-07
 source_count: 0
 publish: true
 description: See substantive updates to the MediaHedge guide, including underwriting explanations, plain-English terms, reader questions and evidence boundaries.
@@ -14,6 +14,12 @@ tags:
 # What Changed
 
 Use this page to find substantive changes since your last visit. Dates describe changes to the guide, not new loan approvals, policy effective dates or investment results.
+
+## October 7, 2026
+
+- **Research connected to decisions:** the [[wiki/syntheses/filmhedge-research-library|FilmHedge Research Library]] links all five reports and the illustrated Medium guide, with topic-specific references across incentives, production budgets, sizing, repayment, monitoring, portfolios and returns.
+- **Original visuals added:** incentive cash routes, conditional rate uplifts, the payment-route map and eight regional snapshots now sit beside related guidance. Credit-study coverage and vintage-adjustment charts retain their sample and uncertainty limits; the trade-finance illustration retains its conditional protection and collection wording.
+- **Evidence limits made explicit:** the 2022 and 2023 reports retain their historical periods; the two 2026 credit reports share one study. Conflicting outperformance and predictive language is qualified rather than promoted into current guidance.
 
 ## October 6, 2026
 

@@ -2,9 +2,9 @@
 title: Loan Sizing
 type: concept
 status: needs-review
-updated: 2026-09-30
+updated: 2026-10-07
 as_of: 2026-09-30
-source_count: 6
+source_count: 7
 publish: true
 description: Learn how eligible collateral value, advance rates, concentration limits, leverage, budget exposure, tenor and liquidity constraints determine loan size.
 tags:
@@ -76,6 +76,18 @@ An executed [[wiki/concepts/pre-sales-collateral|pre-sale]] can produce a contra
 
 Aggregate LTV does not protect capital if the value is ineligible, correlated, unreachable or maturing after the loan. Gross loan-to-budget is not a substitute for [[wiki/concepts/full-financing|sources-and-uses sufficiency]]. Fees and capitalized interest can increase exposure after closing. Where a particular mandate imposes a cap calculated against a final loan that itself includes gap, solve that circularity explicitly. Do not turn a concentration-review trigger into such a cap. High pricing cannot cure a failed structural gate.
 
+## What the Credit Research Does Not Change
+
+The [Divergent Correlation study](https://filmhedge.com/report-2026-divergent-correlation), pages 13 and 16–17, illustrates why an observed coefficient cannot become an advance rule.
+
+![[assets/research/study-vintage-adjustment.png|Payoff-hazard estimates before and after origination-vintage adjustment, with wide intervals for grade and blended structure and a noncausal LTV association]]
+
+*Source: FilmHedge + MediaHedge, Divergent Correlation, page 13; analysis September 1, 2026. The modeled cohort has 30 loans and 22 payoff events. Hazard ratios above one mean faster observed payoff, not lower default risk or higher return. Intervals are 95% credible intervals; grade and log LTV effects are per sample standard deviation.*
+
+The grade association becomes approximately neutral after adjustment and the blended estimate changes direction. The higher-LTV association may reflect selection or collateral mix; it does not establish a causal benefit from leverage. Approved sizing remains transaction-specific. See the [[wiki/syntheses/filmhedge-research-library|Research Library]] for cohort and measurement limits.
+
+Research links checked: 2026-10-07. Other review dates retain their stated scope.
+
 ## Continue Exploring
 
 [[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/syntheses/site-navigator|Site Navigator]]
@@ -88,3 +100,5 @@ Aggregate LTV does not protect capital if the value is ineligible, correlated, u
 -->
 
 <!-- Current qualitative authority: live MediaHedge Brain Underwriting/MH Underwriting.md and Underwriting/Risk and Obligor Scores.md (owner-approved reference, September 25, 2026), and Operations/Lifecycle of a Media Loan.md (owner-approved narrative, September 27, 2026), checked September 30, 2026. This is a scoped reconciliation, not a new raw evidence source or a transaction approval. -->
+
+<!-- Research source basis: [[wiki/sources/filmhedge-divergent-correlation-2026]]. Dated research, not current policy. -->

@@ -2,9 +2,9 @@
 title: Financing-Partner Return Economics
 type: concept
 status: needs-review
-updated: 2026-09-30
+updated: 2026-10-07
 as_of: 2026-09-30
-source_count: 5
+source_count: 8
 publish: true
 description: Evaluate film-finance returns through actual dated cash flows, fees, duration, prepayment, extensions, defaults, recoveries, expenses and capital utilization.
 tags:
@@ -62,6 +62,14 @@ A simple average of loan rates is not a portfolio yield. Upfront fees can inflat
 
 Return measurement depends on the dated evidence produced by [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]] and [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]]. [[wiki/concepts/defaults-workouts-and-recoveries|Workouts]] determine stressed cash timing and cost, while [[wiki/concepts/portfolio-construction|Portfolio Construction]] aggregates realized performance and expected loss across risk cohorts.
 
+## Reading the Research Benchmarks
+
+The [2022 revised report](https://filmhedge.com/report-2022-private-credit-insights), pages 23–25, separates reported transaction ROI from a simple annualized illustration. The [2023 revised report](https://filmhedge.com/report-2023-private-credit-insights), pages 26 and 36–38, distinguishes company-reported MPL observations from net fund IRRs and public-market comparisons with different dates. Neither comparison establishes current pricing or a common-period performance ranking; the 2023 opening outperformance assertion conflicts with its qualified addendum.
+
+The [2026 technical study](https://filmhedge.com/report-2026-divergent-correlation) principally measures time to observed payoff. Public theatrical gross and payoff timing are not a dated ledger of lender cash returns. Read the [[wiki/syntheses/filmhedge-research-library|Research Library]] for the edition history and limitations before using any chart as an investment benchmark.
+
+Research links checked: 2026-10-07. Other review dates retain their stated scope.
+
 ## Continue Exploring
 
 [[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/syntheses/site-navigator|Site Navigator]]
@@ -74,3 +82,5 @@ Return measurement depends on the dated evidence produced by [[wiki/concepts/cas
 -->
 
 <!-- Current qualitative authority: live MediaHedge Brain Underwriting/MH Underwriting.md and Underwriting/Risk and Obligor Scores.md (owner-approved reference, September 25, 2026), and Operations/Lifecycle of a Media Loan.md (owner-approved narrative, September 27, 2026), checked September 30, 2026. This is a scoped reconciliation, not a new raw evidence source or a transaction approval. -->
+
+<!-- Research source basis: [[wiki/sources/filmhedge-private-credit-insights-2022-v2]], [[wiki/sources/filmhedge-private-credit-insights-2023-v2]], [[wiki/sources/filmhedge-divergent-correlation-2026]]. Dated research, not current policy. -->
