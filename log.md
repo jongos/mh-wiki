@@ -473,3 +473,11 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Design: navy reference rail, Libre Baskerville headings and genuine italics, Inter Variable body/interface, numbered home routes, square evidence frames and high-contrast table bands. Preserve 60ch prose, native Obsidian scrolling, search semantics, light/dark modes and existing brand colors.
 - Interaction: extend existing SVG keyboard/full-size controls to the fourteen research graphics, with explicit new-tab labels and narrow-screen scrolling.
 - Validation: 342-heading inventory reviewed; three lowercase short-preposition exceptions preserve the existing AGENTS.md rule. Scoped desktop/mobile/dark GDC measurements passed. All 14 Windows regressions passed, including research-graphic keyboard/full-size assertions. Full live Publish audit passed: 65 exact file hashes, 39 routes/sitemap entries, no missing or unexpected/private files, and working search/SEO/navigation/native scrolling. Desktop, 390px mobile, dark and enlarged-text previews were reviewed; live raster ArrowRight scrolling and focus were verified. Independent mirror/bundle, GitHub main/tag and hosted CI verification accompany this milestone.
+
+## [2026-10-23] maintenance | Remove Obsolete Local Working Artifacts
+
+- Inspected: clean Git state, temporary directory inventory, tracked references and all 24 reader assets.
+- Removed: 205 ignored files (approximately 13.54 MiB logical size) from .tmp_reports and .tmp_tax_20261006: old extraction copies, previews, screenshots, logs and working scripts from completed October 6-7 work.
+- Preserved: all referenced assets, raw sources, source registry, Obsidian settings, deployed site, tracked design evidence, Git history, independent mirror and recovery bundles. No tracked references depended on the deleted folders.
+- Open issue: Windows holds both now-empty temporary directories open; no process was stopped to remove empty folders.
+- Validation: both temporary folders have zero remaining entries; Git remained clean after cleanup. Content lint run before committing this maintenance record.
