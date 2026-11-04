@@ -2,7 +2,7 @@
 title: Welcome to the MediaHedge Knowledgebase
 type: overview
 status: current
-updated: 2026-08-10
+updated: 2026-11-04
 source_count: 17
 publish: false
 tags:
@@ -13,9 +13,9 @@ tags:
 
 # Welcome to the MediaHedge Knowledgebase
 
-MediaHedge sits at the meeting point of creative production and disciplined credit. In this knowledgebase, the company is represented as a specialist film- and television-finance originator, underwriter and servicer that helps turn complex production assets and contracts into an understandable, governable lending system.
+This knowledgebase explains MediaHedge’s work as a film- and television-finance originator, underwriter and servicer, from evaluating production assets and contracts to managing repayment.
 
-You do not need to arrive as a film-finance expert. Begin with the big picture, follow the topic that interests you, and keep drilling until you reach the underlying source brief.
+Start with the overview, choose a topic and follow its links to the source briefs.
 
 Prefer a polished offline guide? Open [[raw/sources/MediaHedge_Knowledgebase_Introduction.docx|the Word introduction]]; its blue links jump back into this Obsidian vault.
 
@@ -30,7 +30,7 @@ Prefer a polished offline guide? Open [[raw/sources/MediaHedge_Knowledgebase_Int
 5. **How risk evolves after closing.** [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]] shows how changing production, collateral and payment facts become draw, reserve, consent, cure or workout decisions.
 6. **How outcomes are measured.** [[wiki/concepts/portfolio-construction|Portfolio Construction]] and [[wiki/concepts/financier-return-economics|Financier Return Economics]] connect common failure drivers, liquidity, dated cash realization and risk-adjusted performance.
 
-## Choose your own adventure
+## Choose a Starting Point
 
 ### If you are new to film finance
 
@@ -48,7 +48,7 @@ Follow [[wiki/concepts/security-package|Security Package]] into [[wiki/concepts/
 
 Connect [[wiki/concepts/protection-stack|Protection Stack]] to [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]] and [[wiki/concepts/defaults-workouts-and-recoveries|Defaults, Workouts and Recoveries]].
 
-## How the wiki shows its homework
+## How Evidence Is Labeled
 
 - **Source-backed:** directly stated in one or more cited briefs.
 - **Synthesis:** a conclusion formed by connecting source-backed claims.
@@ -65,8 +65,6 @@ The vault keeps three layers distinct: immutable evidence in [[raw/manifest|Raw 
 4. Walk [[wiki/syntheses/credit-lifecycle|the Film-Finance Credit Lifecycle]].
 5. Keep [[wiki/glossary|the Glossary]] nearby.
 6. Check [[wiki/operations/research-backlog|the Research Backlog]] to see what still needs policy, legal, operational or performance evidence.
-
-Welcome in. Pick a thread, follow the links, and let the system reveal itself one control at a time.
 
 ## Source basis
 

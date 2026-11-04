@@ -2,7 +2,7 @@
 title: Tax-Credit Collateral
 type: concept
 status: needs-review
-updated: 2026-10-07
+updated: 2026-11-04
 as_of: 2026-09-30
 source_count: 5
 publish: true
@@ -73,7 +73,11 @@ Links checked: 2026-10-06. Review scope and unresolved items are stated above.
 
 Read the [illustrated 2026 state-guide article](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437) for payment routes, expense-specific rates and allocation constraints, and the [full report and data workbooks](https://filmhedge.com/report-2026-tax-incentives) for broader comparisons. The guide is dated October 6, 2026; it is research context, not proof of eligibility, collectible value or an approved advance. The [[wiki/syntheses/filmhedge-research-library|Research Library]] connects it to the wider credit research.
 
-Research links checked: 2026-10-07. Other review dates retain their stated scope.
+Research links checked: 2026-10-07.
+
+## Federal Tax Reading
+
+Compare [[wiki/concepts/section-168k-film-tv-deductions|Section 168(k) Deductions]] with the [[wiki/concepts/proposed-federal-film-tv-credit|Proposed Federal Credit]] for their separate eligibility, timing and financing implications.
 
 ## Continue Exploring
 

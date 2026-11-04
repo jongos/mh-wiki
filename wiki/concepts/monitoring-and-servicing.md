@@ -2,7 +2,7 @@
 title: Monitoring and Servicing
 type: concept
 status: current
-updated: 2026-10-07
+updated: 2026-11-04
 source_count: 9
 publish: true
 description: See how active servicing tracks production progress, collateral, cash, covenants and recovery timing while escalating material variances for decision.
@@ -54,7 +54,7 @@ The [Divergent Correlation study](https://filmhedge.com/report-2026-divergent-co
 
 The study’s proposed measurement improvements—versioned scores, exact obligor identities, tranche-level collateral, dated advances and net lender receipts—are a research agenda, not a claim that every historical record already contains them. See the [[wiki/syntheses/filmhedge-research-library#Read the Credit Study Charts|Study Coverage Chart]].
 
-Research links checked: 2026-10-07. Other review dates retain their stated scope.
+Research links checked: 2026-10-07.
 
 ## Continue Exploring
 

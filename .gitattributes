@@ -1,0 +1,2 @@
+# Preserve immutable evidence exactly across Windows and other checkouts.
+raw/sources/** -text

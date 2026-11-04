@@ -2,7 +2,7 @@
 title: Turning Production Incentives into Cash
 type: concept
 status: current
-updated: 2026-10-07
+updated: 2026-11-04
 as_of: 2026-10-06
 source_count: 1
 publish: true
@@ -69,7 +69,11 @@ Keep the application and award, applicable rules, qualified-cost model, payroll 
 
 The [illustrated Medium article](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437) walks through this diagram and the difference between face value and cash proceeds. Use the [report and companion workbooks](https://filmhedge.com/report-2026-tax-incentives) for the underlying research, then confirm the applicable agency rules and transaction assumptions.
 
-Research links checked: 2026-10-07. Other review dates retain their stated scope.
+Research links checked: 2026-10-07.
+
+## Federal Tax Reading
+
+Compare [[wiki/concepts/section-168k-film-tv-deductions|Section 168(k) Deductions]] with the [[wiki/concepts/proposed-federal-film-tv-credit|Proposed Federal Credit]] for their separate eligibility, timing and financing implications.
 
 ## Continue Exploring
 

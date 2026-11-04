@@ -2,7 +2,7 @@
 title: Cash Control and Waterfalls
 type: concept
 status: current
-updated: 2026-08-28
+updated: 2026-11-04
 source_count: 6
 publish: true
 description: Learn how payment directions, collection accounts, account control, contractual waterfalls and reconciliation turn proceeds into prioritized loan repayment.
@@ -52,7 +52,7 @@ Obligors may retain setoff, withholding or deduction rights. Manager exculpation
 
 ## Connections
 
-Cash control operationalizes the [[wiki/concepts/security-package|Security Package]], supplies evidence to [[wiki/concepts/monitoring-and-servicing|Servicing]], and preserves recoveries during [[wiki/concepts/defaults-workouts-and-recoveries|Workout]]. It also provides the dated ledger needed for [[wiki/concepts/financier-return-economics|Return Economics]].
+Cash control puts into practice the [[wiki/concepts/security-package|Security Package]], supplies evidence to [[wiki/concepts/monitoring-and-servicing|Servicing]], and preserves recoveries during [[wiki/concepts/defaults-workouts-and-recoveries|Workout]]. It also provides the dated ledger needed for [[wiki/concepts/financier-return-economics|Return Economics]].
 
 ## Continue Exploring
 

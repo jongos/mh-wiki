@@ -2,7 +2,7 @@
 title: How the MediaHedge Lending Model Works
 type: overview
 status: current
-updated: 2026-09-30
+updated: 2026-11-04
 source_count: 17
 publish: true
 description: See how MediaHedge connects full financing, collateral eligibility, loan sizing, cash control, protection, servicing, recovery and portfolio discipline.
@@ -41,7 +41,7 @@ See [[wiki/syntheses/credit-lifecycle|Film-Finance Credit Lifecycle]] for the ex
 
 ## What Supports Repayment
 
-The corpus identifies multiple possible value sources but repeatedly warns that they are not interchangeable:
+Repayment and protection sources have different conditions:
 
 - [[wiki/concepts/pre-sales-collateral|Pre-sales and other contracted receivables]] depend on enforceable contracts, conforming delivery, obligor credit, deductions, assignment and payment control.
 - [[wiki/concepts/tax-credit-collateral|Tax incentives]] depend on qualifying activity, program rules, verified spend, audits, assignment or capture mechanics and collection timing.
@@ -67,7 +67,7 @@ MediaHedge's sizing framework combines several controls rather than relying on o
 
 ## The Recurring Distinctions
 
-The strongest connective tissue across the corpus is the discipline of not confusing adjacent concepts:
+Keep these distinctions clear:
 
 - eligibility is not valuation, pricing, scoring or approval;
 - a CAMA is not Article 9 deposit-account control;

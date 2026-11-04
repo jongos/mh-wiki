@@ -2,7 +2,7 @@
 title: Loan Sizing
 type: concept
 status: needs-review
-updated: 2026-10-07
+updated: 2026-11-04
 as_of: 2026-09-30
 source_count: 7
 publish: true
@@ -86,7 +86,7 @@ The [Divergent Correlation study](https://filmhedge.com/report-2026-divergent-co
 
 The grade association becomes approximately neutral after adjustment and the blended estimate changes direction. The higher-LTV association may reflect selection or collateral mix; it does not establish a causal benefit from leverage. Approved sizing remains transaction-specific. See the [[wiki/syntheses/filmhedge-research-library|Research Library]] for cohort and measurement limits.
 
-Research links checked: 2026-10-07. Other review dates retain their stated scope.
+Research links checked: 2026-10-07.
 
 ## Continue Exploring
 

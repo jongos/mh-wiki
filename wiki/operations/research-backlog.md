@@ -2,7 +2,7 @@
 title: Research Backlog
 type: operations
 status: current
-updated: 2026-10-07
+updated: 2026-11-04
 source_count: 17
 publish: false
 tags:
@@ -87,3 +87,11 @@ The September 30 [[wiki/operations/underwriting-refresh-2026-09-30|underwriting 
 - Obtain reconciled dated cash flows, clear cohort cutoffs, adverse outcomes, score versions and tranche allocations before presenting a validated model, default probability, net return series or diversification estimate.
 - The report library, five landing pages and Medium article are now browser-verified. Local PDF editions agree in title and page count; direct public PDF byte equivalence was not checked. Access forms were not submitted.
 - Extend program authority review separately; new dated infographic reuse does not certify all 38 states, remaining funding or neighboring-state labels. Report/link review dates do not replace the eight profiles’ scoped official review dates.
+
+## Federal Tax Draft Review — November 4, 2026
+
+Complete the release checks in [[wiki/operations/federal-tax-draft-review|Federal Tax Draft Review]] before publishing [[wiki/operations/drafts/section-168k-film-tv-deductions|Section 168(k)]] or [[wiki/operations/drafts/proposed-federal-film-tv-credit|Proposed Federal Credit]]. In particular verify subsequent Code changes/regulations, bill drafting references, ownership and basis/credit interactions. Drafts are not approved tax advice or live program offers.
+
+### Reader Release Follow-Up
+
+The publication authorization supersedes the draft-only hold above. Follow changes to [[wiki/concepts/section-168k-film-tv-deductions|Section 168(k)]] and [[wiki/concepts/proposed-federal-film-tv-credit|the introduced credit bills]]. Recheck later regulations, amended bill text, taxpayer ownership and basis/credit interactions before expanding transaction guidance.

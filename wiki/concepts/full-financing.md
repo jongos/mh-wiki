@@ -2,7 +2,7 @@
 title: Full Financing
 type: concept
 status: current
-updated: 2026-10-07
+updated: 2026-11-04
 source_count: 8
 publish: true
 description: Learn why a film or television production must have complete, verified and properly timed sources to cover production, delivery, reserves and contingency.
@@ -14,7 +14,7 @@ tags:
 
 # Full Financing
 
-A production is fully financed when verified and properly timed financing sources plus committed equity cover the complete production and delivery budget, financing costs, required reserves and credible contingency. The test is both total and temporal: funds must exist before payroll, vendors and delivery costs become due.
+A production is fully financed when verified and properly timed financing sources plus committed equity cover the complete production and delivery budget, financing costs, required reserves and credible contingency. Both amount and timing matter: funds must be available before payroll, vendors and delivery costs become due.
 
 ## Why It Is the First Credit Protection
 
@@ -51,7 +51,11 @@ The [2026 Private Credit Insights](https://filmhedge.com/report-2026-private-cre
 
 The [2022 revised report](https://filmhedge.com/report-2022-private-credit-insights), pages 9–14, provides a historical ten-transaction budget sample and explicitly records reconciliation problems. Its unexplained cost residuals are not identified contingency, and its sample averages are not recommended budget allocations. Those limits reinforce the need to reconcile the actual production’s uses and financing.
 
-Research links checked: 2026-10-07. Other review dates retain their stated scope.
+Research links checked: 2026-10-07.
+
+## Federal Tax Reading
+
+Compare [[wiki/concepts/section-168k-film-tv-deductions|Section 168(k) Deductions]] with the [[wiki/concepts/proposed-federal-film-tv-credit|Proposed Federal Credit]] for their separate eligibility, timing and financing implications.
 
 ## Continue Exploring
 

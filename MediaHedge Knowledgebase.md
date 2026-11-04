@@ -2,7 +2,7 @@
 title: Welcome to the MediaHedge Knowledgebase
 type: operations
 status: current
-updated: 2026-10-07
+updated: 2026-11-04
 source_count: 22
 publish: true
 description: Explore film and television finance through MediaHedge's guide to collateral, loan sizing, cash control, risk protection, servicing, recovery and returns.
@@ -16,9 +16,9 @@ tags:
 
 # MediaHedge Knowledgebase
 
-MediaHedge works at the intersection of creative production and disciplined credit. This knowledgebase explains how the company evaluates film and television financing, protects capital throughout a production, and works with financing partners over the life of an investment.
+This guide explains how MediaHedge evaluates film and television financing, protects capital during production and works with financing partners through repayment.
 
-You do not need to be a film-finance specialist. Start with the question you care about and follow the links as far as you would like to go.
+Start with your question and follow the links for more detail.
 
 ## Start Here
 
@@ -92,6 +92,11 @@ For a quicker comparison of repayment sources, open the [[wiki/syntheses/repayme
 - [[wiki/concepts/forward-flow-governance|Financing-Partner Governance]] — how authority, ownership and servicing responsibilities are divided.
 - [[wiki/concepts/portfolio-construction|Portfolio Construction]] — how shared risks and liquidity are managed across investments.
 - [[wiki/concepts/financier-return-economics|Return Economics]] — how actual cash timing, costs and losses affect realized performance.
+
+## Federal Film and Television Tax Rules
+
+- [[wiki/concepts/section-168k-film-tv-deductions|Section 168(k): Film and Television Deductions]]
+- [[wiki/concepts/proposed-federal-film-tv-credit|Proposed Federal Film and Television Credit]]
 
 ## U.S. Production Incentives
 

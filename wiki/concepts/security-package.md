@@ -2,7 +2,7 @@
 title: Security Package
 type: concept
 status: current
-updated: 2026-08-28
+updated: 2026-11-04
 source_count: 7
 publish: true
 description: Understand how a film-finance security package establishes priority, preserves collateral, captures proceeds and supports practical enforcement for each repayment asset.
@@ -15,7 +15,7 @@ tags:
 
 # Security Package
 
-The security package translates an underwriting conclusion into enforceable creditor rights. Its objective is not document volume; it is priority, preservation, access to proceeds and practical enforcement for each repayment asset.
+The security package translates an underwriting conclusion into enforceable creditor rights. Its purpose is to establish priority, preserve assets and provide access to proceeds and practical enforcement for each repayment asset.
 
 ## Architecture
 

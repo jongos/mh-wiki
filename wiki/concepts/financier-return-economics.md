@@ -2,7 +2,7 @@
 title: Financing-Partner Return Economics
 type: concept
 status: needs-review
-updated: 2026-10-07
+updated: 2026-11-04
 as_of: 2026-09-30
 source_count: 8
 publish: true
@@ -16,7 +16,7 @@ tags:
 
 # Financing-Partner Return Economics
 
-The financier's realized return is the result of actual dated cash flows, not the stated coupon alone. Analysis must incorporate advances, purchase price, fees, principal and interest collections, duration, prepayment, extension, default, nonaccrual, recovery cost, servicing expense and idle-capital or funding effects.
+The financier's realized return depends on actual dated cash flows, not the stated coupon alone. Analysis must incorporate advances, purchase price, fees, principal and interest collections, duration, prepayment, extension, default, nonaccrual, recovery cost, servicing expense and idle-capital or funding effects.
 
 > [!warning] Policy Review Pending
 > The qualitative framework was reconciled with current owner-approved underwriting guidance on September 30, 2026. Transaction-specific mandates, numerical assumptions and delegated exception authority still require verification; this page does not certify a financing.
@@ -68,7 +68,7 @@ The [2022 revised report](https://filmhedge.com/report-2022-private-credit-insig
 
 The [2026 technical study](https://filmhedge.com/report-2026-divergent-correlation) principally measures time to observed payoff. Public theatrical gross and payoff timing are not a dated ledger of lender cash returns. Read the [[wiki/syntheses/filmhedge-research-library|Research Library]] for the edition history and limitations before using any chart as an investment benchmark.
 
-Research links checked: 2026-10-07. Other review dates retain their stated scope.
+Research links checked: 2026-10-07.
 
 ## Continue Exploring
 

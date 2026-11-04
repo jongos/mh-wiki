@@ -481,3 +481,31 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Preserved: all referenced assets, raw sources, source registry, Obsidian settings, deployed site, tracked design evidence, Git history, independent mirror and recovery bundles. No tracked references depended on the deleted folders.
 - Open issue: Windows holds both now-empty temporary directories open; no process was stopped to remove empty folders.
 - Validation: both temporary folders have zero remaining entries; Git remained clean after cleanup. Content lint run before committing this maintenance record.
+
+## [2026-11-04] maintenance | Draft Federal Film and Television Tax Pages
+
+- Sources read: compiled incentive/collateral pages, Code sections 168 and 181, IRS Notice 2026-11, complete introduced H.R. 10582 and S. 5552, and live Congress.gov overviews. Public sources only; no Brain access.
+- Created: two substantive unpublished concept drafts, five source summaries and one private review record; archived five official HTML snapshots and registered hashes additively. Updated private catalog and research backlog.
+- Decisions: distinguish enacted deduction from introduced credit; retain timing, eligibility, basis interactions and contingent transfer treatment. Compared House/Senate wording and identified shared drafting defects without silently repairing them.
+- Status: both bills Introduced as checked November 4; latest observed actions are September 24 committee referrals. Code snapshots state currency October 7.
+- Validation: local checks and rendering results recorded in the draft review record.
+- Delivery boundary: local drafts only, publish:false; no commit, push, deployment, external sharing or Brain ingestion.
+
+- Review correction: quoted the Section 168(k) YAML title. Drafts were left uncommitted as a delivery choice; the handoff prohibited publication, pushing, deployment, external sharing and Brain ingestion, not local commits. All eight new frontmatters passed js-yaml 4.3.2; content lint retained only the existing Obsidian-registration environment error (zero warnings); git diff --check passed.
+
+## [2026-11-04] maintenance | Tighten Federal Tax Draft Prose
+
+- Skill: `C:\Users\jongo\.codex\skills\mojo-language\SKILL.md`. Reviewed both federal tax drafts against preserved pre-edit copies in ignored `.tmp_federal_mojo/20261104-063056/`.
+- Updated: the two unpublished drafts and the federal-tax draft review record. Cut repeated caveats and made explanations more direct; retained substantive conditions, citations, numerical values and dated legislative status.
+- Validation: unchanged frontmatter, external URL and wikilink sets; numerical-value comparison and semantic review passed. Content lint returned only the existing Obsidian-registration error, with zero warnings; git diff --check passed. Existing HTML previews are stale after this prose edit.
+- Boundary: local prose edits only; no deletion, commit, push, publication, deployment, external sharing or Brain ingestion. No fresh legal-status verification performed.
+
+## [2026-11-04] maintenance | Federal tax reader release and whole-wiki Mojo review
+
+- Sources read: five retained official federal sources; current official Code and IRS pages; both Congress.gov bill overview pages. All existing 74 wiki pages reviewed with mojo-language; per-page edited/unchanged inventory retained in [[wiki/operations/federal-tax-draft-review]]. Root home reviewed and edited separately.
+- Created two public concepts for Section 168(k) deductions and the introduced federal film/TV credit; retained superseded private drafts. Integrated related concepts, home, Site Navigator, evidence guide, source summaries, private catalog and reader changelog.
+- Preserved all raw source bytes and historical review dates. No proprietary Brain content imported or ingested. Public proposal remains explicitly introduced, not enacted or committed financing.
+- Registered the canonical checkout as an Obsidian vault through the application; generated reader navigation/search metadata.
+- Validation: pending final regression and live deployment verification; completion evidence will be appended below.
+- Pre-publication validation completed: wiki lint 92 Markdown files, 76 wiki pages, 28 raw sources, zero errors/warnings; full Windows regression suite passed all 14 checks. All 28 source fingerprints match the pre-edit baseline. Semantic review preserved numeric-value sets in the edited existing reader pages; the new federal examples were checked arithmetically.
+- Source-preservation repair: added .gitattributes with raw/sources/** -text so Git does not normalize immutable HTML snapshots. Government-source whitespace is preserved; authored-file whitespace checks exclude immutable raw evidence. Staged source blobs are checked against the registered SHA-256 values before commit.

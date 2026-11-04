@@ -2,8 +2,8 @@
 title: Internal Wiki Catalog
 type: operations
 status: current
-updated: 2026-10-07
-source_count: 22
+updated: 2026-11-04
+source_count: 27
 publish: false
 tags:
   - mediahedge
@@ -130,3 +130,23 @@ Four publisher PDFs were added to immutable evidence. Existing incentive evidenc
 | `assets/research/study-data-availability.png` | filmhedge-divergent-correlation-2026 | PDF page 7, image 1 | `6168b5893b6f3c7743da9327d228fa7264d0a2cba4179328fd68b1b68dddd5ac` |
 | `assets/research/study-vintage-adjustment.png` | filmhedge-divergent-correlation-2026 | PDF page 13, image 1 | `812fd09db99ca41a32dfc0821ac26dff960a821aed169d15f27444bd60ad9377` |
 | `assets/research/production-trade-finance.jpg` | filmhedge-private-credit-insights-2023-v2 | PDF page 24, image 1 | `81d4a3c2625c85e2d5cea65c3e6ac3c001b72caea0f4e139b9ec351ecdd52730` |
+
+## Unpublished Federal Tax Drafts — November 4, 2026
+
+- [[wiki/operations/drafts/section-168k-film-tv-deductions]]
+- [[wiki/operations/drafts/proposed-federal-film-tv-credit]]
+- [[wiki/operations/federal-tax-draft-review]]
+- [[wiki/sources/irc-section-168-official]]
+- [[wiki/sources/irc-section-181-official]]
+- [[wiki/sources/irs-notice-2026-11]]
+- [[wiki/sources/hr10582-introduced]]
+- [[wiki/sources/s5552-introduced]]
+
+All are publish:false; no public navigation or deployment change. Five new official snapshots registered in [[raw/manifest|Source Manifest]].
+
+## Federal Tax Reader Release — November 4, 2026
+
+- [[wiki/concepts/section-168k-film-tv-deductions|Section 168(k): Film and Television Deductions]]
+- [[wiki/concepts/proposed-federal-film-tv-credit|Proposed Federal Film and Television Credit]]
+
+The two reader pages supersede the retained private drafts. Five source summaries and the review record remain publish:false. The whole-wiki prose inventory is in [[wiki/operations/federal-tax-draft-review|Federal Tax Review Record]].

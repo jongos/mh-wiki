@@ -2,7 +2,7 @@
 title: Repayment and Risk Map
 type: synthesis
 status: current
-updated: 2026-10-07
+updated: 2026-11-04
 source_count: 14
 publish: true
 description: Compare contracted receivables, tax incentives, unsold rights, insurance, completion support and surety as distinct repayment and protection paths.
@@ -59,7 +59,7 @@ The [2026 Insights companion](https://filmhedge.com/report-2026-private-credit-i
 
 For the incentive branch, the [illustrated tax-guide article](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437) and [[wiki/concepts/incentive-monetization#Follow the Cash Routes|Cash-Route Diagram]] distinguish refunds, sales, state purchases, grants and offsets. Contractual rights, verification and controlled collections connect those sources to repayment.
 
-Research links checked: 2026-10-07. Other review dates retain their stated scope.
+Research links checked: 2026-10-07.
 
 ## Continue Exploring
 

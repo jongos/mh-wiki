@@ -2,7 +2,7 @@
 title: U.S. Film and Television Tax Incentives
 type: synthesis
 status: current
-updated: 2026-10-07
+updated: 2026-11-04
 as_of: 2026-10-06
 source_count: 1
 publish: true
@@ -63,7 +63,11 @@ Links checked: 2026-10-06. Review scope and unresolved items are stated above.
 
 The eight profiles above retain their individually stated official-source review. For all 38 textual program descriptions, use FilmHedge’s [state directory](https://filmhedge.com/report-2026-tax-incentives#state-incentives). See the [[wiki/syntheses/filmhedge-research-library|Research Library]] for the other reports and evidence limits.
 
-Research links checked: 2026-10-07. Other review dates retain their stated scope.
+Research links checked: 2026-10-07.
+
+## Federal Tax Reading
+
+Compare [[wiki/concepts/section-168k-film-tv-deductions|Section 168(k) Deductions]] with the [[wiki/concepts/proposed-federal-film-tv-credit|Proposed Federal Credit]] for their separate eligibility, timing and financing implications.
 
 ## Continue Exploring
 

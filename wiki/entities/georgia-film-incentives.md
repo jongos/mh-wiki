@@ -2,7 +2,7 @@
 title: Georgia Film and Television Incentives
 type: entity
 status: current
-updated: 2026-10-07
+updated: 2026-11-04
 as_of: 2026-10-06
 source_count: 2
 publish: true
@@ -53,7 +53,7 @@ The illustrated rates and conditions were checked against the [Georgia Film Offi
 
 For Georgia production activity through FY2022, see [Private Credit Insights 2022 — v2](https://filmhedge.com/report-2022-private-credit-insights), page 17. That historical series is separate from today’s program terms; its multiplier-based economic impact is an illustration, not a measured incentive return.
 
-Research links checked: 2026-10-07. Other review dates retain their stated scope.
+Research links checked: 2026-10-07.
 
 ## Continue Exploring
 

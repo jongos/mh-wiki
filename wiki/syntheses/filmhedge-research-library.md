@@ -2,7 +2,7 @@
 title: FilmHedge Research Library
 type: synthesis
 status: current
-updated: 2026-10-07
+updated: 2026-11-04
 as_of: 2026-10-07
 source_count: 5
 publish: true
@@ -61,7 +61,7 @@ Use the reports to sharpen questions about [[wiki/concepts/pre-sales-collateral|
 
 Report catalog and public article checked October 7, 2026. Research dates remain specific to each publication.
 
-Research links checked: 2026-10-07. Other review dates retain their stated scope.
+Research links checked: 2026-10-07.
 
 ## Continue Exploring
 

@@ -2,7 +2,7 @@
 title: Media Finance Lending Landscape
 type: synthesis
 status: current
-updated: 2026-10-07
+updated: 2026-11-04
 as_of: 2026-08-10
 source_count: 9
 publish: true
@@ -16,7 +16,7 @@ tags:
 
 # Media Finance Lending Landscape
 
-Media finance is an ecosystem, not a single competitor list. Banks and private lenders supply capital, account banks help control cash, production insurers transfer named-peril risk, completion guarantors support production and delivery, and credit or surety providers may protect a specifically defined obligation. The same transaction can use several of these parties, but their promises are not interchangeable.
+Media finance brings together capital providers and specialists in cash control, insurance, completion and payment protection. Banks and private lenders supply capital, account banks help control cash, production insurers transfer named-peril risk, completion guarantors support production and delivery, and credit or surety providers may protect a specifically defined obligation. The same transaction can use several of these parties, but their promises are not interchangeable.
 
 > [!important] Start with the Role
 > A recognized brand does not identify the exact exposure. First determine the product, borrower, repayment asset, legal lender or issuer, lien position, covered obligation and direct claimant rights. Then compare economics and institutional strength.
@@ -107,7 +107,7 @@ The [2023 Private Credit Insights revised edition](https://filmhedge.com/report-
 
 Use this structural comparison alongside the [2026 Insights companion](https://filmhedge.com/report-2026-private-credit-insights). The historical report’s pricing and mixed-period benchmark comparisons do not update the provider capabilities or evidence dates above. All editions are collected in the [[wiki/syntheses/filmhedge-research-library|Research Library]].
 
-Research links checked: 2026-10-07. Other review dates retain their stated scope.
+Research links checked: 2026-10-07.
 
 ## Continue Exploring
 

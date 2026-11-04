@@ -2,8 +2,8 @@
 title: Evidence and Limitations
 type: synthesis
 status: current
-updated: 2026-10-07
-source_count: 22
+updated: 2026-11-04
+source_count: 27
 publish: true
 description: Understand the evidence supporting this knowledgebase, its limitations and the legal, policy, market and transaction facts financiers should verify.
 tags:
@@ -14,7 +14,7 @@ tags:
 
 # Evidence and Limitations
 
-This knowledgebase brings together seventeen evidentiary internal MediaHedge briefs and five FilmHedge research publications about film- and television-finance credit, production incentives and the surrounding market. The qualitative underwriting explanation was also reconciled with owner-approved company guidance reviewed September 25 and 27, 2026. It explains the company’s framework, the relationships among the major controls, and the questions a financing partner may want to explore.
+This knowledgebase brings together seventeen evidentiary internal MediaHedge briefs, five FilmHedge research publications and five official federal tax sources about film- and television-finance credit, production incentives and the surrounding market. The qualitative underwriting explanation was also reconciled with owner-approved company guidance reviewed September 25 and 27, 2026. It explains the company’s framework, the relationships among the major controls, and the questions a financing partner may want to explore.
 
 ## How to Read the Material
 
@@ -70,6 +70,10 @@ A gap in this guide does not mean the company lacks the information. The site ex
 
 The [[wiki/syntheses/us-film-tax-incentives|U.S. Incentive Guide]] separates eight official-source-reviewed state profiles from the broader 38-state secondary report. The review covers stated rules, not remaining funds, project acceptance, agency payment dates or buyer bids. A report and its companion workbooks represent one research lineage. New Mexico’s current fiscal-year capacity and California’s category-specific local-hire wording remain identified verification questions.
 
+## Federal Tax Review Scope
+
+The [[wiki/concepts/section-168k-film-tv-deductions|Section 168(k) Guide]] and [[wiki/concepts/proposed-federal-film-tv-credit|Federal Credit Proposal]] add five official statutory, IRS and introduced-bill sources. The November 4, 2026 review distinguishes enacted deductions from introduced legislation. Neither page establishes taxpayer eligibility, an incentive award or committed production cash. Later law, regulations and transaction facts require their own review.
+
 ## Dates and Review Scope
 
 **Page Updated** records an edit to a page. It is not certification that every linked law, provider or transaction assumption was reverified on that date. A dated review statement identifies the topic actually checked. The September 30, 2026 underwriting refresh covers the qualitative credit sequence, transaction-specific sizing, score distinctions and funding-channel boundaries; it does not validate particular loans, numerical examples or realized performance.
@@ -101,7 +105,7 @@ The [2023 report](https://filmhedge.com/report-2023-private-credit-insights) con
 
 Tax graphics retain their October 6, 2026 research date. Conceptual cash routes do not promise payment, and state maps do not certify current law or available allocations. Reader captions preserve each figure’s source, measure and limits.
 
-Research links checked: 2026-10-07. Other review dates retain their stated scope.
+Research links checked: 2026-10-07.
 
 ## Continue Exploring
 
@@ -114,3 +118,5 @@ Internal maintenance support: [[wiki/operations/research-backlog]], [[wiki/opera
 -->
 
 <!-- Research source basis: [[wiki/sources/filmhedge-private-credit-insights-2022-v2]], [[wiki/sources/filmhedge-private-credit-insights-2023-v2]], [[wiki/sources/filmhedge-private-credit-insights-2026]], [[wiki/sources/filmhedge-divergent-correlation-2026]]. Dated research, not current policy. -->
+
+<!-- Federal source basis: [[wiki/sources/irc-section-168-official]], [[wiki/sources/irc-section-181-official]], [[wiki/sources/irs-notice-2026-11]], [[wiki/sources/hr10582-introduced]], [[wiki/sources/s5552-introduced]]. -->

@@ -2,7 +2,7 @@
 title: Louisiana Film and Television Incentives
 type: entity
 status: current
-updated: 2026-10-07
+updated: 2026-11-04
 as_of: 2026-10-06
 source_count: 1
 publish: true
@@ -47,7 +47,7 @@ Links checked: 2026-10-06. Review scope and unresolved items are stated above.
 
 Open the [Louisiana report entry](https://filmhedge.com/report-2026-tax-incentives#state-louisiana) and the [Medium explainer](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437) for wider context. This page’s official sources and review boundary govern its program discussion; the report does not establish an award, transfer price or collection date.
 
-Research links checked: 2026-10-07. Other review dates retain their stated scope.
+Research links checked: 2026-10-07.
 
 ## Continue Exploring
 

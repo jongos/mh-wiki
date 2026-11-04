@@ -48,6 +48,8 @@ Run `tools\wiki-history.cmd` for the live commit-and-tag index. It reads Git dir
 
 `wiki-v1.22-dazzler-reader` applies the updated Dazzler design across the shared reader theme, adds locally bundled editorial typography and extends accessible full-size controls to report graphics. DESIGN.md records the visual direction, evidence and preserved native-scroll contract.
 
+`wiki-v1.23-federal-tax-mojo` adds two public federal tax explanations, five immutable official sources and a whole-wiki prose review. The review record distinguishes edited pages from reviewed-unchanged pages. Original drafts, evidence and recovery history remain retained.
+
 ## Safe Recovery
 
 Prefer restoring into a separate folder first. This preserves the current vault and any manual edits while the recovered generation is inspected.

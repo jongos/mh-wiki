@@ -2,8 +2,8 @@
 title: Raw Source Manifest
 type: operations
 status: current
-updated: 2026-10-07
-source_count: 23
+updated: 2026-11-04
+source_count: 28
 publish: false
 tags:
   - mediahedge
@@ -39,6 +39,11 @@ Canonical ingestion snapshots. SHA-256 identifies the exact binary reviewed duri
 | [[raw/sources/filmhedge-private-credit-insights-2023-v2.pdf\|FilmHedge Private Credit Insights 2023 - Revised Edition]] | `5A9D6A18FF6641859218CEEDDBD40C486CD5295A0DD39A369FA60AB93597A37E` | ingested - dated publisher research | [[wiki/sources/filmhedge-private-credit-insights-2023-v2]] |
 | [[raw/sources/filmhedge-divergent-correlation-2026.pdf\|FilmHedge Divergent Correlation 2026]] | `3A45F2E0B4758E1AB021DEF89B2550D28A92D837B0075C34892FA45F6B6E5F14` | ingested - dated publisher research | [[wiki/sources/filmhedge-divergent-correlation-2026]] |
 | [[raw/sources/filmhedge-private-credit-insights-2026.pdf\|FilmHedge Private Credit Insights 2026]] | `A3BF68493E30640E57BD9980BF0F2EC4C6273835800E0570A9AB55FF2F9B3B58` | ingested - dated publisher research | [[wiki/sources/filmhedge-private-credit-insights-2026]] |
+| [[raw/sources/usc-168-2026-11-04.html\|Official IRC Section 168 Snapshot]] | `AFAD197277B69DA10B292969271C3D5F3D3425BD4FA55B03AA19F7BB5169A036` | ingested - unpublished federal draft evidence | [[wiki/sources/irc-section-168-official]] |
+| [[raw/sources/usc-181-2026-11-04.html\|Official IRC Section 181 Snapshot]] | `8A630D0467B59046896D4231FCDAA67D5F15534FDCF4FB9AE8750C97F1EC06C8` | ingested - unpublished federal draft evidence | [[wiki/sources/irc-section-181-official]] |
+| [[raw/sources/irs-irb-2026-06-2026-11-04.html\|IRS Notice 2026-11]] | `2AA5E729E74274AFD7C203E0E57803E1A7F3556575D01EBF6D2674D40468AA1C` | ingested - unpublished federal draft evidence | [[wiki/sources/irs-notice-2026-11]] |
+| [[raw/sources/hr10582-ih-2026-09-24.html\|H.R. 10582 Introduced Text]] | `53E7CD9EF4127EF6A682462B22078CBBD9BF7D9684C8DA5EE3E30E3BFB78ABA8` | ingested - unpublished federal draft evidence | [[wiki/sources/hr10582-introduced]] |
+| [[raw/sources/s5552-is-2026-09-24.html\|S. 5552 Introduced Text]] | `DC40E05F11932374D4E046D9CF12F6098AB641CD6CF179CB27D03ED7A842E056` | ingested - unpublished federal draft evidence | [[wiki/sources/s5552-introduced]] |
 
 ## Ingestion Note
 

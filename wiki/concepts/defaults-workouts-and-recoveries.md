@@ -2,7 +2,7 @@
 title: Defaults, Workouts and Recoveries
 type: concept
 status: current
-updated: 2026-08-28
+updated: 2026-11-04
 source_count: 5
 publish: true
 description: Explore how lenders diagnose film-finance distress, preserve collateral and claims, govern workouts and select remedies that maximize risk-adjusted recovery.
@@ -15,7 +15,7 @@ tags:
 
 # Defaults, Workouts and Recoveries
 
-A workout is a governed process for diagnosing distress, preserving collateral and claims, and selecting the remedy that maximizes risk-adjusted net present recovery. It is not automatically a concession, and default is not one homogeneous event.
+A workout is a governed process for diagnosing distress, preserving collateral and claims, and selecting the remedy that maximizes risk-adjusted net present recovery. The response depends on the cause of default; a concession is only one possible remedy.
 
 ![[assets/diagrams/workout-decision-path.svg|Conceptual workout decision path from a stress signal through diagnosis, governed execution and recovery accounting]]
 

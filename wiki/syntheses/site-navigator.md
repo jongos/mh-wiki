@@ -2,7 +2,7 @@
 title: Site Navigator
 type: synthesis
 status: current
-updated: 2026-10-07
+updated: 2026-11-04
 source_count: 0
 publish: true
 description: Navigate the MediaHedge knowledgebase as a connected map of financeability, collateral, control, protection, servicing, recovery and portfolio economics.
@@ -32,6 +32,11 @@ Explore the MediaHedge knowledgebase as a connected system. The interactive grap
 > **Protection and control:** [[wiki/concepts/protection-stack|Protection Stack]] · [[wiki/concepts/completion-protection|Completion Protection]] · [[wiki/concepts/surety-credit-protection|Surety and Credit Protection]] · [[wiki/concepts/security-package|Security Package]] · [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]] · [[wiki/concepts/production-insurance|Production Insurance]]
 >
 > **Management and realized outcomes:** [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]] · [[wiki/concepts/defaults-workouts-and-recoveries|Defaults, Workouts and Recoveries]] · [[wiki/concepts/forward-flow-governance|Financing-Partner Governance]] · [[wiki/concepts/portfolio-construction|Portfolio Construction]] · [[wiki/concepts/financier-return-economics|Return Economics]]
+
+## Federal Film and Television Tax Rules
+
+- [[wiki/concepts/section-168k-film-tv-deductions|Section 168(k): Film and Television Deductions]]
+- [[wiki/concepts/proposed-federal-film-tv-credit|Proposed Federal Film and Television Credit]]
 
 ## U.S. Production Incentives
 

@@ -2,7 +2,7 @@
 title: Financier's Guide
 type: synthesis
 status: current
-updated: 2026-10-07
+updated: 2026-11-04
 source_count: 17
 publish: true
 description: Use eight financier-focused questions to evaluate financeability, repayment, sizing, control, protection, monitoring, recovery and portfolio economics.
@@ -16,7 +16,7 @@ tags:
 
 # A Financier’s Guide to the MediaHedge Model
 
-A financing partner is ultimately trying to answer a practical question: can the proposed exposure survive the linked risks of funding, completion, delivery, repayment, cash collection and enforcement—and does the expected return justify the time and risk involved?
+A financing partner needs to know whether the proposed exposure can survive the linked risks of funding, completion, delivery, repayment, cash collection and enforcement, and whether the expected return justifies the time and risk involved.
 
 This guide organizes the knowledgebase around eight questions.
 
@@ -38,13 +38,13 @@ A familiar institution can act through several legally distinct products and ent
 
 Start with [[wiki/concepts/full-financing|Full Financing]]. Look for complete costs, committed funding, realistic timing, contingency and clear responsibility for overruns.
 
-**What you want to understand:** whether the project has enough money at the right times to finish and deliver.
+**Check:** whether the project has enough money at the right times to finish and deliver.
 
 ### 2. What Is Expected to Repay the Loan?
 
 Use the [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]] to separate [[wiki/concepts/pre-sales-collateral|contracted pre-sales]], [[wiki/concepts/tax-credit-collateral|tax incentives]], [[wiki/concepts/gap-collateral|unsold-rights value]], insurance proceeds, completion support, surety and controlled cash.
 
-**What you want to understand:** who is expected to pay, under what conditions, when the money may arrive and which repayment sources share the same risks.
+**Check:** who is expected to pay, under what conditions, when the money may arrive and which repayment sources share the same risks.
 
 For U.S. production incentives, compare the [[wiki/syntheses/us-film-tax-incentives|State Program Profiles]] and trace the [[wiki/concepts/incentive-monetization|Route to Net Cash]].
 
@@ -52,7 +52,7 @@ For U.S. production incentives, compare the [[wiki/syntheses/us-film-tax-incenti
 
 Follow [[wiki/concepts/loan-sizing|Loan Sizing]] from eligible collateral through advance rates, concentration limits, overall leverage, budget exposure, term and liquidity.
 
-**What you want to understand:** which limit actually controls the commitment, how much cushion remains and whether any exception is being requested.
+**Check:** which limit actually controls the commitment, how much cushion remains and whether any exception is being requested.
 
 > [!warning] Evidence Limitation
 > The limits described in the available material do not include an effective date or approving authority. Use the [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]] to understand the framework, then confirm the current policy before relying on the figures.
@@ -61,31 +61,31 @@ Follow [[wiki/concepts/loan-sizing|Loan Sizing]] from eligible collateral throug
 
 Read [[wiki/concepts/security-package|Security Package]] alongside [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]]. The legal rights, payer instructions, collection accounts and payment priorities should all point to the same assets and proceeds.
 
-**What you want to understand:** whether the promised value can be reached legally and collected operationally.
+**Check:** whether the promised value can be reached legally and collected operationally.
 
 ### 5. Which Protection Addresses Each Risk?
 
 Use [[wiki/concepts/protection-stack|Protection Stack]] to compare structural safeguards, [[wiki/concepts/completion-protection|Completion Protection]], [[wiki/concepts/surety-credit-protection|Surety and Credit Protection]], [[wiki/concepts/production-insurance|Production Insurance]], monitoring and enforcement.
 
-**What you want to understand:** what each layer covers, what it excludes and which risks remain shared across several repayment sources.
+**Check:** what each layer covers, what it excludes and which risks remain shared across several repayment sources.
 
 ### 6. How Will Changing Risk Become a Decision?
 
 Read [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]] with [[wiki/concepts/forward-flow-governance|Financing-Partner Governance]]. Information becomes useful when it is timely, verified and connected to a responsible decision-maker.
 
-**What you want to understand:** what is reported, what triggers action, which decisions MediaHedge handles and which decisions remain with the financing partner.
+**Check:** what is reported, what triggers action, which decisions MediaHedge handles and which decisions remain with the financing partner.
 
 ### 7. What Happens When the Original Plan Breaks?
 
 Use [[wiki/concepts/defaults-workouts-and-recoveries|Defaults, Workouts and Recoveries]] to compare temporary liquidity problems, documentation issues, project-performance problems, payer credit problems and fundamental collateral impairment.
 
-**What you want to understand:** which options preserve value, how additional funding is evaluated and who has authority to approve a remedy.
+**Check:** which options preserve value, how additional funding is evaluated and who has authority to approve a remedy.
 
 ### 8. Does the Portfolio Diversify and Deliver Realized Return?
 
 Finish with [[wiki/concepts/portfolio-construction|Portfolio Construction]] and [[wiki/concepts/financier-return-economics|Return Economics]]. Multiple loans may still share the same payer, jurisdiction, guarantor, bank, market or delivery dependency.
 
-**What you want to understand:** where common risks accumulate and how actual cash timing, costs, extensions and losses affect investor performance.
+**Check:** where common risks accumulate and how actual cash timing, costs, extensions and losses affect investor performance.
 
 ## Reasons to Pause and Ask Another Question
 

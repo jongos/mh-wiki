@@ -2,7 +2,7 @@
 title: Portfolio Construction
 type: concept
 status: current
-updated: 2026-10-07
+updated: 2026-11-04
 source_count: 8
 publish: true
 description: Learn how film-finance portfolios manage concentration by distributor, incentive program, guarantor, producer, platform, collateral market and collection timing.
@@ -55,7 +55,7 @@ The [Divergent Correlation study](https://filmhedge.com/report-2026-divergent-co
 
 The [2026 Insights companion](https://filmhedge.com/report-2026-private-credit-insights) interprets the same study; it is not an independent replication. Neither publication establishes a stable diversification benefit, a calibrated default model or a causal advantage from blended collateral. Portfolio decisions still require common-dependency analysis and reconciled cash outcomes.
 
-Research links checked: 2026-10-07. Other review dates retain their stated scope.
+Research links checked: 2026-10-07.
 
 ## Continue Exploring
 

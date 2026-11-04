@@ -2,7 +2,7 @@
 title: What Changed
 type: operations
 status: current
-updated: 2026-10-07
+updated: 2026-11-04
 source_count: 0
 publish: true
 description: See substantive updates to the MediaHedge guide, including underwriting explanations, plain-English terms, reader questions and evidence boundaries.
@@ -14,6 +14,13 @@ tags:
 # What Changed
 
 Use this page to find substantive changes since your last visit. Dates describe changes to the guide, not new loan approvals, policy effective dates or investment results.
+
+## November 4, 2026 — Federal Tax Guidance and Clearer Prose
+
+- Added [[wiki/concepts/section-168k-film-tv-deductions|Section 168(k) Deductions]], covering qualification, release timing, the separate Section 181 election and taxpayer cash effects.
+- Added the [[wiki/concepts/proposed-federal-film-tv-credit|Proposed Federal Credit]], clearly labeled as introduced legislation, with conditional rates, ownership and timing tests, transfer provisions and drafting issues.
+- Reviewed all existing wiki pages for clearer prose. Tightened introductions and repeated commentary while retaining source dates, eligibility conditions, uncertainty and financing distinctions.
+- Added federal links to the home, Site Navigator and related incentive pages; rebuilt reader navigation and search labels.
 
 ## October 7, 2026 — Reader Design Refresh
 
