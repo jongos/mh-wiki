@@ -549,3 +549,12 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Corrected arrow routing, grouping, completion-support semantics and text contrast; preserved original research data and source artwork.
 - Reviewed all 25 images and all modified reader passages. No new evidence or policy claims.
 - Validation: lint passed with zero errors and warnings; 14 Windows regressions passed. Final live audit matched all 66 files and all 39 routes and passed reader interaction checks. Corrected the live search field’s accessible branding. Recovery archive and GitHub verification accompany this release.
+
+## [2026-11-15] maintenance | Professional Editorial and Underwriting Consistency Review
+
+- Reviewed all 39 public notes for purpose, structure, terminology, repetition, company promotion and credit logic; traced key controls through retained sizing and governance source summaries.
+- Refreshed live canonical MH Underwriting, Lifecycle of a Media Loan and Company Overview. Preserved the approved qualitative sequence, separate scores, transaction-specific assumptions and facility-level funding eligibility; imported no private Brain material.
+- Reframed the home, overview, diligence route and general concepts as an educational film-finance resource. Moved the company banner to the publisher profile, retained a concise publisher attribution, removed repetitive report promotion from eight state profiles and corrected navigation categories.
+- Corrected full-financing and ineligible-collateral remedies, receivable creation versus payment due dates, expected versus realized losses, LTV basis and collection-manager terminology. Preserved worked-example amounts and archived research.
+- IRS Notice 2026-11 remained accessible. Congress.gov pages could not be retrieved through the web tool; existing November 4 legislative review dates and proposed status remain unchanged. State and tax pages retain their specific authority dates; this is an editorial and underwriting consistency review.
+- Regenerated navigation and SEO. Lint passed with zero errors and warnings; all 14 Windows regression checks passed. The live audit matched all 66 files and verified all 39 routes plus reader interactions. Additive recovery and GitHub verification accompany the release.

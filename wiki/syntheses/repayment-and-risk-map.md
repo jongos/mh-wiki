@@ -15,7 +15,7 @@ tags:
 
 # Repayment and Risk Map
 
-What are the principal repayment and protection paths in the model, how do they differ, and where do they share dependencies?
+Film-finance loans draw repayment from contracted payments, production incentives and rights sales. Insurance, completion guarantees and surety protect specified risks along those paths. Compare their conditions and shared dependencies before assigning collateral value.
 
 ![[assets/diagrams/repayment-source-map.svg|Conceptual map of repayment and protection sources and their shared dependencies]]
 

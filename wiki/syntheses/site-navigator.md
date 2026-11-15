@@ -22,7 +22,7 @@ Explore the Media Finance Guide as a connected system. The interactive graph sho
 
 > [!note]- Browse as a Directory
 >
-> **Orientation:** [[MediaHedge Knowledgebase|Home]] · [[wiki/overview|How the Lending Model Works]] · [[wiki/entities/mediahedge|Who MediaHedge Is]] · [[wiki/glossary|Plain-English Glossary]]
+> **Orientation:** [[MediaHedge Knowledgebase|Home]] · [[wiki/overview|How the Lending Model Works]] · [[wiki/entities/mediahedge|About the Publisher]] · [[wiki/glossary|Plain-English Glossary]]
 >
 > **Decision routes:** [[wiki/syntheses/financier-diligence-route|Financier's Guide]] · [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]] · [[wiki/syntheses/credit-lifecycle|Film-Finance Credit Lifecycle]] · [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]] · [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]]
 >
@@ -50,7 +50,7 @@ Explore the Media Finance Guide as a connected system. The interactive graph sho
 - [[wiki/entities/new-mexico-film-incentives|New Mexico Film and Television Incentives]]
 - [[wiki/entities/new-york-film-incentives|New York Film and Television Incentives]]
 
-## FilmHedge Research
+## Research Library
 
 [[wiki/syntheses/filmhedge-research-library|Browse the Research Library]] — choose among the five reports, read the illustrated tax-guide article, and find charts by financing question.
 

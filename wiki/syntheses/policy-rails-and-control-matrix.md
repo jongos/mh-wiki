@@ -6,7 +6,7 @@ updated: 2026-11-15
 as_of: 2026-09-30
 source_count: 11
 publish: true
-description: Review the control framework governing MediaHedge collateral, sizing, commitment, closing, servicing, exceptions and transaction-level approval.
+description: Connect film-finance collateral, loan sizing, production funding and closing conditions to clear approval, servicing and exception controls.
 tags:
   - mediahedge
   - synthesis
@@ -32,16 +32,16 @@ Use this guide to connect collateral evidence, transaction-specific sizing and a
 
 ## Decision Sequence and Funding Channels
 
-Screen the project, issue indicative terms and refine them during diligence. Verify collateral and net completion cash; model base, downside and stress cases; form separate Risk and Obligor Scores; recommend structure and pricing; obtain authorized approval; then classify the approved rate as MH Score and Tier. Documentary closing and actual funding are later, distinct events.
+Screen the project, issue indicative terms and refine them during diligence. Verify collateral and net completion cash; model base, downside and stress cases; assess transaction and counterparty risk separately; recommend structure and pricing; and obtain authorized approval. MediaHedge then maps the approved blended rate to its MH Score and Tier. Documentary closing and actual funding are later, distinct events.
 
-Institutional eligibility is assessed by facility or tranche. Eligible contracted receivables and incentives do not make a project's gap, sales-estimate or other excluded portion eligible. Completion protection does not change that exclusion. Non-institutional financing and participations follow their own instruments, funding routes and consent rights.
+Under MediaHedge’s funding policy, institutional eligibility is assessed by facility or tranche. Eligible contracted receivables and incentives do not make a project's gap, sales-estimate or other excluded portion eligible. Completion protection does not change that exclusion. Non-institutional financing and participations follow their own instruments, funding routes and consent rights.
 
 ## Non-Quantitative Gates
 
 | Gate | Required finding | Primary evidence | If not satisfied |
 | --- | --- | --- | --- |
-| [[wiki/concepts/full-financing\|Full financing]] | Verified, timely sources and committed equity cover all uses through delivery, financing costs, reserves and contingency | Executed commitments, funded equity, approved budget, cash-flow schedule, closing statement | Do not close; restructure sources/uses or reduce exposure |
-| Eligibility | Collateral is owned, enforceable, supported, non-duplicative and collectible on the modeled timeline | Contracts, schedules, opinions, obligor diligence and valuation evidence | Exclude or haircut; do not cure with price |
+| [[wiki/concepts/full-financing\|Full financing]] | Verified, timely sources and committed equity cover all uses through delivery, financing costs, reserves and contingency | Executed commitments, funded equity, approved budget, cash-flow schedule, closing statement | Hold closing until verified funding or an approved reduction in uses closes the cash shortfall |
+| Eligibility | Collateral is owned, enforceable, supported, non-duplicative and collectible on the modeled timeline | Contracts, schedules, opinions, obligor diligence and valuation evidence | Exclude ineligible assets; discount eligible value for supported risks; do not cure ineligibility with price |
 | [[wiki/concepts/pre-sales-collateral\|Contracted pre-sale]] | The minimum guarantee is final, authorized, deliverable, collectible and assignable for the eligible net amount | Executed agreement, delivery terms, obligor diligence, accepted assignment and deduction schedule | Exclude conditional or unsupported value; resolve contract and control gaps |
 | [[wiki/concepts/gap-collateral\|Gap evidence]] | Unsold rights are owned and available, and the supported low case survives concentration and timing stress | Rights schedule, chain of title, sales-agent authority, territory support, comparable sales and stress model | Exclude unsupported value or reduce the gap component |
 | [[wiki/concepts/security-package\|Security and priority]] | Correct grant, perfection, assignment, acknowledgment and control method applies to each asset | Searches, releases, filings, control agreements, recordation and counsel analysis | Hold funding or condition use of proceeds |

@@ -11,7 +11,7 @@
     },
     {
       "path": "wiki/entities",
-      "label": "About MediaHedge"
+      "label": "Programs & Organizations"
     },
     {
       "path": "wiki/syntheses",
@@ -24,9 +24,9 @@
     "wiki/concepts/defaults-workouts-and-recoveries.md": "Defaults, Workouts & Recoveries",
     "wiki/concepts/monitoring-and-servicing.md": "Monitoring & Servicing",
     "wiki/concepts/surety-credit-protection.md": "Surety & Credit Protection",
-    "wiki/entities/mediahedge.md": "Who MediaHedge Is",
+    "wiki/entities/mediahedge.md": "About the Publisher",
     "wiki/glossary.md": "Plain-English Glossary",
-    "wiki/overview.md": "How the Lending Model Works",
+    "wiki/overview.md": "How Film Lending Works",
     "wiki/syntheses/policy-rails-and-control-matrix.md": "Policy & Control Guide",
     "wiki/syntheses/repayment-and-risk-map.md": "Repayment & Risk Map"
   }

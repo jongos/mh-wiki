@@ -16,7 +16,7 @@ tags:
 
 # Loan Sizing
 
-MediaHedge sizes each loan against evidenced repayment sources and the cash needed to complete and deliver the production. Underwriting establishes eligible net value, collateral-specific advances and reserves, then applies approved transaction limits, funding mandates and timing stress. Advance rates, leverage, equity, fees and tenor are transaction assumptions subject to approval, not universal ratios inferred from legacy examples.
+Size a production loan against evidenced repayment sources and the cash needed to complete and deliver the production. Underwriting establishes eligible net value, collateral-specific advances and reserves, then applies approved transaction limits, funding mandates and timing stress. Advance rates, leverage, equity, fees and tenor are transaction assumptions subject to approval, not universal ratios inferred from legacy examples.
 
 > [!tip] Decision Point
 > The proposed amount must satisfy all applicable approved limits and completion needs. A concentration-review trigger calls for analysis and an authorized decision; it is not automatically a hard cap or a loan approval.
@@ -47,7 +47,7 @@ MediaHedge sizes each loan against evidenced repayment sources and the cash need
 
 ## Approval and Production Cash
 
-Model base, downside and stress cases before recommending structure and pricing. Risk Score and the legal-entity- and territory-specific Obligor Score inform the review. Management or an authorized underwriter approves the structure and blended rate, with required capital-provider consent; MH Score and Tier classify that approved rate afterward. A spreadsheet result or counterparty lookup is not approval.
+Model base, downside and stress cases before recommending structure and pricing. Assess transaction risk and the payment counterparty separately. The authorized credit decision sets the structure and price, with any required capital-provider consent. In MediaHedge’s framework, Risk Score and Obligor Score inform that decision; MH Score and Tier classify the approved blended rate afterward.
 
 The [[wiki/concepts/full-financing#Worked Finance Plan|Worked Finance Plan]] shows gross and net reconciliation with a timing stress. Gross commitment is not cash available to production. Deduct prepaid interest, fees, reserves and other closing deductions, then reconcile net cash and its timing to remaining uses. A smaller loan does not cure a production funding shortfall unless other verified sources fill it.
 
@@ -59,12 +59,12 @@ A finance expert must reproduce the commitment from the collateral schedule and 
 - permitted exposure by sizing test;
 - the binding constraint and remaining cushion;
 - the effect of stress on value, timing and principal recovery;
-- pricing, [[wiki/glossary#M-R|Risk Score, Obligor Score and MH Score]], and approval status as distinct concepts: risk inputs inform human review, while MH Score classifies the approved blended rate;
+- pricing, transaction risk, counterparty risk and approval status, recorded separately;
 - every exception and its approval authority.
 
 ## Collateral States Matter
 
-An executed [[wiki/concepts/pre-sales-collateral|pre-sale]] can produce a contractual receivable after delivery and acceptance. [[wiki/concepts/gap-collateral|Gap collateral]] begins as market-dependent unsold-rights value and may later convert into receivables as licenses are signed. The two states should not receive the same eligibility assumptions, advance treatment or concentration credit.
+An executed [[wiki/concepts/pre-sales-collateral|pre-sale]] establishes a contractual payment claim; delivery, acceptance and other terms determine when payment becomes due. [[wiki/concepts/gap-collateral|Gap collateral]] begins as market-dependent unsold-rights value and may later convert into receivables as licenses are signed. The two states should not receive the same eligibility assumptions, advance treatment or concentration credit.
 
 ## Failure Modes
 

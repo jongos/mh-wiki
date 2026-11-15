@@ -20,7 +20,7 @@ A completion bond or guaranty protects completion and delivery through the remed
 > [!important] Why It Matters
 > Partially completed footage may have limited recovery value. Delivery can also be a condition to distributor payments, rights sales and other repayment sources, so a production failure can impair several assets at once.
 
-![[assets/diagrams/protection-stack.svg|Five-layer MediaHedge protection stack showing completion protection as one distinct layer]]
+![[assets/diagrams/protection-stack.svg|Five-layer film-finance protection stack showing completion protection as one distinct layer]]
 
 *Conceptual diagram: completion protection reinforces [[wiki/concepts/full-financing|Full Financing]], [[wiki/concepts/production-insurance|Production Insurance]], the [[wiki/concepts/security-package|Security Package]] and [[wiki/concepts/monitoring-and-servicing|Monitoring]].*
 
@@ -48,7 +48,7 @@ The completion company that evaluates and monitors a production may operate as a
 
 ## Financier Position
 
-Name MediaHedge and its financing partner in the operative documents when they are intended beneficiaries. Align names, covered amount, notice, cure, information, takeover, proceeds, subrogation and priority rights across the guaranty, financing, insurance, security and interparty documents.
+Name the lender and other protected financing parties in the operative documents when they are intended beneficiaries. Align names, covered amount, notice, cure, information, takeover, proceeds, subrogation and priority rights across the guaranty, financing, insurance, security and interparty documents.
 
 Loss-payee or additional-insured status under production insurance is not a substitute for beneficiary rights under the completion instrument. Each capacity addresses a different legal and economic interest.
 
@@ -57,7 +57,7 @@ Loss-payee or additional-insured status under production insurance is not a subs
 - Is the final guarantor identified, authorized and financially capable?
 - Is the visible completion platform also the legal risk bearer, and if not, who issues, adjusts and pays under the guaranty?
 - Do the bonded budget, schedule and delivery requirements match the approved financing case?
-- Are MediaHedge and the financing partner named correctly, with direct notice and remedy rights?
+- Are the lender and other intended beneficiaries named correctly, with direct notice and remedy rights?
 - What are the liability cap, exclusions, premium conditions, claim deadlines and guarantor elections?
 - How do takeover, materials access, account control, lien priority and subrogation work together?
 - Does each draw leave the project [[wiki/concepts/full-financing|fully financed]] under the current cost-to-complete forecast?
@@ -68,7 +68,7 @@ Coverage is transaction-specific. Common limitations may include uncovered event
 
 ## External Context
 
-Screen Australia's [Terms of Trade](https://www.screenaustralia.gov.au/doing-business-with-us/terms-of-trade/) identify completion guarantees among its funding conditions and direct applicants to the applicable program and recipient requirements. Its [Narrative Content Production program](https://www.screenaustralia.gov.au/fund/narrative-content-production/) links the current guidelines. The replacement guidelines do not substantiate the older completion-guarantor threshold previously summarized here, so that threshold has been removed. These are Australian program requirements, not MediaHedge policy or a universal completion rule. Links checked: 2026-09-30.
+Screen Australia's [Terms of Trade](https://www.screenaustralia.gov.au/doing-business-with-us/terms-of-trade/) identify completion guarantees among its funding conditions and direct applicants to the applicable program and recipient requirements. Its [Narrative Content Production program](https://www.screenaustralia.gov.au/fund/narrative-content-production/) links the current guidelines. Apply those requirements to the relevant Australian funding program. Links checked: 2026-09-30.
 
 ## Continue Exploring
 

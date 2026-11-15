@@ -16,7 +16,7 @@ tags:
 
 # Media Finance Lending Landscape
 
-Media finance brings together capital providers and specialists in cash control, insurance, completion and payment protection. Banks and private lenders supply capital, account banks help control cash, production insurers transfer named-peril risk, completion guarantors support production and delivery, and credit or surety providers may protect a specifically defined obligation. The same transaction can use several of these parties, but their promises are not interchangeable.
+Media finance brings together capital providers and specialists in cash control, insurance, completion and payment protection. Banks and private lenders supply capital, account banks help control cash, production insurers cover specified risks, completion guarantors support production and delivery, and credit or surety providers may protect a specifically defined obligation. The same transaction can use several of these parties, but their promises are not interchangeable.
 
 > [!important] Start with the Role
 > A recognized brand does not identify the exact exposure. First determine the product, borrower, repayment asset, legal lender or issuer, lien position, covered obligation and direct claimant rights. Then compare economics and institutional strength.
@@ -28,7 +28,7 @@ Media finance brings together capital providers and specialists in cash control,
 | Bank or senior lender | Loan, revolver, bridge or asset-backed facility | Timing mismatch and senior credit exposure | Completion, insurer exclusions or commercial performance |
 | Specialty project lender | Receivables, incentive, pre-sale, gap, bridge or finishing capital | Project liquidity and collateral monetization | Every collateral class; [[wiki/concepts/gap-collateral\|gap]] remains valuation-dependent |
 | Institutional private credit | First-lien, second-lien, mezzanine or structured capital | Larger company, IP, library or contractual-cash-flow exposure | Single-production availability or bank-like treasury infrastructure |
-| [[wiki/concepts/production-insurance\|Production insurer]] | Indemnity for covered named perils | Cast, property, equipment, liability, interruption and related events | General overruns, delivery or obligor default |
+| [[wiki/concepts/production-insurance\|Production insurer]] | Indemnity for covered events | Cast, property, equipment, liability, interruption and related events | General overruns, delivery or obligor default |
 | [[wiki/concepts/completion-protection\|Completion guarantor]] | Completion-and-delivery guaranty and the remedy stated in the executed form | Failure to complete and deliver within the approved framework | Audience demand or ordinary distributor insolvency |
 | [[wiki/concepts/surety-credit-protection\|Credit or surety provider]] | Guaranty of a specifically bonded obligation | Defined payment or performance default | Losses outside the obligation, limit and claim conditions |
 
@@ -40,7 +40,7 @@ Media finance brings together capital providers and specialists in cash control,
 | Underwriting and closing | What is eligible collateral, who must pay and who bears each covered risk? | Bank or specialty lender, completion guarantor, broker and insurer | Executed contracts, obligor diligence, assignments, policies, guaranties, bonds and interparty terms |
 | Production | Does available cash still cover the current cost to complete? | Producer, lender or servicer, production insurer and completion guarantor | Cost reports, hot costs, production reports, claim notices and variance analysis |
 | Delivery and acceptance | Have the contractual payment conditions been satisfied? | Producer, distributor, delivery agent, lender and completion guarantor | Delivery schedule, acceptance evidence, cure rights and deemed-acceptance provisions |
-| Collection and repayment | Did controlled proceeds reach the agreed waterfall? | Account bank or CAMA, servicer, lender, obligors and any applicable credit provider | Assignment notices, [[wiki/concepts/cash-control-and-waterfalls\|account control]], reconciliations, payment confirmations and claim files |
+| Collection and repayment | Did controlled proceeds reach the agreed waterfall? | Account bank or collection account manager, servicer, lender, obligors and any applicable credit provider | Assignment notices, [[wiki/concepts/cash-control-and-waterfalls\|account control]], reconciliations, payment confirmations and claim files |
 
 ## Capital Providers
 

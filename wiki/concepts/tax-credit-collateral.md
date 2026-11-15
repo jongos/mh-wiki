@@ -20,7 +20,7 @@ A production incentive can support a bridge loan when the project, claimant and 
 
 ## U.S. Program Comparisons
 
-Use the [[wiki/syntheses/us-film-tax-incentives|U.S. Incentive Guide]] for eight state profiles and [[wiki/concepts/incentive-monetization|Turning Production Incentives Into Cash]] for refunds, sales, buybacks and grants. Program rates describe earned benefits on eligible expenses; they do not establish MediaHedge advance rates. Official program facts were checked within each profile’s stated scope on October 6, 2026.
+Use the [[wiki/syntheses/us-film-tax-incentives|U.S. Incentive Guide]] for eight state profiles and [[wiki/concepts/incentive-monetization|Turning Production Incentives Into Cash]] for refunds, sales, buybacks and grants. Program rates describe earned benefits on eligible expenses; lenders set advance rates separately. Official program facts were checked within each profile’s stated scope on October 6, 2026.
 
 ## Underwriting Architecture
 
@@ -30,15 +30,15 @@ Program counsel and incentive specialists confirm the jurisdiction, claimant ent
 
 ### Verified Spend and Valuation
 
-The expected amount is rebuilt from governing rules, the production budget, qualified-spend schedule, payroll, vendor evidence and professional estimate. Nonqualifying costs, fees, caps, holdbacks, transfer discounts, timing risk and recapture exposure reduce the collectible basis.
+Rebuild the expected amount from governing rules, the production budget, qualified-spend schedule, payroll, vendor evidence and professional estimate. Nonqualifying costs, fees, caps, holdbacks, transfer discounts, timing risk and recapture exposure reduce the collectible basis.
 
 ### Advance and Structure
 
-MediaHedge sets the advance assumption from verified eligible value, timing, deductions and the approved transaction or lender mandate. Security, notices, claimant ownership, lockbox or account control and certificate-transfer documentation must fit local anti-assignment and program rules.
+The lender sets the advance assumption from verified eligible value, timing, deductions and the approved transaction or lender mandate. Security, notices, claimant ownership, lockbox or account control and certificate-transfer documentation must fit local anti-assignment and program rules.
 
 ### Realization
 
-Cost reports track qualified spend during production. After completion, required audits, applications and certificates are submitted. Refund proceeds or certificate-sale proceeds flow to the controlled account and contractual waterfall.
+Cost reports track qualified spend during production. Complete the required audits and filings on the program’s timetable, then track certificate issuance and payment. Refund proceeds or certificate-sale proceeds flow to the controlled account and contractual waterfall.
 
 ## Principal Risks
 

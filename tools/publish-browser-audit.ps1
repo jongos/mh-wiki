@@ -72,7 +72,7 @@ try {
 })()
 '@
     if ($homeSeo.title -ne 'Media Finance Guide | Film and Television Finance' -or
-        $homeSeo.description -notmatch '^Explore film and television finance' -or
+        $homeSeo.description -notmatch '^Understand film and television finance:' -or
         $homeSeo.canonical -ne "$($SiteUrl.TrimEnd('/'))/MediaHedge+Knowledgebase" -or
         $homeSeo.robots -notmatch 'index,follow' -or
         $homeSeo.ogTitle -ne $homeSeo.title -or

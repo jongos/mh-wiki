@@ -5,31 +5,29 @@ status: current
 updated: 2026-11-15
 source_count: 22
 publish: true
-description: Explore film and television finance through MediaHedge's guide to collateral, loan sizing, cash control, risk protection, servicing, recovery and returns.
+description: "Understand film and television finance: build a finance plan, value collateral, size loans, control cash, manage production risks and measure returns."
 seo_title: Media Finance Guide | Film and Television Finance
 tags:
   - mediahedge
   - index
 ---
 
-![[assets/mediahedge-banner.jpg|1000]]
-
 # Media Finance Guide
 
-This guide explains how MediaHedge evaluates film and television financing, protects capital during production and works with financing partners through repayment.
+A practical reference for film and television finance, from the production budget and financing plan to collateral, lending, cash collection and investor returns. Use it to understand how producers, lenders, investors and advisers assess a financing and manage it through delivery.
 
 Start with your question and follow the links for more detail.
 
 ## Start Here
 
 - **New to Film Finance?** Begin with [[wiki/overview|How the Lending Model Works]], keep the [[wiki/glossary|Plain-English Glossary]] nearby, then explore the [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]].
-- **Evaluating a Financing?** Meet [[wiki/entities/mediahedge|MediaHedge and FilmHedge]], then follow the eight questions in the [[wiki/syntheses/financier-diligence-route|Financier's Guide]].
+- **Evaluating a Financing?** Follow the eight questions in the [[wiki/syntheses/financier-diligence-route|Financier's Guide]].
 - **Closing or Production Counsel?** Follow the [[wiki/concepts/security-package|Security Package]], [[wiki/concepts/cash-control-and-waterfalls|Cash Control]] and [[wiki/concepts/forward-flow-governance|Financing-Partner Governance]] trail.
 - **Monitoring a Troubled Project?** Start with the [[wiki/concepts/protection-stack|Protection Stack]], then read [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]] and [[wiki/concepts/defaults-workouts-and-recoveries|Defaults, Workouts and Recoveries]].
 
 For a wider view, compare the [[wiki/syntheses/media-finance-lending-landscape|Market Participants]] or explore the visual [[wiki/syntheses/site-navigator|Site Navigator]].
 
-![[assets/diagrams/credit-journey.svg|Conceptual diagram of the MediaHedge credit journey from financeability through portfolio reporting]]
+![[assets/diagrams/credit-journey.svg|Conceptual diagram of the film-finance credit journey from financeability through portfolio reporting]]
 
 *Conceptual diagram: each stage connects evidence, decisions and execution.*
 
@@ -56,7 +54,7 @@ The [[wiki/syntheses/credit-lifecycle|Film-Finance Credit Lifecycle]] follows a 
 
 For a quicker comparison of repayment sources, open the [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]]. For the major sizing, approval and operating gates, use the [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]].
 
-## Explore the Model
+## Explore the Topics
 
 ### Understand the Market
 
@@ -110,13 +108,17 @@ Start with the U.S. guide, compare cash routes, then open a state profile. The e
 - [[wiki/entities/new-mexico-film-incentives|New Mexico Film and Television Incentives]]
 - [[wiki/entities/new-york-film-incentives|New York Film and Television Incentives]]
 
-## FilmHedge Research and Illustrated Reports
+## Research and Further Reading
 
-Explore the [[wiki/syntheses/filmhedge-research-library|FilmHedge Research Library]] for five reports on production incentives, finance plans, private credit and lender outcomes. Start with the [illustrated 2026 tax-guide article](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437), or browse [all FilmHedge reports](https://filmhedge.com/reports).
+The [[wiki/syntheses/filmhedge-research-library|Research Library]] organizes five FilmHedge reports by topic and explains their methods and findings. [[wiki/concepts/full-financing|Full Financing]] also draws on producer-facing finance-plan guides; [[wiki/concepts/gap-collateral|Gap Collateral]] connects sales research to underwriting value.
 
 Report visuals appear beside the relevant wiki topics, including the [[wiki/syntheses/us-film-tax-incentives#A Map of Payment Routes|State Payment-Route Map]], [[wiki/concepts/incentive-monetization#Follow the Cash Routes|Incentive Cash Routes]] and [[wiki/syntheses/filmhedge-research-library#Read the Credit Study Charts|Credit Study Coverage]]. Dates, conditional program rules and study limits travel with each visual.
 
 Research links checked: 2026-10-07.
+
+## About This Guide
+
+Created by [[wiki/entities/mediahedge|MediaHedge and FilmHedge]], this resource explains film-finance concepts through a credit-underwriting lens. General explanations use market roles; company-specific policies are identified where they apply.
 
 ## Continue Exploring
 

@@ -20,7 +20,7 @@ A surety bond or media-credit guarantee can support a specifically defined payme
 > [!note] Important Distinction
 > [[wiki/concepts/completion-protection|Completion Protection]] supports the production-and-delivery side of the repayment chain. Surety can support a precisely bonded obligation after the required trigger. [[wiki/concepts/production-insurance|Production Insurance]] responds to specified insured events. None is interchangeable with the others.
 
-![[assets/diagrams/protection-stack.svg|Five-layer MediaHedge protection stack distinguishing targeted risk-transfer instruments from other controls]]
+![[assets/diagrams/protection-stack.svg|Five-layer film-finance protection stack distinguishing targeted risk-transfer instruments from other controls]]
 
 *Conceptual diagram: the value of any risk-transfer layer depends on the exact covered obligation, conditions, limits and claims process.*
 
@@ -28,12 +28,12 @@ A surety bond or media-credit guarantee can support a specifically defined payme
 
 1. **Principal:** the party whose specified duty is bonded.
 2. **Surety:** the company conditionally backing that obligation, commonly with indemnity or collateral rights against the principal.
-3. **Obligee or beneficiary:** the party protected by the instrument. MediaHedge and its financing partner must be covered expressly if they are intended claimants.
+3. **Obligee or beneficiary:** the party protected by the instrument. Name the lender and other financing parties expressly when they are intended claimants.
 4. **Bonded obligation and penal sum:** the exact promise and the maximum stated liability, which may exclude interest, fees or other losses unless included.
 
 ## Provider Identity Check
 
-The brand that arranges or administers a surety or media-credit product may not be the legal issuer. Confirm the licensed surety or insurer, signing authority, financial strength, any syndicate or reinsurance structure, claims authority and whether MediaHedge or its financing partner has direct rights. The [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]] places this identity test alongside the equivalent lender, insurer and completion-guarantor checks.
+The brand that arranges or administers a surety or media-credit product may not be the legal issuer. Confirm the licensed surety or insurer, signing authority, financial strength, any syndicate or reinsurance structure, claims authority and which financing parties have direct rights. The [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]] places this identity test alongside the equivalent lender, insurer and completion-guarantor checks.
 
 ## Protection Compared
 
@@ -51,7 +51,7 @@ The financing parties first confirm the final instrument, underlying contract, p
 
 - Is the issuer authentic, authorized and financially strong enough for the credited exposure?
 - Do the bond, underlying contract, assignment, payment direction and account documents describe the same obligation?
-- Are both financing parties protected, and is the [[wiki/concepts/cash-control-and-waterfalls|proceeds waterfall]] unambiguous?
+- Are all intended financing parties protected, and is the [[wiki/concepts/cash-control-and-waterfalls|proceeds waterfall]] unambiguous?
 - What delivery, acceptance, default, notice, cure, waiting-period and proof requirements apply?
 - Do amendments, waivers, extensions, assignment or cancellation require consent?
 - How do the penal sum, aggregate limit, interest, fees, subrogation and lien rights affect net recovery?

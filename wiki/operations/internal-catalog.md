@@ -19,11 +19,17 @@ Public control pages were re-scoped on 2026-08-29 to explain decision logic with
 
 The September 30 Phase 1/2 refresh reconciles qualitative underwriting with owner-approved Brain guidance dated September 25 and 27. Numerical examples and confidential source documents are not imported. Five glossary entries and the reader FAQ/open questions are integrated; What Changed is a reader changelog with zero independent evidence sources. Source templates now distinguish publication suitability, authority and review dates. The separate reconciliation record preserves exact canonical page references and current treatment.
 
+## November 15 Editorial Scope
+
+The guide is an educational media-finance resource with a film-and-television production-lending focus. The home, overview, diligence route and core concepts now use lender-neutral explanations. MediaHedge-specific funding exclusions and score definitions remain explicitly attributed. The company profile supplies publisher context; its banner no longer leads the home page. Navigation groups state programs and the publisher under Programs & Organizations.
+
+The editorial review checked all 39 reader pages against the current qualitative credit sequence in the live Brain’s Underwriting/MH Underwriting.md and Operations/Lifecycle of a Media Loan.md, and the publisher profile against Company/Company Overview.md, on November 15, 2026. No confidential text, numerical policy parameters or new raw evidence was imported. This review does not reset the separately stated legal, program or research verification dates.
+
 ## Public orientation
 
 The 2026-09-30 reader-interface refinement places four audience/task routes near the top of the public home and makes the existing policy-review status visible on loan sizing, gap collateral, tax-credit collateral, return economics and the policy-control matrix. This changes presentation and navigation, not approved policy or source counts. The interface decisions are recorded in the root `DESIGN.md` maintenance file.
 
-- [[wiki/overview|MediaHedge Wiki Overview]]
+- [[wiki/overview|How Film and Television Lending Works]]
 - [[wiki/operations/source-review-notes|Source Review Notes]]
 - [[wiki/glossary|Film-Finance Glossary]]
 - the retired reader changelog (retained in Git history)

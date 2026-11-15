@@ -52,15 +52,15 @@ Do not relabel the take as a supported low case. Test whether the rights can sel
 
 ### Analysis and Inference
 
-Maintain one territory-level record from the dated estimate through the signed license and collection. Show unsold territories as unresolved outcomes rather than dropping them from the comparison. Separate price variance, failure to sell, payment delay and deductions. This monitoring method tracks sales conversion, price variance and collections separately.
+Maintain one territory-level record from the dated estimate through the signed license and collection. Show unsold territories as unresolved outcomes rather than dropping them from the comparison. Separate price variance, failure to sell, payment delay and deductions. Use those separate measures to update the next valuation.
 
 When a territory sells, remove its value from the unsold-rights schedule before including the resulting receivable. State which deductions are already included in the low case so the advance calculation does not apply them twice. Reconcile any resulting change in loan availability to the [[wiki/concepts/full-financing#Worked Finance Plan|Worked Finance Plan]].
 
-## Current Policy Application
+## Mandate and Policy Application
 
 Gap exposure is subject to approved transaction requirements and any applicable funding mandate. Underwriting applies the current asset-specific advance rule to a supported low case, tests the result against concentration-review requirements, and then applies transaction-specific leverage, budget-exposure, term and liquidity requirements. A concentration-review trigger requires explicit human analysis rather than automatic resizing or decline. Unsupported or highly correlated value receives no credit merely because another ratio has remaining capacity.
 
-Gap remains excluded from the current institutional segment even when another portion of the same production is eligible. Other funding arrangements require their own approval. Gap can affect transaction pricing, but there is no mechanical fixed uplift: the complete collateral mix, timing, protection and risk analysis inform the recommendation. Cash timing, extensions, losses, [[wiki/concepts/monitoring-and-servicing|servicing]] and actual loan-tape performance determine [[wiki/concepts/financier-return-economics|realized economics]].
+Under MediaHedge’s current funding policy, gap remains excluded from its institutional segment even when another portion of the same production is eligible. Other funding arrangements require their own approval. Gap can affect transaction pricing, but there is no mechanical fixed uplift: the complete collateral mix, timing, protection and risk analysis inform the recommendation. Cash timing, extensions, losses, [[wiki/concepts/monitoring-and-servicing|servicing]] and actual loan-tape performance determine [[wiki/concepts/financier-return-economics|realized economics]].
 
 ## Diligence Questions
 

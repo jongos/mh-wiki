@@ -14,7 +14,7 @@ tags:
 
 # Film-Finance Credit Lifecycle
 
-Follow a financing from screening through repayment or recovery. This guide combines the retained briefs with the current owner-approved credit sequence, reconciled September 30, 2026.
+Follow a financing from screening through repayment or recovery. At each stage, connect the evidence to a decision, an accountable party and the next funding or repayment event.
 
 ![[assets/diagrams/credit-journey.svg|Seven-stage film-finance credit lifecycle from full financing through portfolio reporting]]
 
@@ -40,7 +40,7 @@ Underwriting tests ownership, enforceability, obligor capacity, conditions, dedu
 
 ### 3. Let the Tightest Sizing Constraint Control
 
-[[wiki/concepts/loan-sizing|Loan sizing]] applies collateral-specific advances and reserves, approved transaction and mandate requirements, and value and timing stress. Reconcile gross commitment to net production cash. Distinguish concentration-review triggers from mandatory limits. Risk and Obligor Scores inform the human decision; MH Score and Tier classify the approved blended rate afterward.
+[[wiki/concepts/loan-sizing|Loan sizing]] applies collateral-specific advances and reserves, approved transaction and mandate requirements, and value and timing stress. Reconcile gross commitment to net production cash. Distinguish concentration-review triggers from mandatory limits. Assess risk before approval; record the approved structure, price and conditions separately from any score or classification.
 
 **Decision output:** reproducible commitment, binding test, cushion and explicit exceptions.
 
@@ -62,7 +62,7 @@ Credit approval and signed documents do not prove cash was advanced. Confirm app
 
 ### 6. Diagnose Stress Before Selecting a Remedy
 
-[[wiki/concepts/defaults-workouts-and-recoveries|Workout]] starts by identifying whether the problem is liquidity, documentation, performance, obligor credit or collateral impairment. MediaHedge preserves claims and collateral, compares net-present-recovery paths and requests authority for protective advances, extensions, compromises, sales or enforcement.
+[[wiki/concepts/defaults-workouts-and-recoveries|Workout]] starts by identifying whether the problem is liquidity, documentation, performance, obligor credit or collateral impairment. The servicer or agent preserves claims and collateral, compares net-present-recovery paths and requests authority for protective advances, extensions, compromises, sales or enforcement.
 
 **Decision output:** failure-mode diagnosis, rights calendar, remedy cash flows, authority record and net recovery accounting.
 
@@ -89,7 +89,7 @@ The lifecycle is iterative rather than linear. Production progress turns costs i
 
 ## Analysis and Inference
 
-The source briefs separately describe each control area. Treating them as a state-transition system is a synthesis: the durable unit of monitoring is not only the loan, but the changing form, amount, timing and controllability of each repayment asset.
+Track each repayment asset as well as the loan. A change in its form, amount, timing or collectibility can alter the borrowing base, funding plan and required action.
 
 ## Continue Exploring
 

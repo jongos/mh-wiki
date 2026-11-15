@@ -14,11 +14,11 @@ tags:
   - navigation
 ---
 
-# A Financier’s Guide to the MediaHedge Model
+# A Financier’s Guide to Film Finance
 
 A financing partner needs to know whether the proposed exposure can survive the linked risks of funding, completion, delivery, repayment, cash collection and enforcement, and whether the expected return justifies the time and risk involved.
 
-This guide organizes the guide around eight questions.
+Use these eight questions to organize diligence and identify the evidence needed for a credit decision.
 
 ## Choose Your Reading Depth
 
@@ -70,7 +70,7 @@ Use [[wiki/concepts/protection-stack|Protection Stack]] to compare structural sa
 
 Read [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]] with [[wiki/concepts/forward-flow-governance|Financing-Partner Governance]]. Information becomes useful when it is timely, verified and connected to a responsible decision-maker.
 
-**Check:** what is reported, what triggers action, which decisions MediaHedge handles and which decisions remain with the financing partner.
+**Check:** what is reported, what triggers action, which decisions the servicer handles and which decisions remain with the financing partner.
 
 ### 7. What Happens When the Original Plan Breaks?
 
@@ -106,15 +106,15 @@ Bring the approved credit requirements, production budget and cash-flow schedule
 
 Use the [[wiki/syntheses/filmhedge-research-library|FilmHedge Research Library]] to choose a report for the question at hand: incentive value, production budgets, repayment structure, empirical credit evidence or historical private-credit comparisons. The catalog links directly to all five reports and the illustrated tax-guide article, with edition dates and limits.
 
+## Analysis and Inference
+
+The eight questions connect production funding, collateral, controls and investor cash outcomes into one review sequence.
+
 ## Continue Exploring
 
 [[MediaHedge Knowledgebase|Home]] → [[wiki/syntheses/media-finance-lending-landscape|Market Landscape]] → [[wiki/overview|Overview]] → [[wiki/syntheses/repayment-and-risk-map|Repayment Map]] → [[wiki/concepts/loan-sizing|Sizing]] → [[wiki/concepts/security-package|Security]] → [[wiki/concepts/cash-control-and-waterfalls|Cash Control]] → [[wiki/concepts/monitoring-and-servicing|Monitoring]] → [[wiki/concepts/defaults-workouts-and-recoveries|Recovery]] → [[wiki/concepts/portfolio-construction|Portfolio]] → [[wiki/concepts/financier-return-economics|Returns]] · [[wiki/syntheses/site-navigator|Site Navigator]]
 
 For the same material organized from origination through recovery, use the [[wiki/syntheses/credit-lifecycle|Film-Finance Credit Lifecycle]].
-
-## Analysis and Inference
-
-The eight questions connect production funding, collateral, controls and investor cash outcomes into one review sequence.
 
 <!--
 ## Source Basis

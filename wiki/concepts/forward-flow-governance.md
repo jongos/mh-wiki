@@ -5,7 +5,7 @@ status: current
 updated: 2026-11-15
 source_count: 5
 publish: true
-description: See how MediaHedge and financing partners divide eligibility, delegated authority, reserved decisions, servicing duties and risk oversight in forward-flow programs.
+description: See how originators and capital providers divide eligibility decisions, delegated authority, funding, servicing and risk oversight in forward-flow programs.
 tags:
   - mediahedge
   - forward-flow
@@ -15,7 +15,7 @@ tags:
 
 # Financing-Partner Governance
 
-In a forward-flow relationship, MediaHedge originates, underwrites and services loans that meet an agreed investment policy while a financing partner purchases or funds eligible assets under defined mechanics. Governance allows routine eligible assets to close efficiently while preserving investor control over material risk.
+In a forward-flow relationship, an originator underwrites and services loans that meet an agreed investment policy while a financing partner purchases or funds eligible assets under defined mechanics. Governance allows routine eligible assets to close efficiently while preserving investor control over material risk.
 
 ## Architecture
 
@@ -27,15 +27,15 @@ In a forward-flow relationship, MediaHedge originates, underwrites and services 
 
 ## Eligible Asset Workflow
 
-MediaHedge submits a standardized underwriting package and eligibility certificate. The financing partner or delegated process confirms buy-box compliance. Settlement establishes the intended ownership, purchase price, collateral-agent and account rights. Post-close data feed concentration and performance tests. Exceptions, amendments and waivers follow the reserved-matter matrix.
+The originator submits a standardized underwriting package and eligibility certificate. The financing partner or delegated process confirms compliance with the agreed investment criteria. Settlement establishes the intended ownership, purchase price, collateral-agent and account rights. Post-close data feed concentration and performance tests. Exceptions, amendments and waivers follow the reserved-matter matrix.
 
 ## Delegated Authority Versus Reserved Matters
 
-MediaHedge needs authority for ordinary servicing within documented parameters. Reserve investor control over eligibility exceptions, concentration breaches, material extensions, principal compromises, collateral releases, enforcement, changes to payment control, related-party conflicts and servicer replacement.
+The servicer needs authority for ordinary servicing within documented parameters. Reserve investor control over eligibility exceptions, concentration breaches, material extensions, principal compromises, collateral releases, enforcement, changes to payment control, related-party conflicts and servicer replacement.
 
 ## Structural Distinctions
 
-True sale, participation, secured lending, agency and other structures can produce different ownership, insolvency, regulatory and risk-retention results. Capital generally need not pass through MediaHedge's balance sheet, but the actual documents must establish the chosen structure. Define and price full credit recourse explicitly; distinguish it from repurchase for an origination breach.
+True sale, participation, secured lending, agency and other structures can produce different ownership, insolvency, regulatory and risk-retention results. Capital generally need not pass through the originator’s balance sheet, but the actual documents must establish the chosen structure. Define and price full credit recourse explicitly; distinguish it from repurchase for an origination breach.
 
 ## Failure Modes
 
@@ -43,7 +43,7 @@ Subjective eligibility or approvals without deadlines can make a commitment econ
 
 ## Connections
 
-The buy-box incorporates [[wiki/concepts/loan-sizing|Loan Sizing]] and [[wiki/concepts/portfolio-construction|Portfolio Construction]]. Delegated authority governs [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]], and reserved matters determine control during [[wiki/concepts/defaults-workouts-and-recoveries|Defaults, Workouts and Recoveries]].
+The investment criteria incorporate [[wiki/concepts/loan-sizing|Loan Sizing]] and [[wiki/concepts/portfolio-construction|Portfolio Construction]]. Delegated authority governs [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]], and reserved matters determine control during [[wiki/concepts/defaults-workouts-and-recoveries|Defaults, Workouts and Recoveries]].
 
 ## Continue Exploring
 

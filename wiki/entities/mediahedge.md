@@ -5,7 +5,7 @@ status: current
 updated: 2026-11-15
 source_count: 16
 publish: true
-description: Meet MediaHedge, a specialist film-finance originator, underwriter and servicer working with institutional capital across structured financing relationships.
+description: Learn about MediaHedge and FilmHedge, the publishers of this guide, and how their origination, underwriting and servicing roles relate to film finance.
 tags:
   - mediahedge
   - entity
@@ -15,9 +15,11 @@ tags:
 
 # MediaHedge
 
-MediaHedge is a specialist film-finance originator, underwriter and servicer that largely operates alongside institutional capital providers in a [[wiki/concepts/forward-flow-governance|forward-flow]], purchase, participation, agency or similar structure. Current company guidance identifies MediaHedge as an institutional media-finance and private-credit platform. Its lending functions connect origination, underwriting and servicing.
+![[assets/mediahedge-banner.jpg|MediaHedge publisher identity]]
 
-MediaHedge, Inc. is the corporate parent of its wholly owned operating subsidiary, FilmHedge, LLC. This guide covers the group's financing framework.
+MediaHedge and FilmHedge publish the Media Finance Guide. MediaHedge originates, underwrites and services film and television financing through [[wiki/concepts/forward-flow-governance|funding and capital-partner arrangements]].
+
+MediaHedge, Inc. is the corporate parent of its wholly owned operating subsidiary, FilmHedge, LLC. The guide draws on that underwriting experience to explain media-finance concepts.
 
 <!-- Orientation verified against live MediaHedge Brain Company/Company Overview.md on September 30, 2026; no additional raw snapshot is retained in this vault. -->
 
@@ -43,7 +45,7 @@ MediaHedge may administer triage, collateral stabilization, claims, workout anal
 
 ### Capital-Partner Governance
 
-In a scalable forward-flow relationship, MediaHedge handles routine eligible execution within delegated authority. The financing partner retains reserved rights over exceptions, concentration breaches, material amendments, collateral releases, extensions, compromises, enforcement and servicer conflicts. See [[wiki/concepts/forward-flow-governance|Forward-Flow Governance]].
+In a forward-flow relationship, MediaHedge handles routine eligible execution within delegated authority. The financing partner retains reserved rights over exceptions, concentration breaches, material amendments, collateral releases, extensions, compromises, enforcement and servicer conflicts. See [[wiki/concepts/forward-flow-governance|Forward-Flow Governance]].
 
 ## Operating Principles
 

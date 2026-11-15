@@ -39,7 +39,7 @@ Build a downside cash flow for each remedy, including incremental funding, legal
 
 ## Reserved Matters
 
-Apply the agreed investor approval thresholds to protective advances, maturity extensions, principal reductions, collateral releases, claim settlements, litigation, asset sales and enforcement. MediaHedge may administer as servicer or agent, but conflicts, related-party transactions, compensation and recovery priority must remain transparent.
+Apply the agreed investor approval thresholds to protective advances, maturity extensions, principal reductions, collateral releases, claim settlements, litigation, asset sales and enforcement. A servicer or agent may administer the workout, but conflicts, related-party transactions, compensation and recovery priority must remain transparent.
 
 ## Failure Modes
 

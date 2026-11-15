@@ -6,7 +6,7 @@ publish: false
 
 ## Mission
 
-Maintain a persistent, compounding, source-grounded wiki about MediaHedge's film- and television-finance credit model. Raw sources are evidence. Markdown pages are maintained knowledge. This file is the operating contract.
+Maintain a source-grounded educational resource about media finance, with a focus on film and television production finance. Use MediaHedge’s underwriting discipline to guide credit analysis while keeping general explanations lender-neutral and company-specific policies explicitly attributed. Raw sources are evidence. Markdown pages are maintained knowledge. This file is the operating contract.
 
 The agent owns the Markdown layer: create, revise, cross-link and lint it. The human owns source selection, strategic direction and final judgment.
 

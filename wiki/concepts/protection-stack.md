@@ -5,7 +5,7 @@ status: current
 updated: 2026-11-15
 source_count: 11
 publish: true
-description: Explore the layered controls MediaHedge uses to address financeability, collateral, completion, payment, cash, servicing and recovery risks without relying on one safeguard.
+description: Explore how collateral diligence, loan sizing, cash control, completion protection, insurance and servicing address different film-finance risks.
 tags:
   - mediahedge
   - credit
@@ -14,9 +14,9 @@ tags:
 
 # Protection Stack
 
-The MediaHedge protection stack combines controls that address distinct risks. It avoids relying on one guaranty, one collateral class, one filing or a high coupon as blanket protection.
+A protection stack combines controls for different risks: unsupported collateral, funding shortfalls, cash diversion, production failure and nonpayment. Match each control to the risk it addresses.
 
-![[assets/diagrams/protection-stack.svg|Five-layer MediaHedge protection stack with the distinct risks addressed by each layer]]
+![[assets/diagrams/protection-stack.svg|Five-layer film-finance protection stack with the distinct risks addressed by each layer]]
 
 *Conceptual diagram: the layers reinforce one another, but no layer substitutes for a missing eligibility, control or enforcement requirement.*
 

@@ -95,3 +95,7 @@ Review the restored file and commit it as a new recovery change. Do not use `git
 ## Reader Image and Language Review
 
 `wiki-v1.26-reader-image-review` records the November 15, 2026 diagram repairs and final reader-language pass. It preserves all research originals and source history while correcting diagram connections, contrast, captions and remaining guide branding. The release includes an independent full-history bundle and live Publish audit.
+
+## Educational Resource Editorial Review
+
+`wiki-v1.27-professional-editorial` records the November 15, 2026 professional content pass: neutral reader framing, explicit company-policy attribution, corrected credit distinctions and less promotional navigation. The release preserves research originals, worked examples and source-specific verification dates.

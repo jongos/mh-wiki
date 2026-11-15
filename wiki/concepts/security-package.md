@@ -31,7 +31,7 @@ For each collateral item, identify the owner, obligor, governing jurisdiction, v
 
 ## Roles and Governance
 
-Lender of record, purchaser, participant, agent, secured party, collateral agent and co-obligee are distinct capacities. The market-facing brand is not proof of which entity occupies any of them; confirm the legal lender, issuer and beneficiary using the [[wiki/syntheses/media-finance-lending-landscape|Market Landscape]] and transaction documents. Interparty documents must allocate voting, consent, enforcement, expense, indemnity and recovery sharing. If MediaHedge holds collateral or acts for a financing partner, agency, segregation, custody and replacement mechanics must preserve the partner's rights.
+Lender of record, purchaser, participant, agent, secured party, collateral agent and co-obligee are distinct capacities. The market-facing brand is not proof of which entity occupies any of them; confirm the legal lender, issuer and beneficiary using the [[wiki/syntheses/media-finance-lending-landscape|Market Landscape]] and transaction documents. Interparty documents must allocate voting, consent, enforcement, expense, indemnity and recovery sharing. If an originator or servicer holds collateral or acts for a financing partner, agency, segregation, custody and replacement mechanics must preserve the partner's rights.
 
 ## Failure Modes
 

@@ -1,29 +1,31 @@
 ---
-title: How the MediaHedge Lending Model Works
+title: How Film and Television Lending Works
 type: overview
 status: current
 updated: 2026-11-15
 source_count: 17
 publish: true
-description: See how MediaHedge connects full financing, collateral eligibility, loan sizing, cash control, protection, servicing, recovery and portfolio discipline.
+description: Understand how film and television lenders connect production funding, collateral, loan sizing, cash control, risk protection and repayment.
 tags:
   - mediahedge
   - film-finance
   - credit
 ---
 
-# How the MediaHedge Lending Model Works
+# How Film and Television Lending Works
 
 > [!important] Why It Matters
-> MediaHedge connects collateral, cash control, completion protection and servicing to protect capital through repayment.
+> A production loan needs both a credible repayment source and enough cash to finish and deliver the project. Underwriting tests these requirements together.
 
-The surrounding [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]] is also role-specific: a bank, specialty project lender, institutional credit manager, production insurer, completion guarantor and surety provider may all appear in one transaction while addressing different needs.
+The [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]] includes distinct roles: a bank, specialty project lender, institutional credit manager, production insurer, completion guarantor and surety provider may all appear in one transaction while addressing different needs.
 
 Capital protection starts with [[wiki/concepts/full-financing|full financing]] because completion and delivery are common dependencies across [[wiki/concepts/pre-sales-collateral|contracted pre-sales]], [[wiki/concepts/tax-credit-collateral|tax incentives]] and [[wiki/concepts/gap-collateral|unsold-rights value]].
 
-It continues through conservative [[wiki/concepts/loan-sizing|loan sizing]], an enforceable [[wiki/concepts/security-package|security package]], operational [[wiki/concepts/cash-control-and-waterfalls|cash control]], a layered [[wiki/concepts/protection-stack|protection stack]] that gives narrow credit to [[wiki/concepts/completion-protection|completion]], [[wiki/concepts/surety-credit-protection|surety]], [[wiki/concepts/production-insurance|insurance]] and other risk-transfer instruments, active [[wiki/concepts/monitoring-and-servicing|servicing]], and value-preserving [[wiki/concepts/defaults-workouts-and-recoveries|workout governance]].
+[[wiki/concepts/loan-sizing|Loan sizing]] limits exposure to supported collateral value and the approved funding structure. The [[wiki/concepts/security-package|security package]] establishes creditor rights, while [[wiki/concepts/cash-control-and-waterfalls|cash control]] directs collections through the agreed payment priority.
 
-The portfolio and capital-partner layers matter as much as the individual loan. [[wiki/concepts/portfolio-construction|Portfolio construction]] looks through deal count to common failure drivers. [[wiki/concepts/forward-flow-governance|Forward-flow governance]] allocates funding, ownership, servicing, exception and enforcement authority. [[wiki/concepts/financier-return-economics|Return analysis]] then measures what the financier actually receives, when it receives it, and what credit and operating frictions consumed.
+The [[wiki/concepts/protection-stack|protection stack]] adds risk-specific [[wiki/concepts/completion-protection|completion protection]], [[wiki/concepts/surety-credit-protection|surety]] and [[wiki/concepts/production-insurance|insurance]]. Active [[wiki/concepts/monitoring-and-servicing|servicing]] tracks changes after closing; [[wiki/concepts/defaults-workouts-and-recoveries|workout governance]] determines the response when the plan fails.
+
+The portfolio and capital-partner layers matter as much as the individual loan. [[wiki/concepts/portfolio-construction|Portfolio construction]] looks through deal count to common failure drivers. [[wiki/concepts/forward-flow-governance|Forward-flow governance]] allocates funding, ownership, servicing, exception and enforcement authority. [[wiki/concepts/financier-return-economics|Return analysis]] then measures what the financier actually receives, when it receives it, and how losses, expenses and funding costs affected the result.
 
 ## The Lending Model in One View
 
@@ -31,7 +33,7 @@ The portfolio and capital-partner layers matter as much as the individual loan. 
 | --- | --- | --- | --- |
 | Screen | Is the project financeable through delivery? | Complete uses, verified sources, committed equity, contingency | Screening outcome and preliminary financing plan |
 | Underwrite | What collateral is eligible and collectible? | Contract, obligor, jurisdiction, conditions, deductions and timing review | Eligible net collateral schedule |
-| Size | What is the maximum safe commitment? | Asset haircuts, concentration, LTV, budget, term and liquidity limits | Reproducible binding constraint |
+| Size | What commitment fits the collateral and funding plan? | Asset haircuts, concentration, LTV, budget, term and liquidity limits | Reproducible binding constraint |
 | Close | Can the financier reach and control the assets? | Security, perfection, assignments, notices, insurance, completion and accounts | Enforceable closing set and cash path |
 | Service | Is risk changing while remedies remain? | Draw control, cost-to-complete, borrowing base, covenants and reconciliation | Current exception and decision record |
 | Recover | Which response maximizes net present recovery? | Triage, stabilization, claims, protective-advance tests and reserved matters | Governed remedy and recovery accounting |
@@ -54,7 +56,7 @@ Repayment and protection sources have different conditions:
 
 ## How Policy Limits Work
 
-MediaHedge's sizing framework combines several controls rather than relying on one headline ratio:
+A loan-sizing framework combines collateral value, approved limits and production cash needs:
 
 - asset-specific advance rules reflect the reliability and volatility of each eligible repayment source;
 - concentration tests identify uncertain or correlated exposure and distinguish review triggers from mandatory limits;

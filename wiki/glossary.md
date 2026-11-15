@@ -27,7 +27,7 @@ Use this glossary to translate recurring film-finance, credit and servicing term
 
 **CAMA** - Collection account management agreement. It appoints an independent collection account manager and governs receipt allocation and distribution mechanics; it is distinct from deposit-account control. See [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]].
 
-**Cash multiple / MOIC** - Total cash receipts divided by invested capital. It measures magnitude but ignores timing. See [[wiki/concepts/financier-return-economics|Return Economics]].
+**Cash multiple** - Total cash receipts divided by invested capital. It measures magnitude but ignores timing. See [[wiki/concepts/financier-return-economics|Return Economics]].
 
 **Collateral eligibility** - The threshold determination that an asset is owned, documented, enforceable, non-duplicative and capable of supporting exposure under policy.
 
@@ -65,17 +65,17 @@ Use this glossary to translate recurring film-finance, credit and servicing term
 
 **Lockbox** - A designated payment-collection arrangement used to route receipts to an agreed account. Its label alone does not establish legal account control or payment priority. See [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]].
 
-**LTV** - Loan-to-value. In this corpus, aggregate exposure relative to eligible collateral value, subject to definition and policy limits.
+**LTV** - Loan-to-value: loan exposure divided by the stated collateral valuation base. Identify whether that base uses face amounts or discounted values, and use the same basis when calculating reciprocal collateral coverage.
 
 ## M-R
 
 **MG** - Minimum guarantee, commonly a contracted distributor commitment that may become payable after conforming delivery and satisfaction of other conditions. See [[wiki/concepts/pre-sales-collateral|Pre-Sales Collateral]].
 
-**MH Score** - Classifies the final approved blended interest rate under approved price bands, after the underwriting decision. It does not set the rate and is distinct from the Risk Score and Obligor Score.
+**MH Score** - MediaHedge’s rate classification. It classifies the final approved blended interest rate under approved price bands, after the underwriting decision. It does not set the rate and is distinct from the Risk Score and Obligor Score.
 
-**MH Risk Score / Risk Score** - Summarizes the broader transaction risk assessment to inform human underwriting judgment. It does not mechanically set pricing, collateral eligibility, advance rates or approval.
+**MH Risk Score / Risk Score** - MediaHedge’s transaction-risk assessment. It summarizes the broader transaction risk assessment to inform human underwriting judgment. It does not mechanically set pricing, collateral eligibility, advance rates or approval.
 
-**Obligor Score** - Territory- and legal-entity-specific counterparty guidance used as one input to deal review. A counterparty score alone does not determine approval, interest or MH Score.
+**Obligor Score** - In MediaHedge’s framework, territory- and legal-entity-specific counterparty guidance used as one input to deal review. A counterparty score alone does not determine approval, interest or MH Score.
 
 **MGU** - Managing general underwriter. A business with delegated underwriting or related authority for an insurer. The MGU or service brand may not be the legal entity that issues the policy, guaranty or bond. See [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]].
 

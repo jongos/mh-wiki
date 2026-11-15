@@ -25,10 +25,10 @@ The financier's realized return depends on actual dated cash flows, not the stat
 ## Components
 
 1. **Contractual interest:** first establish whether the agreed rate is fixed for the loan or annual. A fixed charge does not accrue again merely because another year passes; apply the actual balance, duration, day-count and payment terms.
-2. **Upfront economics:** OID, commitment, closing and structuring fees attributed consistently to net invested capital.
+2. **Upfront economics:** original issue discount (OID), commitment, closing and structuring fees attributed consistently to net invested capital.
 3. **Duration and timing:** draw dates, amortization, prepayment and maturity determine capital velocity.
 4. **Stress economics:** extension fees, default interest, nonaccrual, loss and recovery timing change nominal and realized results.
-5. **Net portfolio realization:** expected loss, servicing, legal expense, idle cash, leverage and funding cost determine investor-level return.
+5. **Net portfolio return:** realized losses, servicing and legal expenses, idle cash, leverage and funding costs affect the investor’s result. Use expected losses in forecasts; reconcile realized returns to actual cash.
 
 ## Core Metrics
 
@@ -45,7 +45,7 @@ Build the dated ledger from the financier's perspective: advances, purchase amou
 
 ## Governance of Economics
 
-Use forward-flow documents to allocate purchase price, coupon, fees, servicing compensation, extension/default economics, expense reimbursement, prepayment and recoveries. Report gross borrower yield, MediaHedge compensation, financier gross return and financier net return separately.
+Use forward-flow documents to allocate purchase price, coupon, fees, servicing compensation, extension/default economics, expense reimbursement, prepayment and recoveries. Report gross borrower yield, originator and servicer compensation, financier gross return and financier net return separately.
 
 ## Gap-Pricing Context
 
