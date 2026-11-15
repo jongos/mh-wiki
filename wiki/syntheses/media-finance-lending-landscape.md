@@ -109,6 +109,8 @@ Use this structural comparison alongside the [2026 Insights companion](https://f
 
 Research links checked: 2026-10-07.
 
+For equity and strategic investors, grant programs, fiscal sponsors, public funding and IP licensing partners such as Spaceport, use the [[wiki/syntheses/finance-and-ip-directory|Film Finance and IP Partner Directory]].
+
 ## Continue Exploring
 
 [[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier's Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/concepts/protection-stack|Protection Stack]] · [[wiki/syntheses/site-navigator|Site Navigator]]

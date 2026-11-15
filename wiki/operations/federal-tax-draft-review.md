@@ -149,3 +149,9 @@ Reviewed all 74 existing wiki pages: 39 edited and 35 reviewed unchanged. Added 
 Validation and live deployment results are recorded in the release log after the respective checks complete.
 
 Official Code comparison: normalized full-page text for Sections 168 and 181 at the Public Law 119-121 URLs matches the preserved snapshots except the currency banners (119-120/October 7 to 119-121/October 9). No operative-text change was found. The live observations add no independent raw source count.
+
+## Scoped Expansion — November 15, 2026
+
+Added IRS Publication 925 loss-utilization sequencing and Publication 946 special-depreciation recapture context. Added a hypothetical credit/basis-reduction comparison, with the proposed credit explicitly excluded from committed funding. GovInfo bill-status files show September 24 committee referrals as the latest actions and one introduced text each. New limited source records identify those observations separately from the preserved introduced bill texts. Neither ingestion nor page-update date is a legal effective date.
+
+Qualitative consistency was checked against the live Brain's canonical Underwriting/MH Underwriting.md (owner-confirmed, September 25, 2026). No private text, quantitative policy or source document was imported; this check does not increase raw source counts.

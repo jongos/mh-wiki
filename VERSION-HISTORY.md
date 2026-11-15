@@ -99,3 +99,7 @@ Review the restored file and commit it as a new recovery change. Do not use `git
 ## Educational Resource Editorial Review
 
 `wiki-v1.27-professional-editorial` records the November 15, 2026 professional content pass: neutral reader framing, explicit company-policy attribution, corrected credit distinctions and less promotional navigation. The release preserves research originals, worked examples and source-specific verification dates.
+
+## Producer Finance Resource Expansion
+
+`wiki-v1.28-finance-resource-expansion` adds the producer route, equity and distribution guides, rights and coproduction guidance, grants and IP directory, extended federal tax explanations and the downloadable worked model. Source review records preserve the scope of each primary-source check.

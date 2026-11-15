@@ -1,0 +1,74 @@
+---
+title: "Film Finance and IP Partner Directory"
+type: synthesis
+status: current
+updated: 2026-11-15
+as_of: 2026-11-15
+source_count: 13
+publish: true
+description: "Find equity and strategic investors, grant programs, public funding, investor-access platforms and partners for licensing film IP beyond the screen."
+tags:
+  - mediahedge
+  - film-finance
+---
+
+# Film Finance and IP Partner Directory
+
+Choose a partner by the capital or commercial role the project needs. This directory separates direct investment, access to investors, grants, public support and IP licensing. Official pages reviewed November 15, 2026; check the linked program’s current intake before preparing an application.
+
+## Equity, Strategic Capital and Investor Access
+
+| Organization | Role and Fit | Route and Preparation |
+| --- | --- | --- |
+| [IPR.VC](https://ipr.vc/) | Media investment manager with film/TV strategies and studio partnerships | Use its official contact route for mandate fit. Distinguish a studio/slate partnership from an open single-film application; prepare rights, team, finance plan and commercial strategy. |
+| [FilmNation Entertainment](https://www.filmnation.com/) | Integrated producer, financier and distributor across film and other formats | Identify whether the conversation concerns cofinancing, production or sales. Present the creative package, available rights and intended capital structure through its appropriate business contact. |
+| [Slated](https://get.slated.com/) | Packaging, analysis and investor-matching platform | Its filmmaker route supports project listings and connections. Evaluate service terms separately from any investment offer; an introduction does not commit investor capital. |
+| [Sundance Catalyst](https://www.sundance.org/initiatives/catalyst/) | Curated access to independent investors and philanthropic funders | Follow the pre-application and invitation process. Prepare budget, finance plan and investor terms; filmmakers and funders negotiate directly. |
+
+For debt providers, collection-account specialists, insurers and completion guarantors, use the [[wiki/syntheses/media-finance-lending-landscape|Lending and Protection Directory]]. Read [[wiki/concepts/equity-financing-and-recoupment|Equity Financing]] before comparing ownership, preferred returns and profit shares.
+
+## Grants, Documentary Support and Fiscal Sponsorship
+
+| Organization or Program | Support and Fit | Entry Point and Key Condition |
+| --- | --- | --- |
+| [Sundance Documentary Fund](https://www.sundance.org/programs/documentary-film/) | Nonrecoupable support for independent cinematic documentaries | Review the current fund round, stage and work-sample requirements. Its guidelines distinguish development through post-production from proposals solely for story research. |
+| [SFFILM Rainin Grant](https://sffilm.org/rainin-grant/) | Narrative features addressing social justice, with a Bay Area benefit | Select the screenwriting, development or post-production route. The 2026 application round is closed; follow the program page for the next round. |
+| [ITVS](https://itvs.org/get-funded/) | Documentary development and coproduction support for public media | Match the project to the listed program and rights/delivery obligations. The reviewed page marks its displayed application rounds closed; treat it as a program route, not an immediate cash source. |
+| [Film Independent Fiscal Sponsorship](https://www.filmindependent.org/programs/fiscal-sponsorship/) | Nonprofit administration enabling eligible charitable fundraising | Apply for sponsorship and review mission fit, oversight and fees. The reviewed page pauses new applications until January 11, 2027. Sponsorship and a grant award are separate steps. |
+
+Use [[wiki/concepts/grants-and-soft-money|Grants and Soft Money]] to classify the contribution and its cash timing. A public-media coproduction can carry rights obligations; do not automatically label it an unrestricted grant.
+
+## Public Funding and Incentive Routes
+
+| Organization or Route | Support and Fit | What to Verify |
+| --- | --- | --- |
+| [BFI National Lottery Impact Feature Funding](https://www.bfi.org.uk/get-funding-support/create-films-tv-or-new-formats-storytelling/discovery-impact-feature-funding/applying-bfi-national-lottery-impact-feature-funding) | Selective support for eligible UK feature productions, including qualifying coproductions | UK applicant and rights requirements, director/budget category, application lead time, third-party finance and contractual recoupment. Review its separate Discovery route for the relevant debut/budget category. |
+| [Telefilm Canada Production Program](https://telefilm.ca/en/financing/production) | Production and post-production support for eligible Canadian feature projects | Applicant eligibility, language/stream, application window, finance plan, budget and program agreement. Official templates are available on the program page. |
+| [[wiki/syntheses/us-film-tax-incentives\|U.S. State Incentive Programs]] | State-specific credits, rebates and other production support | Use each state’s official application authority, eligible-spend rules, award timing and cash route. |
+
+Public investment and incentive proceeds have different recoupment and payment rules. Compare [[wiki/concepts/international-coproduction|Coproduction Structures]] and [[wiki/concepts/incentive-monetization|Incentive Monetization]] before combining them.
+
+## IP Licensing and Adjacent Commercial Partners
+
+| Partner | Publicly Described Capability | Producer’s Next Step |
+| --- | --- | --- |
+| [Spaceport](https://www.spaceport.xyz/solutions-ip) | IP-owner/developer connections, playable assets and interactive activations; [print-on-demand partnerships](https://www.spaceport.xyz/pod) extend licensing to merchandise | Prepare available characters/assets, permitted categories, approvals and royalty expectations. Establish whether the proposal provides a minimum payment, royalties or a paid marketing activation. |
+| [Negosh](https://negosh.com/) | Marketplace connecting IP owners and product creators across categories and territories | Identify licensable rights, proposed products, manufacturing/distribution capability, fees and royalty reporting. |
+
+Read [[wiki/concepts/ip-monetization-beyond-screen|Monetizing IP Beyond the Screen]] to connect these opportunities to rights, net proceeds and timing.
+
+## Analysis and Inference
+
+Shortlist providers by format, stage, geography, rights and funding type. Prepare the [[wiki/syntheses/producer-financing-route|Producer Financing Package]] before outreach. Record the exact legal counterparty and its written terms; a directory listing establishes the role described on the linked page, not a transaction commitment.
+
+Links checked: 2026-11-15.
+
+## Continue Exploring
+
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/producer-financing-route|Producer’s Guide]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/syntheses/site-navigator|Site Navigator]]
+
+<!--
+## Source Basis
+
+[[wiki/sources/ipr-vc-review]] · [[wiki/sources/filmnation-review]] · [[wiki/sources/slated-review]] · [[wiki/sources/sundance-catalyst-review]] · [[wiki/sources/sundance-documentary-review]] · [[wiki/sources/sffilm-rainin-review]] · [[wiki/sources/itvs-review]] · [[wiki/sources/film-independent-sponsorship-review]] · [[wiki/sources/bfi-impact-review]] · [[wiki/sources/telefilm-production-review]] · [[wiki/sources/spaceport-ip-review]] · [[wiki/sources/spaceport-pod-review]] · [[wiki/sources/negosh-review]]
+-->

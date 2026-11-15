@@ -123,7 +123,21 @@ Use this glossary to translate recurring film-finance, credit and servicing term
 
 New York's [UCC deposit-account control provision](https://www.nysenate.gov/legislation/laws/UCC/9-104) illustrates the distinction between legally defined control and collection administration. Its [subordination provision](https://www.nysenate.gov/legislation/laws/UCC/9-339) recognizes agreed subordination by a party entitled to priority. Louisiana's [motion-picture production tax-credit statute](https://www.legis.la.gov/legis/Law.aspx?d=102363) illustrates program-specific recapture. These are jurisdiction-specific examples, not conclusions about another state's law or any financing. Links checked: 2026-09-30.
 
-## Usage Note
+## Equity, Distribution and IP Terms
+
+**Capital recoupment** — Return of invested capital under the agreed waterfall. It precedes profit only where the contract says so. See [[wiki/concepts/equity-financing-and-recoupment|Equity Recoupment]].
+
+**Preferred return** — A negotiated priority return, calculated as a flat premium or an annual accrual. Specify its base and payment order; priority does not guarantee payment.
+
+**Pari passu** — Sharing the same payment tier proportionately on the agreed basis.
+
+**P&A** — Prints and advertising: release and marketing expenses whose recovery depends on the distribution agreement. See [[wiki/concepts/distribution-economics|Distribution Economics]].
+
+**Cross-collateralization** — Applying receipts from one right, territory or title to another’s unrecouped costs where the agreement permits it.
+
+**Fiscal sponsorship** — A nonprofit arrangement administering qualifying charitable support for a project. Sponsorship is separate from a funding award. See [[wiki/concepts/grants-and-soft-money|Grants and Soft Money]].
+
+**Royalty** — Contractual payment for exploitation of licensed rights, calculated on a defined sales or receipts base. See [[wiki/concepts/ip-monetization-beyond-screen|IP Monetization]].
 
 
 ## Continue Exploring

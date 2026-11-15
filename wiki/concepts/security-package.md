@@ -45,6 +45,8 @@ For current public orientation, see the Uniform Law Commission's [Uniform Commer
 
 The security package establishes the legal path; [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]] establishes the operational path of proceeds. [[wiki/concepts/forward-flow-governance|Forward-Flow Governance]] determines who may exercise the rights, and [[wiki/concepts/defaults-workouts-and-recoveries|Workout Governance]] determines how they are used under stress.
 
+The [[wiki/concepts/chain-of-title-and-rights|Rights Record]] establishes what the production owns or can license before a security interest attaches to those assets.
+
 ## Continue Exploring
 
 [[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/syntheses/site-navigator|Site Navigator]]

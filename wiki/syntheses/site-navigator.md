@@ -32,6 +32,19 @@ Explore the Media Finance Guide as a connected system. The interactive graph sho
 >
 > **Management and realized outcomes:** [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]] · [[wiki/concepts/defaults-workouts-and-recoveries|Defaults, Workouts and Recoveries]] · [[wiki/concepts/forward-flow-governance|Financing-Partner Governance]] · [[wiki/concepts/portfolio-construction|Portfolio Construction]] · [[wiki/concepts/financier-return-economics|Return Economics]]
 
+## Producer Finance, Equity and IP
+
+- [[wiki/concepts/equity-financing-and-recoupment|Equity Financing and Recoupment]]
+- [[wiki/concepts/distribution-economics|Distribution Economics]]
+- [[wiki/concepts/chain-of-title-and-rights|Chain of Title and Rights Clearance]]
+- [[wiki/syntheses/producer-financing-route|A Producer’s Guide to Financing]]
+- [[wiki/concepts/grants-and-soft-money|Grants, Fiscal Sponsorship and Soft Money]]
+- [[wiki/concepts/international-coproduction|International Coproduction]]
+- [[wiki/concepts/television-and-streaming-finance|Television and Streaming Finance]]
+- [[wiki/concepts/ip-monetization-beyond-screen|Monetizing IP Beyond the Screen]]
+- [[wiki/syntheses/film-finance-worked-example|Film Finance Worked Example and Model]]
+- [[wiki/syntheses/finance-and-ip-directory|Film Finance and IP Partner Directory]]
+
 ## Federal Film and Television Tax Rules
 
 - [[wiki/concepts/section-168k-film-tv-deductions|Section 168(k): Film and Television Deductions]]

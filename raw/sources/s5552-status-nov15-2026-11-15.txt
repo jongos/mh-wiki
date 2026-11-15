@@ -1,0 +1,12 @@
+S. 5552 — November 15 Status Review
+Publisher URL: https://www.govinfo.gov/bulkdata/BILLSTATUS/119/s/BILLSTATUS-119s5552.xml
+Scoped review: 2026-11-15
+Record kind: limited external-source review, original paraphrase.
+
+Reviewed scope and findings:
+Official GovInfo bill-status XML updated November 13, 2026. Latest legislative action: September 24, 2026 read twice and referred to Senate Finance. One introduced text version appears.
+
+Excluded claims and scope:
+An introduced proposal is not enacted law; no current credit entitlement or committed financing.
+
+This record is not a complete publisher snapshot, independent corroboration, or a document derived from the wiki. It preserves the reviewed primary-source scope.

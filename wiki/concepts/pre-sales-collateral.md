@@ -62,6 +62,8 @@ An offer letter, unsigned draft or future negotiation is not an executed receiva
 
 Screen Australia's [Narrative Content Production program](https://www.screenaustralia.gov.au/fund/narrative-content-production/) assesses marketplace and finance alongside story, team, audience and budget, and directs applicants to its current guidelines for project-specific requirements. This illustrates layered screen-finance review. Links checked: 2026-09-30.
 
+Use [[wiki/concepts/distribution-economics|Distribution Economics]] to reconcile minimum guarantees, distribution fees, expenses and overages without counting the same advance twice.
+
 ## Continue Exploring
 
 [[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier's Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]] · [[wiki/concepts/gap-collateral|Gap Collateral]] · [[wiki/syntheses/site-navigator|Site Navigator]]

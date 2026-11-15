@@ -3,8 +3,8 @@ title: Proposed Federal Film and Television Credit
 type: concept
 status: current
 updated: 2026-11-15
-as_of: 2026-11-04
-source_count: 2
+as_of: 2026-11-15
+source_count: 4
 publish: true
 description: Read the introduced federal film and television credit proposal, its eligibility tests, rates, transfer provisions and limits. It is not enacted law.
 tags:
@@ -16,11 +16,11 @@ tags:
 
 H.R. 10582 and S. 5552 would create an American film and television production credit under a new §45BB. Both bills remain introduced. Existing [[wiki/concepts/section-168k-film-tv-deductions|Section 168(k) Deductions]] and state programs in the [[wiki/syntheses/us-film-tax-incentives|U.S. Incentive Guide]] have separate rules.
 
-Congress.gov review: November 4, 2026. Both bills were introduced. Exclude the proposed credit from committed production financing.
+Official bill-status review: November 15, 2026. Both bills remain at their initial committee referrals. Exclude the proposed credit from committed production financing.
 
 ## Legislative Status and Compared Texts
 
-| Bill | Version Reviewed | Latest Action Observed on November 4, 2026 |
+| Bill | Version Reviewed | Latest Action Observed on November 15, 2026 |
 | --- | --- | --- |
 | [H.R. 10582](https://www.congress.gov/bill/119th-congress/house-bill/10582) | Introduced in House, September 24, 2026 | Referred to House Ways and Means, September 24, 2026; status Introduced. |
 | [S. 5552](https://www.congress.gov/bill/119th-congress/senate-bill/5552) | Introduced in Senate, September 24, 2026 | Read twice and referred to Senate Finance, September 24, 2026; status Introduced. |
@@ -72,11 +72,38 @@ Proposed §45BB(g)(4) reduces production basis by the credit determined. A combi
 
 Assume enactment exactly as introduced, full eligibility, $2 million of qualified compensation and the ordinary 20% rate: the proposed face credit would be $400,000. If one valid five-point uplift applied it would be $500,000; two would reach $600,000. These are hypothetical credit face amounts calculated on compensation, not the total budget. They establish no current credit, sale proceeds or available loan; no sale discount or advance rate is assumed.
 
+## Build a Proposal Scenario
+
+Keep a dedicated compensation schedule beside the ordinary production budget. Record the worker or contractor, service performed, U.S. location, capitalizable amount, payment evidence and any excluded participation or residual. Test the production’s eligibility separately from the amount entering the compensation base.
+
+| Decision | Evidence the Scenario Needs |
+| --- | --- |
+| Production qualifies | Feature/pilot/season classification, commercial purpose, total cost and completion record |
+| Domestic test is met | Photography-day or animation records for the applicable route |
+| Compensation qualifies | U.S. service records and traceable contractor/subcontractor support |
+| Uplift applies | Exact location, ownership or taxpayer-level production evidence required by the chosen provision |
+| Benefit can be realized | Tax owner, general-business-credit use or a valid transfer route after enactment |
+| Production receives cash | Executed contribution or financing, net proceeds and payment date |
+
+## Compare a Credit with a Deduction
+
+Assume a future law exactly matches the introduced ordinary route, the taxpayer qualifies, total pre-credit production basis is $5 million, qualified compensation is $2 million and the rate is 20%. The credit would be $400,000. Applying the proposal’s basis reduction leaves $4.6 million before any other adjustments. If that remaining basis separately qualifies for a 100% §168(k) deduction and is immediately usable at an assumed 21% rate, the simplified deduction benefit is $966,000. The combined face credit and tax reduction is $1,366,000, before transfer costs, other tax effects or timing differences.
+
+Adding $400,000 to a deduction calculated on the unchanged $5 million would overstate this simplified combination by $84,000. The [[wiki/concepts/section-168k-film-tv-deductions|Section 168(k) Guide]] explains ownership, release timing and utilization separately. The downloadable production model includes neither proposed credit proceeds nor assumed investor tax savings.
+
+## Monitor the Legislative Gates
+
+Follow the linked bill records for committee action, amended text, passage by both chambers and enactment. After enactment, check the actual effective date, Treasury rules, elections and administrative process before updating funding assumptions. An introduced effective date and additional cosponsors do not create a legal entitlement.
+
+The November 15 review of official GovInfo bill-status files shows one introduced text version for each bill and the September 24 committee referrals as their latest legislative actions. [House status data](https://www.govinfo.gov/bulkdata/BILLSTATUS/119/hr/BILLSTATUS-119hr10582.xml) and [Senate status data](https://www.govinfo.gov/bulkdata/BILLSTATUS/119/s/BILLSTATUS-119s5552.xml) provide the source records.
+
 ## Analysis and Inference
 
 Keep the proposal in a labeled upside scenario. Record zero committed proceeds until an enacted entitlement and transaction-specific evidence support them. Review completion, ownership, compensation records, applicable elections, transfer execution, basis effects and cash timing. Use [[wiki/concepts/tax-credit-collateral|Tax-Credit Collateral]], [[wiki/concepts/incentive-monetization|Incentive Monetization]] and [[wiki/concepts/full-financing|Full Financing]] to distinguish legal benefit, collectible cash and committed funding.
 
-Links checked: 2026-11-04.
+Links checked: 2026-11-15.
+
+The [[wiki/syntheses/film-finance-worked-example|Worked Example and Downloadable Model]] separates committed production funding from tax scenarios.
 
 ## Continue Exploring
 
@@ -85,5 +112,5 @@ Links checked: 2026-11-04.
 <!--
 ## Source Basis
 
-[[wiki/sources/hr10582-introduced|House Introduced Text]] and [[wiki/sources/s5552-introduced|Senate Introduced Text]] are the two archived sources. Live Congress.gov status observations and exact comparison notes are recorded in [[wiki/operations/federal-tax-draft-review|Federal Draft Review Record]]. Neither bill establishes that the proposed benefit will become law.
+[[wiki/sources/hr10582-introduced|House Introduced Text]] and [[wiki/sources/s5552-introduced|Senate Introduced Text]] are the two archived bill texts. Current status: [[wiki/sources/hr10582-status-nov15]] and [[wiki/sources/s5552-status-nov15]]. Live Congress.gov status observations and exact comparison notes are recorded in [[wiki/operations/federal-tax-draft-review|Federal Draft Review Record]]. Neither bill establishes that the proposed benefit will become law.
 -->

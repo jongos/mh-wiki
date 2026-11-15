@@ -60,6 +60,8 @@ Obligors may retain setoff, withholding or deduction rights. Manager exculpation
 
 Cash control puts into practice the [[wiki/concepts/security-package|Security Package]], supplies evidence to [[wiki/concepts/monitoring-and-servicing|Servicing]], and preserves recoveries during [[wiki/concepts/defaults-workouts-and-recoveries|Workout]]. It also provides the dated ledger needed for [[wiki/concepts/financier-return-economics|Return Economics]].
 
+The [[wiki/syntheses/film-finance-worked-example|Worked Example]] carries collections through senior principal, capital return, a preference and profit participation. Read [[wiki/concepts/equity-financing-and-recoupment|Equity Recoupment]] for the negotiated terms behind those tiers.
+
 ## Continue Exploring
 
 [[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/syntheses/site-navigator|Site Navigator]]

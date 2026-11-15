@@ -173,3 +173,40 @@ The two Follows sources overlap; distinct record counts are not independent-stud
 ## Media Finance Guide Editorial Release — November 15, 2026
 
 Reviewed all 39 retained public notes with mojo-language. Removed repetitive policy-review and evidence-warning callouts, tightened passive instructions and shortened repeated explanations. Retired the public changelog; Git retains its history. [[wiki/operations/source-review-notes|Source Review Notes]] now holds website-excluded editorial context. The public home and site title are Media Finance Guide; existing home URLs remain stable. Hypothetical amounts, legislative status, payment conditions and empirical measurements retain their factual meaning. Raw sources remain unchanged.
+
+## Producer Finance and IP Expansion — November 15, 2026
+
+- [[wiki/concepts/equity-financing-and-recoupment|Equity Financing and Recoupment]]
+- [[wiki/concepts/distribution-economics|Distribution Economics]]
+- [[wiki/concepts/chain-of-title-and-rights|Chain of Title and Rights Clearance]]
+- [[wiki/syntheses/producer-financing-route|A Producer’s Guide to Financing]]
+- [[wiki/concepts/grants-and-soft-money|Grants, Fiscal Sponsorship and Soft Money]]
+- [[wiki/concepts/international-coproduction|International Coproduction]]
+- [[wiki/concepts/television-and-streaming-finance|Television and Streaming Finance]]
+- [[wiki/concepts/ip-monetization-beyond-screen|Monetizing IP Beyond the Screen]]
+- [[wiki/syntheses/film-finance-worked-example|Film Finance Worked Example and Model]]
+- [[wiki/syntheses/finance-and-ip-directory|Film Finance and IP Partner Directory]]
+
+Twenty-one scoped primary-source reviews; these are reviewer paraphrases, not full-document archives or independent corroborating studies.
+
+- [[wiki/sources/wipo-finance-review|WIPO Rights, Camera, Action — Financing Review]]
+- [[wiki/sources/wipo-rights-review|WIPO Rights Clearance — Development to Distribution]]
+- [[wiki/sources/sundance-catalyst-review|Sundance Catalyst — Program Review]]
+- [[wiki/sources/sec-offerings-review|SEC Offering Pathways — Review]]
+- [[wiki/sources/film-independent-sponsorship-review|Film Independent Fiscal Sponsorship — Review]]
+- [[wiki/sources/sundance-documentary-review|Sundance Documentary Fund — Review]]
+- [[wiki/sources/bfi-locked-box-review|BFI Locked Box — Review]]
+- [[wiki/sources/telefilm-production-review|Telefilm Production Program — Review]]
+- [[wiki/sources/ipr-vc-review|IPR.VC — Public Mandate Review]]
+- [[wiki/sources/filmnation-review|FilmNation Entertainment — Capability Review]]
+- [[wiki/sources/slated-review|Slated — Platform Review]]
+- [[wiki/sources/sffilm-rainin-review|SFFILM Rainin Grant — Review]]
+- [[wiki/sources/itvs-review|ITVS Funding Programs — Review]]
+- [[wiki/sources/bfi-impact-review|BFI Impact Feature Funding — Review]]
+- [[wiki/sources/spaceport-ip-review|Spaceport IP-Holder Services — Review]]
+- [[wiki/sources/spaceport-pod-review|Spaceport Print-on-Demand — Review]]
+- [[wiki/sources/negosh-review|Negosh Licensing Marketplace — Review]]
+- [[wiki/sources/irs-p925-review|IRS Publication 925 — Loss-Limitation Review]]
+- [[wiki/sources/irs-p946-review|IRS Publication 946 — Special Depreciation Review]]
+- [[wiki/sources/hr10582-status-nov15|H.R. 10582 — November 15 Status Review]]
+- [[wiki/sources/s5552-status-nov15|S. 5552 — November 15 Status Review]]

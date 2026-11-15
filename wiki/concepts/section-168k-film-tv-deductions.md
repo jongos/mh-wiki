@@ -3,8 +3,8 @@ title: "Section 168(k): Film and Television Deductions"
 type: concept
 status: current
 updated: 2026-11-15
-as_of: 2026-11-04
-source_count: 3
+as_of: 2026-11-15
+source_count: 5
 publish: true
 seo_title: Section 168(k) Film and TV Deductions | Media Finance Guide
 description: Understand Section 168(k) film and television deductions, eligibility, release timing, Section 181 differences and why a deduction is not production cash.
@@ -17,7 +17,7 @@ tags:
 
 Section 168(k) can accelerate the deduction of a qualified production’s costs. The benefit depends on the taxpayer’s ability to use the deduction; it provides neither a budget reimbursement nor a transferable incentive certificate. The [[wiki/concepts/proposed-federal-film-tv-credit|Proposed Federal Film and Television Credit]] is a separate legislative proposal.
 
-Official-source review: November 4, 2026; Code through Public Law 119-121 and IRS Notice 2026-11. Apply the law and elections for the taxpayer’s filing year.
+Official-source review: November 15, 2026; Code through Public Law 119-121 and IRS Notice 2026-11. Apply the law and elections for the taxpayer’s filing year.
 
 ## What the Enacted Rule Does
 
@@ -58,6 +58,38 @@ Section 181(b) prevents a second depreciation/amortization deduction on basis co
 
 Model the deduction in the taxpayer’s tax forecast. Model collectible incentives and contracted payments separately, with evidence of their amounts and timing. See [[wiki/concepts/tax-credit-collateral|Tax-Credit Collateral]] and [[wiki/concepts/incentive-monetization|Incentive Monetization]].
 
+## From Production Basis to Usable Tax Benefit
+
+Section 168(k) is a tax deduction mechanism, not an application-based film grant. The taxpayer establishes eligibility and reports the deduction through its tax return. The production’s financing plan separately records any cash that taxpayer commits to invest.
+
+| Step | Record to Reconcile |
+| --- | --- |
+| Identify the tax owner | Entity ownership, production agreements and entitlement to the depreciable asset |
+| Build adjusted basis | Capitalized production costs, prior deductions, reimbursements and applicable incentive adjustments |
+| Test production eligibility | Domestic compensation calculation, episode count and excluded-production rules |
+| Establish the deduction year | Principal-photography commencement, acquisition rules and initial release/broadcast evidence |
+| Apply elections | Applicable percentage, election out and any transition election for the taxpayer’s year |
+| Test actual utilization | Entity allocations, owner basis, at-risk amounts, passive losses and other applicable loss limits |
+| Track remaining basis | Deduction taken, later income, disposition proceeds and recapture analysis |
+
+The [IRS Passive Activity and At-Risk guide](https://www.irs.gov/publications/p925) explains the ordering of relevant loss limitations: basis limitations, at-risk limits and passive-activity limits can restrict current use, with further excess-business-loss rules for affected noncorporate taxpayers. An investor’s tax rate alone does not establish an immediately usable benefit. Do not assume that a passive film loss offsets salary income.
+
+## Compare Three Taxpayer Outcomes
+
+For the same hypothetical $1 million eligible deduction, immediate use at an assumed 21% marginal rate produces a simplified $210,000 current tax reduction; use at an assumed 37% rate produces $370,000. If the deduction creates a loss that the taxpayer cannot currently use, current cash tax reduction can be zero. Future use depends on the applicable carryforward and limitation rules. These calculations do not change the $1 million deduction or create a transferable credit.
+
+Accelerated cost recovery also reduces remaining tax basis. Later taxable receipts and a sale of the asset must be modeled separately. [IRS Publication 946](https://www.irs.gov/publications/p946), chapter 3, explains that gain on disposition can trigger ordinary-income recapture of the special depreciation allowance. Do not present the initial deduction as permanent tax-free income.
+
+## Keep the Federal Mechanisms Separate
+
+| Mechanism | Benefit | Production Timing | Financing Treatment |
+| --- | --- | --- | --- |
+| Section 168(k) | Deduction of eligible adjusted basis | Initial release or broadcast, with acquisition and eligibility rules | Taxpayer benefit; count only a separately committed cash contribution |
+| Section 181 | Separate elective expensing provision with its own limits | Apply its commencement cutoff and election rules | Maintain a cost schedule preventing duplicate deductions |
+| Proposed Section 45BB | Proposed credit on qualified compensation | Introduced text uses completion and a future commencement condition | Zero committed credit proceeds under the current proposal |
+
+The [[wiki/concepts/proposed-federal-film-tv-credit|Federal Credit Proposal]] uses a different domestic-activity test and includes a basis-reduction rule.
+
 ## Analysis and Inference
 
 For [[wiki/concepts/full-financing|Full Financing]], count enforceable cash contributions committed to the production, not the face amount of a deduction. Identify the taxpayer receiving the benefit, when it can be used and whether any resulting cash contribution is committed. Verify assignability before treating a tax benefit as collateral.
@@ -68,7 +100,7 @@ State incentives and federal deductions have different qualification tests and t
 
 Document tax ownership, episode count, eligible-cost/basis rollforward, domestic compensation test, principal-photography start, initial release/broadcast, prior elections, other incentives and expected deduction utilization. Have tax counsel/accountants reconcile those facts to current authority and the actual taxpayer’s return position.
 
-Links checked: 2026-11-04.
+Links checked: 2026-11-15.
 
 ## Continue Exploring
 
@@ -77,5 +109,5 @@ Links checked: 2026-11-04.
 <!--
 ## Source Basis
 
-[[wiki/sources/irc-section-168-official|Official Section 168 Snapshot]]; [[wiki/sources/irc-section-181-official|Official Section 181 Snapshot]]; [[wiki/sources/irs-notice-2026-11|IRS Notice 2026-11]]. The three official sources are archived for traceability. See [[wiki/operations/federal-tax-draft-review|Federal Draft Review Record]] for scope and open checks.
+[[wiki/sources/irc-section-168-official|Official Section 168 Snapshot]]; [[wiki/sources/irc-section-181-official|Official Section 181 Snapshot]]; [[wiki/sources/irs-notice-2026-11|IRS Notice 2026-11]]. The three original official sources are archived for traceability. Additional scoped reviews: [[wiki/sources/irs-p925-review]] and [[wiki/sources/irs-p946-review]]. See [[wiki/operations/federal-tax-draft-review|Federal Draft Review Record]] for scope and open checks.
 -->

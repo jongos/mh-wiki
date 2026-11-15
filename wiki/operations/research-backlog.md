@@ -102,3 +102,9 @@ The publication authorization supersedes the draft-only hold above. Follow chang
 - Named intermediary failures and legal recovery results need case-specific primary records before becoming case studies. This release adds generic continuity diligence only.
 - Filmarket’s historical Spanish tax examples and coproduction benefits require separate current official authority if pursued; excluded here. See [[wiki/sources/filmarket-finance-plan]].
 - Screen Australia’s previously linked finance-plan guide returned HTTP 403 on this review. Its earlier review date remains unchanged; no new claim relies on a fresh verification of that page.
+
+## Producer Finance Expansion — November 15, 2026
+
+Completed: original worked transaction and formula-driven Excel model; equity/recoupment, distribution deductions, producer route, chain of title, grants/fiscal sponsorship, international coproduction, television/streaming structures and ancillary IP licensing. Twenty-one scoped primary-source reviews support the new guidance and directory. Existing sources supply the hypothetical model's conceptual basis, not its invented amounts.
+
+Follow-up research: jurisdiction-specific coproduction approvals; detailed residual and participation schedules; dated equity cash-flow/IRR examples; fund/program intake refresh at the next directory update. Verify current program terms before adding quantitative eligibility claims. Monitor H.R. 10582 and S. 5552 for amendments and enactment; neither creates committed credit proceeds at the reviewed status.

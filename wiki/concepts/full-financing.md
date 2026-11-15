@@ -118,6 +118,8 @@ Research links checked: 2026-10-07.
 
 Compare [[wiki/concepts/section-168k-film-tv-deductions|Section 168(k) Deductions]] with the [[wiki/concepts/proposed-federal-film-tv-credit|Proposed Federal Credit]] for their separate eligibility, timing and financing implications.
 
+Continue through collections and investor distributions in the [[wiki/syntheses/film-finance-worked-example|Worked Example and Downloadable Model]]. The [[wiki/syntheses/producer-financing-route|Producer’s Guide]] connects the budget and cash schedule to rights, capital raising and closing; [[wiki/concepts/grants-and-soft-money|Grants and Soft Money]] explains noncommercial contributions.
+
 ## Continue Exploring
 
 [[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/syntheses/site-navigator|Site Navigator]]

@@ -31,6 +31,21 @@ For a wider view, compare the [[wiki/syntheses/media-finance-lending-landscape|M
 
 *Conceptual diagram: each stage connects evidence, decisions and execution.*
 
+## Build and Finance a Production
+
+Start with the producer route, follow the worked transaction, then compare the funding and rights structures.
+
+- [[wiki/concepts/equity-financing-and-recoupment|Equity Financing and Recoupment]]
+- [[wiki/concepts/distribution-economics|Distribution Economics]]
+- [[wiki/concepts/chain-of-title-and-rights|Chain of Title and Rights Clearance]]
+- [[wiki/syntheses/producer-financing-route|A Producer’s Guide to Financing]]
+- [[wiki/concepts/grants-and-soft-money|Grants, Fiscal Sponsorship and Soft Money]]
+- [[wiki/concepts/international-coproduction|International Coproduction]]
+- [[wiki/concepts/television-and-streaming-finance|Television and Streaming Finance]]
+- [[wiki/concepts/ip-monetization-beyond-screen|Monetizing IP Beyond the Screen]]
+- [[wiki/syntheses/film-finance-worked-example|Film Finance Worked Example and Model]]
+- [[wiki/syntheses/finance-and-ip-directory|Film Finance and IP Partner Directory]]
+
 ## Questions for Financing Partners
 
 | Question | Where to begin |

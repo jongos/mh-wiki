@@ -3,7 +3,7 @@ title: Raw Source Manifest
 type: operations
 status: current
 updated: 2026-11-15
-source_count: 32
+source_count: 53
 publish: false
 tags:
   - mediahedge
@@ -48,6 +48,27 @@ Canonical ingestion snapshots. SHA-256 identifies the exact binary reviewed duri
 | [[raw/sources/filmarket-finance-plan-review-2026-11-15.txt\|The Finance Plan of a Film — A Breakdown — Review Record]] | `DF05E5C75F4EFCE3496197A6A8172CFF492722B2FA32CF3E58F9D49699621225` | reviewed - limited external-source record | [[wiki/sources/filmarket-finance-plan]] |
 | [[raw/sources/follows-film-finance-problems-review-2026-11-15.txt\|Everything That’s Wrong With Film Finance — Review Record]] | `7B0B281F1D24D38B89F53E649C07A64D201DDF6B903DD77293429E62BDE5C4AF` | reviewed - limited external-source record | [[wiki/sources/follows-film-finance-problems]] |
 | [[raw/sources/follows-film-finance-numbers-review-2026-11-15.txt\|The Film Finance Numbers Nobody Shows You — Review Record]] | `AF51DD3A72E9B6DD21096F5D5B44F5D2C8EF119F3951E6FC97DEA2066A954121` | reviewed - limited external-source record | [[wiki/sources/follows-film-finance-numbers]] |
+| [[raw/sources/wipo-finance-review-2026-11-15.txt\|WIPO Rights, Camera, Action — Financing Review]] | `2A7FA1FBD71DD7CE9634D8E3C38EC06DABD8564044020CAE83608E2A03BA84A5` | reviewed - limited primary-source record | [[wiki/sources/wipo-finance-review]] |
+| [[raw/sources/wipo-rights-review-2026-11-15.txt\|WIPO Rights Clearance — Development to Distribution]] | `8A3B4365F0DC8E12AB6CD4870207D316F32287206660CB86ACCBEE0EAC3A2CCE` | reviewed - limited primary-source record | [[wiki/sources/wipo-rights-review]] |
+| [[raw/sources/sundance-catalyst-review-2026-11-15.txt\|Sundance Catalyst — Program Review]] | `82C10A58470DD6AD00D4B04F097D1F1B7399009C72CFCFB1535DF899BF684933` | reviewed - limited primary-source record | [[wiki/sources/sundance-catalyst-review]] |
+| [[raw/sources/sec-offerings-review-2026-11-15.txt\|SEC Offering Pathways — Review]] | `16C6160D4D2AF75646C3BEF36F90FD6D231BEB585FC86C7D938C4311C4E6065D` | reviewed - limited primary-source record | [[wiki/sources/sec-offerings-review]] |
+| [[raw/sources/film-independent-sponsorship-review-2026-11-15.txt\|Film Independent Fiscal Sponsorship — Review]] | `9CD273DDA6301D03C7B662C947D59500B8A2AFD46CF73B99425AE9B8E2936868` | reviewed - limited primary-source record | [[wiki/sources/film-independent-sponsorship-review]] |
+| [[raw/sources/sundance-documentary-review-2026-11-15.txt\|Sundance Documentary Fund — Review]] | `5170E1408EAC407838B5E38E4847E4C78D526CDB50E6E664693B67FD31B1C48E` | reviewed - limited primary-source record | [[wiki/sources/sundance-documentary-review]] |
+| [[raw/sources/bfi-locked-box-review-2026-11-15.txt\|BFI Locked Box — Review]] | `2C98477893EDA248E5883A60F3359E3F5265D836A435F9E1A251BFA551E279EB` | reviewed - limited primary-source record | [[wiki/sources/bfi-locked-box-review]] |
+| [[raw/sources/telefilm-production-review-2026-11-15.txt\|Telefilm Production Program — Review]] | `BF5B12776D785D623D57DBDD9C132D566465E83E17CE1779248696AB80EB5721` | reviewed - limited primary-source record | [[wiki/sources/telefilm-production-review]] |
+| [[raw/sources/ipr-vc-review-2026-11-15.txt\|IPR.VC — Public Mandate Review]] | `555985ADB77182B849FF14F45A42CFD3CF590A2C7935188F9A606445E4D42D00` | reviewed - limited primary-source record | [[wiki/sources/ipr-vc-review]] |
+| [[raw/sources/filmnation-review-2026-11-15.txt\|FilmNation Entertainment — Capability Review]] | `00D936222C5073B96C6024E13AD571D87BCFDB7646B5494843BF90FFDEF2780E` | reviewed - limited primary-source record | [[wiki/sources/filmnation-review]] |
+| [[raw/sources/slated-review-2026-11-15.txt\|Slated — Platform Review]] | `CEEF3D2B097E3F63EF08FAA88FEC937B1D8840E0BD578F63294D3148B0D6A7AC` | reviewed - limited primary-source record | [[wiki/sources/slated-review]] |
+| [[raw/sources/sffilm-rainin-review-2026-11-15.txt\|SFFILM Rainin Grant — Review]] | `1C2CCB197FE50EFE3208147688F10F45FFEDCF979C7D5274EE4CA011149B0148` | reviewed - limited primary-source record | [[wiki/sources/sffilm-rainin-review]] |
+| [[raw/sources/itvs-review-2026-11-15.txt\|ITVS Funding Programs — Review]] | `C565AAD8CBEB555A225E40C5995CE5542C70C06009079A0CADFE4F1F3BDE46E7` | reviewed - limited primary-source record | [[wiki/sources/itvs-review]] |
+| [[raw/sources/bfi-impact-review-2026-11-15.txt\|BFI Impact Feature Funding — Review]] | `AB984F8AABD5EC1DE443222A06B7D0A21E8739F8E4D0AC2AE1FA4544C96A43BC` | reviewed - limited primary-source record | [[wiki/sources/bfi-impact-review]] |
+| [[raw/sources/spaceport-ip-review-2026-11-15.txt\|Spaceport IP-Holder Services — Review]] | `6AB38A45F6084B9A7006198A1AD924B96CD4BDDDAF60F9C2CE0631A1BBAB2DBF` | reviewed - limited primary-source record | [[wiki/sources/spaceport-ip-review]] |
+| [[raw/sources/spaceport-pod-review-2026-11-15.txt\|Spaceport Print-on-Demand — Review]] | `4C49DDCE86381E16577FD50740B4FE0EB149543D0B06A367834CF480E5CFD674` | reviewed - limited primary-source record | [[wiki/sources/spaceport-pod-review]] |
+| [[raw/sources/negosh-review-2026-11-15.txt\|Negosh Licensing Marketplace — Review]] | `09B6C560D68DE70D09F2085FDF496EE8CBC3C8ED3B419A627690EBC217B26576` | reviewed - limited primary-source record | [[wiki/sources/negosh-review]] |
+| [[raw/sources/irs-p925-review-2026-11-15.txt\|IRS Publication 925 — Loss-Limitation Review]] | `97889A1535F9D673A029244BB5F055C60DAF73F2325E217B596DDBB39CE2DA7A` | reviewed - limited primary-source record | [[wiki/sources/irs-p925-review]] |
+| [[raw/sources/irs-p946-review-2026-11-15.txt\|IRS Publication 946 — Special Depreciation Review]] | `B34E82BADDAA6023BA38A5FB93DCF9BF716DDC9F2FF4645AAC82E2FEAC42879B` | reviewed - limited primary-source record | [[wiki/sources/irs-p946-review]] |
+| [[raw/sources/hr10582-status-nov15-2026-11-15.txt\|H.R. 10582 — November 15 Status Review]] | `CBF0C3DC5816BD87049851FCB245D112A7DBD4A4B21E7BF39BE5B378D414F3E2` | reviewed - limited primary-source record | [[wiki/sources/hr10582-status-nov15]] |
+| [[raw/sources/s5552-status-nov15-2026-11-15.txt\|S. 5552 — November 15 Status Review]] | `84D523C250C661788DFF6F9EFBBC56766D63E142E20E0B94EB964E96FB5C6494` | reviewed - limited primary-source record | [[wiki/sources/s5552-status-nov15]] |
 
 ## Ingestion Note
 
