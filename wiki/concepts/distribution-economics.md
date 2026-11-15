@@ -26,6 +26,8 @@ A film’s public gross and the cash available to its investors measure differen
 
 The contract determines the order and calculation bases. Do not apply every possible deduction to every revenue stream. An all-rights distributor, a sales agent and an aggregator perform different functions. [WIPO’s film-finance guide](https://www.wipo.int/publications/en/details.jsp?id=4611&plang=EN), chapter 2, explains how distribution rights and agreements connect to financing.
 
+This sequence describes the economic deductions, not a mandatory payment route. A collection account can receive gross receipts and pay authorized fees and expenses directly. Reconcile amounts already withheld by distributors or agents before applying the collection-account waterfall so the same charge appears only once.
+
 ## Read the Commercial Terms
 
 | Term | What to Establish |

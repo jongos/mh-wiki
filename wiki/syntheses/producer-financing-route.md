@@ -4,7 +4,7 @@ type: synthesis
 status: current
 updated: 2026-11-15
 as_of: 2026-11-15
-source_count: 3
+source_count: 4
 publish: true
 description: "Prepare a film for financing with a clear package, rights record, budget, finance plan, distribution strategy, data room and documented closing conditions."
 tags:
@@ -40,9 +40,11 @@ Approach [[wiki/concepts/equity-financing-and-recoupment|Equity Investors]] with
 
 Keep a dated index with current versions of company records, rights agreements, budget, schedule, finance plan, weekly cash flow, bankable contracts, incentive evidence, insurance/completion proposals, investor terms and delivery requirements. Provide a conditions list showing each missing approval or document, its owner and due date. Restrict access to personal and confidential records.
 
-## Close Before Committing the Spend
+## Confirm Funding Before Production and Each Draw
 
 Reconcile signed commitments to funding conditions and the closing statement. Confirm equity funding order, account instructions, lien and consent requirements, [[wiki/concepts/completion-protection|Completion Protection]] and the overage plan. An introduction, expression of interest or approved application does not establish cleared funds. Start each draw with evidence that the required conditions are satisfied.
+
+Track commitment, documentary closing, cash disbursement and repayment as separate events. Record the funding party, gross facility, fees and reserves withheld, net amount received by production, transfer date and supporting account record. Match the production’s receipt to the funder’s transfer. A closed facility can remain partly undrawn; a paid-off project label does not reconcile every tranche or establish the amount of interest collected.
 
 ## Analysis and Inference
 
@@ -57,5 +59,5 @@ Links checked: 2026-11-15.
 <!--
 ## Source Basis
 
-[[wiki/sources/sundance-catalyst-review]] · [[wiki/sources/why-a-production-must-be-fully-financed]] · [[wiki/sources/how-mediahedge-sizes-a-loan]]
+[[wiki/sources/sundance-catalyst-review]] · [[wiki/sources/why-a-production-must-be-fully-financed]] · [[wiki/sources/how-mediahedge-sizes-a-loan]] · [[wiki/sources/where-the-financiers-return-comes-from]]
 -->

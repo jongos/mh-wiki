@@ -103,3 +103,7 @@ Review the restored file and commit it as a new recovery change. Do not use `git
 ## Producer Finance Resource Expansion
 
 `wiki-v1.28-finance-resource-expansion` adds the producer route, equity and distribution guides, rights and coproduction guidance, grants and IP directory, extended federal tax explanations and the downloadable worked model. Source review records preserve the scope of each primary-source check.
+
+## Worked Model and Closing Reconciliation
+
+`wiki-v1.29-model-final-review` corrects local input validation and surplus-cash recoupment, clarifies conditional delivery and closing-versus-funding evidence, and records a read-only canonical comparison. The release preserves hypothetical model assumptions and excludes private deal data.

@@ -51,3 +51,9 @@ Legacy raw snapshots and hashes remain unchanged. Their source-summary pages now
 Current primary context was checked for the new glossary's Article 9, subordination and recapture references. The glossary identifies the jurisdiction and links directly to primary law. These examples do not validate a transaction or another jurisdiction.
 
 See [[wiki/operations/contradictions|Contradictions Register]] for historical conflicts and [[wiki/operations/research-backlog|Research Backlog]] for remaining authority and operational evidence gaps. the retired reader changelog (retained in Git history) summarizes the reader changes without exposing maintenance detail.
+
+## November 15 Producer-Resource Review
+
+The final review of the new producer guides and worked model used the live canonical `Underwriting/MH Underwriting.md` (SHA-256 `b92ab885ca2cd38dc4927c19680e163f33a0ab31eea3a60926045dd84f6175fa`) and `Underwriting/Underwriting Scenario Guide.md` (SHA-256 `9fff638e2ee85dac4bbb9290959c41e13326895848d07b430178009f495dd880`). The scenario guide supplies instructional context, not transaction approval. Read-only portfolio records were also compared through the authorized application. No private deal figures, documents or names were imported, and no Brain or credit-application records were changed.
+
+The public treatment preserves separate commitment, documentary closing, disbursement and repayment events; gross facility and net production cash; fixed interest and realized collections; and facility-specific repayment priority. The worked model remains hypothetical rather than calibrated to portfolio results. Its cash-surplus release and delivery assumptions are explicit. Existing raw-source counts remain unchanged. The comparison is qualitative and does not establish bank reconciliation of the historical portfolio, validate equity returns from loan records or replace the official program and tax authorities.

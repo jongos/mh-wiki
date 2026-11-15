@@ -43,7 +43,7 @@ Start with the producer route, follow the worked transaction, then compare the f
 - [[wiki/concepts/international-coproduction|International Coproduction]]
 - [[wiki/concepts/television-and-streaming-finance|Television and Streaming Finance]]
 - [[wiki/concepts/ip-monetization-beyond-screen|Monetizing IP Beyond the Screen]]
-- [[wiki/syntheses/film-finance-worked-example|Film Finance Worked Example and Model]]
+- [[wiki/syntheses/film-finance-worked-example|Film Finance Worked Example and Model]] — editable cash timing, surplus release and investor recoupment.
 - [[wiki/syntheses/finance-and-ip-directory|Film Finance and IP Partner Directory]]
 
 ## Questions for Financing Partners

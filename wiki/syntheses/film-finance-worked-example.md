@@ -22,6 +22,8 @@ This hypothetical USD example extends [[wiki/concepts/full-financing|Full Financ
 
 The model contains four sheets: Results, Assumptions, Production Cash and Recoupment. Amounts and commercial terms are teaching assumptions. It models aggregate post-delivery collections and a cash multiple; it does not calculate dated investor IRR, tax benefits, guild residuals or added borrowing costs from a delay. Add those schedules for a transaction.
 
+Edit the blue inputs, not the adjacent validated-input formulas. Missing or invalid inputs show `#N/A` in the affected calculations. An incomplete inactive case does not block the selected case. **Active input status** checks the selected drivers; **Production funding status** separately identifies a cash shortfall.
+
 ## Fund Production Once
 
 | Source | Gross Funding | Fees | Interest Reserve | Net Production Cash |
@@ -54,6 +56,8 @@ Assume conforming delivery, accepted contracts and collectible proceeds. Presale
 
 This agreement pools receipts for senior repayment. Actual deals must implement their asset-specific priorities. The distributor’s expenses recover only to the extent receipts after its fee permit; the model displays any unrecovered balance.
 
+If edited funding or spending leaves positive production cash at week 24, the model releases that surplus into the waterfall after completion. It applies no collection fee to that release. Reconcile the release conditions and fee base to the actual agreement before using this assumption. A negative ending balance remains a funding need, not a receipt.
+
 ## Apply the Equity Waterfall
 
 The assumed terms return investor capital first, then a flat 10% preference on the original $400,000 contribution, followed by a 50/50 split of remaining profit between investor and producer pools.
@@ -73,6 +77,8 @@ The base allocation reconciles: $13,000 collection fee + $700,000 principal + $5
 ## Analysis and Inference
 
 The downside also delays the $210,000 incentive loan draw from week 17 to week 21. Production cash falls to negative $60,000 at the end of week 20. A balanced total budget therefore still needs $60,000 of temporary funding or a documented change in spending. The model flags that need without assuming a bridge exists. Any bridge cost further reduces economics.
+
+Both waterfalls assume the production reaches delivery. The downside’s $290,000 investor distribution is conditional on resolving its funding shortfall; it is not a return forecast for an unfinished production. Keep approved commitments, executed facilities, actual advances and collected repayments in separate ledgers when replacing the teaching inputs with transaction records. Reconcile gross loan principal to fees, reserves and net production cash, and split each repayment between principal, interest and other charges before calculating realized returns.
 
 Read [[wiki/concepts/equity-financing-and-recoupment|Equity Recoupment]] and [[wiki/concepts/distribution-economics|Distribution Economics]] alongside the workbook. Verify the negotiated deduction order, cash dates and investor terms before adapting it.
 
