@@ -88,7 +88,7 @@ Finish with [[wiki/concepts/portfolio-construction|Portfolio Construction]] and 
 
 - The budget balances overall, but funding arrives after an important payment is due.
 - Collateral has a headline value, but ownership, conditions or collection timing remain uncertain.
-- A sales estimate is incorrectly counted as an executed receivable, or a gross minimum guarantee is being treated as eligible net value.
+- The analyst counts a sales estimate as an executed receivable or a gross minimum guarantee as eligible net value.
 - The proposed amount depends on an undated policy limit or an unclear calculation.
 - The legal documents and the actual path of cash do not match.
 - Insurance or completion support is incorrectly credited for unrelated credit or market risk.

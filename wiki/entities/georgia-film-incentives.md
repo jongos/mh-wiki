@@ -37,7 +37,7 @@ Official-source review: October 6, 2026. Confirm the project’s allocation, acc
 
 ![[assets/research/georgia-incentive-region.png|FilmHedge regional snapshot locating Georgia and summarizing its incentive cash route alongside neighboring programs]]
 
-*Source: FilmHedge’s [2026 Tax Incentives Guide](https://filmhedge.com/report-2026-tax-incentives), October 6, 2026. Regional snapshot. This profile verifies the featured state; use each neighboring state’s agency rules for its eligibility terms.*
+*Source: FilmHedge’s [2026 Tax Incentives Guide](https://filmhedge.com/report-2026-tax-incentives), October 6, 2026. Regional snapshot of the featured state and neighboring programs.*
 
 Open the [Georgia report entry](https://filmhedge.com/report-2026-tax-incentives#state-georgia) and the [Medium explainer](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437) for wider context. Use the linked program rules to calculate eligible value and the project’s award, sale agreement and payment schedule to forecast cash.
 
@@ -47,7 +47,7 @@ Open the [Georgia report entry](https://filmhedge.com/report-2026-tax-incentives
 
 *Source: FilmHedge’s [October 6, 2026 report](https://filmhedge.com/report-2026-tax-incentives). Rates apply to qualifying expenses, not the whole budget or loan proceeds. A conditional uplift adds percentage points only on its permitted base; Mississippi’s purchase and payroll rates cannot be summed into one rebate.*
 
-The illustrated rates and conditions were checked against the [Georgia Film Office](https://georgia.org/industries/film/incentives), [West Virginia program overview](https://westvirginia.gov/filmincentives/) and [Film Mississippi](https://filmmississippi.org/incentive/) on October 7, 2026. This scoped check does not certify every program condition, an award or available funding. Georgia’s promotion uplift requires approval and distribution compliance; West Virginia’s hiring uplift requires at least ten qualifying residents employed full-time during principal photography.
+The illustrated rates and conditions were checked against the [Georgia Film Office](https://georgia.org/industries/film/incentives), [West Virginia program overview](https://westvirginia.gov/filmincentives/) and [Film Mississippi](https://filmmississippi.org/incentive/) on October 7, 2026. Georgia’s promotion uplift requires approval and distribution compliance; West Virginia’s hiring uplift requires at least ten qualifying residents employed full-time during principal photography.
 
 For Georgia production activity through FY2022, see [Private Credit Insights 2022 — v2](https://filmhedge.com/report-2022-private-credit-insights), page 17. That historical series is separate from today’s program terms; its multiplier-based economic impact is an illustration, not a measured incentive return.
 

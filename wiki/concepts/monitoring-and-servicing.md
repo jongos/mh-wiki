@@ -18,7 +18,7 @@ Servicing is active credit management from first draw through final payoff. It m
 
 ![[assets/diagrams/monitoring-loop.svg|Monitoring loop from the approved baseline through evidence, comparison, diagnosis and decision]]
 
-*Conceptual diagram: monitoring becomes a control only when verified evidence is assigned to an owner and connected to a decision.*
+*Conceptual diagram: verify evidence, assign an owner and connect each variance to a decision.*
 
 ## Why the Risk Changes
 

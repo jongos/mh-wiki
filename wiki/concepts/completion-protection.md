@@ -22,7 +22,7 @@ A completion bond or guaranty protects completion and delivery through the remed
 
 ![[assets/diagrams/protection-stack.svg|Five-layer MediaHedge protection stack showing completion protection as one distinct layer]]
 
-*Conceptual diagram: completion protection reinforces [[wiki/concepts/full-financing|Full Financing]], [[wiki/concepts/production-insurance|Production Insurance]], the [[wiki/concepts/security-package|Security Package]] and [[wiki/concepts/monitoring-and-servicing|Monitoring]]; it does not replace them.*
+*Conceptual diagram: completion protection reinforces [[wiki/concepts/full-financing|Full Financing]], [[wiki/concepts/production-insurance|Production Insurance]], the [[wiki/concepts/security-package|Security Package]] and [[wiki/concepts/monitoring-and-servicing|Monitoring]].*
 
 ## How the Protection Works
 
@@ -48,7 +48,7 @@ The completion company that evaluates and monitors a production may operate as a
 
 ## Financier Position
 
-MediaHedge and its financing partner should be expressly protected in the operative documents when they are intended beneficiaries. The closing set should align names, covered amount, notice, cure, information, takeover, proceeds, subrogation and priority rights across the guaranty, financing, insurance, security and interparty documents.
+Name MediaHedge and its financing partner in the operative documents when they are intended beneficiaries. Align names, covered amount, notice, cure, information, takeover, proceeds, subrogation and priority rights across the guaranty, financing, insurance, security and interparty documents.
 
 Loss-payee or additional-insured status under production insurance is not a substitute for beneficiary rights under the completion instrument. Each capacity addresses a different legal and economic interest.
 

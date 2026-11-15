@@ -20,7 +20,7 @@ The financier's realized return depends on actual dated cash flows, not the stat
 
 ![[assets/diagrams/return-economics-bridge.svg|Conceptual bridge from contractual coupon and fees to realized XIRR and cash multiple]]
 
-*Conceptual diagram: the bridge identifies economic drivers and does not present forecast or historical MediaHedge returns.*
+*Conceptual diagram: cash timing, credit losses, expenses and funding costs determine realized return.*
 
 ## Components
 
@@ -45,11 +45,11 @@ Build the dated ledger from the financier's perspective: advances, purchase amou
 
 ## Governance of Economics
 
-Forward-flow documents should allocate purchase price, coupon, fees, servicing compensation, extension/default economics, expense reimbursement, prepayment and recoveries. Report gross borrower yield, MediaHedge compensation, financier gross return and financier net return separately.
+Use forward-flow documents to allocate purchase price, coupon, fees, servicing compensation, extension/default economics, expense reimbursement, prepayment and recoveries. Report gross borrower yield, MediaHedge compensation, financier gross return and financier net return separately.
 
 ## Gap-Pricing Context
 
-Gap exposure can affect transaction pricing because its value depends on future market realization rather than an existing payment obligation. Pricing is recommended from the complete collateral mix, timing, protections and risk analysis rather than a fixed gap uplift. Current pricing parameters are internal and transaction-specific; they are not reproduced in this public guide and should not be treated as a forecast of financing-partner return. Transaction mix and realized loan-tape evidence require separate verification.
+Gap exposure can affect transaction pricing because its value depends on future market realization rather than an existing payment obligation. Underwriters recommend pricing from the complete collateral mix, timing, protections and risk analysis. Calculate financing-partner return from the transaction’s dated net cash flows.
 
 ## Failure Modes
 

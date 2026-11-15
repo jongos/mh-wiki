@@ -78,7 +78,7 @@ Keep these distinctions clear:
 
 ## Continue Exploring
 
-Use [[MediaHedge Knowledgebase]] as the home page. Financing partners can follow the [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] by investment question, compare participant roles in the [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]], or use the [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] to organize the same system chronologically. · [[wiki/syntheses/site-navigator|Site Navigator]]
+Use [[MediaHedge Knowledgebase|Media Finance Guide]] as the home page. Financing partners can follow the [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] by investment question, compare participant roles in the [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]], or use the [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] to organize the same system chronologically. · [[wiki/syntheses/site-navigator|Site Navigator]]
 
 
 <!--

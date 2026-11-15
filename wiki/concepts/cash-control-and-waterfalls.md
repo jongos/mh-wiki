@@ -44,7 +44,7 @@ No one component substitutes for the others.
 
 ## Financier Rights
 
-The financing partner should be expressly protected in the waterfall and control documents or through a clear agent/collateral-agent structure. Reserved matters commonly include account changes, payment instructions, waterfall amendments, manager replacement, extraordinary deductions, collateral releases and junior distributions during stress.
+Define the financing partner’s distribution and control rights in the waterfall and control documents or through an agent/collateral-agent structure. Reserved matters commonly include account changes, payment instructions, waterfall amendments, manager replacement, extraordinary deductions, collateral releases and junior distributions during stress.
 
 ## Analysis and Inference
 

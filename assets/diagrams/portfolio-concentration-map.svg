@@ -13,5 +13,5 @@
   <g transform="translate(325 510)"><rect class="node" width="230" height="100" rx="18"/><text class="label" x="115" y="39">Delivery Dependency</text><text class="detail" x="115" y="68">Shared project milestone</text></g>
   <g transform="translate(75 430)"><rect class="node" width="230" height="100" rx="18"/><text class="label" x="115" y="39">Maturity Window</text><text class="detail" x="115" y="68">Funding and liquidity need</text></g>
   <g transform="translate(455 284)"><circle class="center" cx="145" cy="100" r="118"/><text class="white" x="145" y="88">Portfolio Exposure</text><text class="whitesub" x="145" y="119"><tspan x="145">Funded + undrawn</tspan><tspan x="145" dy="21">+ stressed loss contribution</tspan></text></g>
-  <text class="note" x="600" y="662">Different titles, SPVs, or collateral labels may still depend on the same economic event.</text>
+  <text class="note" x="600" y="662">Group exposures that depend on the same economic event.</text>
 </svg>

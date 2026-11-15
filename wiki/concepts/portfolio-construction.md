@@ -19,7 +19,7 @@ Portfolio construction aggregates exposure by common economic failure driver rat
 
 ![[assets/diagrams/portfolio-concentration-map.svg|Conceptual portfolio map connecting exposure to common economic failure drivers]]
 
-*Conceptual diagram: the map identifies dimensions to measure; it does not represent MediaHedge portfolio holdings or performance.*
+*Conceptual diagram: group portfolio exposure by common payment, production and liquidity risks.*
 
 ## Dimensions
 

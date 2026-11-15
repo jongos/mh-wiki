@@ -103,7 +103,7 @@ The [2023 Private Credit Insights revised edition](https://filmhedge.com/report-
 
 ![[assets/research/production-trade-finance.jpg|FilmHedge conceptual illustration of production lending, completion protection, conditional buyer payment and separate tax-incentive collection before loan repayment]]
 
-*Source: FilmHedge, Private Credit Insights 2023 — v2, page 24; revised September 2026. Conceptual transaction sequence, not a performance chart, guaranteed repayment or promised timing. Completion protection is subject to the bond; buyer credit, delivery conditions and collection risks remain. Tax incentives follow their own eligibility and payment process.*
+*Source: FilmHedge, Private Credit Insights 2023 — v2, page 24; revised September 2026. Conceptual transaction sequence. The bond defines completion remedies; contract terms govern buyer payment; tax incentives follow program rules.*
 
 Use this structural comparison alongside the [2026 Insights companion](https://filmhedge.com/report-2026-private-credit-insights). The historical report’s pricing and mixed-period benchmark comparisons do not update the provider capabilities or evidence dates above. All editions are collected in the [[wiki/syntheses/filmhedge-research-library|Research Library]].
 

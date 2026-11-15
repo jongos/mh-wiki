@@ -541,3 +541,11 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Updated operating instructions, private catalog, recovery guide and automated label/title expectations. Full Windows regression suite passed all 14 checks. Obsidian published 39 notes and publish.js and deleted the two retired public pages. A file-hash mismatch on Production Insurance resolved after refreshing the file with consistent line endings and retrying.
 - Live Chrome confirmed Media Finance Guide in the site rail and home H1, the simplified gap page and navigation, and Not found responses for both retired pages. Full-corpus audit verified all 66 public files and all 39 crawler routes; final full browser audit and recovery synchronization follow below.
 - Final full publish audit passed: 66/66 files match local SHA-256, no missing or unexpected/private files, all 39 routes pass, and the sitemap contains exactly 39 canonical notes. SEO, search, keyboard navigation, Site Navigator, metadata, skip-to-top, desktop/mobile scrolling and keyboard diagram controls all pass. CSS/JS hashes and HTTPS/robots checks pass.
+
+## [2026-11-15] maintenance | Reader Language and Diagram Repairs
+
+- Sources read: current compiled concepts, source-linked image captions, all published graphics and live Publish inventory; canonical Brain underwriting refreshed without importing private material.
+- Updated ten original SVGs, reader captions, active-voice guidance, glossary and navigator branding, and generated reader metadata.
+- Corrected arrow routing, grouping, completion-support semantics and text contrast; preserved original research data and source artwork.
+- Reviewed all 25 images and all modified reader passages. No new evidence or policy claims.
+- Validation: lint passed with zero errors and warnings; 14 Windows regressions passed. Final live audit matched all 66 files and all 39 routes and passed reader interaction checks. Corrected the live search field’s accessible branding. Recovery archive and GitHub verification accompany this release.

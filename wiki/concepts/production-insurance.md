@@ -26,7 +26,7 @@ Film-production insurance is a portfolio of policies that transfers defined phys
 
 ## Closing Test
 
-The broker maps activities, assets, personnel, locations and delivery duties to policies, limits, deductibles, periods and named entities. Certificates are evidence, not the policy or endorsement. The closing set should contain the actual endorsements, premium evidence, available cancellation/material-change notice, waiver-of-subrogation treatment, primary/noncontributory terms where relevant, claims contacts and alignment with completion and security documents.
+The broker maps activities, assets, personnel, locations and delivery duties to policies, limits, deductibles, periods and named entities. Certificates are evidence, not the policy or endorsement. For closing, obtain the actual endorsements, premium evidence, available cancellation/material-change notice, waiver-of-subrogation treatment, primary/noncontributory terms where relevant, claims contacts and alignment with completion and security documents.
 
 ## Market and Carrier Classification
 
@@ -36,7 +36,7 @@ Links checked: 2026-08-10.
 
 ## Proceeds and Claims
 
-After a covered event, timely notice, mitigation, documentation and proof of loss preserve the claim. Loan documents should direct proceeds to repair, replacement, extra expense, completion or repayment according to the loss, policy and financier election rights.
+After a covered event, timely notice, mitigation, documentation and proof of loss preserve the claim. Specify in the loan documents how to direct proceeds to repair, replacement, extra expense, completion or repayment according to the loss, policy and financier election rights.
 
 ## Failure Modes
 

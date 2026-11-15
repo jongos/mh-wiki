@@ -1,19 +1,19 @@
 ---
-title: MediaHedge Film-Finance Glossary
+title: Film-Finance Glossary
 type: glossary
 status: current
 updated: 2026-11-15
 source_count: 17
 publish: true
-description: Learn the film-finance, private-credit, collateral, production, servicing and return terms used throughout the MediaHedge knowledgebase.
+description: Learn the film-finance, private-credit, collateral, production, servicing and return terms used throughout the Media Finance Guide.
 tags:
   - mediahedge
   - glossary
 ---
 
-# MediaHedge Film-Finance Glossary
+# Film-Finance Glossary
 
-Use this glossary to translate recurring film-finance, credit and servicing terms into the meaning used throughout the MediaHedge knowledgebase.
+Use this glossary to translate recurring film-finance, credit and servicing terms into the meaning used throughout the Media Finance Guide.
 
 ## A-C
 
@@ -71,7 +71,7 @@ Use this glossary to translate recurring film-finance, credit and servicing term
 
 **MG** - Minimum guarantee, commonly a contracted distributor commitment that may become payable after conforming delivery and satisfaction of other conditions. See [[wiki/concepts/pre-sales-collateral|Pre-Sales Collateral]].
 
-**MH Score** - Classifies the final approved blended interest rate under approved price bands, after the underwriting decision. It does not set the rate and is distinct from the Risk Score and Obligor Score. No bands or formulas are reproduced here.
+**MH Score** - Classifies the final approved blended interest rate under approved price bands, after the underwriting decision. It does not set the rate and is distinct from the Risk Score and Obligor Score.
 
 **MH Risk Score / Risk Score** - Summarizes the broader transaction risk assessment to inform human underwriting judgment. It does not mechanically set pricing, collateral eligibility, advance rates or approval.
 

@@ -5,7 +5,7 @@ status: current
 updated: 2026-11-15
 source_count: 0
 publish: true
-description: Navigate the MediaHedge knowledgebase as a connected map of financeability, collateral, control, protection, servicing, recovery and portfolio economics.
+description: Navigate the Media Finance Guide as a connected map of financeability, collateral, control, protection, servicing, recovery and portfolio economics.
 cssclasses:
   - site-navigator-page
 tags:
@@ -15,7 +15,7 @@ tags:
 
 # Site Navigator
 
-Explore the MediaHedge knowledgebase as a connected system. The interactive graph shows how financeability, collateral, control, protection, servicing, recovery and portfolio economics relate across the public wiki.
+Explore the Media Finance Guide as a connected system. The interactive graph shows how financeability, collateral, control, protection, servicing, recovery and portfolio economics relate across the public wiki.
 
 > [!tip] How to Use It
 > Select a node to open that page, drag the canvas to move around and use the graph controls to expand the view or switch to the global graph. Connections represent navigation and conceptual relationships—not transaction priority, risk weight or economic importance.

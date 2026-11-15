@@ -1,22 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="value-title value-desc">
   <title id="value-title">Sales Value, Loan Sizing and Cash Collection</title>
-  <desc id="value-desc">Conceptual framework. Asking and expected prices inform supported low-case value, which feeds a separate loan decision. Executed licenses and cleared collections are later evidence states, not guaranteed results of an estimate. No numbers or performance data are shown.</desc>
+  <desc id="value-desc">Conceptual framework. Asking and expected prices inform supported low-case value, which feeds a separate loan decision. Executed licenses establish contractual receivables; cleared collections establish realized cash.</desc>
   <defs><style>.bg{fill:#fbfaf7}.title{font:700 32px Georgia,serif;fill:#0c224f}.eyebrow{font:700 15px Segoe UI,Arial,sans-serif;letter-spacing:2px;fill:#176b73}.body{font:400 18px Segoe UI,Arial,sans-serif;fill:#243238}.head{font:700 22px Segoe UI,Arial,sans-serif;fill:#0c224f}.light{fill:#fff}.line{stroke:#176b73;stroke-width:3;fill:none}.box{fill:#e5f1f0;stroke:#176b73;stroke-width:1.5}.note{font:600 17px Segoe UI,Arial,sans-serif;fill:#87500f}</style><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#176b73"/></marker></defs>
   <rect class="bg" width="1200" height="700"/>
   <text class="eyebrow" x="48" y="48">CONCEPTUAL CREDIT FRAMEWORK</text>
-  <text class="title" x="48" y="92">An Estimate Is Not a Payment Obligation</text>
+  <text class="title" x="48" y="92">Sales Estimates, Loan Decisions and Cash</text>
   <text class="body" x="48" y="126">Separate negotiating prices, supported value, credit approval and realized cash.</text>
-  <rect class="box" x="48" y="169" width="320" height="162"/><text class="head" x="70" y="207">1  Asking Price</text><text class="body" x="70" y="245"><tspan x="70">Opening negotiating position</tspan><tspan x="70" dy="29">No buyer commitment</tspan></text>
+  <rect class="box" x="48" y="169" width="320" height="162"/><text class="head" x="70" y="207">1  Asking Price</text><text class="body" x="70" y="245"><tspan x="70">Opening negotiating position</tspan><tspan x="70" dy="29">Negotiation before contract</tspan></text>
   <path class="line" marker-end="url(#arrow)" d="M375 250H420"/>
-  <rect class="box" x="438" y="169" width="320" height="162"/><text class="head" x="460" y="207">2  Expected Sale Price</text><text class="body" x="460" y="245"><tspan x="460">Agent’s expected accepted price</tspan><tspan x="460" dy="29">Still test whether a sale occurs</tspan></text>
+  <rect class="box" x="438" y="169" width="320" height="162"/><text class="head" x="460" y="207">2  Expected Sale Price</text><text class="body" x="460" y="245"><tspan x="460">Agent’s expected accepted price</tspan><tspan x="460" dy="29">Assess likelihood of sale</tspan></text>
   <path class="line" marker-end="url(#arrow)" d="M766 250H811"/>
   <rect class="box" x="828" y="169" width="324" height="162"/><text class="head" x="850" y="207">3  Supported Net Value</text><text class="body" x="850" y="245"><tspan x="850">Rights, low case and timing</tspan><tspan x="850" dy="29">Deductions and sale risk</tspan></text>
   <path class="line" marker-end="url(#arrow)" d="M990 337V380"/>
   <rect x="828" y="398" width="324" height="182" fill="#0c224f"/><text class="head light" x="850" y="438">Separate Loan Decision</text><text class="body light" x="850" y="477"><tspan x="850">Advance and approved limits</tspan><tspan x="850" dy="29">Completion cash needs</tspan><tspan x="850" dy="29">Human approval</tspan></text>
-  <text class="eyebrow" x="48" y="380">LATER EVIDENCE — ONLY IF REALIZED</text>
+  <text class="eyebrow" x="48" y="380">CONTRACT AND COLLECTION RECORDS</text>
   <rect class="box" x="48" y="398" width="320" height="182"/><text class="head" x="70" y="438">Executed Receivable</text><text class="body" x="70" y="477"><tspan x="70">Identified contractual payer</tspan><tspan x="70" dy="29">Delivery and payment conditions</tspan><tspan x="70" dy="29">Remove from unsold schedule</tspan></text>
   <path class="line" marker-end="url(#arrow)" d="M375 490H420"/>
   <rect class="box" x="438" y="398" width="320" height="182"/><text class="head" x="460" y="438">Collected Cash</text><text class="body" x="460" y="477"><tspan x="460">Cleared receipt, reconciled</tspan><tspan x="460" dy="29">Apply deductions and priority</tspan><tspan x="460" dy="29">Verify actual distributions</tspan></text>
-  <text class="note" x="48" y="630">No stage guarantees the next. Keep unsold territories and delayed payments visible.</text>
-  <text class="body" x="48" y="665">Original educational diagram • No market statistics, transaction data or prescribed advance rates</text>
+  <text class="note" x="48" y="630">Track unsold territories, signed licenses and delayed payments.</text>
+  <text class="body" x="48" y="665">Media Finance Guide • Conceptual credit framework</text>
 </svg>

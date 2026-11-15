@@ -37,7 +37,7 @@ Official-source review: October 6, 2026. Confirm the project’s allocation, acc
 
 ![[assets/research/california-incentive-region.png|FilmHedge regional snapshot locating California and summarizing its incentive cash route alongside neighboring programs]]
 
-*Source: FilmHedge’s [2026 Tax Incentives Guide](https://filmhedge.com/report-2026-tax-incentives), October 6, 2026. Regional snapshot. This profile verifies the featured state; use each neighboring state’s agency rules for its eligibility terms.*
+*Source: FilmHedge’s [2026 Tax Incentives Guide](https://filmhedge.com/report-2026-tax-incentives), October 6, 2026. Regional snapshot of the featured state and neighboring programs.*
 
 Open the [California report entry](https://filmhedge.com/report-2026-tax-incentives#state-california) and the [Medium explainer](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437) for wider context. Use the linked program rules to calculate eligible value and the project’s award, sale agreement and payment schedule to forecast cash.
 

@@ -91,3 +91,7 @@ Review the restored file and commit it as a new recovery change. Do not use `git
 - Run `tools\wiki-archive.cmd -CreateBundle` at major milestones to create an immutable full-history bundle.
 - Run `tools\wiki-diagnostics.cmd` for a read-only integrity audit, or add `-DeepRestore` to restore the mirror, every milestone tag and the newest bundle into isolated temporary folders.
 - Verify the mirror, every branch and tag, each bundle and each `.sha256` checksum before relying on them; the archive and diagnostics tools perform these checks independently.
+
+## Reader Image and Language Review
+
+`wiki-v1.26-reader-image-review` records the November 15, 2026 diagram repairs and final reader-language pass. It preserves all research originals and source history while correcting diagram connections, contrast, captions and remaining guide branding. The release includes an independent full-history bundle and live Publish audit.

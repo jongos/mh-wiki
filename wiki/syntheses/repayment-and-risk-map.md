@@ -19,7 +19,7 @@ What are the principal repayment and protection paths in the model, how do they 
 
 ![[assets/diagrams/repayment-source-map.svg|Conceptual map of repayment and protection sources and their shared dependencies]]
 
-*Conceptual diagram: these sources do not provide equal protection, and differently labeled assets may still depend on the same economic event.*
+*Conceptual diagram: repayment sources and completion support share delivery, control and collection dependencies.*
 
 ## Comparative Map
 
@@ -51,7 +51,7 @@ Different labels do not guarantee diversification. Several repayment sources can
 
 ## Analysis and Inference
 
-Taken together, the material suggests a useful hierarchy: first preserve the project and legal claim, then preserve the cash path, then measure timing and net realization. No single layer is sufficient, and apparently distinct assets should receive diversification credit only after their shared dependencies are mapped.
+Preserve the project and legal claim, secure the cash path, then measure timing and net realization. Map shared dependencies before assigning diversification credit.
 
 ## Research on Repayment and Box Office
 

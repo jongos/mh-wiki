@@ -8,9 +8,9 @@
     </style>
   </defs>
   <rect class="bg" width="1200" height="520" rx="24"/>
-  <text class="eyebrow" x="54" y="58">THE MEDIAHEDGE CREDIT JOURNEY</text>
+  <text class="eyebrow" x="54" y="58">MEDIA FINANCE GUIDE</text>
   <text class="title" x="54" y="101">From Financeability to Realized Performance</text>
-  <text class="sub" x="54" y="134">Each stage produces evidence and a decision—not just another document.</text>
+  <text class="sub" x="54" y="134">Each stage connects evidence to a credit decision.</text>
   <path class="arrow" d="M186 258H214"/><path class="arrow" d="M346 258H374"/><path class="arrow" d="M506 258H534"/><path class="arrow" d="M666 258H694"/><path class="arrow" d="M826 258H854"/><path class="arrow" d="M986 258H1014"/>
   <g transform="translate(54 174)"><rect class="step" width="132" height="168" rx="16"/><circle class="num" cx="66" cy="34" r="18"/><text class="numtext" x="66" y="39">1</text><text class="label" x="66" y="79">Prove</text><text class="detail" x="66" y="108"><tspan x="66">Full financing</tspan><tspan x="66" dy="21">and delivery</tspan></text></g>
   <g transform="translate(214 174)"><rect class="step" width="132" height="168" rx="16"/><circle class="num" cx="66" cy="34" r="18"/><text class="numtext" x="66" y="39">2</text><text class="label" x="66" y="79">Underwrite</text><text class="detail" x="66" y="108"><tspan x="66">Eligible net</tspan><tspan x="66" dy="21">collateral</tspan></text></g>
