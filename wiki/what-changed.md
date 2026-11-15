@@ -2,7 +2,7 @@
 title: What Changed
 type: operations
 status: current
-updated: 2026-11-04
+updated: 2026-11-15
 source_count: 0
 publish: true
 description: See substantive updates to the MediaHedge guide, including underwriting explanations, plain-English terms, reader questions and evidence boundaries.
@@ -14,6 +14,12 @@ tags:
 # What Changed
 
 Use this page to find substantive changes since your last visit. Dates describe changes to the guide, not new loan approvals, policy effective dates or investment results.
+
+## November 15, 2026 — Finance Plans and Valuation
+
+- [[wiki/concepts/full-financing#Worked Finance Plan|Work Through a Finance Plan]] with gross commitments, net production cash, contingency and a delayed-draw stress. All figures are explicitly hypothetical.
+- [[wiki/concepts/gap-collateral#Asking Price, Expected Sale and Underwritten Value|Distinguish Sales Values]] using a new conceptual diagram and a territory-level monitoring approach.
+- Clarified cash versus noncash contributions, collateral double counting and [[wiki/concepts/cash-control-and-waterfalls#Analysis and Inference|Intermediary Continuity Diligence]]. External commentary does not set advance rates or establish market performance.
 
 ## November 4, 2026 — Federal Tax Guidance and Clearer Prose
 

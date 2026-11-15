@@ -2,9 +2,9 @@
 title: Gap Collateral
 type: concept
 status: needs-review
-updated: 2026-09-30
+updated: 2026-11-15
 as_of: 2026-09-30
-source_count: 6
+source_count: 8
 publish: true
 description: Understand gap financing against discounted unsold film and television rights, including valuation, eligibility, concentration and repayment risks.
 tags:
@@ -37,13 +37,30 @@ Gap financing advances against a discounted portion of the potential value of ve
 4. **Completion and sales execution:** [[wiki/concepts/completion-protection|Completion Protection]] supports delivery while the sales arrangement governs marketing, reporting and license execution.
 5. **Proceeds control:** the [[wiki/concepts/security-package|Security Package]] covers the rights, future licenses and proceeds, which flow through [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]].
 
-## From Estimate to Receivable
+## Asking Price, Expected Sale and Underwritten Value
 
-| State | What Exists | Principal Risk | Primary Control |
-| --- | --- | --- | --- |
-| Unsold rights | Available rights plus an estimate of possible value | Ownership, market demand, valuation, correlation and timing | Rights schedule, chain of title, low-case support and conservative advance |
-| Executed license | Identified distributor and contractual minimum guarantee | Delivery, acceptance, obligor credit, defenses and deductions | [[wiki/concepts/pre-sales-collateral\|Pre-Sales Diligence]], assignment and acknowledgment |
-| Collected cash | Cleared proceeds in the controlled account | Diversion, priority, deductions and reconciliation | [[wiki/concepts/cash-control-and-waterfalls\|Cash Control and Waterfalls]] |
+Stephen Follows distinguishes an agent’s opening **ask** from the **take**, the price the agent expects to accept. His [November discussion](https://stephenfollows.com/p/everything-thats-wrong-with-film) makes that distinction explicit; the [October companion](https://stephenfollows.com/p/the-film-finance-numbers-nobody-shows-you) adds that some territories never sell. These are overlapping author-reported observations, not independent studies or validated advance rules.
+
+Do not relabel the take as a supported low case. Test whether the rights can sell, for how much, with what deductions and by when. An acceptable negotiated price in one territory does not establish realization across the whole sales sheet.
+
+![[assets/diagrams/sales-value-to-cash.svg|Conceptual distinction between asking price, expected sale, supported value, loan sizing, executed receivable and collected cash]]
+
+*Conceptual framework, not a statistical chart: valuation informs a credit decision; only an executed contract creates the relevant payment obligation, and cash collection remains a separate event. No stage guarantees the next.*
+
+| Measure | Meaning | Evidence Required Before Giving Credit |
+| --- | --- | --- |
+| Asking price | Opening negotiating position | Do not use the label as proof of realizable value |
+| Expected accepted price | Agent’s estimate of a sale price | Buyer evidence, comparable transactions, rights scope and estimate date |
+| Supported low-case net value | Underwriting assessment after eligibility, downside and realization adjustments | Available rights, sale likelihood, deductions, timing and correlated downside |
+| Potential loan advance | Financing calculated from supported value | Approved asset advance, mandate, concentration review, limits and liquidity tests |
+| Executed receivable | Contractual payment claim subject to its terms | Obligor, delivery, acceptance, assignment, defenses and deductions |
+| Collected cash | Cleared money in the relevant account | Bank reconciliation, allocation and distribution evidence |
+
+### Analysis and Inference
+
+Maintain one territory-level record from the dated estimate through the signed license and collection. Show unsold territories as unresolved outcomes rather than dropping them from the comparison. Separate price variance, failure to sell, payment delay and deductions. This proposed monitoring method combines the sales-estimate distinction with the wiki’s existing rights, valuation and reconciliation controls; it is not a validated forecasting model.
+
+When a territory sells, remove its value from the unsold-rights schedule before including the resulting receivable. State which deductions are already included in the low case so the advance calculation does not apply them twice. Reconcile any resulting change in loan availability to the [[wiki/concepts/full-financing#Worked Finance Plan|Worked Finance Plan]].
 
 ## Current Policy Application
 
@@ -66,7 +83,7 @@ A sales estimate is an opinion of potential value. It can fail because of weak d
 
 ## External Context
 
-Screen Australia's current [Market and Audience Insights](https://www.screenaustralia.gov.au/market-audience-insights/) reviewed distribution advances, minimum guarantees, pre-sales and gap across 197 feature-film and television applications submitted from January 2023 through October 2025. The agency describes marketplace funding as important but rarely sufficient by itself. Its official [Finance Plans Explained](https://www.screenaustralia.gov.au/podcast-finance-plans-explained/) guide distinguishes pre-sales from gap loans based on reputable sales-agent estimates for unsold territories. These sources support the conceptual distinction and the need for layered financing; they do not validate a MediaHedge estimate, advance rate, concentration limit or price. Links checked: 2026-08-09.
+Screen Australia's [Market and Audience Insights](https://www.screenaustralia.gov.au/market-audience-insights/) reviewed distribution advances, minimum guarantees, pre-sales and gap across 197 feature-film and television applications submitted from January 2023 through October 2025. The agency describes marketplace funding as important but rarely sufficient by itself. Its official [Finance Plans Explained](https://www.screenaustralia.gov.au/podcast-finance-plans-explained/) guide distinguishes pre-sales from gap loans based on reputable sales-agent estimates for unsold territories. These sources support the conceptual distinction and the need for layered financing; they do not validate a MediaHedge estimate, advance rate, concentration limit or price. Links checked: 2026-08-09. The finance-plan link returned an access error during the November 15, 2026 refresh; this earlier context has not been newly verified.
 
 ## Continue Exploring
 
@@ -79,3 +96,5 @@ Screen Australia's current [Market and Audience Insights](https://www.screenaust
 -->
 
 <!-- Current qualitative authority: live MediaHedge Brain Underwriting/MH Underwriting.md and Underwriting/Risk and Obligor Scores.md (owner-approved reference, September 25, 2026), and Operations/Lifecycle of a Media Loan.md (owner-approved narrative, September 27, 2026), checked September 30, 2026. This is a scoped reconciliation, not a new raw evidence source or a transaction approval. -->
+
+<!-- November 15 source basis: [[wiki/sources/follows-film-finance-problems]] and [[wiki/sources/follows-film-finance-numbers]]. Counts identify distinct article records, not independent datasets. Scoped qualitative review against live Brain Underwriting/MH Underwriting.md, user-confirmed authority; prior policy as_of and open review status retained. -->

@@ -2,7 +2,7 @@
 title: Welcome to the MediaHedge Knowledgebase
 type: operations
 status: current
-updated: 2026-11-04
+updated: 2026-11-15
 source_count: 22
 publish: true
 description: Explore film and television finance through MediaHedge's guide to collateral, loan sizing, cash control, risk protection, servicing, recovery and returns.
@@ -67,10 +67,10 @@ For a quicker comparison of repayment sources, open the [[wiki/syntheses/repayme
 
 ### Build a Financeable Loan
 
-- [[wiki/concepts/full-financing|Full Financing]] — why all costs and timing must work through delivery.
+- [[wiki/concepts/full-financing|Full Financing]] — a worked finance plan showing gross sources, net cash and funding timing.
 - [[wiki/concepts/loan-sizing|Loan Sizing]] — how eligible value and the tightest limit determine exposure.
 - [[wiki/concepts/pre-sales-collateral|Pre-Sales Collateral]] — how an executed minimum guarantee becomes an eligible net receivable.
-- [[wiki/concepts/gap-collateral|Gap Collateral]] — how unsold-rights value receives limited, market-dependent credit.
+- [[wiki/concepts/gap-collateral|Gap Collateral]] — asking prices, expected sales and supported unsold-rights value.
 - [[wiki/concepts/tax-credit-collateral|Tax-Credit Collateral]] — how production incentives become potential repayment value.
 
 ### Protect the Capital

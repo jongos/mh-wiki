@@ -2,8 +2,8 @@
 title: Research Backlog
 type: operations
 status: current
-updated: 2026-11-04
-source_count: 17
+updated: 2026-11-15
+source_count: 19
 publish: false
 tags:
   - mediahedge
@@ -95,3 +95,10 @@ Complete the release checks in [[wiki/operations/federal-tax-draft-review|Federa
 ### Reader Release Follow-Up
 
 The publication authorization supersedes the draft-only hold above. Follow changes to [[wiki/concepts/section-168k-film-tv-deductions|Section 168(k)]] and [[wiki/concepts/proposed-federal-film-tv-credit|the introduced credit bills]]. Recheck later regulations, amended bill text, taxpayer ownership and basis/credit interactions before expanding transaction guidance.
+
+## External Finance-Plan Follow-Up — November 15, 2026
+
+- Before using Follows’s numerical findings, obtain underlying cohort definitions, selection methods, unsold-territory treatment, collection cutoffs and cost treatment. The [report landing page](https://www.filmbusinessschool.com/report) describes 103 plans but requires a form for the PDF; no form was submitted. The companion articles are overlapping research, not independent corroboration. See [[wiki/sources/follows-film-finance-numbers]].
+- Named intermediary failures and legal recovery results need case-specific primary records before becoming case studies. This release adds generic continuity diligence only.
+- Filmarket’s historical Spanish tax examples and coproduction benefits require separate current official authority if pursued; excluded here. See [[wiki/sources/filmarket-finance-plan]].
+- Screen Australia’s previously linked finance-plan guide returned HTTP 403 on this review. Its earlier review date remains unchanged; no new claim relies on a fresh verification of that page.

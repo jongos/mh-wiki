@@ -2,8 +2,8 @@
 title: Raw Source Manifest
 type: operations
 status: current
-updated: 2026-11-04
-source_count: 28
+updated: 2026-11-15
+source_count: 32
 publish: false
 tags:
   - mediahedge
@@ -44,6 +44,10 @@ Canonical ingestion snapshots. SHA-256 identifies the exact binary reviewed duri
 | [[raw/sources/irs-irb-2026-06-2026-11-04.html\|IRS Notice 2026-11]] | `2AA5E729E74274AFD7C203E0E57803E1A7F3556575D01EBF6D2674D40468AA1C` | ingested - unpublished federal draft evidence | [[wiki/sources/irs-notice-2026-11]] |
 | [[raw/sources/hr10582-ih-2026-09-24.html\|H.R. 10582 Introduced Text]] | `53E7CD9EF4127EF6A682462B22078CBBD9BF7D9684C8DA5EE3E30E3BFB78ABA8` | ingested - unpublished federal draft evidence | [[wiki/sources/hr10582-introduced]] |
 | [[raw/sources/s5552-is-2026-09-24.html\|S. 5552 Introduced Text]] | `DC40E05F11932374D4E046D9CF12F6098AB641CD6CF179CB27D03ED7A842E056` | ingested - unpublished federal draft evidence | [[wiki/sources/s5552-introduced]] |
+| [[raw/sources/cinelaunch-finance-plan-review-2026-11-15.txt\|Crafting a Winning Film Finance Plan: A Comprehensive Guide — Review Record]] | `436ACC0BD0947BB3B4B90EC0972404BF59D3220AC0728AF3D8955376C641BE4B` | reviewed - limited external-source record | [[wiki/sources/cinelaunch-finance-plan]] |
+| [[raw/sources/filmarket-finance-plan-review-2026-11-15.txt\|The Finance Plan of a Film — A Breakdown — Review Record]] | `DF05E5C75F4EFCE3496197A6A8172CFF492722B2FA32CF3E58F9D49699621225` | reviewed - limited external-source record | [[wiki/sources/filmarket-finance-plan]] |
+| [[raw/sources/follows-film-finance-problems-review-2026-11-15.txt\|Everything That’s Wrong With Film Finance — Review Record]] | `7B0B281F1D24D38B89F53E649C07A64D201DDF6B903DD77293429E62BDE5C4AF` | reviewed - limited external-source record | [[wiki/sources/follows-film-finance-problems]] |
+| [[raw/sources/follows-film-finance-numbers-review-2026-11-15.txt\|The Film Finance Numbers Nobody Shows You — Review Record]] | `AF51DD3A72E9B6DD21096F5D5B44F5D2C8EF119F3951E6FC97DEA2066A954121` | reviewed - limited external-source record | [[wiki/sources/follows-film-finance-numbers]] |
 
 ## Ingestion Note
 
@@ -52,3 +56,5 @@ The first sixteen evidentiary financier briefs did not expose an explicit public
 `MediaHedge_Media_Finance_Lending_Landscape_Financier_Brief.docx` is explicitly a public-capability map as of August 10, 2026. Its provider, ownership and product statements require periodic refresh and do not establish current capacity, pricing, approval or a transaction's legal counterparty.
 
 `MediaHedge_Knowledgebase_Introduction.docx` is a derived orientation artifact generated from the compiled wiki. It adds no independent evidence and must not be used to corroborate or increase the source count of the claims it summarizes.
+
+The four November 15 external-article records are limited reviewer paraphrases, not full publisher snapshots. Their hashes identify the review records only. The two Follows articles share research and are not independent corroboration.

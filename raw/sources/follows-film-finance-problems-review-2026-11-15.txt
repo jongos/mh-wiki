@@ -1,0 +1,10 @@
+Source review record — limited paraphrase, not a full webpage snapshot
+Title: Everything That’s Wrong With Film Finance
+Author/publisher: Stephen Follows
+Publication date: 2026-11-04
+URL: https://stephenfollows.com/p/everything-thats-wrong-with-film
+Reviewed: 2026-11-15
+Scope: Relevant article text read on the publisher page. No source images reproduced.
+Observation: The author distinguishes opening asking prices from expected accepted prices. He also discusses funding announcements, intermediary failures and financing costs. The article combines research claims, interviews and commentary.
+Limits: Author-reported research with course promotion. Underlying datasets, case records and performance claims were not independently verified; no statistical chart or numerical benchmark is adopted.
+Provenance: Prepared directly from the external article, not from wiki pages. This record establishes the reviewer’s observation of the cited source, not independent verification of its claims. Its hash identifies this record only, not the remote page.

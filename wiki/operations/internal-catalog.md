@@ -2,8 +2,8 @@
 title: Internal Wiki Catalog
 type: operations
 status: current
-updated: 2026-11-04
-source_count: 27
+updated: 2026-11-15
+source_count: 31
 publish: false
 tags:
   - mediahedge
@@ -150,3 +150,16 @@ All are publish:false; no public navigation or deployment change. Five new offic
 - [[wiki/concepts/proposed-federal-film-tv-credit|Proposed Federal Film and Television Credit]]
 
 The two reader pages supersede the retained private drafts. Five source summaries and the review record remain publish:false. The whole-wiki prose inventory is in [[wiki/operations/federal-tax-draft-review|Federal Tax Review Record]].
+
+## Finance-Plan Integration — November 15, 2026
+
+Expanded [[wiki/concepts/full-financing|Full Financing]] with cash/noncash treatment and an original worked example; expanded [[wiki/concepts/gap-collateral|Gap Collateral]] with valuation distinctions and an original conceptual SVG. [[wiki/concepts/loan-sizing|Loan Sizing]] links the example; [[wiki/concepts/cash-control-and-waterfalls|Cash Control]] adds intermediary continuity diligence. Public home and [[wiki/what-changed|What Changed]] index the release.
+
+Limited external-source review records, one per article (not complete publisher snapshots):
+
+- [[wiki/sources/cinelaunch-finance-plan]]
+- [[wiki/sources/filmarket-finance-plan]]
+- [[wiki/sources/follows-film-finance-problems]]
+- [[wiki/sources/follows-film-finance-numbers]]
+
+The two Follows sources overlap; distinct record counts are not independent-study counts. No raw dataset or proprietary Brain document was imported. Existing 28 source files remain unchanged. The added review records are not derived from wiki pages.

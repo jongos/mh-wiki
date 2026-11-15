@@ -2,7 +2,7 @@
 title: Cash Control and Waterfalls
 type: concept
 status: current
-updated: 2026-11-04
+updated: 2026-11-15
 source_count: 6
 publish: true
 description: Learn how payment directions, collection accounts, account control, contractual waterfalls and reconciliation turn proceeds into prioritized loan repayment.
@@ -45,6 +45,12 @@ No one component substitutes for the others.
 ## Financier Rights
 
 The financing partner should be expressly protected in the waterfall and control documents or through a clear agent/collateral-agent structure. Reserved matters commonly include account changes, payment instructions, waterfall amendments, manager replacement, extraordinary deductions, collateral releases and junior distributions during stress.
+
+## Analysis and Inference
+
+Intermediary continuity deserves its own diligence test. Map who holds money at each stage, what evidence distinguishes client receipts from the intermediary’s own funds, and how another manager could obtain records and continue collections. Ask counsel to verify the effect of insolvency under the actual account and agency documents; the presence of a CAMA alone does not establish protection from every intermediary failure.
+
+This is a practical extension of the existing cash-control and manager-replacement framework, not a finding about any named provider. Test access to bank statements, reconciliation data, payer contacts and replacement instructions before an interruption occurs.
 
 ## Limits and Failure Modes
 

@@ -2,7 +2,7 @@
 title: Loan Sizing
 type: concept
 status: needs-review
-updated: 2026-11-04
+updated: 2026-11-15
 as_of: 2026-09-30
 source_count: 7
 publish: true
@@ -55,7 +55,7 @@ MediaHedge sizes each loan against evidenced repayment sources and the cash need
 
 Model base, downside and stress cases before recommending structure and pricing. Risk Score and the legal-entity- and territory-specific Obligor Score inform the review. Management or an authorized underwriter approves the structure and blended rate, with required capital-provider consent; MH Score and Tier classify that approved rate afterward. A spreadsheet result or counterparty lookup is not approval.
 
-Gross commitment is not cash available to production. Deduct prepaid interest, fees, reserves and other closing deductions, then reconcile net cash and its timing to remaining uses. A smaller loan does not cure a production funding shortfall unless other verified sources fill it.
+The [[wiki/concepts/full-financing#Worked Finance Plan|Worked Finance Plan]] shows gross and net reconciliation with a timing stress. Gross commitment is not cash available to production. Deduct prepaid interest, fees, reserves and other closing deductions, then reconcile net cash and its timing to remaining uses. A smaller loan does not cure a production funding shortfall unless other verified sources fill it.
 
 ## Required Output
 

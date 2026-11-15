@@ -50,6 +50,8 @@ Run `tools\wiki-history.cmd` for the live commit-and-tag index. It reads Git dir
 
 `wiki-v1.23-federal-tax-mojo` adds two public federal tax explanations, five immutable official sources and a whole-wiki prose review. The review record distinguishes edited pages from reviewed-unchanged pages. Original drafts, evidence and recovery history remain retained.
 
+`wiki-v1.24-finance-plan-valuation` expands existing finance-plan and gap pages, adds four limited external-source review records and an original conceptual valuation diagram. Hypothetical figures are separated from policy and observed performance. GitHub publication and Obsidian Publish deployment remain separate operations.
+
 ## Safe Recovery
 
 Prefer restoring into a separate folder first. This preserves the current vault and any manual edits while the recovered generation is inspected.

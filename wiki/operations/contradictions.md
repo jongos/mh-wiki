@@ -2,8 +2,8 @@
 title: Contradictions Register
 type: operations
 status: current
-updated: 2026-10-07
-source_count: 17
+updated: 2026-11-15
+source_count: 21
 publish: false
 tags:
   - mediahedge
@@ -66,3 +66,11 @@ When a true conflict appears, add a row with both source links, dates, scope, af
 | 2026 predictive claims | [[wiki/sources/filmhedge-private-credit-insights-2026\|2026 companion]], pages 16-17, uses strong grading/performance and uncorrelated wording; [[wiki/sources/filmhedge-divergent-correlation-2026\|technical study]], pages 20-21, concludes relationships remain unproven. Companion page 26 mentions cast and genre despite page 13 excluding star-power coding. | Unresolved narrative overreach. Wiki attributes empirical conclusions to the technical study and does not equate inconclusive tests with independence or include unmodeled predictors. Owner: report editor; requires aligned language and verified model specification. |
 | Funded versus underwritten amount | 2026 companion page 11 describes mean loan size as funded; page 12 and technical study page 6 define amounts as underwritten principal. | Wiki does not publish a cash-funded total from these amounts. Owner: report editor; reconcile to actual advances before any funded-volume claim. |
 | 2022 cost reconciliation | [[wiki/sources/filmhedge-private-credit-insights-2022-v2\|2022 v2]], pages 9 and 12, retain conflicting Buddies BTL and three negative budget residuals. | Historical unresolved differences, not contingency allowances. Owner: research review; original budget schedules needed. No source values silently corrected. |
+
+## External Finance-Plan Reconciliation — November 15, 2026
+
+| Topic | Source Positions and Scope | Treatment and Remaining Evidence |
+| --- | --- | --- |
+| Bank loan versus gap | [[wiki/sources/filmarket-finance-plan\|Filmarket, 2018]] groups the terms; [[wiki/sources/sales-estimates-and-gap-as-collateral-crash-course\|Gap Brief]] identifies unsold rights as the repayment asset. | Resolved editorially by separating generic borrowing from unsold-rights lending; no generic bank loan is classified as gap merely because it closes a budget shortfall. |
+| Expected price versus portfolio realization | [[wiki/sources/follows-film-finance-problems\|Follows, November 2026]] discusses completed sales against estimates; [[wiki/sources/follows-film-finance-numbers\|October Companion]] also addresses unsold territories. | Different denominators, not established conflicting outcomes. Retain sale likelihood and unsold rights in diligence. Dataset reconciliation remains open; no observed percentage becomes a haircut. |
+| Example advances versus policy | [[wiki/sources/cinelaunch-finance-plan\|Cinelaunch, 2024]] supplies sample advances; current qualitative underwriting requires transaction approval. | Illustrations are not policy. New worked-plan figures are independently authored and explicitly hypothetical; no sample advance rule imported. |

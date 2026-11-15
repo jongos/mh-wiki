@@ -1,0 +1,10 @@
+Source review record — limited paraphrase, not a full webpage snapshot
+Title: The Film Finance Numbers Nobody Shows You
+Author/publisher: Stephen Follows
+Publication date: 2026-10-28
+URL: https://stephenfollows.com/p/the-film-finance-numbers-nobody-shows-you
+Reviewed: 2026-11-15
+Scope: Relevant article text read on the publisher page. No source images reproduced.
+Observation: The sales-estimate discussion distinguishes asking and expected accepted prices, then explains that some territories never sell. A plausible price for a completed sale does not establish realization across the whole rights schedule.
+Limits: Same author and overlapping research as the November article, not independent corroboration. The underlying loan and sales datasets were unavailable for replication. Rates, returns and sample percentages are excluded.
+Provenance: Prepared directly from the external article, not from wiki pages. This record establishes the reviewer’s observation of the cited source, not independent verification of its claims. Its hash identifies this record only, not the remote page.
