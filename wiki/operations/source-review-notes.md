@@ -1,10 +1,10 @@
 ---
-title: Evidence and Limitations
-type: synthesis
+title: Source Review Notes
+type: operations
 status: current
-updated: 2026-11-04
+updated: 2026-11-15
 source_count: 27
-publish: true
+publish: false
 description: Understand the evidence supporting this knowledgebase, its limitations and the legal, policy, market and transaction facts financiers should verify.
 tags:
   - mediahedge
@@ -12,7 +12,7 @@ tags:
   - diligence
 ---
 
-# Evidence and Limitations
+# Source Review Notes
 
 This knowledgebase brings together seventeen evidentiary internal MediaHedge briefs, five FilmHedge research publications and five official federal tax sources about film- and television-finance credit, production incentives and the surrounding market. The qualitative underwriting explanation was also reconciled with owner-approved company guidance reviewed September 25 and 27, 2026. It explains the company’s framework, the relationships among the major controls, and the questions a financing partner may want to explore.
 
@@ -45,9 +45,6 @@ This knowledgebase brings together seventeen evidentiary internal MediaHedge bri
 
 ## Important Policy Note
 
-> [!warning] Evidence Limitation
-> The reader website summarizes the controls qualitatively. The intentionally public GitHub repository and its history also contain legacy internal briefs and numerical examples; those are historical evidence, not a statement of current approved policy. Current approved policy and executed transaction documents govern each financing.
-
 ## Questions Readers Ask
 
 - **Can you finance my film?** This guide cannot determine whether your production qualifies; begin with [[wiki/concepts/full-financing|Full Financing]] and the transaction review described below.
@@ -78,7 +75,6 @@ The [[wiki/concepts/section-168k-film-tv-deductions|Section 168(k) Guide]] and [
 
 **Page Updated** records an edit to a page. It is not certification that every linked law, provider or transaction assumption was reverified on that date. A dated review statement identifies the topic actually checked. The September 30, 2026 underwriting refresh covers the qualitative credit sequence, transaction-specific sizing, score distinctions and funding-channel boundaries; it does not validate particular loans, numerical examples or realized performance.
 
-See [[wiki/what-changed|What Changed]] for reader-facing changes. Review-queue material and newly generated summaries are not automatically approved company guidance.
 
 ## What a Financing Partner Should Request
 

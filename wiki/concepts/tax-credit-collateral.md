@@ -2,7 +2,7 @@
 title: Tax-Credit Collateral
 type: concept
 status: needs-review
-updated: 2026-11-04
+updated: 2026-11-15
 as_of: 2026-09-30
 source_count: 5
 publish: true
@@ -17,9 +17,6 @@ tags:
 # Tax-Credit Collateral
 
 A production incentive can support a bridge loan when the project, claimant and expenditures qualify under the governing program and the expected refund, rebate, grant or transferable certificate can be assigned or otherwise captured for the lender. The expected incentive is conditional value until program, audit, filing and realization requirements are satisfied.
-
-> [!warning] Policy Review Pending
-> The qualitative framework was reconciled with current owner-approved underwriting guidance on September 30, 2026. Transaction-specific mandates, numerical assumptions and delegated exception authority still require verification; this page does not certify a financing.
 
 ## U.S. Program Comparisons
 
@@ -37,7 +34,7 @@ The expected amount is rebuilt from governing rules, the production budget, qual
 
 ### Advance and Structure
 
-MediaHedge sets the advance assumption from verified eligible value, timing, deductions and the approved transaction or lender mandate. A worked example is not a universal advance limit. Exact thresholds are internal and intentionally not reproduced in this public guide. Security, notices, claimant ownership, lockbox or account control and certificate-transfer documentation must fit local anti-assignment and program rules.
+MediaHedge sets the advance assumption from verified eligible value, timing, deductions and the approved transaction or lender mandate. Security, notices, claimant ownership, lockbox or account control and certificate-transfer documentation must fit local anti-assignment and program rules.
 
 ### Realization
 

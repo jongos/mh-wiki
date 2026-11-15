@@ -2,7 +2,7 @@
 title: Illinois Film and Television Incentives
 type: entity
 status: current
-updated: 2026-11-04
+updated: 2026-11-15
 as_of: 2026-10-06
 source_count: 1
 publish: true
@@ -29,19 +29,17 @@ The credit is transferable under Illinois rules. The transfer regulation permits
 
 Tag each wage by residency, role, compensation limit and bonus eligibility. Avoid applying a resident-hiring bonus to all purchases or counting the same cost twice. Reconcile the production and loan-out withholding evidence before treating payroll as qualified, and model actual sale deductions rather than treating the credit as a state cash refund.
 
-## Review Boundary
+## Program Verification
 
-Sources checked October 6, 2026 for the categories and transfer distinction above. The guide does not determine whether a particular production satisfies the current bonus, application or withholding requirements. Compare [[wiki/concepts/incentive-monetization|Cash Routes]].
-
-Links checked: 2026-10-06. Review scope and unresolved items are stated above.
+Official-source review: October 6, 2026. Confirm the project’s allocation, acceptance, cash route and payment schedule. Continue with [[wiki/concepts/incentive-monetization|Cash Routes]].
 
 ## Report Context
 
 ![[assets/research/illinois-incentive-region.png|FilmHedge regional snapshot locating Illinois and summarizing its incentive cash route alongside neighboring programs]]
 
-*Source: FilmHedge’s [2026 Tax Incentives Guide](https://filmhedge.com/report-2026-tax-incentives), October 6, 2026. Regional research snapshot, not a ranking or a full statement of eligibility. Neighboring-state labels have not received this profile’s official-source review; consult current agency rules.*
+*Source: FilmHedge’s [2026 Tax Incentives Guide](https://filmhedge.com/report-2026-tax-incentives), October 6, 2026. Regional snapshot. This profile verifies the featured state; use each neighboring state’s agency rules for its eligibility terms.*
 
-Open the [Illinois report entry](https://filmhedge.com/report-2026-tax-incentives#state-illinois) and the [Medium explainer](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437) for wider context. This page’s official sources and review boundary govern its program discussion; the report does not establish an award, transfer price or collection date.
+Open the [Illinois report entry](https://filmhedge.com/report-2026-tax-incentives#state-illinois) and the [Medium explainer](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437) for wider context. Use the linked program rules to calculate eligible value and the project’s award, sale agreement and payment schedule to forecast cash.
 
 Research links checked: 2026-10-07.
 

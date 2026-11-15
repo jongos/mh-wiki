@@ -52,6 +52,8 @@ Run `tools\wiki-history.cmd` for the live commit-and-tag index. It reads Git dir
 
 `wiki-v1.24-finance-plan-valuation` expands existing finance-plan and gap pages, adds four limited external-source review records and an original conceptual valuation diagram. Hypothetical figures are separated from policy and observed performance. GitHub publication and Obsidian Publish deployment remain separate operations.
 
+`wiki-v1.25-media-finance-guide` renames the reader site, tightens all retained public pages with Mojo, removes repeated editorial warnings and retires the public changelog and evidence-summary page. Source records remain in website-excluded operations and immutable raw evidence.
+
 ## Safe Recovery
 
 Prefer restoring into a separate folder first. This preserves the current vault and any manual edits while the recovered generation is inspected.

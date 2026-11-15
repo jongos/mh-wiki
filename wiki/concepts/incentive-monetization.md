@@ -2,7 +2,7 @@
 title: Turning Production Incentives into Cash
 type: concept
 status: current
-updated: 2026-11-04
+updated: 2026-11-15
 as_of: 2026-10-06
 source_count: 1
 publish: true
@@ -40,7 +40,7 @@ An application, reservation, initial approval, audited claim, issued certificate
 
 ### An Illustrative Cash Bridge
 
-The following assumptions illustrate arithmetic only. They do not describe a state program, a market quote, a MediaHedge advance rate or a funded transaction.
+This hypothetical example follows a $10 million production from qualified spending to net incentive cash.
 
 | Step | Assumption or Calculation | Amount |
 | --- | --- | ---: |
@@ -55,7 +55,7 @@ The resulting cash equals 16.26% of the total budget before financing costs and 
 
 ### Timing Can Change the Result
 
-For illustration, six additional months on an unchanged $1,000,000 principal balance at an assumed 12% annual simple interest adds $60,000. Actual financing may use different accrual, fixed-interest, fee or extension terms. Model those executed terms in [[wiki/concepts/financier-return-economics|Return Economics]]; do not label the incentive percentage an investment return.
+For illustration, six additional months on an unchanged $1,000,000 principal balance at an assumed 12% annual simple interest adds $60,000. Model the facility’s accrual, fixed-interest, fee and extension terms in [[wiki/concepts/financier-return-economics|Return Economics]]; do not label the incentive percentage an investment return.
 
 ## Evidence to Collect
 

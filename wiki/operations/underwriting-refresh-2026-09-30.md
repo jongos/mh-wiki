@@ -2,7 +2,7 @@
 title: September Underwriting Reconciliation
 type: operations
 status: current
-updated: 2026-09-30
+updated: 2026-11-15
 source_count: 0
 publish: false
 tags:
@@ -42,7 +42,7 @@ The underwriting and score pages cite the owner-edited reference dated September
 | Returns | Coupon can imply annual accrual in every case | Establish fixed versus annual interest before interpreting contractual economics |
 | Source currency | New ingestion or file edit can appear to certify policy | Record authority and scoped review separately; pending review remains pending |
 
-Affected reader pages: [[wiki/concepts/loan-sizing|Loan Sizing]], [[wiki/concepts/gap-collateral|Gap Collateral]], [[wiki/concepts/tax-credit-collateral|Tax-Credit Collateral]], [[wiki/concepts/financier-return-economics|Return Economics]], [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]], [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]], [[wiki/overview|Overview]], [[wiki/entities/mediahedge|MediaHedge]], [[wiki/glossary|Glossary]] and [[wiki/evidence-and-limitations|Evidence and Limitations]]. Delivery shorthand in monitoring and the repayment map was qualified consistently.
+Affected reader pages: [[wiki/concepts/loan-sizing|Loan Sizing]], [[wiki/concepts/gap-collateral|Gap Collateral]], [[wiki/concepts/tax-credit-collateral|Tax-Credit Collateral]], [[wiki/concepts/financier-return-economics|Return Economics]], [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]], [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]], [[wiki/overview|Overview]], [[wiki/entities/mediahedge|MediaHedge]], [[wiki/glossary|Glossary]] and [[wiki/operations/source-review-notes|Source Review Notes]]. Delivery shorthand in monitoring and the repayment map was qualified consistently.
 
 ## Evidence Boundary and Remaining Work
 
@@ -50,4 +50,4 @@ Legacy raw snapshots and hashes remain unchanged. Their source-summary pages now
 
 Current primary context was checked for the new glossary's Article 9, subordination and recapture references. The glossary identifies the jurisdiction and links directly to primary law. These examples do not validate a transaction or another jurisdiction.
 
-See [[wiki/operations/contradictions|Contradictions Register]] for historical conflicts and [[wiki/operations/research-backlog|Research Backlog]] for remaining authority and operational evidence gaps. [[wiki/what-changed|What Changed]] summarizes the reader changes without exposing maintenance detail.
+See [[wiki/operations/contradictions|Contradictions Register]] for historical conflicts and [[wiki/operations/research-backlog|Research Backlog]] for remaining authority and operational evidence gaps. the retired reader changelog (retained in Git history) summarizes the reader changes without exposing maintenance detail.

@@ -41,8 +41,6 @@ The agent owns the Markdown layer: create, revise, cross-link and lint it. The h
 │   └── sources/              immutable canonical snapshots
 ├── wiki/
 │   ├── overview.md           executive synthesis
-│   ├── evidence-and-limitations.md
-│   │                          public evidence guide
 │   ├── glossary.md           shared terminology
 │   ├── sources/              one provenance page per raw source
 │   ├── concepts/             durable topic pages
@@ -105,7 +103,7 @@ Use these labels when they materially improve trust:
 
 Quantitative policy rails must show their source and effective date when available. Never silently generalize MediaHedge policy into a universal market rule.
 
-Source summaries must distinguish claims suitable for the reader website from excluded claims and identify authority, scope, effective date and scoped review date separately. Ingestion and page-update dates are not verification dates. Website-excluded files and HTML comments remain visible in the intentionally public GitHub repository; they are not confidential storage. A qualitative reconciliation with the live Brain must identify its canonical authority and preserve historical source claims without importing confidential documents or increasing raw evidence counts. Update `wiki/what-changed.md` for substantive reader-facing releases; summarize changes, not private maintenance records.
+Source summaries must distinguish claims suitable for the reader website from excluded claims and identify authority, scope, effective date and scoped review date separately. Ingestion and page-update dates are not verification dates. Website-excluded files and HTML comments remain visible in the intentionally public GitHub repository; they are not confidential storage. A qualitative reconciliation with the live Brain must identify its canonical authority and preserve historical source claims without importing confidential documents or increasing raw evidence counts. Record releases in `log.md`; the reader changelog was removed at the owner’s request.
 
 ## Linking and naming
 
@@ -127,7 +125,7 @@ Source summaries must distinguish claims suitable for the reader website from ex
 - Give financiers a decision-first route: financeability, repayment, sizing, control, protection, monitoring, recovery, portfolio construction and realized economics.
 - Every durable concept page should link back to the home note, the financier diligence route and the full credit lifecycle.
 - Keep source summaries available privately for traceability, but do not expose source registries, hashes, raw filenames or maintenance instructions in public pages.
-- Put material evidence limitations near decision guidance, not only in the operations register.
+- State decision-critical conditions directly at the relevant step. Omit generic disclaimers and editorial review banners from reader pages.
 - Reader labels and SEO metadata in `publish.js` are generated from every `publish: true` note plus the deliberate overrides in `tools\publish-navigation.json`. After adding, renaming, retitling, changing a description or changing the publication status of a reader page, run `tools\generate-publish-navigation.cmd`; never hand-edit either generated block.
 
 ## Reader presentation

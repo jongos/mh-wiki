@@ -1143,7 +1143,7 @@ if (-not (Test-Path -LiteralPath $publishJsPath -PathType Leaf)) {
 } else {
     $publishJs = Read-Utf8Text -Path $publishJsPath
     $requiredJsPatterns = @(
-        'Search the Knowledgebase',
+        'Search the Guide',
         'BEGIN GENERATED READER LABELS',
         'BEGIN GENERATED SEO METADATA',
         'MutationObserver',

@@ -2,7 +2,7 @@
 title: Media Finance Lending Landscape
 type: synthesis
 status: current
-updated: 2026-11-04
+updated: 2026-11-15
 as_of: 2026-08-10
 source_count: 9
 publish: true
@@ -87,15 +87,15 @@ Production insurance and completion support can preserve financeability, but nei
 - Comparing project debt with equity or company-level private credit without matching borrower, collateral, lien, duration and loss severity.
 - Treating a provider website as a current credit box, capacity commitment or transaction approval.
 
-## Evidence Boundaries
+## Provider Selection
 
-This is a capability map as of August 10, 2026, not an endorsement, league table, capacity survey, pricing survey or credit opinion. Provider websites describe their own capabilities. Current ownership, licensing, product availability, capacity, financial strength and underwriting appetite should be refreshed before use. Executed loan documents, policies, guaranties, bonds, endorsements and interparty agreements determine the actual exposure and remedy.
+This capability map uses provider descriptions checked August 10, 2026. For provider selection, confirm ownership, licensing, product availability, capacity, financial strength and underwriting appetite. Match the legal entity and its signed instruments to the exposure and remedy.
 
 Links checked: 2026-08-10. On 2026-09-30, the dead Intectus completion-bond reference was removed; its current homepage did not verify that offering. Other provider links have not been revalidated as part of this targeted correction.
 
 ## Analysis and Inference
 
-The groupings above are a reader-oriented synthesis. They identify the most comparable role and product from public descriptions; they do not determine which provider is best for a transaction or establish that any named provider will approve, fund or cover it.
+The groupings compare providers by role and product. Select the provider whose mandate, legal entity and proposed terms fit the transaction.
 
 ## Research on Production Lending and Trade Finance
 
@@ -111,7 +111,7 @@ Research links checked: 2026-10-07.
 
 ## Continue Exploring
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier's Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/concepts/protection-stack|Protection Stack]] · [[wiki/evidence-and-limitations|Evidence and Limitations]] · [[wiki/syntheses/site-navigator|Site Navigator]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier's Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/concepts/protection-stack|Protection Stack]] · [[wiki/syntheses/site-navigator|Site Navigator]]
 
 <!--
 ## Source Basis

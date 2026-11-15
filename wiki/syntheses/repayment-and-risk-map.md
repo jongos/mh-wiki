@@ -2,7 +2,7 @@
 title: Repayment and Risk Map
 type: synthesis
 status: current
-updated: 2026-11-04
+updated: 2026-11-15
 source_count: 14
 publish: true
 description: Compare contracted receivables, tax incentives, unsold rights, insurance, completion support and surety as distinct repayment and protection paths.
@@ -19,7 +19,7 @@ What are the principal repayment and protection paths in the model, how do they 
 
 ![[assets/diagrams/repayment-source-map.svg|Conceptual map of repayment and protection sources and their shared dependencies]]
 
-*Conceptual view: these sources do not provide equal protection, and differently labeled assets may still depend on the same economic event.*
+*Conceptual diagram: these sources do not provide equal protection, and differently labeled assets may still depend on the same economic event.*
 
 ## Comparative Map
 
@@ -63,7 +63,7 @@ Research links checked: 2026-10-07.
 
 ## Continue Exploring
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/evidence-and-limitations|Evidence and Limitations]] · [[wiki/syntheses/site-navigator|Site Navigator]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/site-navigator|Site Navigator]]
 
 <!--
 ## Source Basis

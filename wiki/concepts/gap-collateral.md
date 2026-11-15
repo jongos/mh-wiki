@@ -19,15 +19,9 @@ tags:
 
 Gap financing advances against a discounted portion of the potential value of verified unsold film or television rights before binding licenses exist. The asset is market-dependent rights and future sale proceeds—not cash, a guaranteed sale or a contracted minimum-guarantee receivable.
 
-> [!warning] Policy Review Pending
-> The qualitative framework was reconciled with current owner-approved underwriting guidance on September 30, 2026. Transaction-specific mandates, numerical assumptions and delegated exception authority still require verification; this page does not certify a financing.
-
-> [!warning] Evidence Limitation
-> Legacy briefs contain undated quantitative limits and pricing parameters. Those values remain in the intentionally public GitHub evidence history for provenance but are intentionally not reproduced in this public guide. Current approved policy and transaction documents control.
-
 ![[assets/diagrams/repayment-source-map.svg|Conceptual map distinguishing unsold-rights value from contracted receivables and other repayment sources]]
 
-*Conceptual view: gap value can convert into stronger contractual receivables as licenses are executed, but the estimate itself is not a payment obligation.*
+*Conceptual diagram: gap value can convert into stronger contractual receivables as licenses are executed, but the estimate itself is not a payment obligation.*
 
 ## The Collateral Structure
 
@@ -39,13 +33,13 @@ Gap financing advances against a discounted portion of the potential value of ve
 
 ## Asking Price, Expected Sale and Underwritten Value
 
-Stephen Follows distinguishes an agent’s opening **ask** from the **take**, the price the agent expects to accept. His [November discussion](https://stephenfollows.com/p/everything-thats-wrong-with-film) makes that distinction explicit; the [October companion](https://stephenfollows.com/p/the-film-finance-numbers-nobody-shows-you) adds that some territories never sell. These are overlapping author-reported observations, not independent studies or validated advance rules.
+Stephen Follows distinguishes an agent’s opening **ask** from the **take**, the price the agent expects to accept. His [November discussion](https://stephenfollows.com/p/everything-thats-wrong-with-film) makes that distinction explicit; the [October companion](https://stephenfollows.com/p/the-film-finance-numbers-nobody-shows-you) adds that some territories never sell. Both articles draw on the author’s research.
 
 Do not relabel the take as a supported low case. Test whether the rights can sell, for how much, with what deductions and by when. An acceptable negotiated price in one territory does not establish realization across the whole sales sheet.
 
 ![[assets/diagrams/sales-value-to-cash.svg|Conceptual distinction between asking price, expected sale, supported value, loan sizing, executed receivable and collected cash]]
 
-*Conceptual framework, not a statistical chart: valuation informs a credit decision; only an executed contract creates the relevant payment obligation, and cash collection remains a separate event. No stage guarantees the next.*
+*Conceptual framework: value supports the loan decision, an executed contract establishes the payment obligation, and bank reconciliation confirms collection.*
 
 | Measure | Meaning | Evidence Required Before Giving Credit |
 | --- | --- | --- |
@@ -58,7 +52,7 @@ Do not relabel the take as a supported low case. Test whether the rights can sel
 
 ### Analysis and Inference
 
-Maintain one territory-level record from the dated estimate through the signed license and collection. Show unsold territories as unresolved outcomes rather than dropping them from the comparison. Separate price variance, failure to sell, payment delay and deductions. This proposed monitoring method combines the sales-estimate distinction with the wiki’s existing rights, valuation and reconciliation controls; it is not a validated forecasting model.
+Maintain one territory-level record from the dated estimate through the signed license and collection. Show unsold territories as unresolved outcomes rather than dropping them from the comparison. Separate price variance, failure to sell, payment delay and deductions. This monitoring method tracks sales conversion, price variance and collections separately.
 
 When a territory sells, remove its value from the unsold-rights schedule before including the resulting receivable. State which deductions are already included in the low case so the advance calculation does not apply them twice. Reconcile any resulting change in loan availability to the [[wiki/concepts/full-financing#Worked Finance Plan|Worked Finance Plan]].
 
@@ -77,13 +71,13 @@ Gap remains excluded from the current institutional segment even when another po
 - Are future licenses, notices, proceeds and account directions captured by the security and cash-control structure?
 - How much [[wiki/concepts/portfolio-construction|portfolio exposure]] shares the same sales agent, genre, buyer market, delivery window or territory assumptions?
 
-## Limits and Evidence
+## Valuation Risks
 
 A sales estimate is an opinion of potential value. It can fail because of weak demand, delayed delivery, rights conflicts, optimistic comparables, currency, tax, commissions or expenses. Territory values may be correlated, and completion protection does not ordinarily pay because unsold rights underperform. Pricing cannot cure unsupported value, concentration or a broken repayment timeline.
 
 ## External Context
 
-Screen Australia's [Market and Audience Insights](https://www.screenaustralia.gov.au/market-audience-insights/) reviewed distribution advances, minimum guarantees, pre-sales and gap across 197 feature-film and television applications submitted from January 2023 through October 2025. The agency describes marketplace funding as important but rarely sufficient by itself. Its official [Finance Plans Explained](https://www.screenaustralia.gov.au/podcast-finance-plans-explained/) guide distinguishes pre-sales from gap loans based on reputable sales-agent estimates for unsold territories. These sources support the conceptual distinction and the need for layered financing; they do not validate a MediaHedge estimate, advance rate, concentration limit or price. Links checked: 2026-08-09. The finance-plan link returned an access error during the November 15, 2026 refresh; this earlier context has not been newly verified.
+Screen Australia's [Market and Audience Insights](https://www.screenaustralia.gov.au/market-audience-insights/) reviewed distribution advances, minimum guarantees, pre-sales and gap across 197 feature-film and television applications submitted from January 2023 through October 2025. The agency describes marketplace funding as important but rarely sufficient by itself. Its official [Finance Plans Explained](https://www.screenaustralia.gov.au/podcast-finance-plans-explained/) guide distinguishes pre-sales from gap loans based on reputable sales-agent estimates for unsold territories. These sources explain the distinction between pre-sales and gap and the need for layered financing. Links checked: 2026-08-09. The finance-plan link was unavailable on November 15, 2026; the account above retains its August 9 review date.
 
 ## Continue Exploring
 

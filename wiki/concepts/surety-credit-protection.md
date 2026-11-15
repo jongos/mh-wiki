@@ -2,7 +2,7 @@
 title: Surety and Credit Protection
 type: concept
 status: current
-updated: 2026-08-28
+updated: 2026-11-15
 source_count: 4
 publish: true
 description: Learn how surety bonds and media-credit guarantees support specifically defined payment or performance obligations and where their loan protection ends.
@@ -22,7 +22,7 @@ A surety bond or media-credit guarantee can support a specifically defined payme
 
 ![[assets/diagrams/protection-stack.svg|Five-layer MediaHedge protection stack distinguishing targeted risk-transfer instruments from other controls]]
 
-*Conceptual view: the value of any risk-transfer layer depends on the exact covered obligation, conditions, limits and claims process.*
+*Conceptual diagram: the value of any risk-transfer layer depends on the exact covered obligation, conditions, limits and claims process.*
 
 ## The Four-Part Structure
 
@@ -56,7 +56,7 @@ The financing parties first confirm the final instrument, underlying contract, p
 - Do amendments, waivers, extensions, assignment or cancellation require consent?
 - How do the penal sum, aggregate limit, interest, fees, subrogation and lien rights affect net recovery?
 
-## Limits and Evidence
+## Valuation Risks
 
 Surety is targeted credit support, not blanket loan insurance. Material contract changes or failures to preserve claim rights can impair coverage. Production non-completion, tax-credit validity, sales performance and other borrower risks remain outside the instrument unless the executed language expressly includes them.
 

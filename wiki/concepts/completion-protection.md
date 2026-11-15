@@ -2,7 +2,7 @@
 title: Completion Protection
 type: concept
 status: current
-updated: 2026-09-30
+updated: 2026-11-15
 source_count: 5
 publish: true
 description: Understand how completion bonds and guaranties support production and delivery, what remedies they may provide and why they do not guarantee loan repayment.
@@ -15,14 +15,14 @@ tags:
 
 # Completion Protection
 
-A completion bond or guaranty is a contractual layer designed to help an approved production reach completion and delivery—or provide the remedy stated in the executed documents. It protects a critical dependency in film and television finance, but it is not a blanket guaranty of the loan.
+A completion bond or guaranty protects completion and delivery through the remedies in the executed instrument. Its coverage addresses production delivery; borrower credit and collateral collection require separate underwriting.
 
 > [!important] Why It Matters
 > Partially completed footage may have limited recovery value. Delivery can also be a condition to distributor payments, rights sales and other repayment sources, so a production failure can impair several assets at once.
 
 ![[assets/diagrams/protection-stack.svg|Five-layer MediaHedge protection stack showing completion protection as one distinct layer]]
 
-*Conceptual view: completion protection reinforces [[wiki/concepts/full-financing|Full Financing]], [[wiki/concepts/production-insurance|Production Insurance]], the [[wiki/concepts/security-package|Security Package]] and [[wiki/concepts/monitoring-and-servicing|Monitoring]]; it does not replace them.*
+*Conceptual diagram: completion protection reinforces [[wiki/concepts/full-financing|Full Financing]], [[wiki/concepts/production-insurance|Production Insurance]], the [[wiki/concepts/security-package|Security Package]] and [[wiki/concepts/monitoring-and-servicing|Monitoring]]; it does not replace them.*
 
 ## How the Protection Works
 
@@ -62,7 +62,7 @@ Loss-payee or additional-insured status under production insurance is not a subs
 - How do takeover, materials access, account control, lien priority and subrogation work together?
 - Does each draw leave the project [[wiki/concepts/full-financing|fully financed]] under the current cost-to-complete forecast?
 
-## Limits and Evidence
+## Valuation Risks
 
 Coverage is transaction-specific. Common limitations may include uncovered events, late notice, unpaid premium, failure to maintain the approved financing or production plan, and remedies that exclude interest, fees or consequential loss. The final executed guaranty and endorsements—not a specimen or summary—determine the available protection.
 

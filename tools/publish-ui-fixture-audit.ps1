@@ -46,7 +46,7 @@ try {
     optionCount: options.filter((item) => item.getAttribute('role') === 'option').length,
     statusText: document.getElementById('mh-search-status')?.textContent || '',
     friendlyHome: labels.includes('Welcome & Start Here'),
-    friendlyLibrary: labels.includes('Knowledgebase Library'),
+    friendlyLibrary: labels.includes('Finance Library'),
     navigatorShortcut: document.querySelector('.mh-navigator-shortcut a')?.textContent.trim() === 'Site Navigator',
     seoTitle: document.title === 'Loan Sizing | Media Finance Guide',
     seoDescription: document.querySelector('meta[name="description"]')?.content.startsWith('Learn how eligible collateral value') === true,

@@ -2,7 +2,7 @@
 title: Proposed Federal Film and Television Credit
 type: concept
 status: current
-updated: 2026-11-04
+updated: 2026-11-15
 as_of: 2026-11-04
 source_count: 2
 publish: true
@@ -16,8 +16,7 @@ tags:
 
 H.R. 10582 and S. 5552 would create an American film and television production credit under a new §45BB. Both bills remain introduced. Existing [[wiki/concepts/section-168k-film-tv-deductions|Section 168(k) Deductions]] and state programs in the [[wiki/syntheses/us-film-tax-incentives|U.S. Incentive Guide]] have separate rules.
 
-> [!warning] Proposed, Not Available
-> Congress.gov checked November 4, 2026 shows both bills as Introduced. Do not include the proposed credit as an awarded incentive, available cash, approved tax position or committed financing source.
+Congress.gov review: November 4, 2026. Both bills were introduced. Exclude the proposed credit from committed production financing.
 
 ## Legislative Status and Compared Texts
 

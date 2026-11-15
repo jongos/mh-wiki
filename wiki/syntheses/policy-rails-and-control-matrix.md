@@ -2,7 +2,7 @@
 title: Policy and Control Guide
 type: synthesis
 status: needs-review
-updated: 2026-09-30
+updated: 2026-11-15
 as_of: 2026-09-30
 source_count: 11
 publish: true
@@ -17,11 +17,6 @@ tags:
 # Policy and Control Guide
 
 Use this guide to connect collateral evidence, transaction-specific sizing and authorized decisions through closing and servicing. A review trigger, a mandatory limit and a funding condition have different consequences.
-
-> [!warning] Policy Review Pending
-> The qualitative framework was reconciled with current owner-approved underwriting guidance on September 30, 2026. Transaction-specific mandates, numerical assumptions and delegated exception authority still require verification; this page does not certify a financing.
->
-> The reader website summarizes the controls qualitatively. The intentionally public GitHub repository and its history also contain legacy internal briefs and numerical examples; those are historical evidence, not a statement of current approved policy. Current approved policy and executed transaction documents govern each financing.
 
 ## Sizing and Exposure Controls
 
@@ -76,10 +71,6 @@ Institutional eligibility is assessed by facility or tranche. Eligible contracte
 - A completion guaranty cannot substitute for obligor, [[wiki/concepts/tax-credit-collateral|tax-credit]] or commercial-value underwriting.
 - [[wiki/concepts/surety-credit-protection|Surety protection]] cannot substitute for completion, collateral eligibility or compliance with the bonded obligation and claim process.
 - More reports cannot substitute for [[wiki/concepts/monitoring-and-servicing|verified evidence, triggers and decision authority]].
-
-## Evidence and Limitations
-
-These controls explain the framework, but they do not certify current thresholds, definitions or delegated exception authority. Review [[wiki/evidence-and-limitations|Evidence and Limitations]] and current approved policy before applying them to a financing decision.
 
 ## Continue Exploring
 

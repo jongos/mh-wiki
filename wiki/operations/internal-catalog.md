@@ -24,9 +24,9 @@ The September 30 Phase 1/2 refresh reconciles qualitative underwriting with owne
 The 2026-09-30 reader-interface refinement places four audience/task routes near the top of the public home and makes the existing policy-review status visible on loan sizing, gap collateral, tax-credit collateral, return economics and the policy-control matrix. This changes presentation and navigation, not approved policy or source counts. The interface decisions are recorded in the root `DESIGN.md` maintenance file.
 
 - [[wiki/overview|MediaHedge Wiki Overview]]
-- [[wiki/evidence-and-limitations|Evidence and Limitations]]
+- [[wiki/operations/source-review-notes|Source Review Notes]]
 - [[wiki/glossary|Film-Finance Glossary]]
-- [[wiki/what-changed|What Changed]]
+- the retired reader changelog (retained in Git history)
 - [[wiki/entities/mediahedge|MediaHedge]]
 
 ## Public concepts
@@ -153,7 +153,7 @@ The two reader pages supersede the retained private drafts. Five source summarie
 
 ## Finance-Plan Integration — November 15, 2026
 
-Expanded [[wiki/concepts/full-financing|Full Financing]] with cash/noncash treatment and an original worked example; expanded [[wiki/concepts/gap-collateral|Gap Collateral]] with valuation distinctions and an original conceptual SVG. [[wiki/concepts/loan-sizing|Loan Sizing]] links the example; [[wiki/concepts/cash-control-and-waterfalls|Cash Control]] adds intermediary continuity diligence. Public home and [[wiki/what-changed|What Changed]] index the release.
+Expanded [[wiki/concepts/full-financing|Full Financing]] with cash/noncash treatment and an original worked example; expanded [[wiki/concepts/gap-collateral|Gap Collateral]] with valuation distinctions and an original conceptual SVG. [[wiki/concepts/loan-sizing|Loan Sizing]] links the example; [[wiki/concepts/cash-control-and-waterfalls|Cash Control]] adds intermediary continuity diligence. Public home and the retired reader changelog (retained in Git history) index the release.
 
 Limited external-source review records, one per article (not complete publisher snapshots):
 
@@ -163,3 +163,7 @@ Limited external-source review records, one per article (not complete publisher 
 - [[wiki/sources/follows-film-finance-numbers]]
 
 The two Follows sources overlap; distinct record counts are not independent-study counts. No raw dataset or proprietary Brain document was imported. Existing 28 source files remain unchanged. The added review records are not derived from wiki pages.
+
+## Media Finance Guide Editorial Release — November 15, 2026
+
+Reviewed all 39 retained public notes with mojo-language. Removed repetitive policy-review and evidence-warning callouts, tightened passive instructions and shortened repeated explanations. Retired the public changelog; Git retains its history. [[wiki/operations/source-review-notes|Source Review Notes]] now holds website-excluded editorial context. The public home and site title are Media Finance Guide; existing home URLs remain stable. Hypothetical amounts, legislative status, payment conditions and empirical measurements retain their factual meaning. Raw sources remain unchanged.

@@ -2,7 +2,7 @@
 title: Monitoring and Servicing
 type: concept
 status: current
-updated: 2026-11-04
+updated: 2026-11-15
 source_count: 9
 publish: true
 description: See how active servicing tracks production progress, collateral, cash, covenants and recovery timing while escalating material variances for decision.
@@ -18,7 +18,7 @@ Servicing is active credit management from first draw through final payoff. It m
 
 ![[assets/diagrams/monitoring-loop.svg|Monitoring loop from the approved baseline through evidence, comparison, diagnosis and decision]]
 
-*Conceptual view: monitoring becomes a control only when verified evidence is assigned to an owner and connected to a decision.*
+*Conceptual diagram: monitoring becomes a control only when verified evidence is assigned to an owner and connected to a decision.*
 
 ## Why the Risk Changes
 
@@ -34,13 +34,13 @@ After closing, budget and schedule performance can change, contracts can be amen
 
 ## Baseline-to-Action Loop
 
-At closing, establish the approved budget, schedule, borrowing base, source-to-account map, covenant calendar and expected cash curve. Compare actual evidence at the prescribed cadence. Each exception should show severity, owner, cure date and effect on value, timing and return. Triggers determine whether to pause draws, increase reserves, seek consent, notify a guarantor or obligor, reforecast maturity or begin a workout.
+At closing, establish the approved budget, schedule, borrowing base, source-to-account map, covenant calendar and expected cash curve. Compare actual evidence at the prescribed cadence. Record each exception’s severity, owner, cure date and effect on value, timing and return. Triggers determine whether to pause draws, increase reserves, seek consent, notify a guarantor or obligor, reforecast maturity or begin a workout.
 
 ## Investor Control and Continuity
 
-The financing documents should define data fields, frequency, service levels, approval thresholds and reserved matters. Material collateral releases, extensions, principal compromises, enforcement, related-party payments and cash-control changes generally require the agreed investor consent. Complete custody, audit trails, data portability, cyber controls and backup servicing preserve operations after a servicer transition.
+Define data fields, reporting frequency, service levels, approval thresholds and reserved matters in the financing documents. Material collateral releases, extensions, principal compromises, enforcement, related-party payments and cash-control changes generally require the agreed investor consent. Complete custody, audit trails, data portability, cyber controls and backup servicing preserve operations after a servicer transition.
 
-## Limits and Failure Modes
+## Failure Modes
 
 Volume is not control. Stale or unaudited reports, percentage-complete measures disconnected from cash, aging that ignores delivery disputes, accrued interest that masks deteriorating XIRR and informal waivers all weaken monitoring. Every unresolved exception needs verified evidence, a responsible owner and an explicit decision consequence.
 
@@ -52,7 +52,7 @@ Servicing keeps [[wiki/concepts/full-financing|Full Financing]], [[wiki/concepts
 
 The [Divergent Correlation study](https://filmhedge.com/report-2026-divergent-correlation), pages 16 and 19–20, shows why funding capture, dated status changes and realized receipts need separate fields. Missing funding records are not zero funding; active loans contribute unfinished follow-up, while undetermined outcomes cannot be presumed active or repaid.
 
-The study’s proposed measurement improvements—versioned scores, exact obligor identities, tranche-level collateral, dated advances and net lender receipts—are a research agenda, not a claim that every historical record already contains them. See the [[wiki/syntheses/filmhedge-research-library#Read the Credit Study Charts|Study Coverage Chart]].
+The study recommends recording versioned scores, exact obligor identities, tranche-level collateral, dated advances and net lender receipts. See the [[wiki/syntheses/filmhedge-research-library#Read the Credit Study Charts|Study Coverage Chart]].
 
 Research links checked: 2026-10-07.
 

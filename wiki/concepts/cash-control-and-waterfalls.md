@@ -19,7 +19,7 @@ Cash control is the system that turns a payment obligation into captured and pri
 
 ![[assets/diagrams/cash-control-flow.svg|Conceptual cash-control flow from payment sources through controlled accounts and the waterfall]]
 
-*Conceptual view: payment directions, CAMA administration, account control, the waterfall and reconciliation remain distinct controls.*
+*Conceptual diagram: payment directions, CAMA administration, account control, the waterfall and reconciliation remain distinct controls.*
 
 ## Components Are Distinct
 
@@ -48,11 +48,11 @@ The financing partner should be expressly protected in the waterfall and control
 
 ## Analysis and Inference
 
-Intermediary continuity deserves its own diligence test. Map who holds money at each stage, what evidence distinguishes client receipts from the intermediary’s own funds, and how another manager could obtain records and continue collections. Ask counsel to verify the effect of insolvency under the actual account and agency documents; the presence of a CAMA alone does not establish protection from every intermediary failure.
+Test intermediary continuity. Map who holds money at each stage, what evidence distinguishes client receipts from the intermediary’s own funds, and how a replacement manager obtains records and continues collections. Ask counsel to verify the effect of insolvency under the actual account and agency documents; the presence of a CAMA alone does not establish protection from every intermediary failure.
 
-This is a practical extension of the existing cash-control and manager-replacement framework, not a finding about any named provider. Test access to bank statements, reconciliation data, payer contacts and replacement instructions before an interruption occurs.
+Test access to bank statements, reconciliation data, payer contacts and replacement instructions before an interruption occurs.
 
-## Limits and Failure Modes
+## Failure Modes
 
 Obligors may retain setoff, withholding or deduction rights. Manager exculpation, bank liens, FX, sanctions screening, chargebacks, cyber events and dormant-account rules can delay cash. A CAMA does not automatically create Article 9 control, and legal control without correct payer onboarding does not ensure that money enters the account. Broad senior deductions or third-party claims can leak value before debt service.
 

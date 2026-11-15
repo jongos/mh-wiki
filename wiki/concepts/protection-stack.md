@@ -2,7 +2,7 @@
 title: Protection Stack
 type: concept
 status: current
-updated: 2026-11-04
+updated: 2026-11-15
 source_count: 11
 publish: true
 description: Explore the layered controls MediaHedge uses to address financeability, collateral, completion, payment, cash, servicing and recovery risks without relying on one safeguard.
@@ -18,7 +18,7 @@ The MediaHedge protection stack combines controls that address distinct risks. I
 
 ![[assets/diagrams/protection-stack.svg|Five-layer MediaHedge protection stack with the distinct risks addressed by each layer]]
 
-*Conceptual view: the layers reinforce one another, but no layer substitutes for a missing eligibility, control or enforcement requirement.*
+*Conceptual diagram: the layers reinforce one another, but no layer substitutes for a missing eligibility, control or enforcement requirement.*
 
 ## Layers
 

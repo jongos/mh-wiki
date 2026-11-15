@@ -2,7 +2,7 @@
 title: Defaults, Workouts and Recoveries
 type: concept
 status: current
-updated: 2026-11-04
+updated: 2026-11-15
 source_count: 5
 publish: true
 description: Explore how lenders diagnose film-finance distress, preserve collateral and claims, govern workouts and select remedies that maximize risk-adjusted recovery.
@@ -19,7 +19,7 @@ A workout is a governed process for diagnosing distress, preserving collateral a
 
 ![[assets/diagrams/workout-decision-path.svg|Conceptual workout decision path from a stress signal through diagnosis, governed execution and recovery accounting]]
 
-*Conceptual view: the appropriate remedy depends on the failure mode, available rights, execution cost, timing and approval authority.*
+*Conceptual diagram: the appropriate remedy depends on the failure mode, available rights, execution cost, timing and approval authority.*
 
 ## Failure-Mode Diagnosis
 
@@ -39,11 +39,11 @@ Build a downside cash flow for each remedy, including incremental funding, legal
 
 ## Reserved Matters
 
-Protective advances, maturity extensions, principal reductions, collateral releases, claim settlements, litigation, asset sales and enforcement should follow the agreed investor threshold. MediaHedge may administer as servicer or agent, but conflicts, related-party transactions, compensation and recovery priority must remain transparent.
+Apply the agreed investor approval thresholds to protective advances, maturity extensions, principal reductions, collateral releases, claim settlements, litigation, asset sales and enforcement. MediaHedge may administer as servicer or agent, but conflicts, related-party transactions, compensation and recovery priority must remain transparent.
 
-## Limits and Failure Modes
+## Failure Modes
 
-Claim, cure and termination deadlines may expire before investigation is complete. Completion guarantors may take over rather than pay cash and may dispute coverage. UCC remedies require commercially reasonable process. Intellectual property and foreign rights may be difficult to monetize. Protective advances can destroy value if completion economics are overstated. Nominal recoveries must be reduced for time, expense and senior-ranking claims.
+Claim, cure and termination deadlines may expire before investigation is complete. Completion guarantors may take over rather than pay cash and may dispute coverage. UCC remedies require commercially reasonable process. Intellectual property and foreign rights may be difficult to monetize. Protective advances can destroy value if completion economics are overstated. Deduct expenses and senior claims, then discount recovery for time.
 
 ## Connections
 

@@ -2,7 +2,7 @@
 title: U.S. Film and Television Tax Incentives
 type: synthesis
 status: current
-updated: 2026-11-04
+updated: 2026-11-15
 as_of: 2026-10-06
 source_count: 1
 publish: true
@@ -18,7 +18,7 @@ tags:
 
 A useful incentive comparison starts with the production budget and ends with a credible collection schedule. The largest advertised percentage can produce less usable cash than a lower rate applied to more of the budget, with fewer deductions and earlier payment.
 
-This guide adds eight detailed state profiles to the broader FilmHedge report covering 38 states. The selection illustrates different structures; it is not a ranking or a complete inventory of U.S. incentives. Program claims below were checked against the official sources linked in each profile on **October 6, 2026**.
+This guide adds eight detailed state profiles to the broader FilmHedge report covering 38 states. The eight profiles compare different incentive structures. Program claims below were checked against the official sources linked in each profile on **October 6, 2026**.
 
 ## Compare the Cash Route First
 
@@ -47,7 +47,7 @@ These are selected gross rates on different expense bases, before monetization a
 
 FilmHedge’s [2026 Tax Incentives Report](https://filmhedge.com/report-2026-tax-incentives) covers 38 states and selected local programs. The [Incentive Comparison](https://filmhedge.com/incentive-comparison) and [state-guide article](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437) provide related reading. These are secondary research resources; official program rules and the project’s award govern eligibility.
 
-The supplied report also covers Alabama, Arizona, Arkansas, Colorado, Connecticut, Florida, Hawaii, Indiana, Kentucky, Maine, Maryland, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, North Carolina, Ohio, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, Tennessee, Texas, Utah, Virginia, Washington and West Virginia. Those additional profiles have not received the same current primary-source review in this wiki release. Absence from the eight-profile table does not establish that a state lacks an incentive.
+The supplied report also covers Alabama, Arizona, Arkansas, Colorado, Connecticut, Florida, Hawaii, Indiana, Kentucky, Maine, Maryland, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, North Carolina, Ohio, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, Tennessee, Texas, Utah, Virginia, Washington and West Virginia. Use the report for those states and check their agency rules before building the project’s cash forecast.
 
 ## Analysis and Inference
 

@@ -2,7 +2,7 @@
 title: Production Insurance
 type: concept
 status: current
-updated: 2026-08-28
+updated: 2026-11-15
 source_count: 6
 publish: true
 description: Learn how film-production insurance transfers defined casualty, personnel, liability and specialty risks without becoming a completion or repayment guaranty.
@@ -14,7 +14,7 @@ tags:
 
 # Production Insurance
 
-Film-production insurance is a portfolio of policies that transfers defined physical, personnel, liability, professional and specialty risks. It can preserve budget and collateral value after a covered event, but it is not a completion guaranty, collateral guaranty or general promise of loan repayment.
+Film-production insurance is a portfolio of policies that transfers defined physical, personnel, liability, professional and specialty risks. Coverage protects budget and collateral value against the events specified in each policy. Completion and repayment require separate protection.
 
 ## Coverage Architecture
 
@@ -38,7 +38,7 @@ Links checked: 2026-08-10.
 
 After a covered event, timely notice, mitigation, documentation and proof of loss preserve the claim. Loan documents should direct proceeds to repair, replacement, extra expense, completion or repayment according to the loss, policy and financier election rights.
 
-## Limits and Failure Modes
+## Failure Modes
 
 Coverage can be limited by exclusions, warranties, misrepresentation, late notice, unpaid premium, deductibles, sublimits, aggregation and policy periods. Cast, communicable-disease, cyber, war, governmental-action and labor limitations can be material. E&O does not replace chain-of-title diligence. Loss-payee status concerns proceeds; additional-insured status concerns liability protection; neither automatically provides every notice, control or payment right.
 

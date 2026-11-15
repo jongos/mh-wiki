@@ -2,7 +2,7 @@
 title: Film-Finance Credit Lifecycle
 type: synthesis
 status: current
-updated: 2026-09-30
+updated: 2026-11-15
 source_count: 17
 publish: true
 description: Follow the film-finance credit lifecycle from screening and underwriting through closing, funding, production, servicing, recovery and portfolio reporting.
@@ -18,7 +18,7 @@ Follow a financing from screening through repayment or recovery. This guide comb
 
 ![[assets/diagrams/credit-journey.svg|Seven-stage film-finance credit lifecycle from full financing through portfolio reporting]]
 
-*Conceptual view: the lifecycle is iterative, and each state change must update value, cash timing, decision rights and expected return.*
+*Conceptual diagram: the lifecycle is iterative, and each state change must update value, cash timing, decision rights and expected return.*
 
 ## Screening and Indicative Terms
 
@@ -93,7 +93,7 @@ The source briefs separately describe each control area. Treating them as a stat
 
 ## Continue Exploring
 
-[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/media-finance-lending-landscape|Market Landscape]] · [[wiki/evidence-and-limitations|Evidence and Limitations]] · [[wiki/syntheses/site-navigator|Site Navigator]]
+[[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/media-finance-lending-landscape|Market Landscape]] · [[wiki/syntheses/site-navigator|Site Navigator]]
 
 <!--
 ## Source Basis

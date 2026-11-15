@@ -2,7 +2,7 @@
 title: Financing-Partner Return Economics
 type: concept
 status: needs-review
-updated: 2026-11-04
+updated: 2026-11-15
 as_of: 2026-09-30
 source_count: 8
 publish: true
@@ -18,12 +18,9 @@ tags:
 
 The financier's realized return depends on actual dated cash flows, not the stated coupon alone. Analysis must incorporate advances, purchase price, fees, principal and interest collections, duration, prepayment, extension, default, nonaccrual, recovery cost, servicing expense and idle-capital or funding effects.
 
-> [!warning] Policy Review Pending
-> The qualitative framework was reconciled with current owner-approved underwriting guidance on September 30, 2026. Transaction-specific mandates, numerical assumptions and delegated exception authority still require verification; this page does not certify a financing.
-
 ![[assets/diagrams/return-economics-bridge.svg|Conceptual bridge from contractual coupon and fees to realized XIRR and cash multiple]]
 
-*Conceptual view: the bridge identifies economic drivers and does not present forecast or historical MediaHedge returns.*
+*Conceptual diagram: the bridge identifies economic drivers and does not present forecast or historical MediaHedge returns.*
 
 ## Components
 
@@ -54,7 +51,7 @@ Forward-flow documents should allocate purchase price, coupon, fees, servicing c
 
 Gap exposure can affect transaction pricing because its value depends on future market realization rather than an existing payment obligation. Pricing is recommended from the complete collateral mix, timing, protections and risk analysis rather than a fixed gap uplift. Current pricing parameters are internal and transaction-specific; they are not reproduced in this public guide and should not be treated as a forecast of financing-partner return. Transaction mix and realized loan-tape evidence require separate verification.
 
-## Limits and Failure Modes
+## Failure Modes
 
 A simple average of loan rates is not a portfolio yield. Upfront fees can inflate annualized return on short assets. Extension or default pricing can increase nominal claims while delay reduces XIRR. Capitalized interest is exposure, not cash. Default interest can be due but uncollectible. Gross yield omits credit loss, legal and servicing cost, funding expense and unused-capital drag.
 

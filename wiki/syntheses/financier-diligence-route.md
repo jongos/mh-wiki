@@ -2,7 +2,7 @@
 title: Financier's Guide
 type: synthesis
 status: current
-updated: 2026-11-04
+updated: 2026-11-15
 source_count: 17
 publish: true
 description: Use eight financier-focused questions to evaluate financeability, repayment, sizing, control, protection, monitoring, recovery and portfolio economics.
@@ -18,13 +18,13 @@ tags:
 
 A financing partner needs to know whether the proposed exposure can survive the linked risks of funding, completion, delivery, repayment, cash collection and enforcement, and whether the expected return justifies the time and risk involved.
 
-This guide organizes the knowledgebase around eight questions.
+This guide organizes the guide around eight questions.
 
 ## Choose Your Reading Depth
 
 | Time available | Suggested route |
 | --- | --- |
-| Five minutes | Read [[wiki/overview\|How the model works]], scan the [[wiki/syntheses/repayment-and-risk-map\|Repayment and Risk Map]], and finish with [[wiki/evidence-and-limitations\|Evidence and Limitations]]. |
+| Five minutes | Read [[wiki/overview\|How the model works]], scan the [[wiki/syntheses/repayment-and-risk-map\|Repayment and Risk Map]], and finish with [[wiki/concepts/full-financing\|Full Financing]]. |
 | Twenty minutes | Start with the [[wiki/syntheses/media-finance-lending-landscape\|Media Finance Lending Landscape]], work through the eight questions below, then review the [[wiki/syntheses/policy-rails-and-control-matrix\|Policy and Control Guide]]. |
 | Full review | Follow each question into its topic page and reconcile the framework to current policy, performance information and the proposed transaction documents. |
 
@@ -44,7 +44,7 @@ Start with [[wiki/concepts/full-financing|Full Financing]]. Look for complete co
 
 Use the [[wiki/syntheses/repayment-and-risk-map|Repayment and Risk Map]] to separate [[wiki/concepts/pre-sales-collateral|contracted pre-sales]], [[wiki/concepts/tax-credit-collateral|tax incentives]], [[wiki/concepts/gap-collateral|unsold-rights value]], insurance proceeds, completion support, surety and controlled cash.
 
-**Check:** who is expected to pay, under what conditions, when the money may arrive and which repayment sources share the same risks.
+**Check:** who is expected to pay, under what conditions, the expected payment date and which repayment sources share the same risks.
 
 For U.S. production incentives, compare the [[wiki/syntheses/us-film-tax-incentives|State Program Profiles]] and trace the [[wiki/concepts/incentive-monetization|Route to Net Cash]].
 
@@ -52,16 +52,13 @@ For U.S. production incentives, compare the [[wiki/syntheses/us-film-tax-incenti
 
 Follow [[wiki/concepts/loan-sizing|Loan Sizing]] from eligible collateral through advance rates, concentration limits, overall leverage, budget exposure, term and liquidity.
 
-**Check:** which limit actually controls the commitment, how much cushion remains and whether any exception is being requested.
-
-> [!warning] Evidence Limitation
-> The limits described in the available material do not include an effective date or approving authority. Use the [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]] to understand the framework, then confirm the current policy before relying on the figures.
+**Check:** which limit actually controls the commitment, how much cushion remains and which exceptions require approval.
 
 ### 4. Can the Financier Reach the Assets and Incoming Cash?
 
-Read [[wiki/concepts/security-package|Security Package]] alongside [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]]. The legal rights, payer instructions, collection accounts and payment priorities should all point to the same assets and proceeds.
+Read [[wiki/concepts/security-package|Security Package]] alongside [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]]. Align legal rights, payer instructions, collection accounts and payment priorities to the same assets and proceeds.
 
-**Check:** whether the promised value can be reached legally and collected operationally.
+**Check:** whether the lender can enforce its rights and collect the proceeds.
 
 ### 5. Which Protection Addresses Each Risk?
 
@@ -87,27 +84,23 @@ Finish with [[wiki/concepts/portfolio-construction|Portfolio Construction]] and 
 
 **Check:** where common risks accumulate and how actual cash timing, costs, extensions and losses affect investor performance.
 
-## Reasons to Pause and Ask Another Question
+## Resolve These Issues Before Funding
 
 - The budget balances overall, but funding arrives after an important payment is due.
 - Collateral has a headline value, but ownership, conditions or collection timing remain uncertain.
-- A sales estimate is being treated as if it were an executed receivable, or a gross minimum guarantee is being treated as eligible net value.
+- A sales estimate is incorrectly counted as an executed receivable, or a gross minimum guarantee is being treated as eligible net value.
 - The proposed amount depends on an undated policy limit or an unclear calculation.
 - The legal documents and the actual path of cash do not match.
-- Insurance or completion support is being treated as if it covers unrelated credit or market risk.
+- Insurance or completion support is incorrectly credited for unrelated credit or market risk.
 - A surety instrument is described as blanket loan insurance without mapping the bonded obligation, trigger, protected party, claim requirements and penal sum.
 - A provider is described only by its brand, while the legal lender, policy issuer, guarantor, syndicate or risk-bearing entity remains unclear.
 - Reports are promised, but triggers, owners and decision authority are unclear.
 - Apparent diversification depends on several assets with the same underlying failure point.
 - Expected return is described by interest rate alone, without cash timing, costs or losses.
 
-## Questions Before a Deal Review
+## Prepare the Deal File
 
-For questions about whether a film qualifies, its rate or a distributor's approval, read [[wiki/evidence-and-limitations#Questions Readers Ask|Questions Readers Ask]]. This educational route does not decide those outcomes.
-
-## What Still Requires Independent Verification
-
-The knowledgebase explains the framework; it does not replace current policy, executed contracts, current provider capacity and authority, legal and tax advice, insurance review or historical performance analysis. See [[wiki/evidence-and-limitations|Evidence and Limitations]] for a practical list of items a financing partner may want to request.
+Bring the approved credit requirements, production budget and cash-flow schedule, executed funding commitments, collateral contracts, closing documents, provider details and servicing plan. Reconcile the requested amount and pricing to those records.
 
 ## Read the Supporting Research
 
@@ -121,7 +114,7 @@ For the same material organized from origination through recovery, use the [[wik
 
 ## Analysis and Inference
 
-The eight-question order and the suggested pause points are a reader-oriented synthesis. They are not an approval checklist, current policy, legal conclusion or investment recommendation.
+The eight questions connect production funding, collateral, controls and investor cash outcomes into one review sequence.
 
 <!--
 ## Source Basis

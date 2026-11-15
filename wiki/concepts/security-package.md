@@ -2,7 +2,7 @@
 title: Security Package
 type: concept
 status: current
-updated: 2026-11-04
+updated: 2026-11-15
 source_count: 7
 publish: true
 description: Understand how a film-finance security package establishes priority, preserves collateral, captures proceeds and supports practical enforcement for each repayment asset.
@@ -33,7 +33,7 @@ For each collateral item, identify the owner, obligor, governing jurisdiction, v
 
 Lender of record, purchaser, participant, agent, secured party, collateral agent and co-obligee are distinct capacities. The market-facing brand is not proof of which entity occupies any of them; confirm the legal lender, issuer and beneficiary using the [[wiki/syntheses/media-finance-lending-landscape|Market Landscape]] and transaction documents. Interparty documents must allocate voting, consent, enforcement, expense, indemnity and recovery sharing. If MediaHedge holds collateral or acts for a financing partner, agency, segregation, custody and replacement mechanics must preserve the partner's rights.
 
-## Limits and Failure Modes
+## Failure Modes
 
 A UCC financing statement does not prove ownership, attachment, priority in every asset or deposit-account control. Copyright interests, government receivables, foreign assets and anti-assignment rules may require separate treatment. Payment directions do not necessarily waive defenses or setoff. Powers of attorney can be limited. Statutory claims, guilds, unions, vendors and other stakeholders can alter practical priority. Enforcement value still depends on preserving completion, delivery and contract rights. An assignment of unsold rights does not turn an estimate into a receivable, while an assignment of a pre-sale remains subject to the contract's conditions, defenses and consent rules.
 

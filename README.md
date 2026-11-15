@@ -35,7 +35,6 @@ You do not need to be a film-finance specialist. Pick the question that brought 
 | Compare repayment sources and their risks | [Repayment and Risk Map](wiki/syntheses/repayment-and-risk-map.md) |
 | Distinguish contracted pre-sales from unsold-rights value | [Pre-Sales Collateral](wiki/concepts/pre-sales-collateral.md) and [Gap Collateral](wiki/concepts/gap-collateral.md) |
 | Compare completion, surety, and insurance protection | [Protection Stack](wiki/concepts/protection-stack.md) |
-| Understand what the evidence does—and does not—establish | [Evidence and Limitations](wiki/evidence-and-limitations.md) |
 | Translate the specialized language | [Plain-English Glossary](wiki/glossary.md) |
 
 For the complete reader map, open the [MediaHedge Knowledgebase home note](MediaHedge%20Knowledgebase.md).

@@ -2,7 +2,7 @@
 title: New York Film and Television Incentives
 type: entity
 status: current
-updated: 2026-11-04
+updated: 2026-11-15
 as_of: 2026-10-06
 source_count: 1
 publish: true
@@ -35,19 +35,17 @@ Submit the required initial application before principal and ongoing photography
 
 Map facility days, location days, qualified costs and each bonus separately. Do not assume the regional addition applies to every cost or that Production Plus automatically benefits the first project. Build the repayment date from final certification and tax realization, with a downside case for delay.
 
-## Review Boundary
+## Program Verification
 
-Official program pages checked October 6, 2026. This review does not establish remaining allocations, project acceptance or a refund date. Continue with [[wiki/concepts/incentive-monetization|Incentive Monetization]].
-
-Links checked: 2026-10-06. Review scope and unresolved items are stated above.
+Official-source review: October 6, 2026. Confirm the project’s allocation, acceptance, cash route and payment schedule. Continue with [[wiki/concepts/incentive-monetization|Incentive Monetization]].
 
 ## Report Context
 
 ![[assets/research/new-york-incentive-region.png|FilmHedge regional snapshot locating New York and summarizing its incentive cash route alongside neighboring programs]]
 
-*Source: FilmHedge’s [2026 Tax Incentives Guide](https://filmhedge.com/report-2026-tax-incentives), October 6, 2026. Regional research snapshot, not a ranking or a full statement of eligibility. Neighboring-state labels have not received this profile’s official-source review; consult current agency rules.*
+*Source: FilmHedge’s [2026 Tax Incentives Guide](https://filmhedge.com/report-2026-tax-incentives), October 6, 2026. Regional snapshot. This profile verifies the featured state; use each neighboring state’s agency rules for its eligibility terms.*
 
-Open the [New York report entry](https://filmhedge.com/report-2026-tax-incentives#state-new-york) and the [Medium explainer](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437) for wider context. This page’s official sources and review boundary govern its program discussion; the report does not establish an award, transfer price or collection date.
+Open the [New York report entry](https://filmhedge.com/report-2026-tax-incentives#state-new-york) and the [Medium explainer](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437) for wider context. Use the linked program rules to calculate eligible value and the project’s award, sale agreement and payment schedule to forecast cash.
 
 Research links checked: 2026-10-07.
 

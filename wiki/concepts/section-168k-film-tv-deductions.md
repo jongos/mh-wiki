@@ -2,7 +2,7 @@
 title: "Section 168(k): Film and Television Deductions"
 type: concept
 status: current
-updated: 2026-11-04
+updated: 2026-11-15
 as_of: 2026-11-04
 source_count: 3
 publish: true
@@ -17,8 +17,7 @@ tags:
 
 Section 168(k) can accelerate the deduction of a qualified production’s costs. The benefit depends on the taxpayer’s ability to use the deduction; it provides neither a budget reimbursement nor a transferable incentive certificate. The [[wiki/concepts/proposed-federal-film-tv-credit|Proposed Federal Film and Television Credit]] is a separate legislative proposal.
 
-> [!warning] Review Scope
-> Reviewed November 4, 2026 against official Code text and IRS Notice 2026-11. The linked Code states currency through Public Law 119-121, October 9, 2026. Confirm later amendments, regulations and taxpayer-specific elections before filing. This guide explains the framework; it does not determine a taxpayer’s return position.
+Official-source review: November 4, 2026; Code through Public Law 119-121 and IRS Notice 2026-11. Apply the law and elections for the taxpayer’s filing year.
 
 ## What the Enacted Rule Does
 

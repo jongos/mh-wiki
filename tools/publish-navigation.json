@@ -3,7 +3,7 @@
   "folder_labels": [
     {
       "path": "wiki",
-      "label": "Knowledgebase Library"
+      "label": "Finance Library"
     },
     {
       "path": "wiki/concepts",
@@ -25,7 +25,6 @@
     "wiki/concepts/monitoring-and-servicing.md": "Monitoring & Servicing",
     "wiki/concepts/surety-credit-protection.md": "Surety & Credit Protection",
     "wiki/entities/mediahedge.md": "Who MediaHedge Is",
-    "wiki/evidence-and-limitations.md": "Evidence & Limitations",
     "wiki/glossary.md": "Plain-English Glossary",
     "wiki/overview.md": "How the Lending Model Works",
     "wiki/syntheses/policy-rails-and-control-matrix.md": "Policy & Control Guide",

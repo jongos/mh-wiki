@@ -18,15 +18,12 @@ tags:
 
 MediaHedge sizes each loan against evidenced repayment sources and the cash needed to complete and deliver the production. Underwriting establishes eligible net value, collateral-specific advances and reserves, then applies approved transaction limits, funding mandates and timing stress. Advance rates, leverage, equity, fees and tenor are transaction assumptions subject to approval, not universal ratios inferred from legacy examples.
 
-> [!warning] Policy Review Pending
-> The qualitative framework was reconciled with current owner-approved underwriting guidance on September 30, 2026. Transaction-specific mandates, numerical assumptions and delegated exception authority still require verification; this page does not certify a financing.
-
 > [!tip] Decision Point
 > The proposed amount must satisfy all applicable approved limits and completion needs. A concentration-review trigger calls for analysis and an authorized decision; it is not automatically a hard cap or a loan approval.
 
 ![[assets/diagrams/loan-sizing-waterfall.svg|Conceptual sizing sequence from collateral evidence through approved limits and human credit review]]
 
-*Conceptual view: the diagram separates concentration review from approved limits. It shows no transaction data or numerical policy limits.*
+*Conceptual diagram: eligibility, advances, concentration review and approved limits determine the commitment.*
 
 ## Sequence
 
@@ -48,9 +45,6 @@ MediaHedge sizes each loan against evidenced repayment sources and the cash need
 | Budget exposure | Compare total exposure with the approved production budget without treating the ratio as a substitute for full financing |
 | Term and liquidity | Align maturity, reserves and extension capacity with stressed collection timing |
 
-> [!warning] Evidence Limitation
-> The reader website summarizes the controls qualitatively. The intentionally public GitHub repository and its history also contain legacy internal briefs and numerical examples; those are historical evidence, not a statement of current approved policy. Current approved policy and executed transaction documents govern each financing.
-
 ## Approval and Production Cash
 
 Model base, downside and stress cases before recommending structure and pricing. Risk Score and the legal-entity- and territory-specific Obligor Score inform the review. Management or an authorized underwriter approves the structure and blended rate, with required capital-provider consent; MH Score and Tier classify that approved rate afterward. A spreadsheet result or counterparty lookup is not approval.
@@ -59,7 +53,7 @@ The [[wiki/concepts/full-financing#Worked Finance Plan|Worked Finance Plan]] sho
 
 ## Required Output
 
-A finance expert should be able to reproduce the commitment from the collateral schedule and identify:
+A finance expert must reproduce the commitment from the collateral schedule and identify:
 
 - eligible net value by asset;
 - permitted exposure by sizing test;
@@ -72,7 +66,7 @@ A finance expert should be able to reproduce the commitment from the collateral 
 
 An executed [[wiki/concepts/pre-sales-collateral|pre-sale]] can produce a contractual receivable after delivery and acceptance. [[wiki/concepts/gap-collateral|Gap collateral]] begins as market-dependent unsold-rights value and may later convert into receivables as licenses are signed. The two states should not receive the same eligibility assumptions, advance treatment or concentration credit.
 
-## Limits and Failure Modes
+## Failure Modes
 
 Aggregate LTV does not protect capital if the value is ineligible, correlated, unreachable or maturing after the loan. Gross loan-to-budget is not a substitute for [[wiki/concepts/full-financing|sources-and-uses sufficiency]]. Fees and capitalized interest can increase exposure after closing. Where a particular mandate imposes a cap calculated against a final loan that itself includes gap, solve that circularity explicitly. Do not turn a concentration-review trigger into such a cap. High pricing cannot cure a failed structural gate.
 

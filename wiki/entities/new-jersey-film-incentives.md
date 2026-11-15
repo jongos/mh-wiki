@@ -2,7 +2,7 @@
 title: New Jersey Film and Television Incentives
 type: entity
 status: current
-updated: 2026-11-04
+updated: 2026-11-15
 as_of: 2026-10-06
 source_count: 1
 publish: true
@@ -29,19 +29,17 @@ Eligible credits have a transfer route. For original applications approved from 
 
 Determine the claimant’s category before using any purchase assumption. Separate original approval date, certificate issuance, holding period, purchase application and expected receipt. Compare an eligible purchase against an actual third-party bid after costs and time, rather than selecting the larger face percentage automatically.
 
-## Review Boundary
+## Program Verification
 
-Sources checked October 6, 2026. Award-year availability, studio-partner eligibility, tax clearance and transaction-specific transfer terms remain to be verified. Read [[wiki/concepts/tax-credit-collateral|Tax-Credit Collateral]] for collection controls.
-
-Links checked: 2026-10-06. Review scope and unresolved items are stated above.
+Official-source review: October 6, 2026. Confirm the project’s allocation, acceptance, cash route and payment schedule. Continue with [[wiki/concepts/tax-credit-collateral|Tax-Credit Collateral]].
 
 ## Report Context
 
 ![[assets/research/new-jersey-incentive-region.png|FilmHedge regional snapshot locating New Jersey and summarizing its incentive cash route alongside neighboring programs]]
 
-*Source: FilmHedge’s [2026 Tax Incentives Guide](https://filmhedge.com/report-2026-tax-incentives), October 6, 2026. Regional research snapshot, not a ranking or a full statement of eligibility. Neighboring-state labels have not received this profile’s official-source review; consult current agency rules.*
+*Source: FilmHedge’s [2026 Tax Incentives Guide](https://filmhedge.com/report-2026-tax-incentives), October 6, 2026. Regional snapshot. This profile verifies the featured state; use each neighboring state’s agency rules for its eligibility terms.*
 
-Open the [New Jersey report entry](https://filmhedge.com/report-2026-tax-incentives#state-new-jersey) and the [Medium explainer](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437) for wider context. This page’s official sources and review boundary govern its program discussion; the report does not establish an award, transfer price or collection date.
+Open the [New Jersey report entry](https://filmhedge.com/report-2026-tax-incentives#state-new-jersey) and the [Medium explainer](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437) for wider context. Use the linked program rules to calculate eligible value and the project’s award, sale agreement and payment schedule to forecast cash.
 
 Research links checked: 2026-10-07.
 

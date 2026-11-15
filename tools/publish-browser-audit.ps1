@@ -30,7 +30,7 @@ try {
     if ($UseLocalAssets) { $legacyWikiUrl = $SiteUrl.TrimEnd('/') + '/MediaHedge+Knowledgebase' }
     [void](Invoke-CdpCommand -Socket $socket -Method 'Page.navigate' -Parameters @{ url = $legacyWikiUrl })
     Initialize-LocalAssets
-    $legacyRedirectExpression = "decodeURIComponent(window.location.pathname).replaceAll('+', ' ').replace(/\/+$/, '') === '/MediaHedge Knowledgebase' && document.readyState === 'complete' && !!document.querySelector('input.search-bar') && !!document.querySelector('.nav-view-outer') && [...document.querySelectorAll('.markdown-rendered h1:not(.page-header)')].some((heading) => heading.innerText.trim() === 'MediaHedge Knowledgebase' && getComputedStyle(heading).display !== 'none' && getComputedStyle(heading).visibility !== 'hidden') && !document.body.innerText.includes('This page does not exist')"
+    $legacyRedirectExpression = "decodeURIComponent(window.location.pathname).replaceAll('+', ' ').replace(/\/+$/, '') === '/MediaHedge Knowledgebase' && document.readyState === 'complete' && !!document.querySelector('input.search-bar') && !!document.querySelector('.nav-view-outer') && [...document.querySelectorAll('.markdown-rendered h1:not(.page-header)')].some((heading) => heading.innerText.trim() === 'Media Finance Guide' && getComputedStyle(heading).display !== 'none' && getComputedStyle(heading).visibility !== 'hidden') && !document.body.innerText.includes('This page does not exist')"
     try {
         Wait-ForBrowserCondition -Socket $socket -TimeoutSeconds $TimeoutSeconds `
             -Expression $legacyRedirectExpression `
@@ -43,7 +43,7 @@ try {
   readyState: document.readyState,
   hasSearch: !!document.querySelector('input.search-bar'),
   hasNavigation: !!document.querySelector('.nav-view-outer'),
-  hasHomeHeading: [...document.querySelectorAll('h1')].some((heading) => heading.innerText.trim() === 'MediaHedge Knowledgebase'),
+  hasHomeHeading: [...document.querySelectorAll('h1')].some((heading) => heading.innerText.trim() === 'Media Finance Guide'),
   hasVisibleNotFound: document.body.innerText.includes('This page does not exist')
 }))()
 '@
@@ -71,7 +71,7 @@ try {
   };
 })()
 '@
-    if ($homeSeo.title -ne 'Film and Television Finance Guide | MediaHedge' -or
+    if ($homeSeo.title -ne 'Media Finance Guide | Film and Television Finance' -or
         $homeSeo.description -notmatch '^Explore film and television finance' -or
         $homeSeo.canonical -ne "$($SiteUrl.TrimEnd('/'))/MediaHedge+Knowledgebase" -or
         $homeSeo.robots -notmatch 'index,follow' -or
@@ -81,7 +81,7 @@ try {
         'WebSite' -notin @($homeSeo.schemaTypes) -or
         'WebPage' -notin @($homeSeo.schemaTypes) -or
         @($homeSeo.visibleH1s).Count -ne 1 -or
-        $homeSeo.visibleH1s[0] -ne 'MediaHedge Knowledgebase') {
+        $homeSeo.visibleH1s[0] -ne 'Media Finance Guide') {
         throw "Published home page is missing complete SEO metadata or a single reader-facing H1. State: $($homeSeo | ConvertTo-Json -Compress -Depth 5)"
     }
 
@@ -110,14 +110,14 @@ try {
   return true;
 })()
 '@
-    if (-not $libraryExpanded) { throw 'Published Knowledgebase Library navigation could not be exercised.' }
+    if (-not $libraryExpanded) { throw 'Published Finance Library navigation could not be exercised.' }
     $conceptNavigationExpression = @'
 !!document.querySelector('.nav-view-outer .tree-item-self[data-path="wiki/concepts"]')
 '@
     try {
         Wait-ForBrowserCondition -Socket $socket -TimeoutSeconds $TimeoutSeconds `
             -Expression $conceptNavigationExpression `
-            -FailureMessage 'Published Knowledgebase Library did not reveal its reader-facing category navigation.'
+            -FailureMessage 'Published Finance Library did not reveal its reader-facing category navigation.'
     } catch {
         $navigationState = Invoke-BrowserExpression -Socket $socket -Expression @'
 (() => {
@@ -166,7 +166,7 @@ try {
     accessibleListbox: results?.getAttribute('role') === 'listbox' &&
       options.length > 0 && options.every((item) => item.getAttribute('role') === 'option'),
     announcedResults: /^\d+ suggestions? available\./.test(document.getElementById('mh-search-status')?.textContent || ''),
-    hasFriendlyLibrary: labels.includes('Knowledgebase Library'),
+    hasFriendlyLibrary: labels.includes('Finance Library'),
     hasFriendlyConcepts: labels.includes('Financing Essentials'),
     shortcutText: shortcut?.textContent.trim() || '',
     shortcutHref: shortcut?.href || '',
@@ -185,7 +185,7 @@ try {
         throw 'Published search is missing its complete combobox, listbox, option or live-status accessibility semantics.'
     }
     if (-not $result.hasFriendlyLibrary -or -not $result.hasFriendlyConcepts) {
-        throw "Published navigation is missing its reader-facing Knowledgebase Library or Financing Essentials labels. Visible labels: $($result.navigationLabels -join ', ')"
+        throw "Published navigation is missing its reader-facing Finance Library or Financing Essentials labels. Visible labels: $($result.navigationLabels -join ', ')"
     }
     $expectedNavigator = $SiteUrl.TrimEnd('/') + '/wiki/syntheses/site-navigator'
     if ($result.shortcutText -ne 'Site Navigator' -or $result.shortcutHref.TrimEnd('/') -ne $expectedNavigator) {
@@ -295,12 +295,12 @@ try {
     skipTop: document.getElementById('mh-reader-content').scrollTop === 0,
     editDate: /^Page Updated \d{4}-\d{2}-\d{2}$/.test(document.querySelector('.mh-page-meta time')?.textContent || ''),
     oneMetadataRow: document.querySelectorAll('.mh-page-meta').length === 1,
-    policyReview: !!document.querySelector('.callout[data-callout="warning"]')?.innerText.includes('Policy Review Pending'),
+    clearCopy: !/Policy Review Pending|Evidence Limitation/i.test(document.querySelector('.markdown-rendered')?.innerText || ''),
     diagramLink: !!link && link.href === frame?.querySelector('img')?.src && link.rel === 'noopener'
   };
 })()
 '@
-    foreach ($property in @('skipFocus', 'skipTop', 'editDate', 'oneMetadataRow', 'policyReview', 'diagramLink')) {
+    foreach ($property in @('skipFocus', 'skipTop', 'editDate', 'oneMetadataRow', 'clearCopy', 'diagramLink')) {
         if (-not $reader.$property) { throw "Live reader enhancement failed: $property" }
     }
     [void](Invoke-CdpCommand -Socket $socket -Method 'Emulation.setDeviceMetricsOverride' -Parameters @{ width = 390; height = 844; deviceScaleFactor = 1; mobile = $false })

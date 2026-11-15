@@ -2,7 +2,7 @@
 title: Pre-Sales Collateral
 type: concept
 status: current
-updated: 2026-09-30
+updated: 2026-11-15
 source_count: 5
 publish: true
 description: Understand how executed distribution agreements create minimum-guarantee receivables and how financiers verify, discount and control pre-sales collateral.
@@ -22,7 +22,7 @@ A pre-sale is an executed distribution or license agreement made before a projec
 
 ![[assets/diagrams/repayment-source-map.svg|Conceptual map distinguishing contracted receivables from market-dependent rights and protection sources]]
 
-*Conceptual view: a pre-sale is stronger than an estimate because an identified obligor has signed a payment contract, but payment can remain conditional on delivery, acceptance and other terms.*
+*Conceptual diagram: a pre-sale is stronger than an estimate because an identified obligor has signed a payment contract, but payment can remain conditional on delivery, acceptance and other terms.*
 
 ## The Bankability Chain
 
@@ -54,13 +54,13 @@ The gross contract amount is not automatically eligible collateral. Underwriting
 - Are assignment, acknowledgment, payment, notice and amendment protections enforceable for the transaction?
 - Do the [[wiki/concepts/security-package|security]], copyright, completion and collection documents point to the same rights and proceeds?
 
-## Limits and Evidence
+## Valuation Risks
 
 An offer letter, unsigned draft or future negotiation is not an executed receivable. A signed pre-sale can still be reduced, delayed, disputed or terminated. Interest and lender fees are not automatically obligations of the distributor. Final contracts, actual counterparty credit and the operative collection structure control the result.
 
 ## External Context
 
-Screen Australia's [Narrative Content Production program](https://www.screenaustralia.gov.au/fund/narrative-content-production/) assesses marketplace and finance alongside story, team, audience and budget, and directs applicants to its current guidelines for project-specific requirements. This illustrates layered screen-finance review; it does not establish that a particular pre-sale is eligible or collectible for MediaHedge. Links checked: 2026-09-30.
+Screen Australia's [Narrative Content Production program](https://www.screenaustralia.gov.au/fund/narrative-content-production/) assesses marketplace and finance alongside story, team, audience and budget, and directs applicants to its current guidelines for project-specific requirements. This illustrates layered screen-finance review. Links checked: 2026-09-30.
 
 ## Continue Exploring
 

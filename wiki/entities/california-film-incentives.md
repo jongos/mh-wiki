@@ -2,7 +2,7 @@
 title: California Film and Television Incentives
 type: entity
 status: current
-updated: 2026-11-04
+updated: 2026-11-15
 as_of: 2026-10-06
 source_count: 1
 publish: true
@@ -29,19 +29,17 @@ Eligible independent-film credits may be sold. Program 4.0 also allows a one-tim
 
 Build the cash schedule from the actual award and chosen election. A five-year refund schedule and a third-party sale can produce different loan maturities and net values. Verify category-specific application windows, allocation, qualified payroll and each geographic or VFX uplift rather than assuming every bonus stacks. The CFC overview contains inconsistent repeated local-hire descriptions; obtain current category-specific confirmation before sizing that uplift.
 
-## Review Boundary
+## Program Verification
 
-Sources checked October 6, 2026 for the stated Program 4.0 structure. Remaining allocations, a particular application’s acceptance and a buyer’s price are unverified. Continue with [[wiki/concepts/incentive-monetization|Incentive Monetization]].
-
-Links checked: 2026-10-06. Review scope and unresolved items are stated above.
+Official-source review: October 6, 2026. Confirm the project’s allocation, acceptance, cash route and payment schedule. Continue with [[wiki/concepts/incentive-monetization|Incentive Monetization]].
 
 ## Report Context
 
 ![[assets/research/california-incentive-region.png|FilmHedge regional snapshot locating California and summarizing its incentive cash route alongside neighboring programs]]
 
-*Source: FilmHedge’s [2026 Tax Incentives Guide](https://filmhedge.com/report-2026-tax-incentives), October 6, 2026. Regional research snapshot, not a ranking or a full statement of eligibility. Neighboring-state labels have not received this profile’s official-source review; consult current agency rules.*
+*Source: FilmHedge’s [2026 Tax Incentives Guide](https://filmhedge.com/report-2026-tax-incentives), October 6, 2026. Regional snapshot. This profile verifies the featured state; use each neighboring state’s agency rules for its eligibility terms.*
 
-Open the [California report entry](https://filmhedge.com/report-2026-tax-incentives#state-california) and the [Medium explainer](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437) for wider context. This page’s official sources and review boundary govern its program discussion; the report does not establish an award, transfer price or collection date.
+Open the [California report entry](https://filmhedge.com/report-2026-tax-incentives#state-california) and the [Medium explainer](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437) for wider context. Use the linked program rules to calculate eligible value and the project’s award, sale agreement and payment schedule to forecast cash.
 
 Research links checked: 2026-10-07.
 

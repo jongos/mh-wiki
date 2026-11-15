@@ -2,11 +2,11 @@
 title: FilmHedge Research Library
 type: synthesis
 status: current
-updated: 2026-11-04
+updated: 2026-11-15
 as_of: 2026-10-07
 source_count: 5
 publish: true
-description: Find FilmHedge research on U.S. incentives, production budgets, private credit and lender outcomes, with relevant charts and clear evidence boundaries.
+description: Find FilmHedge research on U.S. incentives, production budgets, private credit and lender outcomes, with charts, study methods, data coverage and links to the full reports.
 tags:
   - mediahedge
   - research
@@ -57,7 +57,7 @@ The 2023 report’s methodology addendum distinguishes quoted pricing, net fund 
 
 ## Analysis and Inference
 
-Use the reports to sharpen questions about [[wiki/concepts/pre-sales-collateral|Contracted Receivables]], [[wiki/concepts/tax-credit-collateral|Incentive Collateral]], [[wiki/concepts/cash-control-and-waterfalls|Cash Control]] and actual collections. They complement the wiki’s decision framework; they do not replace current program authority, executed transaction documents or an independently reconciled performance record. See [[wiki/evidence-and-limitations|Evidence and Limitations]].
+Use the reports to sharpen questions about [[wiki/concepts/pre-sales-collateral|Contracted Receivables]], [[wiki/concepts/tax-credit-collateral|Incentive Collateral]], [[wiki/concepts/cash-control-and-waterfalls|Cash Control]] and actual collections. Connect each research finding to the project’s contracts, program rules and reconciled cash records.
 
 Report catalog and public article checked October 7, 2026. Research dates remain specific to each publication.
 

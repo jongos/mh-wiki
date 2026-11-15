@@ -1,12 +1,12 @@
 ---
-title: Welcome to the MediaHedge Knowledgebase
+title: Media Finance Guide
 type: operations
 status: current
 updated: 2026-11-15
 source_count: 22
 publish: true
 description: Explore film and television finance through MediaHedge's guide to collateral, loan sizing, cash control, risk protection, servicing, recovery and returns.
-seo_title: Film and Television Finance Guide | MediaHedge
+seo_title: Media Finance Guide | Film and Television Finance
 tags:
   - mediahedge
   - index
@@ -14,7 +14,7 @@ tags:
 
 ![[assets/mediahedge-banner.jpg|1000]]
 
-# MediaHedge Knowledgebase
+# Media Finance Guide
 
 This guide explains how MediaHedge evaluates film and television financing, protects capital during production and works with financing partners through repayment.
 
@@ -29,14 +29,11 @@ Start with your question and follow the links for more detail.
 
 For a wider view, compare the [[wiki/syntheses/media-finance-lending-landscape|Market Participants]] or explore the visual [[wiki/syntheses/site-navigator|Site Navigator]].
 
-> [!note] Public Framework
-> The reader website summarizes the controls qualitatively. The intentionally public GitHub repository and its history also contain legacy internal briefs and numerical examples; those are historical evidence, not a statement of current approved policy. Current approved policy and executed transaction documents govern each financing.
-
 ![[assets/diagrams/credit-journey.svg|Conceptual diagram of the MediaHedge credit journey from financeability through portfolio reporting]]
 
-*Conceptual view: each stage produces evidence and a decision, while current policy and transaction documents control any specific financing.*
+*Conceptual diagram: each stage connects evidence, decisions and execution.*
 
-## Questions a Financing Partner May Ask
+## Questions for Financing Partners
 
 | Question | Where to begin |
 | --- | --- |
@@ -76,21 +73,21 @@ For a quicker comparison of repayment sources, open the [[wiki/syntheses/repayme
 ### Protect the Capital
 
 - [[wiki/concepts/protection-stack|Protection Stack]] — how different safeguards address different risks.
-- [[wiki/concepts/completion-protection|Completion Protection]] — how a guarantor may preserve the path to delivery.
-- [[wiki/concepts/surety-credit-protection|Surety and Credit Protection]] — how a specifically bonded obligation may receive targeted support.
-- [[wiki/concepts/security-package|Security Package]] — how rights to assets and proceeds are established.
+- [[wiki/concepts/completion-protection|Completion Protection]] — how a guarantor protects completion and delivery.
+- [[wiki/concepts/surety-credit-protection|Surety and Credit Protection]] — how a bond protects a specified obligation.
+- [[wiki/concepts/security-package|Security Package]] — how lenders establish rights to assets and proceeds.
 - [[wiki/concepts/cash-control-and-waterfalls|Cash Control and Waterfalls]] — how collections reach the right accounts in the right order.
 - [[wiki/concepts/production-insurance|Production Insurance]] — what coverage contributes and where its limits begin.
 
 ### Manage Change and Downside
 
 - [[wiki/concepts/monitoring-and-servicing|Monitoring and Servicing]] — how changing facts become timely decisions.
-- [[wiki/concepts/defaults-workouts-and-recoveries|Defaults, Workouts and Recoveries]] — how options and value are preserved during stress.
+- [[wiki/concepts/defaults-workouts-and-recoveries|Defaults, Workouts and Recoveries]] — how lenders preserve value during stress.
 
 ### Build a Durable Financing Partnership
 
-- [[wiki/concepts/forward-flow-governance|Financing-Partner Governance]] — how authority, ownership and servicing responsibilities are divided.
-- [[wiki/concepts/portfolio-construction|Portfolio Construction]] — how shared risks and liquidity are managed across investments.
+- [[wiki/concepts/forward-flow-governance|Financing-Partner Governance]] — how partners divide authority, ownership and servicing responsibilities.
+- [[wiki/concepts/portfolio-construction|Portfolio Construction]] — how investors manage shared risks and liquidity.
 - [[wiki/concepts/financier-return-economics|Return Economics]] — how actual cash timing, costs and losses affect realized performance.
 
 ## Federal Film and Television Tax Rules
@@ -113,23 +110,13 @@ Start with the U.S. guide, compare cash routes, then open a state profile. The e
 - [[wiki/entities/new-mexico-film-incentives|New Mexico Film and Television Incentives]]
 - [[wiki/entities/new-york-film-incentives|New York Film and Television Incentives]]
 
-## Recent Changes
-
-Read [[wiki/what-changed|What Changed]] for the latest underwriting, terminology and reader-guidance updates.
-
-## Understand the Boundaries
-
-Read [[wiki/evidence-and-limitations|Evidence and Limitations]] for a clear explanation of what this knowledgebase establishes, what remains subject to current policy or transaction documents, and what a financing partner should verify independently.
-
-This knowledgebase is educational. Current approved policy, executed transaction documents and qualified legal, tax, insurance and program advice control any specific financing decision.
-
 ## FilmHedge Research and Illustrated Reports
 
 Explore the [[wiki/syntheses/filmhedge-research-library|FilmHedge Research Library]] for five reports on production incentives, finance plans, private credit and lender outcomes. Start with the [illustrated 2026 tax-guide article](https://medium.com/filmhedge/film-tax-incentives-2026-state-guide-19f52ed2d437), or browse [all FilmHedge reports](https://filmhedge.com/reports).
 
 Report visuals appear beside the relevant wiki topics, including the [[wiki/syntheses/us-film-tax-incentives#A Map of Payment Routes|State Payment-Route Map]], [[wiki/concepts/incentive-monetization#Follow the Cash Routes|Incentive Cash Routes]] and [[wiki/syntheses/filmhedge-research-library#Read the Credit Study Charts|Credit Study Coverage]]. Dates, conditional program rules and study limits travel with each visual.
 
-Research links checked: 2026-10-07. Other review dates retain their stated scope.
+Research links checked: 2026-10-07.
 
 ## Continue Exploring
 

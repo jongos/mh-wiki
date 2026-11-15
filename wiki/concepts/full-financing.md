@@ -49,11 +49,11 @@ Do not both reduce a cash use and add the same deferral or service as cash finan
 
 ## Worked Finance Plan
 
-**Hypothetical illustration in USD, not a transaction, policy limit or recommended capital mix.** Assume production, post-production, delivery, insurance and completion costs total $900,000, with $100,000 of contingency. Financing fees and restricted reserves, including the assumed interest provision, add $100,000. Total uses are therefore $1,100,000.
+**Worked example: hypothetical amounts in USD.** Assume production, post-production, delivery, insurance and completion costs total $900,000, with $100,000 of contingency. Financing fees and restricted reserves, including the assumed interest provision, add $100,000. Total uses are therefore $1,100,000.
 
 ### Reconcile Gross Sources and Uses
 
-Assume executed equity and two approved loan components, subject to the draw conditions below. The collateral schedule supports the stated commitments; no advance percentage is inferred from these amounts.
+Assume executed equity and two approved loan components, subject to the draw conditions below. The collateral schedule supports the stated commitments.
 
 | Funding Source | Gross Commitment | Fees and Restricted Reserves Withheld | Net Production Cash |
 | --- | ---: | ---: | ---: |
@@ -87,7 +87,7 @@ The simplified schedule below starts with no cash. It shows period receipts befo
 
 ### Analysis and Inference
 
-This original example applies the source-backed full-financing tests; its numbers are invented solely to demonstrate reconciliation. If the last $210,000 draw arrives after the final period’s uses, the project has a $210,000 cash shortfall despite balanced total commitments. Identify committed replacement liquidity or an approved change to payment timing before proceeding. A larger sales estimate or an unfunded equity promise does not close that cash shortfall.
+If the last $210,000 draw arrives after the final period’s uses, the project has a $210,000 cash shortfall despite balanced total commitments. Identify committed replacement liquidity or an approved change to payment timing before proceeding. A larger sales estimate or an unfunded equity promise does not close that cash shortfall.
 
 ## Closing and Draw Gates
 
@@ -98,7 +98,7 @@ This original example applies the source-backed full-financing tests; its number
 - No hidden circularity or double counting among sources.
 - Each draw leaves enough committed liquidity to finish and deliver under the current forecast.
 
-## Limits and Failure Modes
+## Failure Modes
 
 A sources-and-uses table can balance while remaining unfinanceable. Common failures include conditional or delayed sources, unfunded equity, circular funding, omitted delivery or financing costs, early use of contingency, new deferrals and a cash trough that occurs before a receivable can be bridged or collected. A completion bond does not repair a package that fails the bond's financing conditions.
 

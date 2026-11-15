@@ -2,7 +2,7 @@
 title: MediaHedge Film-Finance Glossary
 type: glossary
 status: current
-updated: 2026-09-30
+updated: 2026-11-15
 source_count: 17
 publish: true
 description: Learn the film-finance, private-credit, collateral, production, servicing and return terms used throughout the MediaHedge knowledgebase.
@@ -125,7 +125,6 @@ New York's [UCC deposit-account control provision](https://www.nysenate.gov/legi
 
 ## Usage Note
 
-Definitions here summarize the MediaHedge framework. Transaction documents and applicable law control their meaning in any specific financing. See [[wiki/evidence-and-limitations|Evidence and Limitations]] for additional context.
 
 ## Continue Exploring
 

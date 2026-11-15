@@ -2,7 +2,7 @@
 title: Federal Tax Draft Review Record
 type: operations
 status: needs-review
-updated: 2026-11-04
+updated: 2026-11-15
 as_of: 2026-11-04
 source_count: 5
 publish: false
@@ -97,7 +97,7 @@ Reviewed all 74 existing wiki pages: 39 edited and 35 reviewed unchanged. Added 
 | [[wiki/entities/new-jersey-film-incentives]] | Edited | Removed redundant date commentary; scoped review dates retained. |
 | [[wiki/entities/new-mexico-film-incentives]] | Edited | Removed redundant date commentary; scoped review dates retained. |
 | [[wiki/entities/new-york-film-incentives]] | Edited | Removed redundant date commentary; scoped review dates retained. |
-| [[wiki/evidence-and-limitations]] | Edited | Added the five official federal sources and their scoped review limits. |
+| [[wiki/operations/source-review-notes]] | Edited | Added the five official federal sources and their scoped review limits. |
 | [[wiki/glossary]] | Reviewed unchanged | Preserved concise wording, provenance and historical review scope. |
 | [[wiki/operations/contradictions]] | Reviewed unchanged | Preserved concise wording, provenance and historical review scope. |
 | [[wiki/operations/drafts/proposed-federal-film-tv-credit]] | Edited | Retained original draft and linked its public successor. |
@@ -144,7 +144,7 @@ Reviewed all 74 existing wiki pages: 39 edited and 35 reviewed unchanged. Added 
 | [[wiki/syntheses/site-navigator]] | Edited | Added both federal tax pages to public navigation. |
 | [[wiki/syntheses/us-film-tax-incentives]] | Edited | Added relevant federal reading links; existing source basis retained. |
 | [[wiki/welcome]] | Edited | Tightened prose while preserving factual scope and qualifications. |
-| [[wiki/what-changed]] | Edited | Recorded reader-facing release scope. |
+| the retired reader changelog (retained in Git history) | Edited | Recorded reader-facing release scope. |
 
 Validation and live deployment results are recorded in the release log after the respective checks complete.
 

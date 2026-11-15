@@ -2,7 +2,7 @@
 title: How the MediaHedge Lending Model Works
 type: overview
 status: current
-updated: 2026-11-04
+updated: 2026-11-15
 source_count: 17
 publish: true
 description: See how MediaHedge connects full financing, collateral eligibility, loan sizing, cash control, protection, servicing, recovery and portfolio discipline.
@@ -15,7 +15,7 @@ tags:
 # How the MediaHedge Lending Model Works
 
 > [!important] Why It Matters
-> The MediaHedge framework treats film-finance lending as a connected control system, not a bet on one document, one repayment source or one headline yield.
+> MediaHedge connects collateral, cash control, completion protection and servicing to protect capital through repayment.
 
 The surrounding [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]] is also role-specific: a bank, specialty project lender, institutional credit manager, production insurer, completion guarantor and surety provider may all appear in one transaction while addressing different needs.
 
@@ -62,9 +62,6 @@ MediaHedge's sizing framework combines several controls rather than relying on o
 - term, reserves and liquidity tests align maturity with stressed collection timing; and
 - the recommendation must satisfy applicable limits and completion needs before authorized human approval.
 
-> [!warning] Evidence Limitation
-> Current numerical assumptions, mandate limits, exception authorities and pricing parameters are transaction-specific controls and are intentionally not reproduced in this public guide. Approved policy and transaction documents control. See the [[wiki/syntheses/policy-rails-and-control-matrix|Policy and Control Guide]] for the public decision framework.
-
 ## The Recurring Distinctions
 
 Keep these distinctions clear:
@@ -81,9 +78,8 @@ Keep these distinctions clear:
 
 ## Continue Exploring
 
-Use [[MediaHedge Knowledgebase]] as the home page. Financing partners can follow the [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] by investment question, compare participant roles in the [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]], or use the [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] to organize the same system chronologically. Material transaction decisions still require current policy, executed documents and qualified legal, tax, insurance and program-specific analysis. · [[wiki/syntheses/site-navigator|Site Navigator]]
+Use [[MediaHedge Knowledgebase]] as the home page. Financing partners can follow the [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] by investment question, compare participant roles in the [[wiki/syntheses/media-finance-lending-landscape|Media Finance Lending Landscape]], or use the [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] to organize the same system chronologically. · [[wiki/syntheses/site-navigator|Site Navigator]]
 
-Read [[wiki/evidence-and-limitations|Evidence and Limitations]] for a plain-language explanation of what the knowledgebase establishes and what still needs independent verification.
 
 <!--
 ## Source Basis

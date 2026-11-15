@@ -2,7 +2,7 @@
 title: Portfolio Construction
 type: concept
 status: current
-updated: 2026-11-04
+updated: 2026-11-15
 source_count: 8
 publish: true
 description: Learn how film-finance portfolios manage concentration by distributor, incentive program, guarantor, producer, platform, collateral market and collection timing.
@@ -19,7 +19,7 @@ Portfolio construction aggregates exposure by common economic failure driver rat
 
 ![[assets/diagrams/portfolio-concentration-map.svg|Conceptual portfolio map connecting exposure to common economic failure drivers]]
 
-*Conceptual view: the map identifies dimensions to measure; it does not represent MediaHedge portfolio holdings or performance.*
+*Conceptual diagram: the map identifies dimensions to measure; it does not represent MediaHedge portfolio holdings or performance.*
 
 ## Dimensions
 
@@ -35,15 +35,15 @@ Test each proposed loan for standalone credit quality and incremental portfolio 
 
 ## Investor Reporting
 
-Report exposure and availability by obligor, collateral type, jurisdiction, guarantor, producer, vintage, maturity and internal risk tier. Show top concentrations, limit headroom, watch-list migration, weighted advance rates, expected-loss contribution and return attribution. Approval should occur before a breach; cure options can include paydown, syndication, reserve, hedge or temporary purchase suspension.
+Report exposure and availability by obligor, collateral type, jurisdiction, guarantor, producer, vintage, maturity and internal risk tier. Show top concentrations, limit headroom, watch-list migration, weighted advance rates, expected-loss contribution and return attribution. Obtain approval before breaching a limit. Cure options include paydown, syndication, reserve, hedge or temporary purchase suspension.
 
-## Limits and Failure Modes
+## Failure Modes
 
 Borrower SPVs, titles and territories do not create diversification when the underlying failure driver is shared. Different collateral categories within one film may all depend on delivery. Guarantees and insurance reduce net exposure only when enforceable, collectible and not concentrated in the same provider. Historical low loss may reflect a small sample, benign vintage or unresolved extensions. Correlation and illiquidity commonly rise together in stress.
 
 ## External Context
 
-The SEC's [Asset Allocation and Diversification](https://www.investor.gov/introduction-investing/getting-started/asset-allocation) page provides a general explanation of diversification and concentration. It is broad investor education, not a substitute for private-credit concentration definitions, stress testing or transaction diligence. Links checked: 2026-08-09.
+The SEC's [Asset Allocation and Diversification](https://www.investor.gov/introduction-investing/getting-started/asset-allocation) page provides a general explanation of diversification and concentration. Links checked: 2026-08-09.
 
 ## Connections
 

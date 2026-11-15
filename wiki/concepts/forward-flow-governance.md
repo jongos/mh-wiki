@@ -2,7 +2,7 @@
 title: Financing-Partner Governance
 type: concept
 status: current
-updated: 2026-08-28
+updated: 2026-11-15
 source_count: 5
 publish: true
 description: See how MediaHedge and financing partners divide eligibility, delegated authority, reserved decisions, servicing duties and risk oversight in forward-flow programs.
@@ -31,13 +31,13 @@ MediaHedge submits a standardized underwriting package and eligibility certifica
 
 ## Delegated Authority Versus Reserved Matters
 
-MediaHedge needs authority for ordinary servicing within documented parameters. The investor should control eligibility exceptions, concentration breaches, material extensions, principal compromises, collateral releases, enforcement, changes to payment control, related-party conflicts and servicer replacement.
+MediaHedge needs authority for ordinary servicing within documented parameters. Reserve investor control over eligibility exceptions, concentration breaches, material extensions, principal compromises, collateral releases, enforcement, changes to payment control, related-party conflicts and servicer replacement.
 
 ## Structural Distinctions
 
-True sale, participation, secured lending, agency and other structures can produce different ownership, insolvency, regulatory and risk-retention results. Capital generally need not pass through MediaHedge's balance sheet, but the actual documents must establish the chosen structure. Repurchase for an origination breach should not silently become full credit recourse unless expressly agreed and priced.
+True sale, participation, secured lending, agency and other structures can produce different ownership, insolvency, regulatory and risk-retention results. Capital generally need not pass through MediaHedge's balance sheet, but the actual documents must establish the chosen structure. Define and price full credit recourse explicitly; distinguish it from repurchase for an origination breach.
 
-## Limits and Failure Modes
+## Failure Modes
 
 Subjective eligibility or approvals without deadlines can make a commitment economically optional. Overly rigid criteria can strand sound assets. Broad repurchase obligations can convert asset purchase into recourse financing; narrow remedies may leave investors with origination defects. Fee conflicts, concentration calculations, data use, confidentiality, cyber risk and termination economics require explicit rules.
 
