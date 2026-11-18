@@ -2,7 +2,7 @@
 title: Internal Wiki Catalog
 type: operations
 status: current
-updated: 2026-11-15
+updated: 2026-11-18
 source_count: 31
 publish: false
 tags:
@@ -214,3 +214,21 @@ Twenty-one scoped primary-source reviews; these are reviewer paraphrases, not fu
 ## Final Producer-Resource and Model Review
 
 Reviewed all ten new public guides and both extended federal tax guides on November 15, 2026. Corrected selected-case validation, production-cash release and conditional-delivery presentation in the downloadable model; clarified closing/funding records and distribution payment routing. The existing underwriting reconciliation records the read-only canonical comparison without private deal data. No new pages or raw evidence were added.
+
+## Provider Directories — November 18, 2026
+
+- [[wiki/syntheses/film-tv-lenders|Film and TV Finance Lenders]]
+- [[wiki/syntheses/film-tv-equity-investors-and-funds|Film and TV Equity Investors and Film Funds]]
+- [[wiki/syntheses/completion-bond-companies|Film and TV Completion Bond Companies]]
+- [[wiki/syntheses/production-insurance-providers|Film and TV Production Insurance Providers]]
+- [[wiki/syntheses/film-tv-grants-and-public-funds|Film and TV Grants and Public Funding Providers]]
+- [[wiki/syntheses/film-finance-external-directories|Film Finance and Funding Directories]]
+
+- [[wiki/sources/film-tv-lenders-contacts-review|Film and TV Finance Lenders — Contact Review]]
+- [[wiki/sources/film-tv-equity-investors-and-funds-contacts-review|Film and TV Equity Investors and Film Funds — Contact Review]]
+- [[wiki/sources/completion-bond-companies-contacts-review|Film and TV Completion Bond Companies — Contact Review]]
+- [[wiki/sources/production-insurance-providers-contacts-review|Film and TV Production Insurance Providers — Contact Review]]
+- [[wiki/sources/film-tv-grants-and-public-funds-contacts-review|Film and TV Grants and Public Funding Providers — Contact Review]]
+- [[wiki/sources/film-finance-external-directories-contacts-review|Film Finance and Funding Directories — Contact Review]]
+
+Six limited public-source research records support six category pages. Counts refer to retained records, not provider totals or independent confirmations. Live Brain Company/Company Overview.md refreshed November 18 for qualitative parent/subsidiary consistency; public FilmHedge and MediaHedge sites independently support the published entry. No private Brain content imported.

@@ -107,3 +107,7 @@ Review the restored file and commit it as a new recovery change. Do not use `git
 ## Worked Model and Closing Reconciliation
 
 `wiki-v1.29-model-final-review` corrects local input validation and surplus-cash recoupment, clarifies conditional delivery and closing-versus-funding evidence, and records a read-only canonical comparison. The release preserves hypothetical model assumptions and excludes private deal data.
+
+## Provider and Funding Directories
+
+`wiki-v1.30-provider-directories` adds six sourced contact directories covering lenders, equity and strategic financiers, completion guarantors, production insurers and brokers, grants/public funding and external discovery lists. It includes MediaHedge/FilmHedge, preserves historical review records and updates ITVS intake context. Thirty-five directory entries are supported by six scoped public-research records; no private Brain material is imported.

@@ -2,7 +2,7 @@
 title: Research Backlog
 type: operations
 status: current
-updated: 2026-11-15
+updated: 2026-11-18
 source_count: 19
 publish: false
 tags:
@@ -108,3 +108,11 @@ The publication authorization supersedes the draft-only hold above. Follow chang
 Completed: original worked transaction and formula-driven Excel model; equity/recoupment, distribution deductions, producer route, chain of title, grants/fiscal sponsorship, international coproduction, television/streaming structures and ancillary IP licensing. Twenty-one scoped primary-source reviews support the new guidance and directory. Existing sources supply the hypothetical model's conceptual basis, not its invented amounts.
 
 Follow-up research: jurisdiction-specific coproduction approvals; detailed residual and participation schedules; dated equity cash-flow/IRR examples; fund/program intake refresh at the next directory update. Verify current program terms before adding quantitative eligibility claims. Monitor H.R. 10582 and S. 5552 for amendments and enactment; neither creates committed credit proceeds at the reviewed status.
+
+## Provider Directory Review — November 18, 2026
+
+- Recheck contacts and intake windows before outreach; next editorial contact review targeted for February 2027. Confirm legal counterparties, current mandates and submission policies directly.
+- Screen Australia, Doha, Hubert Bals Fund and European Film Bonds could not be fully verified through their official sites during this review; no new provider entry asserts current availability from them. Cineuropa listing is explicitly indexed-only.
+- Expand geographic coverage with verified primary sources; current lenders emphasize U.S./UK project finance. Strategic studio activity is not evidence of an open project-equity fund.
+- Monitor ITVS January 2027 intake, AFS 2027 rounds and SFFILM reopening. Preserve November 15 records as historical evidence.
+- See [[wiki/sources/film-finance-external-directories-contacts-review]] for discovery-list limits.

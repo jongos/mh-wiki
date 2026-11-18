@@ -2,7 +2,7 @@
 title: "Equity Financing and Recoupment"
 type: concept
 status: current
-updated: 2026-11-15
+updated: 2026-11-18
 as_of: 2026-11-15
 source_count: 4
 publish: true
@@ -47,6 +47,10 @@ Provide the budget, rights ownership, financing status, distribution assumptions
 Test investor economics after [[wiki/concepts/distribution-economics|Distribution Deductions]], not against public box office. Keep lender repayment, equity distributions, producer fees and tax effects in separate schedules. Require the signed documents and model to implement the same priorities.
 
 Links checked: 2026-11-15.
+
+## Provider Directory
+
+[[wiki/syntheses/film-tv-equity-investors-and-funds|Film and TV Equity Investors and Film Funds]] — public contacts and project-fit guidance.
 
 ## Continue Exploring
 

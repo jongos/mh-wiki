@@ -2,8 +2,8 @@
 title: Raw Source Manifest
 type: operations
 status: current
-updated: 2026-11-15
-source_count: 53
+updated: 2026-11-18
+source_count: 59
 publish: false
 tags:
   - mediahedge
@@ -69,6 +69,12 @@ Canonical ingestion snapshots. SHA-256 identifies the exact binary reviewed duri
 | [[raw/sources/irs-p946-review-2026-11-15.txt\|IRS Publication 946 — Special Depreciation Review]] | `B34E82BADDAA6023BA38A5FB93DCF9BF716DDC9F2FF4645AAC82E2FEAC42879B` | reviewed - limited primary-source record | [[wiki/sources/irs-p946-review]] |
 | [[raw/sources/hr10582-status-nov15-2026-11-15.txt\|H.R. 10582 — November 15 Status Review]] | `CBF0C3DC5816BD87049851FCB245D112A7DBD4A4B21E7BF39BE5B378D414F3E2` | reviewed - limited primary-source record | [[wiki/sources/hr10582-status-nov15]] |
 | [[raw/sources/s5552-status-nov15-2026-11-15.txt\|S. 5552 — November 15 Status Review]] | `84D523C250C661788DFF6F9EFBBC56766D63E142E20E0B94EB964E96FB5C6494` | reviewed - limited primary-source record | [[wiki/sources/s5552-status-nov15]] |
+| [[raw/sources/film-tv-lenders-contacts-review-2026-11-18.txt\|Film and TV Finance Lenders — Contact Review]] | `B59AD4E3A6AEA9F6A0DE02B555028B33B0F71591B94943E32754E3131872FC9E` | reviewed - limited public-source research record | [[wiki/sources/film-tv-lenders-contacts-review]] |
+| [[raw/sources/film-tv-equity-investors-and-funds-contacts-review-2026-11-18.txt\|Film and TV Equity Investors and Film Funds — Contact Review]] | `B55A90881711B4416B356F6A3B8311A203C8248B7FBACA3E6404160657630E75` | reviewed - limited public-source research record | [[wiki/sources/film-tv-equity-investors-and-funds-contacts-review]] |
+| [[raw/sources/completion-bond-companies-contacts-review-2026-11-18.txt\|Film and TV Completion Bond Companies — Contact Review]] | `9B4DDAE6E7594F1D04A790F9C74D699423DB9D9C40C335006F24348D3167F194` | reviewed - limited public-source research record | [[wiki/sources/completion-bond-companies-contacts-review]] |
+| [[raw/sources/production-insurance-providers-contacts-review-2026-11-18.txt\|Film and TV Production Insurance Providers — Contact Review]] | `60A239F5DB6BEA83898C318DB7BD17EFF453EAD83F350145365AAA5812BD1360` | reviewed - limited public-source research record | [[wiki/sources/production-insurance-providers-contacts-review]] |
+| [[raw/sources/film-tv-grants-and-public-funds-contacts-review-2026-11-18.txt\|Film and TV Grants and Public Funding Providers — Contact Review]] | `3F2313430942B4B44DB4966E3BC56BF6791F6D91142999F991243699E7C77C0F` | reviewed - limited public-source research record | [[wiki/sources/film-tv-grants-and-public-funds-contacts-review]] |
+| [[raw/sources/film-finance-external-directories-contacts-review-2026-11-18.txt\|Film Finance and Funding Directories — Contact Review]] | `C6E91D8C109127FA45A2A4477D83E59171936DBA784C66DD443D1F940CBCC694` | reviewed - limited public-source research record | [[wiki/sources/film-finance-external-directories-contacts-review]] |
 
 ## Ingestion Note
 

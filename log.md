@@ -578,3 +578,15 @@ Append-only record. New entries go at the end and use the heading pattern define
 
 - Validation: lint passed with zero errors/warnings; all 14 Windows regression checks passed. All four sheet renders were inspected. The Excel export contains 177 formulas, no cached errors and no external-workbook links; SHA-256 `88FB093AF0E9B1A792D3180A6567A4C63330169ADFB577BCB1C2C6C54A9853FD`.
 - Obsidian published the four changed public notes. Full live audit matched all 76 files and all 49 routes, exact CSS/JS hashes, sitemap and reader interactions. Chrome confirmed the corrected worked-example guidance and download link. Additive archive and verified GitHub synchronization accompany this release.
+
+## [2026-11-18] ingest | Film and TV Provider and Funding Directories
+
+- Sources read: existing partner directory, lending landscape, publisher profile, equity, completion, insurance and grants concepts and linked reviews; current official provider/program pages and five external discovery lists. Live Brain Company/Company Overview.md refreshed for company relationship only; no private material imported.
+- Created six public category directories with 35 entries, including MediaHedge/FilmHedge; retained six attributed research records and six provenance pages. Public business emails, telephone numbers, forms or addresses are linked to supporting sources. No outreach sent.
+- Integrated home, navigator, partner hub, adjacent concepts, internal catalog and registry. Updated ITVS intake wording and recorded scoped limits, inaccessible sources and follow-up research. Existing raw sources unchanged.
+- Selection is not a market-share ranking. Debt, equity/strategic finance, completion guarantees, insurance groups/brokers and grants/public investment remain distinct.
+- Validation: pending final lint, semantic review, regression and publication checks.
+
+- Validation update: semantic review completed; lint passed with zero errors/warnings and all 14 local Windows regressions passed. The sandboxed browser launch failed; the suite passed with host browser access. Obsidian published all 16 selected reader updates (six new pages, nine changed notes and generated navigation). Initial live inventory matches all 82 files with no private/unexpected files; full route/browser audit is in progress.
+
+- Final live audit passed: all 82 deployed files match local SHA-256, all 55 note routes and exact sitemap inventory pass, and reader SEO/search/navigation/mobile interaction checks pass. Recovery milestone: wiki-v1.30-provider-directories; additive archive and GitHub synchronization follow the completed commit.

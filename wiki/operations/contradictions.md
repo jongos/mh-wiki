@@ -2,7 +2,7 @@
 title: Contradictions Register
 type: operations
 status: current
-updated: 2026-11-15
+updated: 2026-11-18
 source_count: 21
 publish: false
 tags:
@@ -74,3 +74,9 @@ When a true conflict appears, add a row with both source links, dates, scope, af
 | Bank loan versus gap | [[wiki/sources/filmarket-finance-plan\|Filmarket, 2018]] groups the terms; [[wiki/sources/sales-estimates-and-gap-as-collateral-crash-course\|Gap Brief]] identifies unsold rights as the repayment asset. | Resolved editorially by separating generic borrowing from unsold-rights lending; no generic bank loan is classified as gap merely because it closes a budget shortfall. |
 | Expected price versus portfolio realization | [[wiki/sources/follows-film-finance-problems\|Follows, November 2026]] discusses completed sales against estimates; [[wiki/sources/follows-film-finance-numbers\|October Companion]] also addresses unsold territories. | Different denominators, not established conflicting outcomes. Retain sale likelihood and unsold rights in diligence. Dataset reconciliation remains open; no observed percentage becomes a haircut. |
 | Example advances versus policy | [[wiki/sources/cinelaunch-finance-plan\|Cinelaunch, 2024]] supplies sample advances; current qualitative underwriting requires transaction approval. | Illustrations are not policy. New worked-plan figures are independently authored and explicitly hypothetical; no sample advance rule imported. |
+
+## Directory Reconciliation — November 18, 2026
+
+- ITVS: November 15 review described displayed rounds as closed; November 18 Get Funded page announces a January 4, 2027 Independent Lens Production Call while other routes remain closed. Updated the hub and new grants directory; historical raw record preserved. This is a dated program update, not a same-date contradiction.
+- External directory category labels are not adopted as provider mandates. BondIt explicitly describes debt and excludes completion-guarantor status; no bond-company entry was created for it.
+- Media Guarantors website redirects to FFI. Grouped the accessible platform rather than counting a separate provider; issuer identity still requires transaction documents.

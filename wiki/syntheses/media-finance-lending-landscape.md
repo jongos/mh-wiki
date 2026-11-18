@@ -2,7 +2,7 @@
 title: Media Finance Lending Landscape
 type: synthesis
 status: current
-updated: 2026-11-15
+updated: 2026-11-18
 as_of: 2026-08-10
 source_count: 9
 publish: true
@@ -41,6 +41,10 @@ Media finance brings together capital providers and specialists in cash control,
 | Production | Does available cash still cover the current cost to complete? | Producer, lender or servicer, production insurer and completion guarantor | Cost reports, hot costs, production reports, claim notices and variance analysis |
 | Delivery and acceptance | Have the contractual payment conditions been satisfied? | Producer, distributor, delivery agent, lender and completion guarantor | Delivery schedule, acceptance evidence, cure rights and deemed-acceptance provisions |
 | Collection and repayment | Did controlled proceeds reach the agreed waterfall? | Account bank or collection account manager, servicer, lender, obligors and any applicable credit provider | Assignment notices, [[wiki/concepts/cash-control-and-waterfalls\|account control]], reconciliations, payment confirmations and claim files |
+
+## Current Contact Directories
+
+Use [[wiki/syntheses/film-tv-lenders|Film and TV Lenders]], [[wiki/syntheses/completion-bond-companies|Completion Bond Companies]] and [[wiki/syntheses/production-insurance-providers|Production Insurance Providers]] for the November 18, 2026 public-contact review. The capability map below retains its separate source dates.
 
 ## Capital Providers
 

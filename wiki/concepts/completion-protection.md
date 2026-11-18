@@ -2,7 +2,7 @@
 title: Completion Protection
 type: concept
 status: current
-updated: 2026-11-15
+updated: 2026-11-18
 source_count: 5
 publish: true
 description: Understand how completion bonds and guaranties support production and delivery, what remedies they may provide and why they do not guarantee loan repayment.
@@ -69,6 +69,10 @@ Coverage is transaction-specific. Common limitations may include uncovered event
 ## External Context
 
 Screen Australia's [Terms of Trade](https://www.screenaustralia.gov.au/doing-business-with-us/terms-of-trade/) identify completion guarantees among its funding conditions and direct applicants to the applicable program and recipient requirements. Its [Narrative Content Production program](https://www.screenaustralia.gov.au/fund/narrative-content-production/) links the current guidelines. Apply those requirements to the relevant Australian funding program. Links checked: 2026-09-30.
+
+## Provider Directory
+
+[[wiki/syntheses/completion-bond-companies|Film and TV Completion Bond Companies]] — public contacts and project-fit guidance.
 
 ## Continue Exploring
 

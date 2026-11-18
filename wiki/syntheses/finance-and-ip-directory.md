@@ -2,9 +2,9 @@
 title: "Film Finance and IP Partner Directory"
 type: synthesis
 status: current
-updated: 2026-11-15
+updated: 2026-11-18
 as_of: 2026-11-15
-source_count: 13
+source_count: 14
 publish: true
 description: "Find equity and strategic investors, grant programs, public funding, investor-access platforms and partners for licensing film IP beyond the screen."
 tags:
@@ -33,7 +33,7 @@ For debt providers, collection-account specialists, insurers and completion guar
 | --- | --- | --- |
 | [Sundance Documentary Fund](https://www.sundance.org/programs/documentary-film/) | Nonrecoupable support for independent cinematic documentaries | Review the current fund round, stage and work-sample requirements. Its guidelines distinguish development through post-production from proposals solely for story research. |
 | [SFFILM Rainin Grant](https://sffilm.org/rainin-grant/) | Narrative features addressing social justice, with a Bay Area benefit | Select the screenwriting, development or post-production route. The 2026 application round is closed; follow the program page for the next round. |
-| [ITVS](https://itvs.org/get-funded/) | Documentary development and coproduction support for public media | Match the project to the listed program and rights/delivery obligations. The reviewed page marks its displayed application rounds closed; treat it as a program route, not an immediate cash source. |
+| [ITVS](https://itvs.org/get-funded/) | Documentary development and coproduction support for public media | Match the project to the listed program and rights/delivery obligations. The November 18 review identifies a new Independent Lens Production Call opening January 4, 2027 at 9 a.m. Pacific; Incubator and Open Call remain closed. See [[wiki/syntheses/film-tv-grants-and-public-funds\|Current Funding Contacts]] for the scoped update. |
 | [Film Independent Fiscal Sponsorship](https://www.filmindependent.org/programs/fiscal-sponsorship/) | Nonprofit administration enabling eligible charitable fundraising | Apply for sponsorship and review mission fit, oversight and fees. The reviewed page pauses new applications until January 11, 2027. Sponsorship and a grant award are separate steps. |
 
 Use [[wiki/concepts/grants-and-soft-money|Grants and Soft Money]] to classify the contribution and its cash timing. A public-media coproduction can carry rights obligations; do not automatically label it an unrestricted grant.
@@ -63,6 +63,15 @@ Shortlist providers by format, stage, geography, rights and funding type. Prepar
 
 Links checked: 2026-11-15.
 
+## Finance and Production Partner Directories
+
+- [[wiki/syntheses/film-tv-lenders|Film and TV Finance Lenders]]
+- [[wiki/syntheses/film-tv-equity-investors-and-funds|Film and TV Equity Investors and Film Funds]]
+- [[wiki/syntheses/completion-bond-companies|Film and TV Completion Bond Companies]]
+- [[wiki/syntheses/production-insurance-providers|Film and TV Production Insurance Providers]]
+- [[wiki/syntheses/film-tv-grants-and-public-funds|Film and TV Grants and Public Funding Providers]]
+- [[wiki/syntheses/film-finance-external-directories|Film Finance and Funding Directories]]
+
 ## Continue Exploring
 
 [[MediaHedge Knowledgebase|Home]] · [[wiki/syntheses/producer-financing-route|Producer’s Guide]] · [[wiki/syntheses/financier-diligence-route|Financier’s Guide]] · [[wiki/syntheses/credit-lifecycle|Credit Lifecycle]] · [[wiki/syntheses/site-navigator|Site Navigator]]
@@ -70,5 +79,5 @@ Links checked: 2026-11-15.
 <!--
 ## Source Basis
 
-[[wiki/sources/ipr-vc-review]] · [[wiki/sources/filmnation-review]] · [[wiki/sources/slated-review]] · [[wiki/sources/sundance-catalyst-review]] · [[wiki/sources/sundance-documentary-review]] · [[wiki/sources/sffilm-rainin-review]] · [[wiki/sources/itvs-review]] · [[wiki/sources/film-independent-sponsorship-review]] · [[wiki/sources/bfi-impact-review]] · [[wiki/sources/telefilm-production-review]] · [[wiki/sources/spaceport-ip-review]] · [[wiki/sources/spaceport-pod-review]] · [[wiki/sources/negosh-review]]
+[[wiki/sources/film-tv-grants-and-public-funds-contacts-review]] · [[wiki/sources/ipr-vc-review]] · [[wiki/sources/filmnation-review]] · [[wiki/sources/slated-review]] · [[wiki/sources/sundance-catalyst-review]] · [[wiki/sources/sundance-documentary-review]] · [[wiki/sources/sffilm-rainin-review]] · [[wiki/sources/itvs-review]] · [[wiki/sources/film-independent-sponsorship-review]] · [[wiki/sources/bfi-impact-review]] · [[wiki/sources/telefilm-production-review]] · [[wiki/sources/spaceport-ip-review]] · [[wiki/sources/spaceport-pod-review]] · [[wiki/sources/negosh-review]]
 -->

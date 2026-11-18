@@ -2,7 +2,7 @@
 title: Site Navigator
 type: synthesis
 status: current
-updated: 2026-11-15
+updated: 2026-11-18
 source_count: 0
 publish: true
 description: Navigate the Media Finance Guide as a connected map of financeability, collateral, control, protection, servicing, recovery and portfolio economics.
@@ -66,6 +66,15 @@ Explore the Media Finance Guide as a connected system. The interactive graph sho
 ## Research Library
 
 [[wiki/syntheses/filmhedge-research-library|Browse the Research Library]] — choose among the five reports, read the illustrated tax-guide article, and find charts by financing question.
+
+## Finance and Production Partner Directories
+
+- [[wiki/syntheses/film-tv-lenders|Film and TV Finance Lenders]]
+- [[wiki/syntheses/film-tv-equity-investors-and-funds|Film and TV Equity Investors and Film Funds]]
+- [[wiki/syntheses/completion-bond-companies|Film and TV Completion Bond Companies]]
+- [[wiki/syntheses/production-insurance-providers|Film and TV Production Insurance Providers]]
+- [[wiki/syntheses/film-tv-grants-and-public-funds|Film and TV Grants and Public Funding Providers]]
+- [[wiki/syntheses/film-finance-external-directories|Film Finance and Funding Directories]]
 
 ## Continue Exploring
 

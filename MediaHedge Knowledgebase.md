@@ -2,7 +2,7 @@
 title: Media Finance Guide
 type: operations
 status: current
-updated: 2026-11-15
+updated: 2026-11-18
 source_count: 22
 publish: true
 description: "Understand film and television finance: build a finance plan, value collateral, size loans, control cash, manage production risks and measure returns."
@@ -134,6 +134,15 @@ Research links checked: 2026-10-07.
 ## About This Guide
 
 Created by [[wiki/entities/mediahedge|MediaHedge and FilmHedge]], this resource explains film-finance concepts through a credit-underwriting lens. General explanations use market roles; company-specific policies are identified where they apply.
+
+## Finance and Production Partner Directories
+
+- [[wiki/syntheses/film-tv-lenders|Film and TV Finance Lenders]]
+- [[wiki/syntheses/film-tv-equity-investors-and-funds|Film and TV Equity Investors and Film Funds]]
+- [[wiki/syntheses/completion-bond-companies|Film and TV Completion Bond Companies]]
+- [[wiki/syntheses/production-insurance-providers|Film and TV Production Insurance Providers]]
+- [[wiki/syntheses/film-tv-grants-and-public-funds|Film and TV Grants and Public Funding Providers]]
+- [[wiki/syntheses/film-finance-external-directories|Film Finance and Funding Directories]]
 
 ## Continue Exploring
 

@@ -1,0 +1,38 @@
+Film Finance and Funding Directories — Public Source Review
+Scoped review: 2026-11-18
+Record kind: limited external-source review; original research paraphrases, not full publisher snapshots.
+Authority: provider/program self-description except explicitly identified external directories or association profile.
+Publication/effective dates: unspecified unless stated below; review date is not an effective date.
+
+International Documentary Association Grants Directory
+Reviewed URLs:
+https://www.documentary.org/grants-directory
+Observed scope: Documentary grants, fellowships and labs. Public view shows active opportunities; full deadlines, filters and closed opportunities require membership.
+Public contact or route: artistservices@documentary.org for directory questions or corrections.
+
+IDFA Other Funds
+Reviewed URLs:
+https://professionals.idfa.nl/en/training-funding/resources/other-funds/
+Observed scope: International documentary funding list grouped by geography, with links to funders.
+Public contact or route: Follow the individual fund links; the list itself is a research route, not a funding application.
+
+Cineuropa Funding Bodies
+Reviewed URLs:
+https://cineuropa.org/en/backings/en/index/
+Observed scope: European funding-body profiles and addresses, with links to supported films.
+Public contact or route: Use each funding-body profile’s official site/contact. Indexed listing reviewed; direct page retrieval was unavailable during this check.
+
+FILM.FUND Capital Providers
+Reviewed URLs:
+https://www.film.fund/directory/capital-providers
+https://www.film.fund/about
+Observed scope: Broad commercial directory spanning banks, specialty financiers and public/nonprofit funds.
+Public contact or route: contact@film.fund for platform inquiries; contact providers separately. Its About page describes a software platform, not an investing fund.
+
+Production Guild Partner Directory: Film Finances
+Reviewed URLs:
+https://productionguild.com/our-partners/partner-directory/film-finances-profile/
+Observed scope: Industry-association profile with completion-guarantor contact details and a wider partner directory.
+Public contact or route: Film Finances UK: production@filmfinances.co.uk; +44 20 7629 6557, as published in the partner profile.
+
+Excluded: market-share ranking, independently verified capital capacity, investment performance, solvency, approval, transaction-specific terms and comprehensive legal/program eligibility. No private Brain evidence or contacts retained. Contact delivery not tested; no outreach performed. Directory records support discovery only. Hash identifies this review record, not the publisher website. Records overlap prior reviews and do not constitute independent corroboration.

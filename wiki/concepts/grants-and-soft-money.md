@@ -2,7 +2,7 @@
 title: "Grants, Fiscal Sponsorship and Soft Money"
 type: concept
 status: current
-updated: 2026-11-15
+updated: 2026-11-18
 as_of: 2026-11-15
 source_count: 4
 publish: true
@@ -45,6 +45,10 @@ Public funding can carry recoupment, copyright and approval provisions. The [BFI
 Keep one cost allocation across funders. Do not charge the same expense twice where award terms prohibit it, or count donated equipment as cash for payroll. Use the [[wiki/syntheses/finance-and-ip-directory|Directory]] for program routes and [[wiki/concepts/international-coproduction|International Coproduction]] for cross-border structuring.
 
 Links checked: 2026-11-15.
+
+## Provider Directory
+
+[[wiki/syntheses/film-tv-grants-and-public-funds|Film and TV Grants and Public Funding Providers]] — public contacts and project-fit guidance.
 
 ## Continue Exploring
 

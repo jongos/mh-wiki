@@ -2,7 +2,7 @@
 title: Production Insurance
 type: concept
 status: current
-updated: 2026-11-15
+updated: 2026-11-18
 source_count: 6
 publish: true
 description: Learn how film-production insurance transfers defined casualty, personnel, liability and specialty risks without becoming a completion or repayment guaranty.
@@ -45,6 +45,10 @@ Coverage can be limited by exclusions, warranties, misrepresentation, late notic
 ## Connections
 
 Production insurance sits within the [[wiki/concepts/protection-stack|Protection Stack]] but cannot replace [[wiki/concepts/full-financing|Full Financing]], [[wiki/concepts/completion-protection|Completion Protection]], [[wiki/concepts/surety-credit-protection|targeted credit protection]], collateral underwriting or [[wiki/concepts/security-package|security]]. Claims and proceeds are monitored under [[wiki/concepts/monitoring-and-servicing|Servicing]].
+
+## Provider Directory
+
+[[wiki/syntheses/production-insurance-providers|Film and TV Production Insurance Providers]] — public contacts and project-fit guidance.
 
 ## Continue Exploring
 
