@@ -469,6 +469,57 @@ function Test-PublishedPolicyBoundary {
     }
 }
 
+function Test-PublishedExternalLinkSafety {
+    param(
+        [string]$Content,
+        [string]$Relative
+    )
+
+    $visible = [regex]::Replace($Content, '(?s)<!--.*?-->', '')
+    $visible = Mask-MarkdownCode -Content $visible
+    if ($visible -match '(?i)https?://(?:www\.)?filmfinances\.com/about\b') {
+        $script:errors.Add("Published page links to known-dead Film Finances /about URL: $Relative")
+    }
+}
+
+function Test-PublishedDirectoryStandards {
+    param(
+        [string]$Content,
+        [string]$Relative,
+        [string]$Frontmatter
+    )
+
+    if ($Relative -eq 'wiki/syntheses/finance-and-ip-directory.md') {
+        $visibleHub = [regex]::Replace($Content, '(?s)<!--.*?-->', '')
+        $visibleHub = Mask-MarkdownCode -Content $visibleHub
+        if ($visibleHub -notmatch '(?m)^## How We Verified Who Is Listed\s*$') {
+            $script:errors.Add("Partner directory hub must include a 'How We Verified Who Is Listed' section: $Relative")
+        }
+    }
+
+    if ($Frontmatter -notmatch '(?m)^\s+-\s+directory\s*$') {
+        return
+    }
+    if ($Relative -notmatch '^wiki/syntheses/') {
+        return
+    }
+
+    $visible = [regex]::Replace($Content, '(?s)<!--.*?-->', '')
+    $visible = Mask-MarkdownCode -Content $visible
+    if ($visible -notmatch '(?m)^## Providers and Public Contacts\s*$') {
+        return
+    }
+    if ($visible -notmatch '\| Last Checked \|') {
+        $script:errors.Add("Published provider directory must include a Last Checked table column: $Relative")
+    }
+    if ($Relative -eq 'wiki/syntheses/film-tv-lenders.md' -and $visible -notmatch '\| Published Amount \|') {
+        $script:errors.Add("Film/TV lenders directory must include a Published Amount table column: $Relative")
+    }
+    if ($Relative -eq 'wiki/syntheses/film-tv-grants-and-public-funds.md' -and $visible -notmatch '\| Published Award \|') {
+        $script:errors.Add("Grants directory must include a Published Award table column: $Relative")
+    }
+}
+
 Test-PublishVaultConfiguration
 
 $inbound = @{}
@@ -958,6 +1009,8 @@ foreach ($file in $wikiFiles) {
         $publicWikiFiles.Add($file)
         Test-PublishedPresentation -Content $content -Relative $relative -RequireContinueExploring $true
         Test-PublishedPolicyBoundary -Content $content -Relative $relative
+        Test-PublishedExternalLinkSafety -Content $content -Relative $relative
+        Test-PublishedDirectoryStandards -Content $content -Relative $relative -Frontmatter $frontmatter
         if ($homeContent -notmatch [regex]::Escape("[[$target")) {
             $warnings.Add("Published page absent from public home: $relative")
         }
@@ -1021,7 +1074,7 @@ $requiredToolPatterns = @{
     'publish-browser-audit.ps1' = @('legacy /wiki route', 'accessibleCombobox', 'accessibleListbox', 'announcedResults', 'mh-seo-jsonld', 'BreadcrumbList', 'single reader-facing H1')
     'publish-route-compatibility-audit.js' = @('mediafinance.guide/wiki', 'publish.obsidian.md/mediahdge/wiki', 'Legacy /wiki compatibility redirects')
     'publish-ui-fixture-audit.ps1' = @('aria-activedescendant', 'mhAnimationFrames', 'Financing Essentials')
-    'wiki-test.ps1' = @('navigation-drift', 'public-policy-leak', 'lineage-mismatch', 'archive-additivity', 'credential-redaction')
+    'wiki-test.ps1' = @('navigation-drift', 'public-policy-leak', 'lineage-mismatch', 'archive-additivity', 'credential-redaction', 'dead-provider-link')
     'wiki-archive.ps1' = @("fetch --no-prune --no-prune-tags origin 'refs/heads/*:refs/heads/*'", 'Preserved archive-only refs')
     'github-sync.ps1' = @('credentialLocations', 'Values are redacted')
 }

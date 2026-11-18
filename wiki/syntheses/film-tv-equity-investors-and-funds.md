@@ -19,15 +19,15 @@ Match the project to the investor’s mandate before presenting recoupment terms
 
 ## Providers and Public Contacts
 
-Public sources checked November 18, 2026. Contact details are published business routes; no inquiry has been sent. The source links in each row support its role and contact information.
+Contact details are published business routes; no inquiry has been sent. The **Last checked** date is when this guide last reviewed the linked sources for that row. It is not a guarantee that contacts or site routes are unchanged.
 
-| Organization | Role and Project Fit | Public Contact or Application Route |
-| --- | --- | --- |
-| [IPR.VC](https://ipr.vc/) | Finland/UK; media investment manager with film/TV strategies and studio partnerships. | info@ipr.vc. Ask whether the appropriate route is a studio/slate partnership or another strategy; no open single-film intake is established here. |
-| [Impact Partners](https://impactpartnersfilm.com/submit/) | International feature documentaries addressing social issues; explicitly describes equity financing. | info@impactpartnersfilm.com; use the Submit Your Film letter-of-inquiry process for projects. [Contact or supporting page](https://impactpartnersfilm.com/contact/). |
-| [FilmNation Entertainment](https://www.filmnation.com/) | U.S./UK; integrated production, financing and distribution. Strategic project partner, not presented here as an open fund. | Published New York office: 150 West 22nd St, 9th Floor, New York, NY 10011. Official contact page also lists Los Angeles and UK offices. [Contact or supporting page](https://www.filmnation.com/about/contact). |
-| [Anton Studios](https://antonstudios.com/about) | London/Los Angeles/Berlin; development, production and financing of film and television. Strategic studio partner. | Published London office: 21a Brownlow Mews, London WC1N 2LA. No public project-submission email was verified on the reviewed page. |
-| [Silver Reel](https://www.silver-reel.com/) | Switzerland/UK; develops, produces and finances films and series. Strategic production and financing partner. | info@silver-reel.ch (Switzerland); info@silver-reel.co.uk (UK). Contact page lists both offices. [Contact or supporting page](https://www.silver-reel.com/contact/). |
+| Organization | Role and Project Fit | Public Contact or Application Route | Last Checked |
+| --- | --- | --- | --- |
+| [IPR.VC](https://ipr.vc/) | Finland/UK; media investment manager with film/TV strategies and studio partnerships. | info@ipr.vc. Ask whether the appropriate route is a studio/slate partnership or another strategy; no open single-film intake is established here. | 2026-11-18 |
+| [Impact Partners](https://impactpartnersfilm.com/submit/) | International feature documentaries addressing social issues; explicitly describes equity financing. | info@impactpartnersfilm.com; use the Submit Your Film letter-of-inquiry process for projects. [Contact or supporting page](https://impactpartnersfilm.com/contact/). | 2026-11-18 |
+| [FilmNation Entertainment](https://www.filmnation.com/) | U.S./UK; integrated production, financing and distribution. Strategic project partner, not presented here as an open fund. | Published New York office: 150 West 22nd St, 9th Floor, New York, NY 10011. Official contact page also lists Los Angeles and UK offices. [Contact or supporting page](https://www.filmnation.com/about/contact). | 2026-11-18 |
+| [Anton Studios](https://antonstudios.com/about) | London/Los Angeles/Berlin; development, production and financing of film and television. Strategic studio partner. | Published London office: 21a Brownlow Mews, London WC1N 2LA. No public project-submission email was verified on the reviewed page. | 2026-11-18 |
+| [Silver Reel](https://www.silver-reel.com/) | Switzerland/UK; develops, produces and finances films and series. Strategic production and financing partner. | info@silver-reel.ch (Switzerland); info@silver-reel.co.uk (UK). Contact page lists both offices. [Contact or supporting page](https://www.silver-reel.com/contact/). | 2026-11-18 |
 
 ## Investor Access Is a Separate Role
 

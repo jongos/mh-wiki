@@ -19,13 +19,13 @@ A completion bond or guaranty supports the completion and delivery obligations s
 
 ## Providers and Public Contacts
 
-Public sources checked November 18, 2026. Contact details are published business routes; no inquiry has been sent. The source links in each row support its role and contact information.
+Contact details are published business routes; no inquiry has been sent. The **Last checked** date is when this guide last reviewed the linked sources for that row. It is not a guarantee that contacts or site routes are unchanged.
 
-| Organization | Role and Project Fit | Public Contact or Application Route |
-| --- | --- | --- |
-| [Film Finances / FFI](https://filmfinances.com/) | International; completion guarantees for film, television, mini-series and streaming productions. | U.S. +1 310-275-7323; UK +44 20 7629 6557. Official site lists regional offices. [Contact or supporting page](https://www.ffi.com/). |
-| [UniFi Completion Guarantors](https://www.unifibonds.com/) | Film and television completion-guaranty platform. | connect@unifibonds.com; +1 855-938-6434; official Contact Us route. |
-| [Paterson James](https://www.patersonjames.com/services/completion-guarantee/) | UK; completion-guarantee service for film and television productions. | +44 20 3929 1900; 74 Berwick St, London W1F 8TE; Contact link on service page. |
+| Organization | Role and Project Fit | Public Contact or Application Route | Last Checked |
+| --- | --- | --- | --- |
+| [Film Finances / FFI](https://filmfinances.com/) | International; completion guarantees for film, television, mini-series and streaming productions. | U.S. +1 310-275-7323; UK +44 20 7629 6557. Official site lists regional offices. [Contact or supporting page](https://www.ffi.com/). | 2026-11-18 |
+| [UniFi Completion Guarantors](https://www.unifibonds.com/) | Film and television completion-guaranty platform. | connect@unifibonds.com; +1 855-938-6434; official Contact Us route. | 2026-11-18 |
+| [Paterson James](https://www.patersonjames.com/services/completion-guarantee/) | UK; completion-guarantee service for film and television productions. | +44 20 3929 1900; 74 Berwick St, London W1F 8TE; Contact link on service page. | 2026-11-18 |
 
 ## Brand and Role Checks
 
