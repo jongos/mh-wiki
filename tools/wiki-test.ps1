@@ -154,6 +154,25 @@ try {
     }
     Add-TestPass 'published legacy numeric underwriting rails are rejected'
 
+    $deadLinkVault = Copy-VaultFixture -Name 'dead-provider-link'
+    Set-TestVaultRegistration -RegisteredVault $deadLinkVault
+    $deadLinkPage = Join-Path $deadLinkVault 'wiki\syntheses\media-finance-lending-landscape.md'
+    $deadLinkContent = [IO.File]::ReadAllText($deadLinkPage, [Text.Encoding]::UTF8)
+    $changedDeadLinkContent = $deadLinkContent.Replace(
+        'https://filmfinances.com/',
+        'https://www.filmfinances.com/about'
+    )
+    if ($changedDeadLinkContent -eq $deadLinkContent) {
+        throw 'Could not prepare the dead provider-link fixture.'
+    }
+    [IO.File]::WriteAllText($deadLinkPage, $changedDeadLinkContent, $utf8NoBom)
+    $deadLinkLint = Invoke-PowerShellCapture -ScriptPath (Join-Path $deadLinkVault 'tools\wiki-lint.ps1') -Arguments @('-VaultRoot', $deadLinkVault)
+    $deadLinkOutput = $deadLinkLint.Output -join "`n"
+    if ($deadLinkLint.ExitCode -eq 0 -or $deadLinkOutput -notmatch 'known-dead Film Finances /about URL') {
+        throw 'Dead provider-link fixture did not fail safely.'
+    }
+    Add-TestPass 'known-dead Film Finances /about URLs are rejected'
+
     $driftVault = Copy-VaultFixture -Name 'navigation-drift'
     Set-TestVaultRegistration -RegisteredVault $driftVault
     $driftPage = Join-Path $driftVault 'wiki\concepts\loan-sizing.md'

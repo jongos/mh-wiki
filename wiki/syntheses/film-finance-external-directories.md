@@ -19,15 +19,15 @@ Use these other lists to broaden a financing search, then verify each shortliste
 
 ## Providers and Public Contacts
 
-Public sources checked November 18, 2026. Contact details are published business routes; no inquiry has been sent. The source links in each row support its role and contact information.
+Contact details are published business routes; no inquiry has been sent. The **Last checked** date is when this guide last reviewed the linked sources for that row. It is not a guarantee that contacts or site routes are unchanged.
 
-| Organization | Role and Project Fit | Public Contact or Application Route |
-| --- | --- | --- |
-| [International Documentary Association Grants Directory](https://www.documentary.org/grants-directory) | Documentary grants, fellowships and labs. Public view shows active opportunities; full deadlines, filters and closed opportunities require membership. | artistservices@documentary.org for directory questions or corrections. |
-| [IDFA Other Funds](https://professionals.idfa.nl/en/training-funding/resources/other-funds/) | International documentary funding list grouped by geography, with links to funders. | Follow the individual fund links; the list itself is a research route, not a funding application. |
-| [Cineuropa Funding Bodies](https://cineuropa.org/en/backings/en/index/) | European funding-body profiles and addresses, with links to supported films. | Use each funding-body profile’s official site/contact. Indexed listing reviewed; direct page retrieval was unavailable during this check. |
-| [FILM.FUND Capital Providers](https://www.film.fund/directory/capital-providers) | Broad commercial directory spanning banks, specialty financiers and public/nonprofit funds. | contact@film.fund for platform inquiries; contact providers separately. Its About page describes a software platform, not an investing fund. [Contact or supporting page](https://www.film.fund/about). |
-| [Production Guild Partner Directory: Film Finances](https://productionguild.com/our-partners/partner-directory/film-finances-profile/) | Industry-association profile with completion-guarantor contact details and a wider partner directory. | Film Finances UK: production@filmfinances.co.uk; +44 20 7629 6557, as published in the partner profile. |
+| Organization | Role and Project Fit | Public Contact or Application Route | Last Checked |
+| --- | --- | --- | --- |
+| [International Documentary Association Grants Directory](https://www.documentary.org/grants-directory) | Documentary grants, fellowships and labs. Public view shows active opportunities; full deadlines, filters and closed opportunities require membership. | artistservices@documentary.org for directory questions or corrections. | 2026-11-18 |
+| [IDFA Other Funds](https://professionals.idfa.nl/en/training-funding/resources/other-funds/) | International documentary funding list grouped by geography, with links to funders. | Follow the individual fund links; the list itself is a research route, not a funding application. | 2026-11-18 |
+| [Cineuropa Funding Bodies](https://cineuropa.org/en/backings/en/index/) | European funding-body profiles and addresses, with links to supported films. | Use each funding-body profile’s official site/contact. Indexed listing reviewed; direct page retrieval was unavailable during this check. | 2026-11-18 |
+| [FILM.FUND Capital Providers](https://www.film.fund/directory/capital-providers) | Broad commercial directory spanning banks, specialty financiers and public/nonprofit funds. | contact@film.fund for platform inquiries; contact providers separately. Its About page describes a software platform, not an investing fund. [Contact or supporting page](https://www.film.fund/about). | 2026-11-18 |
+| [Production Guild Partner Directory: Film Finances](https://productionguild.com/our-partners/partner-directory/film-finances-profile/) | Industry-association profile with completion-guarantor contact details and a wider partner directory. | Film Finances UK: production@filmfinances.co.uk; +44 20 7629 6557, as published in the partner profile. | 2026-11-18 |
 
 ## Verify Before Importing a Listing
 

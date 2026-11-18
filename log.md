@@ -590,3 +590,12 @@ Append-only record. New entries go at the end and use the heading pattern define
 - Validation update: semantic review completed; lint passed with zero errors/warnings and all 14 local Windows regressions passed. The sandboxed browser launch failed; the suite passed with host browser access. Obsidian published all 16 selected reader updates (six new pages, nine changed notes and generated navigation). Initial live inventory matches all 82 files with no private/unexpected files; full route/browser audit is in progress.
 
 - Final live audit passed: all 82 deployed files match local SHA-256, all 55 note routes and exact sitemap inventory pass, and reader SEO/search/navigation/mobile interaction checks pass. Recovery milestone: wiki-v1.30-provider-directories; additive archive and GitHub synchronization follow the completed commit.
+
+## [2026-11-18] maintenance | Provider directory verification columns and link repair
+
+- Sources read: November 18 provider contact reviews; current Sundance, SFFILM, Catapult, ITVS, Bertha, BondIt FAQ and hub program reviews for published amounts and cycles only where cited on the official page.
+- Pages updated: six category directories gained per-entry Last checked dates; lenders and grants pages gained Published Amount/Award and Intake Cycle columns with source-linked figures only. Partner hub gained How We Verified Who Is Listed and per-entry Last checked on hub tables.
+- Fixed MH-WIKI-31: Media Finance Lending Landscape Film Finances link now uses filmfinances.com instead of the /about URL that 404s after redirect.
+- Tooling: wiki-lint rejects known-dead filmfinances.com/about links and enforces directory Last checked columns; wiki-test adds a dead-provider-link regression fixture.
+- Open issues: primary-source confirmation of the July 2026 Film Finances / Media Guarantors combination not added beyond existing trade-press citation on the lending landscape page; Catapult and Austin Film Society per-project award caps not published on the reviewed overview routes.
+- Lint: pending local Windows regression; semantic review completed for grant/lender amount sourcing boundaries.

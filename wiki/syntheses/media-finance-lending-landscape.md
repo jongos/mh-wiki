@@ -64,7 +64,7 @@ Production insurance and completion support can preserve financeability, but nei
 | Function | Representative public platforms | Financier's identity check |
 | --- | --- | --- |
 | Production insurance | The [Lloyd's market](https://www.lloyds.com/about-lloyds/our-market), [Arch](https://www.archgroup.com/offering/entertainment/production/), [AXA XL](https://axaxl.com/insurance/products/media-and-entertainment-insurance), [Chubb](https://www.chubb.com/us-en/business-insurance/film-producers.html), [Intact Specialty](https://www.intactspecialty.com/intactspecialty/industries/entertainment) and [Allianz Commercial](https://commercial.allianz.com/solutions/entertainment-insurance.html) | Identify the policy issuer, syndicate participation, limits, deductibles, endorsements, claims authority and any material reinsurance dependence |
-| Completion guaranty | [UniFi Completion Guarantors](https://www.unifibonds.com/who-we-are/), [Film Finances International](https://www.filmfinances.com/about) and [Paterson James](https://www.patersonjames.com/services/completion-guarantee/) | Identify the service platform, legal issuer or carrier, beneficiary, liability cap, remedies, exclusions, claim path and interparty rights |
+| Completion guaranty | [UniFi Completion Guarantors](https://www.unifibonds.com/who-we-are/), [Film Finances / FFI](https://filmfinances.com/) and [Paterson James](https://www.patersonjames.com/services/completion-guarantee/) | Identify the service platform, legal issuer or carrier, beneficiary, liability cap, remedies, exclusions, claim path and interparty rights |
 | Targeted payment protection | Transaction-specific surety, credit or media-obligation product, if available | Identify the principal, surety or insurer, obligee, bonded obligation, trigger, penal sum or policy limit and post-payment rights |
 
 > [!note] Current Market Context
@@ -95,7 +95,7 @@ Production insurance and completion support can preserve financeability, but nei
 
 This capability map uses provider descriptions checked August 10, 2026. For provider selection, confirm ownership, licensing, product availability, capacity, financial strength and underwriting appetite. Match the legal entity and its signed instruments to the exposure and remedy.
 
-Links checked: 2026-08-10. On 2026-09-30, the dead Intectus completion-bond reference was removed; its current homepage did not verify that offering. Other provider links have not been revalidated as part of this targeted correction.
+Links checked: 2026-08-10. On 2026-09-30, the dead Intectus completion-bond reference was removed; its current homepage did not verify that offering. On 2026-11-18, the Film Finances link was retargeted from filmfinances.com/about (404 after redirect) to filmfinances.com, matching [[wiki/syntheses/completion-bond-companies|Completion Bond Companies]] (see GitHub issue MH-WIKI-31). Other provider links in this capability map have not been revalidated as part of that targeted correction.
 
 ## Analysis and Inference
 
